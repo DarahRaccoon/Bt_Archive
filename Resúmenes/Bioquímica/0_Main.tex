@@ -1,0 +1,48 @@
+\documentclass{../Resume}
+
+\newcommand{\Titulo}{Resumen de asignatura: Bioquímica}
+\newcommand{\Fecha}{2026}
+
+\begin{document}
+\Portada
+\Indice
+\fancystyle
+\onehalfspacing
+
+% --------------------------------------------------------------------------------------------------- %
+
+\part{Fundamentos de bioquímica}
+
+    \chapter{El agua y la química de la materia viva}
+    \chapter{La bioquímica y sus aplicaciones}
+
+\part{Estructura y función de las biomoléculas}
+
+    \chapter{Carbohidratos}
+    \chapter{Aminoácidos, péptidos y proteínas}
+        \input{04.tex}
+        
+    \chapter{Proteínas estructurales y catalíticas}
+    \chapter{Lípidos}
+        \input{06.tex}
+    
+    \chapter{Vitaminas}
+    \chapter{Nucleótidos y ácidos nucléicos}
+
+\part{Metabolismo y bioenergética}
+
+    \chapter{Principios de bioenergética y termodinámica}
+    \chapter{Rutas metabólicas catabólicas}
+    \chapter{Rutas metabólicas anabólicas}
+
+\part{Anexos}
+
+    %\input{aminoácidos_canónicos.tex}
+
+% --- BIBLIOGRAFÍA --- %
+
+\newpage
+
+\bibliography{bib}
+
+\end{document}

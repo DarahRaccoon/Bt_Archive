@@ -1,0 +1,47 @@
+\documentclass{../Resume}
+
+\newcommand{\Titulo}{Resumen de asignatura: Biología molecular}
+\newcommand{\Fecha}{2026}
+
+\begin{document}
+\Portada
+\Indice
+\fancystyle
+\onehalfspacing
+
+% --------------------------------------------------------------------------------------------------- %
+
+\part{Introducción a la herencia}
+
+    \chapter{Genética mendeliana}
+    \chapter{Genética no mendeliana}
+
+\part{Flujo genético}
+
+    \chapter{Replicación del ADN}
+        \input{03.tex}
+
+    \chapter{Expresión génica}
+        \input{04.tex}
+
+\part{Regulación y reparación de genes}
+
+    \chapter{Mecanismos de regulación genética en procariontes y eucariontes}
+        \input{05.tex}
+    
+    \chapter{Mutaciones}
+    \chapter{Mecanismos de reparación}
+
+\part{Amplificación de ácidos nucléicos}
+
+    \chapter{Técnicas de extracción y análisis de ácidos nucléicos}
+    \chapter{PCR y sus tipos}
+        \input{09.tex}
+
+% --- BIBLIOGRAFÍA --- %
+
+\newpage
+
+\bibliography{bib}
+
+\end{document}

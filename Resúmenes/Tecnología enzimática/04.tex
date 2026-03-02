@@ -1,0 +1,151 @@
+\section{Métodos de medición}
+
+\subsection{Directo}
+
+Este tipo de medición se realiza cuando puede existir una medición directa de alguno de los siguientes aspectos:
+
+\begin{itemize}
+    \item La disminución del sustrato conforme avanza la reacción.
+    \item La acumulación del producto conforme avanza la reacción.
+\end{itemize}
+
+\subsection{Indirecto}
+
+Este tipo de medición se realiza cuando NO puede existir una medición directa de alguno de los siguientes aspectos:
+
+\begin{itemize}
+    \item Ni sustrato
+    \item Ni complejo enzima-sustrato
+    \item Ni producto
+\end{itemize}
+
+Para realizar este tipo de medición se pueden realizar las siguientes operaciones:
+
+\begin{itemize}
+    \item Medir el consumo de cofactor
+    \item Usar una reacción acoplada que si se pueda medir.
+        \begin{enumerate}
+            \item Esta puede ser una reacción:
+                \begin{itemize}
+                    \item Enzimática
+                    \item Química
+                \end{itemize}
+                
+            \item Esta operación necesita de lo siguiente:
+                \begin{itemize}
+                    \item Especificidad
+                    \item Muestras de control
+                \end{itemize}
+        \end{enumerate}
+
+    \item En base a la medición del tiempo. Las mediciones también se pueden clasificar en base a qué medida de tiempo se utilize:
+        \begin{itemize}
+            \item A tiempo final: En esta se establece un tiempo determinado y se mide unicamente en $t_i$ y $t_f$. Por ejemplo, dada una reacción con durción de 10 minutos, solo se mediría en el minuto 0 (al inicio) y al minuto 10 (al final).
+            \item Cinética: En esta se establece una unidad de tiempo que determina la periodicidad con que se medirá la reacción. Por ejemplo, medir cada 30 segundos. 
+        \end{itemize}
+\end{itemize}
+
+\section{Uso de espectrofotómetro}
+
+\begin{equation}
+    A = \varepsilon b C
+\end{equation}
+
+\subsection{Elementos a medir}
+
+Existen diferentes elementos que se pueden medir de una reacción:
+
+De sustrato
+
+De producto
+
+Por ejemplo, aquí se medirá la absorbancia del producto ($O$), cuyo valor, al cambiar en el tiempo, se puede usar para determinar la cinética de la reacción.
+ 
+\begin{align}
+    H_2O_2 + OH_2 &\Longrightarrow 2H_20 + O
+    \\
+    \\
+    O \lambda &= 440nm
+\end{align}
+
+De cofactor
+
+En este ejemplo tanto el $NAD^+$ como el $NADH$ funcionan como cofactores, y se pueden usar como elementos a medir para determinar la cinética de la reacción.
+
+\begin{align}
+    SH_2 + NAD^{+} &\Longrightarrow NADH + H^{+} + S
+    \\
+    \hline
+    NADH \lambda &= 340nm
+    \\
+    \\
+    SH_2 + NADH &\Longrightarrow NAD^{+} + SH_2
+    \\
+    \hline
+    NAD^{+} \lambda &= 254NM
+\end{align}
+
+De reacción enzimática acoplada
+
+De reacción química acoplada
+
+Ejemplo - Producción de melanina
+
+\begin{align}
+    \text{Tirosina} + \text{Tirosinasa (PPO)} + O_2 + Cu^{2+} &\Longrightarrow \text{Tirosina Oxidada} + DOPA + H_2O
+    \\
+    \\
+    DOPA + PPO + O_2 &\Longrightarrow \text{DOPA-Quinona}
+    \\
+    \\
+    &\Longrightarrow \text{[Reacciones no enzimáticas]}
+    \\
+    \\
+    \text{DOPA-Quinona} &\Longrightarrow \text{Dopacromo (Naranja)}
+    \\
+    \\
+    \text{Dopacromo} &\Longrightarrow \text{5-6-hidroxi-indol (Incoloro)} + H_2O
+    \\
+    \\
+    \text{5-6-hidroxi-indol} &\Longrightarrow \text{Indol-5-6-Quinona (Amarillo)}
+    \\
+    \\
+    \text{Indol-5-6-Quinona} &\Longrightarrow \text{Melanocromo (Púrpura)}
+    \\
+    \\
+    \text{N-Melanocromo} &\Longrightarrow \text{Melanina (Negra)}
+\end{align}
+
+En este ejempo, se puede medir el cambio de color en una sustancia que contenga melanina (frutas o verduras, por ejemplo), y a partir de ese cambio de color determinar, de manera general y tal vez no tan exacta, si existe actividad enzimática, pues aunque las reacciones que muestran cambio de color no son enzimáticas dependen de un producto que se genera solamente por actividad de enzimas.
+
+\section{Cinética química}
+
+
+\begin{align}
+    \text{Reactivos} &\Longrightarrow \text{Productos} 
+    \\
+    \\
+    \text{A} &\Longrightarrow \text{B}
+    \\
+    \\
+    \text{Velocidad (v)} &= \frac{-d[\text{Reactivo}]}{dt}=\frac{+d[\text{Productos}]}{dt}
+\end{align}
+
+
+\section{Ley de velocidad}
+
+
+\begin{align}
+    [A] &= (A-A_0)
+    \\
+    \\
+    \text{Orden O} \Longrightarrow v = \frac{-d[A]}{dt} &\rightarrow K[A]^0 \rightarrow K \rightarrow [A] = [A]_0kt
+    \\
+    \\
+    \text{Orden 1} \Longrightarrow v = \frac{-d[A]}{dt} &\rightarrow K[A]¹
+    \rightarrow ln \frac{[A]}{[A]_0} = -kt
+    \\
+    \\
+    \text{Orden 2} \Longrightarrow v = \frac{-d[A]}{dt} &\rightarrow K[A]^2 \rightarrow \frac{1}{[A]} = \frac{1}{[A]_0} + kt
+\end{align}
+

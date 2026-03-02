@@ -1,0 +1,83 @@
+Determinar $V_{Max}$ y $K_{m}$ mediante una gráfica que tenga como ejes $[S]$ y $V$ es díficil, por lo que lo que se transforman los datos para que se pueda graficar una linea recta a partir de la cual, ahora sí, se puedan determinar los parámetros cinéticos ($V_{Max}$ y $K_{m}$) más facilmente.
+Existen diferentes métodos por los cuales realizar esta transformación
+Ecuación de la recta y valor de $m$
+Para los temas de linearización hay que primero recordar la ecuación de la recta y la forma de obtener $m$
+
+\begin{align*}
+    y &= mx+b
+    \\
+    \\
+    m &= \frac{y_{1} - y_{0}}{x_{1} - x_{0}}
+\end{align*}
+
+Valores de $m$ y $b$ en cada método
+Los diferentes métodos de linearización reemplazan los valores de $m$ y $b$ por ciertos parámetros cinéticos u operaciones con estos parámetros.
+A su vez, es posible usar tales ecuaciones nuevas para obtener $V_{Max}$ y $K_{m}$, esto despejando la ecuación. La forma de despejarla dependerá de la formula usada, del parámetro buscado y de los datos con que ya se cuente.
+En la siguiente tabla se recopila los valores que $m$ y $b$ adquieren en cada método, así como con $V_{Max}$ y $K_{m}$
+
+% [TABLA]
+
+\section{Métodos de linearización y su desglose}
+
+A continuación se describen
+
+\subsection{Lieneawever-Burk (Recíprocos)}
+
+\begin{align*}
+    y &= mx+b
+    \\
+    \frac{1}{V} &= \frac{K_{m}}{V_{Max}} * \frac{1}{[S]} + \frac{1}{V_{Max}}
+    \\
+    \\
+    x = \frac{1}{[S]} \ &; \ y = \frac{1}{V}
+    \\
+    m &= \frac{K_{m}}{V_{Max}}
+    \\
+    b &= \frac{1}{V_{Max]}}
+    \\
+    \\
+    V_{Max} &= \frac{1}{b}
+    \\
+    K_{m} &= m * V_{Max}
+\end{align*}
+
+\subsection{Eadie-Hosfstee}
+
+\begin{align*}
+    y &= b - mx
+    \\
+    V  &= V_{Max} - K_{m} * \frac{V}{[S]}
+    \\
+    \\
+    x = \frac{V}{[S]} \ &; \ y = V
+    \\
+    m &= K_{m}
+    \\
+    b &= V_{Max}
+    \\
+    \\
+    V_{Max} &= b
+    \\
+    K_{m} &= m
+\end{align*}
+
+\subsection{Hanes}
+
+\begin{align*}
+    y &= xm+b
+    \\
+    \frac{[S]}{V}  &= [S] * \frac{1}{V_{Max}} + \frac{K_{m}}{V_{Max}}
+    \\
+    \\
+    x = [S] \ &; \ y = \frac{[S]}{V}
+    \\
+    m &= \frac{1}{V_{Max}}
+    \\
+    b &= \frac{K_{m}}{V_{Max]}}
+    \\
+    \\
+    V_{Max} &= \frac{1}{m}
+    \\
+    K_{m} &= V_{Max} * b
+\end{align*}
+
