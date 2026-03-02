@@ -11,3 +11,9 @@ Cualquier persona puede apoyar en la mejora de estos resúmenes, tanto dejando c
 
 
 ## Envios de mejoras
+
+# Acerca de
+
+## Licencia
+
+Licenciado bajo **CC BY-SA 4.0**. Mirar [LICENCIA](LICENSE.md) para más información.
