@@ -124,6 +124,7 @@ a:hover {
 }
 
 /* ===== HEADER ===== */
+
 header {
     background-color: var(--color-white);
     box-shadow: var(--shadow-sm);
