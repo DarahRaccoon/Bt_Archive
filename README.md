@@ -16,4 +16,4 @@ Cualquier persona puede apoyar en la mejora de estos resúmenes, tanto dejando c
 
 ## Licencia
 
-Licenciado bajo **CC BY-SA 4.0**. Mirar [LICENCIA](LICENSE.md) para más información.
+Licenciado bajo **CC BY-SA 4.0**. Mirar [LICENCIA](LICENSE) para más información.
