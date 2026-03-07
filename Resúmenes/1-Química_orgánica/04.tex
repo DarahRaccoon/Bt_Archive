@@ -1,0 +1,56 @@
+\section{Isomería cis-trans}
+
+La isomería cis-trans es un tipo de estereoisomería de los alquenos y cicloalcanos. Se utiliza cuando en un doble enlace los carbonos involucrados tienen cada uno el mismo par de grupos sustituyentes.
+
+\begin{figure}[H]
+    \centering
+    \chemfig{Cl-[:-35]([:-145]H)=-(-[:35]H)[:35]CL}
+    \caption{Diferencias entre isomeríacis e isomería trans}
+    \label{fig:}
+\end{figure}
+
+En este tipo de isomería existen 2 tipos de sustituyentes ($Cl$ y $H$ en este caso), por lo que no es necesario establecer prioridades. En el ejemplo existe isomería porque ambos carbonos tienen los sustituyentes $Cl$ y $H$. Si uno de ellos tuviera un solo tipo de sustituyentes (2$H$ o 2$Cl$, en lugar de Cl y H) no existiría isomería.
+
+Para realizar la distinción entre isomeros cis y trans podemos tener encuenta lo siguiente:
+
+\begin{itemize}
+    \item Cis: Los sustituyentes están:
+    \begin{itemize}
+        \item En el *mismo lado del doble enlace
+        \item En la *misma cara del cicloalcano
+    \end{itemize}
+    
+    \item Trans: VIceversa, los sustituyentes están:
+    \begin{itemize}
+        \item En lados opuestos del doble enlace
+    	\item En diferente cara del cicloalcano
+    \end{itemize}
+\end{itemize}
+
+\section{Isomería en cicloalcanos}
+
+%```smiles
+%C1[C@H]c[C@@H]C1>>C1[C@H]c[C@H]C1
+%```
+
+\section{Isomería E-Z}
+
+El sistema cis-trans funciona cuando existen 2 tipos de sustituyentes, sin embargo, cuando existen más de 2 tipos de sustituyentes se utiliza el sistema E-Z, puesto que este necesita de establecer prioridades entre los sustituyentes.
+
+    \input{04-diferencias_z_e.tex}
+
+\section{Reglas de Cahn, Ingold y Prelog}
+
+La isomería viene determinada por estas reglas de prioridad (o reglas de secuencia):
+
+\begin{enumerate}
+    \item La prioridad se establece según el número atómico del átomo sustituyente. Un átomo tiene prioridad sobre otros de número atómico menor. Así pues, el hidrógeno es el que tiene una prioridad más baja, por lo que nunca será prioridad y puede ser obviado.
+    \item En caso de isótopos, el de mayor masa atómica tiene prioridad.
+    \item Si entre dos o más sustituyentes existe coincidencia en el número atómico, se avanza a lo largo de la cadena de cada sustituyente hasta poder asignar un orden de prioridades.
+\end{enumerate}
+
+%```smiles
+%FC(Cl)=C(I)Br>>FC(Cl)=C(Br)I
+%```
+
+Aquí se aplica el sistema E-Z porque existen más de 2 tipos de sustituyentes, en este caso 4($F, I, Cl, Br$).

@@ -1,0 +1,47 @@
+\documentclass{../summarie}
+
+\newcommand{\Titulo}{Biología y fisiología celular}
+\newcommand{\Fecha}{2026}
+
+\begin{document}
+\Portada
+\Indice
+\fancystyle
+\onehalfspacing
+
+% --------------------------------------------------------------------------------------- %
+
+\part{Introducción a la célula}
+    \chapter{Introducción a las biomoléculas}
+        \input{01.tex}
+        
+    \chapter{Teoría celular}
+        \input{02.tex}
+        
+    \chapter{Células procariotas: Estructura de la célula bacteriana}
+    \chapter{Células eucariotas: Célula animal, vegetal, fungal y protista}
+
+\part{Biología celular}
+    \chapter{Estructura de las membranas biológicas: Bicapas lipídicas y fosfolípidos}
+        \input{05.tex}
+        
+    \chapter{Citoesqueleto: Filamentos intermedios, microtúbulos y filamentos de actina}
+    \chapter{Componentes celulares: Estructura, características y funciones}
+    \chapter{Endocitosis, lisosomas y citosol}
+    \chapter{Estructura y función del núcleo celular: ADN, duplicación del ADN, transcripción y traducción}
+        \input{09.tex}
+
+\part{Fisiología celular}
+    \chapter{Transporte pasivo, activo, ósmisis y difusión}
+    \chapter{Endocitosis: Fagocitosis y pinocitosis}
+        \input{11.tex}
+        
+    \chapter{Comunicación celular}
+    \chapter{Ciclo celuar: Fases del ciclo celular, mitosis y meiosis}
+        \input{13.tex}
+
+% -------------------------------- BIBLIOGRAFÍA ---------------------------------------- %
+
+\newpage \bibliography{bib}
+
+\end{document}
