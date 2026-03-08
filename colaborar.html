@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resúmenes de apoyo para Ingeniería en Biotecnología (UPSIN)</title>
+    <title>Colaborar - Bio_Archive</title>
     
     <!-- Metaetiquetas para SEO y presentación en redes -->
     <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología. Recurso abierto para estudiantes y docentes bajo licencia CC BY-SA 4.0.">
@@ -13,26 +12,24 @@
     <meta property="og:type" content="website">
     
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon (opcional, puedes generar uno en https://favicon.io) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
     <!-- Encabezado con navegación -->
-
-    <header>
-        <div class="container header-container">
+    <header class="header">
+        <div class="container header__container">
             <div class="logo">
-                <h1>🧬 <span class="logo-text">Bio_Archive</span></h1>
+                <h1>🧬 <span class="logo__text">Bio_Archive</span></h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Volver al inicio</a></li>
-                    <li><a href="asignaturas.html">Asignaturas</a></li>
-                    <li><a href="colaborar.html">Colaborar</a></li>
-                    <li><a href="recursos-externos.html">Recursos externos</a></li>
-                    <li><a href="licencia.html">Licencia</a></li>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Volver al inicio</a></li>
+                    <li><a href="asignaturas.html" class="nav__link">Asignaturas</a></li>
+                    <li><a href="colaborar.html" class="nav__link">Colaborar</a></li>
+                    <li><a href="recursos-externos.html" class="nav__link">Recursos externos</a></li>
+                    <li><a href="licencia.html" class="nav__link">Licencia</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,130 +39,133 @@
 
         <!-- Sección de inicio con presentación -->
         <section id="inicio" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Resúmenes para Ingeniería en Biotecnología</h2>
-                    <p class="hero-subtitle">Material de estudio abierto, colaborativo y en constante mejora</p>
-                    <p>Este proyecto busca recopilar lo aprendido durante las asignaturas de la carrera y compartir resúmenes de tales, esto con el objetivo de crear recursos accesibles para alumnos y docentes. 
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Resúmenes para Ingeniería en Biotecnología</h2>
+                    <p class="hero__subtitle">Este proyecto busca recopilar lo aprendido durante las asignaturas de la carrera y compartir resúmenes de tales, esto con el objetivo de crear recursos accesibles para alumnos y docentes. 
                        Todo el contenido está disponible para su descarga gratuita y toda persona puede colaborar en hacer de estos recursos fuentes más sólidas y confiables de información.</p>
                 </div>
             </div>
         </section>
 
-    </main>
-
-
         <!-- Sección de cómo ayudar / retroalimentación -->
-
-        <section id="como-ayudar" class="como-ayudar">
-
+        <section id="como-ayudar" class="section section-light">
             <div class="container">
-
-                <h2 class="section-title">💬 ¿Cómo puedes ayudar a mejorar estos resúmenes?</h2>
-                <p class="section-subtitle">Tus comentarios, correcciones y sugerencias son bienvenidos con mucho aprecio, y existen varios medios por los cuales puedes aportar, elige el que te sea más cómodo.</p>
+                <div class="section-header">
+                    <h2 class="section-header__title">💬 ¿Cómo puedes ayudar a mejorar estos resúmenes?</h2>
+                    <p class="section-header__subtitle">Tus comentarios, correcciones y sugerencias son bienvenidos con mucho aprecio, y existen varios medios por los cuales puedes aportar, elige el que te sea más cómodo.</p>
+                </div>
                 
-                <div class="feedback-grid">
+                <div class="grid grid--auto-fit">
                     
                     <!-- Opción 1: Formulario (recomendada) -->
-
-                    <div class="feedback-card">
-                        <div class="feedback-icon">
+                    <article class="card card--gray">
+                        <div class="card__icon">
                             <i class="fas fa-edit"></i>
                         </div>
-                        <h3>Formulario</h3>
-                        <p>Puedes enviar correcciones, sugerencias o incluso archivos a través del siguiente formulario.</p>
-                        <a href="colaborar-forms.html" class="btn-feedback" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Formulario
-                        </a>
-                    </div>
+                        <h3 class="card__title">Formulario</h3>
+                        <p class="card__text">Puedes enviar correcciones, sugerencias o incluso archivos a través del siguiente formulario.</p>
+                        <div class="card__footer card__footer--center">
+                            <a href="colaborar-forms.html" class="btn btn--primary btn--small" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Formulario
+                            </a>
+                        </div>
+                    </article>
                     
                     <!-- Opción 2: Comentarios en PDF -->
-
-                    <div class="feedback-card">
-                        <div class="feedback-icon">
+                    <article class="card card--gray">
+                        <div class="card__icon">
                             <i class="fas fa-file-pdf"></i>
                         </div>
-                        <h3>PDF's</h3>
-                        <p>Abre cualquier PDF en Drive, selecciona el texto y añade comentarios sobre errores u opiniones de mejora.</p>
-                        <a href="https://drive.google.com/drive/folders/1uYE6OvEd7-QGwPohmHd9Ug2Bxie1C27e?usp=drive_link" class="btn-feedback" target="_blank">
-                        	<i class="fas fa-external-link-alt"></i> Drive
-                        </a>
-                    </div>
+                        <h3 class="card__title">PDF's</h3>
+                        <p class="card__text">Abre cualquier PDF en Drive, selecciona el texto y añade comentarios sobre errores u opiniones de mejora.</p>
+                        <div class="card__footer card__footer--center">
+                            <a href="https://drive.google.com/drive/folders/1uYE6OvEd7-QGwPohmHd9Ug2Bxie1C27e?usp=drive_link" class="btn btn--primary btn--small" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Drive
+                            </a>
+                        </div>
+                    </article>
                     
                     <!-- Opción 3: Correo electrónico -->
-
-                    <div class="feedback-card">
-                        <div class="feedback-icon">
+                    <article class="card card--gray">
+                        <div class="card__icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h3>e-Mail</h3>
-                        <p>También puedes enviarme opiniones, correciones o información que quieras que se añada a los resúmenes directamente a mi correo.</p>
-                        <a href="mailto:davidvazquez3939@gmail.com" class="btn-feedback" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Enviar correo
-                        </a>
-                    </div>
+                        <h3 class="card__title">e-Mail</h3>
+                        <p class="card__text">También puedes enviarme opiniones, correciones o información que quieras que se añada a los resúmenes directamente a mi correo.</p>
+                        <div class="card__footer card__footer--center">
+                            <a href="mailto:davidvazquez3939@gmail.com" class="btn btn--primary btn--small" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Enviar correo
+                            </a>
+                        </div>
+                    </article>
                     
                     <!-- Opción 4: GitHub (avanzado) -->
-
-                    <div class="feedback-card">
-                        <div class="feedback-icon">
+                    <article class="card card--gray">
+                        <div class="card__icon">
                             <i class="fa-brands fa-github"></i>
                         </div>
-                        <h3>GitHub</h3>
-                        <p>Si tienes una cuenta de GitHub y conocimiento sobre LaTeX, puedes reportar errores (Issues) o directamente proponer cambios en los archivos (Pull Requests).</p>
-                        <div class="feedback-buttons">
-                            <a href="https://github.com/DarahRaccoon/Summaries" class="btn-feedback small" target="_blank">
-                                <i class="fas fa-code-branch"></i> Repo</a>
-                            <a href="https://github.com/DarahRaccoon/Summaries/issues" class="btn-feedback small" target="_blank">
-                                <i class="fas fa-bug"></i> Issues</a>
+                        <h3 class="card__title">GitHub</h3>
+                        <p class="card__text">Si tienes una cuenta de GitHub y conocimiento sobre LaTeX, puedes reportar errores (Issues) o directamente proponer cambios en los archivos (Pull Requests).</p>
+                        <div class="btn-group btn-group--center" style="margin-top: 1rem;">
+                            <a href="https://github.com/DarahRaccoon/Summaries" class="btn btn--outline btn--smaller" target="_blank">
+                                <i class="fas fa-code-branch"></i> Repo
+                            </a>
+                            <a href="https://github.com/DarahRaccoon/Summaries/issues" class="btn btn--outline btn--smaller" target="_blank">
+                                <i class="fas fa-bug"></i> Issues
+                            </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <!-- Nota sobre asesoría -->
-
-                <div class="asesoria-box">
-                    <i class="fas fa-question-circle fa-2x"></i>
+                <div class="featured-box" style="margin-top: 3rem;">
+                    <div class="featured-box__icon">
+                        <i class="fas fa-question-circle fa-2x"></i>
+                    </div>
                     <div>
-                        <h4>¿Necesitas ayuda con GitHub o LaTeX?</h4>
+                        <h4 class="featured-box__title">¿Necesitas ayuda con GitHub o LaTeX?</h4>
                         <p>Si te interesa contribuir de manera más directa en la mejora de estos resúmenes pero no estás familiarizado con GitHub y/o LaTeX, escríbeme sin problema, te puedo enviar materiales de apoyo y/o dar alguna asesoría en el uso de estas herramientas, las cuales incluso son de utilidad en ámbitos más allá de este proyecto.</p>
+                        <a href="mailto:davidvazquez3939@gmail.com" class="featured-box__link">Solicitar información</a>
                     </div>
                 </div>
-            
             </div>
         </section>
 
         <!-- Sección de contacto / redes -->
-
-        <section id="contacto" class="contacto">
+        <section id="contacto" class="section section-gray">
             <div class="container">
-                <h2 class="section-title">Contacto</h2>
-                <div class="contacto-content">
-                    <p>En caso de tener alguna duda o sugerencia, puedes contactarme mediante los siguientes medios:</p>
-                    <div class="contacto-links">
-                        <a href="mailto:davidvazquez3939@gmail.com" class="contacto-item">
-                            <i class="fas fa-envelope"></i> Correo electrónico</a>
-                        <a href="https://github.com/DarahRaccoon" class="contacto-item" target="_blank">
-                            <i class="fab fa-github"></i> GitHub</a>
-                    </div>
+                <div class="section-header">
+                    <h2 class="section-header__title">Contacto</h2>
+                    <p class="section-header__subtitle">En caso de tener alguna duda o sugerencia, puedes contactarme mediante los siguientes medios:</p>
+                </div>
+                
+                <div class="contact-list">
+                    <a href="mailto:davidvazquez3939@gmail.com" class="contact-list__item">
+                        <i class="fas fa-envelope"></i> Correo electrónico
+                    </a>
+                    <a href="https://github.com/DarahRaccoon" class="contact-list__item" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Pie de página -->
-
-        <footer>
-            <div class="container footer-container">
-                <div class="footer-info">
-                    <p>© 2024 Vazquez Bernal David Ernesto · Estudiante de Biotecnología</p>
-                    <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank">GitHub</a></p>
-                </div>
-                <div class="footer-licence">
-                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-                        <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
-                </div>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p>© 2024 Vazquez Bernal David Ernesto · Estudiante de Biotecnología</p>
+                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank" class="footer__link">GitHub</a></p>
             </div>
-        </footer>
+            <div class="footer__license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

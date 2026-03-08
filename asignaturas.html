@@ -1,327 +1,256 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resúmenes de apoyo para Ingeniería en Biotecnología (UPSIN)</title>
+    <title>Asignaturas - Bio_Archive</title>
     
     <!-- Metaetiquetas para SEO y presentación en redes -->
-    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología. Recurso abierto para estudiantes y docentes bajo licencia CC BY-SA 4.0.">
+    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología.">
     <meta property="og:title" content="Repositorio de recursos para Ingeniería en Biotecnología">
     <meta property="og:description" content="Material de estudio colaborativo y de acceso abierto">
-    <meta property="og:type" content="website">
     
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon (opcional, puedes generar uno en https://favicon.io) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
     <!-- Encabezado con navegación -->
-
-    <header>
-        <div class="container header-container">
+    <header class="header">
+        <div class="container header__container">
             <div class="logo">
-                <h1>🧬 <span class="logo-text">Bio_Archive</span></h1>
+                <h1>🧬 <span class="logo__text">Bio_Archive</span></h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Volver al inicio</a></li>
-                    <li><a href="asignaturas.html">Asignaturas</a></li>
-                    <li><a href="colaborar.html">Colaborar</a></li>
-                    <li><a href="recursos-externos.html">Recursos externos</a></li>
-                    <li><a href="licencia.html">Licencia</a></li>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Volver al inicio</a></li>
+                    <li><a href="asignaturas.html" class="nav__link">Asignaturas</a></li>
+                    <li><a href="colaborar.html" class="nav__link">Colaborar</a></li>
+                    <li><a href="recursos-externos.html" class="nav__link">Recursos externos</a></li>
+                    <li><a href="licencia.html" class="nav__link">Licencia</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-
         <!-- Sección de inicio con presentación -->
         <section id="inicio" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Resúmenes para Ingeniería en Biotecnología</h2>
-                    <p class="hero-subtitle">Material de estudio abierto, colaborativo y en constante mejora</p>
-                    <p>Este proyecto busca recopilar lo aprendido durante las asignaturas de la carrera y compartir resúmenes de tales, esto con el objetivo de crear recursos accesibles para alumnos y docentes. 
-                       Todo el contenido está disponible para su descarga gratuita y toda persona puede colaborar en hacer de estos recursos fuentes más sólidas y confiables de información.</p>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Recursos por asignatura</h2>
+                    <p class="hero__subtitle">Aquí puedes encontrar material de apoyo dividido por cada asignatura del plan de estudios.</p>
                 </div>
             </div>
         </section>
 
-    </main>
-
-
         <!-- Sección de resúmenes disponibles -->
-
-        <section id="resumenes" class="resumenes">
-
+        <section id="resumenes" class="section section-light">
             <div class="container">
-                <h2 class="section-title">📚 Resúmenes disponibles</h2>
-                <p class="section-subtitle">Puedes acceder a los resúmenes por medio del Drive a continuación o revisando individualmente cada tarjeta de la página.</p>
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fa-solid fa-book-open"></i> Asignaturas disponibles</h2>
+                    <p class="section-header__subtitle">Puedes acceder a los recursos completos en las siguientes tarjetas o revisar unicamente los resúmenes de asignatura por medio del enlace de Drive a continuación.</p>
+                </div>
 
                 <!-- Enlace directo a la carpeta principal de Drive -->
-
-                <div class="drive-link">
-                    <a href="https://drive.google.com/drive/folders/1uYE6OvEd7-QGwPohmHd9Ug2Bxie1C27e?usp=drive_link" class="btn btn-outline" target="_blank">
-                        <i class="fab fa-google-drive"></i> Acceder a la carpeta de Google Drive
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <a href="https://drive.google.com/drive/folders/1uYE6OvEd7-QGwPohmHd9Ug2Bxie1C27e?usp=drive_link" class="btn btn--outline" target="_blank">
+                        <i class="fab fa-google-drive"></i> Acceder a Google Drive
                     </a>
                 </div>
                 
                 <!-- Tarjetas de asignaturas -->
-
-                <div class="cards-grid">
+                <div class="grid grid--auto-fit">
                 
-					<!-- 1 - Química inorgánica -->
-                    <div class="card">
-                        <div class="card-icon">
+                    <!-- 1 - Química inorgánica -->
+                    <article class="card">
+                        <div class="card__icon">
                             <i class="fa-solid fa-atom"></i>
                         </div>
-                        <h3>Química inorgánica</h3>
-                        <p class="card-version">Cuatrimestre: 1</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">2 Partes - 10 Capítulos</span>
-                            <a href="./Resúmenes/1-Química_inorgánica/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
+                        <h3 class="card__title">Química inorgánica</h3>
+                        <div class="card__subtitle">Cuatrimestre: 1</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/1-Química_inorgánica/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/1-Química_inorgánica/química_inorgánica.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
                             </a>
                         </div>
-                    </div>
+                    </article>
 
-					<!-- 2 - Física -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
+                    <!-- 1 - Química orgánica -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fa-solid fa-flask"></i>
                         </div>
-                        <h3>Física</h3>
-                        <p class="card-version">Cuatrimestre: 2</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">4 Partes - 21 Capítulos</span>
-                            <a href="./Resúmenes/2-Física/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
+                        <h3 class="card__title">Química orgánica</h3>
+                        <div class="card__subtitle">Cuatrimestre: 1</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/1-Química_orgánica/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/1-Química_orgánica/química_orgánica.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
                             </a>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- 2 - Física -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fa-solid fa-magnet"></i>
+                        </div>
+                        <h3 class="card__title">Física</h3>
+                        <div class="card__subtitle">Cuatrimestre: 2</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/2-Física/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/2-Física/física.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
+                            </a>
+                        </div>
+                    </article>
 
                     <!-- 2 - Química analítica -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fa-solid fa-mortar-pestle"></i>
                         </div>
-                        <h3>Química analítica</h3>
-                        <p class="card-version">Cuatrimestre: 2</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">3 Partes - 10 Capítulos</span>
-                            <a href="./Resúmenes/2-Química_analítica/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
+                        <h3 class="card__title">Química analítica</h3>
+                        <div class="card__subtitle">Cuatrimestre: 2</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/2-Química_analítica/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/2-Química_analítica/química_analítica.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
                             </a>
                         </div>
-                    </div>
+                    </article>
 
-                   	<!-- 3 - Bioquímica -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
+                    <!-- 2 - Biología y fisiología celular -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fa-solid fa-frog"></i>
                         </div>
-                        <h3>Bioquímica</h3>
-                        <p class="card-version">Cuatrimestre: 3</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">3 Partes - 11 Capítulos</span>
-                            <a href="./Resúmenes/3-Bioquímica/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
+                        <h3 class="card__title">Biología y fisiología celular </h3>
+                        <div class="card__subtitle">Cuatrimestre: 2</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/2-Biología_y_fisiología_celular/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/2-Biología_y_fisiología_celular/biología_y_fisiología_celular.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
                             </a>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- 3 - Bioquímica -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="card__title">Bioquímica</h3>
+                        <div class="card__subtitle">Cuatrimestre: 3</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/3-Bioquímica/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/3-Bioquímica/bioquímica.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 3 - Microbiología -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fa-solid fa-bacteria"></i>
+                        </div>
+                        <h3 class="card__title">Microbiología</h3>
+                        <div class="card__subtitle">Cuatrimestre: 3</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/3-Microbiología/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/3-Microbiología/microbiología.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
+                            </a>
+                        </div>
+                    </article>
+
 
                     <!-- 4 - Biología molecular -->
-                    <div class="card">
-                        <div class="card-icon">
+                    <article class="card">
+                        <div class="card__icon">
                             <i class="fas fa-dna"></i>
                         </div>
-                        <h3>Biología molecular</h3>
-                        <p class="card-version">Cuatrimestre: 4</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">4 Partes - 9 Capítulos</span>
-                            <a href="./Resúmenes/4-Biología_molecular/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
+                        <h3 class="card__title">Biología molecular</h3>
+                        <div class="card__subtitle">Cuatrimestre: 4</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/4-Biología_molecular/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/4-Biología_molecular/biología_molecular.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
                             </a>
                         </div>
-                    </div>
+                    </article>
 
-    				<!-- 4 - Tecnología enzimática -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
+                    <!-- 4 - Tecnología enzimática -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fa-solid fa-bolt"></i>
                         </div>
-                        <h3>Tecnología enzimática</h3>
-                        <p class="card-version">Cuatrimestre: 4</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">3 Partes - 10 Capítulos</span>
-                            <a href="./Resúmenes/4-Tecnología enzimática/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
+                        <h3 class="card__title">Tecnología enzimática</h3>
+                        <div class="card__subtitle">Cuatrimestre: 4</div>
+                        <p class="card__text">PROXIMAMENTE</p>
+                        <div class="card__footer">
+                            <a href="asignaturas/4-Tecnología enzimática/0_Main.pdf" class="btn btn--secondary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="asignaturas/4-Tecnología enzimática/tecnología_enzimática.html" class="btn btn--primary" target="_blank">
+                                <i class="fa-solid fa-door-open"></i> Acceder
                             </a>
                         </div>
-                    </div>
-
-                    <!-- 5 - Bioseguridad e higiene 
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <h3>Bioseguridad e higiene</h3>
-                        <p class="card-version">Cuatrimestre: 5</p>
-                        <p class="card-updated">INCOMPLETO</p>
-                        <p class="card-desc"></p>
-                        <div class="card-footer">
-                            <span class="badge">N capítulos</span>
-                            <a href="./Resúmenes/5-Bioseguridad e higiene/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
-                            </a>
-                        </div>
-                    </div> -->
-
-                    <!-- 5 - Fundamentos de bioprocesos -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <h3>Fundamentos de bioprocesos</h3>
-                        <p class="card-version">Cuatrimestre: 5</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">3 Partes - 8 Capítulos</span>
-                            <a href="./Resúmenes/5-Fundamentos de bioprocesos/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 5 - Tópicos de biotecnología -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <h3>Tópicos de biotecnología</h3>
-                        <p class="card-version">Cuatrimestre: 5</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">4 Partes - 9 Capítulos</span>
-                            <a href="./Resúmenes/5-Fundamentos de bioprocesos/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 7 - Diseño de experimentos 
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <h3>Diseño de experimentos</h3>
-                        <p class="card-version">Cuatrimestre: 7</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">N capítulos</span>
-                            <a href="./Resúmenes/7-Diseño de experimentos/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
-                            </a>
-                        </div>
-                    </div> -->
-
-                    <!-- 7 - Habilidades gerenciales 
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <h3>Habilidades gerenciales</h3>
-                        <p class="card-version">Cuatrimestre: 7</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge">N capítulos</span>
-                            <a href="./Resúmenes/7-Habilidades gerenciales/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
-                            </a>
-                        </div>
-                    </div> -->
-
-                    <!-- 8 - Biotecnología ambiental 
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <h3>Biotecnología ambiental</h3>
-                        <p class="card-version">Cuatrimestre: 8</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge"># capítulos</span>
-                            <a href="./Resúmenes/8-Biotecnología ambiental/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
-                            </a>
-                        </div>
-                    </div> -->
+                    </article>
                     
-                    <!-- 8 - Biotecnología en alimentos 
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-virus"></i>
+                    <!-- Tarjeta placeholder para más asignaturas -->
+                    <article class="card card--placeholder">
+                        <div class="card__icon">
+                            <i class="fas fa-hourglass-half"></i>
                         </div>
-                        <h3>Biotecnología en alimentos</h3>
-                        <p class="card-version">Cuatrimestre: 8</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge"># capítulos</span>
-                            <a href="./Resúmenes/8-Biotecnología en alimentos/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
-                            </a>
-                        </div>
-                    </div>-->
-                    
-                    <!-- 9 - Biotecnología médico-farmacéutica 
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <h3>Biotecnología médico-farmacéutica</h3>
-                        <p class="card-version">Cuatrimestre: 9</p>
-                        <p class="card-desc">[DESCRIPTION]</p>
-                        <div class="card-footer">
-                            <span class="badge"># capítulos</span>
-                            <a href="./Resúmenes/9-Biotecnología médico-farmacéutica/0_Main.pdf" class="btn-card" target="_blank">
-                                <i class="fas fa-download"></i> Descargar
-                            </a>
-                        </div> -->
-                        
-                        <!-- Más asignaturas (puedes añadir tantas como necesites) -->
-                    <div class="card card-placeholder">
-                        <h3>Más próximamente</h3>
-                        <p class="card-note">Nuevos manuales se irán agregando con el tiempo. <br>¿Quieres alguna en especial? ¡Házmelo saber!</p>
-                    </div>
+                        <h3 class="card__title">Más próximamente</h3>
+                        <p class="card__text">Nuevos manuales se irán agregando con el tiempo. ¿Quieres alguna en especial? ¡Házmelo saber!</p>
+                    </article>
 
                 </div>
-
             </div>
-
         </section>
+    </main>
 
     <!-- Pie de página -->
-
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-info">
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
                 <p>© 2024 Vazquez Bernal David Ernesto · Estudiante de Biotecnología</p>
-                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank">GitHub</a></p>
+                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank" class="footer__link">GitHub</a></p>
             </div>
-            <div class="footer-licence">
+            <div class="footer__license">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
             </div>
         </div>
     </footer>

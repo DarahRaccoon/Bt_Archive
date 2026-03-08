@@ -1,105 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resúmenes de apoyo para Ingeniería en Biotecnología (UPSIN)</title>
+    <title>Licencia - Bio_Archive</title>
     
-    <!-- Metaetiquetas para SEO y presentación en redes -->
-    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología. Recurso abierto para estudiantes y docentes bajo licencia CC BY-SA 4.0.">
-    <meta property="og:title" content="Repositorio de recursos para Ingeniería en Biotecnología">
-    <meta property="og:description" content="Material de estudio colaborativo y de acceso abierto">
-    <meta property="og:type" content="website">
+    <!-- Metaetiquetas para SEO -->
+    <meta name="description" content="Información sobre la licencia CC BY-SA 4.0 del material de estudio.">
+    <meta property="og:title" content="Licencia - Bio_Archive">
+    <meta property="og:description" content="Material de estudio colaborativo bajo licencia Creative Commons">
     
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon (opcional, puedes generar uno en https://favicon.io) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
     <!-- Encabezado con navegación -->
-
-    <header>
-        <div class="container header-container">
+    <header class="header">
+        <div class="container header__container">
             <div class="logo">
-                <h1>🧬 <span class="logo-text">Bio_Archive</span></h1>
+                <h1>🧬 <span class="logo__text">Bio_Archive</span></h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Volver al inicio</a></li>
-                    <li><a href="asignaturas.html">Asignaturas</a></li>
-                    <li><a href="colaborar.html">Colaborar</a></li>
-                    <li><a href="recursos-externos.html">Recursos externos</a></li>
-                    <li><a href="licencia.html">Licencia</a></li>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Volver al inicio</a></li>
+                    <li><a href="asignaturas.html" class="nav__link">Asignaturas</a></li>
+                    <li><a href="colaborar.html" class="nav__link">Colaborar</a></li>
+                    <li><a href="recursos-externos.html" class="nav__link">Recursos externos</a></li>
+                    <li><a href="licencia.html" class="nav__link">Licencia</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-
         <!-- Sección de inicio con presentación -->
         <section id="inicio" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Resúmenes para Ingeniería en Biotecnología</h2>
-                    <p class="hero-subtitle">Material de estudio abierto, colaborativo y en constante mejora</p>
-                    <p>Este proyecto busca recopilar lo aprendido durante las asignaturas de la carrera y compartir resúmenes de tales, esto con el objetivo de crear recursos accesibles para alumnos y docentes. 
-                       Todo el contenido está disponible para su descarga gratuita y toda persona puede colaborar en hacer de estos recursos fuentes más sólidas y confiables de información.</p>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Licencia</h2>
+                    <p class="hero__subtitle">Uso y distribución del material</p>
+                    <p>Información sobre los términos de uso de los resúmenes y materiales disponibles.</p>
                 </div>
             </div>
         </section>
 
-    </main>
-
         <!-- Sección de licencia -->
-
-        <section id="licencia" class="licencia">
+        <section id="licencia" class="section section-gray">
             <div class="container">
-                <h2 class="section-title">⚖️ Licencia</h2>
-                <div class="licencia-content">
-                    <div class="licencia-icon">
+                <div class="license-content">
+                    <div class="license-content__icon">
                         <i class="fab fa-creative-commons fa-3x"></i>
                         <i class="fab fa-creative-commons-by fa-3x"></i>
                         <i class="fab fa-creative-commons-sa fa-3x"></i>
                     </div>
-                    <div class="licencia-text">
+                    
+                    <div class="section-header">
+                        <h2 class="section-header__title">⚖️ Licencia CC BY-SA 4.0</h2>
+                    </div>
+                    
+                    <div class="license-text">
                         <p>Con objeto de mantener la información de estos resúmenes libre y abierta para todo público, este trabajo está bajo una <strong>licencia CC BY-SA 4.0</strong>.</p>
                         
                         <p><strong>Eres libre de:</strong></p>
                         
-                        <ul>
-                            <li><i class="fas fa-check"></i> <strong>Compartir: </strong> Puedes copiar y redistribuir el material en cualquier medio o formato.</li>
-                            <li><i class="fas fa-check"></i> <strong>Adaptar: </strong>Puedes remezclar y transformar el material de origen, así como construir a partir de este, todo con cualquier propósito, incluso comercial.</li>
+                        <ul class="license-list">
+                            <li class="license-list__item"><i class="fas fa-check"></i> <strong>Compartir:</strong> Puedes copiar y redistribuir el material en cualquier medio o formato.</li>
+                            <li class="license-list__item"><i class="fas fa-check"></i> <strong>Adaptar:</strong> Puedes remezclar y transformar el material de origen, así como construir a partir de este, todo con cualquier propósito, incluso comercial.</li>
                         </ul>
                         
                         <p><strong>Bajo las siguientes condiciones:</strong></p>
 
-                        <ul>
-                            <li><i class="fas fa-asterisk"></i> <strong>Atribución: </strong>Debes reconocer la autoría de forma adecuada.</li>
-                            <li><i class="fas fa-asterisk"></i> <strong>Compartir Igual: </strong>Si remezclas, transformas o creas a partir del material, debes distribuir tu contribución bajo la misma licencia.</li>
+                        <ul class="license-list">
+                            <li class="license-list__item"><i class="fas fa-asterisk"></i> <strong>Atribución:</strong> Debes reconocer la autoría de forma adecuada.</li>
+                            <li class="license-list__item"><i class="fas fa-asterisk"></i> <strong>Compartir Igual:</strong> Si remezclas, transformas o creas a partir del material, debes distribuir tu contribución bajo la misma licencia.</li>
                         </ul>
                         
-                        <p>Más información sobre la licencia CC BY-SA 4.0 en <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Creative Commons</a>.</p>
-                    
+                        <p style="margin-top: 2rem;">Más información sobre la licencia CC BY-SA 4.0 en <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Creative Commons</a>.</p>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
 
     <!-- Pie de página -->
-
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-info">
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
                 <p>© 2024 Vazquez Bernal David Ernesto · Estudiante de Biotecnología</p>
-                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank">GitHub</a></p>
+                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank" class="footer__link">GitHub</a></p>
             </div>
-            <div class="footer-licence">
+            <div class="footer__license">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
             </div>
         </div>
     </footer>

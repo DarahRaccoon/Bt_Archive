@@ -12,26 +12,24 @@
     <meta property="og:type" content="website">
     
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">     <!-- Favicon (opcional, puedes generar uno en https://favicon.io) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
     <!-- Encabezado con navegación -->
-
-    <header>
-        <div class="container header-container">
+    <header class="header">
+        <div class="container header__container">
             <div class="logo">
-                <h1>🧬 <span class="logo-text">Bio_Archive</span></h1>
+                <h1>🧬 <span class="logo__text">Bio_Archive</span></h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="asignaturas.html">Asignaturas</a></li>
-                    <li><a href="recursos-externos.html">Recursos extra</a></li>
-                    <li><a href="colaborar.html">Colaborar</a></li>
-                    <li><a href="#licencia">Licencia</a></li>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li><a href="asignaturas.html" class="nav__link">Asignaturas</a></li>
+                    <li><a href="recursos-externos.html" class="nav__link">Recursos extra</a></li>
+                    <li><a href="colaborar.html" class="nav__link">Colaborar</a></li>
+                    <li><a href="licencia.html" class="nav__link">Licencia</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,27 +38,28 @@
     <main>
         <!-- Sección de inicio con presentación -->
         <section id="inicio" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Resúmenes para Ingeniería en Biotecnología</h2>
-                    <p class="hero-subtitle">Material de estudio abierto, colaborativo y en constante mejora</p>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Resúmenes para Ingeniería en Biotecnología</h2>
+                    <p class="hero__subtitle">Material de estudio abierto, colaborativo y en constante mejora</p>
                     <p>Este proyecto busca recopilar lo aprendido durante las asignaturas de la carrera y compartir resúmenes de tales, esto con el objetivo de crear recursos accesibles para alumnos y docentes. 
                        Todo el contenido está disponible para su descarga gratuita y toda persona puede colaborar en hacer de estos recursos fuentes más sólidas y confiables de información.</p>
                 </div>
             </div>
         </section>
+    </main>
 
     <!-- Pie de página -->
-
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-info">
-                <p>© 2024 Vazquez Bernal David Ernesto · Estudiante de Biotecnología</p>
-                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank">GitHub</a></p>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p>© 2024 - Vazquez Bernal David Ernesto - Estudiante de Biotecnología</p>
+                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank" class="footer__link">GitHub</a></p>
             </div>
-            <div class="footer-licence">
+            <div class="footer__license">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
             </div>
         </div>
     </footer>
