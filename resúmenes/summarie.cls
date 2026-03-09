@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e} 
 \ProvidesClass{Resume}
-\LoadClass[a4paper,11pt]{report}
+\LoadClass[a4paper,10pt]{report}
 
 \RequirePackage[spanish,es-tabla]{babel}
 \RequirePackage{fontspec}
@@ -107,7 +107,7 @@
 }
 
 \newcommand{\definition}[2]{
-    \begin{tcolorbox}[title=\textbf{{#1}}]
+    \begin{tcolorbox}[toptitle=3pt,bottomtitle=3pt,title=\textbf{{#1}},top=5pt,bottom=5pt,arc=1mm]
         {#2}
     \end{tcolorbox}
 }
