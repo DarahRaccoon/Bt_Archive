@@ -40,26 +40,207 @@
             <div class="container hero__container">
                 <div class="hero__content">
                     <h2 class="hero__title">Recursos externos</h2>
-                    <p class="hero__subtitle">COnoce más fuentes de información, recursos complementario y enlaces útiles para aprender de manera más variada sobre los temás de la carrera.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de recursos externos (placeholder) -->
-        <section class="section section-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-header__title">🔗 Enlaces de interés</h2>
-                    <p class="section-header__subtitle">Próximamente encontrarás aquí una selección de recursos externos (videos, simuladores, etc.).</p>
-                </div>
-                
-                <div style="text-align: center; padding: 3rem;">
-                    <i class="fas fa-tools" style="font-size: 4rem; color: var(--color-gray-dark); opacity: 0.5;"></i>
-                    <p style="margin-top: 1rem; color: var(--color-gray-dark);">Esta sección está en construcción</p>
+                    <p class="hero__subtitle">Conoce más fuentes de información, recursos complementario y enlaces útiles para aprender de manera más variada sobre los temás de la carrera.</p>
                 </div>
             </div>
         </section>
     </main>
+
+            <!-- BARRA DE NAVEGACIÓN ENTRE SECCIONES -->
+        <div class="section section-gray" style="padding: 1rem 0;">
+            <div class="container">
+                <div class="index_page">
+                    <a href="#buscadores" class="btn btn--smaller btn--outline"><i class="fa-solid fa-magnifying-glass"></i> Buscadores</a>
+                    <a href="#videos" class="btn btn--smaller btn--outline"><i class="fab fa-youtube"></i> Creadores de contenido</a>
+                    <a href="#bases" class="btn btn--smaller btn--outline"><i class="fa-solid fa-database"></i> Bases de datos</a>
+                    <a href="#simuladores" class="btn btn--smaller btn--outline"><i class="fa-solid fa-gears"></i> Simuladores</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN: BUSCADORES -->
+        <section id="buscadores" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fa-solid fa-magnifying-glass" style="color: var(--color-primary);"></i> Buscadores</h2>
+                    <p class="section-header__subtitle">Los siguientes buscadores son de gran utilidad para buscar fuentes de información de confianza.</p>
+                </div>
+
+                <div class="grid grid--auto-fit">
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/960px-Google_Scholar_logo.svg.png?_=20200110094142">
+                        </div>
+                        <a href="https://scholar.google.com/" target="_blank">
+                            <h3 class="card__title">Google Académico <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">El buscador por defecto para la investigación científica. Ayuda a buscar información acerca de basicamente cualquier tema.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://www.scielo.org/static/scieloorg/images/logo-scielo-portal-no-label.svg">
+                        </div>
+                        <a href="https://www.scielo.org/es/" target="_blank">
+                            <h3 class="card__title">Scielo <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">La mejor para explorar investigaciones latinoamericanas.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/PubMed_logo_blue.svg/1920px-PubMed_logo_blue.svg.png">
+                        </div>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">
+                            <h3 class="card__title">PubMed <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">Excelente para búsquedas relacionadas al área de la salúd humana, como ensayos clínicos, por ejemplo.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA2NyA5MSI+CiAgPHBhdGgKICAgIGZpbGw9IiM5MDAiCiAgICBmaWxsUnVsZT0iZXZlbm9kZCIKICAgIGNsaXBSdWxlPSJldmVub2RkIgogICAgZD0iTTY1Ljc5IDY0LjQ4SDEuNDlWMGg2NC4zek0xNi43NyA1LjE1YTkuNTYgOS41NiAwIDAgMC0zLjk0LS42Yy0zLjUuMzEtNy4xIDIuOTMtNy4yNyA4LjA2LS4xNiA1LjA1IDIuNiA3LjkxIDUuMjIgOC45IDMuMjUgMS4yMiA1LjA5LjUxIDUuMTcuNDguMDctLjAzLjE1IDAgLjIuMDZhLjIuMiAwIDAgMSAuMDIuMjFsLS4wMy4wM2MtLjI4LjMtLjk2IDEuMDQtMS4zNyAxLjU5YTUuMTIgNS4xMiAwIDAgMSAxLjcyLjY4IDEzLjk2IDEzLjk2IDAgMCAxIDMuOTItMy44OSAxNy4zNSAxNy4zNSAwIDAgMSA1LjQtMi4xNWwuMjMtLjA1LS4xOC4xNGE1LjggNS44IDAgMCAwLTEuNDUgMS42OWMtLjUuODgtLjkgMi4xMy0uNzggMi40OWwuMDQuMDRjLjIuMDcuMi4wNy4yNi0uMDRsLjI1LS4zMmMuMTctLjE4LjMxLS4yNy40NS0uMjdoLjAxYy4xMSAwIC4yLjA2LjI3LjExbC4wMS4wMmMuMS4wNy4xLjE5LjA1LjQ2LS4wNy40OS0uMiAxLjM5LjI1IDIuMTIuNjIuOTkgMS4xNyAxLjYyIDEuNDcgMS42OS4wNSAwIC4wOCAwIC4xLS4wMi4wMy0uMDIuMTMtLjE0LjAyLS43LS4xMy0uNi0uNC0yLjY0LS4wOS00LjA4LjQtMS43NyAxLjUyLTMuNDkgMi45NS0zLjQ5aC4xM1YxNi43Yy0uMjggMC0xLjcxLS4xMS0yLjU1LTFhMi40MyAyLjQzIDAgMCAxLS42My0xLjg0QTQuNTkgNC41OSAwIDAgMSAyOCAxMC42OGMuMS0uMS40LS40MS4zLS42LS4wNy0uMTYtLjItLjI0LS4zOS0uMjZhLjkuOSAwIDAgMC0uMDYgMGMtLjY4IDAtMS44OC44OC0yLjI2IDEuNDRhNi42IDYuNiAwIDAgMC0uNzggMS42OC4yMS4yMSAwIDAgMS0uMTEuMTNjLS4xNS4wOC0uNTIuMDItLjc4LS4yOS0uMi0uMjQtLjIyLS42OC0uMjEtLjc4di0uMTRoLS4wMWEuMTUuMTUgMCAwIDAtLjA3LS4wMWMtLjA1IDAtLjE3LjAzLS4yOC4yLS4yNS40Mi0uMDMgMi4zNy43MyAzLjQzbC44OCAxLjIuMDUuMDctLjA4LjAxYy0uNTcuMS0xLjExLjI1LTEuNjMuNDMtLjg3LjMtMS43Ny42OC0yLjY1IDEuMDVoLS4wMmwtLjAxLjAxYTM2LjIgMzYuMiAwIDAgMS0zLjEzIDEuMmMtMi45NC45NC01LjMuODctNi43OS0uMmE3LjQzIDcuNDMgMCAwIDEtMy4xOS02LjQzIDcuMTUgNy4xNSAwIDAgMSAyLTQuNzcgNS4xNSA1LjE1IDAgMCAxIDMuODUtMS41NmMzLjcuMDggNC45NyAyLjQ0IDQuOTQgNC40My0uMDQgMS45LTEuMSAzLjEyLTIuODIgMy4yOGEyLjIgMi4yIDAgMCAxLTIuMy0xLjQ1IDQuNzcgNC43NyAwIDAgMS0uMjEtMS40MWMtLjAxLS4zOS0uMDItLjY5LS4xNy0uODEtLjA2LS4wNS0uMTItLjA3LS4xOC0uMDUtLjE1LjA0LS4zMy4yNC0uNDMuNWE0LjA3IDQuMDcgMCAwIDAgLjA3IDMuMjEgMy41OSAzLjU5IDAgMCAwIDMuNjcgMS44NiA0LjU4IDQuNTggMCAwIDAgMy44NS0yLjg4Yy40NS0xLjA4LjUtMS43MS40Ni0yLjM4di0uMDFhMy4zIDMuMyAwIDAgMC0uMS0uNjZjLS4wMS0uMDUgMC0uMS4wMi0uMTVhLjE4LjE4IDAgMCAxIC4xMy0uMDhjLjA1LS4wMSAxLjI0LS4yMyAxLjk4LTEuMyAxLjM0LTEuOTIuODQtMyAuNjUtMy4yOC0uMTYtLjI0LS4zNC0uMzEtLjM5LS4zLS4wNC4wMy0uMS4yNS0uMTMuMzgtLjEzLjUzLS4zMyAxLjMyLTEuMzQgMS42My0uOS4yOC0xLjUxLS4xNi0yLjMtLjcyaC0uMDFsLS4wMS0uMDFhOS4zMSA5LjMxIDAgMCAwLTEuOTctMS4xNHpNNi45IDI2Ljk1Yy0uMS4yMy0uMjIuNS0uMzUuODdhMTMuMjMgMTMuMjMgMCAwIDAtMS4wNCA1LjMxIDkuMzMgOS4zMyAwIDAgMCAyLjEzIDYuMjggNy4xOCA3LjE4IDAgMCAwIDUuMTIgMi41M2MyLjg1LjEzIDUuMjUtMS42NCA2LjE2LTIuM2E0NS4xOSA0NS4xOSAwIDAgMCA0LTMuNzZsLjA1LS4wNC4wNC4wNWMwIC4wMi44NyAxLjQ0IDEuNzMgMS44NS42Ni4zIDEuNDkuMiAxLjg1LjA3LjEyLS4wNC4xNi0uMDguMTYtLjA5bC0uMTktLjE2YTMuMzggMy4zOCAwIDAgMS0xLjM2LTIuMzNjLS4xMy0xLjMxIDIuNS0yLjUzIDQuNC0yLjg4bC4wNS0xLjg0Yy0uMjUgMC0xLjQuMTItMS42Ni4xOS0zLjM2LjkzLTUuNTIgMi45OS03LjYgNC45OC0yLjIyIDIuMTMtNC4zMiA0LjE0LTcuNTggNC4xNGgtLjA2YTQuODEgNC44MSAwIDAgMS0zLjQ2LTEuNyA3LjAxIDcuMDEgMCAwIDEtMS44NS01LjA2Yy4xNS0yLjAzLjg4LTMuNyAyLjEyLTQuODJhNS4zMiA1LjMyIDAgMCAxIDMuNTgtMS4zOWMuOTYuMDIgMS45NS4zOSAyLjcxIDEuMDIuNi41IDEuMzQgMS4zOCAxLjQxIDIuNzZhMy40MiAzLjQyIDAgMCAxLS45NSAyLjY4IDMuMjggMy4yOCAwIDAgMS0yLjk0LjY4IDMgMyAwIDAgMS0xLjcyLTEuMzRjLS4yNC0uMzgtLjQtLjgzLS41Ni0xLjMtLjA0LS4xLS4xNy0uMjItLjMyLS4yLS4xOC4wMi0uMzEuMjgtLjM0LjY4YTMuOCAzLjggMCAwIDAgMi44MyAzLjc2IDQuNDggNC40OCAwIDAgMCA1LjU0LTIuNjhjLjQxLTEuMTUuNDQtMS44LjQ0LTEuODEgMC0uMDMuMDItLjE1LjEtLjE3LjEtLjAxLjE2LjA4LjIxLjE2LjE2LjI2IDEuMDYuNzkgMS44Mi41OC44My0uMjIgMS4yLS45NCAxLjU1LTEuNjQuMzItLjY1LjYzLTEuMjUgMS4yOS0xLjM2Ljc5LS4xMiAxLjAzIDAgMS4xOC4wNi4xLjA1LjEyLjA2LjI4LS4wNS4xMy0uMS4xMi0uMjMuMDktLjMzLS4xNS0uNDItLjk0LTEuMDMtMi0uOTlhMi40NiAyLjQ2IDAgMCAwLTEuODYuNzRjLS4yNy4yNC0uNTQuNDgtLjk5LjY3LTEuMTQuNS0xLjcuMzQtMS43My4zM2gtLjAzdi0uMDNjLS4wMi0uMDQtMS45Mi00LjA0LTYuMjMtNC4wNGgtLjAzYTYuNTUgNi41NSAwIDAgMC00LjExIDEuMzRjLS4xNS4xLS4xOC4xMy0uMjIuMWE2LjEyIDYuMTIgMCAwIDAtLjUtMS44NCAxLjcgMS43IDAgMCAwLTEuMS0uODJjLjE2LjE2LjQyLjc5LjM1IDEuNmEzLjg3IDMuODcgMCAwIDEtLjQgMS41M3ptMy4yNiAxMC4yYTQuNTYgNC41NiAwIDAgMCAxLjk4IDEuMnMtLjA2LS44OC4xMy0xLjY3YzAgMC0xLjEzLS41MS0xLjgtMS43YTkuNTMgOS41MyAwIDAgMC0uMyAyLjE3em0yLjU1LTguOThhNC45NCA0Ljk0IDAgMCAwLS44MyAxLjk2Yy40NiAxLjM0IDEuMDEgMS44OCAxLjM5IDIuMDVhMTYuOCAxNi44IDAgMCAxIDEuMjQtMy41NCAyLjA4IDIuMDggMCAwIDAtMS44LS40N3ptLTEuNjMgMzAuOTVjLjI3LjI3IDEuNzYtMS4zOSAyLjY1LTMuMjdhOS44OCA5Ljg4IDAgMCAwIC44NS01LjY0IDEyLjc1IDEyLjc1IDAgMCAwLTEuMi0zLjI1IDguMDggOC4wOCAwIDAgMCAyLjk4IDEuMjJjMi4zNy40IDQuNS41IDYuMDkuMTQuNTItLjEyLjkxLS4yNSAxLjItLjM0LjQ3LS4xNi43LS4yMy44MS0uMDUuMjEuMzEtLjY3IDEuMTgtMy41MyAxLjYzLTIuOTkuNDgtNC44LS4yLTQuOC0uMnMuMDMuNjIgMS4wNyAxLjQyYy40My4zNC44LjU2IDEuMTQuNzcuNS4zLjkuNTQgMS4yOCAxLjAxLjMzLjQyLjM1LjgzLjM3IDEuMTIgMCAuMjIuMDIuMzYuMTUuMzguMi4wMy4zLS4yOS40NS0uNzQuMDYtLjIxLjE0LS40Ni4yNC0uNy4zMi0uNzguMDUtMS41My4wNS0xLjUzczEuMDguOTEgMy4xNi43YzEuNDctLjE2IDIuMzMtLjQyIDIuMjQtLjcyLS4wNC0uMTQtLjE4LS4xNS0uNDYtLjE3YTYgNiAwIDAgMS0uNy0uMDhjLS43Ny0uMTMtMS4wNy0uNDYtMS4wNy0uNDZzMS4yNy0uNCAyLjg1LTEuNWMxLjU2LTEuMDggMi41OC0yLjQ1IDIuMzYtMi43OC0uMTctLjI1LS42LS4xLTEuMTQuMDgtLjE3LjA2LS4zNS4xMy0uNTQuMTgtMS4xLjMyLTEuNDkuMy0xLjQ5LjNzLS4xMi0uMTQuMzgtLjczYy4zNC0uNDEuNjgtLjYzLjkxLS43OS4yMy0uMTUuMzgtLjI0LjM3LS40LS4wMi0uMzItMS4wNS0uNjgtMy42Ny41LS45NC40Mi0xLjk1IDEuMDgtMS45NSAxLjA4cy40LTEuMjMuNTYtMi4wOGwuMDUtLjMyYy4xNi0uODcuMzgtMi4xLjExLTIuMi0uMTctLjA2LS4yMiAwLS4zNS4yM2E0LjUgNC41IDAgMCAxLS40Ni42NmwtLjIyLjI1Yy0uMjYuMzItLjM4LjQ2LS41NC40LS4xOS0uMDctLjIyLS4zLS4yNi0uNTdhMy4xIDMuMSAwIDAgMC0uMS0uNDdjLS4xNS0uNDctLjUzLTEuMDktLjY4LTEtLjE1LjA4LS4yNi41Ny0uNCAxLjE3LS4yLjgzLS40NiAxLjg4LS44OSAyLjM0YTIuNCAyLjQgMCAwIDEtLjkxLjU3IDUuMjQgNS4yNCAwIDAgMS0zLjUtLjA1bC0uMDQtLjAxYTQuNzIgNC43MiAwIDAgMS0yLjUyLTEuODdsLS4xLS4xNy0uMDEtLjAxYTYuNzUgNi43NSAwIDAgMS0yLjA2LS42Yy4yMS42Mi41NCAxLjQyLjc4IDIgLjg2IDIuMDYgMi4wNSA1LjU0LjkyIDguMjctMS4zNSAzLjI3LTQuNDcgMy45MS00LjgyIDMuMi0uMS0uMi4xOC0uMzQuNjUtLjU2YTUuODQgNS44NCAwIDAgMCAzLTIuNzVjMS4xLTIuMjIuMjYtNSAuMjYtNXMwIDIuMzktMS43MiA0Yy0xLjQyIDEuMzUtMi40OSAxLjI1LTMuMDYgMS4yLS4yMS0uMDItLjM2LS4wMy0uNDMuMDQtLjMuMjkuMTguNTIuNjYuNzUuMy4xMy44My4yNi44My4yNnMtLjU2LjUyLTEuMzUuOTFsLS4zNC4xN2MtLjUzLjI2LS44Mi40LS44Ni42My0uMDMuMjEgMS4wMiAxLjIzIDIgMS42Ny45OS40NCAyLjIuNTUgMi4yLjU1cy4xLS4wMy0uMjMuNTVsLS4zNS41MmMtLjE5LjI1LS4zLjQtLjIuNTQuMjMuMzUuNS4yOSAxLjktLjYgMS40Mi0uODggMS44My0xLjQ2IDEuODMtMS40NmwtLjE5LjY5Yy0uMDUuMi0uMTMuMzctLjIuNS0uMS4yLS4xNS4zMy0uMDEuNDd6bTE0LjM1IDEuMTVjMi4yOC0uNCA0LjE2LS45NCA2LjU4LTMuMTQgMi42OC0yLjQyIDMuNy01LjkxIDQuMTMtNy43LjYyLTIuNTQuNTctNy4zOC41Ny03LjM4di0yNS4xcy0uMTgtNS40MS4yLTYuNzdhNy4wMyA3LjAzIDAgMCAxIDEuNy0yLjg3QzM5LjcgNi4xOCA0MiA1LjgxIDQyIDUuODFjLjY3LS4xMS44LS40NC43Ni0uNzctLjA3LS40Ny0uNDgtLjUyLS40OC0uNTJMMjUuOTYgNC41cy0uNDIuMDgtLjUuNTVjLS4wNC4zMy4xLjY2Ljc3Ljc3IDAgMCAyLjMuMzcgMy4zOSAxLjVhNyA3IDAgMCAxIDEuNjkgMi44N2MuMzkgMS4zNi4yMSA2Ljc2LjIxIDYuNzZMMzEuMTcgNDJ2Ljg3Yy4wMiAxLjc1LjA2IDUuMTEtLjE0IDYuNDgtLjM2IDIuMy0uOSA0LjI2LTIuMzEgNS43OGE1LjY2IDUuNjYgMCAwIDEtNC42NiAyLjAxYy0xLjkzIDAtMy4yLS41OS00LjU2LTEuNjdhODIuOCA4Mi44IDAgMCAxLTMuOTUtMy41MmwyLjQ5IDguMDhzNC44NC42OSA3LjM5LjI1ek00NC4xOCA0NWMtMS45OC4yMi0zLjM4LTEuMzktMy41OS0zLjA3LS4xLS44OS4xLTEuNzIuNjEtMi40YTMuNDQgMy40NCAwIDAgMSAyLjE3LTEuMzNjLjgtLjEgMS41LjEzIDEuOTIuMzUuMy4xNC41Mi4yNC42Mi4xOS4yLS4xLjItLjMzLjEyLS42MmExLjggMS44IDAgMCAwLS43OC0uOTYgMy4wOCAzLjA4IDAgMCAwLTEuOC0uNDQgNC42NCA0LjY0IDAgMCAwLTMuNSAyLjA4IDEuMSAxLjEgMCAwIDAtLjQzLS41Yy0uNDItLjI4LS44Ni0uMzgtMS0uMjEtLjA4LjA5IDAgLjIuMTIuMzYuMTMuMTcuMzIuNDMuNDUuODNhMy45OCAzLjk4IDAgMCAxIC4wNiAxLjVjLS4wMy42LS4wNyAxLjQuMDggMi4wNWE0Ljk5IDQuOTkgMCAwIDAgNC43MiAzLjg4Yy4zIDAgLjU4LS4wMy44Ni0uMWE0Ljc1IDQuNzUgMCAwIDAgMi40Ny0xLjZsLjEzLjExLjAyLjAyYy40Mi4zNSAxLjI4IDEuMDcgMS45NCAxLjQzLjE2LS41OS4yOS0xLjQzLjI4LTEuODctLjE2LS4xLTEuMi0uODItMi42NC0yLjMzYTc3Ljg2IDc3Ljg2IDAgMCAxLTEuNTktMS42OSAzLjM1IDMuMzUgMCAwIDAtMS44Mi0uODVjLS43NC0uMDMtLjk4LjE1LTEgLjE2bC4yMi4zYTE5LjMgMTkuMyAwIDAgMCAzLjEyIDMuNjRsLjExLjE0YTMgMyAwIDAgMS0xLjg3Ljkzem0tNS4xNi0yMi4wNHMtLjE1IDEuMi4yMiAzLjczYy4yIDEuMzcuNTMgMi42NS43IDMuMjNsMS43OC0uODMtLjA2LS4yYTE4LjggMTguOCAwIDAgMS0uNi0yLjUyYy0uMjQtMS41Ny0uMTgtMS45LS4xOC0xLjlhNy4xNyA3LjE3IDAgMCAwLTEuODYtMS41MXptLS40Ny0xLjhzMS4wMy4zMiAyLjMgMS41Yy43NC42OCAxLjQ5IDEuNDcgMi4wNSAyLjExbC4zNC0yLjI0YTE3LjMgMTcuMyAwIDAgMC0xLjg4LTEuODYgMTYuNjYgMTYuNjYgMCAwIDAtMi44MS0xLjcxem0yMi42OCAzNWE1LjEzIDUuMTMgMCAwIDAgMC0yLjljLS4xOC0uNjQtLjc2LTIuMS0yLjg2LTMuNDYtMS4wNi0uNjgtMi4yNS0xLjA3LTIuNzEtMS4yM2wtLjE4LS4wNmMuMzMtLjc1LjgzLTEuMDUgMS4wOC0xLjIuMS0uMDUuMTUtLjA4LjE2LS4xMS4wMi0uMTEtLjY3LS40MS0xLjI3LS4yNy0uNS4xMi0xLjA0LjYyLTEuMjMuOTJsLS4xLjM1Yy0uMDYuMjQtLjE1LjU3LS4zNSAxLjE2bC41Ny4yNmMuNjkuMyAxLjYzLjczIDIuMTYuOTkgMi4wNiAxIDIuOTIgMi4xNCAzLjMgMy4zOS4xOC42Mi4xIDEuMjItLjA0IDEuNzMtLjQ3IDEuNjktMS45NiAyLjc1LTMuMzggMi40LS45Ni0uMjItMS42OC0uNzItMi4wMy0xLjM4YTIuMzIgMi4zMiAwIDAgMS0uMDgtMS44NWMuMTgtLjUuNDktLjcyLjcxLS44MS4zMi0uMTMuNjctLjExLjk4LjA1LjYuMzMuNjMuNzkuNjQgMS4xMi4wMS4yLjAyLjM1LjE2LjQuMS4wNC4yMy4wMi4zNS0uMDYuMjQtLjE2LjQtLjU1LjQ0LTEuMDMuMDUtLjU5LS4zLTEuNDMtMS40LTEuODktMS4xLS40NS0yLjUzLjE4LTMuMDggMS4zNmE0LjQ4IDQuNDggMCAwIDAtLjA5IDMuNTVjLS4wNy4wNy0uMjkuMy0uNDkuNjYtLjMxLjU4LS4zMiAxLjA5LS4yNCAxLjI4LjAxLjA0LjA0LjA3LjA3LjA4LjA3LjAyLjE0LS4wNS4yNi0uMTcuMTMtLjEzLjMxLS4zMS41Ny0uNDYuNS0uMjcgMS0uMiAxLjA2LS4xOC44OC41NiAxLjcyLjk0IDIuNy45NC40IDAgLjgzLS4wNiAxLjI4LS4yIDEuNDgtLjQ0IDIuNTUtMS42NSAzLjA0LTMuMzh6bS0yLjQ3LTguODdjMS4xNy0uMTYgMi41Ni0xLjIgMi45Ny0zLjY1YTQuNjYgNC42NiAwIDAgMC0uOC0zLjM3IDMuOTUgMy45NSAwIDAgMC0yLjQ0LTEuNjNoLS4wMmMtMS4zNC0uMzMtMy4yOS0uMTYtNS41MyAyLjMyLS4wNy4wNy0uMzIuNDMtLjQ3LjczbC0uMTktLjZhMjYuNjYgMjYuNjYgMCAwIDAtMy45OS03LjA1Yy0uNS0uNjQtLjkyLTEuMi0xLjI4LTEuOS0uNjgtMS4zMi0uODItMy41My0uNTctMy45My4wMy0uMDUuMDYtLjA3LjA5LS4wNi4zLjAzLjM0LjI4LjQ0LjguMTIuNi4zIDEuNSAxLjAyIDIuNzNhMTEuMSAxMS4xIDAgMCAwIDEuNTcgMi4wOGMuMzguNDIuNzcuODUgMS4yNyAxLjU5YTEyLjA5IDEyLjA5IDAgMCAxIDEuMzggMi4zOWwuMDguMi0uMDMtLjIxYzAtLjAzLS40Ni0zLjEtLjAxLTYuMjcuMjMtMS42Ni43OC0zIDEuMTQtMy44OWwuMDEtLjAxYy4yNy0uNjUuNDMtMS4wNC4zMy0xLjJhLjI4LjI4IDAgMCAwLS4yLS4xNGgtLjAyYy0uMjggMC0uNjguNDUtMS4xOCAxLjAxbC0uMDMuMDQtLjQ1LjVjLS44Ljg0LTEuMzUgMS44LTEuNDIgMS45My0uMTQtLjAzLTEuMjgtLjM2LTEuNC0yLjgtLjA4LTEuNjcuMDctMi41Ny4yLTMuMzYuMDctLjM4LjEzLS43NS4xNi0xLjE2IDAtLjE1LS4wMi0uMjMtLjEtLjI1LS4yOC0uMDktMS4xLjk3LTEuNTIgMS44NS0uMjYuNTMtLjMzLjk2LS4zOCAxLjI3LS4wNC4yNC0uMDYuNC0uMTUuNDUtLjAzIDAtLjA2IDAtLjEtLjAzLS4yNS0uMTUtLjY3LS44OC0uNzgtMi4xOGExMS4zIDExLjMgMCAwIDEtLjAzLTEuMTZ2LS4wMWMwLS41MyAwLS44OS0uMTctMWEuMjguMjggMCAwIDAtLjI4LjAyYy0uMjcuMTUtLjU1LjY0LS43OSAxLjMzYTExLjYgMTEuNiAwIDAgMC0uNTQgMi44OCAyNy42IDI3LjYgMCAwIDAgMCA0LjZjLS4xNSAwLTEgLjA1LTIuMDcuNC0xLjA2LjM1LTIuOTkgMS4yLTIuODkgMS42Ny4wNS4yNC40Mi4xOC45LjEuMy0uMDQuNjUtLjEuOTUtLjA3LjU5LjA0IDEuMjEuMzQgMS4zNy40Mi0uMTYuMDgtLjc5LjQ0LTEuNzMgMS4zNC0uNzQuNy0xLjU4IDEuNS0xLjE2IDIuMDkuMTMuMTguNDUuMDQuOTMtLjE4YTUuNDIgNS40MiAwIDAgMSA0LjUyLS4zNmMyLjI3Ljg3IDMuNjQgMi4yMSA0LjkgNC45NS4zMS43My41NiAxLjYxLjc0IDIuNThoLjAxYy40NSAyLjQ3LS4wNiA1LjU1LTIuMzQgOC4zNWExNy42MiAxNy42MiAwIDAgMS0yLjgzIDIuOWMtMi45NSAyLjQ3LTQuNjYgMi44Ny00LjggMi41Mi0uMDctLjE1LjUyLS41NyAxLjM2LTEuMTVhMzQuNjMgMzQuNjMgMCAwIDAgNi4zOC01Ljcycy0yLjU4IDEuODgtNC45MiAxLjY3YTQuMDMgNC4wMyAwIDAgMS0yLjA2LS45N2MtLjE4LS4xNC0uMjktLjIzLS4zMi0uMi0uMy4zNS4xNCAxLjIuMzEgMS41NWwuMDIuMDRjLjE2LjMxLjUuNjMuNS42M3MtLjEuMTgtLjkuMmMtLjQ2IDAtLjcxLS4xNy0uODYtLjI3LS4wNy0uMDYtLjEyLS4xLS4xNS0uMDYtLjE2LjEzLS4wNS42Ny41IDEuMi41My41MiAxLjA0LjcgMS4wNC43cy0uOC4yOS0yLjA1LjI5YTYgNiAwIDAgMS0xLjMzLS4xOWMtLjQzLS4xLS43Ni0uMTYtLjg2LS4wNS0uMjkuMy4wNC42LjQuOTMuMTEuMDkuMjIuMTguMzEuMjguNDUuNDYuNy40Ni43LjQ2cy0uMTIuNTMtMS40NC43NGE0Ljc3IDQuNzcgMCAwIDEtMS45Mi0uMTZjLS40Ni0uMS0uNzctLjE4LS44My4wNS0uMTMuNTUgMS41NSAxLjk2IDMuNTUgMi4xNCAxLjk2LjE4IDMuNjUtLjczIDMuNjUtLjczcy0uMDIuNDMtLjg3IDEuNGMtLjQ0LjQ5LS43Ni43MS0uOTQuODQtLjE3LjEyLS4yMy4xNi0uMTYuMjYuMy40MiAxLjU4LjIxIDUuOTItMy43NmwuMDEuMjdjLjI1IDQuMDcgNC4yOCAzLjEzIDQuMjYgMi44OC0uMDEtLjEtLjE3LS4xNC0uNC0uMmEzLjEgMy4xIDAgMCAxLTEtLjQ1Yy0uODUtLjYyLS43Mi0uOTUtLjcyLS45NXMuMTkuMTcuNy4yYy41LjA0LjguMDIuOC0uMTcuMDEtLjA0LS4wOC0uMDgtLjIyLS4xNC0uNC0uMTctMS4yNC0uNTEtMS41Mi0xLjU4YTIuNCAyLjQgMCAwIDEgLjUzLTIuMDljMy42MS00LjUgNC4xOC03LjA1IDQuNDUtOC43OHYtLjA5Yy4wNy0uNS4zLTIuMjUgMS4wOS0zLjQybC4wMS0uMDIuMDItLjAyYTQuMzggNC4zOCAwIDAgMSAzLjM4LTIuMjEuNzcuNzcgMCAwIDAgLjA3IDBoLjA1YzEuMjIuMTMgMS42NC42NSAxLjkzIDEuMjIuNC43Ni4zIDEuNzEtLjIgMi41Mi0uMS4xNS0uMjUuMjktLjM4LjQtLjE3LjE1LS4zLjI2LS4yNy4zOC4wMi4xLjA4LjE5LjE4LjI0LjE1LjA3LjM3LjA1LjYtLjA2bC4wNy0uMDRjLjE4LS4xLjMzLS4xNy4zOS0uMTQuMDIuMDEuMDMuMDMuMDMuMDYuMDQuMjYuMS42Mi0uOSAxLjQxLS4zNC4yNy0uNjYuMzktLjg5LjQ3LS4yLjA3LS4zMi4xMi0uMzYuMjItLjAyLjA0LS4wMi4xLjAxLjE2LjA3LjE2LjM0LjI1LjY4LjI1bC4yOC0uMDF6bTEuNjItMTguMXMuNjItLjA3IDEuMTktLjQ0Yy43Ny0uNSAxLjEyLS45MSAxLTEuMTctLjA0LS4wOC0uNC0uMTItLjgtLjE3LS41MS0uMDYtMS4yMS0uMTQtMS44NS0uMzYtMS4xMy0uNC0yLTEuMTctMi40LTIuMS0uMjYtLjYzLS4zNy0xLjU5LjUzLTIuNjNsLjAyLS4wMS4xNi0uMTVhOS40NyA5LjQ3IDAgMCAwIDMuNjEtNy4zOGMuMTMtMi44LS45Ny00Ljc5LTEuNS01Ljc0di0uMDFhMS44IDEuOCAwIDAgMS0uMjYtLjU1YzAtLjE5LjItLjMxLjQ4LS40OS4zMS0uMi43NC0uNDYgMS4wOC0uOTQuNTUtLjc1LjczLTEuMzYuNjktMS41NWwtLjAyLS4wM2MtLjA0LS4wMi0uMjMuMDctLjQxLjE2aC0uMDJjLS4zLjE1LS43LjM1LTEuMTYuNDYtLjg4LjIyLTIuMTEtLjAzLTMuMy0uM2wtLjI1LS4wNS0uMTYtLjA0YTE5LjA1IDE5LjA1IDAgMCAwLTQuMzYtLjUgMTIuMyAxMi4zIDAgMCAwLTkuMiA0LjA4Yy0yLjc2IDIuOTctMy44NiA3LjUtNC4xIDguNTlsMS43MyAxLjA2LjA0LS4xLjAzLS4xMi0uMDYuMjJjLjE0LS4xMy42Ni0uMzggMS45Mi0uNTRhNS4zIDUuMyAwIDAgMSAxLjg5LS4wMWMuMzQuMDkuNTkuMTUuNjMuMDQuMTctLjQyLS43OS0xLjQtMS42LTEuOGEzLjE4IDMuMTggMCAwIDAtMS45Ni0uMjJjLjYyLTEuNjUgMS40OC0zLjY4IDIuMjktNC43NCAxLjMtMS43MSA0LjE2LTQuNTggOC43OC00LjQgNC44LjE3IDYuOTIgMy45MyA2Ljg3IDcuNThBNy4xIDcuMSAwIDAgMSA1OC40NiAxOWE1LjI4IDUuMjggMCAwIDEtMy42IDIuMTYgNC4zMiA0LjMyIDAgMCAxLTQuNzktMy40NmMtLjI1LTEuNTEtLjAzLTIuOC42Mi0zLjY0YTIuODEgMi44MSAwIDAgMSAyLjItMS4wNyAxLjcgMS43IDAgMCAxIDEuNC41NSAyIDIgMCAwIDEgLjUgMS40N2MtLjA3IDEuMDctLjY1IDEuMzYtMS4wMyAxLjU2LS4yMy4xMS0uMzYuMTgtLjM1LjMyLjAxLjE1LjEuMjguMjMuMzguMzEuMjIuODIuMjQgMS4zOC4wNS42OC0uMjQgMS40Ny0xLjEyIDEuNDItMi44MmEzLjYyIDMuNjIgMCAwIDAtMy4xMy0zLjM2IDUuMzIgNS4zMiAwIDAgMC00LjI2IDEuNy4wNC4wNCAwIDAgMS0uMDYgMCAzLjM2IDMuMzYgMCAwIDAtMS4wNC0uMzRjLS44MS0uMTItMS40LjEyLTEuNTcuM2wtLjA1LjA2YzAgLjA1LjE1LjEyLjI5LjE5LjI0LjExLjU2LjI3Ljg3LjU2YTIuNzYgMi43NiAwIDAgMSAuODIgMS40M2MtLjI3IDIuMS0uMTcgMy45IDEuMjMgNS44IDEuNzMgMi4zNCA0LjE2IDIuMzEgNS4yIDIuMy4yNCAwIC40OC4wMi42LjA1aC4wMmwuMDMuMDFjLjI2LjEuMzQuMzkuMzQuNTMgMCAuMTYtLjA2LjM5LS4zOC42My0uNTUuNDItLjY3LjgzLS41MyAxLjgyLjA3LjUzLjQxIDEuMTQuNzcgMS43OS4zOC42OC43NiAxLjM3Ljg2IDIuMDJhOC42MiA4LjYyIDAgMCAxLS4wMiAzLjM3Yy0uMDQuMjItLjA3LjM3LS4wMy40My4wMy4wNS4wOC4wNy4xNS4wNy4zMiAwIC45Ny0uNSAxLjM5LTEuMTUuMjctLjQyLjI4LTEuMDYuMjgtMS41MiAwLS4zNS4wMS0uNTguMS0uNjZhLjEyLjEyIDAgMCAxIC4xMS0uMDNjMSAuMiAxLjA4IDIuMDUgMS4wMyAyLjc0LS4wMy4zMy0uMTMuNTYtLjIyLjc0LS4xMi4yMy0uMTYuMzQtLjA0LjQ4LjExLjEzLjMzLjA2LjU1IDAgLjEtLjAzLjItLjA2LjMtLjA3LjExIDAgLjIxLjAyLjI3LjEzLjE3LjM1LS4xMy45Ny0uNjUgMS4zNS0uMS4wNy0uMi4xMy0uMjguMi0uNDEuMjctLjc2LjUyLS43Ljc1IDAgMCAuMDMuMDMuMTIuMDUuNC4xIDEuNDcgMCAyLjIyLS43LjkyLS44OCAxLjItMS45IDEuMDQtMy43NGE1LjMzIDUuMzMgMCAwIDAtMS43MS0zLjE2LjA1LjA1IDAgMCAxLS4wMi0uMDVjMC0uMDEuMDItLjAzLjA0LS4wM3pNOS42MyA3Mi43M2E1NC4wOCA1NC4wOCAwIDAgMS00LjU0IDAgLjEuMSAwIDAgMC0uMDYuMDMuMDkuMDkgMCAwIDAtLjAyLjA2di4xMWMwIC4wNS4wMy4wOC4wNy4wOS44My4xMyAxLjM5LjIyIDEuMzkgMi4wN3YxMC42N2MwIDIuMDEtLjk1IDQuMTgtMi41IDQuMTgtLjI3IDAtLjU0LS4wMi0uOC0uMDZhMy44NiAzLjg2IDAgMCAxLTIuMy0xLjggNS45OCA1Ljk4IDAgMCAxLS42NS0xLjI2LjExLjExIDAgMCAwLS4xMy0uMDcuMTIuMTIgMCAwIDAtLjA5LjEzbC4zNiAyLjhjMCAuMDQuMDIuMDguMDUuMWE2LjIgNi4yIDAgMCAwIDIuNDguODcgNi4xNCA2LjE0IDAgMCAwIDEuMTguMDdjMi41NiAwIDQuMjgtMi4xIDQuMjgtNS4yMlY3NS4wOWMwLTEuOC40Mi0xLjg4IDEuMjYtMi4wNmwuMDQtLjAxYS4xLjEgMCAwIDAgLjA3LS4wOXYtLjExYS4wOC4wOCAwIDAgMC0uMDktLjA5ek0xMy4xMiA3NmMwIDIuMTIgMS41OCAzLjIgMy4yNSA0LjM1IDEuODggMS4yOCAzLjgxIDIuNiAzLjgxIDUuNSAwIDIuODctMi4wNiA0Ljg5LTUuMDEgNC44OS0uODcgMC0xLjQ5LS4xNC0yLjAzLS4yNi0uNDUtLjEtLjg4LS4yLTEuNC0uMi0uMTMgMC0uMiAwLS4zMy4wM2EuMS4xIDAgMCAxLS4wOC0uMDIuMDkuMDkgMCAwIDEtLjAyLS4wOGMuMDItLjExLjAyLS40LjAyLS42IDAtLjI2LS4wMi0uNTEtLjA1LS43N2E3LjU4IDcuNTggMCAwIDEtLjA3LS44N2MwLS4yLjAyLS45Mi4zLTEuNTJhLjA4LjA4IDAgMCAxIC4wNy0uMDVoLjEyYS4wOC4wOCAwIDAgMSAuMDkuMDlsLS4wMS4wOGE0LjUgNC41IDAgMCAwLS4wNC41YzAgMS45IDEuODMgMi45IDMuNjQgMi45IDEuNTYgMCAzLjE0LS45NiAzLjE0LTMuMTEgMC0yLjI3LTEuNjUtMy40LTMuNC00LjU5LTEuODMtMS4yNC0zLjcyLTIuNTItMy43Mi01LjIgMC0yLjU1IDEuODQtNC4zMyA0LjQ4LTQuMzMuNzYgMCAxLjM3LjEyIDEuOS4yMmguMDFjLjQzLjA4LjgzLjE2IDEuMjQuMTYuMTQgMCAuMjYgMCAuNC0uMDJhLjEuMSAwIDAgMSAuMDYuMDIuMS4xIDAgMCAxIC4wMy4wNyAyMy43OSAyMy43OSAwIDAgMC0uMDUgMi44NS4wOC4wOCAwIDAgMS0uMDguMWgtLjE0YS4wOC4wOCAwIDAgMS0uMDktLjA3Yy0uMzMtMS43NC0xLjQ1LTIuNjYtMy4yNC0yLjY2LTIuMDcgMC0yLjggMS4zNC0yLjggMi42em0yMS4yNyA1Ljg2YzAtNC40OCAzLjQtOS4xMiA5LjEtOS4xMmE4Ljg1IDguODUgMCAwIDEgOC44NCA5LjA1IDguOSA4LjkgMCAwIDEtOS4wNSA4Ljk1IDguOCA4LjggMCAwIDEtOC45LTguODh6bTguOSA4LjE2YzQuMDcgMCA2LjYtMy4xIDYuNi04LjA5IDAtNi4yNy0zLjU2LTguNS02LjYtOC41LTQuNzUgMC02LjQ0IDQuNS02LjQ0IDguMzYgMCA1LjE1IDIuNCA4LjIzIDYuNDMgOC4yM3ptMTkuMTktNS4yNS0uMDEtLjAxYy0uNjQtMS4yMy0xLjE1LTIuMjItMS41Mi0yLjZhNC43NCA0Ljc0IDAgMCAwIDMuMDgtNC40NWMwLTMuMDItMi4xNi00Ljk3LTUuNS00Ljk3bC0uOTcuMDJoLS4xOWwtMS4yMi4wM2MtMSAwLTEuNDIgMC0yLjItLjA1LS4wMiAwLS4wNCAwLS4wNi4wM2EuMDkuMDkgMCAwIDAtLjAyLjA2di4xMmMwIC4wNC4wMy4wOC4wNy4wOC43Ny4xMyAxLjAzLjQ2IDEuMDMgMi4xNHYxMy4xMWMwIDEuOTYtLjMgMi0xLjA4IDIuMTRhLjA4LjA4IDAgMCAwLS4wNy4wOXYuMTJsLjAzLjA2Yy4wMS4wMi4wMy4wMi4wNi4wMmEzOS40IDM5LjQgMCAwIDEgMy45OCAwYy4wMiAwIC4wNCAwIC4wNi0uMDJhLjA5LjA5IDAgMCAwIC4wMi0uMDZ2LS4xMmEuMDguMDggMCAwIDAtLjA2LS4wOWMtLjc5LS4xMy0xLjA4LS4xOC0xLjA4LTIuMTR2LTUuNTVoMS4zOWMuMjUgMCAuNTYtLjAzLjk0LS4xLjQuNDIuODcgMS4zNyAxLjE1IDEuOTRsLjA1LjEuMS4yMWMyLjcgNS40MyAzIDUuNzYgNS40MiA1Ljg2LjI4IDAgLjM3IDAgLjU4LS4wMy4wNCAwIC4wNy0uMDQuMDctLjA4di0uMTVhLjA4LjA4IDAgMCAwLS4wNS0uMDhjLTEuMzMtLjUtMi44OC0zLjQ2LTQtNS42M3ptLS41My02Ljc0YzAgMS43Mi0uNDMgNC4wMi00LjEgNC4wMmgtMS4wMlY3My43YTUuMjIgNS4yMiAwIDAgMSAxLjU3LS4yM2MyLjE1IDAgMy41NSAxLjggMy41NSA0LjU2em0tMjguMzktNS4yOGMuMDMgMCAuMDUgMCAuMDYuMDNhLjEuMSAwIDAgMSAuMDIuMDggMjcgMjcgMCAwIDAtLjUzIDIuMjJjMCAuMDQtLjA0LjA3LS4wOC4wN2gtLjEzYS4wOC4wOCAwIDAgMS0uMDctLjAzLjA5LjA5IDAgMCAxLS4wMS0uMDhjLjAyLS4wOC4wNC0uMjIuMDQtLjM0IDAtLjY1LS41NC0uODItNC41Ni0uODJWODguM2MwIDEuOTYuMjkgMi4wMSAxLjA4IDIuMTUuMDMgMCAuMDYuMDQuMDYuMDh2LjEyYzAgLjAzIDAgLjA1LS4wMi4wNmEuMDguMDggMCAwIDEtLjA2LjAzIDQwLjUzIDQwLjUzIDAgMCAwLTMuOTggMGMtLjAzIDAtLjA1LS4wMS0uMDYtLjAzYS4wOS4wOSAwIDAgMS0uMDMtLjA2di0uMTJjMC0uMDQuMDMtLjA4LjA3LS4wOC43OC0uMTQgMS4wOC0uMiAxLjA4LTIuMTVWNzMuODdjLTMuNTEgMC00LjU4IDAtNS4yNCAxLjUxYS4wOC4wOCAwIDAgMS0uMDcuMDVIMjFhLjA4LjA4IDAgMCAxLS4wNi0uMDMuMDkuMDkgMCAwIDEtLjAyLS4wN2MuMDktLjQ1LjItLjg4LjMzLTEuMzNsLjMtMS4yYy4wMS0uMDQuMDQtLjA3LjA4LS4wNyA1LjEyLjEzIDEwLjgzLjAzIDExLjkyIDB6IgogIC8+Cjwvc3ZnPgo=">
+                        </div>
+                        <a href="https://www.jstor.org/" target="_blank">
+                            <h3 class="card__title">JSTOR <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">Excelente para búsquedas relacionadas al área de la salúd humana, como ensayos clínicos, por ejemplo.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Logo_for_IEEE_Xplore_Digital_Library.png/250px-Logo_for_IEEE_Xplore_Digital_Library.png">
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">
+                            <h3 class="card__title">IEEE Xplore <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">Enfocada a las áreas de electrónica, puede ser útil para algunos proyectos.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: CREADORES DE CONTENIDO -->
+
+        <section id="videos" class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fab fa-youtube" style="color: var(--color-primary);"></i> Creadores de contenido</h2>
+                    <p class="section-header__subtitle">Aquí se recopilan canales de creadores de contenido que, en general, pueden ser de ayuda para entender mejor algunos temas de la carrera o explorar las aplicaciones de esta.</p>
+                </div>
+
+                <div class="grid grid--auto-fit">
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/557946243_1373096607748111_9188544721260027993_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=yM2qYD7qE-QQ7kNvwEEbswC&_nc_oc=AdmwRemnx3xT2I3bjMMzlJBJm5JoDgeD8RXj55teryV8RdkwCwe1UWTk2-KAwRgY-F5d17bR0GtzGtQ2HCtI8uff&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=03x40KhcZDcE0y3vE5rcjg&_nc_ss=8&oh=00_AfxN04ej8EOQb0u5GeiAiFdZ7fmtoPryRFidHWKl56luHQ&oe=69BD2F1B">
+                        </div>
+                        <a href="https://www.youtube.com/@VeritasiumES" target="_blank">
+                            <h3 class="card__title">Veritasium en español <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__subtitle">Temas: Física, química, biología y más</p>
+                        <p class="card__text">Explora casos interesantes de la historia de la ciencia, nuevas tecnologías, conspiraciones, y más.<br>Los nuevos videos llegan siempre primero a su <strong><a href="https://www.youtube.com/@veritasium" target="_blank">versión original</a></strong> en inglés.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/347131839_811862273875190_2594108768843639897_n.png?_nc_cat=104&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=1iw5NOGEG7oQ7kNvwExfw51&_nc_oc=AdlT8HJ0RWLCwX4QOJb4QqHjbnkAL2B0g9L2OFVgAtoa_lCuXsP1zu2iAwl07da7VdXq2gZCFO8TP6geX9Hac-15&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=exBlu_byGgJfRHWyerZSnQ&_nc_ss=8&oh=00_AfzGzNKnCX1oWBfz1CAIakX0CEGXSmYJ4Jo8gJflIlj1Tw&oe=69BD1B11">
+                        </div>
+                        <a href="https://www.youtube.com/@kurzgesagt_es" target="_blank">
+                            <h3 class="card__title">Kurzgesagt - En Pocas Palabras <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__subtitle">Temas: Biología y sociales</p>
+                        <p class="card__text">Conoce temas interesantes de la ciencia y del mundo que nos rodea con ayuda de hermosas animaciones de patos.<br>Cuenta también con su <strong><a href="https://www.youtube.com/@kurzgesagt" target="_blank">versión original</a></strong> en inglés donde los videos llegan primero.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/424589777_439488885278616_2968982357086835194_n.jpg?stp=c37.201.1429.1429a_dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=WRvCLOZg57wQ7kNvwHxZM1m&_nc_oc=AdkTiXGmNQlNxW2P50Om1RsKozKbW-KSjvuK8XZ7H994s5FnVyHk6myXRqxJAWk8_HjkWq6wVexyT4F63w9zReO1&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=FKS53fcDmPq78AEcPPDN1Q&_nc_ss=8&oh=00_AfzWnU7Bye8Kno2NAVl1qA2iVOpmgg4dcyuo-oEvAcRfBg&oe=69BD0933">
+                        </div>
+                        <a href="https://www.youtube.com/@Lahiperactina" target="_blank">
+                            <h3 class="card__title">La Hiperactina <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__subtitle">Temas: Biomedicina</p>
+                        <p class="card__text">Conoce nuevos conceptos del cuerpo humano, desde enfermedades que lo afectan hasta las terapias que prometen curarlas.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: BASES DE DATOS -->
+        <section id="bases" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fa-solid fa-database" style="color: var(--color-primary);"></i> Bases de datos</h2>
+                    <p class="section-header__subtitle">Los siguientes sitios recopilan grandes volúmenes de relacionados a diferentes disciplinas de biotecnología, los cuales se pueden usar para diferentes tipos de investigaciones.</p>
+                </div>
+
+                <div class="grid grid--auto-fit">
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/US-NLM-NCBI-Logo.svg/960px-US-NLM-NCBI-Logo.svg.png">
+                        </div>
+                        <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">
+                            <h3 class="card__title">National Center for Biotechnology Information (NCBI) <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">Es una de las bases de datos más grandes, y contiene información sobre muchas áreas, desde nucleótidos hasta proteínas y taxonomías.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://cdn.rcsb.org/rcsb-pdb/v2/common/images/rcsb_logo.png">
+                        </div>
+                        <a href="https://www.rcsb.org/" target="_blank">
+                            <h3 class="card__title">Protein Data Bank (PDB) <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">Esta es una base de datos enfocada en proteínas y en sus cadenas de aminoácidos.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://www.expasy.org/img/expasy-homepage.webp">
+                        </div>
+                        <a href="https://www.expasy.org/" target="_blank">
+                            <h3 class="card__title">Expasy <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">Al igual que NCBI, guarda información sobre una gran variedad de áreas.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="https://www.brenda-enzymes.org/images/brenda_logo.svg">
+                        </div>
+                        <a href="https://www.brenda-enzymes.org/" target="_blank">
+                            <h3 class="card__title">BRENDA Enzyme Database <i class="fa-solid fa-up-right-from-square"></i></h3>
+                        </a>
+                        <p class="card__text">Esta base de datos está enfocada en enzimas, y contiene información sobre cómo estas actuan, sobre qué sustratos, de qué organismos se han aislado, entre otras muchas cosas más de estas bio-máquinas.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: SIMULADORES -->
+        <section id="simuladores" class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fa-solid fa-gears" style="color: var(--color-primary);"></i> Simuladores</h2>
+                    <p class="section-header__subtitle">Aquí se recopilan algunos sitios web que alojan simuladores que pueden ser de utilidad para explorar lo aprendido en las asignaturas.</p>
+                </div>
+
+                <div class="grid grid--auto-fit">
+                <div style="text-align: center; padding: 3rem;">
+                    <i class="fas fa-tools" style="font-size: 4rem; color: var(--color-gray-dark); opacity: 0.5;"></i>
+                    <p style="margin-top: 1rem; color: var(--color-gray-dark);">Esta sección está en construcción</p>
+                </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Pie de página -->
     <footer class="footer">
