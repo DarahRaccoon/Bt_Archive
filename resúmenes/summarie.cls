@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e} 
 \ProvidesClass{Resume}
-\LoadClass[a4paper,10pt]{report}
+\LoadClass[a4paper,11pt]{report}
 
 \RequirePackage[spanish,es-tabla]{babel}
 \RequirePackage{fontspec}
