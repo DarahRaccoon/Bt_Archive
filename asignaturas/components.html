@@ -1,0 +1,55 @@
+<!-- components.html -->
+<template id="header-template">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <a href="index.html" class="nav__link">
+                    <h1>🧬 <span class="logo__text">BT_Archive</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="asignaturas.html" class="nav__link">Asignaturas</a></li>
+                    <li><a href="colaborar.html" class="nav__link">Colaborar</a></li>
+                    <li><a href="recursos-externos.html" class="nav__link">Recursos externos</a></li>
+                    <li><a href="licencia.html" class="nav__link">Licencia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</template>
+
+<template id="footer-template">
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p>© 2024 - Vazquez Bernal David Ernesto - Estudiante de Biotecnología</p>
+                <p>Biblioteca de apoyo para Ingeniería en Biotecnología, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank" class="footer__link">GitHub</a></p>
+            </div>
+            <div class="footer__license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</template>
+
+<script>
+    class HeaderComponent extends HTMLElement {
+        connectedCallback() {
+            const template = document.getElementById('header-template');
+            this.appendChild(template.content.cloneNode(true));
+        }
+    }
+    
+    class FooterComponent extends HTMLElement {
+        connectedCallback() {
+            const template = document.getElementById('footer-template');
+            this.appendChild(template.content.cloneNode(true));
+        }
+    }
+    
+    customElements.define('main-header', HeaderComponent);
+    customElements.define('main-footer', FooterComponent);
+</script>
