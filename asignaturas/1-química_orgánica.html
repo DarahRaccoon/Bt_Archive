@@ -243,19 +243,46 @@
         </section>
 
     <!-- Pie de página -->
-    <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__info">
-                <p>© 2024 Vazquez Bernal David Ernesto · Estudiante de Biotecnología</p>
-                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank" class="footer__link">GitHub</a></p>
-            </div>
-            <div class="footer__license">
-                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-                </a>
-            </div>
-        </div>
-    </footer>
+
+    <main-footer></main-footer>
+
+    <script>
+        // Cargar y definir componentes ANTES de que se rendericen
+        (async function loadComponents() {
+            try {
+                const response = await fetch('components.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar components.html`);
+                
+                const html = await response.text();
+                
+                // Crear un contenedor temporal para extraer templates y script
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                // Agregar los templates al body
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                // Ejecutar el script que define los custom elements
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+                // Fallback visual para desarrollo
+                document.body.insertAdjacentHTML('afterbegin', 
+                    '<div style="background:#f8d7da; color:#721c24; padding:1rem; text-align:center;">⚠️ Error al cargar header/footer. Verifica que components.html existe.</div>'
+                );
+            }
+        })();
+    </script>
 
 </body>
 </html>
