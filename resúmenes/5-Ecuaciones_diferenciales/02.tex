@@ -1,0 +1,310 @@
+
+Una ecuación diferencial que es lineal, no homogenea y de orden superior, tiene siempre la siguiente forma general:
+
+\begin{equation*}
+    a_{n}y^{(n)} + a_{n-1}y^{(n-1)}  + \cdots + a_{2}y'' + a_{1}y' + a_{0}y = r(x)
+\end{equation*}
+
+En estas ecuaciones:
+
+\begin{itemize}
+    \item $n$ es el orden de la ecuación. Se denota por la derivada de mayor orden. Puede ser 2,3,4,...
+    \item Los coeficientes $a_{n}x$ puede ser constantes o funciones de x ($f(x)$)
+    \item $r(x)$ es algún término no homogeneo
+\end{itemize}
+
+Para este tipo de ecuaciones, la solución siempre tiene la siguiente forma:
+
+\begin{equation*}
+    y(x) = y_{h}(x) + y_{p}(x)
+\end{equation*}
+
+donde:
+
+\begin{itemize}
+    \item $y_{h}(x)$ es la solución general de la parte homogenea de la ecuación, o sea, la parte izquierda.
+    \item $y_{p}(x)$ es la solución particular de la ecuación completa.
+\end{itemize}
+
+\section{Solución de la parte homogenea}
+ 
+La forma en que se soluciona la parte homogenea depende del tipo de ecuación de la que se trate. Tenemos 3:
+
+\begin{itemize}
+    \item Ecuaciones de segundo orden con coeficientes constantes
+    \item Ecuaciones de tercer orden
+    \item Ecuaciones de Cauchy-Euler
+\end{itemize}
+
+\subsection{Procedimiento para cada tipo de ecuación}
+
+\subsubsection{Ecuaciones de segundo orden con coeficientes constantes}
+
+Las ecuaciones de orden arbitrario con coeficientes constantes tienen la siguiente forma:
+
+\begin{equation*}
+    a_{n}y^{n} + a_{n-1}y^{n-1} + \cdots + a_{2}y'' + a_{1}y' + a_{0}y = 0
+\end{equation*}
+
+Este tipo de ecuaciones se resuelven haciendo uso de la siguiente ecuación auxiliar:
+
+\begin{equation*}
+    a_{n}m^{n} + a_{n-1}m^{n-1} + \cdots + a_{2}m^{2} + a_{1}m^{1} + a_{0} = 0
+\end{equation*}
+
+Después de acomodar en esta ecuación auxiliar nuestra ecuación original debemos factorizarla.
+
+En caso de hacerlo manualmente debemos encontrar que cada $m$ sumada al número que la acompaña sea igual a 0, o ejemplificando:
+
+\begin{align*}
+    (m+1)&(m+2)=0
+    \\
+    \\
+    m_{1}&=-1
+    \\
+    m_{2}&=-2
+\end{align*}
+
+Este proceso es tardado si se realiza de manera manual, sin embargo, se vuelve sencillo si se realiza con una calculadora.
+
+
+Una vez se tengan los valores de $m_{n}$ estos comparan entre sí y, en base a las siguientes reglas, acomodamos sus valores en la fórmula dada:
+
+Valores de $m_{n}$ posibles:
+
+\begin{itemize}
+	\item Reales e iguales
+	    \begin{equation*}
+	        y = e^{mx} \cdot \left[ c_{1} + c_{2}x + c_{3}x^{2} + \cdots + c_{n}x^{n-1} \right]
+	    \end{equation*}
+	
+	\item Reales y diferentes
+	    \begin{equation*}
+	        y = c_{1}e^{m_{1}x} + c_{2}e^{m_{2}x} + \cdots + c_{n}e^{m_{n}x}
+	    \end{equation*}
+	
+	\item Imaginarios
+	    \begin{equation*}
+	        y = e^{\alpha x}x \cdot \left[ A \cos{(\beta x)} + B \sin{(\beta x)} \right]
+	    \end{equation*}
+	
+\end{itemize}
+
+Estas ecuaciones cuentan con la siguiente forma:
+
+\begin{equation}\label{eq:forma_seg}
+    ay'' + by' + cy = 0 \ ; \ \text{Con la condición: } a \neq 0
+\end{equation}
+
+Para resolver estas ecuaciones se utiliza la siguiente ecuación auxiliar:
+
+\begin{equation}\label{eq:aux_seg}
+    a \lambda^{2} + b \lambda + c = 0
+\end{equation}
+
+El procedimiento consiste en unicamente colocar las constantes de la ecuación original a la ecuación auxiliar, por ejemplo:
+
+\begin{align*}
+    2y'' + 4y' + 1 &= 0
+    \\
+    2 \lambda^{2} + 4 \lambda + 1 &= 0
+\end{align*}
+
+Una vez se tiene la ecuación auxiliar con las constantes de la original, se calcula el valor de lambda ($\lambda$). Esto se puede realizar con una calculadora o con la llamada ``ecuación general''.
+
+\begin{equation*}
+    \lambda = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}
+\end{equation*}
+
+Una vez se obtienen los valores de $\lambda$ ($\lambda_{1}$ y $\lambda_{2}$), se compara con la siguiente tabla:
+
+    \input{02_eq_segundo_orden.tex}
+
+\subsubsection{Ecuaciones de tercer orden}
+
+Estas son ecuaciones cuya derivada más grande es una tercera derivada. Estas cuentan con la siguiente fórmula general:
+
+\begin{equation}\label{eq:forma_tercer}
+    a_{3}y''' + a_{2}y'' + a_{1}y' + a_{0}y = 0 \ ; \ \text{Con la condición: } a \neq 0
+\end{equation}
+
+Para resolver estas ecuaciones se tiene la siguiente ecuación auxiliar:
+
+\begin{equation}\label{eq:aux_tercer}
+    a_{3}\lambda^{3} + a_{2}\lambda^{2} + a_{1}\lambda^{1} + a_{0} = 0
+\end{equation}
+
+Tal como en las anteriores ecuaciones, se remplazan las constantes de la ecuación original en la ecuación auxiliar, para luego calcular el valor de $\lambda$. Esto último se realiza más fácilmente con calculadora.
+Ya obtenido el valor de $\lambda$, se compara con la siguiente tabla para obtener la forma de la solución de la parte homogenea:
+
+    \input{02_eq_tercer_orden.tex}
+
+\subsubsection{Ecuaciones de Cauchy-Euler (Segundo orden)}
+
+Por último, están las ecuaciones de Cauchy-Euler que son de segundo orden, las cuales cuentan con la siguiente forma general:
+
+\begin{equation}\label{eq:forma_cauchy}
+    x^{2}y'' + axy' + by = 0 \ ; \ \text{Con la condición: } x > 0
+\end{equation}
+
+Para estas ecuaciones utilizamos la siguiente ecuación auxiliar:
+
+\begin{equation}\label{eq:aux_cauchy}
+    m^{2} + (a-1) \cdot m + b = 0
+\end{equation}
+
+Un apunte importante es que las consantes $a$ y $b$ no son las mismas en ambas ecuaciones, sino que $b$ y $c$ de la original se escriben como $a$ y $b$ en la auxiliar, pero el funcionamiento es igual al de los otros tipos de ecuaciones anteriormente vistos, o ejemplificando:
+
+\begin{align*}
+    1x^{2}y'' + 2xy' + 3y &= 0
+    \\
+    m^{2} + (2-1) \cdot m + 3b &= 0
+\end{align*}
+
+Una vez realizada la fórmula general (a mano o calculadora), se comparan los valores de $m$ con la siguiente tabla:
+
+    \input{02_eq_cauchy_euler.tex}
+
+\subsection{Resumiendo 3 los casos}
+
+\begin{enumerate}
+    \item Se identifica el tipo de ecuación en base a las formas generales (\autoref{eq:forma_seg}, \autoref{eq:forma_tercer}, \autoref{eq:forma_cauchy})
+    \item Se reemplazan las constantes en las ecuaciones auxiliares (\autoref{eq:aux_seg}, \autoref{eq:aux_tercer}, \autoref{eq:aux_cauchy})
+    \item Se calculan los valores de la variable de la ecuación auxiliar ($\lambda$ o $m$)\footnote{Usando calculadora o la ecuación general}
+    \item Se usa una forma de $y_{h}$ en base al tipo de raiz obtenida (\autoref{tab:eq_segundo_orden}, \autoref{tab:eq_tercer_orden}, \autoref{tab:eq_cauchy_euler})
+\end{enumerate}
+
+
+    \newpage % ----------------------------------------------------------------------------------- %
+
+
+\section{Solución de la parte no homogenea}
+
+La parte no homogenea de la ecuación, $r(x)$, puede ser de 3 tipos:
+
+\begin{itemize}
+    \item Polinómicas
+    \item Exponenciales
+    \item Trigonométricas
+\end{itemize}
+
+Al igual que con la parte homogénea, su solución dependerá del tipo de expresión. 
+
+\subsection{Polinómica}
+
+Tenemos una función polinomial cuando tenemos una o varias ``cosas'' (constantes como 3, por ejemplo) con una variable (usualmente $x$) y sin otro tipo de funciones como $\ln$, $\sin$, $e$, entre otros.
+
+\begin{equation}\label{eq:eq_polinomial}
+    r(x) = Ax^{n} + Bx^{n} + \cdots
+\end{equation}
+
+    \input{02_eq_polinomial.tex}
+
+Podemos explicar, de manera simplista, que en estos casos se toma el término de mayor grado, se le coloca $A$, y se comienzan a ordenar el resto de términos en base a su grado, o sea, el exponente de la variable. Conforme se van ordenando se añaden van añadiendo consantes en base a las letras del abecedario ($B,C,D, \cdots$)
+
+Una vez ordenados los términos, estos serán $y_{p}$, sin embargo, necesitamos conocer cuanto valen los coeficientes (A, B, C, ...). Para esto debemos derivar estos términos la cantidad de veces necesarias dependiendo del grado de la ecuación diferencial en la parte homogénea (la parte izquierda) para luego sustituir en esta y despejar las constantes.
+
+Por ejemplo\footnote{Ni idea si está del todo bien, ahí chequen.}:
+
+\begin{align*}
+    \text{Si tenemos:} y'' + 2y' + 3y &= x^{2}
+    \\
+    \text{Ordenamos:} &\longrightarrow Ax^{2} + Bx + C
+    \\
+    y_{p} &= Ax^{2} + Bx + C
+    \\
+    y'_{p} &= 2Ax + B
+    \\
+    y''_{p} &= 2A
+    \\
+    \\
+    1[2A] + 2[2Ax + B] + 3[Ax^{2} + Bx + C] &= 3Ax^{2} + 4Ax + 3Bx + 2A + 2B + 3C
+    \\
+    3Ax^{2} + 4Ax + 3Bx + 2A + 2B + 3C &= x^{2}
+    \\
+    3Ax^{2} = x^{2} &\longrightarrow A = \frac{1}{3}
+    \\
+    4(\frac{1}{3})x + 3Bx = 0x &\longrightarrow B = -\frac{4}{9} 
+    \\
+    2(\frac{1}{3}) + 2(-\frac{4}{9}) + 3C = 0 &\longrightarrow C = \frac{2}{27} 
+\end{align*}
+
+\subsection{Exponencial}
+
+\begin{equation}\label{eq:eq_exponencial}
+    r(x) = Ae^{\alpha x}
+\end{equation}
+
+Si tenemos que nuestra $r(x)$ cuenta con la forma anterior, tenemos que determinar si existe o no multiplicidad de $\alpha$ comparando su valor con los valores de $\lambda$ o $m$ de la parte homogenea:
+
+\begin{itemize}
+    \item Si no coinciden, no hay multiplicidad
+    \item Si coinciden, hay multiplicidad ($z$), y esta es igual a la cantidad de veces que coincidan. 
+\end{itemize}
+
+A partir de esta multiplicidad podemos definir qué forma tendrá nuestra solución particular ($y_{p}$). Esto lo podemos determinar con la siguiente tabla:
+
+    \input{02_eq_exponencial.tex}
+
+\subsection{Trigonométrica}
+
+\begin{equation}\label{eq:eq_trigonométrica}
+    r(x) = A \cos{(\beta x)} + B \sin{(\beta x)}
+\end{equation}
+
+Si nuestra $r(x)$ tiene la forma anterior, debemos comparar si $\beta$ coincide con nuestros valores de $\lambda$ o $m$. A partir de lo obtenido, usamos la siguiente tabla para determinar la forma que tendrá $y_{p}$
+
+    \input{02_eq_trigonométrica.tex}
+
+\subsection{Resumiendo los 3 casos}
+
+\begin{enumerate}
+    \item Se determina el tipo:
+        \begin{itemize}
+            \item Polinomial (\autoref{eq:eq_polinomial})
+            \item Exponencial (\autoref{eq:eq_exponencial})
+            \item Trigonométrica (\autoref{eq:eq_trigonométrica})
+        \end{itemize}
+    \item Se comparan raices ($\alpha$ o $\beta$) entre las partes homogenea y no homogenea ($\lambda$ o $m$)
+    \item Se ordena todo en la forma tentativa correspondiente (\autoref{tab:eq_polinomial}, \autoref{tab:eq_exponencial}, \autoref{tab:eq_trigonométrica})
+\end{enumerate}
+
+\section{Variación de parámetros}\label{sec:variación_de_parámetros}
+
+Dada una ecuación no homogénea de segundo orden como la siguiente podemos utilizar la parte homogénea y para obtener la solución particular ($y_{p}$).
+
+\begin{equation*}
+    y'' + f(x)y + g(x) = r(x)
+\end{equation*}
+
+Para esto nos quedamos con la parte homogénea de segundo orden:
+
+\begin{equation*}
+    y'' + f(x)y + g(x) = 0
+\end{equation*}
+
+Resolviéndola (), debemos de tener una solución general como la siguiente:
+
+\begin{equation*}
+    y_{h} = C_{1}y_{1} + C_{2}y_{2}
+\end{equation*}
+
+De este resultado nos interesa principalmente $y_{1}$ y $y_{2}$, pues se usarán en la siguiente fórmula para obtener $y_{p}$
+
+\begin{equation*}
+    y_{p} = u_{2}y_{1} + u_{2}y_{2}
+\end{equation*}
+
+Estos nuevos términos de $u_{1}$ y $u_{2}$ son obtenidos con las siguientes fórmulas:
+
+\begin{align*}
+    u_{1} &= -\int{\frac{y_{2} \cdot r(x)}{W} \ dx}
+    \\
+    u_{2} &= \int{\frac{y_{1} \cdot r(x)}{W} \ dx}
+\end{align*}
+
+Donde a su vez tenemos un nuevo término llamado Wronskiano, elcual se calcula como un determinante:
+
+\begin{equation*}
+    W= \begin{bmatrix} y_{1} & y_{2} \\ y_{1}' & y_{2}' \\ \end{bmatrix} \quad \longrightarrow \quad W = (y_{1} \cdot y_{2}')-(y_{2} \cdot y_{1}')
+\end{equation*}

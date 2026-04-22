@@ -1,0 +1,36 @@
+\documentclass{../summarie}
+
+\newcommand{\Titulo}{Ecuaciones diferenciales}
+
+\begin{document}
+
+\frontmatter
+
+    \Portada 
+    \tableofcontents
+
+\mainmatter
+
+    \onehalfspacing
+
+% ----------------------------------------------------------------------------------- %
+
+    \chapter{Ecuaciones diferenciales de primer orden} \input{01.tex}
+    \chapter{Ecuaciones diferenciales de orden superior} \input{02.tex}
+    \chapter{Transformada de Laplace} \input{03.tex}
+
+% ----------------------------------------------------------------------------------- %
+
+\backmatter
+
+\appendix
+
+    \chapter{Recopilación de tablas}
+        \input{02_eq_segundo_orden.tex}
+        \input{02_eq_tercer_orden.tex}
+        \input{02_eq_cauchy_euler.tex}
+        \input{02_eq_polinomial.tex}
+        \input{02_eq_exponencial.tex}
+        \input{02_eq_trigonométrica.tex}
+
+\end{document}

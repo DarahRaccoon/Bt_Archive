@@ -1,0 +1,257 @@
+
+Las ecuaciones diferenciales se pueden clasificar de diversas maneras en base a distintas características. 
+
+Por un lado podemos diferenciar entre ecuaciones ordinarias o parciales. Podemos también clasificarlas en base a su orden, donde el orden de una ecuación diferencial dependerá de la derivada de mayor orden en la ecuación:
+
+\begin{align*}
+\text{Primer ordern} &= F(x,y,y')=0
+\\
+\text{Segundo ordern} &= F(x,y',y'')=0
+\\
+\text{Orden n} &= F(x,y', \ ... \ , y^{n})=0
+\end{align*}
+
+Puede tomarse en cuenta también su linealidad, donde en las ecuaciones lineales la variable dependiente $y$ y todas sus derivadas son de primer grado, y cada coeficiente de $y$ y de sus derivadas depende unicamente de $x$. Aquellas que no cumplen con esta característica se consideran no lineales.
+
+\section{Soluciones de ecuaciones diferenciales}
+
+La solución de una ecuación diferencial consiste en una función sin derivadas que al ser reemplazada en la ecuación diferencial, satisface tal ecuación.
+Un ejemplo de solución sería la función $y=e^{-x}+8$  para la ecuación diferencial $y'+e^{-x}=0$, esto porque al sustituirla (derivándola en el proceso) satisface la ecuación
+
+\begin{align*}
+    y &= e^{-x}+8
+    \\
+    y' &= -e^{-x}
+    \\
+    \\
+    (-e^{-x})+e^{-x} &= 0
+    \\
+    0 &= 0
+\end{align*}
+
+Existen 2 tipos de soluciones, la general, que contiene constantes sin definir ($c_{1}, c_{2}, \cdots$); y la particular, la cual contiene constantes con valor específico ($3, \frac{17}{4}, \cdots$). Ambas  deben de satisfacer la ecuación diferencial.
+
+\section{Métodos para resolver ecuaciones diferenciales de primer orden}
+
+Cuando tenemos ecuaciones diferenciales cuyo orden es 1, o sea, que la mayor derivada es la primera derivada ($y'$), podemos usar 3 métodos para resolver tales ecuaciones:
+
+\begin{enumerate}
+    \item Variables separables
+    \item Factor integrante
+    \item Ecuaciones exactas
+\end{enumerate}
+
+\subsection{Variables separables}
+
+Una ecuación diferencial de variables separables tiene la siguiente forma:
+
+\begin{equation*}
+    f(x) \ dx + g(y) \ dy = 0
+\end{equation*}
+
+Aquí cada diferencial tiene como coeficiente una función de su propia variable, o una constante. El mejor método de solución de una ecuación diferencial de primer grado con variables separables es la integración directa.
+
+\begin{equation*}
+    \int{f(x) \ dx} = \int{g(y) \ dy}
+\end{equation*}
+
+En caso de que las variables no puedan separarse y agruparse de esta manera es necesario usar otros métodos.
+
+\subsection{Ecuaciones diferenciales lineales y factor integrante}
+
+La forma general de una ecuación lineal de primer orden es:
+
+\begin{equation}\label{eq:factor_integrante}
+    y' + f(x)y = r(x)
+\end{equation}
+
+En estas ecuaciones podemos tener los siguientes 2 casos, cada uno con métodos diferentes:
+
+\begin{align*}
+    r(x) = 0 \ &\longrightarrow \ \text{Lineal homogénea}
+    \\
+    r(x) \neq 0 \ &\longrightarrow \ \text{Lineal NO homogénea}
+\end{align*}
+
+Por un lado, si $r(x) = 0$ entonces la ecuación se puede resolver mediante el método de variables separables.
+
+Si por otro lado, $r(x) \neq 0$ entonces se puede resolver mediante 2 métodos: factor integrante o variación de parámetros\footnote{Este se ve en la \autoref{sec:variación_de_parámetros}}.
+
+Para aplicar el método de factor integrante primero se ordenan las variables en base a la \autoref{eq:factor_integrante}:
+
+\begin{equation*}
+    y' + f(x)y = r(x)
+\end{equation*}
+
+Luego se identifica en esta ecuación $f(x)$ y se integra:
+
+\begin{equation*}
+    \int{f(x) \ dx}
+\end{equation*}
+
+Una vez obtenida la integral de $f(x)$, unicamente se necesita ordenar en la siguiente ecuación:
+
+\begin{equation*}
+    y=e^{-\int{f(x) \ dx}} \cdot \left[ \int{e^{\int{f(x)}}} \cdot r(x) \right]
+\end{equation*}
+
+\subsection{Método de ecuaciones diferenciales exactas}
+
+El método de ecuaciones exactas se utiliza cuando la ecuación diferencial a resolver cuenta con el siguiente formato:
+
+\begin{equation*}
+    M(x,y) \ dx + N(x,y) \ dy = 0
+\end{equation*}
+
+Además de tener este formato, esta debe cumplir con la siguiente condición:
+
+\begin{equation*}
+    \frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}
+\end{equation*}
+
+De cumplir tal formato y condición, lo primero a realizar es  integrar $M$ respecto a $x$:
+
+\begin{equation}\label{eq:integral_de_M}
+    \int{M \ dx}
+\end{equation}
+
+Luego vamos a ``crear'' la ecuación $g'(y)$ de la siguiente manera
+
+\begin{equation*}
+    g'(y)=N-\frac{\partial}{\partial y}\left[ \int{M \ dx} \right]
+\end{equation*}
+
+Luego debemos integrar $g'(y)$, esto porque la función que nos interesa es $g(y)$ 
+
+\begin{equation}\label{eq:función_g(y)}
+    \int {g'(y) \ dy}
+\end{equation}
+
+Una vez obtenido la integral de $M$ (\autoref{eq:integral_de_M}) y la función $g(y)$ (\autoref{eq:función_g(y)}), estos datos se ordenan de la siguiente manera:
+
+\begin{equation}
+    c=\int{M \ dx} + g(y)
+\end{equation}
+
+\subsubsection{Conversión a exactas}
+
+Algunas ecuaciones diferenciales pueden ser convertidas a ecuaciones exactas que pueden resolverse con el método descrito anteriormente. Para convertirlas es necesario buscar un factor integrante $f(x,y)$, el cual se añade a una ecuación diferencial del tipo $Mdx+Ndy=0$ para convertirla en exacta, esto de la siguiente manera
+
+\begin{equation*}
+    \left[ f(x,y) \cdot M \ dx \right] + \left[ f(x,y) \cdot N \ dy \right] = 0
+\end{equation*}
+
+Para encontrar ese factor integrante realizamos obtenemos $p(x)$ y $p(y)$ de la siguiente manera
+
+\begin{align*}
+    p(x) = \frac{M'_{y}-N'_{x}}{N} \quad ; \quad p(y) = \frac{N'_{x}-M'_{y}}{M}
+\end{align*}
+
+De entre ambos resultados se escogerá aquel cuyo resultado tenga unicamente la variable de interés, para luego integrarlo
+
+\begin{equation*}
+    \int{p(x) \ dx}
+\end{equation*}
+
+Se multiplica este factor integrante por $M$ y $N$ 
+
+\begin{equation*}
+    \left[ \int{p(x) \ dx} \cdot M \ dx \right] + \left[ \int{p(x) \ dx} \cdot N \ dx \right] = 0
+\end{equation*}
+
+Con esto la ecuación se abría convertido a una ecuacińo exacta que puede ser resuelta siguiente los pasos desde la \autoref{eq:integral_de_M}.
+
+
+    \newpage % -------------------------------------------------------------------------------------------------------------------------- %
+
+
+\section{Resumen de métodos}
+
+\subsection{Variables separables}
+
+Dada una ecuación diferencial de variables separables tiene la siguiente forma:
+
+\begin{equation*}
+    f(x) \ dx + g(y) \ dy = 0
+\end{equation*}
+
+Aquí unicamente se necesita separar las variables que sean diferentes entre sí, agruparlas, e integrar cada grupo de variables.
+
+\begin{equation*}
+    \int{f(x) \ dx} = \int{g(y) \ dy}
+\end{equation*}
+
+\subsection{Factor integrante}
+
+Cuando se tienen ecuaciones diferenciales lineales, $f(x)$ se considera un factor de integración:
+
+\begin{enumerate}
+    \item Se ordenan las variables de la siguiente manera
+        \begin{equation*}
+            y' + f(x)y = r(x)
+        \end{equation*}
+        
+    \item Se integra $f(x)$ 
+        \begin{equation*}
+            \int{f(x) \ dx}
+        \end{equation*}
+        
+    \item Se ordena lo obtenido en la siguiente ecuación
+        \begin{equation*}
+            y=e^{-\int{f(x) \ dx}} \cdot \left[ \int{e^{\int{f(x)}}} \cdot r(x) \right]
+        \end{equation*}
+\end{enumerate}
+
+\subsection{Ecuaciones exactas}
+
+Dada una ecuación exacta ($M(x,y) + N(x,y) = 0 $) se realiza el siguiente procedimiento:
+
+\begin{enumerate}
+    \item $M$ y $N$ se derivan respecto al diferencial ``contrario'' de cada función, esto para confirmar que este método es válido. Deberían dar el mismo resultado.
+        \begin{equation*}
+            M \longrightarrow \frac{\partial M}{\partial y} \quad ; \quad N \longrightarrow \frac{\partial N}{\partial x}
+        \end{equation*}
+        
+    \item Se integra $M$ respecto a su diferencial
+        \begin{equation}\label{eq:resumen_int_M}
+            \int{M} \ dx
+        \end{equation}
+        
+    \item Se establece la función $g'(y)$ de la siguiente manera
+        \begin{equation*}
+            g'(y) = N - \frac{\partial}{\partial y} \left[ \int{M} \ dx \right]
+        \end{equation*}
+        
+    \item Se busca obtener $g(y)$ integrando $g'(y)$ respecto a $y$
+        \begin{equation}\label{eq:resumen_g(y)}
+            \int{g'(y) \ dy}
+        \end{equation}
+        
+    \item Acomodar en la siguiente fórmula lo obtenido en \autoref{eq:resumen_int_M} y \autoref{eq:resumen_g(y)}
+        \begin{equation}
+            c = \int{M} \ dx + g(y)
+        \end{equation}
+\end{enumerate}
+
+\subsubsection{Conversión de ecuaciones}
+
+En caso de querer convertir una ecuación diferencial para que sea posible resolverla por el método de ecuaciones exactas:
+
+\begin{enumerate}
+    \item Usar las ecuaciones de $p(x)$ y $p(y)$ para identificar el factor integrante a usar
+        \begin{equation*}
+            p(x) = \frac{M'y-N'x}{N} \quad ; \quad p(y) = \frac{N'x-M'y}{M}
+        \end{equation*}
+    
+    \item El factor integrante será aquel cuya variable del resultado sea igual a la de $p(\_)$
+
+    \item Integrar el factor integrante
+
+    \item Multiplicar la ecuación original por el factor integrante ya integrado
+        \begin{equation*}
+            \left[ \int{p(x) \ dx} \cdot M \ dx \right] + \left[ \int{p(x) \ dx} \cdot N \ dy \right] = 0
+        \end{equation*}
+
+    \item Seguir los pasos usuales (\autoref{eq:resumen_int_M})
+
+\end{enumerate}

@@ -1,0 +1,146 @@
+
+\begin{equation}
+    \mathcal{L} \ \{f(t)\} = F(s) = \int_{0}^{\infty}e^{-st} \ dt
+\end{equation}
+
+La transformada de Laplace ($\mathcal{L}$) es una herramienta matemática que convierte una ecuación en función de valores reales, usualmente el tiempo y representado como $t$, en valores complejos, representados como $s$.
+
+Así mismo existe la transformada inversa de Laplace, representada usualmente como $\mathcal{L}^{-1}$, que como su nombre lo dice, realiza la operación inversa, transformar funciones de $t$ a funciones de $s$. Esta operación se resuelve fácilmente con las fórmulas de las transformaciones de Laplace, solo que se aplican en el sentido opuesto.\footnote{Supongo yo que por eso se llaman ``invertidas''.}
+
+\section{Resolver ecuaciones diferenciales mediante transformada de Laplace}
+
+Las ecuaciones diferenciales pueden ser resueltas haciendo uso de la transformada de Laplace. Para esto lo primero que necesitamos es tener una ecuación diferencial y además tener sus condiciones iniciales ($y(0)$, $y'(0)$) conocidas.
+
+Lo primero a realizar con esta ecuación diferencial es convertirla al dominio de Laplace, para ello podemos ayudarnos de las siguientes fórmulas:
+
+\begin{align*}
+    \mathcal{L} \{y''\} &= s^{2}Y(s) - y(0)s - y'(0)
+    \\
+    \mathcal{L} \{y'\} &= sY(s) - y(0)
+    \\
+    \mathcal{L} \{y\} &= Y(s)
+\end{align*}
+
+Usualmente las ecuaciones diferenciales suelen ser de segundo orden, o sea, que su derivada más alta es una segunda derivada. Aún así, puede ser útil recordar la siguiente regla, que es de la que resultan las fórmulas anteriores:
+
+\begin{equation*}
+    \mathcal{L} \{y^{n}\} = s^{n}Y(s) - s^{n-1}y(0) - s^{n-2}y'(0) - \ldots - y^{(n-1)}(0)
+\end{equation*}
+
+Una vez que se tienen las diferentes derivadas convertidas a dominio de Laplace, es necesario multiplicarlas por cada uno de sus coeficientes originales
+
+\begin{equation*}
+    Ay'' + By' + Cy \quad \longrightarrow \quad A \cdot [\mathcal{L}\{y''\}] + B \cdot [\mathcal{L}\{y'\}] + C \cdot [\mathcal{L}\{y\}]
+\end{equation*}
+
+Después de la multiplicación habrán varios términos que se pueden agrupar, y luego de esto se debe despejar $Y(s)$. Esto se puede realizar como cualquier otro despeje, aunque lo usual es que se forme una fracción donde los términos sin $Y(s)$ quedan arriba y los que si tienen $Y(s)$ quedan abajo
+
+\begin{equation*}
+    Y(s) = \frac{\text{Términos sin Y(s)}}{\text{Términos con Y(s)}}
+\end{equation*}
+
+También algo a tener en cuenta es que los términos con $Y(s)$ ya despejados formen un trinomio como el siguiente
+
+\begin{equation*}
+    Y(s) = \frac{\text{Términos sin Y(s)}}{As^{2} \pm Bs \pm C}
+\end{equation*}
+
+Esto es relevante porque lo que sigue después para resolver la ecuación diferencial mediante Laplace es factorizar este trinomio, lo cual nos generaría algo como lo siguiente
+
+\begin{equation}\label{eq:factorización_Ys}
+    As^{2} \pm Bs \pm C \quad \longrightarrow \quad (s \pm a)(s \pm b)
+\end{equation}
+
+Es este trinomio el que se utilizará para las siguientes metodologías, y dependiendo de los valores de $a$ y $b$ se seguirá una metodología ligeramente diferente.
+
+\section{Métodos en base a resultado de factorización}
+
+\subsection{Valores diferentes}
+
+Cuando al factoriza el trinomio resultante de espejar $Y(s)$ (\autoref{eq:factorización_Ys}) se obtienen valores diferentes ($a \neq b$), estos se separan en formas de fracciones de la siguiente manera.
+
+\begin{equation*}
+    \frac{A}{(s \pm a)} + \frac{B}{(s \pm b)}
+\end{equation*}
+
+Pueden existir más fracciones, esto dependiendo de los resultados de la factorización del trinomio, pero lo más usual por ahora es solo tener 2.
+
+Ahora llamaremos a cada par de términos en una fracción pares asociados, por ejemplo, $A$ y $(s \pm a)$ serían términos asociados, así como $B$ y $(s \pm b)$.
+
+Con esto definido, lo que sigue para obtener los coeficientes $A$ y $B$ es multiplicar términos no asociados
+
+\begin{equation*}
+    A(s \pm b) + B(s \pm a)
+\end{equation*}
+
+Para luego despejar los valores de $A$ y $B$
+
+\begin{equation*}
+    As \pm bA + Bs \pm aB
+\end{equation*}
+
+Todos estos valores los vamos a igualar a los términos obtenidos en la parte superior de la fracción al despejar $Y(s)$ (\autoref{eq:factorización_Ys}), tras lo que tendremos algunos términos con $s$ y otros sin $s$.
+
+\begin{equation*}
+    Y(s) = \frac{Ms + N}{s^{2} \pm s \pm c} \quad \xrightarrow{\text{Tomamos Ms y N}} \quad As \pm bA + Bs \pm aB = Ms + N
+\end{equation*}
+
+Lo único que nos faltaría hacer es despejar $A$ y $B$ como un sistema de ecuaciones que puede ser resuelto con calculadora fácilmente
+
+\begin{equation*}
+    \begin{Bmatrix}
+        As + Bs = Ms \\
+        bA + aB = N\\
+    \end{Bmatrix}
+\end{equation*}
+
+Una vez con los coeficientes $A$ y $B$ obtenidos, unicamente se necesita realizar la inversa de Laplace de cada fracción inicial y multiplicarla por el valor ahora ya conocido de su coeficiente.
+
+\subsection{Valores iguales}
+
+En caso de que al factorizar el trinomio resultante de despejar $Y(s)$ (\autoref{eq:factorización_Ys}) se obtengan valores iguales ($a = b$), volvemos a crear fracciones pero con un ligero cambio. Esta vez todas las fracciones tendrán el mismo denominador, pero comenzará elevado a la 1, y tal exponente se irá elevando hasta llegar al número de veces que se repite el valor.
+
+\begin{gather*}
+    [\text{Polinomio}] \longrightarrow (s \pm a) \cdot (s \pm a) \cdot \ \ldots \ \cdot n \text{ veces}
+    \\
+    \\
+    \frac{A}{(s \pm a)^{1}} + \frac{B}{(s \pm a)^{2}} + \ldots + \frac{C}{(s \pm a)^{n}} + 
+\end{gather*}
+
+Dado que estamos trabajando con trinomios, unicamente estaríamos obteniendo 2 resultados, por lo que siempre trabajaríamos con lo siguiente.
+
+\begin{equation*}
+    \frac{A}{(s \pm a)^{1}} + \frac{B}{(s \pm a)^{2}}
+\end{equation*}
+
+De igual manera, al trabajar siempre con trinomios que nos generan 2 fracciones, siempre se realizará la siguiente operación
+
+\begin{equation*}
+    A(s \pm a) + B
+\end{equation*}
+
+Esta operación se basa en que queremos multiplicar $A$ por un término que, si multiplicara a su denominador, $(s \pm a)$, diera como resultado el denominador más alto de todas las fracciones, que en este caso es $(s \pm a)^{2}$.
+
+Después de esto solo se necesita resolver el sistema de ecuaciones y realizar la inversa de Laplace.
+
+\subsection{Valores imaginarios}
+
+Si al intentar factorizar el trinomio obtenido al despejar $Y(s)$ (\autoref{eq:factorización_Ys}) los resultados son números imaginarios, se descartarán esos resultados y se tomarán el siguiente par de fórmulas de apoyo
+
+\begin{equation*}\label{eq:laplace_imaginarios}
+    \frac{(s - a)}{(s-a)^{2}+k^{2}} \quad ; \quad \frac{k}{(s-a)^{2}+k^{2}} 
+\end{equation*}
+
+Antes de utilizar tales fórmulas es necesario obtener los valores de $a$ y $k$ para así poder completar las fórmulas. Estos valores se obtienen a partir del trinomio que anteriormente se intentó factorizar
+
+\begin{equation*}
+    As^{2} + Bs + C \quad \longrightarrow \quad a = \frac{B}{2} \quad ; \quad k = \sqrt{C - a^{2}}
+\end{equation*}
+
+Una vez obtenidos $a$ y $k$, estos se reemplazan en sus fórmulas (\autoref{eq:laplace_imaginarios}), se agregan coeficientes a cada fracción, y se realizan las multiplicaciones correspondientes
+
+\begin{equation*}
+    \frac{A \cdot (s - a)}{(s-a)^{2}+k^{2}} \quad ; \quad \frac{B(k)}{(s-a)^{2}+k^{2}} \quad \longrightarrow \quad A(s-a) + B(k)
+\end{equation*}
+
+Esto dará como resultado una serie de términos con y sin $s$ que pueden ser ingresados a un sistema de ecuaciones para obtener los valores de $A$ y $B$ tal como hemos venido haciendo en los otros casos, para posteriormente realizar las inversas de Laplace, multiplicarlas por sus respectivos coeficientes y así obtener la solución la ecuación diferencial.

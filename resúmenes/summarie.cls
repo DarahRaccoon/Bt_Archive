@@ -48,7 +48,7 @@
 
 \captionsetup[figure]{
     skip=5pt,
-    font=small,
+    font=scriptsize,
     labelfont=bf
 }
 
@@ -82,8 +82,11 @@
     \vspace{1cm}
     {\LARGE Licenciatura en Ingeniería en Biotecnología \par}
     \vfill
+    {\LARGE Resumen de asignatura: \par}
+    \vspace{1cm}
     {\Huge \Titulo \par}
     \vfill
+    {\Large \today \par}
     \end{titlepage}
     \newpage
 }
