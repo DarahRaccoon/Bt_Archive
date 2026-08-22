@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colaborar - BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO y presentación en redes -->
+    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología. Recurso abierto para estudiantes y docentes bajo licencia CC BY-SA 4.0.">
+    <meta property="og:title" content="Repositorio de recursos para Ingeniería en Biotecnología">
+    <meta property="og:description" content="Material de estudio colaborativo y de acceso abierto">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="/Bt_Archive/0_css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado con navegación -->
+
+    <main-header></main-header>
+
+    
+    <iframe style="border:none;width:100%;" id="contact-form-znz9ym" src="https://opnform.com/forms/contact-form-znz9ym"></iframe><script type="text/javascript" onload="initEmbed('contact-form-znz9ym', { autoResize: true })" src="https://opnform.com/widgets/iframe.min.js"></script>
+
+    
+    <main-footer></main-footer>
+
+    <script>
+        // Cargar y definir componentes ANTES de que se rendericen
+        (async function loadComponents() {
+            try {
+                const response = await fetch('/Bt_Archive/0_html/componentes.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar componentes.html`);
+                
+                const html = await response.text();
+                
+                // Crear un contenedor temporal para extraer templates y script
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                // Agregar los templates al body
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                // Ejecutar el script que define los custom elements
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+                // Fallback visual para desarrollo
+                document.body.insertAdjacentHTML('afterbegin', 
+                    '<div style="background:#f8d7da; color:#721c24; padding:1rem; text-align:center;">⚠️ Error al cargar header/footer. Verifica que components.html existe.</div>'
+                );
+            }
+        })();
+    </script>
+
+</body>

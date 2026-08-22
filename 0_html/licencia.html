@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licencia - BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO -->
+    <meta name="description" content="Información sobre la licencia CC BY-SA 4.0 del material de estudio.">
+    <meta property="og:title" content="Licencia - Bio_Archive">
+    <meta property="og:description" content="Material de estudio colaborativo bajo licencia Creative Commons">
+    
+    <link rel="stylesheet" href="/Bt_Archive/0_css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado con navegación -->
+
+    <main-header></main-header>
+
+    <main>
+        <!-- Sección de inicio con presentación -->
+        <section id="inicio" class="hero" style="background-image: url(/Bt_Archive/website_resources/images/licencia_back.jpg);">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Licencia</h2>
+                    <p class="hero__subtitle">Conoce sobre las condiciones de uso y distribución del material recopilado en este repositorio</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de licencia -->
+        <section id="licencia" class="section section-gray">
+            <div class="container">
+                <div class="license-content">
+                    <div class="license-content__icon">
+                        <i class="fab fa-creative-commons fa-3x"></i>
+                        <i class="fab fa-creative-commons-by fa-3x"></i>
+                        <i class="fab fa-creative-commons-sa fa-3x"></i>
+                    </div>
+                    
+                    <div class="section-header">
+                        <h2 class="section-header__title">⚖️ Licencia CC BY-SA 4.0</h2>
+                    </div>
+                    
+                    <div class="license-text">
+                        <p>Con objeto de mantener la información de estos resúmenes libre y abierta para todo público, este trabajo está bajo una <strong>licencia CC BY-SA 4.0</strong>.</p>
+                        
+                        <p><strong>Eres libre de:</strong></p>
+                        
+                        <ul class="license-list">
+                            <li class="license-list__item"><i class="fas fa-check"></i> <strong>Compartir:</strong> Puedes copiar y redistribuir el material en cualquier medio o formato.</li>
+                            <li class="license-list__item"><i class="fas fa-check"></i> <strong>Adaptar:</strong> Puedes remezclar y transformar el material de origen, así como construir a partir de este, todo con cualquier propósito, incluso comercial.</li>
+                        </ul>
+                        
+                        <p><strong>Bajo las siguientes condiciones:</strong></p>
+
+                        <ul class="license-list">
+                            <li class="license-list__item"><i class="fas fa-asterisk"></i> <strong>Atribución:</strong> Debes reconocer la autoría de forma adecuada.</li>
+                            <li class="license-list__item"><i class="fas fa-asterisk"></i> <strong>Compartir Igual:</strong> Si remezclas, transformas o creas a partir del material, debes distribuir tu contribución bajo la misma licencia.</li>
+                        </ul>
+                        
+                        <p style="margin-top: 2rem;">Más información sobre la licencia CC BY-SA 4.0 en <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Creative Commons</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+
+    <main-footer></main-footer>
+
+    <script>
+        // Cargar y definir componentes ANTES de que se rendericen
+        (async function loadComponents() {
+            try {
+                const response = await fetch('/Bt_Archive/0_html/componentes.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar componentes.html`);
+                
+                const html = await response.text();
+                
+                // Crear un contenedor temporal para extraer templates y script
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                // Agregar los templates al body
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                // Ejecutar el script que define los custom elements
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+                // Fallback visual para desarrollo
+                document.body.insertAdjacentHTML('afterbegin', 
+                    '<div style="background:#f8d7da; color:#721c24; padding:1rem; text-align:center;">⚠️ Error al cargar header/footer. Verifica que components.html existe.</div>'
+                );
+            }
+        })();
+    </script>
+
+</body>
+</html>

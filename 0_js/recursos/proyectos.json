@@ -1,0 +1,21 @@
+{
+  "categoria": "Proyectos",
+  "icono": "fa-flask",
+  "descripcion": "Manuales que buscan describir el fundamento de algunos proyectos internos de la carrera.",
+  "items": [
+    {
+      "nombre": "Manual de proyecto: Club Ambiental",
+      "url": "../biblioteca_interna/Manual_de_proyecto-Club_ambiental/Manual_Club_Ambiental.pdf",
+      "imagen": "../biblioteca_interna/Manual_de_proyecto-Club_ambiental/Portada.jpg",
+      "descripcion": "Guía para los alumnos interesados en participar en las actividades del Club Ambiental UPSIN.",
+      "etiquetas": []
+    },
+    {
+      "nombre": "Manual de proyecto: Revista estudiantil",
+      "url": "../biblioteca_interna/Manual_de_proyecto-Revista_estudiantil/Manual_Revista.pdf",
+      "imagen": "../biblioteca_interna/Manual_de_proyecto-Revista_estudiantil/Portada.jpg",
+      "descripcion": "Documento que describe el proceso de creación y edición de la revista estudiantil.",
+      "etiquetas": []
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "categoria": "Creación de ilustraciones",
+  "icono": "fa-images",
+  "descripcion": "Bancos de imágenes y algunas herramientas de utilidad para la creación de ilustraciones.",
+  "items": [
+    {
+      "nombre": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Main_Page",
+      "imagen": "https://commons.wikimedia.org/static/images/icons/commonswiki.svg",
+      "descripcion": "Recoge todas las imágenes de la Wikipedia.",
+      "etiquetas": ["fotografías", "íconos", "general"]
+    },
+    {
+      "nombre": "Pexels",
+      "url": "https://www.pexels.com/es-es/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pexels_logo_%282024%29.png/1920px-Pexels_logo_%282024%29.png",
+      "descripcion": "Banco de imágenes de uso general de muy alta calidad.",
+      "etiquetas": ["fotografías", "general"]
+    },
+    {
+      "nombre": "BioArt",
+      "url": "https://bioart.niaid.nih.gov/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/US-NLM-NCBI-Logo.svg/960px-US-NLM-NCBI-Logo.svg.png",
+      "descripcion": "Banco de imágenes mantenido por el NIH.",
+      "etiquetas": ["biomedicina", "íconos"]
+    },
+    {
+      "nombre": "SMART (Servier Medical Art)",
+      "url": "https://smart.servier.com/",
+      "imagen": "https://smart.servier.com/wp-content/uploads/2022/10/Servier_Logo_Sign_RVB.png",
+      "descripcion": "Banco de imágenes relacionadas al área médica.",
+      "etiquetas": ["biomedicina", "íconos"]
+    },
+    {
+      "nombre": "BioIcons",
+      "url": "https://bioicons.com/",
+      "imagen": "https://github.com/duerrsimon/bioicons/raw/main/assets/logo_github.svg",
+      "descripcion": "Librería abierta de ilustraciones de biología y química.",
+      "etiquetas": ["laboratorio", "biología", "íconos"]
+    },
+    {
+      "nombre": "SciDraw",
+      "url": "https://scidraw.io/",
+      "imagen": "https://scidraw.io/static/images/logo_V1.svg",
+      "descripcion": "Repositorio abierto con imágenes de animales, equipos de laboratorio y más.",
+      "etiquetas": ["laboratorio", "biología", "íconos"]
+    },
+    {
+      "nombre": "Chemix",
+      "url": "https://chemix.org/",
+      "imagen": "https://chemix.org/images/192.png",
+      "descripcion": "Crea representaciones de experimentos de química.",
+      "etiquetas": ["química"]
+    }
+  ]
+}

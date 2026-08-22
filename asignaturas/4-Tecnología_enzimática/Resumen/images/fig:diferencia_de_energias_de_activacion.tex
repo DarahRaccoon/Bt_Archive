@@ -1,0 +1,41 @@
+\def\ProductosY{0.75}
+\def\SustratoY{2.25}
+\def\CatY{3.5}
+\def\NoCatY{4.5}
+\def\EtiquetasX{1.75}
+\def\FontStyle{\sffamily\scriptsize}
+\begin{tikzpicture}
+    % Ejes
+    \draw[-Stealth, line width=0.75pt] (0, 0) -- (0,5) node[midway, rotate=90, above=0pt, font=\sffamily\footnotesize] {Energía libre ($G$)};
+    \draw[-Stealth, line width=0.75pt] (0, 0) -- (10, 0) node[midway, below=2pt, font=\sffamily\footnotesize] {Transcurso de reacción};
+    % Lineas de referencia
+    \draw[dashed, gray] (0,\ProductosY) -- (9.5,\ProductosY); % Productos 
+    \draw[dashed, gray] (0,\SustratoY) -- (9.5,\SustratoY); % Sustrato
+    \draw[dashed, red]  (0,\CatY) -- (9.5,\CatY); % Catalizada
+    \draw[dashed, blue] (0,\NoCatY) -- (9.5,\NoCatY); % No catalizada
+    % Etiquetas
+    \node[above, inner sep=2pt, font=\FontStyle] at (\EtiquetasX,\SustratoY) {Sustrato};
+    \node[above, inner sep=2pt, font=\FontStyle] at (\EtiquetasX,\ProductosY) {Productos};
+    \node[above, inner sep=2pt, font=\FontStyle, red] at (\EtiquetasX,\CatY) {Reacción catalizada};
+    \node[above, inner sep=2pt, font=\FontStyle, blue] at (\EtiquetasX,\NoCatY) {Reacción no catalizada};
+    % Curvas de energía
+    %% Catalizada
+    \draw[red] 
+        (0,\SustratoY) -- (2.5,\SustratoY)
+        to[out=0, in=180, looseness=0.8] (5,\CatY)
+        to[out=0, in=180, looseness=0.8] (8,0.75)
+        -- (9,0.75);
+    %% No catalizada
+    \draw[blue] 
+        (0,\SustratoY) -- (2.5,\SustratoY)
+        to[out=0, in=180, looseness=0.8] (5,\NoCatY)
+        to[out=0, in=180, looseness=0.8] (8,0.75)
+        -- (9,0.75);
+    % Energías de activación
+    %% No catalizada
+    \draw[Stealth-Stealth, blue] (7.1,\SustratoY) -- (7.1,\NoCatY)
+        node[right, yshift=-0.5cm, font=\FontStyle, text=blue] {$E_{a}$ no catalizada};
+    %% Catalizada
+    \draw[Stealth-Stealth, red] (7.5,\SustratoY) -- (7.5,\CatY)
+        node[right, midway, font=\FontStyle, text=red] {$E_{a}$ catalizada};
+\end{tikzpicture}

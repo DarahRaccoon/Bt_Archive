@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colaborar - BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO y presentación en redes -->
+    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología. Recurso abierto para estudiantes y docentes bajo licencia CC BY-SA 4.0.">
+    <meta property="og:title" content="Repositorio de recursos para Ingeniería en Biotecnología">
+    <meta property="og:description" content="Material de estudio colaborativo y de acceso abierto">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="/Bt_Archive/0_css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado con navegación -->
+
+    <main-header></main-header>
+
+    <main>
+
+        <!-- Sección de inicio con presentación -->
+        <section id="inicio" class="hero" style="background-image: url(/Bt_Archive/website_resources/images/colab-back.jpg);">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Colaborar</h2>
+                    <p class="hero__subtitle">Puedes aportar a este repositorio de materiales de apoyo a través de varios métodos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de cómo ayudar / retroalimentación -->
+        <section id="como-ayudar" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title">Participa en la mejora continua de estos repositorios</h2>
+                    <p class="section-header__subtitle">Tus comentarios, correcciones y sugerencias son bienvenidos con mucho aprecio, y existen varios medios por los cuales puedes aportar, elige el que te sea más cómodo.</p>
+                </div>
+                
+                <div class="grid grid--auto-fit">
+                    
+                    <!-- Opción 1: Formulario (recomendada) -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3 class="card__title">Formulario</h3>
+                        <p class="card__text">Puedes enviar correcciones, sugerencias o incluso archivos a través del siguiente formulario.</p>
+                        <div class="card__footer card__footer--center">
+                            <a href="colaborar-forms.html" class="btn btn--primary btn--small" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Formulario
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Opción 2: Comentarios en PDF -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3 class="card__title">PDF's</h3>
+                        <p class="card__text">Abre cualquier PDF en Drive, selecciona el texto y añade comentarios sobre errores u opiniones de mejora.</p>
+                        <div class="card__footer card__footer--center">
+                            <a href="https://drive.google.com/drive/folders/1ylnkT1cZclkQx6U-h9yV3klgNi5hbAGD?usp=sharing" class="btn btn--primary btn--small" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Drive
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Opción 3: GitHub (avanzado) -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h3 class="card__title">GitHub</h3>
+                        <p class="card__text">Si tienes una cuenta de GitHub y conocimiento sobre LaTeX, puedes reportar errores (Issues) o directamente proponer cambios en los archivos (Pull Requests).</p>
+                        <div class="btn-group btn-group--center" style="margin-top: 1rem;">
+                            <a href="https://github.com/DarahRaccoon/Bt_Archive" class="btn btn--outline btn--smaller" target="_blank">
+                                <i class="fas fa-code-branch"></i> Repo
+                            </a>
+                            <a href="https://github.com/DarahRaccoon/Bt_Archive/issues" class="btn btn--outline btn--smaller" target="_blank">
+                                <i class="fas fa-bug"></i> Issues
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Nota sobre asesoría -->
+                <div class="featured-box" style="margin-top: 3rem;">
+                    <div class="featured-box__icon">
+                        <i class="fas fa-question-circle fa-2x"></i>
+                    </div>
+                    <div>
+                        <h4 class="featured-box__title">¿Necesitas ayuda con GitHub o LaTeX?</h4>
+                        <p>Si te interesa contribuir de manera más directa en la mejora de estos materiales de apoyo pero no estás familiarizado con GitHub y/o LaTeX, te puedo enviar materiales de apoyo y/o dar alguna asesoría en el uso de estas herramientas, las cuales incluso son de utilidad en ámbitos más allá de este proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto / redes -->
+        <section id="contacto" class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title">Contacto</h2>
+                </div>
+                <div class="contact-list">
+                    <a href="mailto:2024030247@upsin.edu.mx" class="contact-list__item">
+                        <i class="fas fa-envelope"></i> Correo electrónico
+                    </a>
+                    <a href="https://github.com/DarahRaccoon" class="contact-list__item" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+     
+    <main-footer></main-footer>
+
+    <script>
+        // Cargar y definir componentes ANTES de que se rendericen
+        (async function loadComponents() {
+            try {
+                const response = await fetch('/Bt_Archive/0_html/componentes.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar componentes.html`);
+                
+                const html = await response.text();
+                
+                // Crear un contenedor temporal para extraer templates y script
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                // Agregar los templates al body
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                // Ejecutar el script que define los custom elements
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+                // Fallback visual para desarrollo
+                document.body.insertAdjacentHTML('afterbegin', 
+                    '<div style="background:#f8d7da; color:#721c24; padding:1rem; text-align:center;">⚠️ Error al cargar header/footer. Verifica que components.html existe.</div>'
+                );
+            }
+        })();
+    </script>
+
+</body>
+</html>

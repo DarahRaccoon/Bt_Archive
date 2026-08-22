@@ -1,0 +1,91 @@
+{
+  "categoria": "Software",
+  "icono": "fa-laptop-code",
+  "descripcion": "Programas gratuitos (o con plan gratuito) de utilidad para la carrera.",
+  "items": [
+    {
+      "nombre": "LibreOffice",
+      "url": "https://www.libreoffice.org/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/LibreOffice_logo.svg/960px-LibreOffice_logo.svg.png?_=20220816022856",
+      "descripcion": "Suite de ofimática libre. Incluye software para edición de textos, hojas de datos, presentaciones, ilustraciones, bases de datos y fórmulas matemáticas.",
+      "etiquetas": ["ofimática"]
+    },
+    {
+      "nombre": "OpenOffice",
+      "url": "https://www.openoffice.org/download/index.html",
+      "imagen": "https://www.openoffice.org/images/AOO_logos/orb.jpg",
+      "descripcion": "Suite de ofimática libre. Incluye software para edición de textos, hojas de datos y presentaciones.",
+      "etiquetas": ["ofimática"]
+    },
+    {
+      "nombre": "Zotero",
+      "url": "https://www.zotero.org/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Zotero_logo.svg/250px-Zotero_logo.svg.png",
+      "descripcion": "Gestor de referencias con extensión para Word y Google Docs. Guarda artículos y anotaciones.",
+      "etiquetas": ["gestor de referencias", "página web", "escritorio", "móbiles"]
+    },
+    {
+      "nombre": "Mendeley",
+      "url": "https://www.mendeley.com/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Mendeley_Logo_Vertical.png/250px-Mendeley_Logo_Vertical.png",
+      "descripcion": "Gestor de referencias muy usado en la comunidad científica. Compatible con Word.",
+      "etiquetas": ["gestor de referencias", "página web", "escritorio"]
+    },
+    {
+      "nombre": "KingDraw",
+      "url": "http://www.kingdraw.cn/en/",
+      "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/10/b4/9a10b4c8-7e31-806b-484e-0ae7b2ac887c/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/200x200ia-75.webp",
+      "descripcion": "Editor de estructuras químicas. Permite graficar moléculas de manera fácil.",
+      "etiquetas": ["ilustraciones", "química", "escritorio", "móbiles"]
+    },
+    {
+      "nombre": "3D Protein Imager",
+      "url": "https://3dproteinimaging.com/protein-imager/",
+      "imagen": "https://3dproteinimaging.com/wp-content/uploads/2020/08/3d-protein-imaging-logo-small.jpeg",
+      "descripcion": "Página web para obtener modelado 3D de proteínas de manera fácil y rápida.",
+      "etiquetas": ["ilustraciones", "proteínas", "página web"]
+    },
+    {
+      "nombre": "Lab.Hacks",
+      "url": "https://labhacks.net/",
+      "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/30/6d/be306df8-44f9-0c39-2200-50aa400a44cc/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200ia-75.webp",
+      "descripcion": "App con herramientas para laboratorio: temporizadores, calculadoras de concentraciones, tablas de utilidad.",
+      "etiquetas": ["herramientas", "móbiles"]
+    },
+    {
+      "nombre": "TLV ToolBox",
+      "url": "",
+      "imagen": "https://play-lh.googleusercontent.com/GuRMxcPNlX5d45ImD0a2u0gAaFjdGZdb0QDh3eXCpjV7uZLxA-BFnzA1APJ5FGbd3shv=s48",
+      "descripcion": "Calculadora para parámetros de sistemas de vapor. Útil para Termodinámica y Balance de materia.",
+      "etiquetas": ["herramientas", "móbiles"]
+    },
+    {
+      "nombre": "JASP",
+      "url": "https://jasp-stats.org/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/JASP_logo.svg/250px-JASP_logo.svg.png",
+      "descripcion": "Programa libre para análisis estadísticos de experimentos o revisiones bibliográficas.",
+      "etiquetas": ["análisis de datos", "escritorio"]
+    },
+    {
+      "nombre": "Syncthing",
+      "url": "https://syncthing.net/",
+      "imagen": "https://syncthing.net/img/logo-horizontal.svg",
+      "descripcion": "Sincronización de carpetas entre dispositivos de manera fácil y segura.",
+      "etiquetas": ["compartir archivos", "página web", "escritorio", "móbiles"]
+    },
+    {
+      "nombre": "SEND",
+      "url": "https://send.vis.ee/",
+      "imagen": "https://send.vis.ee/thunderbird-icon.45ac1c11.svg",
+      "descripcion": "Transferencia de archivos segura, privada y gratuita. Límite de 2.5GB por envío.",
+      "etiquetas": ["compartir archivos", "página web"]
+    },
+    {
+      "nombre": "VERT",
+      "url": "https://vert.sh/",
+      "imagen": "https://avatars.githubusercontent.com/u/198117259?s=48&v=4",
+      "descripcion": "Conversión rápida de archivos entre diferentes formatos.",
+      "etiquetas": ["convertir archivos", "página web"]
+    }
+  ]
+}

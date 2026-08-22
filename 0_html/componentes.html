@@ -1,0 +1,100 @@
+<!-- components.html -->
+
+<template id="header-template">
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <a href="/Bt_Archive/index.html" class="nav__link">
+                    <h1>🧬 <span class="logo__text">BT_Archive</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="/Bt_Archive/0_html/asignaturas.html" class="nav__link">Asignaturas</a></li>
+                    <li><a href="/Bt_Archive/0_html/recursos.html" class="nav__link">Recursos</a></li>
+                    <li><a href="/Bt_Archive/0_html/extras.html" class="nav__link">Extras</a></li>
+                    <li><a href="/Bt_Archive/0_html/colaborar.html" class="nav__link">Colaborar</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1ylnkT1cZclkQx6U-h9yV3klgNi5hbAGD?usp=sharing" target="_blank" class="nav__link"><i class="fa-brands fa-google-drive"></i></a></li>
+                    <li><a href="/Bt_Archive/0_html/licencia.html" class="nav__link"><i class="fa-brands fa-creative-commons"></i></a></li>
+                    <li><p>|</p></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</template>
+
+<template id="footer-template">
+    
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p>© 2024 - Vazquez Bernal David Ernesto - Estudiante de Biotecnología</p>
+                <p>Biblioteca de apoyo para Ingeniería en Biotecnología, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Bt_Archive" target="_blank" class="footer__link">GitHub</a></p>
+            </div>
+            <div class="footer__license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</template>
+
+<script>
+    class HeaderComponent extends HTMLElement {
+        connectedCallback() {
+            const template = document.getElementById('header-template');
+            this.appendChild(template.content.cloneNode(true));
+        }
+    }
+    
+    class FooterComponent extends HTMLElement {
+        connectedCallback() {
+            const template = document.getElementById('footer-template');
+            this.appendChild(template.content.cloneNode(true));
+        }
+    }
+    
+    customElements.define('main-header', HeaderComponent);
+    customElements.define('main-footer', FooterComponent);
+
+// ===== MODO OSCURO =====
+
+(function initTheme() {
+    const toggle = document.getElementById('themeToggle');
+    if (!toggle) return;
+    
+    const icon = toggle.querySelector('i');
+    const savedTheme = localStorage.getItem('bt_theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Determinar tema inicial
+    let theme = savedTheme || (prefersDark ? 'dark' : 'light');
+    applyTheme(theme);
+    
+    // Evento del botón
+    toggle.addEventListener('click', function() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+        localStorage.setItem('bt_theme', newTheme);
+    });
+    
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            icon.className = 'fas fa-sun';
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            icon.className = 'fas fa-moon';
+        }
+    }
+})();
+
+</script>

@@ -1,0 +1,125 @@
+
+Del griego \textit{stoikheion}, que significa ``elemento'', y \textit{métrón}, que significa ``medida'', la estequiometría consiste en el cálculo de las relaciones entre las cantidades de reactivos de una reacción química.
+
+\section{Composición elemental de los microorganismos}
+
+Los microorganismos cuentan con una composición elemental similar entre sí, por lo que esta puede ser promediada y utilizada para la estequiometría de reacciones microbianas.
+Aunque la composición de macromoléculas de un organismo puede variar, la de los elementos apenas varía. 
+
+    \input{tab:composición_estándar_de_microorganismos}
+
+\section{Ejercicio 1 de balanceo de ecuaciones}
+
+Podemos intentar balancear la siguiente ecuación, la cual representa la producción de ácido acético a partir de glucosa:
+
+\begin{gather*}
+    C_{6}H_{12}O_{6} + O_{2} + NH_{3} 
+    \\
+    \downarrow
+    \\
+    C_{0.039}H_{0.072}O_{0.021}N_{0.069} + C_{6}H_{8}O_{7} + CO_{2} + H_{2}O
+\end{gather*}
+
+Se puede notar rápidamente que intentar resolver este ejercicio ``al tanteo'' es complicado, si no imposible, por lo que es mejor recurrir al método algebráico, cuyo proceso se realiza de la siguiente manera:
+
+\begin{enumerate}
+    
+    \item Definimos los coeficientes de cada compuesto en base a las letras del abecedario.\footnote{Se abrevia como Biomasa para ahorro de espacio.}
+        \begin{equation*}
+            \text{A}(C_{6}H_{12}O_{6}) + \text{B}(O_{2}) + \text{C}(NH_{3}) \Longrightarrow \text{D}(\text{Biomasa}) + \text{E}(C_{6}H_{8}O_{7}) + \text{F}(CO_{2}) + \text{G}(H_{2}O)
+        \end{equation*}
+
+    \item Luego, revisamos cuantas veces aparece cada elemento en cada compuesto de la ecuación química, y ordenamos como si fuera una ecuación matemática.
+        \begin{enumerate}
+	        \item Por ejemplo, iniciando con el carbono (C), tomamos que en el primer compuesto, la glucosa ($C_{6}H_{12}O_{6}$), hay 6 carbonos, y su coeficiente es A, por lo que tenemos que el primer término de la ecuación es $6A$. Esto lo repetimos con todos los compuestos de la ecuación que contengan carbono, y así obtendríamos la primera ecuación.
+	        \item Este proceso lo repetimos con el resto de elementos ($H$, $O$ y $N$).
+	        \item Un detalle a agregar es que cuando se está armando la ecuación se cambia la flecha de la ecuación química ($\Longrightarrow$) por un signo de igual ($=$).
+        \end{enumerate}
+
+    \item Terminaríamos con las siguientes ecuaciones:
+        \begin{align*}
+            C \quad &\longrightarrow \quad 6A = 0.39D + 6E + F
+            \\
+            H \quad &\longrightarrow \quad 12A + 3C = 0.72D + 8E + 2G
+            \\
+            O \quad &\longrightarrow \quad 6A + 2B = 0.021D + 7E + 2F + G
+            \\
+            N \quad &\longrightarrow \quad C = 0.0069D
+        \end{align*}
+\end{enumerate}
+
+Esta nueva forma de ordenar los elementos nos permite despejar los distintos coeficientes de la ecuación química como si fuera cualquier otra ecuación matemática. Cada elemento representaría una ecuación y cada coeficiente una incógnita.
+
+Ahora, antes de intentar despejar alguna incógnita, debemos recordar que una serie de ecuaciones sea posible de resolver debemos de tener la misma cantidad de ecuaciones y de incógnitas.\footnote{Recordar los grados de libertad de la materia Balance de Materia y Energía} En este caso tenemos 4 ecuaciones (Una por cada elemento, C, H, O y N) y 7 incógnitas (Cada letra del abecedario asignada), por lo que no es posible de resolver tal como está.
+
+Afortunadamente, existen valores que pueden ayudar a modificar la ecuación de forma que sea posible de resolver, y estos son los rendimientos.
+
+Los rendimientos reflejan la cantidad obtenida de ``algo'' tras la inversión de otro ``algo''. En bioprocesos el elemento invertido es el sustrato ($s$), mientras que los elementos obtenidos son biomasa ($x$) y un producto dado ($p$), como lo  puede ser el etanol. Así pues, tenemos dos rendimientos, $Y_{xs}$ y $Y_{ps}$.
+
+\begin{equation*}
+    Y_{xs} = \frac{\text{g de biomasa}}{\text{g de sustrato}} \quad ; \quad Y_{ps} = \frac{\text{g de producto}}{\text{g de sustrato}}
+\end{equation*}
+
+Donde: 
+
+\begin{equation*}
+    x = \text{Biomasa} \quad ; \quad s = \text{Sustrato} \quad ; \quad p = \text{Producto}
+\end{equation*}
+
+Estos valores, obtenidos a través de pruebas de laboratorios, nos pueden ayudar a despejar los coeficientes del sustrato, la biomasa y del producto (Ácido acético, $C_{6}H_{8}O_{7}$), dejando el conjunto de ecuaciones con 4 ecuaciones y 4 incógnitas, o sea, posible de resolver.
+
+Para ello unicamente tomamos los rendimientos. En este caso supondremos que:
+
+\begin{equation*}
+    Y_{xs} = 0.153 \quad ; \quad Y_{ps} = 0.85
+\end{equation*}
+
+También también se necesitarán los pesos molares del sustrato, de la biomasa y del producto.
+
+\begin{align*}
+    PM_{s} = \frac{180g}{mol} \quad ; \quad PM_{x} = \frac{96.5g}{mol} \quad ; \quad PM_{p} = \frac{192g}{mol}
+\end{align*}
+
+Con estos datos, primero se establecerá el coeficiente correspondiente al sustrato ($A$) como 1, esto porque queremos saber cuanta biomasa y cuanto producto se generan a partir de 1 mol de sustrato.
+
+\begin{gather*}
+    \frac{0.153g_{x}}{1g_{s}} \cdot \frac{1mol_{x}}{96g_{x}} \cdot \frac{180g_{s}}{1mol_{s}} \cdot = 0.287\frac{mol_{x}}{mol_{s}}
+    \\
+    \\
+    \frac{0.85g_{p}}{1g_{s}} \cdot \frac{1mol_{p}}{192g_{p}} \cdot \frac{180g_{s}}{1mol_{s}} \cdot = 0.797\frac{mol_{p}}{mol_{s}}
+\end{gather*}
+
+Teniendo ahora los coeficientes del sustrato, la biomasa y del producto, podemos reemplazarlos en la ecuación química y volver a realizar el balance algebráico
+
+\begin{align*}
+    1(C_{6}H_{12}O_{6}) + B(O_{2}) + C(NH_{3}) &\Longrightarrow 0.287(\text{Biomasa}) + 0.797(C_{6}H_{8}O_{7}) + F(CO_{2}) + G(H_{2}O)
+    \\
+    \\
+    C &\longrightarrow 6(1) = 0.39(0.287) + 6(0.797) + F
+    \\
+    H &\longrightarrow 12(1) + 3C = 0.72(0.287) + 8(0.797) + 2G
+    \\
+    O &\longrightarrow 6(1) + 2B = 0.021(0.287) + 7(0.797) + 2F + G
+    \\
+    N &\longrightarrow C = 0.0069(0.287)
+\end{align*}
+
+Despues de realizar los cálculos deberíamos de tener:
+
+\begin{align*}
+    A&=1     & B&=2.43  & C&=0.002
+    \\
+    D&=0.287 & E&=0.797 & F&=1.238
+    \\
+    G&=2.8
+\end{align*}
+
+Y ordenando en la ecuación original tendríamos:
+
+\begin{gather*}
+    C_{6}H_{12}O_{6} + 2.43(O_{2}) + 0.002(NH_{3})
+    \\
+    \downarrow
+    \\
+    0.287(\text{X}) + 0.797(C_{6}H_{8}O_{7}) + 1.238(CO_{2}) + 2.8(H_{2}O)
+\end{gather*}

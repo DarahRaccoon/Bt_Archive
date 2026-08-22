@@ -1,0 +1,69 @@
+\documentclass{Manual}
+
+
+    \SetProyecto{Revista Universitaria}
+
+
+% ------------------------------------ %
+
+\begin{document}
+
+    \frontmatter
+
+\Portada
+\Indices
+
+
+% ------------------------------------ %
+
+    \mainmatter
+
+
+\input{1_Objetivos_de_la_revista}
+% \input{1_Justificación}
+\input{1_Proceso_de_publicación}
+\input{1_Identidad_gráfica}
+
+
+% ------------------------------------ %
+    
+% \bibliography{Main}\addcontentsline{toc}{chapter}{Bibliografía}
+    
+    \appendix
+    
+\chapter{Plantilla de maquetación en LaTeX}\label{sec:plantilla_de_maquetación}
+    \begin{verbatim}
+        % USO: \SetTituloActual{Titulo corto del artículo}
+        \SetTituloActual{}
+
+        % USO: \Inicio{Tipo de artículo}{Título del artículo}}{Autores}   
+        \Inicio{}{}{}
+
+        %% Tipos de artículo (En mayúsculas):
+           % ARTÍCULO DE INVESTIGACIÓN
+           % REVIEW
+           % ESPECIAL
+
+        % USO: \Resumen{Texto del resumen}{Palabras clave}
+        \Resumen{}{}
+
+            \begin{multicols}{2} % Establece el formato de 2 columnas
+            
+        % Pegar el texto de los alumnos en las secciones correspondientes
+        
+        \section{Introducción}
+        \section{Materiales y métodos}
+        \section{Resultados}
+        \section{Discusión}
+        \section{Conclusión}
+
+        % Inserta la bibliografía del artículo con estilo APA7
+        % La X se cambia por el número de artículo correspondiente
+        
+        \bibliographystyle{apalike-ejor}
+        \bibliography{art_0X/bib}
+
+        \end{multicols}
+    \end{verbatim}
+
+\end{document}

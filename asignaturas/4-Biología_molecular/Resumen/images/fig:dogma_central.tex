@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+\node[draw, font=\sffamily\bfseries\normalsize, inner sep=10pt] (adn) at (0,0) {ADN};
+\node[draw, font=\sffamily\bfseries\normalsize, inner sep=10pt, xshift=4cm] (arn) at (adn.east) {ARN};
+\node[draw, font=\sffamily\bfseries\normalsize, inner sep=10pt, xshift=4cm] (proteinas) at (arn.east) {Proteínas};
+
+\draw[-Stealth] (adn.east) -- (arn.west) node[midway, fill=white, draw, rounded corners, font=\sffamily\scriptsize] {Transcripción};
+\draw[-Stealth] (arn.east) -- (proteinas.west) node[midway, fill=white, draw, rounded corners, font=\sffamily\scriptsize] {Traducción};
+
+\node[draw, rounded corners, font=\sffamily\tiny, xshift=0.5cm, yshift=1cm] (replicacion adn) at (adn.east) {Replicación del ADN};
+\draw[-Stealth] (adn.east) to[out=0, in=-90] (replicacion adn) to[out=180, in=90] (adn.north);
+
+\node[draw, dashed, rounded corners, font=\sffamily\tiny, xshift=0.5cm, yshift=1cm] (replicacion arn) at (arn.east) {Replicación del ARN};
+\draw[-Stealth, dashed, color=gray] (arn.east) to[out=0, in=-90] (replicacion arn) to[out=180, in=90] (arn.north);
+
+\node[draw, rounded corners, font=\sffamily\tiny, xshift=1.5cm, yshift=-1.25cm, text width=1.5cm, align=center] (transcripcion_inversa) at (adn.east) {Transcripción inversa};
+\draw (arn.south) to[out=-90, in=0] (transcripcion_inversa.east);
+\draw[-Stealth] (transcripcion_inversa.west) to[out=180, in=-90] (adn.south);
+
+\node[draw, dashed, rounded corners, align=center, text width=2.25cm, font=\sffamily\tiny, xshift=-1cm, yshift=-1.75cm] (drts) at (proteinas.west) {Transcriptasa inversa asociada a defensa (DRTs)};
+\coordinate (drts checkpoint) at ([xshift=-5cm]drts.west);
+\draw[-Stealth, dashed, color=gray] (proteinas.south) to[out=-90, in=0] (drts) to[out=180, in=0] (drts checkpoint) to[out=180, in=-90] (adn.south);
+\end{tikzpicture}

@@ -1,0 +1,28 @@
+{
+  "categoria": "Creadores de contenido",
+  "icono": "fa-person-chalkboard",
+  "descripcion": "Creadores de contenido cuyo material puede ser de ayuda para múltiples etapas de la carrera.",
+  "items": [
+    {
+      "nombre": "Veritasium en español",
+      "url": "https://www.youtube.com/@VeritasiumES",
+      "imagen": "https://pbs.twimg.com/profile_images/1940073589853573120/OeooUIGe_400x400.jpg",
+      "descripcion": "Explora casos interesantes de la historia de la ciencia, nuevas tecnologías y más.",
+      "etiquetas": ["física", "química", "biología", "sociales"]
+    },
+    {
+      "nombre": "Kurzgesagt - En Pocas Palabras",
+      "url": "https://www.youtube.com/@kurzgesagt_es",
+      "imagen": "https://upload.wikimedia.org/wikipedia/en/6/65/Kurzgesagt.png",
+      "descripcion": "Temas de ciencia y sociedad con hermosas animaciones.",
+      "etiquetas": ["física", "química", "biología", "sociales"]
+    },
+    {
+      "nombre": "La Hiperactina",
+      "url": "https://www.youtube.com/@Lahiperactina",
+      "imagen": "https://static-cdn.jtvnw.net/jtv_user_pictures/9dcecf75-b49d-4b1e-9080-a77f3ff4d11a-profile_image-70x70.png",
+      "descripcion": "Conceptos de biomedicina: enfermedades y terapias que prometen curarlas.",
+      "etiquetas": ["biomedicina"]
+    }
+  ]
+}

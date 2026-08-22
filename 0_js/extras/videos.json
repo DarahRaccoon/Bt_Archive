@@ -1,0 +1,23 @@
+{
+  "categoria": "Videos selectos",
+  "icono": "fa-youtube",
+  "descripcion": "Videos de utilidad general para la carrera, seleccionados por su relevancia.",
+  "items": [
+    {
+      "nombre": "Cómo evitar el Cambio Climático MUY RÁPIDO",
+      "url": "https://youtu.be/3X-Z0kMfh4M",
+      "imagen": "https://img.youtube.com/vi/3X-Z0kMfh4M/hqdefault.jpg",
+      "descripcion": "Exploración del cambio climático y cómo ayudar a evitarlo.",
+      "etiquetas": ["cambio climático"],
+      "videoId": "3X-Z0kMfh4M"
+    },
+    {
+      "nombre": "Economía Circular: descubre lo que es antes de que reviente el Planeta",
+      "url": "https://youtu.be/Lc4-2cVKxp0",
+      "imagen": "https://img.youtube.com/vi/Lc4-2cVKxp0/hqdefault.jpg",
+      "descripcion": "Cómo funciona el modelo de economía circular como herramienta contra la contaminación.",
+      "etiquetas": ["economía circular"],
+      "videoId": "Lc4-2cVKxp0"
+    }
+  ]
+}

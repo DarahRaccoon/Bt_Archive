@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+
+\draw[fill=white, yscale=2, xscale=2, line width=1pt] (7.5,-1.15)
+    .. controls (7.5,-2) and (7,-2.5) .. (6,-2.5)
+    .. controls (5,-2.5) and (4.5,-2) .. (4.5,-1.15)
+    -- (4.5,-1.15)
+    -- (1.1,-1.5)
+    .. controls (1.4,-2.66) and (1.72,-3.12) .. (2.06,-3.52)
+    .. controls (2.15,-3.46) and (2.25,-3.43) .. (2.36,-3.43)
+    .. controls (2.63,-3.43) and (2.85,-3.65) .. (2.85,-3.92)
+    .. controls (2.85,-4.04) and (2.81,-4.16) .. (2.73,-4.25)
+    .. controls (4.6,-6) and (9.3,-6.2) .. (11.09,-1.5)
+    -- (7.5,-1.15)
+    -- cycle;
+
+\node[node font=\sffamily\bfseries] (sitio activo) at (12,-5.44) {Sitio activo};
+\node[align=center, text width=5em, font=\sffamily\bfseries] (sitio alosterico) at (6.5,-8.25) {Sitio alostérico};
+\node[draw, fill=white, circle, line width=0.5pt, node font=\sffamily] (ligando) at (2.5,-8.25) {Ligando};
+\draw[-Stealth] (ligando.east) to[out=0, in=220] (5,-7.5);
+
+\draw[-Stealth, line width=0.5pt] (sitio alosterico.north east) -- (sitio activo.south west) node[midway, draw, dashed, fill=white, rounded corners=5pt, align=center, text width=6em, font=\sffamily\footnotesize] {Cambio\\conformacional};
+
+\node[draw, fill=white, circle, line width=0.5pt, node font=\sffamily] (sustrato) at (8,-1) {Sustrato};
+\node[draw, fill=white, circle, line width=0.5pt, node font=\sffamily] (producto) at (16,-1) {Producto};
+
+\node[draw, node font=\sffamily] (residuos cataliticos) at (12,-3) {Residuos catalíticos};
+\draw[-Stealth, dashed] (12,-5) -- (residuos cataliticos.south);
+
+\draw[-Stealth] (sustrato.east) to[out=0, in=180] (residuos cataliticos.west);
+\draw[arrows=-Stealth] (residuos cataliticos.east) to[out=0, in=180] (producto.west);  
+
+\end{tikzpicture}

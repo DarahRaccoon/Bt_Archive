@@ -1,0 +1,47 @@
+\documentclass{AsignaturaResumen}
+
+\SetTitulo{Química analítica}
+
+% Glosario
+    \input{../../0-tex_resources/glosario_general}
+
+\begin{document}
+
+    \frontmatter
+    
+\Portada    
+\Indices
+
+    \mainmatter
+    \restoregeometry
+
+
+\part{Muestreo y pretratamiento de muestras}
+
+    \chapter{Técnicas de muestreo}
+    \chapter{Métodos de preparación de muestras}
+    \chapter{Validación analítica}
+
+\part{Métodos analíticos clásicos}
+
+    \chapter{Equilibrio ácido-base} \input{04}
+    \chapter{Productos de solubilidad}
+    \chapter{Gravimetría}
+    \chapter{Volumetría}
+
+\part{Métodos de análisis instrumental}
+
+    \chapter{Potenciometría, refractometría y polarimetría}
+    \chapter{Espectrofotometría}
+    \chapter{Cromatografía}
+
+
+    \backmatter
+    \newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{Main}
+
+    \appendix
+    
+\end{document}

@@ -1,0 +1,42 @@
+{
+  "categoria": "Bibliotecas",
+  "icono": "fa-book-open",
+  "descripcion": "Bibliotecas digitales y repositorios de acceso abierto para consulta de materiales.",
+  "items": [
+    {
+      "nombre": "Repositorio en Google Drive",
+      "url": "https://drive.google.com/drive/folders/1ylnkT1cZclkQx6U-h9yV3klgNi5hbAGD?usp=sharing",
+      "imagen": "https://img.icons8.com/color/96/000000/google-drive.png",
+      "descripcion": "Carpeta de Google Drive donde se recopila la mayoría del contenido de esta web.",
+      "etiquetas": ["repositorio"]
+    },
+    {
+      "nombre": "Anna's Archive",
+      "url": "https://annas-archive.gl/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/AnnasArchive_Logo.svg/250px-AnnasArchive_Logo.svg.png",
+      "descripcion": "La \"biblioteca fantasma\" más grande del mundo. Una enorma cantidad de libros (de ficción y no ficción) y artículos científicos liberados para el acceso público.",
+      "etiquetas": ["acceso libre", "libros", "artículos científicos", "comics"]
+    },
+    {
+      "nombre": "Sci-Hub",
+      "url": "https://sci-hub.ru/index",
+      "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Scihub_raven.png/60px-Scihub_raven.png",
+      "descripcion": "La \"biblioteca fantasma\" de artículos científicos más grande y utilizada del mundo. Obra de Alexandra Elbakyan",
+      "etiquetas": ["acceso libre", "artículos científicos"]
+    },
+    {
+      "nombre": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/",
+      "imagen": "https://gutenberg.org/gutenberg/pg-logo-new.jpg",
+      "descripcion": "Una de las bibliotecas digitales más antiguas, con más de 60,000 libros electrónicos gratuitos.",
+      "etiquetas": ["acceso libre", "libros"]
+    },
+    {
+      "nombre": "Biblioteca personal",
+      "url": "https://rachie.tail0e928a.ts.net",
+      "imagen": "https://img.icons8.com/color/96/000000/books.png",
+      "descripcion": "Biblioteca personal del autor de la página con libros variados: ciencia, humanidades, ficción y más. [(Usuario: Public) - (Contraseña: Public_1)]",
+      "etiquetas": ["biblioteca personal", "variado"]
+    }
+  ]
+}

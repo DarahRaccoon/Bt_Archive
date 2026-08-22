@@ -1,0 +1,50 @@
+\documentclass{AsignaturaResumen}
+
+\SetTitulo{Química Inorgánica}
+
+% Glosario
+    \input{../../0-tex_resources/glosario_general}
+
+\begin{document}
+
+    \frontmatter
+
+\Portada
+\Indices
+
+    \mainmatter
+    \restoregeometry
+
+
+\part{Principios básicos de química}
+
+    \chapter{Teoría atómica} \input{01.tex}    
+    \chapter{Propiedades físicas y químicas de la materia} \input{02.tex}
+    \chapter{Estados de agregación de la materia} \input{03.tex}
+    \chapter{Mezclas químicas, propiedades y soluciones} \input{04.tex}
+    \chapter{Buenas prácticas de laboratorio} \input{05.tex}
+   
+\part{Nomenclatura de compuestos químicos y estequiometría}
+
+    \chapter{Tabla periódica y propiedades de los elementos} \input{06.tex}
+    \chapter{Introducción a la nomenclatura de compuestos inorgánicos} \input{07.tex}
+    \chapter{Reacciones químicas y estequiometría} \input{08.tex}
+
+
+% --------------------------------------------------------------------------------------- %
+
+    \backmatter
+    \newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
+    
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{Main}
+
+    \appendix
+
+\chapter{Tablas periódicas}
+    %\input{tablas_periódicas}
+
+\chapter{Nomenclatura de compuestos inorgánicos}
+    \input{tab:nomenclatura_compuestos.tex}
+
+\end{document}

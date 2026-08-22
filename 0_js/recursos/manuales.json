@@ -1,0 +1,14 @@
+{
+  "categoria": "Manuales",
+  "icono": "fa-book",
+  "descripcion": "Manuales de apoyo para la realización de actividades estudiantiles.",
+  "items": [
+    {
+      "nombre": "Manual - Prácticas de laboratorio",
+      "url": "../biblioteca_interna/Manual_interno-Prácticas_de_laboratorio/Manual_de_prácticas_de_laboratorio.pdf",
+      "imagen": "../biblioteca_interna/Manual_interno-Prácticas_de_laboratorio/Portada.jpg",
+      "descripcion": "Aprende sobre las prácticas de laboratorio que realizarás a lo largo de la carrera y los procedimientos necesarios para su realización.",
+      "etiquetas": []
+    }
+  ]
+}

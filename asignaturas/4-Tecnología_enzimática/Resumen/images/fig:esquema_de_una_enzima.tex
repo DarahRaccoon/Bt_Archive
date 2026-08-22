@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+\coordinate (sitio alosterico) at (1.75,1.5);
+\coordinate (centro de fijacion 1) at (8,7);
+\coordinate (centro de fijacion 2) at (8,5.5);
+\coordinate (sitio activo) at (10,4.5);
+\coordinate (centro de fijacion 3) at (12,5.5);
+\coordinate (centro de fijacion 4) at (12,7);
+
+\draw[line width=1pt] (0,0) 
+    to[out=90,in=260] (sitio alosterico)
+    to[out=80,in=260] (1,3)
+    to[out=90,in=180] (centro de fijacion 1)
+    to[out=0,in=90] (centro de fijacion 2)
+    to[out=270,in=180] (sitio activo) 
+    to[out=0,in=270] (centro de fijacion 3)
+    to[out=90,in=180] (centro de fijacion 4)
+    to[out=0,in=90] (20,0)
+    to cycle;
+
+\node[draw, anchor=north, inner sep=0.75em, align=center, font=\sffamily\large, yshift=-10pt] (sitio activo etiqueta) at (sitio activo.south) {Sitio activo};
+\node[draw, anchor=west,  inner sep=0.75em, align=center, text width=4.25em, font=\sffamily\small, xshift=1em] (sitio alosterico etiqueta) at (sitio alosterico.west) {Sitio alostérico};
+\node[draw, dashed, rounded corners=4pt, inner sep=0.5em, align=center, text width=6em, fill=white, font=\sffamily\footnotesize] (cambio conformacional) at (6.5,1.5) {Cambio conformacional};
+
+\draw[dashed] (sitio alosterico etiqueta.east) to[out=0,in=180] (cambio conformacional.west);
+\draw[-Stealth, dashed] (cambio conformacional.east) to[out=0,in=-90] (sitio activo etiqueta.south);
+
+\node[draw, circle, font=\sffamily, xshift=-3cm] (ligando) at (sitio alosterico) {Ligando};
+\draw[-Stealth, dashed] (ligando.east) --++ (1.5,0);
+
+\node[draw, fill=white, circle, line width=0.5pt, node font=\sffamily, xshift=-1cm, yshift=2cm] (sustrato) at (centro de fijacion 1) {Sustrato};
+\node[draw, fill=white, circle, line width=0.5pt, node font=\sffamily, xshift=1cm,  yshift=2cm] (producto) at (centro de fijacion 4) {Producto};
+
+\node[draw, align=center, text width=4.5em, font=\sffamily\footnotesize] (residuos cataliticos) at (10,6.5) {Residuos catalíticos};
+
+\node[anchor=west, scale=0.175] (residuo1) at (centro de fijacion 2) {\chemfig{-[:-30]-[:30]*6(-=-(-OH)=-=)}};
+\node[anchor=south, scale=0.175] (residuo2) at (sitio activo) {\chemfig{-[:90](-[3]CH3)-[1]CH3}};
+\node[anchor=east, scale=0.175] (residuo3) at (centro de fijacion 3) {\chemfig{-[:210]-[:150]-[:210](=[:165]O)-[:255]OH}};
+
+\draw[<-, densely dashed, line width=0.2pt] ([xshift=0.75em]residuo1.east)  to[out=0,in=270]   (residuos cataliticos);
+\draw[<-, densely dashed, line width=0.2pt] ([yshift=0.75em]residuo2.north) to[out=90,in=270]  (residuos cataliticos);
+\draw[<-, densely dashed, line width=0.2pt] ([xshift=-0.75em]residuo3.west) to[out=180,in=270] (residuos cataliticos);
+
+\draw[-Stealth, dashed] (sustrato.east) to[out=0,in=135] (residuos cataliticos.north west);
+\draw[-Stealth, dashed] (residuos cataliticos.north east) to[out=45,in=180] (producto.west);
+\end{tikzpicture}

@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+\definecolor{Gris}{RGB}{151,151,151}
+
+\node[draw, circle, red, font=\sffamily] (a1) at (0,0) {1};
+\node[draw, circle, red, font=\sffamily] (a2) at (a1.south) [below=4pt] {1};
+\node[draw, circle, red, font=\sffamily] (a3) at (a2.south) [below=4pt] {1};
+\node[draw, circle, red, font=\sffamily] (a4) at (a3.south) [below=4pt] {1};
+\draw[Gris] (a1.south) -- (a2.north);
+\draw[Gris] (a2.south) -- (a3.north);
+\draw[Gris] (a3.south) -- (a4.north);
+\node[draw, circle, blue, font=\sffamily, anchor=west] (b1) at (a1.east) [xshift=8pt] {0};
+\node[draw, circle, blue, font=\sffamily] (b2) at (b1.south) [below=4pt] {0};
+\node[draw, circle, blue, font=\sffamily] (b3) at (b2.south) [below=4pt] {0};
+\node[draw, circle, blue, font=\sffamily] (b4) at (b3.south) [below=4pt] {0};
+\draw[Gris] (b1.south) -- (b2.north);
+\draw[Gris] (b2.south) -- (b3.north);
+\draw[Gris] (b3.south) -- (b4.north);
+
+
+\node[draw, circle, font=\sffamily] (c1) at (b1) [xshift=45pt] {1};
+\node[draw, circle, font=\sffamily] (c2) at (c1.south) [below=4pt] {0};
+\node[draw, circle, font=\sffamily] (c3) at (c2.south) [below=4pt] {1};
+\node[draw, circle, font=\sffamily] (c4) at (c3.south) [below=4pt] {0};
+\draw[Gris] (c1.south) -- (c2.north);
+\draw[Gris] (c2.south) -- (c3.north);
+\draw[Gris] (c3.south) -- (c4.north);
+\node[draw, circle, font=\sffamily, anchor=west] (d1) at (c1.east) [xshift=8pt] {0};
+\node[draw, circle, font=\sffamily] (d2) at (d1.south) [below=4pt] {1};
+\node[draw, circle, font=\sffamily] (d3) at (d2.south) [below=4pt] {0};
+\node[draw, circle, font=\sffamily] (d4) at (d3.south) [below=4pt] {1};
+\draw[Gris] (d1.south) -- (d2.north);
+\draw[Gris] (d2.south) -- (d3.north);
+\draw[Gris] (d3.south) -- (d4.north);
+
+\coordinate[xshift=5pt]  (x1) at (b2.east);
+\coordinate[xshift=-5pt] (x2) at (c2.west);
+\draw[-Stealth] (x1) -- (x2);
+\end{tikzpicture}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\node[draw, inner sep=1em, font=\sffamily] (arnhn) at (0,0) {ARNhn};
+\node[draw, dashed, xshift=3.5cm, yshift= 1cm, align=center, text width=8em, inner sep=1em, font=\sffamily] (arnm1) at (arnhn.east) {ARNm de proteína 1};
+\node[draw, dashed, xshift=3.5cm, yshift=-1cm, align=center, text width=8em, inner sep=1em, font=\sffamily] (arnm2) at (arnhn.east) {ARNm de proteína 2};
+\node[draw, xshift=2cm, inner sep=1em, font=\sffamily] (prot1) at (arnm1.east) {Proteína 1};
+\node[draw, xshift=2cm, inner sep=1em, font=\sffamily] (prot2) at (arnm2.east) {Proteína 2};
+\draw[-Stealth, line width=0.5pt] (arnhn.east) to[out=0, in=180] (arnm1.west);
+\draw[-Stealth, line width=0.5pt] (arnhn.east) to[out=0, in=180] (arnm2.west);
+\draw[-Stealth, line width=0.5pt] (arnm1.east) -- (prot1.west);
+\draw[-Stealth, line width=0.5pt] (arnm2.east) -- (prot2.west);
+\end{tikzpicture}

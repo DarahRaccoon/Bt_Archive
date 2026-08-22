@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ASIGNATURA] - BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO y presentación en redes -->
+    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología.">
+    <meta property="og:title" content="Repositorio de recursos para Ingeniería en Biotecnología">
+    <meta property="og:description" content="Material de estudio colaborativo y de acceso abierto">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado con navegación -->
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <h1>🧬 <span class="logo__text">Bio_Archive</span></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html" class="nav__link">Volver al inicio</a></li>
+                    <li><a href="../asignaturas.html" class="nav__link">Asignaturas</a></li>
+                    <li><a href="../colaborar.html" class="nav__link">Colaborar</a></li>
+                    <li><a href="../recursos-externos.html" class="nav__link">Recursos externos</a></li>
+                    <li><a href="../licencia.html" class="nav__link">Licencia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de inicio con presentación -->
+        <section id="inicio" class="hero" style="background-image: url();">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">ASIGNATURA</h2>
+                    <p class="hero__subtitle"></p>
+                </div>
+            </div>
+        </section>
+
+            <!-- BARRA DE NAVEGACIÓN ENTRE SECCIONES -->
+        <div class="section section-gray" style="padding: 1rem 0;">
+            <div class="container">
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#resumen" class="btn btn--smaller btn--outline"><i class="fas fa-file-pdf"></i> Resúmen</a>
+                    <a href="#manual" class="btn btn--smaller btn--outline"><i class="fas fa-book"></i> Manual</a>
+                    <a href="#diapositivas" class="btn btn--smaller btn--outline"><i class="fa-solid fa-chalkboard-user"></i> Diapositivas</a>
+                    <a href="#videos" class="btn btn--smaller btn--outline"><i class="fab fa-youtube"></i> Videos de apoyo</a>
+                    <a href="#recursos-extra" class="btn btn--smaller btn--outline"><i class="fas fa-link"></i> Recursos extra</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN: RESUMEN DE ASIGNATURA -->
+        <section id="resumen" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fas fa-file-pdf" style="color: var(--color-primary);"></i> Resumen de la asignatura</h2>
+                    <p class="section-header__subtitle">Este resumen cubre todos los temas vistos a través de la materia y busca servir como material de consulta para alumnos y guía para docentes.<br> Última actualización: Marzo de 2026.</p>
+                </div>
+
+                <!-- Contenido sin tarjeta, ancho completo -->
+                <div style="max-width: 1000px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <!-- Botón de descarga -->
+                        <div style="text-align: center; margin-bottom: 2.5rem;">
+                            <a href="../resúmenes/" class="btn btn--primary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar resumen
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Vista previa desplegable -->
+                    <details style="border: 1px solid var(--color-gray-dark); border-radius: var(--border-radius); background-color: var(--color-white);">
+                        <summary style="padding: 1.2rem; cursor: pointer; background-color: var(--color-gray); border-radius: var(--border-radius); font-weight: 600; color: var(--color-secondary);">
+                            <i class="fas fa-eye"></i> Vista previa del documento
+                        </summary>
+                        <div style="padding: 1.5rem;">
+                            <embed src="../resúmenes/" type="application/pdf" width="100%" height="600px" style="display: block; border-radius: var(--border-radius);"/>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: MANUAL DE ASIGNATURA -->
+        <section id="manual" class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fas fa-book-open" style="color: var(--color-primary);"></i> Manual de asignatura</h2>
+                    <p class="section-header__subtitle">Documento institucional que recopila las unidades de cada asignatura, sus temas y las competencias a desarrollar por parte de los alumnos a lo largo del cuatrimestre.</p>
+                </div>
+
+                <!-- Contenido sin tarjeta, ancho completo -->
+                <div style="max-width: 1000px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">                        
+                        <!-- Botón de descarga -->
+                        <div style="text-align: center; margin-bottom: 2.5rem;">
+                            <a href="../manuales/" class="btn btn--primary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar manual
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Vista previa desplegable -->
+                    <details style="border: 1px solid var(--color-gray-dark); border-radius: var(--border-radius); background-color: var(--color-white);">
+                        <summary style="padding: 1.2rem; cursor: pointer; background-color: var(--color-gray); border-radius: var(--border-radius); font-weight: 600; color: var(--color-secondary);">
+                            <i class="fas fa-eye"></i> Vista previa del documento
+                        </summary>
+                        <div style="padding: 1.5rem;">
+                            <embed src="../manuales/" type="application/pdf" width="100%" height="600px" style="display: block; border-radius: var(--border-radius);"/>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: DIAPOSITIVAS -->
+        <section id="diapositivas" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fa-solid fa-chalkboard-user" style="color: var(--color-primary);"></i> Diapositivas de la asignatura</h2>
+                    <p class="section-header__subtitle">Diapositivas que recopilan los temas más relevantes de la asignatura.</p>
+                </div>
+
+                <!-- Contenido sin tarjeta, ancho completo -->
+                <div style="max-width: 1000px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">                       
+                        <!-- Botón de descarga -->
+                        <div style="text-align: center; margin-bottom: 2.5rem;">
+                            <a href="../diapositivas/" class="btn btn--primary" target="_blank">
+                                <i class="fas fa-download"></i> Descargar diapositivas
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Vista previa desplegable -->
+                    <details style="border: 1px solid var(--color-gray-dark); border-radius: var(--border-radius); background-color: var(--color-white);">
+                        <summary style="padding: 1.2rem; cursor: pointer; background-color: var(--color-gray); border-radius: var(--border-radius); font-weight: 600; color: var(--color-secondary);">
+                            <i class="fas fa-eye"></i> Vista previa del documento
+                        </summary>
+                        <div style="padding: 1.5rem;">
+                            <embed src="../diapositivas/" type="application/pdf" width="100%" height="600px" style="display: block; border-radius: var(--border-radius);"/>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: VIDEOS -->
+        <section id="videos" class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fab fa-youtube" style="color: var(--color-primary);"></i> Videos explicativos</h2>
+                    <p class="section-header__subtitle">Videos recomendados para un mejor entendimiento de algunos conceptos de la materia.</p>
+                </div>
+
+                <div class="grid grid--auto-fit">
+
+                    <div class="card">
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1rem; border-radius: var(--border-radius);">
+                            
+                        </div>
+                        <h3 class="card__title">TITULO</h3>
+                        <p class="card__subtitle">Por: AUTOR</p>
+                        <p class="card__text">DESCRIPCCIÓN</p>
+                            <a href="URL" class="btn btn--primary" target="_blank">
+                                <i class="fa-brands fa-youtube"></i> Ver en YouTube
+                            </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: RECURSOS EXTRA -->
+        <section id="recursos-extra" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fas fa-paperclip" style="color: var(--color-primary);"></i> Recursos extra</h2>
+                    <p class="section-header__subtitle">Material complementario para profundizar.</p>
+                </div>
+
+                <!-- Grid de recursos -->
+                <div class="grid grid--auto-fit">
+                    <!-- Artículos/Papers -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3 class="card__title">Artículos recomendados</h3>
+                        <ul style="list-style: none; margin-bottom: 1.5rem; text-align: left;">
+                            <li style="margin-bottom: 0.5rem;">📄 <a href="#" target="_blank">Química inorgánica: conceptos fundamentales</a></li>
+                            <li style="margin-bottom: 0.5rem;">📄 <a href="#" target="_blank">Tabla periódica: historia y tendencias</a></li>
+                            <li style="margin-bottom: 0.5rem;">📄 <a href="#" target="_blank">Aplicaciones de compuestos inorgánicos en biotecnología</a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Ejercicios/Prácticas -->
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <h3 class="card__title">Ejercicios y prácticas</h3>
+                        <ul style="list-style: none; margin-bottom: 1.5rem; text-align: left;">
+                            <li style="margin-bottom: 0.5rem;">✏️ <a href="#" target="_blank">Guía de ejercicios: configuración electrónica</a></li>
+                            <li style="margin-bottom: 0.5rem;">✏️ <a href="#" target="_blank">Guía de ejercicios: nomenclatura</a></li>
+                            <li style="margin-bottom: 0.5rem;">🔬 <a href="#" target="_blank">Práctica: identificación de compuestos</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p>© 2024 Vazquez Bernal David Ernesto · Estudiante de Biotecnología</p>
+                <p>Resúmenes creados a través de LaTeX, con código fuente disponible en <a href="https://github.com/DarahRaccoon/Summaries" target="_blank" class="footer__link">GitHub</a></p>
+            </div>
+            <div class="footer__license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                    <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

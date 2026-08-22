@@ -1,0 +1,49 @@
+\documentclass{AsignaturaResumen}
+
+\SetTitulo{Biología y fisiología celular}
+
+% Glosario
+    \input{../../0-tex_resources/glosario_general}
+
+\begin{document}
+
+    \frontmatter
+    
+\Portada    
+\Indices
+
+    \mainmatter
+    \restoregeometry
+
+
+\part{Introducción a la célula}
+    
+    \chapter{Introducción a las biomoléculas} \input{01}    
+    \chapter{Teoría celular} \input{02}
+    \chapter[Células procariotas]{Células procariotas: Estructura de la célula bacteriana}
+    \chapter[Células eucariotas]{Células eucariotas: Célula animal, vegetal, fungal y protista}
+
+\part{Biología celular}
+    
+    \chapter[Membranas biológicas]{Estructura de las membranas biológicas: Bicapas lipídicas y fosfolípidos} \input{05}    
+    \chapter[Citoesqueleto]{Citoesqueleto: Filamentos intermedios, microtúbulos y filamentos de actina}
+    \chapter[Componentes intracelulares]{Componentes celulares: Estructura, características y funciones}
+    \chapter[Núcleo celular]{Estructura y función del núcleo celular: duplicación, transcripción y traducción del ADN} \input{09}
+
+\part{Fisiología celular}
+
+    \chapter[Transporte de sustancias 1]{Transporte de sustancias 1: Transporte pasivo, activo, ósmisis y difusión}
+    \chapter[Transporte de sustancias 2]{Transporte de sustancias 2: Endocitosis: Fagocitosis y pinocitosis} \input{11}
+    \chapter{Comunicación celular}
+    \chapter[Ciclo celular]{Ciclo celular: Fases del ciclo celular, mitosis y meiosis} \input{13}
+
+
+    \backmatter
+    \newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{Main}
+
+    \appendix
+
+\end{document}

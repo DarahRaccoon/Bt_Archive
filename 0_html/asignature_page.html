@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando... - BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO -->
+    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología.">
+    <meta property="og:title" content="Repositorio de recursos para Ingeniería en Biotecnología">
+    <meta property="og:description" content="Material de estudio colaborativo y de acceso abierto">
+    
+    <link rel="stylesheet" href="/Bt_Archive/0_css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/Bt_Archive/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <main-header></main-header>
+
+    <main>
+        <!-- Contenedor donde se renderizará todo el contenido -->
+        <div id="asignatura-container">
+            <!-- Loader inicial -->
+            <div style="text-align: center; padding: 4rem;">
+                <i class="fas fa-spinner fa-spin" style="font-size: 3rem; color: var(--color-primary);"></i>
+                <p style="margin-top: 1rem; color: var(--color-text-light);">Cargando asignatura...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <main-footer></main-footer>
+
+    <!-- Cargar componentes -->
+    <script>
+        (async function loadComponents() {
+            try {
+                const response = await fetch('/Bt_Archive/0_html/componentes.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                const html = await response.text();
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+            }
+        })();
+    </script>
+
+    <!-- Cargar el loader de asignatura -->
+    <script src="/Bt_Archive/0_js/asignatura-loader.js"></script>
+
+</body>
+</html>

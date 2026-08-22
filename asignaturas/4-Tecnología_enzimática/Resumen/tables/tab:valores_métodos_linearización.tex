@@ -1,0 +1,19 @@
+\begin{table}
+\centering
+
+\caption{Valores de $m$, $b$, $V_\text{Max}$ y $K_\text{m}$ en cada método de linearización}
+\label{tab:valores_métodos_linearización}
+
+{\small\setstretch{2}\rowcolors{1}{White}{Grey}
+
+\begin{tabular}{M{0.275\linewidth}M{0.125\linewidth}M{0.125\linewidth}M{0.1\linewidth}M{0.15\linewidth}}\hline
+
+    \theader{Método de linearización} & \theader{$\mathbf{m}$} & \theader{$\mathbf{b}$} & \theader{$V_\text{Max}$} & \theader{$K_\text{m}$} \\ \hline
+    
+    Lieneawever-Burk & $\frac{K_\text{m}}{V_\text{Max}}$ & $\frac{1}{V_\text{Max}}$          & $\frac{1}{b}$ & $V_\text{Max} \cdot m$   \\
+    Eadie-Hosfstee   & K\sub{m}                          & $V_\text{Max}$                    & $b$           & $m$                           \\
+    Hanes            & $\frac{1}{V_\text{Max}}$          & $\frac{K_\text{m}}{V_\text{Max}}$ & $\frac{1}{m}$ & $V_\text{Max} \cdot b$ \\
+    
+    \hline
+
+\end{tabular}}\end{table}

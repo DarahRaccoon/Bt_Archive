@@ -1,0 +1,84 @@
+
+Si bien ya conocemos la estructura de una enzima y sus tipos, antes de estudiar cómo aplicarlas para catalizar reacciones es necesario aprender un detalle sobre ellas: porqué las enzimas catalizan reacciones y cómo lo hacen.
+
+Para estudiar las razones por las cuales las enzimas tienen esta capacidad de catálisis necesitamos recordar algunos conceptos de termodinámica
+
+\section{Termodinámica de las reacciones enzimáticas}
+
+Los conceptos de termodinámica fundamentales para el estudio de las reacciones enzimáticas son aquellos relacionados con la primera y la segunda ley de la termodinámica. 
+
+\subsection{Primera ley de la termodinámica}
+
+La \emph{primera ley de la termodinámica} enuncia que \textit{``la energía ni se crea ni se destruye''}, y que la energía interna de un sistema sólo puede modificarse mediante intercambios de calor o de trabajo con el entorno.\citep{mathewsBioquimica2002,devlinBioquimica2014} Esto quiere decir que cuando ocurre una reacción química en un sistema dado, la energía que tiene ese sistema (su energía interna, representada con $E$) no va a desaparecer, sino que se transformará en otras formas de energía, específicamente calor ($q$) y/o trabajo ($w$) (\autoref{eq:cambio_de_energia_interna}).
+
+\begin{equation}\label{eq:cambio_de_energia_interna}
+    \Delta E = q - w
+\end{equation}
+
+Dado que las reacciones que estudiamos (reacciones en sistemas biológicos) ocurren a presión constante (la presión atmosférica), parte de la energía se transforma en trabajo de poco interés para nosotros. Con esto en mente, lo que nos interesa principalmente es el calor de la reacción, el cual de hecho es un aspecto fácilmente medible experimentalmente, y lo podemos definir despejando la ecuación de la siguiente manera: 
+
+\begin{align*}
+    E = q - w
+    \\
+    -q = -E - w
+    \\
+    q = E + w
+\end{align*}
+
+Dado que el trabajo ($w$) es equivalente a la presión por el volumen ($P \cdot V$), y nos interesa mantener el valor de la presión ($P$) constante, conviene expandir ese término en la ecuación:
+
+\begin{equation}
+    q = E + P \cdot V
+\end{equation}
+
+Esta nueva identidad es lo que se conoce como entalpía ($H$):
+
+\marginpar{\resumebox{definicion}{Entalpía ($H$)}{Es el calor generado ($q$) en una reacción a presión constante}}
+
+\begin{equation*}
+    H = E + P \cdot V
+\end{equation*}
+
+Su cambio en una reacción ($\Delta H$) es el primer elemento a tener en cuenta para estudiar la termodinámica de las reacciones enzimáticas:
+
+\begin{equation}
+    \Delta H = \Delta E + P \cdot \Delta V
+\end{equation}
+
+\subsection{Segunda ley de la termodinámica}
+
+La \emph{segunda ley de la termodinámica} enuncia que \textit{``la entropía de un sistema aislado tenderá a aumentar hacia un valor máximo''}\citep{mathewsBioquimica2002}.
+
+\marginpar{\resumebox{definicion}{Entropía ($S$)}{\footnotesize La \emph{entropía} mide aquella energía de un sistema que no puede ser utilizada o que se encuentra menos disponible. Se puede decir también que mide el grado de aleatoriedad o desorden de un sistema.\citep{mathewsBioquimica2002,devlinBioquimica2014}}}
+
+El aspecto clave a notar de este enunciado es que la segunda ley solo se aplica de manera rigurosa a sistemas aislados, sin embargo, \emph{los sistemas biológicos no son sistemas aislados}, sino que intercambian materia y energía con el ambiente a su alrededor. Con esto en mente, para estudiar la termodinámica de las reacciones biológicas se utiliza la \emph{energía libre}, una cantidad que justamente toma en cuenta este aspecto de los sistemas biológicos de ser sistemas abiertos.
+
+\section{Energía libre de Gibbs}
+
+\begin{equation}
+    \Delta G = \Delta H + P \cdot \Delta V
+\end{equation}
+
+\marginpar{\begin{minipage}{\marginparwidth}
+    \input{tables/tab:interpretacion_de_energia_libre_de_gibbs}
+\end{minipage}}
+
+\section{Energía de activación}
+
+Las enzimas funcionan como catalizadores al reducir la energía de activación necesaria para llevar a cabo las reacciones químicas deseadas.
+
+El estado de transición original, cuya energía de activación es alta, es remplazado por estados intermedios cuya energía de activación es menor.
+
+Las enzimas pueden generar estos estados intermedios al facilitar los cambios conformacionales de las moléculas.
+
+
+
+\begin{figure}[H]
+    \centering
+    \input{images/fig:diferencia_de_energias_de_activacion}
+    \caption{Diferencias de energías de activación}
+    \label{fig:diferencia_de_energias_de_activacion}
+\end{figure}
+
+\section{Mecanismos de catálisis}
+

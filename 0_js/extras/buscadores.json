@@ -1,0 +1,56 @@
+{
+  "categoria": "Buscadores",
+  "icono": "fa-magnifying-glass",
+  "descripcion": "Herramientas para búsqueda de bibliografía científica y académica.",
+  "items": [
+    {
+      "nombre": "Google Académico",
+      "url": "https://scholar.google.com/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/960px-Google_Scholar_logo.svg.png?_=20200110094142",
+      "descripcion": "El buscador por defecto para la investigación científica. Ayuda a buscar información acerca de básicamente cualquier tema.",
+      "etiquetas": ["general"]
+    },
+    {
+      "nombre": "Scielo",
+      "url": "https://www.scielo.org/es/",
+      "imagen": "https://www.scielo.org/static/scieloorg/images/logo-scielo-portal-no-label.svg",
+      "descripcion": "Buscador enfocado en el mundo de las investigaciones latinoamericanas.",
+      "etiquetas": ["latinoamérica"]
+    },
+    {
+      "nombre": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/PubMed_logo_blue.svg/1920px-PubMed_logo_blue.svg.png",
+      "descripcion": "Excelente para búsquedas relacionadas al área de la salud humana, como ensayos clínicos.",
+      "etiquetas": ["medicina"]
+    },
+    {
+      "nombre": "Research Rabbit",
+      "url": "https://app.researchrabbit.ai/",
+      "imagen": "https://cdn.brandfetch.io/idjk92T_BK/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1767762961239",
+      "descripcion": "Mezcla entre buscador y gestor de referencias con una visualización gráfica de estudios que están relacionados entre sí.",
+      "etiquetas": ["IA", "referencias relacionadas"]
+    },
+    {
+      "nombre": "OpenEvidence",
+      "url": "https://www.openevidence.com/",
+      "imagen": "https://cdn.brandfetch.io/idCUEIwImk/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1771745759586",
+      "descripcion": "Buscador impulsado por IA que recoge artículos de revistas médicas.",
+      "etiquetas": ["IA", "medicina"]
+    },
+    {
+      "nombre": "Anna's Archive",
+      "url": "https://annas-archive.gl/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/AnnasArchive_Logo.svg/250px-AnnasArchive_Logo.svg.png",
+      "descripcion": "La biblioteca fantasma más grande del mundo. Libros y artículos científicos mediante DOI.",
+      "etiquetas": ["acceso libre", "artículos", "libros"]
+    },
+    {
+      "nombre": "Sci-Hub",
+      "url": "https://sci-hub.ru/index",
+      "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Scihub_raven.png/60px-Scihub_raven.png",
+      "descripcion": "La biblioteca fantasma de artículos científicos más grande y utilizada.",
+      "etiquetas": ["acceso libre", "artículos"]
+    }
+  ]
+}

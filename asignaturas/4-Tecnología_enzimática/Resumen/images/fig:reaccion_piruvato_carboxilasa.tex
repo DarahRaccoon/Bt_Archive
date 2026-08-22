@@ -1,0 +1,19 @@
+\begin{figure}[H]
+    \centering
+    {
+    \chemnameinit{\chemfig{{\color{blue}^{-}OOC}-C(=[2]O)-CH_3}}
+    \schemestart
+        \chemname{\chemfig{^{-}OOC-C(=[2]O)-CH_3}}{\small\bfseries Piruvato}
+        \+
+        \chemfig{{\color{red}C} | {\color{red}O_2}}
+        \arrow(.base east--.base west){-U>[ATP][ADP + Pi][][0.3][60]}[,2]
+        \chemname{\chemfig{^{-}OOC-C(=[2]O)-CH_2-{\color{red}COO^{-}}}}{\small\bfseries Oxalacetato}
+    \schemestop
+    \chemnameinit{}
+    %\vspace*{1em}
+    \par
+    }
+    \rule{\linewidth}{0.2pt}
+    \caption[Carboxilación del piruvato en oxalacetato por la piruvato carboxilasa]{Reacción catalizada por la piruvato carboxilasa (EC 6.4.1.1). En este ejemplo la enzima añade una molécula de dióxido de carbono (\ce{CO2}) a una molécula de piruvato, lo que genera oxalacetato. Este proceso de añadir un grupo carboxilo se conoce como carboxilación, y es el proceso opuesto a la descarboxilación viso en la \autoref{fig:reaccion_piruvato_descarboxilasa}. }
+    \label{fig:reaccion_piruvato_carboxilasa}
+\end{figure}

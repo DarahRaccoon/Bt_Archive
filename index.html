@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO y presentación en redes -->
+    <meta name="description" content="Archivo de recursos de estudio de asignaturas para Ingeniería en biotecnología.">
+    <meta property="og:title" content="BT_Archive">
+    <meta property="og:description" content="Recursos de estudio colaborativos y de acceso abierto">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="0_css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Encabezado con navegación -->
+
+    <main-header></main-header>
+
+    <main>
+        <!-- Sección de inicio con presentación -->
+        <section id="inicio" class="hero" style="background-image: url(website_resources/images/hero_background.jpg);">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Archivo de Ingeniería en Biotecnología</h2>
+                    <p class="hero__subtitle">Un repositorio de material de estudio abierto, colaborativo y en constante mejora</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 1: ¿Qué es este proyecto? -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="grid grid--2cols grid--center" style="gap: 3rem;">
+                    <div class="hero__content" style="max-width: 100%;">
+                        <h2 class="section-header__title">¿Qué es este proyecto?</h2>
+                        <p class="section-header__subtitle">Este proyecto busca recopilar recursos que puedan ser de ayuda para los estudiantes y docentes de la carrera de Ingeniería en Biotecnología en la Universidad Politécnica de Sinaloa (UPSIN).</p>
+                        <p class="section-header__subtitle">Todo el contenido está disponible para su consulta y descarga gratuita en esta web.<br>Algunos recursos se recopilan también en Google Drive para mayor accesibilidad.</p>
+                        <div class="btn-group" style="margin-top: 1.5rem;">
+                            <a href="https://drive.google.com/drive/folders/1ylnkT1cZclkQx6U-h9yV3klgNi5hbAGD?usp=sharing" target="_blank" class="btn btn--secondary" style="margin-top: 2rem;">Repositorio en Google Drive <i class="fa-brands fa-google-drive"></i></a>
+                        </div>
+                    </div>
+                    <div class="section-image">
+                        <img src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg" alt="Ilustración alusiva a una biblioteca">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: ¿Cómo colaborar? -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="grid grid--2cols grid--center" style="gap: 3rem; direction: rtl;">
+                    <div class="hero__content" style="max-width: 100%; direction: ltr;">
+                        <h2 class="section-header__title">¿Cómo colaborar?</h2>
+                        <p class="section-header__subtitle">Todo el contenido del proyecto es de código abierto y está alojado en GitHub. Cualquier persona puede contribuir mejorando los recursos existentes, corrigiendo errores o añadiendo nuevo contenido.</p>
+                        <div class="btn-group" style="margin-top: 1.5rem;">
+                            <a href="0_html/colaborar.html" class="btn btn--primary">Colabora aquí <i class="fa-solid fa-people-carry-box"></i></a>
+                            <a href="https://github.com/DarahRaccoon/Summaries" target="_blank" class="btn btn--outline">Ver contenido en GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="section-image">
+                        <img src="https://images.pexels.com/photos/10677236/pexels-photo-10677236.jpeg" alt="Ilustración de colaboración">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Licencia abierta -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="grid grid--2cols grid--center" style="gap: 3rem;">
+                    <div class="hero__content">
+                        <h2 class="section-header__title">Contenido abierto y libre</h2>
+                        <p class="section-header__subtitle">Este proyecto busca mantener todo el contenido abierto y libre para la comunidad estudiantil, por ello está bajo licencia <strong>CC-BY-SA 4.0</strong>, lo que significa que puedes compartirlo y adaptarlo libremente, así como realizar actividades comerciales con él, siempre que reconozcas la autoría y compartas bajo la misma licencia.</p>
+                    </div>
+                    <div class="section-image">
+                        <img src="https://images.pexels.com/photos/3782228/pexels-photo-3782228.jpeg" alt="Ilustración de licencia abierta">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+
+    <main-footer></main-footer>
+
+    <script>
+        
+        // Cargar y definir componentes ANTES de que se rendericen
+        
+        (async function loadComponents() {
+            try {
+                const response = await fetch('0_html/componentes.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar components.html`);
+                
+                const html = await response.text();
+                
+                // Crear un contenedor temporal para extraer templates y script
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                // Agregar los templates al body
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                // Ejecutar el script que define los custom elements
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+                // Fallback visual para desarrollo
+                document.body.insertAdjacentHTML('afterbegin', 
+                    '<div style="background:#f8d7da; color:#721c24; padding:1rem; text-align:center;">⚠️ Error al cargar header/footer. Verifica que components.html existe.</div>'
+                );
+            }
+        })();
+    </script>
+    
+</body>
+</html>

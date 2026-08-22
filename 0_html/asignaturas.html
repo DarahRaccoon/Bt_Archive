@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignaturas - BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO y presentación en redes -->
+    <meta name="description" content="Resúmenes completos y actualizados de asignaturas de Ingeniería en biotecnología.">
+    <meta property="og:title" content="Repositorio de recursos para Ingeniería en Biotecnología">
+    <meta property="og:description" content="Material de estudio colaborativo y de acceso abierto">
+    
+    <link rel="stylesheet" href="/Bt_Archive/0_css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado con navegación -->
+    <main-header></main-header>
+
+    <main>
+        <!-- Sección de inicio con presentación -->
+        <section id="inicio" class="hero" style="background-image: url(/Bt_Archive/website_resources/images/asignaturas_back.jpg);">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Recursos por asignatura</h2>
+                    <p class="hero__subtitle">Aquí puedes encontrar material de apoyo recopilado para cada asignatura del plan de estudios.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de resúmenes disponibles -->
+        <section id="resumenes" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><i class="fa-solid fa-book-open"></i> Asignaturas disponibles</h2>
+                    <p class="section-header__subtitle">Puedes acceder a los recursos de cada asignatura en las siguientes tarjetas o revisar todos los archivos recopilado en un sola carpeta e Drive por medio del enlace a continuación.</p>
+                </div>
+
+                <!-- Enlace directo a la carpeta principal de Drive -->
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <a href="https://drive.google.com/drive/folders/1ylnkT1cZclkQx6U-h9yV3klgNi5hbAGD?usp=sharing" class="btn btn--outline" target="_blank">
+                        <i class="fab fa-google-drive"></i> Acceder a Google Drive
+                    </a>
+                </div>
+                
+                <!-- Buscador de asignaturas -->
+                <div style="margin-bottom: 2rem;">
+                    <div style="max-width: 500px; margin: 0 auto; position: relative;">
+                        <input type="text" id="searchInput" placeholder="🔍 Buscar asignatura..." 
+                            style="width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--color-gray); 
+                                    border-radius: 50px; font-size: 1rem; background: var(--color-white); 
+                                    color: var(--color-text); transition: all 0.3s ease;">
+                    </div>
+                    <div style="text-align: center; margin-top: 0.5rem; color: var(--color-text-light); font-size: 0.9rem;">
+                        <span id="filterCount">Mostrando todas las asignaturas</span>
+                        <span style="margin: 0 0.5rem;">·</span>
+                        <button id="clearSearch" style="background: none; border: none; color: var(--color-primary); cursor: pointer; font-weight: 600;">
+                            <i class="fas fa-times"></i> Limpiar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contenedor donde se generarán dinámicamente las tarjetas -->
+                <div id="cards-container" class="grid grid--auto-fit">
+                    <!-- Aquí se cargarán las tarjetas desde JavaScript -->
+                    <div style="text-align: center; padding: 2rem;">
+                        <i class="fas fa-spinner fa-spin"></i> Cargando asignaturas...
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <main-footer></main-footer>
+
+    <script>
+        // ============================================================
+        // VARIABLES GLOBALES
+        // ============================================================
+        
+        let todasLasAsignaturas = [];
+        let asignaturasFiltradas = [];
+
+        // ============================================================
+        // FUNCIÓN PARA ESCAPAR HTML
+        // ============================================================
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // ============================================================
+        // FUNCIÓN PARA NORMALIZAR TEXTO (quitar tildes y convertir a minúsculas)
+        // ============================================================
+        
+        function normalizarTexto(text) {
+            return text
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, ''); // Elimina tildes
+        }
+
+        // ============================================================
+        // FUNCIÓN PARA RENDERIZAR TARJETAS
+        // ============================================================
+        
+        function renderizarTarjetas(asignaturas) {
+            const container = document.getElementById('cards-container');
+            
+            if (asignaturas.length === 0) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 3rem; color: var(--color-text-light); grid-column: 1 / -1;">
+                        <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                        <h3>No se encontraron asignaturas</h3>
+                        <p>Prueba con otros términos de búsqueda.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            let cardsHTML = '';
+            
+            asignaturas.forEach(asig => {
+                cardsHTML += `
+                    <article class="card">
+                        <div class="card__icon">
+                            <i class="fas ${asig.icono}"></i>
+                        </div>
+                        <h3 class="card__title">${escapeHtml(asig.nombre)}</h3>
+                        <div class="card__subtitle">Cuatrimestre: ${asig.cuatrimestre}</div>
+                        <p class="card__text">${escapeHtml(asig.descripcion)}</p>
+                        <div class="card__footer">
+                            <a href="${asig.rutaResumen}" class="btn btn--secondary" target="_blank" download>
+                                <i class="fas fa-download"></i> Descargar resúmen
+                            </a>
+                            <a href="/Bt_Archive/0_html/asignature_page.html?id=${asig.id}" class="btn btn--primary">
+                                <i class="fa-solid fa-door-open"></i> Acceder
+                            </a>
+                        </div>
+                    </article>
+                `;
+            });
+            
+            // Añadir la tarjeta placeholder al final (solo si no hay filtro activo)
+            if (asignaturas.length === todasLasAsignaturas.length) {
+                cardsHTML += `
+                    <article class="card card--placeholder">
+                        <div class="card__icon">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <h3 class="card__title">Más próximamente</h3>
+                        <p class="card__text">Nuevas asignaturas se irán agregando con el tiempo.</p>
+                    </article>
+                `;
+            }
+            
+            container.innerHTML = cardsHTML;
+            
+            // Actualizar contador
+            const countEl = document.getElementById('filterCount');
+            if (countEl) {
+                const total = todasLasAsignaturas.length;
+                const mostradas = asignaturas.length;
+                if (mostradas === total) {
+                    countEl.textContent = `Mostrando todas las asignaturas (${total})`;
+                } else {
+                    countEl.textContent = `Mostrando ${mostradas} de ${total} asignaturas`;
+                }
+            }
+        }
+
+        // ============================================================
+        // FUNCIÓN PARA FILTRAR ASIGNATURAS (ignora tildes)
+        // ============================================================
+        
+        function filtrarAsignaturas(query) {
+            if (!query || query.trim() === '') {
+                asignaturasFiltradas = [...todasLasAsignaturas];
+            } else {
+                const q = normalizarTexto(query.trim());
+                asignaturasFiltradas = todasLasAsignaturas.filter(asig => {
+                    const nombre = normalizarTexto(asig.nombre);
+                    const descripcion = normalizarTexto(asig.descripcion);
+                    const cuatri = asig.cuatrimestre.toString();
+                    return nombre.includes(q) || descripcion.includes(q) || cuatri.includes(q);
+                });
+            }
+            
+            // Re-renderizar con el filtro aplicado
+            renderizarTarjetas(asignaturasFiltradas);
+        }
+
+        // ============================================================
+        // INICIALIZAR BUSCADOR
+        // ============================================================
+        
+        function inicializarBuscador() {
+            const searchInput = document.getElementById('searchInput');
+            const clearButton = document.getElementById('clearSearch');
+            
+            if (!searchInput) return;
+            
+            // Evento de búsqueda
+            searchInput.addEventListener('input', function() {
+                const query = this.value.trim();
+                filtrarAsignaturas(query);
+            });
+            
+            // Limpiar búsqueda
+            if (clearButton) {
+                clearButton.addEventListener('click', function() {
+                    searchInput.value = '';
+                    filtrarAsignaturas('');
+                    searchInput.focus();
+                });
+            }
+            
+            // Cerrar con tecla ESC
+            searchInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    this.value = '';
+                    filtrarAsignaturas('');
+                    this.blur();
+                }
+            });
+        }
+
+        // ============================================================
+        // FUNCIÓN PRINCIPAL: CARGAR ASIGNATURAS
+        // ============================================================
+        
+        async function cargarAsignaturas() {
+            const container = document.getElementById('cards-container');
+            
+            try {
+                // Cargar el archivo JSON
+                const response = await fetch('../0_js/asignaturas.json');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar asignaturas.json`);
+                
+                const data = await response.json();
+                todasLasAsignaturas = data.asignaturas;
+                asignaturasFiltradas = [...todasLasAsignaturas];
+                
+                // Ordenar por cuatrimestre y luego por nombre
+                todasLasAsignaturas.sort((a, b) => {
+                    if (a.cuatrimestre !== b.cuatrimestre) {
+                        return a.cuatrimestre - b.cuatrimestre;
+                    }
+                    return a.nombre.localeCompare(b.nombre);
+                });
+                
+                // Renderizar todas
+                renderizarTarjetas(asignaturasFiltradas);
+                
+                // Inicializar buscador
+                inicializarBuscador();
+                
+            } catch (error) {
+                console.error('Error cargando asignaturas:', error);
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; color: var(--color-error);">
+                        <i class="fas fa-exclamation-triangle"></i> Error al cargar las asignaturas. 
+                        <br>Por favor, recarga la página o <strong><a href="./colaborar.html">contacta al administrador</a></strong>.
+                    </div>
+                `;
+            }
+        }
+
+        // ============================================================
+        // CARGAR COMPONENTES E INICIALIZAR
+        // ============================================================
+        
+        (async function loadComponents() {
+            try {
+                const response = await fetch('/Bt_Archive/0_html/componentes.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar componentes.html`);
+                
+                const html = await response.text();
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                // Agregar los templates al body
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                // Ejecutar el script que define los custom elements
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+                
+                // Una vez cargados los componentes, cargar las asignaturas
+                await cargarAsignaturas();
+                
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+                document.body.insertAdjacentHTML('afterbegin', 
+                    '<div style="background:#f8d7da; color:#721c24; padding:1rem; text-align:center;">⚠️ Error al cargar header/footer. Verifica que components.html existe.</div>'
+                );
+                // Intentar cargar asignaturas de todas formas
+                await cargarAsignaturas();
+            }
+        })();
+    </script>
+
+</body>
+</html>

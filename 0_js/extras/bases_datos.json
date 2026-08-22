@@ -1,0 +1,56 @@
+{
+  "categoria": "Bases de datos",
+  "icono": "fa-database",
+  "descripcion": "Grandes volúmenes de datos relacionados a diferentes disciplinas de biotecnología.",
+  "items": [
+    {
+      "nombre": "NCBI",
+      "url": "https://www.ncbi.nlm.nih.gov/",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/US-NLM-NCBI-Logo.svg/960px-US-NLM-NCBI-Logo.svg.png",
+      "descripcion": "Contiene información sobre muchas áreas, desde nucleótidos hasta proteínas y taxonomías.",
+      "etiquetas": ["general"]
+    },
+    {
+      "nombre": "Expasy",
+      "url": "https://www.expasy.org/",
+      "imagen": "https://www.expasy.org/img/expasy-homepage.webp",
+      "descripcion": "Al igual que NCBI, guarda información sobre una gran variedad de áreas.",
+      "etiquetas": ["general"]
+    },
+    {
+      "nombre": "Protein Data Bank",
+      "url": "https://www.rcsb.org/",
+      "imagen": "https://cdn.rcsb.org/rcsb-pdb/v2/common/images/rcsb_logo.png",
+      "descripcion": "Base de datos enfocada en proteínas y en sus cadenas de aminoácidos.",
+      "etiquetas": ["proteínas"]
+    },
+    {
+      "nombre": "BRENDA Enzyme Database",
+      "url": "https://www.brenda-enzymes.org/",
+      "imagen": "https://www.brenda-enzymes.org/images/brenda_logo.svg",
+      "descripcion": "Enfocada en enzimas, contiene información sobre sustratos, organismos y más.",
+      "etiquetas": ["enzimas"]
+    },
+    {
+      "nombre": "GeneCards",
+      "url": "https://www.genecards.org/",
+      "imagen": "https://www.genecards.org/images/genecards_logo.qontlgr7tr.png",
+      "descripcion": "Base de datos de genes humanos y sus funciones dentro de este.",
+      "etiquetas": ["genes"]
+    },
+    {
+      "nombre": "KEEG",
+      "url": "https://www.genome.jp/kegg/",
+      "imagen": "https://www.kegg.jp/Fig/bget/kegg3.gif",
+      "descripcion": "Enciclopedia de Kioto de genes y proteínas y transcriptomas variados, así como de mapas de rutas metabólicas.",
+      "etiquetas": ["genes", "proteínas", "rutas metabólicas"]
+    },
+    {
+      "nombre": "Reactome Pathway Browser",
+      "url": "https://reactome.org/PathwayBrowser/#/R-HSA-9673013",
+      "imagen": "https://upload.wikimedia.org/wikipedia/en/a/a1/R-purple_small.png",
+      "descripcion": "Base de datos de rutas metabólicas con descripciones, moléculas y genes involucrados.",
+      "etiquetas": ["rutas metabólicas"]
+    }
+  ]
+}

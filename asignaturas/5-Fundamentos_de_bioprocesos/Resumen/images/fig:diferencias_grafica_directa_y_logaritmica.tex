@@ -1,0 +1,46 @@
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\linewidth}
+        \begin{tikzpicture}
+        \begin{axis}[
+            width=\linewidth,
+            height=\linewidth,
+            axis lines = left,
+            xlabel = {\tiny Generaciones ($n$)},
+            xmin=0, xmax=10,
+            xtick=\empty,
+            ylabel = {\tiny No. de células ($N$)},
+            ymin=0, ymax=1000,
+            ytick=\empty,
+        ]
+        \addplot[thick, blue, domain=0:10, samples=40] {2^x};
+        \end{axis}
+        \end{tikzpicture}
+        \caption{Grafica directa}
+        \label{fig:grafica_directa}
+    \end{subfigure}
+    \hspace{1em}
+    \begin{subfigure}{0.45\linewidth}
+        \begin{tikzpicture}
+        \begin{axis}[
+            width=\linewidth,
+            height=\linewidth,
+            axis lines = left,
+            xlabel = {\tiny Generaciones ($n$)},
+            xmin=0, xmax=10,
+            xtick=\empty,
+            ylabel = {\tiny No. de células ($log(N)$)},
+            ymin=0, ymax=3,
+            ytick=\empty,
+        ]
+        \addplot[thick, red, domain=0:10, samples=10] {log10(2^x)};
+        \end{axis}
+        \end{tikzpicture}
+        \caption{Grafica logaritmica}
+        \label{fig:grafica_logaritmica}
+    \end{subfigure}
+    \vspace{1em}
+    \rule{\linewidth}{0.2pt}
+    \caption{Diferencia entre gráfica con número directo de bacterias y gráfica con escala logarítmica}
+    \label{fig:diferencias_grafica_directa_y_logaritmica}
+\end{figure}

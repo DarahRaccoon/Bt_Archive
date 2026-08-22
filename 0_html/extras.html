@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos extras - BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO -->
+    <meta name="description" content="Recursos externos útiles para estudiantes de Ingeniería en Biotecnología.">
+    <meta property="og:title" content="Recursos externos - Bio_Archive">
+    <meta property="og:description" content="Enlaces y materiales adicionales para complementar tu estudio">
+    
+    <link rel="stylesheet" href="/Bt_Archive/0_css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado con navegación -->
+    <main-header></main-header>
+
+    <main>
+        <!-- Sección de inicio con presentación -->
+        <section id="inicio" class="hero" style="background-image: url(/Bt_Archive/website_resources/images/externos_back.jpg);">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Recursos extras</h2>
+                    <p class="hero__subtitle">Conoce más fuentes de información, recursos complementarios y enlaces útiles para aprender de manera más variada sobre los temas de la carrera.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección principal con sidebar y contenido -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="sidebar-layout">
+                    
+                    <!-- Sidebar izquierdo con categorías -->
+                    <aside class="sidebar" id="extras-sidebar">
+                        <h3 class="sidebar__title"><i class="fas fa-list"></i> Categorías</h3>
+                        <ul class="sidebar__list" id="extras-sidebar-list">
+                            <!-- Los items se generan desde JavaScript -->
+                        </ul>
+                    </aside>
+                    
+                    <!-- Contenido derecho -->
+                    <div id="extras-content" class="main-content">
+                        <!-- Se llena desde JavaScript -->
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <main-footer></main-footer>
+
+    <!-- Cargar componentes -->
+    <script>
+        (async function loadComponents() {
+            try {
+                const response = await fetch('/Bt_Archive/0_html/componentes.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar componentes.html`);
+                
+                const html = await response.text();
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+                document.body.insertAdjacentHTML('afterbegin', 
+                    '<div style="background:#f8d7da; color:#721c24; padding:1rem; text-align:center;">⚠️ Error al cargar header/footer.</div>'
+                );
+            }
+        })();
+    </script>
+    
+    <!-- Cargar el loader de extras (actualizado para usar clases generales) -->
+    <script src="/Bt_Archive/0_js/extras-loader.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+\definecolor{otros_genes}{RGB}{255,250,220}
+\definecolor{arnpol}{RGB}{220,240,255}
+\definecolor{proteina_represora}{RGB}{255,238,238}
+\definecolor{verde_oscuro}{RGB}{57,163,77}
+
+\begin{tikzpicture}
+
+\node[draw, anchor=south west, minimum height=3cm, minimum width=3.5cm, text width=2.75cm, align=center, font=\sffamily\footnotesize] (gen represor) at (0,0) {Gen represor:\\Produce la proteína represora};
+\node[draw,fill=otros_genes, anchor=south west, minimum height=3cm, minimum width=6cm, text width=2.75cm, align=center, font=\sffamily\footnotesize] (otros genes) at (gen represor.south east) {(Otros genes)};
+\node[draw, anchor=south west, minimum height=3cm, minimum width=3cm, text width=2.75cm, align=center, font=\sffamily\footnotesize] (promotor) at (otros genes.south east) {Promotor:\\Sitio de unión de la ARNpol};
+\node[draw, anchor=south west, minimum height=3cm, minimum width=3cm, text width=2.75cm, align=center, font=\sffamily\footnotesize] (operador) at (promotor.south east) {Operador:\\Sitio de unión de la proteína represora};
+\node[draw, anchor=south west, minimum height=3cm, minimum width=6cm, text width=5.5cm, align=center, font=\sffamily\footnotesize] (genes estructurales) at (operador.south east) {Genes estructurales\\(lacZ, lacY, lacA)};
+
+% Lactosa
+\node[circle, draw, minimum size=1.8cm, font=\sffamily, xshift=-0.5cm] (lactosa) at (gen represor.south) [below=0.75cm] {Lactosa};
+
+% Proteína represora
+\node[draw, fill=proteina_represora, diamond, anchor=west, font=\sffamily\scriptsize, xshift=2.5cm] (proteina represora) at (lactosa.east) {Proteína represora};
+\draw[-Stealth, green, dashed, line width=1pt] (gen represor.south) to[out=-10, in=180] (proteina represora.north west);
+
+\draw[Stealth-Stealth, red, dashed, line width=1pt] (lactosa.east) -- (proteina represora.west) node[midway, fill=white, font=\sffamily\scriptsize] {Unión};
+
+% ARNpol
+\node[draw, fill=arnpol, diamond, anchor=north, font=\sffamily\scriptsize] (arnpol) at (promotor.south) {ARN Polimerasa};
+\draw[-Stealth, verde_oscuro, dashed, line width=1pt] (arnpol.north east) --++ (4,0) node[midway, fill=white, font=\sffamily\tiny, align=center, text width=1cm] {ARNpol trabaja correctamente};
+
+% Transcripción
+\node[ellipse, draw, minimum width=3cm, minimum height=1.75cm, anchor=north, text width=2.75cm, align=center, font=\sffamily\small\bfseries\color{verde_oscuro}] (transcripcion) at (genes estructurales.south) [below=0.3cm] {Se transcriben proteínas correctamente};
+
+\end{tikzpicture}

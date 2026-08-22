@@ -1,0 +1,88 @@
+
+
+
+
+% \section{Ecuación general}
+
+La ecuación general de una reacción enzimática es la siguiente:
+
+\begin{align*}
+    \ce{E + S <=> ES -> E + P}
+\end{align*}
+
+Donde:
+
+\begin{itemize}
+    \item E = Enzima
+    \item S = Sustrato
+    \item ES = Complejo enzima-sustrato
+    \item P = Producto
+\end{itemize}
+
+\section{Cinética química}
+
+\begin{align*}
+    \text{Reactivos} &\Longrightarrow \text{Productos} 
+    \\
+    \\
+    \text{A} &\Longrightarrow \text{B}
+    \\
+    \\
+    \text{Velocidad (v)} &= \frac{-d[\text{Reactivo}]}{dt}=\frac{+d[\text{Productos}]}{dt}
+\end{align*}
+
+\section{Ley de velocidad}
+
+\begin{align*}
+    V &= -\frac{dS}{dt} = \frac{dP}{dt}
+    \\
+    V = -\frac{dS}{dt} = \frac{dES}{dt} \ &; \ V = -\frac{dES}{dt} = \frac{dP}{dt}
+\end{align*}
+
+\begin{align*}
+    [A] &= (A-A_0)
+    \\
+    \\
+    \text{Orden O} \Longrightarrow v = \frac{-d[A]}{dt} &\rightarrow K[A]^0 \rightarrow K \rightarrow [A] = [A]_0kt
+    \\
+    \\
+    \text{Orden 1} \Longrightarrow v = \frac{-d[A]}{dt} &\rightarrow K[A]¹
+    \rightarrow ln \frac{[A]}{[A]_0} = -kt
+    \\
+    \\
+    \text{Orden 2} \Longrightarrow v = \frac{-d[A]}{dt} &\rightarrow K[A]^2 \rightarrow \frac{1}{[A]} = \frac{1}{[A]_0} + kt
+\end{align*}
+
+\section{Órdenes de reacción ($S \longrightarrow P$)}
+
+Las reacciones se pueden clasificar en órdenes, esto dependiendo de qué parámetros afectan su velocidad de reacción.
+
+\begin{itemize}
+    \item 0 - La velocidad depende solo de $K$.
+    \item 1 - La velocidad depende de la concentración de sustrato ($[S]$) y de $K$.
+\end{itemize}
+
+La $K$ (la constante de velocidad o constante de rapidez) es un número que te dice qué tan rápida es una reacción químicamente, sin embargo, el aspecto más importante a recordar es el tema del sustrato. Las reacciones de orden 1 si aumentan su velocidad al aumentar el sustrato, las reacciones de orden 0 no.
+
+\section{Equilibrio de reacción}
+
+La reacción debe tener un equilibrio que favorezca la generación del complejo $E-S$ y luego el producto.
+Para la formación del complejo $E-S$ existe:
+
+\begin{itemize}
+    \item $K_{1}$: El valor de equilibrio favorable
+    \item $K_{2}$: El valor de equilibrio desfavorable
+\end{itemize}
+
+Esto aplica también para la reacción $ES \longrightarrow P$., y algo a tener en cuenta es que agregar enzima cambia el orden de reacción.
+
+Un punto a tener en cuenta es que la relación entre cantidad de sustrato y cantidad de enzima cambia el orden de reacción. Como se muestra adelante (\autoref{eq:rel_concentraciones_orden}), cuando la concentración de sustrato es menor a la de enzima, el orden de reacción es de orden 1; cuando se igualan las concentraciones de ambos, se alcanza el "punto de saturación", o $V_{Max}$; y cuando la cantidad de sustrato supera la cantidad de enzima, la reacción es de orden 1.
+Esto se relaciona con lo visto antes. Mientras la reacción se mantenga de orden 0, podemos agregar más sustrato para aumentar la velocidad de reacción, pero una vez se convierte en orden 1, la velocidad no aumenta, por más que agreguemos sustrato.
+
+\begin{align*}\label{eq:rel_concentraciones_orden}
+    [S] < [E] &\longrightarrow \text{Rx de orden 1}
+    \\
+    [S] = [E] &\longrightarrow \text{Se alcanza la saturación} = V_{max}
+    \\
+    [S] > [E] &\longrightarrow \text{Rx de orden 0}
+\end{align*}

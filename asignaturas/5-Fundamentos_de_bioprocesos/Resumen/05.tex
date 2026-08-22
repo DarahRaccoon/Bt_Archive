@@ -1,0 +1,64 @@
+
+Mucho del trabajo en biotecnología consta de hacer crecer a un microorganismo dado, y aunque pueden existir varios motivos para llevarlo a cabo, nada sería posible si el microorganismo no crece en primer lugar. Para no dejar este proceso en manos del azar, el crecimiento de estos microorganismos se lleva a cabo en medios de cultivo que se diseñan de manera que suplan al microorganismo de todos los elementos que requiere, y que así este crezca de la manera deseada. Estos medios de cultivo son preparados realizando una mezcla precisa de compuestos que son los que aportan los elementos. Si bien a veces cada compuesto aporta un elemento dado, en otras ocasiones diferentes compuestos pueden aportar el mismo elemento, o también es común que un compuesto aporte varios elementos a la vez. A pesar de que estos casos puedan parecer complicar el proceso de formulación, realmente apenas y es así, y al final la mezcla de todos los compuestos aporta la totalidad requerida de elementos en la proporción adecuada. La formulación de medios de cultivo consta pues en obtener cuanto se necesita agregar de cada compuesto para suplir las necesidades del microorganismo dado.
+
+El proceso de la formulación de medios consta principalmente de los siguientes pasos:
+
+\begin{enumerate}
+    \item Definir la cantidad necesitada de cada elemento.
+    \item Identificar que compuesto te aporta cada elemento.
+    \item En base a la cantidad requerida de un elemento dado, calcular su equivalente en masa del compuesto que lo aporta.
+\end{enumerate}
+
+Existen un par de consideraciones a establecer para la formulación de medios de cultivo:
+
+\begin{enumerate}
+    \item Los elementos hidrógeno y oxígeno no son contemplados en los cálculos, esto porque tales elementos son suministrados por el agua del medio.
+    \item Tanto en los casos donde un compuesto aporte varios elementos como cuando varios compuestos aportan el mismo elemento, solo es necesario elegir la masa más alta, puesto que con tal cantidad ya se suple la masa del otro compuesto.    
+\end{enumerate}
+
+\section{Ejercicio introductorio a formulación de medios} \label{sec:formulación_de_medios_ejemplo1} 
+
+Todo esto puede quedar más claro con el siguiente ejercicio:
+
+\begin{itemize}
+    \item Diseñar un medio de cultivo con sulfato de amonio ($(NH_{4})_{2}SO_{4}$), fosfato de potasio ($K_{3}PO_{4}$), sulfato de magnesio ($MgSO_{3}$) y cloruro de calcio ($CaCL_{2}$), esto para producir 8.5 g/L de \textit{Pseudomonas fluorescens} a un pH de entre 6.5 a 7.5 y a una temperatura de 30°C en 15 litros de medio de cultivo.
+    \item Se utiliza sacarosa como fuente de carbono, el nitrógeno es el nutriente limitante y los demás nutrientes deben estar en un exceso de 25\%.
+    \item La composición celular es: 49.5\% C, 8\% H, 20\% O, 14.5\% N, 2.7\% P, 1\% S, 1\% K, 0.5\% Mg, 0.3\% Ca
+\end{itemize}
+
+
+En primer lugar, debemos identificar cuánto es necesario aportar de cada elemento, y para esto necesitamos la composición celular del microorganismo, lo cual nos dice qué porcentaje de la masa del microorganismo representa cada elemento en su composición. Podemos tomar de ejemplo el carbono, donde el 49.5\% indica que por cada gramo de \textit{P. fluorescens}, 0.495g son de carbono.
+
+Para obtener la cantidad de carbono necesaria para el medio total solo necesitamos saber cuantos gramos de \textit{P. fluorescens} se buscan obtener, para lo cual necesitamos los litros de medio que se buscan preparar y los gramos de \textit{P. fluorescens} que queremos en cada litro de ese medio.
+
+Todo esto se puede ordenar en la siguiente operación, además del ejemplo del carbono:\footnote{Recordando que: $S$=Sustrato, $X$=Biomasa y $P$=Producto}\footnote{Definiendo: $\text{Elem}$=Elemento y $\text{Comp}$=Compuesto}
+
+\begin{equation}\label{eq:g_elemento}
+    \frac{\text{gElem}}{\text{gX}} \cdot \frac{\text{gX}}{\text{Lt}} \cdot \text{Lt} = \text{gElem requeridos} \quad ; \quad \frac{0.495\text{gC}}{1\text{gX}} \cdot \frac{8.5\text{gX}}{1\text{Lt}} \cdot 15\text{Lt} = 63.11\text{gC}
+\end{equation}
+
+Estos serán los gramos de carbono ($\text{C}$) que el organismo necesita que le suministremos, sin embargo, esto no lo hacemos de forma directa, sino mediante un compuesto que sirva de fuente de carbono, en este caso la sacarosa. Por ello, debemos de calcular cuántos gramos de sacarosa necesitamos para suplir los gramos de carbono requeridos.
+
+Para esto, hacemos uso de los pesos molares tanto del compuesto que aporta el elemento, como de los átomos del elemento a aportar presentes en el compuesto.
+
+Por ejemplo, volviendo a la sacarosa, buscamos en primer lugar el peso molar de la sacarosa (342.3g), y luego contamos cuántos carbonos existen en la sacarosa, puesto que es el elemento que queremos aportar. Tenemos pues que hay 12 carbonos en la sacarosa, para lo que solo nos faltaría multiplicar el peso molecular del carbono ($\approx$12) por esos 12 átomos de carbono, lo cual nos da como resultado 144. Esto lo que nos dice es que por cada 342.3g de sacarosa que agreguemos estaríamos aportando 144g de carbono. Los cálculos anteriores nos dicen que en nuestro ejemplo necesitamos solo 63.11g de carbono, y para esto solo necesitamos una multiplicación como la siguiente:  
+
+\begin{equation}\label{eq:g_compuesto}
+    \text{gElem} \cdot \frac{\text{gComp}}{\text{gElem en Comp}} = \text{gComp} \quad ; \quad 63.11\text{gC} \cdot \frac{342.3\text{gSac}}{144\text{gC}} = 150\text{gSac}
+\end{equation}
+
+Por último, en ocasiones se busca que algunos elementos estén en exceso para que el microorganismo no se encuentre en condiciones de estrés tan fácilmente. Para obtener la cantidad de compuesto que se necesita para cumplir el exceso requerido, unicamente se necesita multiplicar los gramos requeridos de compuesto por tal exceso. Por ejemplo, en este caso nos piden un exceso de 25\%, por lo que se realiza la siguiente multiplicación: 
+
+\begin{equation}\label{eq:g_exceso}
+    \text{gComp} \cdot \text{Exceso} = \text{gComp en exceso} \quad ; \quad 150\text{gSac} \cdot 1.25 = 187.5\text{gSac}
+\end{equation}
+
+Usualmente se pide que todos los elementos de un medio de cultivo estén en exceso, por lo que este proceso se repetiría con todos los compuestos. Esto sin embargo no es así para los elementos limitantes. Estos son elementos que se busca que permanezcan en la cantidad justa para que el microorganismo pueda crecer. Cuando se especifica que algún elemento será el ``limitante'' lo único que se realiza es no multiplicar los gramos de compuesto por el exceso, y en su lugar agregar los gramos justos para suplir el elemento, los cuales son los ya obtenidos en la \autoref{eq:g_compuesto}.
+
+El cálculo del resto de elementos y compuestos se recopila en la \autoref{tab:resultados_formulación_de_medios_ejemplo1}, la cual es también un ejemplo de formato que puede ayudar a organizar mejor los datos que uno va recopilando durante el proceso de la formulación.
+
+    \input{tab:resultados_formulación_de_medios_ejemplo1}
+
+Ahora, algo que se puede observar es que tanto el fosfato de potasio ($K_{3}PO_{4}$) como el sulfato de magnesio ($MgSO_{3}$) aportan 2 elementos al mismo tiempo. Cuando tenemos este tipo de compuestos realizamos el proceso de la \autoref{eq:g_elemento} y la \autoref{eq:g_compuesto} con cada elemento que aporte el compuesto.
+
+Por ejemplo, en el caso del $K_{3}PO_{4}$ se realizan los cálculos tanto para el potasio ($K$) como para el fósforo ($P$). Una vez realizados, tendremos por un lado la cantidad necesaria de $K_{3}PO_{4}$ para suplir el ($K$), así como también la cantidad de $K_{3}PO_{4}$ necesaria para suplir el fósforo ($P$). De entre estas dos, se tomará en cuenta la mas alta, en este caso la del fósforo (23.55g). Esto es así porque al agregar los 23.55g necesarios para suplir el fósforo se está cumpliendo también la necesidad de potasio del microorganismo, de hecho, hay potasio en exceso, pero esto no influye en el crecimiento del microorganismo. Lo mismo sucede en el caso del sulfato de magnesio ($MgSO_{3}$).

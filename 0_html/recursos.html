@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - BT_Archive</title>
+    
+    <!-- Metaetiquetas para SEO y presentación en redes -->
+    <meta name="description" content="Archivo de recursos de estudio de asignaturas para Ingeniería en biotecnología.">
+    <meta property="og:title" content="BT_Archive">
+    <meta property="og:description" content="Recursos de estudio colaborativos y de acceso abierto">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="/Bt_Archive/0_css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Encabezado con navegación -->
+    <main-header></main-header>
+
+    <main>
+        <!-- Sección de inicio con presentación -->
+        <section id="inicio" class="hero" style="background-image: url(/Bt_Archive/website_resources/images/biblioteca-back.jpg);">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Recursos</h2>
+                    <p class="hero__subtitle">Se recogen aquí diversos recursos de utilidad general, como manuales, proyectos y bibliotecas digitales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección principal con sidebar y contenido -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="sidebar-layout">
+                    
+                    <!-- Sidebar izquierdo con categorías -->
+                    <aside class="sidebar" id="recursos-sidebar">
+                        <h3 class="sidebar__title"><i class="fas fa-list"></i> Categorías</h3>
+                        <ul class="sidebar__list" id="recursos-sidebar-list">
+                            <!-- Los items se generan desde JavaScript -->
+                        </ul>
+                    </aside>
+                    
+                    <!-- Contenido derecho -->
+                    <div id="recursos-content" class="main-content">
+                        <!-- Se llena desde JavaScript -->
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <main-footer></main-footer>
+
+    <!-- Cargar componentes -->
+    <script>
+        (async function loadComponents() {
+            try {
+                const response = await fetch('/Bt_Archive/0_html/componentes.html');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: No se pudo cargar componentes.html`);
+                
+                const html = await response.text();
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                
+                const templates = temp.querySelectorAll('template');
+                templates.forEach(template => {
+                    document.body.appendChild(template.cloneNode(true));
+                });
+                
+                const scripts = temp.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+                
+                console.log('Componentes cargados correctamente');
+            } catch (error) {
+                console.error('Error cargando componentes:', error);
+                document.body.insertAdjacentHTML('afterbegin', 
+                    '<div style="background:#f8d7da; color:#721c24; padding:1rem; text-align:center;">⚠️ Error al cargar header/footer.</div>'
+                );
+            }
+        })();
+    </script>
+    
+    <!-- Cargar el loader de recursos -->
+    <script src="/Bt_Archive/0_js/recursos-loader.js"></script>
+    
+</body>
+</html>

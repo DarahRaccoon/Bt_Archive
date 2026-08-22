@@ -1,0 +1,21 @@
+{
+  "categoria": "Simuladores",
+  "icono": "fa-gears",
+  "descripcion": "Simuladores para explorar conceptos aprendidos en las asignaturas.",
+  "items": [
+    {
+      "nombre": "PHET",
+      "url": "https://phet.colorado.edu/es/simulations/browse",
+      "imagen": "https://phet.colorado.edu/images/phet-logo-trademarked.png",
+      "descripcion": "Simuladores de muchísimas áreas, principalmente de física.",
+      "etiquetas": ["física", "química"]
+    },
+    {
+      "nombre": "LabXChange",
+      "url": "https://www.labxchange.org/library",
+      "imagen": "https://www.labxchange.org/assets/images/labxchange-logo-trim-light.svg",
+      "descripcion": "Simuladores de técnicas de biología molecular y otras áreas.",
+      "etiquetas": ["biología molecular"]
+    }
+  ]
+}

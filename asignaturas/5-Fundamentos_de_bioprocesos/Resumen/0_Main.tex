@@ -1,0 +1,44 @@
+\documentclass{AsignaturaResumen}
+
+\SetTitulo{Fundamentos de bioprocesos}
+
+% Glosario
+    \input{../../0-tex_resources/glosario_general}
+
+\begin{document}
+
+    \frontmatter
+
+\Portada
+\Indices
+
+    \mainmatter
+
+
+\part{Introducción al desarrollo de bioprocesos}
+
+    \chapter{Etapas del bioproceso e identificación de metabolitos} \input{01.tex} 
+    \chapter{Técnicas básicas de cuantificación de biomasa}
+
+\part{Estequiometría del crecimiento microbiano}
+
+    \chapter{Estequiometría del crecimiento y balance elemental} \input{03.tex}
+    \chapter{Balance de electrones y grado de reducción}
+    \chapter{Formulación de medios de cultivo y relación C/N} \input{05.tex}
+    \chapter{Predicción de rendimientos y coeficientes de rendimiento}     
+
+\part{Cinética del crecimiento microbiano}
+
+    \chapter{Cinéticas de crecimiento y generación de producto} \input{07.tex}
+    \chapter{Modelado y cálculo de parámetros cinéticos}
+
+
+    \backmatter
+    \newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{Main}
+
+    \appendix
+
+\end{document}

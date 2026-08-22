@@ -1,0 +1,67 @@
+\newpage
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+
+\caption{Ejemplo de tabla con encabezados color azul}
+\label{tab:ejemplo_tabla_azul}
+
+\begin{threeparttable}
+
+{\small\setstretch{1.35}\rowcolors{1}{Grey}{White}
+
+\begin{tabular}{M{0.4\linewidth}M{0.4\linewidth}}\hline
+    
+    \sffamily\bfseries\cellcolor{Primario}\textcolor{White}{Encabezado 1} & \sffamily\bfseries\cellcolor{Primario}\textcolor{White}{Encabezado 2} \\ \hline
+    
+    Dato 1 & Dato 2\tnote{1} \\
+    Dato 3 & Dato 4 \\
+    Dato 5 & Dato 6 \\
+    Dato 7 & Dato 8 \\
+
+    \hline
+\end{tabular}
+
+}
+
+\begin{tablenotes}\tiny % ex: \tnote{1} ... \item[1]
+    \item[1] Ejemplo de nota a pie de tabla
+\end{tablenotes}
+
+\end{threeparttable}
+\end{table}
+
+
+
+\begin{table}[H]
+
+\caption{Ejemplo de tabla con encabezados color blanco}
+\label{tab:ejemplo_tabla_blanco}
+
+\begin{threeparttable}
+
+{\small\setstretch{1.35}\rowcolors{1}{Grey}{White}
+
+\begin{tabular}{M{0.4\linewidth}M{0.4\linewidth}}\hline
+    
+    \sffamily\bfseries\cellcolor{White}\textcolor{Primario}{Encabezado 1} & \sffamily\bfseries\cellcolor{White}\textcolor{Primario}{Encabezado 1} \\ \hline
+    
+    Dato 1 & Dato 2\tnote{1} \\
+    Dato 3 & Dato 4 \\
+    Dato 5 & Dato 6 \\
+    Dato 7 & Dato 8 \\
+
+    \hline
+\end{tabular}
+
+}
+
+\begin{tablenotes}\tiny % ex: \tnote{1} ... \item[1]
+    \item[1] Ejemplo de nota a pie de tabla
+\end{tablenotes}
+
+\end{threeparttable}
+\end{table}
+
+\end{multicols}
