@@ -26,7 +26,7 @@
     \setsansfont{IBM Plex Sans}
     \DeclareEmphSequence{\bfseries}
     \setlength{\parindent}{0pt}
-    \setstretch{1.3}
+    \setstretch{1.25}
 
 \RequirePackage{multicol}
 
@@ -42,7 +42,7 @@
     \setcounter{secnumdepth}{3}
     \renewcommand{\thesection}{\arabic{section}}
     \titleformat{\section}{\sffamily\bfseries\large\MakeUppercase}{\thesection}{0em}{. }
-    \titleformat{\subsection}{\sffamily\bfseries}{\thesubsection.}{0em}{. }
+    \titleformat{\subsection}{\sffamily\bfseries}{\thesubsection}{0em}{. }
     \titleformat{\subsubsection}{\sffamily\itshape\small}{\thesubsubsection}{0em}{. }  
 
 \RequirePackage{tocloft}
@@ -64,8 +64,8 @@
     }
     \pagestyle{fancy}
         \fancyhf{} 
-        \fancyhead[LE]{\scriptsize\sffamily\MakeUppercase{Resumen de asignatura: \Titulo}}
-        \fancyhead[RO]{\scriptsize\sffamily\leftmark}
+        \fancyhead[LE]{\sffamily\scriptsize\bfseries\MakeUppercase{Resumen de asignatura: \Titulo}}
+        \fancyhead[RO]{\sffamily\scriptsize\bfseries\leftmark}
         \fancyfoot[LE]{\thepage}
         \fancyfoot[RO]{\thepage}
         
@@ -220,8 +220,21 @@
     ]{\small #4}%
     \end{tcolorbox}
 }
-    
+
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \newcommand{\theader}[1]{\sffamily\bfseries{#1}}
 \newcommand{\tmultiheader}[1]{\sffamily\bfseries\centering{#1}}
+
+
+\newcommand{\Quote}[2]{
+\hspace*{\fill}\begin{minipage}{0.75\linewidth}
+    \raggedright {\small #1}
+    
+    \vspace*{10pt}
+    
+    {\hfill {\footnotesize #2}}
+\end{minipage}\hspace*{0.05\linewidth}
+
+\vspace*{20pt}
+}
