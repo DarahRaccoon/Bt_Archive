@@ -26,6 +26,7 @@
     \setsansfont{IBM Plex Sans}
     \DeclareEmphSequence{\bfseries}
     \setlength{\parindent}{0pt}
+    \setlength{\parskip}{5pt}
     \setstretch{1.25}
 
 \RequirePackage{multicol}
@@ -48,7 +49,9 @@
 \RequirePackage{tocloft}
     \newlistof{definicion}{def}{Lista de definiciones}
     \newlistof{ejercicio}{ej}{Lista de ejercicios}
+    \newlistof{respuesta}{resp}{Lista de respuestas}
     \newlistof{dato}{dat}{Lista de datos biotecnológicos}
+    
 
 \RequirePackage[Glenn]{fncychap}
     \ChNameVar{\fontsize{16}{16}\selectfont}
@@ -64,8 +67,8 @@
     }
     \pagestyle{fancy}
         \fancyhf{} 
-        \fancyhead[LE]{\sffamily\scriptsize\bfseries\MakeUppercase{Resumen de asignatura: \Titulo}}
-        \fancyhead[RO]{\sffamily\scriptsize\bfseries\leftmark}
+        \fancyhead[LE]{\sffamily\scriptsize\bfseries \MakeUppercase{Resumen de asignatura: \Titulo}}
+        \fancyhead[RO]{\sffamily\scriptsize\bfseries \leftmark}
         \fancyfoot[LE]{\thepage}
         \fancyfoot[RO]{\thepage}
         
@@ -94,7 +97,6 @@
     labelfont={sf,bf}
 }
     
-
 \RequirePackage{tikz}
     \usetikzlibrary{backgrounds, fit, calc, positioning, shapes.geometric, arrows, arrows.meta}
 \RequirePackage{pgfplots}
@@ -113,11 +115,15 @@
 \definecolor{Grey}{RGB}{247,247,247}
 \definecolor{White}{RGB}{255,255,255}
 
-\definecolor{DarkBlue}{RGB}{0,0,76}
+\definecolor{DarkBlue}{RGB}{0,0,80}
 \definecolor{Blue}{RGB}{0,160,224}
-\definecolor{LightBlue}{RGB}{243,243,255}
-\definecolor{DarkOrange}{RGB}{253,111,58}
-\definecolor{DarkGreen}{RGB}{0,76,0}
+\definecolor{LightBlue}{RGB}{190,240,255}
+
+\definecolor{DarkGreen}{RGB}{0,80,0}
+\definecolor{Green}{RGB}{0,160,0}
+
+\definecolor{DatoBack}{RGB}{243,243,255}
+\definecolor{EjercicioBack}{RGB}{243,255,243}
 
     
 \newcommand{\SetTitulo}[1]{\def\Titulo{#1}}
@@ -140,18 +146,18 @@
 
 \newcommand{\Indices}{
     \begin{multicols}{2}
-        \printglossary
-        \printglossary[title=Acrónimos,toctitle=Acrónimos,type=\acronymtype]
         \tableofcontents  \clearpage
         \listoffigures    \clearpage
         \listoftables     \clearpage
     \end{multicols}
+    \printglossary
+    \printglossary[title=Acrónimos,toctitle=Acrónimos,type=\acronymtype]
     \input{../../0-tex_resources/secciones_complementarias} \clearpage
     \listofdefinicion \clearpage
     \listofejercicio  \clearpage
     \listofdato       \clearpage
-    \pagestyle{fancy}
     \restoregeometry
+    \pagestyle{fancy}
 }
 
 
@@ -173,26 +179,33 @@
     }{}
     \ifstrequal{#2}{ejercicio}{
         \IfBooleanTF{#1}{
-            \def\colframe{green!60!black}\def\coltitle{green!30!black}
-            \def\colbacktitle{green!5!white}\def\colback{green!5!white}
-            \def\coltext{green!10!black}\def\tcoltitle{Ejercicio}
+            \def\colframe{Green}\def\coltitle{DarkGreen}
+            \def\colbacktitle{EjercicioBack}\def\colback{EjercicioBack}
+            \def\coltext{DarkGreen}\def\tcoltitle{Ejercicio}
         }{
             \stepcounter{ejercicio}
-            \def\colframe{green!60!black}\def\coltitle{green!30!black}
-            \def\colbacktitle{green!5!white}\def\colback{green!5!white}
-            \def\coltext{green!10!black}\def\tcoltitle{Ejercicio \thechapter.\theejercicio}
+            \def\colframe{Green}\def\coltitle{DarkGreen}
+            \def\colbacktitle{EjercicioBack}\def\colback{EjercicioBack}
+            \def\coltext{DarkGreen}\def\tcoltitle{Ejercicio \thechapter.\theejercicio}
             \addcontentsline{ej}{ejercicio}{\protect\numberline{\thechapter.\theejercicio} #3}
         }
+    }{}
+    \ifstrequal{#2}{respuesta}{
+        \stepcounter{respuesta}
+        \def\colframe{Green}\def\coltitle{DarkGreen}
+        \def\colbacktitle{EjercicioBack}\def\colback{EjercicioBack}
+        \def\coltext{DarkGreen}\def\tcoltitle{Ejercicio \thechapter.\therespuesta}
+        \addcontentsline{ej}{ejercicio}{\protect\numberline{\thechapter.\therespuesta} #3}
     }{}
     \ifstrequal{#2}{dato}{
         \IfBooleanTF{#1}{
             \def\colframe{DarkBlue}\def\coltitle{DarkBlue}
-            \def\colbacktitle{LightBlue}\def\colback{LightBlue}
+            \def\colbacktitle{DatoBack}\def\colback{DatoBack}
             \def\coltext{DarkBlue}\def\tcoltitle{Dato biotecnologico}
         }{
             \stepcounter{dato}
             \def\colframe{DarkBlue}\def\coltitle{DarkBlue}
-            \def\colbacktitle{LightBlue}\def\colback{LightBlue}
+            \def\colbacktitle{DatoBack}\def\colback{DatoBack}
             \def\coltext{DarkBlue}\def\tcoltitle{Dato biotecnologico \thechapter.\thedato}
             \addcontentsline{dat}{dato}{\protect\numberline{\thechapter.\thedato} #3}
         }
@@ -221,12 +234,6 @@
     \end{tcolorbox}
 }
 
-
-\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
-\newcommand{\theader}[1]{\sffamily\bfseries{#1}}
-\newcommand{\tmultiheader}[1]{\sffamily\bfseries\centering{#1}}
-
-
 \newcommand{\Quote}[2]{
 \hspace*{\fill}\begin{minipage}{0.75\linewidth}
     \raggedright {\small #1}
@@ -238,3 +245,7 @@
 
 \vspace*{20pt}
 }
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcommand{\theader}[1]{\sffamily\bfseries{#1}}
+\newcommand{\tmultiheader}[1]{\sffamily\bfseries\centering{#1}}

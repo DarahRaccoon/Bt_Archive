@@ -1,0 +1,41 @@
+\definecolor{Dominante}{RGB}{255,236,155}
+\definecolor{Recesivo}{RGB}{187,210,142}
+\begin{tikzpicture}[
+    etiqueta/.style={font=\sffamily},
+    individuo/.style={draw, circle, align=center, text width=0.75cm, font=\sffamily},
+    alelo/.style={draw, diamond, font=\sffamily\scriptsize},
+    tabla/.style={anchor=west, font=\sffamily\scriptsize},
+    linea/.style={-Stealth, line width=0.5pt}
+]
+
+\node[etiqueta] (generacion p)  at (0,0)  {Generación P};
+\node[etiqueta] (generacion f1) at (0,-2) {Generacion F\sub{1}};
+\node[etiqueta] (generacion f2) at (0,-6) {Generacion F\sub{2}};
+\node[individuo, fill=Dominante] (progenitor1) at ([xshift=2.5cm]generacion p) {AA};
+\node[individuo, fill=Dominante] (progenitor2) at ([xshift=3cm]progenitor1) {aa};
+\node[individuo, fill=Dominante] (hijo) at ([xshift=4cm]generacion f1) {Aa};
+\node[alelo, fill=Dominante] (alelo1) at ([xshift=-1cm,yshift=-2cm]hijo) {A};
+\node[alelo, fill=Recesivo] (alelo2) at ([xshift=1cm, yshift=-2cm]hijo) {a};
+
+\node[tabla] (tabla combinaciones) at ([xshift=0.5cm]generacion f2.east) {
+    \begin{tabular}{c|c}
+        \colorbox{Dominante}{AA} & \colorbox{Dominante}{Aa} \\ \hline
+        \colorbox{Dominante}{Aa} & \colorbox{Recesivo}{aa} \\ 
+    \end{tabular}
+};
+
+\node[tabla] (tabla probabilidades) at ([xshift=0.5cm]tabla combinaciones.east) {
+    \begin{tabular}{c|c}
+        \colorbox{Dominante}{25\%} & \colorbox{Dominante}{25\%} \\ \hline
+        \colorbox{Dominante}{25\%} & \colorbox{Recesivo}{25\%} \\
+    \end{tabular}
+};
+
+\draw[linea] (progenitor1.south) to[out=-90,in=135] (hijo.north west);
+\draw[linea] (progenitor2.south) to[out=-90,in=45]  (hijo.north east);
+\draw[linea] (hijo.south) to[out=-90,in=90] (alelo1.north);
+\draw[linea] (hijo.south) to[out=-90,in=90] (alelo2.north);
+\draw[linea] (alelo1) to[out=0,in=90] ([xshift=0.25cm,yshift=0.5cm]tabla combinaciones.north east);
+\draw[linea] (alelo2) to[out=180,in=90] ([xshift=0.25cm,yshift=0.5cm]tabla combinaciones.north east);
+\draw[linea] (tabla combinaciones.east) -- (tabla probabilidades.west);
+\end{tikzpicture}

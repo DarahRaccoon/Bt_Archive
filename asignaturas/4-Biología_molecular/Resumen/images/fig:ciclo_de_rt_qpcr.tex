@@ -1,0 +1,27 @@
+\begin{tikzpicture}[
+    paso/.style={draw, rounded corners=2pt, align=center, text width=10em, inner sep=5pt, font=\sffamily\bfseries, anchor=west},
+    especificacion/.style={draw, densely dashed, rounded corners=2pt, align=center, text width=5em, inner sep=5pt, font=\sffamily\small},
+    flecha/.style={-Stealth, line width=1pt}
+]
+
+\node[paso] (desnaturalizacion) at (0,0) {1. Desnaturalización};
+\node[especificacion] (desnaturalizacion esp) at ([yshift=-1.5cm]desnaturalizacion) {93-98\celsius\\30 seg.};
+\draw[dotted, line width=0.5pt] (desnaturalizacion) -- (desnaturalizacion esp);
+
+\node[paso] (alineacion) at ([xshift=2cm]desnaturalizacion.east) {2. Alineación};
+\node[especificacion] (alineacion esp) at ([yshift=-1.5cm]alineacion) {45-60\celsius\\30 seg.};
+\draw[dotted, line width=0.5pt] (alineacion) -- (alineacion esp);
+
+\node[paso] (elongacion) at ([xshift=2cm]alineacion.east) {3. Elongación};
+\node[especificacion] (elongacion esp) at ([yshift=-1.5cm]elongacion) {65-72\celsius\\1 min.};
+\draw[dotted, line width=0.5pt] (elongacion) -- (elongacion esp);
+
+\draw[flecha] (desnaturalizacion.east) -- (alineacion.west);
+\draw[flecha] (alineacion.east) -- (elongacion.west);
+\draw[flecha] (elongacion.north) to[out=135,in=0] ([yshift=1.25cm]alineacion.north) to[out=180,in=45] (desnaturalizacion.north); 
+
+\node[especificacion] (colorante) at ([xshift=-2cm]desnaturalizacion.west) {0.2. Agregar colorante};
+\node[especificacion] (rt) at ([xshift=-2cm]colorante.west) {0.1. Convertir ADN a ARN con RT};
+
+\draw[dashed, line width=0.5pt, -Stealth] (rt) -- (colorante) -- (desnaturalizacion);
+\end{tikzpicture}

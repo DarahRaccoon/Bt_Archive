@@ -1,29 +1,30 @@
-\definecolor{otros_genes}{RGB}{255,250,220}
-\definecolor{arnpol}{RGB}{220,240,255}
-\definecolor{proteina_represora}{RGB}{255,238,238}
+\begin{tikzpicture}[
+    gen/.style={draw, anchor=south west, minimum height=3cm, minimum width=6cm, align=center, text width=5cm, font=\sffamily},
+    molecula/.style={draw, align=center, font=\sffamily\scriptsize},
+    linea/.style={-Stealth, verde_oscuro, dashed, line width=1pt},
+    texto linea/.style={midway, draw, dashed, rounded corners=4pt, fill=white, align=center, font=\sffamily\scriptsize}
+]
 
-\begin{tikzpicture}
-
-\node[draw, anchor=south west, minimum height=3cm, minimum width=3.5cm, text width=2.75cm, align=center, font=\sffamily\footnotesize] (gen represor) at (0,0) {Gen represor:\\Produce la proteína represora};
-\node[draw,fill=otros_genes, anchor=south west, minimum height=3cm, minimum width=6cm, text width=2.75cm, align=center, font=\sffamily\footnotesize] (otros genes) at (gen represor.south east) {Otros genes};
-\node[draw, anchor=south west, minimum height=3cm, minimum width=3cm, text width=2.75cm, align=center, font=\sffamily\footnotesize] (promotor) at (otros genes.south east) {Promotor:\\Sitio de unión de la ARNpol};
-\node[draw, anchor=south west, minimum height=3cm, minimum width=3cm, text width=2.75cm, align=center, font=\sffamily\footnotesize] (operador) at (promotor.south east) {Operador:\\Sitio de unión de la proteína represora};
-\node[draw, anchor=south west, minimum height=3cm, minimum width=6cm, text width=5.5cm, align=center, font=\sffamily\footnotesize] (genes estructurales) at (operador.south east) {Genes estructurales\\(lacZ, lacY, lacA)};
+\node[gen] (gen represor) at (0,0) {Gen represor:\\Produce la proteína represora};
+\node[gen, fill=otros_genes] (otros genes) at (gen represor.south east) {Otros genes};
+\node[gen] (promotor) at (otros genes.south east) {Promotor:\\Sitio de unión de la ARNpol};
+\node[gen] (operador) at (promotor.south east) {Operador:\\Sitio de unión de la proteína represora};
+\node[gen] (genes estructurales) at (operador.south east) {Genes estructurales\\(lacZ, lacY, lacA)};
 
 % Lactosa
-\node[circle, draw, minimum size=1.5cm, font=\sffamily] (lactosa) at (0.85,-1.15) {Lactosa};
-\draw[red, line width=1pt] (lactosa.north west) -- (lactosa.south east);
-\draw[red, line width=1pt] (lactosa.north east) -- (lactosa.south west);
+\node[molecula, circle] (lactosa) at ([yshift=-1.5cm]gen represor.south) {Lactosa};
+\draw[rojo, line width=1pt] (lactosa.north west) -- (lactosa.south east) (lactosa.north east) -- (lactosa.south west);
 
 % Proteína represora
-\node[draw, fill=proteina_represora, diamond, anchor=north, font=\sffamily\scriptsize] (proteina represora) at (operador.south) {Proteína represora};
-\draw[-Stealth, green, dashed, line width=1pt] (gen represor.south) to[out=-5, in=180] (4,-2.75) --++ (7,0) to[out=0, in=-130] (proteina represora.south west);
+\node[molecula, diamond, fill=proteina_represora, anchor=north] (proteina represora) at (operador.south) {Proteína represora};
 
 % ARNpol
-\node[draw, fill=arnpol, diamond, anchor=north, font=\sffamily\scriptsize] (arnpol) at (promotor.south west) {ARN Polimerasa};
-\draw[-Stealth, red, dashed, line width=1pt] (arnpol.north east) --++ (2.75,0) node[midway, fill=white, font=\sffamily\tiny, align=center, text width=0.675cm] {Proteína represora bloquea ARNpol};
+\node[molecula, diamond, fill=arnpol, anchor=north] (arnpol) at (promotor.south west) {ARN Polimerasa};
+\draw[linea, rojo] (arnpol.north east) --++ (6,0) node[texto linea] {Proteína represora bloquea ARNpol};
+
+\draw[linea] (gen represor.south) to[out=-5, in=180] ([yshift=-0.5cm]arnpol.south) to[out=0, in=200] (proteina represora.south west);
 
 % Transcripción
-\node[ellipse, draw, minimum width=3cm, minimum height=1.75cm, anchor=north, text width=2.75cm, align=center, font=\sffamily\small\bfseries\color{red}] (transcripcion) at (genes estructurales.south) [below=0.3cm] {No se transcriben las proteínas};
+\node[molecula, ellipse, text width=3cm, font=\sffamily\bfseries\color{rojo}] (transcripcion) at (genes estructurales.south) [below=1cm] {No se transcriben las proteínas};
 
 \end{tikzpicture}

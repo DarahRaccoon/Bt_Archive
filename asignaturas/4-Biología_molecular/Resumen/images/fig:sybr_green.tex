@@ -1,0 +1,72 @@
+\definecolor{primercolor}{RGB}{250,165,60}
+\definecolor{dntpscolor}{RGB}{135,195,195}
+\begin{tikzpicture}[
+    titulo/.style={midway, above=0pt, font=\sffamily\bfseries\Large},
+    cadena/.style={line width=3pt},
+    primer/.style={line width=2pt, color=primercolor},
+    dntps/.style={draw, fill=dntpscolor},
+    active dntp/.style={draw, fill=dntpscolor, decorate, decoration=bumps},
+    texto/.style={midway, font=\sffamily\footnotesize}
+]
+
+% Desnaturalización
+\draw[line width=0.5pt] (3,0) -- (7,0) node[titulo] {Desnaturalización};
+
+\draw[primer, -Stealth] (1,-1) --++ (2,0) node[texto, above=0pt, pos=0.45] {Primer};
+\draw[cadena] (0,-3) --++ (6,0);
+\draw[cadena] (4,-6) --++ (6,0);
+\draw[primer, Stealth-] (7,-8) --++ (2,0) node[texto, below=0pt, pos=0.55] {Primer};
+
+\draw[dntps] (4.75,-1.75) circle (0.3cm);
+\draw[dntps] (6.6,-1.12) circle (0.3cm);
+\draw[dntps] (8,-2.25) circle (0.3cm);
+\draw[dntps] (9.25,-1.25) circle (0.3cm);
+\draw[dntps] (9,-4) circle (0.3cm);
+\draw[dntps] (0.85,-4.5) circle (0.3cm);
+\draw[dntps] (2.15,-6) circle (0.3cm);
+\draw[dntps] (0.85,-7.25) circle (0.3cm);
+\draw[dntps] (3.75,-7.75) circle (0.3cm);
+\draw[dntps] (5.5,-7) circle (0.3cm);
+
+% Alineación
+\draw[line width=0.5pt] (3,-10) -- (7,-10) node[titulo] {Alineación};
+
+\draw[primer, -Stealth] (1,-12) --++ (2,0) node[texto, above=0pt, pos=0.45] {Primer};
+\draw[cadena] (0.25,-13) --++ (6,0);
+\draw[cadena] (4,-16) --++ (6,0);
+\draw[primer, Stealth-] (7,-17) --++ (2,0) node[texto, below=0pt, pos=0.55] {Primer};
+
+\draw[active dntp] (1.5,-12.5) circle (0.2cm);
+\draw[active dntp] (2.2,-12.5) circle (0.2cm);
+\draw[dntps] (6,-11) circle (0.3cm);
+\draw[dntps] (8.25,-11.75) circle (0.3cm);
+\draw[dntps] (9.75,-13.25) circle (0.3cm);
+\draw[dntps] (1.1,-16) circle (0.3cm);
+\draw[dntps] (2.5,-16.75) circle (0.3cm);
+\draw[dntps] (5,-17.25) circle (0.3cm);
+\draw[active dntp] (7.8,-16.5) circle (0.2cm);
+\draw[active dntp] (8.5,-16.5) circle (0.2cm);
+
+% Elongación
+\draw[line width=0.5pt] (3,-20) -- (7,-20) node[titulo] {Elongación};
+
+\draw[cadena, -Stealth] (0,-23) --++ (7,0);
+\draw[cadena] (0,-22) --++ (5,0);
+\draw[cadena] (4,-26) --++ (6,0);
+\draw[cadena, Stealth-] (3,-27) --++ (7,0);
+
+\draw[active dntp] (0.5,-22.5) circle (0.2cm);
+\draw[active dntp] (1.5,-22.5) circle (0.2cm);
+\draw[active dntp] (2.5,-22.5) circle (0.2cm);
+\draw[active dntp] (3.5,-22.5) circle (0.2cm);
+\draw[active dntp] (4.5,-22.5) circle (0.2cm);
+\draw[active dntp] (5.5,-22.5) circle (0.2cm);
+\draw[dntps] (9.5,-23.7) circle (0.3cm);
+\draw[dntps] (1.36,-26.44) circle (0.3cm);
+\draw[active dntp] (4.5,-26.5) circle (0.2cm);
+\draw[active dntp] (5.5,-26.5) circle (0.2cm);
+\draw[active dntp] (6.5,-26.5) circle (0.2cm);
+\draw[active dntp] (7.5,-26.5) circle (0.2cm);
+\draw[active dntp] (8.5,-26.5) circle (0.2cm);
+\draw[active dntp] (9.5,-26.5) circle (0.2cm);
+\end{tikzpicture}
