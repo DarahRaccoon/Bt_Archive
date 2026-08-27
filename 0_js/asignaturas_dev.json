@@ -1,0 +1,576 @@
+{
+  "asignaturas": [
+    {
+      "id": "1-quimica-inorganica",
+      "nombre": "Química inorgánica",
+      "cuatrimestre": 1,
+      "icono": "fa-atom",
+      "descripcion": "Teoría atómica, tipos de compuestos, mezclas y más.",
+      "portada": "/Bt_Archive/asignaturas/1-Química_inorgánica/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/1-Química_inorgánica/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/1-Química_inorgánica/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/1 - Química inorgánica.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=1-quimica-inorganica",
+      "videos": [
+        {
+          "titulo": "El asbesto es un problema más grande de lo que pensábamos",
+          "autor": "Veritasium",
+          "descripcion": "Los efectos del asbesto y cómo se puede encontrar en lugares inesperados",
+          "url": "https://youtu.be/Olguky_cbsc?si=bwO95aCdmD79FUT1",
+          "embedUrl": "https://www.youtube.com/embed/Olguky_cbsc?si=kIXxSYsfWVE72SYQ"
+        },
+        {
+          "titulo": "Este es el desastre natural por el que hay que preocuparse",
+          "autor": "Veritasium",
+          "descripcion": "La importancia del caucho en el mundo y su proceso de producción",
+          "url": "https://youtu.be/2ZzfG_vBLZM?si=4XjT_BPBZo-wzenU",
+          "embedUrl": "https://www.youtube.com/embed/2ZzfG_vBLZM?si=DZ4k4fy4CLRtJ18R"
+        },
+        {
+          "titulo": "El material perfecto para baterías es peligroso",
+          "autor": "Veritasium",
+          "descripcion": "Exploración de la química detrás de las baterías de litio y el porqué pueden llegar a ser peligrosas",
+          "url": "https://youtu.be/MXh2d4Q8YXM?si=WOiQy7K7mPNgYfkn",
+          "embedUrl": "https://www.youtube.com/embed/MXh2d4Q8YXM?si=WOiQy7K7mPNgYfkn"
+        },
+        {
+          "titulo": "Cómo una empresa envenenó el planeta en secreto",
+          "autor": "Veritasium",
+          "descripcion": "La química detrás del teflón y la conspiración de una empresa dedicada a su producción",
+          "url": "https://youtu.be/xRjqSoiH-jA?si=xaBu8oYtATXxTinF",
+          "embedUrl": "https://www.youtube.com/embed/xRjqSoiH-jA?si=xaBu8oYtATXxTinF"
+        },
+        {
+          "titulo": "Porqué el superpegamento es perfecto para pegar la piel",
+          "autor": "Veritasium",
+          "descripcion": "La química detrás de los superpegamentos",
+          "url": "https://youtu.be/KfxT7KuTCH4?si=BJ5YHcCrNeSOxUAy",
+          "embedUrl": "https://www.youtube.com/embed/KfxT7KuTCH4?si=BJ5YHcCrNeSOxUAy"
+        },
+        {
+          "titulo": "El hombre que mató y salvó a millones",
+          "autor": "Veritasium",
+          "descripcion": "La gris historia de Fritz Haber, uno de los hombres más influyentes de la historia por el desarrollo de fertilizantes (y algunas otras cosas menos buenas).",
+          "url": "https://youtu.be/SeqKSRRpAH8?si=yLquiAzWSdVi9ZYK",
+          "embedUrl": "https://www.youtube.com/embed/SeqKSRRpAH8?si=yLquiAzWSdVi9ZYK"
+        },
+        {
+          "titulo": "¿Los árboles rompen las leyes de la física?",
+          "autor": "Veritasium",
+          "descripcion": "Conoce cómo los árboles desafían las leyes de la física para poder transportar agua dentro de ellos.",
+          "url": "https://youtu.be/FvRn94Bzgbc",
+          "embedUrl": "https://www.youtube.com/embed/FvRn94Bzgbc"
+        },
+        {
+          "titulo": "Los Átomos NO Son Así",
+          "autor": "Quantum Fracture",
+          "descripcion": "Conoce la verdadera (y extraña) forma de los átomos y cómo varían en base a sus números cuánticos.",
+          "url": "https://youtu.be/wxIxWTTsBj4",
+          "embedUrl": "https://www.youtube.com/embed/wxIxWTTsBj4"
+        },
+        {
+          "titulo": " El Núcleo Atómico NO es Así ",
+          "autor":"Quantum Fracture",
+          "descripcion": "Explora la verdadera forma del núcleo atómico y cómo se comporta en base a sus propiedades cuánticas.",
+          "url": "https://youtu.be/6z5AIQ7AmK8?si=IK9_qq6xFGR893Qv",
+          "embedUrl": "https://www.youtube.com/embed/6z5AIQ7AmK8?si=mUYGKDdiW5NuQ53Q"
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [
+          {
+            "nombre": "Simulador: Electroforesis en gel",
+            "url": "https://www.labxchange.org/library/items/lb:LabXchange:5d12867d:lx_simulation:1",
+            "icono": "fa-solid fa-microscope"
+          }
+        ],
+        "articulos": []
+      }
+    },
+    {
+      "id": "1-quimica-organica",
+      "nombre": "Química orgánica",
+      "cuatrimestre": 1,
+      "icono": "fa-bezier-curve",
+      "descripcion": "Estructura, propiedades y reacciones de los compuestos de carbono.",
+      "portada": "/Bt_Archive/asignaturas/1-Química_orgánica/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/1-Química_orgánica/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/1-Química_orgánica/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/1 - Química orgánica.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=1-quimica-organica",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "2-física",
+      "nombre": "Física",
+      "cuatrimestre": 2,
+      "icono": "fa-atom",
+      "descripcion": "Principios fundamentales de la física, incluyendo mecánica, dinámica y electromagnetismo.",
+      "portada": "/Bt_Archive/asignaturas/2-Física/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/2-Física/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/2-Física/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/2 - Física.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=2-fisica",
+      "videos": [
+        {
+          "titulo": "¿Por qué te Caes cuando Frena el Autobús?",
+          "autor": "Quantum Fracture",
+          "descripcion": "Aprende el concepto de inercia a través es este corto video.",
+          "url": "https://youtu.be/u3Rdm75l4AU",
+          "embedUrl": "https://www.youtube.com/embed/u3Rdm75l4AU"
+        },
+        {
+          "titulo": " ¿Cómo Sabemos que un Segundo vale un Segundo? ",
+          "autor": "Quantum Fracture",
+          "descripcion": "Conoce como el sistema métrico corrobora sus valores",
+          "url": "https://youtu.be/rv2gRtVcHG4?si=zhm9i653DNyrkNZl",
+          "embedUrl": "https://www.youtube.com/embed/rv2gRtVcHG4?si=zhm9i653DNyrkNZl"
+        },
+        {
+          "titulo": " ¿Y si Enseñamos las Leyes de Newton AL REVÉS? ",
+          "autor": "Quantum Fracture",
+          "descripcion": "Explora un nuevo método de enseñanza de las leyes de Newton",
+          "url": "https://youtu.be/q8YEVdbKBlo?si=T3k-puk50kAHcudq",
+          "embedUrl": "https://www.youtube.com/embed/q8YEVdbKBlo?si=T3k-puk50kAHcudq"
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "2-biologia-fisiologia-celular",
+      "nombre": "Biología y fisiología celular",
+      "cuatrimestre": 2,
+      "icono": "fa-microscope",
+      "descripcion": "Estructura, función y fisiología de la célula como unidad básica de la vida.",
+      "portada": "/Bt_Archive/asignaturas/2-Biología_y_fisiología_celular/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/2-Biología_y_fisiología_celular/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/2-Biología_y_fisiología_celular/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/2 - Biología y fisiología celular.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=2-biologia-fisiologia-celular",
+      "videos": [
+        {
+          "titulo": "Por qué estamos vivos: vida, energía y ATP",
+          "autor": "Kurzgesagt",
+          "descripcion": "Explora el origen de los procesos bioenergéticos",
+          "url": "https://youtu.be/6FWmdzmcYMg",
+          "embedUrl": "https://www.youtube.com/embed/6FWmdzmcYMg"
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "3-bioquimica",
+      "nombre": "Bioquímica",
+      "cuatrimestre": 3,
+      "icono": "fa-flask",
+      "descripcion": "Estudio de las moléculas biológicas, incluyendo proteínas, carbohidratos, lípidos y ácidos nucleicos, así como sus funciones en los organismos vivos.",
+      "portada": "/Bt_Archive/asignaturas/3-Bioquímica/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/3-Bioquímica/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/3-Bioquímica/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/3 - Bioquímica.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=3-bioquimica",
+      "videos": [
+        {
+          "titulo": "La cosa más util que la IA ha hecho nunca",
+          "autor": "Veritasium",
+          "descripcion": "El gran avance que la IA trajo a la biología y al mundo",
+          "url": "https://youtu.be/XhExzm_rWxk",
+          "embedUrl": "https://www.youtube.com/embed/XhExzm_rWxk"
+        },
+        {
+          "titulo": "¿Porqué el bacalao salvó a los vikingos?",
+          "autor": "Veritasium",
+          "descripcion": "Conoce este caso de la importancia de las vitaminas y de los lípidos",
+          "url": "https://youtu.be/UZc2vLNjpvM",
+          "embedUrl": "https://www.youtube.com/embed/UZc2vLNjpvM"
+        },
+        {
+          "titulo": "Por qué estamos vivos: vida, energía y ATP",
+          "autor": "Kurzgesagt",
+          "descripcion": "Explora el origen de los procesos bioenergéticos",
+          "url": "https://youtu.be/6FWmdzmcYMg",
+          "embedUrl": "https://www.youtube.com/embed/6FWmdzmcYMg"
+        },
+        {
+          "titulo": "Leche: ¿veneno blanco o bebida saludable?",
+          "autor": "Kurzgesagt",
+          "descripcion": "Explora la discusión acerca del consumo de leche.",
+          "url": "https://youtu.be/nJkJT1uiFB8",
+          "embedUrl": "https://www.youtube.com/embed/nJkJT1uiFB8"
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "3-microbiologia",
+      "nombre": "Microbiología",
+      "cuatrimestre": 3,
+      "icono": "fa-bacteria",
+      "descripcion": "Estudio de los microorganismos, incluyendo bacterias, virus, hongos y parásitos, y su relación con la salud y la enfermedad.",
+      "portada": "/Bt_Archive/asignaturas/3-Microbiología/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/3-Microbiología/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/3-Microbiología/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/3 - Microbiología.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=3-microbiologia",
+      "videos": [
+        {
+          "titulo": "El experimento evolutivo más largo del mundo",
+          "autor": "Veritasium",
+          "descripcion": "Este experimento de cultivo de microorganismos busca estudiar la evolución de una bacteria a través de cientos de generaciones.",
+          "url": "https://youtu.be/_RAg5--kIm0",
+          "embedUrl": "https://youtu.be/_RAg5--kIm0"
+        },
+        {
+          "titulo": "El virus más mortal de la Tierra",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce al Lyssavirus, el virus más mortal de la Tierra",
+          "url": "https://youtu.be/IJzIo_tEL14",
+          "embedUrl": "https://youtu.be/IJzIo_tEL14" 
+        },
+        {
+          "titulo": "Este virus no debería existir (pero existe)",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce estos virus extraños que desafían todo lo conocido por la ciencia",
+          "url": "https://youtu.be/dqKlS4p-7sw",
+          "embedUrl": "https://youtu.be/dqKlS4p-7sw" 
+        },
+        {
+          "titulo": "El ser más mortífero de nuestro planeta - Bacteriófagos",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce a estos interesantes seres que dominan el mundo microbiano, así como sus aplicaciones",
+          "url": "https://youtu.be/wNjrJW6-t1o",
+          "embedUrl": "https://youtu.be/wNjrJW6-t1o" 
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "3-termodinamica-fisicoquimica",
+      "nombre": "Termodinámica y fisicoquímica",
+      "cuatrimestre": 3,
+      "icono": "fa-thermometer-half",
+      "descripcion": "Estudio de las leyes de la termodinámica y su aplicación en los procesos químicos.",
+      "portada": "/Bt_Archive/asignaturas/3-Termodinámica_y_fisicoquímica/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/3-Termodinámica_y_fisicoquímica/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/3-Termodinámica_y_fisicoquímica/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/3 - Termodinámica y fisicoquímica.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=3-termodinamica-fisicoquimica",
+      "videos": [
+        {
+          "titulo": "Las Leyes de la Termodinámica en 5 Minutos",
+          "autor": "Quantum Fracture",
+          "descripcion": "Aprende las leyes básicas de la termodinámica a través de este corto video",
+          "url": "https://youtu.be/Bvfn6eUhUAc",
+          "embedUrl": "https://www.youtube.com/embed/Bvfn6eUhUAc?si=iApbT4iB9NLGs9p1" 
+        },
+{
+          "titulo": "Pocos entienden esto de la física moderna",
+          "autor": "Veritasium",
+          "descripcion": "El concepto de la entropía visto desde otro ángulo",
+          "url": "https://youtu.be/hRLMIFZWqnw",
+          "embedUrl": "https://www.youtube.com/embed/hRLMIFZWqnw?si=0jPrrJMGaaMqdD1U" 
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "4-biologia-molecular",
+      "nombre": "Biología molecular",
+      "cuatrimestre": 4,
+      "icono": "fa-dna",
+      "descripcion": "Estudio de los procesos moleculares que ocurren en las células, incluyendo la replicación, transcripción y traducción del ADN.",
+      "portada": "/Bt_Archive/asignaturas/4-Biología_molecular/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/4-Biología_molecular/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/4-Biología_molecular/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/4 - Biología molecular.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=4-biologia-molecular",
+      "videos": [
+        {
+          "titulo": "La idea más controversial de la biología",
+          "autor": "Veritasium",
+          "descripcion": "Exploración del concepto del 'Gen Egoista', de Richard Dawkins",
+          "url": "https://youtu.be/T9Uk3zVdjpQ?si=f_ESNMoDgqmXEvVY",
+          "embedUrl": "https://www.youtube.com/embed/T9Uk3zVdjpQ?si=ruG-RczZujgLpFQ8"
+        },
+        {
+          "titulo": "Revelando porqué los agricultores no pueden legalmente replantar sus propias semillas",
+          "autor": "Veritasium",
+          "descripcion": "La conspiración detrás de algunos Organismos Genéticamente Modificados (OGM) y el funcionamiento de algunos de estos",
+          "url": "https://youtu.be/8yEUKGaqtC0?si=oGGqLyQzL-Ms2-Un",
+          "embedUrl": "https://www.youtube.com/embed/8yEUKGaqtC0?si=oGGqLyQzL-Ms2-Un"
+        },
+        {
+          "titulo": "La cosa más útil que la IA ha hecho nunca",
+          "autor": "Veritasium",
+          "descripcion": "El gran avance que la IA trajo a la biología y al mundo",
+          "url": "https://youtu.be/XhExzm_rWxk?si=n2Bt414MDM_nyoKS",
+          "embedUrl": "https://www.youtube.com/embed/XhExzm_rWxk?si=n2Bt414MDM_nyoKS"
+        },
+        {
+          "titulo": "El hombre que tomó LSD y cambió al mundo",
+          "autor": "Veritasium",
+          "descripcion": "El origen de la técnica de la PCR y su polémico creador",
+          "url": "https://youtu.be/uqngf-0pPC4?si=lo9vfqdY_wSAJQOC",
+          "embedUrl": "https://www.youtube.com/embed/uqngf-0pPC4?si=lo9vfqdY_wSAJQOC"
+        },
+        {
+          "titulo": "Cómo atraparon al asesino del Golden State",
+          "autor": "Veritasium",
+          "descripcion": "Explora el uso de técnicas de genética para atrapar a un asesino famoso.",
+          "url": "https://youtu.be/F9BX7ODsBP4?si=Udoq4JiIz2kNE3ih",
+          "embedUrl": "https://www.youtube.com/embed/F9BX7ODsBP4?si=Udoq4JiIz2kNE3ih"
+        },
+        {
+          "titulo": "Cómo retrasar el envejecimiento o revertirlo",
+          "autor": "Veritasium",
+          "descripcion": "Se discute desde las causas del envejecimiento hasta novedosas terapias que buscan detener el envejecimiento en humanos, o incluso revertirlo.",
+          "url": "https://youtu.be/j7bYLCzmCwk?si=EW9hxCnRdm5BF70j",
+          "embedUrl": "https://www.youtube.com/embed/j7bYLCzmCwk?si=EW9hxCnRdm5BF70j"
+        },
+        {
+          "titulo": "¿Por qué las ballenas azules no tienen cáncer? La paradoja de Peto",
+          "autor": "Kurzgesagt",
+          "descripcion": "Explora las hipótesis para la aparente paradoja de la relación inversa entre el tamaño de algunos animales y sus índices de cáncer.",
+          "url": "https://youtu.be/Se4s9lOsJoQ",
+          "embedUrl": "https://www.youtube.com/embed/Se4s9lOsJoQ"
+        },
+        {
+          "titulo": "La ingeniería genética cambiará todo para siempre – CRISPR",
+          "autor": "Kurzgesagt",
+          "descripcion": "Explora esta nueva herramienta de la ingeniería genética que se apunta a moldear todo el futuro de la ciencia.",
+          "url": "https://youtu.be/NMIc49qGt2g",
+          "embedUrl": "https://www.youtube.com/embed/NMIc49qGt2g"
+        },
+        {
+          "titulo": "¿Cómo curar el envejecimiento ahora que aún vivimos?",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce recientes técnicas para prevenir el envejecimiento.",
+          "url": "https://youtu.be/VRy4P1poT1Q",
+          "embedUrl": "https://www.youtube.com/embed/VRy4P1poT1Q"
+        },
+        {
+          "titulo": "¿Los transgénicos son buenos o malos? La ingeniería genética y la comida.",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce los diferentes puntos de vista acerca de los Organismos Genéticamente Modificados (OGM)",
+          "url": "https://youtu.be/fi1h2E835ig",
+          "embedUrl": "https://www.youtube.com/embed/fi1h2E835ig"
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [
+          {
+            "nombre": "Simulador: Electroforesis en gel",
+            "url": "https://www.labxchange.org/library/items/lb:LabXchange:5d12867d:lx_simulation:1",
+            "icono": "fa-solid fa-microscope"
+          }
+        ],
+        "articulos": []
+      }
+    },
+    {
+      "id": "4-inmunologia",
+      "nombre": "Inmunología",
+      "cuatrimestre": 4,
+      "icono": "fa-solid fa-syringe",
+      "descripcion": "Estudio del sistema inmunitario, su funcionamiento y su papel en la defensa del organismo.",
+      "portada": "/Bt_Archive/asignaturas/4-Inmunología/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/4-Inmunología/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/4-Inmunología/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/4 - Inmunología.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=4-inmunologia",
+      "videos": [
+        {
+          "titulo": "Cómo funciona de verdad el sistema inmunitario",
+          "autor": "Kurzgesagt",
+          "descripcion": "Descripción general y rápida del funcionamiento del sistema inmune",
+          "url": "https://youtu.be/8t84ETH_tk8",
+          "embedUrl": "https://youtu.be/8t84ETH_tk8" 
+        },
+        {
+          "titulo": "Microbombas en la sangre: El sistema del complemento",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce una de los principales herramientas del sistema inmune para proteger al cuerpo humano",
+          "url": "https://youtu.be/_fc66imLhUU",
+          "embedUrl": "https://youtu.be/_fc66imLhUU" 
+        },
+        {
+          "titulo": "Cómo los caballos salvan a los humanos de las serpientes",
+          "autor": "Veritasium",
+          "descripcion": "Explora a las serpientes, sus venenos y el cómo se realizan los antídotos a estos",
+          "url": "https://youtu.be/BKiRZjO1sL4",
+          "embedUrl": "https://youtu.be/BKiRZjO1sL4" 
+        },
+        {
+          "titulo": "Los efectos secundarios de las vacunas: ¿tienen mucho riesgo?",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce cómo, a pesar de los efectos secundarios de estas, las vacunas son grandes herramientas para la salud humana",
+          "url": "https://youtu.be/tWrk30zMRoo",
+          "embedUrl": "https://youtu.be/tWrk30zMRoo" 
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "4-tecnologia-enzimatica",
+      "nombre": "Tecnología enzimática",
+      "cuatrimestre": 4,
+      "icono": "fa-bolt",
+      "descripcion": "Estudio de las enzimas, su estructura, función, cinética y aplicaciones biotecnológicas.",
+      "portada": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/4 - Tecnología enzimática.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=4-tecnologia-enzimatica",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [
+          {
+            "nombre": "Simulador: Electroforesis en gel",
+            "url": "https://www.labxchange.org/library/items/lb:LabXchange:5d12867d:lx_simulation:1",
+            "icono": "fa-solid fa-microscope"
+          }
+        ],
+        "articulos": []
+      }
+    },
+    {
+      "id": "5-bioseguridad-e-higiene",
+      "nombre": "Bioseguridad e higiene",
+      "cuatrimestre": 5,
+      "icono": "fa-solid fa-mask-face",
+      "descripcion": "Principios de bioseguridad y higiene en el manejo de materiales biológicos y peligrosos.",
+      "portada": "/Bt_Archive/asignaturas/5-Bioseguridad_e_higiene/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/5-Bioseguridad_e_higiene/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/5-Bioseguridad_e_higiene/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/5 - Bioseguridad e higiene.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=5-bioseguridad-e-higiene",
+      "videos": [
+        {
+          "titulo": "El apocalipsis del los antibióticos explicado",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce el problema que está generando el abuso de antibióticos en el mundo",
+          "url": "https://youtu.be/NmT-KCK4iw8",
+          "embedUrl": "https://youtu.be/NmT-KCK4iw8" 
+        },
+        {
+          "titulo": "¿Los transgénicos son buenos o malos? La ingeniería genética y la comida",
+          "autor": "Kurzgesagt",
+          "descripcion": "Conoce los diferentes puntos de vista acerca de los Organismos Genéticamente Modificados (OGM)",
+          "url": "https://youtu.be/fi1h2E835ig",
+          "embedUrl": "https://youtu.be/fi1h2E835ig" 
+        }
+      ],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "5-fundamentos-de-bioprocesos",
+      "nombre": "Fundamentos de bioprocesos",
+      "cuatrimestre": 5,
+      "icono": "fa-solid fa-industry",
+      "descripcion": "Principios básicos de los procesos biotecnológicos, incluyendo cinética, transferencia de masa y diseño de biorreactores.",
+      "portada": "/Bt_Archive/asignaturas/5-Fundamentos_de_bioprocesos/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/5-Fundamentos_de_bioprocesos/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/5-Fundamentos_de_bioprocesos/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/5 - Fundamentos de bioprocesos.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=5-fundamentos-de-bioprocesos",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {
+      "id": "7-diseño-de-experimentos",
+      "nombre": "Diseño de experimentos",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-pen-ruler",
+      "descripcion": "",
+      "portada": "/Bt_Archive/asignaturas/7-Diseño_de_experimentos/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Diseño_de_experimentos/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Diseño_de_experimentos/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Diseño de experimentos.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-diseño-de-experimentos",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+        {
+      "id": "7-fenómenos_de_transporte",
+      "nombre": "Fenómenos de transporte",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-fire",
+      "descripcion": "",
+      "portada": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Fenómenos de transporte.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-fenómenos_de_transporte",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+        {
+      "id": "7-operaciones_unitarias",
+      "nombre": "Operaciones unitarias",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-diagram-project",
+      "descripcion": "",
+      "portada": "/Bt_Archive/asignaturas/7-Operaciones_unitarias/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Operaciones_unitarias/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Operaciones unitarias.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-operaciones_unitarias",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+        {
+      "id": "7-ingeniería_genética",
+      "nombre": "Ingeniería genética",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-dna",
+      "descripcion": "",
+      "portada": "/Bt_Archive/asignaturas/7-Ingeniería_genética/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Ingeniería_genética/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Ingeniería genética.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-ingeniería_genética",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    }
+  ]
+}
