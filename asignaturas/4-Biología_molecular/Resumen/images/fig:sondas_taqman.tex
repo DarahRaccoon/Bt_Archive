@@ -1,0 +1,70 @@
+\definecolor{primercolor}{RGB}{250,165,60}
+\definecolor{reportercolor}{RGB}{135,185,185}
+\definecolor{reporteractcolor}{RGB}{70,210,135}
+\definecolor{quenchercolor}{RGB}{245,155,140}
+\definecolor{taqmancolor}{RGB}{120,185,225}
+\definecolor{Gris}{RGB}{165,165,165}
+
+\begin{tikzpicture}[
+    titulo/.style={anchor=west, font=\sffamily\bfseries\Large},
+    separador/.style={line width=1pt, color=Gris},
+    cadena/.style={line width=1.5pt},
+    cadena nueva/.style={line width=1.5pt, color=Gris},
+    primer/.style={line width=1.5pt, color=primercolor},
+    texto/.style={font=\sffamily\scriptsize},
+    taqman/.style={circle, texto},
+    r/.style={fill=reportercolor},
+    activo/.style={fill=reporteractcolor, decorate, decoration=bumps},
+    q/.style={fill=quenchercolor}
+]
+
+% Alineación
+\def\DesnatY{0}
+\node[titulo] (desnaturalizacion) at (0,\DesnatY) {Alineación de primers};
+\draw[primer, -Stealth] (0,\DesnatY-2) --++ (2,0) node[texto, midway, above=0pt, pos=0.45] {Primer};
+\draw[cadena] (0,\DesnatY-2.5) --++ (10,0);
+\draw[cadena] (0,\DesnatY-3.5) --++ (10,0);
+\draw[primer, Stealth-] (8,\DesnatY-4) --++ (2,0) node[texto, midway, below=0pt, pos=0.55] {Primer};
+\node[taqman, r] (r1) at (4,\DesnatY-1.75) {R};
+\node[taqman, q] (q1) at (6,\DesnatY-1.75) {Q};
+\draw[line width=2pt, color=taqmancolor] (r1.south) --++ (0,-0.25) --++ (2,0) node[midway, above=0pt, black, texto] {Sonda} -- (q1.south);
+
+% Elongación
+\def\AlinY{-6}
+\node[titulo] (alineacion) at (0,\AlinY) {Elongación};
+\draw[primer] (0,\AlinY-2) --++ (2,0);
+\draw[cadena nueva, -Stealth] (2,\AlinY-2) --++ (1.75,0);
+\draw[cadena] (0,\AlinY-2.5) --++ (10,0);
+\draw[cadena] (0,\AlinY-3.5) --++ (10,0);
+\draw[cadena nueva, Stealth-] (6.25,\AlinY-4) --++ (1.75,0);
+\draw[primer] (8,\AlinY-4) --++ (2,0);
+\node[taqman, r] (r2) at (3.75,\AlinY-1.5) {R};
+\node[taqman, q] (q2) at (6,\AlinY-1.75) {Q};
+\draw[line width=2pt, color=taqmancolor] (q2.south) --++ (0,-0.25) --++ (-2,0) -- (r2.south);
+
+% Escición
+\def\EscY{-12}
+\node[titulo] (escicion) at (0,\EscY) {Escición de la sonda};
+\draw[primer] (0,\EscY-2) --++ (2,0);
+\draw[cadena nueva, -Stealth] (2,\EscY-2) --++ (2.5,0);
+\draw[cadena] (0,\EscY-2.5) --++ (10,0);
+\draw[cadena] (0,\EscY-3.5) --++ (10,0);
+\draw[cadena nueva, Stealth-] (5.5,\EscY-4) --++ (2.5,0);
+\draw[primer] (8,\EscY-4) --++ (2,0);
+\node[taqman, r, activo] (r3) at (3.5,\EscY-1.25) {R};
+\node[taqman, q] (q3) at (6,\EscY-1.75) {Q};
+\draw[line width=2pt, color=taqmancolor] (q3.south) --++ (0,-0.25) --++ (-1,0);
+
+% Detección
+\def\ElonY{-18}
+\node[titulo] (elongacion) at (0,\ElonY) {Detección de la señal};
+\draw[primer] (0,\ElonY-2) --++ (2,0);
+\draw[cadena nueva, -Stealth] (2,\ElonY-2) --++ (8,0);
+\draw[cadena] (0,\ElonY-2.5) --++ (10,0);
+\draw[cadena] (0,\ElonY-3.5) --++ (10,0);
+\draw[cadena nueva, Stealth-] (0,\ElonY-4) --++ (8,0);
+\draw[primer] (8,\ElonY-4) --++ (2,0);
+\node[taqman, r, activo] (r4) at (4,\ElonY-1) {R};
+\node[taqman, q] (q4) at (8,\ElonY-1) {Q};
+\draw[line width=2pt, color=taqmancolor] (q4.south) --++ (0,-0.25) --++ (-1,0);
+\end{tikzpicture}
