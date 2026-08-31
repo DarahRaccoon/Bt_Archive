@@ -81,13 +81,13 @@
 
 \newcommand{\Portada}{
     \begin{frame}\thispagestyle{empty}
-    \begin{tikzpicture}[remember picture, overlay]
+    \begin{tikzpicture}[remember picture, overlay, texto/.style={anchor=west, white}]
         \node[inner sep=0] at (current page.center) {\includegraphics[width=\paperwidth]{../portada.jpg}};
-        %\fill[black, opacity=0.5] (current page.south west) rectangle (current page.north east);
-        \node[anchor=north west, inner sep=0, xshift=1cm, yshift=-0.75cm] at (current page.north west) {\includegraphics[width=2.5cm]{../../0-tex_resources/logo_upsin.png}};
-        \node[anchor=west, xshift=1.08cm, yshift=2.25cm, white] at (current page.south west) {\Huge  \Titulo};
-        \node[anchor=west, xshift=1.15cm, yshift=1.5cm,  white] at (current page.south west) {\large Universidad Politécnica de Sinaloa};
-        \node[anchor=west, xshift=1.5cm,  yshift=0.4cm,  white] at (current page.south west) {\tiny  Última actualización: \today};
+        \node[anchor=north west, inner sep=0, xshift=1cm, yshift=-0.5cm] at (current page.north west) {\includegraphics[width=2.5cm]{../../0-tex_resources/logo_upsin.png}};
+        \node[anchor=west, white, xshift=1.2cm, yshift=0.4cm] (actualizacion) at (current page.south west) {\tiny\bfseries  Última actualización: \today};
+        \node[anchor=west, white, xshift=-0.2cm, yshift=30pt] (upsin) at (actualizacion.west) {\large Universidad Politécnica de Sinaloa};
+        \draw[white, line width=1pt] ([yshift=4pt]upsin.north west) -- ([yshift=4pt]upsin.north east);
+        \node[anchor=south west, white, text width=0.8\linewidth, text badly ragged, xshift=-3pt, yshift=8pt] (materia) at (upsin.north west) {\Huge  \Titulo};
     \end{tikzpicture}
     \end{frame}
 }

@@ -1,5 +1,7 @@
 \documentclass{AsignaturaResumen}
 
+\usepackage{mychemfig}
+
 \SetTitulo{Bioquímica}
 
 % Glosario
@@ -13,7 +15,6 @@
 \Indices
 
     \mainmatter
-    \restoregeometry
     
 
 \part{Fundamentos de bioquímica}
@@ -37,19 +38,19 @@
     \chapter{Rutas metabólicas anabólicas}
 
 
+    \appendix\newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
 
-    \backmatter
-    \newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
 
-\addcontentsline{toc}{chapter}{Bibliografía}
-\bibliography{Main}
-
-    \appendix
-
-\chapter{pK\textsubscript{a} de aminoácidos}
-    \input{tables/tab:pka_de_aminoácidos}
-
-\chapter{Aminoácidos canónicos}
-    %\input{anexo_aminoácidos_canónicos}
+%\chapter{pK\textsubscript{a} de aminoácidos}
+%    \input{tables/tab:pka_de_aminoácidos}
+%
+%\chapter{Aminoácidos canónicos}
+%    \input{anexo_aminoácidos_canónicos}
     
+    
+    \backmatter
+    
+% Bibliografía
+\addcontentsline{toc}{chapter}{Bibliografía}\bibliography{Main}
+
 \end{document}
