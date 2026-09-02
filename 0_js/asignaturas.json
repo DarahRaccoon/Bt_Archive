@@ -1,11 +1,10 @@
 {
   "asignaturas": [
-    {
-      "id": "1-quimica-inorganica",
+    { "id": "1-quimica-inorganica",
       "nombre": "Química inorgánica",
       "cuatrimestre": 1,
       "icono": "fa-atom",
-      "descripcion": "Teoría atómica, tipos de compuestos, mezclas y más.",
+      "descripcion": "Las bases de la química: Teoría atómica, tipos de compuestos y sus propiedades, etcétera.",
       "portada": "/Bt_Archive/asignaturas/1-Química_inorgánica/portada.jpg",
       "rutaResumen": "/Bt_Archive/asignaturas/1-Química_inorgánica/Resumen/0_Main.pdf",
       "rutaDiapositivas": "/Bt_Archive/asignaturas/1-Química_inorgánica/Diapositivas/0_Main.pdf",
@@ -87,12 +86,11 @@
         "articulos": []
       }
     },
-    {
-      "id": "4-biologia-molecular",
+    {"id": "4-biologia-molecular",
       "nombre": "Biología molecular",
       "cuatrimestre": 4,
       "icono": "fa-dna",
-      "descripcion": "Estudio de los procesos moleculares que ocurren en las células, incluyendo la replicación, transcripción y traducción del ADN.",
+      "descripcion": "Estudio de los procesos moleculares de los seres vivos, enfocado en el ADN y las proteínas.",
       "portada": "/Bt_Archive/asignaturas/4-Biología_molecular/portada.jpg",
       "rutaResumen": "/Bt_Archive/asignaturas/4-Biología_molecular/Resumen/0_Main.pdf",
       "rutaDiapositivas": "/Bt_Archive/asignaturas/4-Biología_molecular/Diapositivas/0_Main.pdf",
@@ -181,12 +179,11 @@
         "articulos": []
       }
     },
-        {
-      "id": "4-tecnologia-enzimatica",
+    {"id": "4-tecnologia-enzimatica",
       "nombre": "Tecnología enzimática",
       "cuatrimestre": 4,
       "icono": "fa-bolt",
-      "descripcion": "Estudio de las enzimas, su estructura, función, cinética y aplicaciones biotecnológicas.",
+      "descripcion": "Estudio de las enzimas: Desde su estructura y función hasta cómo obtenerlas y utilizarlas.",
       "portada": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/portada.jpg",
       "rutaResumen": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/Resumen/0_Main.pdf",
       "rutaDiapositivas": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/Diapositivas/0_Main.pdf",
@@ -201,6 +198,70 @@
             "icono": "fa-solid fa-microscope"
           }
         ],
+        "articulos": []
+      }
+    },
+    {"id": "7-diseño-de-experimentos",
+      "nombre": "Diseño de experimentos",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-pen-ruler",
+      "descripcion": "EN CONSTRUCCIÓN",
+      "portada": "/Bt_Archive/asignaturas/7-Diseño_de_experimentos/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Diseño_de_experimentos/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Diseño_de_experimentos/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Diseño de experimentos.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-diseño-de-experimentos",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {"id": "7-fenómenos_de_transporte",
+      "nombre": "Fenómenos de transporte",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-fire",
+      "descripcion": "EN CONSTRUCCIÓN",
+      "portada": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Fenómenos de transporte.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-fenómenos_de_transporte",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {"id": "7-operaciones_unitarias",
+      "nombre": "Operaciones unitarias",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-diagram-project",
+      "descripcion": "EN CONSTRUCCIÓN",
+      "portada": "/Bt_Archive/asignaturas/7-Operaciones_unitarias/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Operaciones_unitarias/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Operaciones unitarias.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-operaciones_unitarias",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {"id": "7-ingeniería_genética",
+      "nombre": "Ingeniería genética",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-dna",
+      "descripcion": "EN CONSTRUCCIÓN",
+      "portada": "/Bt_Archive/asignaturas/7-Ingeniería_genética/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Ingeniería_genética/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Ingeniería genética.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-ingeniería_genética",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
         "articulos": []
       }
     }

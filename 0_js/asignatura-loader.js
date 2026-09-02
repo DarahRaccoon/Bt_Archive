@@ -132,7 +132,7 @@ function generarSeccionResumenDiapos(asignatura) {
 
             <div class="card">
                 <h3 class="card__title"><i class="fa-solid fa-chalkboard-user" style="color: var(--color-primary);"></i> Diapositivas</h3>
-                <p class="card__text">Diapositivas que recopilan los temas más relevantes de la asignatura de manera más concisa.</p>
+                <p class="card__text">Estas recopilan los temas más relevantes de la asignatura de manera más concisa.</p>
                 <div class="card__footer">
                     <a href="${diaposUrl}" class="btn btn--secondary" target="_blank" download>
                         <i class="fas fa-download"></i> Descargar
@@ -182,7 +182,7 @@ function generarSeccionVideos(videos) {
     
     const videosHTML = videos.map(video => `
         <div class="card">
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1rem; border-radius: var(--border-radius);">
+            <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; margin-bottom: 1rem">
                 <iframe src="${video.embedUrl}" 
                         title="${escapeHtml(video.titulo)}" 
                         frameborder="0" 
