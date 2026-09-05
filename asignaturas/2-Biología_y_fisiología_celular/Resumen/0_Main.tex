@@ -13,15 +13,14 @@
 \Indices
 
     \mainmatter
-    \restoregeometry
 
 
 \part{Introducción a la célula}
     
     \chapter{Introducción a las biomoléculas} \input{01}    
     \chapter{Teoría celular} \input{02}
-    \chapter[Células procariotas]{Células procariotas: Estructura de la célula bacteriana}
-    \chapter[Células eucariotas]{Células eucariotas: Célula animal, vegetal, fungal y protista}
+    \chapter{Células procariotas} % Célula bacteriana
+    \chapter{Células eucariotas} % Célula animal, vegetal, fungal y protista
 
 \part{Biología celular}
     
@@ -38,12 +37,11 @@
     \chapter[Ciclo celular]{Ciclo celular: Fases del ciclo celular, mitosis y meiosis} \input{13}
 
 
+    \appendix\newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
+
     \backmatter
-    \newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
-
-\addcontentsline{toc}{chapter}{Bibliografía}
-\bibliography{Main}
-
-    \appendix
+    
+% Bibliorafía
+\addcontentsline{toc}{chapter}{Bibliografía}\bibliography{Main}
 
 \end{document}
