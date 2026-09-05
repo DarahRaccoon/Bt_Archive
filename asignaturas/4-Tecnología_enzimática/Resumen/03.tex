@@ -49,14 +49,24 @@ Su cambio en una reacción ($\Delta H$) es el primer elemento a tener en cuenta 
 
 La \emph{segunda ley de la termodinámica} enuncia que \textit{``la entropía de un sistema aislado tenderá a aumentar hacia un valor máximo''}\citep{mathewsBioquimica2002}.
 
-\marginpar{\resumebox{definicion}{Entropía ($S$)}{\footnotesize La \emph{entropía} mide aquella energía de un sistema que no puede ser utilizada o que se encuentra menos disponible. Se puede decir también que mide el grado de aleatoriedad o desorden de un sistema.\citep{mathewsBioquimica2002,devlinBioquimica2014}}}
+\marginpar{\resumebox{definicion}{Entropía ($S$)}{\footnotesize
+La \emph{entropía} mide el grado de aleatoriedad o desorden de un sistema\citep{mathewsBioquimica2002,devlinBioquimica2014}. Se puede decir también que mide cuánto se ha dispersado la energía de un sistema, lo que hace que esta energía se encuentre menos disponible o no pueda ser utilizada}
+}
 
-El aspecto clave a notar de este enunciado es que la segunda ley solo se aplica de manera rigurosa a sistemas aislados, sin embargo, \emph{los sistemas biológicos no son sistemas aislados}, sino que intercambian materia y energía con el ambiente a su alrededor. Con esto en mente, para estudiar la termodinámica de las reacciones biológicas se utiliza la \emph{energía libre}, una cantidad que justamente toma en cuenta este aspecto de los sistemas biológicos de ser sistemas abiertos.
+Una forma sencilla de entender la entropía es pensar en un máquina de vapor. En estas se quema materia prima buscando utilizar la energía liberada para algo específico (calentar o mover algo, por ejemplo), sin embargo, no toda la energía liberada se aprovecha, sino que partes de esta se ``dispersan'' en el sistema, por ejemplo, en forma de calor que emanana hacia el aire, o en el roce de las piezas, etcétera. La entropía mide pues cuánto se dispersa la energía de un sistema.
+
+\marginpar{\rule{\marginparwidth}{0.5pt}\footnotesize
+Los sistemas aislados no intercambian energía ni materia con su entorno. 
+}
+
+El aspecto clave a notar de la segunda ley es que solo se aplica de manera rigurosa a sistemas aislados, sin embargo, \emph{los sistemas biológicos no son sistemas aislados}, sino que pueden intercambiar materia y energía con el ambiente a su alrededor. Así pues, la entropía si que puede disminuir en sistemas biológicos y, como veremos adelante, es parte esencial del funcionamiento de la vida.
 
 \section{Energía libre de Gibbs}
 
+Para estudiar cómo fluye la energía en sistemas biológicos es necesario tener en cuenta los dos aspectos anteriormente vistos: cómo fluye la energía generada en las reacciones, la entalpía, y cómo esta energía se dispersa en el sistema, la entropía. La energía libre de Gibbs ($G$) es un valor que nos ayuda justamente a estudiar ambos aspectos de los cambios de energía en un sistema.
+
 \begin{equation}
-    \Delta G = \Delta H + P \cdot \Delta V
+    \Delta G = \Delta H - T \cdot \Delta S
 \end{equation}
 
 \marginpar{\begin{minipage}{\marginparwidth}
@@ -65,13 +75,7 @@ El aspecto clave a notar de este enunciado es que la segunda ley solo se aplica 
 
 \section{Energía de activación}
 
-Las enzimas funcionan como catalizadores al reducir la energía de activación necesaria para llevar a cabo las reacciones químicas deseadas.
-
-El estado de transición original, cuya energía de activación es alta, es remplazado por estados intermedios cuya energía de activación es menor.
-
-Las enzimas pueden generar estos estados intermedios al facilitar los cambios conformacionales de las moléculas.
-
-
+Las enzimas funcionan como catalizadores al reducir la energía de activación necesaria para llevar a cabo las reacciones químicas deseadas. El estado de transición original, cuya energía de activación es alta, es remplazado por estados intermedios cuya energía de activación es menor. Las enzimas pueden generar estos estados intermedios al facilitar los cambios conformacionales de las moléculas.
 
 \begin{figure}[H]
     \centering
@@ -80,7 +84,6 @@ Las enzimas pueden generar estos estados intermedios al facilitar los cambios co
     \label{fig:diferencia_de_energias_de_activacion}
 \end{figure}
 
-En la anterior gráfica se puede observar como existe una diferencia en la energía de activación necesaria para cada reacción.
+% En la anterior gráfica se puede observar como existe una diferencia en la energía de activación necesaria para cada reacción.
 
-\section{Mecanismos de catálisis}
-
+% \section{Mecanismos de catálisis}

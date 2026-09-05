@@ -2,14 +2,16 @@
 \ProvidesClass{AsignaturaResumen}
 \LoadClass[a4paper,10pt,openany]{book}
 
+% Comando para guardado de PDF's: cp --parents ./*/*/0_Main.pdf /home/darah/Descargas/
+
 % ---------------------------------------------------------------------------------------- %
 
 \RequirePackage{simplelatex}
 
-% Comando para guardado de PDF's: cp --parents ./*/*/0_Main.pdf /home/darah/Descargas/
+\RequirePackage{etoolbox}
+\RequirePackage{xparse}
 
-    \appto\TPTnoteSettings{\scriptsize}
-
+\RequirePackage{multicol}
 \RequirePackage[
     top=1.75cm,
     headsep=0.5cm,
@@ -29,8 +31,6 @@
     \setlength{\parskip}{5pt}
     \setstretch{1.25}
 
-\RequirePackage{multicol}
-
 \let\oldpart\part
 \renewcommand{\part}[1]{
     \cleardoublepage
@@ -39,6 +39,11 @@
     \restoregeometry
 }
 
+\RequirePackage[Glenn]{fncychap}
+    \ChNameVar{\fontsize{16}{16}\selectfont}
+    \ChNumVar{\fontsize{26}{26}\selectfont}
+    \ChTitleVar{\fontsize{22}{22}\selectfont}
+    
 \RequirePackage{titlesec}
     \setcounter{secnumdepth}{3}
     \renewcommand{\thesection}{\arabic{section}}
@@ -51,12 +56,9 @@
     \newlistof{ejercicio}{ej}{Lista de ejercicios}
     \newlistof{respuesta}{resp}{Lista de respuestas}
     \newlistof{dato}{dat}{Lista de datos biotecnológicos}
-    
 
-\RequirePackage[Glenn]{fncychap}
-    \ChNameVar{\fontsize{16}{16}\selectfont}
-    \ChNumVar{\fontsize{26}{26}\selectfont}
-    \ChTitleVar{\fontsize{22}{22}\selectfont}
+\RequirePackage[acronym]{glossaries-extra}    
+\RequirePackage[bottom]{footmisc}
 
 \RequirePackage{fancyhdr}
     \fancypagestyle{plain}{
@@ -72,36 +74,46 @@
         \fancyfoot[LE]{\thepage}
         \fancyfoot[RO]{\thepage}
         
-        
-\setlist[itemize]{itemsep=2pt, topsep=4pt, parsep=2pt, partopsep=4pt}
-\setlist[enumerate]{itemsep=2pt, topsep=4pt, parsep=2pt, partopsep=4pt}
+\RequirePackage{enumitem}
+    \setlist[itemize]{itemsep=2pt, topsep=4pt, parsep=2pt, partopsep=4pt}
+    \setlist[enumerate]{itemsep=2pt, topsep=4pt, parsep=2pt, partopsep=4pt}
 
-\captionsetup[table]{
-    singlelinecheck=false,
-    justification=raggedright,
-    font=scriptsize,
-    labelfont={sf,bf},
-    skip=2pt
-}
-\captionsetup[figure]{
-    skip=5pt,
-    singlelinecheck=false,
-    justification=raggedright,
-    font=scriptsize,
-    labelfont={sf,bf}
-}
-\captionsetup[subfigure]{
-    skip=5pt,
-    singlelinecheck=false,
-    font=scriptsize,
-    labelfont={sf,bf}
-}
+\RequirePackage{array}
+\RequirePackage{multirow}
+\RequirePackage[para]{threeparttable}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+    \captionsetup[table]{
+        singlelinecheck=false,
+        justification=raggedright,
+        font=scriptsize,
+        labelfont={sf,bf},
+        skip=2pt
+    }
+    \captionsetup[figure]{
+        skip=5pt,
+        singlelinecheck=false,
+        justification=raggedright,
+        font=scriptsize,
+        labelfont={sf,bf}
+    }
+    \captionsetup[subfigure]{
+        skip=5pt,
+        singlelinecheck=false,
+        font=scriptsize,
+        labelfont={sf,bf}
+    }
+
+\RequirePackage{siunitx}
+\RequirePackage{mhchem}
+\RequirePackage{chemfig}
     
 \RequirePackage{tikz}
     \usetikzlibrary{backgrounds, fit, calc, positioning, shapes.geometric, arrows, arrows.meta}
 \RequirePackage{pgfplots}
     \pgfplotsset{compat=1.18}
 
+\RequirePackage[table]{xcolor}
 \RequirePackage[most]{tcolorbox}
 
 \RequirePackage[super,square,sort&compress,comma]{natbib}

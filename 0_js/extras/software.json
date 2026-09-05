@@ -86,6 +86,20 @@
       "imagen": "https://avatars.githubusercontent.com/u/198117259?s=48&v=4",
       "descripcion": "Conversión rápida de archivos entre diferentes formatos.",
       "etiquetas": ["convertir archivos", "página web"]
+    },
+    {
+      "nombre": "iPATH3",
+      "url": "https://pathways.embl.de/",
+      "imagen": "https://pathways.embl.de/img/ipath3logo_small2.svg",
+      "descripcion": "Visualizador de rutas metabólicas y herramienta para personalizar tales mapas",
+      "etiquetas": ["ilustraciones", "metabolismo", "página web"]
+    },
+    {
+      "nombre": "PTable",
+      "url": "https://ptable.com/#Propiedades/Electronegatividad",
+      "imagen": "https://ptable.com/icon/ptable-logo.svg",
+      "descripcion": "Tabla periódica interactiva con información de propiedades de los elementos.",
+      "etiquetas": ["química", "página web"]
     }
   ]
 }
