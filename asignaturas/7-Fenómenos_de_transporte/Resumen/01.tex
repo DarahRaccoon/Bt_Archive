@@ -1,3 +1,9 @@
+\ifx\ISMAIN\undefined
+    \documentclass{AsignaturaResumen}
+    \SetTitulo{}
+    \input{../../0-tex_resources/glosario_general}
+    \begin{document}
+\fi
 
 \section{Presión}
 
@@ -38,8 +44,72 @@ La diferencia entre los dos puntos es:
     P_{2} - P_{1} = (h_{2}\rho_{g}+P_{0}) - (h_{1}\rho_{g}+P_{0})
 \end{equation}
 
+\resumebox{ejercicio}{Calculo de presión}{\footnotesize
+Un gran tanque de almacenamiento contiene petroleo de una densidad igual a 917$\frac{kg}{m^{3}}$. El tanque tiene una altura de 3.66m y está abierto a la atmósfera con una presión de 1atm absoluta en la superficie. El tanque está lleno con petroleo a una profundidad de 3.05m y contiene tambien 0.61m de agua en la parte inferior. calcule la presión en pascales a 3.05m de la superficie y en el fondo del tanque. También calcule la presión manométrica del fondo del tanque.
+}
 
+Los 3 procesos de transporte molecular se caracterizan por el mismo tipo general de ecuación de transporte:
+
+\begin{equation}
+    \text{Velocidad de transporte molecular} = \frac{\text{Fuerza impulsora}}{\text{Resistencia}}
+\end{equation}
+
+Esto también se puede expresar como:
+
+\begin{equation}
+    \Psi_{Z} = \sigma\frac{d\Gamma}{dZ}
+\end{equation}
+
+Donde
+
+\begin{itemize}
+    \item $\Psi_{Z}$ es el flujo de propiedad, es decir, la cantidad de la propiedad que se transfiere por unidad de tiempo a través de una sección transversal unitaria perpendicular a la dirección del fljo en cantidad de propiedad dobre metro cuadrado.
+    \item $\delta$ es la difusividad en metro cuadrado sobre segundo ($\frac{m^{2}}{s}$). Indica el gradiente y la resistencia
+    \begin{itemize}
+        \item La difusividad necesita de un gradiente para ocurrir.
+    \end{itemize}
+    
+    \item $\Gamma$ es la concentración de la propiedad en cantidad de propiedad sobre metros cúbicos ($\frac{\text{Propiedad}}{m^{3}}$). Indica la diferencia entre cantidad de transporte
+    \item $Z$ es la distancia de la dirección del flujo en metros.
+\end{itemize}
+
+Si el proceso ocurre en un estado estacionario el flujo $\Psi{Z}$ es constante:
+
+\begin{equation*}
+    \Psi_{Z} \ dZ = - \sigma \ z\Gamma
+\end{equation*}
+
+Esta es una cuación diferencial que al resolverla por variables separables nos da:
+
+\begin{equation}
+    \Psi_{Z} = \frac{-\sigma \ (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
+\end{equation}
 
 \section{Viscosidad}
 \section{Tipos de fluidos: Newtonianos y No Newtonianos}
 \section{Nre}
+
+
+\resumebox{respuesta}{Calculo de presión}{
+\begin{equation*}\mathrm{
+1 atm = 1.01325\cdot10^{5} \ Pa \quad ; \quad Pa = \frac{\frac{kg \cdot m}{s^{2}}}{m^{2}} = \frac{kg}{s^{2} \cdot m}
+}\end{equation*}
+\begin{equation*}\mathrm{
+    P_{\text{n}} = (h_{n} \cdot \rho_{n} \cdot g) + P_{n-1}
+}\end{equation*}
+\begin{equation*}\mathrm{
+    P_{\text{Petroleo}} = (3.05m \cdot 917\frac{kg}{m^{3}} \cdot 9.81\frac{m}{s^{2}}) + 1.01325 \cdot 10^{5} \frac{kg}{s^{2} \cdot m} = 1.2876 \cdot 10^{5} \ Pa
+}\end{equation*}
+\begin{equation*}\mathrm{
+    P_{\text{Agua}} = (0.61m \cdot 1000\frac{kg}{m^{3}} \cdot 9.81\frac{m}{s^{2}}) + 1.2876 \cdot 10^{5} \frac{kg}{s^{2} \cdot m} = 1.3474 \cdot 10^{5} \ Pa
+}\end{equation*}
+\begin{equation*}\mathrm{
+    P_{\text{Fondo (Manométrica)}} = 1.3474 \cdot 10^{5} \ Pa - 1.2876 \cdot 10^{5} \ Pa = 33415 \ Pa = 33.415 \ kPa
+}\end{equation*}
+}
+
+
+
+
+
+\EndSingleCompiling
