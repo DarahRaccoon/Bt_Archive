@@ -1,13 +1,41 @@
 {
   "categoria": "Manuales",
-  "icono": "fa-book",
-  "descripcion": "Manuales de apoyo para la realización de actividades estudiantiles.",
+  "icono": "fa-flask",
+  "descripcion": "Manuales que buscan describir el fundamento de algunos proyectos internos de la carrera.",
   "items": [
     {
-      "nombre": "Manual - Prácticas de laboratorio",
-      "url": "../biblioteca_interna/Manual_interno-Prácticas_de_laboratorio/Manual_de_prácticas_de_laboratorio.pdf",
-      "imagen": "../biblioteca_interna/Manual_interno-Prácticas_de_laboratorio/Portada.jpg",
+      "nombre": "Manual: Prácticas de laboratorio",
+      "url": "../biblioteca_interna/Manual-Practicas_Lab/0_Main.pdf",
+      "imagen": "../biblioteca_interna/Manual-Practicas_Lab/Portada.jpg",
       "descripcion": "Aprende sobre las prácticas de laboratorio que realizarás a lo largo de la carrera y los procedimientos necesarios para su realización.",
+      "etiquetas": []
+    },
+    {
+      "nombre": "Manual: Fermentaciones",
+      "url": "../biblioteca_interna/Manual-Fermentaciones/0_Main.pdf",
+      "imagen": "../biblioteca_interna/Manual-Fermentaciones/Portada.jpg",
+      "descripcion": "Aprende sobre la realización de fermentaciones. Desde su fundamento hasta como controlarlas.",
+      "etiquetas": []
+    },
+    {
+      "nombre": "Manual: Composta",
+      "url": "../biblioteca_interna/Manual-Composta/0_Main.pdf",
+      "imagen": "../biblioteca_interna/Manual-Composta/Portada.jpg",
+      "descripcion": "Aprende a realizar composta a diferentes escalas.",
+      "etiquetas": []
+    },
+    {
+      "nombre": "Manual de proyecto: Club Ambiental",
+      "url": "../biblioteca_interna/Proyecto-Club_ambiental/0_Main.pdf",
+      "imagen": "../biblioteca_interna/Proyecto-Club_ambiental/Portada.jpg",
+      "descripcion": "Guía para los alumnos interesados en participar en las actividades del Club Ambiental UPSIN.",
+      "etiquetas": []
+    },
+    {
+      "nombre": "Manual de proyecto: Revista estudiantil",
+      "url": "../biblioteca_interna/Proyecto-Revista/0_Main.pdf",
+      "imagen": "../biblioteca_interna/Proyecto-Revista/Portada.jpg",
+      "descripcion": "Documento que describe el proceso de creación y edición de la revista estudiantil.",
       "etiquetas": []
     }
   ]

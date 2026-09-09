@@ -3,26 +3,23 @@
 // Mapeo de categorías a archivos JSON
 const CATEGORIAS = {
     'manuales': 'manuales.json',
-    'proyectos': 'proyectos.json',
     'bibliotecas': 'bibliotecas.json'
 };
 
 // Nombres amigables para las categorías
 const CATEGORIA_NOMBRES = {
     'manuales': 'Manuales',
-    'proyectos': 'Proyectos',
     'bibliotecas': 'Bibliotecas'
 };
 
 // Íconos por categoría
 const CATEGORIA_ICONOS = {
     'manuales': 'fa-book',
-    'proyectos': 'fa-flask',
     'bibliotecas': 'fa-book-open'
 };
 
 // Categorías que usan layout horizontal (una por renglón)
-const CATEGORIAS_HORIZONTALES = ['manuales', 'proyectos'];
+const CATEGORIAS_HORIZONTALES = ['manuales'];
 
 let datosCargados = {};
 let categoriaActual = null;
@@ -65,7 +62,7 @@ function renderizarCategoria(data, categoriaKey) {
         return;
     }
     
-    // Determinar si es horizontal (manuales o proyectos)
+    // Determinar si es horizontal (manuales)
     const esHorizontal = CATEGORIAS_HORIZONTALES.includes(categoriaKey);
     
     // Clases según el tipo

@@ -5,47 +5,59 @@
     \begin{document}
 \fi
 
-\section{Presión}
+\section{Presión}\label{sec:presion}
+%\section{Viscosidad}
+%\section{Tipos de fluidos: Newtonianos y No Newtonianos}
+%\section{Nre}
 
-\marginpar{\begin{minipage}{\marginparwidth}
-    \begin{figure}[H]
-        \centering
-        \resizebox{0.8\linewidth}{!}{\input{images/fig:ejercicio_1_cubo}}
-    \end{figure}
-\end{minipage}}
 
 Si se requiere calcular la cantidad de kg totales de un fluido se utiliza:
-\begin{equation*}
-    kg_{\text{Total}} = h_{2}(m) A(m^{2}) \rho(kg/m^{2}) = h_{2}A\rho_{g} 
-\end{equation*}
+
+\begin{equation*}\mathrm{
+    kg_{\text{Total}} = h_{2}(m) \cdot A(m^{2}) \cdot \rho(kg/m^{2}) = h_{2} \cdot A \cdot \rho_{g} 
+}\end{equation*}
 
 Para calcular la fuerza total ($F$) del fluido sobre el área 1 debido unicamente al fluido es:
-\begin{equation}
+
+\begin{equation}\mathrm{
     F = (h_{2}AP)(g)
-\end{equation}
-\begin{equation}
+}\end{equation}
+
+\begin{equation}\mathrm{
     P = \frac{F}{A} \quad\therefore\quad P = h_{2}\rho_{g}
-\end{equation}
+}\end{equation}
 
 Esta es la presión sobre A\sub{2} debido a la masa del fluido que está encima. Sin embargo, para obtener la presión total (P\sub{2}) sobre A\sub{2}debe añadirse P\sub{0}, que soporta todo el líquido, de tal manera que:
+
 \begin{equation}
-    F = h_{2}\rho_{g} + P_{0}
+    F = h_{2} \cdot \rho_{g} + P_{0}
 \end{equation}
 
 Esta ecuación es la expresión fundamental para calcular la presión de un fluido a cualquier profundidad.
 
 Para P\sub{1}:
+
 \begin{equation}
-    P_{1} = h_{1}\rho_{g} + P_{0}
+    P_{1} = h_{1} \cdot \rho_{g} + P_{0}
 \end{equation}
 
 La diferencia entre los dos puntos es:
+
 \begin{equation}
-    P_{2} - P_{1} = (h_{2}\rho_{g}+P_{0}) - (h_{1}\rho_{g}+P_{0})
+    P_{2} - P_{1} = (h_{2} \cdot \rho_{g} + P_{0}) - (h_{1} \cdot \rho_{g} + P_{0})
 \end{equation}
 
+\marginpar{\begin{minipage}{\marginparwidth}
+    \begin{figure}[H]
+        \centering
+        \resizebox{\linewidth}{!}{\input{images/fig:ejercicio_1_cubo}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Ejemplo para representar las diferentes alturas tomadas en cuenta para las ecuaciones presentadas.}
+    \end{figure}
+\end{minipage}}
+
 \resumebox{ejercicio}{Calculo de presión}{\footnotesize
-Un gran tanque de almacenamiento contiene petroleo de una densidad igual a 917$\frac{kg}{m^{3}}$. El tanque tiene una altura de 3.66m y está abierto a la atmósfera con una presión de 1atm absoluta en la superficie. El tanque está lleno con petroleo a una profundidad de 3.05m y contiene tambien 0.61m de agua en la parte inferior. calcule la presión en pascales a 3.05m de la superficie y en el fondo del tanque. También calcule la presión manométrica del fondo del tanque.
+    Un gran tanque de almacenamiento contiene petroleo de una densidad igual a \qty[per-mode=fraction]{917}{\kilogram\per\meter\cubed}. El tanque tiene una altura de \qty{3.66}{\meter} y está abierto a la atmósfera con una presión de 1atm absoluta en la superficie. El tanque está lleno con petroleo a una profundidad de \qty{3.05}{\meter} y contiene tambien \qty{0.61}{\meter} de agua en la parte inferior. calcule la presión en pascales a \qty{3.05}{\meter} de la superficie y en el fondo del tanque. También calcule la presión manométrica del fondo del tanque.
 }
 
 Los 3 procesos de transporte molecular se caracterizan por el mismo tipo general de ecuación de transporte:
@@ -60,7 +72,7 @@ Esto también se puede expresar como:
     \Psi_{Z} = \sigma\frac{d\Gamma}{dZ}
 \end{equation}
 
-Donde
+Donde:
 
 \begin{itemize}
     \item $\Psi_{Z}$ es el flujo de propiedad, es decir, la cantidad de la propiedad que se transfiere por unidad de tiempo a través de una sección transversal unitaria perpendicular a la dirección del fljo en cantidad de propiedad dobre metro cuadrado.
@@ -68,15 +80,14 @@ Donde
     \begin{itemize}
         \item La difusividad necesita de un gradiente para ocurrir.
     \end{itemize}
-    
     \item $\Gamma$ es la concentración de la propiedad en cantidad de propiedad sobre metros cúbicos ($\frac{\text{Propiedad}}{m^{3}}$). Indica la diferencia entre cantidad de transporte
     \item $Z$ es la distancia de la dirección del flujo en metros.
 \end{itemize}
 
-Si el proceso ocurre en un estado estacionario el flujo $\Psi{Z}$ es constante:
+Si el proceso ocurre en un estado estacionario el flujo $\Psi_{Z}$ es constante:
 
 \begin{equation*}
-    \Psi_{Z} \ dZ = - \sigma \ z\Gamma
+    \Psi_{Z} \ dZ = - \sigma \ d\Gamma
 \end{equation*}
 
 Esta es una cuación diferencial que al resolverla por variables separables nos da:
@@ -85,10 +96,19 @@ Esta es una cuación diferencial que al resolverla por variables separables nos 
     \Psi_{Z} = \frac{-\sigma \ (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
 \end{equation}
 
-\section{Viscosidad}
-\section{Tipos de fluidos: Newtonianos y No Newtonianos}
-\section{Nre}
 
+\resumebox{ejercicio}{Cálculo de flujo}{\footnotesize
+    Se está transportando una propiedad por difusión a través de un fluido en estado estacionario. En un punto 1 determinado, la concentración es de \num{1.37d-2}, y \num{0.72d-2} en el punto 2, a una distancia de \qty{0.4}{\meter}. La difusividad es de \qty[per-mode=fraction]{0.013}{\meter\squared\per\second}, y el área de corte transversal es constante.
+    \begin{enumerate}
+        \item Calcula el flujo
+        \item Deduce la ecuación para $\Gamma$ como función de la distancia
+        \item Calcule $\Gamma$ en el punto medio de la trayectoria
+    \end{enumerate}
+}
+
+
+
+\section{Respuestas de ejercicios}
 
 \resumebox{respuesta}{Calculo de presión}{
 \begin{equation*}\mathrm{
@@ -108,8 +128,28 @@ Esta es una cuación diferencial que al resolverla por variables separables nos 
 }\end{equation*}
 }
 
+\resumebox{respuesta}{Cálculo de flujo}{
+\begin{enumerate}
+\item Calculo del flujo:
+\begin{gather*}
+    \Psi_{Z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
+    \\
+    \\
+    \Psi_{Z} = - \frac{\qty[per-mode=fraction]{0.013}{\meter\squared\per\second} \cdot (\num{1.37d-2} \frac{\Phi}{\unit{\meter\squared}} - \num{0.72d-2} \frac{\Phi}{\unit{\meter\squared}})}{\qty{0.4}{\meter}} = \num{2.1125d-4} \frac{\Phi}{\unit{\meter\squared\second}}
+\end{gather*}
+\item Ecuación para $\Gamma$ como función de la distancia:
+\begin{equation*}
+     \Psi_{Z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}} 
+     \quad\longrightarrow\quad
+     \Gamma = \frac{\Psi_{Z} \cdot Z}{-\delta}
+\end{equation*}
+\item $\Gamma$ en el punto medio:
+\begin{equation*}
+    \Gamma_{0.2m} = \frac{\num{2.1125d-4} \frac{\Phi}{\unit{\meter\squared\second}} \cdot \qty{0.2}{\meter}}{\qty[per-mode=fraction]{0.013}{\meter\squared\per\second}} = 3.25 \cdot 10^{-3} \frac{\Phi}{\unit{\meter\squared}}
+\end{equation*}
+\end{enumerate}
+}
 
 
 
-
-\EndSingleCompiling
+\end{document}

@@ -1,0 +1,40 @@
+\section{Definición de momento de inercia}
+
+El momento de inercia \(I\) mide la resistencia de un cuerpo a cambiar su velocidad angular. Es el análogo rotacional de la masa.
+\begin{equation}
+    I = \sum m_i r_i^2 = \int r^2 \, dm
+\end{equation}
+
+\section{Momentos de inercia de cuerpos comunes}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Cuerpo} & \textbf{Momento de inercia} \\
+        \hline
+        Anillo delgado (eje central) & \(I = M R^2\) \\
+        Disco sólido (eje central) & \(I = \frac{1}{2} M R^2\) \\
+        Cilindro sólido (eje central) & \(I = \frac{1}{2} M R^2\) \\
+        Varilla delgada (centro) & \(I = \frac{1}{12} M L^2\) \\
+        Varilla delgada (extremo) & \(I = \frac{1}{3} M L^2\) \\
+        Esfera sólida (eje central) & \(I = \frac{2}{5} M R^2\) \\
+        \hline
+    \end{tabular}
+    \caption{Momentos de inercia para diferentes cuerpos}
+\end{table}
+
+\section{Teorema de Steiner (Ejes paralelos)}
+\begin{equation}
+    I = I_{\text{cm}} + M d^2
+\end{equation}
+donde \(I_{\text{cm}}\) es el momento de inercia respecto al centro de masa, \(M\) es la masa total y \(d\) es la distancia entre el eje paralelo y el eje que pasa por el CM.
+
+\section{Energía cinética de rotación}
+\begin{equation}
+    K_{\text{rot}} = \frac{1}{2} I \omega^2
+\end{equation}
+
+\resumebox{ejercicio}{Fuerza magnética del protón}{\footnotesize
+    Calcula el momento de inercia de un disco de \(2 \, \text{kg}\) y \(0.3 \, \text{m}\) de radio respecto a un eje perpendicular que pasa por su borde (usa el teorema de Steiner).
+}

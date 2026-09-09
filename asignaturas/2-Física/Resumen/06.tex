@@ -1,0 +1,37 @@
+\section{Composición de movimientos}
+
+El tiro parabólico es la combinación de un MRU en el eje \(x\) y un MRUA en el eje \(y\).
+
+\subsection{Velocidades y posiciones}
+\begin{align}
+    v_{0x} &= v_0 \cos \theta \\
+    v_{0y} &= v_0 \sin \theta \\
+    x &= x_0 + v_{0x} \cdot t \\
+    y &= y_0 + v_{0y} \cdot t - \frac{1}{2} g t^2
+\end{align}
+
+\subsection{Altura máxima}
+La altura máxima se alcanza cuando \(v_y = 0\):
+\begin{equation}
+    y_{\max} = \frac{v_0^2 \sin^2 \theta}{2g}
+\end{equation}
+
+\subsection{Alcance horizontal}
+El alcance horizontal es la distancia total recorrida en el eje \(x\):
+\begin{equation}
+    x_{\max} = \frac{v_0^2 \sin(2\theta)}{g}
+\end{equation}
+
+\subsection{Tiempo de vuelo}
+\begin{equation}
+    t_{\text{vuelo}} = \frac{2 v_0 \sin \theta}{g}
+\end{equation}
+
+\resumebox{ejercicio}{Fuerza magnética del protón}{\footnotesize
+    Una pelota es lanzada con una velocidad de \(20 \, \text{m/s}\) y un ángulo de \(30^\circ\). Calcula:
+    \begin{enumerate}
+        \item Su altura máxima.
+        \item El alcance horizontal.
+        \item El tiempo de vuelo.
+    \end{enumerate}
+}
