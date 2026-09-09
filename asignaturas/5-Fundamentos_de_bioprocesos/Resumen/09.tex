@@ -1,9 +1,258 @@
+% ============================================================
+% Capítulo 09: Modelado y cálculo de parámetros cinéticos
+% ============================================================
 
+% Consejo: Este capítulo se enfoca en los modelos matemáticos que predicen el comportamiento de los microorganismos en cultivo.
 
+\section{Introducción al modelado cinético}
+
+El modelado cinético permite predecir el comportamiento de un cultivo microbiano a lo largo del tiempo, incluyendo:
+\begin{itemize}
+    \item Crecimiento de biomasa ($X$)
+    \item Consumo de sustrato ($S$)
+    \item Formación de producto ($P$)
+\end{itemize}
+
+Existen diferentes enfoques para modelar estos procesos, que van desde los más simples hasta los más complejos y detallados.
 
 \section{Modelos estructurados de predicción}
 
+Los \textbf{modelos estructurados} consideran la composición intracelular de la biomasa. Dividen a la célula en diferentes componentes (ej. ADN, ARN, proteínas, lípidos, carbohidratos) y modelan la cinética de cada uno por separado.
 
+\subsection{Características principales}
+\begin{itemize}
+    \item \textbf{Ventajas:}
+        \begin{itemize}
+            \item Son más precisos y realistas.
+            \item Permiten predecir cómo cambia la composición celular en respuesta a cambios en el ambiente.
+            \item Útiles para entender los mecanismos internos del metabolismo.
+        \end{itemize}
+    \item \textbf{Desventajas:}
+        \begin{itemize}
+            \item Son complejos matemáticamente.
+            \item Requieren muchos parámetros que son difíciles de medir experimentalmente.
+            \item Su implementación y calibración es costosa y demanda tiempo.
+        \end{itemize}
+\end{itemize}
+
+\subsection{Ejemplo de modelo estructurado}
+Un modelo estructurado simple podría dividir la biomasa en:
+\begin{enumerate}
+    \item Componente estructural (pared celular, membrana)
+    \item Componente metabólico (enzimas, ARN)
+    \item Componente de almacenamiento (glucógeno, lípidos)
+\end{enumerate}
+
+Cada componente tendría su propia ecuación de velocidad de formación/consumo.
+
+% Consejo: En un curso de fundamentos, los modelos estructurados se introducen conceptualmente. Los modelos no estructurados son más prácticos para aplicaciones de ingeniería.
 
 \section{Modelos no estructurados de predicción}
 
+Los \textbf{modelos no estructurados} consideran a la biomasa como un "todo" uniforme y no distinguen sus componentes internos. Son los más utilizados en la práctica de la ingeniería de bioprocesos.
+
+\subsection{Características principales}
+\begin{itemize}
+    \item \textbf{Ventajas:}
+        \begin{itemize}
+            \item Son simples y fáciles de usar.
+            \item Requieren pocos parámetros.
+            \item Son suficientes para describir el comportamiento global del cultivo.
+        \end{itemize}
+    \item \textbf{Desventajas:}
+        \begin{itemize}
+            \item No consideran cambios en la composición celular.
+            \item Pueden no ser precisos en condiciones donde la fisiología celular cambia drásticamente.
+        \end{itemize}
+\end{itemize}
+
+\subsection{Modelo de Monod}
+
+Es el modelo no estructurado más común y relaciona la velocidad específica de crecimiento ($\mu$) con la concentración del sustrato limitante ($S$).
+
+\begin{equation}
+    \mu = \mu_{max} \frac{S}{K_S + S}
+    \label{eq:monod}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $\mu$ es la velocidad específica de crecimiento (h$^{-1}$).
+    \item $\mu_{max}$ es la velocidad específica de crecimiento máxima (h$^{-1}$).
+    \item $S$ es la concentración del sustrato limitante (g/L).
+    \item $K_S$ es la constante de saturación de Monod (g/L), que representa la concentración de sustrato a la que $\mu = \frac{1}{2} \mu_{max}$.
+\end{itemize}
+
+\subsection{Otros modelos no estructurados}
+
+Existen variaciones del modelo de Monod para describir diferentes comportamientos:
+
+\begin{itemize}
+    \item \textbf{Inhibición por sustrato:} Cuando altas concentraciones de sustrato inhiben el crecimiento.
+    \begin{equation}
+        \mu = \mu_{max} \frac{S}{K_S + S + \frac{S^2}{K_I}}
+    \end{equation}
+    Donde $K_I$ es la constante de inhibición.
+    
+    \item \textbf{Inhibición por producto:} Cuando el producto acumulado inhibe el crecimiento.
+    \begin{equation}
+        \mu = \mu_{max} \frac{S}{K_S + S} \left(1 - \frac{P}{P_{max}}\right)
+    \end{equation}
+    Donde $P$ es la concentración de producto y $P_{max}$ es la concentración máxima tolerable.
+    
+    \item \textbf{Modelo de Tessier:} $\mu = \mu_{max}(1 - e^{-S/K_S})$
+    \item \textbf{Modelo de Moser:} $\mu = \mu_{max} \frac{S^n}{K_S + S^n}$
+\end{itemize}
+
+% Consejo: El modelo de Monod es el más importante y el que se utiliza como base en la mayoría de los bioprocesos.
+
+\section{Parámetros cinéticos en sistemas de producción}
+
+Los sistemas de producción se clasifican según el modo de operación del biorreactor:
+
+\subsection{Cultivo en lote (Batch)}
+\begin{itemize}
+    \item Todos los nutrientes se añaden al inicio.
+    \item No hay entrada ni salida de material durante la operación.
+    \item Las concentraciones de biomasa, sustrato y producto cambian con el tiempo.
+    \item Parámetros a determinar: $\mu_{max}$, $K_S$, $Y_{X/S}$, $Y_{P/S}$, $q_S$, $q_P$.
+\end{itemize}
+
+\subsection{Cultivo en lote alimentado (Fed-batch)}
+\begin{itemize}
+    \item Se añade sustrato de forma continua o intermitente durante la operación.
+    \item Permite mantener bajas concentraciones de sustrato para evitar inhibición.
+    \item El volumen aumenta con el tiempo.
+    \item Parámetros a determinar: $\mu_{max}$, $K_S$, $Y_{X/S}$, velocidad de alimentación.
+\end{itemize}
+
+\subsection{Cultivo continuo}
+\begin{itemize}
+    \item Hay entrada continua de medio fresco y salida continua de caldo de cultivo.
+    \item Se alcanza un estado estacionario donde las concentraciones no cambian con el tiempo.
+    \item Tipos: Quimiosato (control por dilución) y Turbidostato (control por biomasa).
+    \item Parámetros a determinar: $\mu = D$ (velocidad de dilución), $Y_{X/S}$, productividad.
+\end{itemize}
+
+\section{Cálculo de parámetros cinéticos}
+
+\subsection{Velocidad específica de crecimiento ($\mu$)}
+Se calcula a partir de datos de biomasa en la fase exponencial:
+
+\begin{equation}
+    \mu = \frac{\ln(X) - \ln(X_0)}{t - t_0}
+\end{equation}
+
+\subsection{Rendimientos}
+\begin{itemize}
+    \item Rendimiento de biomasa: $Y_{X/S} = \frac{\Delta X}{\Delta S}$
+    \item Rendimiento de producto: $Y_{P/S} = \frac{\Delta P}{\Delta S}$
+    \item Rendimiento de producto respecto a biomasa: $Y_{P/X} = \frac{\Delta P}{\Delta X}$
+\end{itemize}
+
+\subsection{Velocidades específicas}
+\begin{itemize}
+    \item Velocidad específica de consumo de sustrato: $q_S = \frac{1}{X} \frac{dS}{dt}$
+    \item Velocidad específica de formación de producto: $q_P = \frac{1}{X} \frac{dP}{dt}$
+\end{itemize}
+
+\subsection{Determinación de $K_S$ y $\mu_{max}$}
+Se puede realizar mediante:
+\begin{enumerate}
+    \item Linealización de la ecuación de Monod (doble recíproca):
+    \begin{equation}
+        \frac{1}{\mu} = \frac{K_S}{\mu_{max}} \frac{1}{S} + \frac{1}{\mu_{max}}
+    \end{equation}
+    \item Ajuste no lineal de datos experimentales usando software especializado.
+\end{enumerate}
+
+\section{Estado estacionario y pseudoestacionario}
+
+\subsection{Estado estacionario}
+\begin{itemize}
+    \item Ocurre en cultivos continuos (quimiosato).
+    \item Las concentraciones de biomasa, sustrato y producto permanecen constantes en el tiempo.
+    \item $\frac{dX}{dt} = \frac{dS}{dt} = \frac{dP}{dt} = 0$
+    \item $\mu = D$ (velocidad de dilución)
+\end{itemize}
+
+\subsection{Estado pseudoestacionario}
+\begin{itemize}
+    \item Ocurre en cultivos en lote alimentado.
+    \item La biomasa aumenta lentamente, pero la concentración de sustrato se mantiene constante.
+    \item $\frac{dS}{dt} \approx 0$
+    \item $\mu \approx \text{constante}$
+\end{itemize}
+
+% Consejo: Entender estos conceptos es fundamental para el diseño y operación de biorreactores a escala industrial.
+
+\section{Ejercicio de aplicación}
+
+\textbf{Problema:} Se tienen los siguientes datos de un cultivo en lote de \textit{E. coli} en medio con glucosa como sustrato limitante:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        \textbf{Tiempo (h)} & \textbf{Biomasa (g/L)} & \textbf{Sustrato (g/L)} & \textbf{Producto (g/L)} \\
+        \hline
+        0 & 0.5 & 20.0 & 0.0 \\
+        1 & 0.8 & 18.5 & 0.2 \\
+        2 & 1.3 & 16.0 & 0.5 \\
+        3 & 2.1 & 12.0 & 0.9 \\
+        4 & 3.4 & 6.0 & 1.5 \\
+        5 & 4.5 & 2.0 & 2.0 \\
+        6 & 4.8 & 1.0 & 2.3 \\
+        7 & 4.9 & 0.5 & 2.5 \\
+        8 & 4.9 & 0.2 & 2.6 \\
+    \end{tabular}
+    \caption{Datos de cultivo en lote}
+    \label{tab:datos_cultivo}
+\end{table}
+
+Calcular:
+\begin{enumerate}
+    \item La velocidad específica de crecimiento máxima ($\mu_{max}$) durante la fase exponencial.
+    \item Los rendimientos $Y_{X/S}$ y $Y_{P/S}$.
+    \item La velocidad específica de consumo de sustrato ($q_S$) al tiempo 4 h.
+\end{enumerate}
+
+\textbf{Solución:}
+
+1. \textbf{Cálculo de $\mu_{max}$:} Usando los datos de la fase exponencial (tiempos 0-4 h):
+
+\begin{align*}
+    \mu &= \frac{\ln(X_2) - \ln(X_1)}{t_2 - t_1} \\
+    \mu_{max} &= \frac{\ln(3.4) - \ln(0.5)}{4 - 0} = \frac{1.224 - (-0.693)}{4} = \frac{1.917}{4} = 0.479 \text{ h}^{-1}
+\end{align*}
+
+2. \textbf{Cálculo de rendimientos:}
+\begin{align*}
+    Y_{X/S} &= \frac{\Delta X}{\Delta S} = \frac{4.9 - 0.5}{20.0 - 0.2} = \frac{4.4}{19.8} = 0.222 \text{ g biomasa/g sustrato} \\
+    Y_{P/S} &= \frac{\Delta P}{\Delta S} = \frac{2.6 - 0.0}{20.0 - 0.2} = \frac{2.6}{19.8} = 0.131 \text{ g producto/g sustrato}
+\end{align*}
+
+3. \textbf{Cálculo de $q_S$ al tiempo 4 h:}
+\begin{align*}
+    q_S &= -\frac{1}{X} \frac{dS}{dt} \approx -\frac{1}{3.4} \frac{(2.0 - 6.0)}{(5 - 3)} = -\frac{1}{3.4} \frac{(-4.0)}{2} = \frac{2.0}{3.4} = 0.588 \text{ g sustrato/(g biomasa·h)}
+\end{align*}
+
+\section{Simulación de bioprocesos}
+
+La simulación computacional es una herramienta poderosa para:
+\begin{itemize}
+    \item Predecir el comportamiento del cultivo antes de realizar experimentos.
+    \item Optimizar las condiciones de operación.
+    \item Escalar el proceso de laboratorio a planta piloto o industrial.
+    \item Evaluar diferentes estrategias de operación.
+\end{itemize}
+
+% Consejo: Existen software especializados como MATLAB, Aspen Plus, o simuladores específicos para bioprocesos. También hay recursos en línea como el "Virtual Labs project" mencionado en el manual.
+
+\subsection{Elementos de una simulación}
+\begin{enumerate}
+    \item Modelo matemático (ej. ecuaciones de Monod, balances de masa).
+    \item Parámetros cinéticos y estequiométricos.
+    \item Condiciones iniciales.
+    \item Condiciones de operación (temperatura, pH, agitación, etc.).
+    \item Resolución numérica de las ecuaciones diferenciales.
+\end{enumerate}

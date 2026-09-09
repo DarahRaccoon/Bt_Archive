@@ -1,9 +1,46 @@
+% ============================================================
+% Capítulo 05: Balance de electrones y grado de reducción
+% ============================================================
 
-
+% Consejo: Este capítulo introduce una forma alternativa de balancear ecuaciones de crecimiento microbiano.
 
 \section{Grados de reducción}
 
+El \textbf{grado de reducción} ($\gamma$) es una medida del contenido energético de un compuesto. Se define como el número de electrones disponibles para la transferencia en una reacción de oxidación, por átomo de carbono.
 
+\begin{itemize}
+    \item Específicamente, es el número de equivalentes de electrones (o la carga) que un átomo de carbono en una molécula tiene en comparación con su estado completamente oxidado ($CO_2$).
+    \item Para calcularlo, se asigna un número de oxidación a cada átomo en el compuesto y se promedia por átomo de carbono.
+    \item Es un concepto útil para hacer balances de electrones en reacciones de crecimiento microbiano, ya que la energía para el crecimiento proviene de la transferencia de electrones del sustrato al oxígeno (u otro aceptor de electrones).
+\end{itemize}
 
 \section{Cálculo de los grados de reducción}
 
+El grado de reducción se calcula usando la fórmula general para un compuesto de fórmula $C_aH_bO_cN_d$:
+
+\begin{equation}
+    \gamma = \frac{4a + b - 2c - 3d}{a}
+\end{equation}
+
+Donde los coeficientes se basan en los números de oxidación convencionales: $C(+4)$, $H(+1)$, $O(-2)$, $N(-3)$.
+
+\subsection*{Ejemplo: Cálculo del grado de reducción de la glucosa}
+
+La glucosa tiene la fórmula $C_6H_{12}O_6$. No contiene nitrógeno ($d=0$).
+
+\begin{itemize}
+    \item $a = 6$ (átomos de carbono)
+    \item $b = 12$ (átomos de hidrógeno)
+    \item $c = 6$ (átomos de oxígeno)
+    \item $d = 0$ (átomos de nitrógeno)
+\end{itemize}
+
+Aplicando la fórmula:
+
+\[
+\gamma_{glucosa} = \frac{4(6) + 12 - 2(6) - 3(0)}{6} = \frac{24 + 12 - 12}{6} = \frac{24}{6} = 4
+\]
+
+El grado de reducción de la glucosa es 4. Esto significa que, en promedio, cada átomo de carbono en la glucosa tiene un estado de oxidación de 0, ya que 4 es el número de electrones que se necesitan para oxidar completamente a $CO_2$.
+
+% Consejo: El grado de reducción permite hacer balances de electrones. La ecuación general de crecimiento microbiano se puede balancear igualando los electrones disponibles en el sustrato y la fuente de nitrógeno con los electrones en la biomasa, el producto y el oxígeno consumido.

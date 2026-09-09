@@ -3,10 +3,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Composición elemental estándar de un microorganismo}}{6}{table.caption.2}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Composición elemental estándar de un microorganismo}}{10}{table.caption.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Resultados para la \autoref {sec:formulación_de_medios_ejemplo1}}}{13}{table.caption.4}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Resultados para la \autoref {sec:formulación_de_medios_ejemplo1}}}{18}{table.caption.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {9.1}{\ignorespaces Datos de cultivo en lote}}{33}{table.caption.10}%

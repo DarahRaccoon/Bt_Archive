@@ -6,26 +6,25 @@
 \fi
 
 \section{Presión}\label{sec:presion}
-%\section{Viscosidad}
 %\section{Tipos de fluidos: Newtonianos y No Newtonianos}
 %\section{Nre}
 
 
 Si se requiere calcular la cantidad de kg totales de un fluido se utiliza:
 
-\begin{equation*}\mathrm{
+\begin{equation*}
     kg_{\text{Total}} = h_{2}(m) \cdot A(m^{2}) \cdot \rho(kg/m^{2}) = h_{2} \cdot A \cdot \rho_{g} 
-}\end{equation*}
+\end{equation*}
 
 Para calcular la fuerza total ($F$) del fluido sobre el área 1 debido unicamente al fluido es:
 
-\begin{equation}\mathrm{
+\begin{equation}
     F = (h_{2}AP)(g)
-}\end{equation}
+\end{equation}
 
-\begin{equation}\mathrm{
+\begin{equation}
     P = \frac{F}{A} \quad\therefore\quad P = h_{2}\rho_{g}
-}\end{equation}
+\end{equation}
 
 Esta es la presión sobre A\sub{2} debido a la masa del fluido que está encima. Sin embargo, para obtener la presión total (P\sub{2}) sobre A\sub{2}debe añadirse P\sub{0}, que soporta todo el líquido, de tal manera que:
 
@@ -57,7 +56,7 @@ La diferencia entre los dos puntos es:
 \end{minipage}}
 
 \resumebox{ejercicio}{Calculo de presión}{\footnotesize
-    Un gran tanque de almacenamiento contiene petroleo de una densidad igual a \qty[per-mode=fraction]{917}{\kilogram\per\meter\cubed}. El tanque tiene una altura de \qty{3.66}{\meter} y está abierto a la atmósfera con una presión de 1atm absoluta en la superficie. El tanque está lleno con petroleo a una profundidad de \qty{3.05}{\meter} y contiene tambien \qty{0.61}{\meter} de agua en la parte inferior. calcule la presión en pascales a \qty{3.05}{\meter} de la superficie y en el fondo del tanque. También calcule la presión manométrica del fondo del tanque.
+    Un gran tanque de almacenamiento contiene petroleo de una densidad igual a \qty{917}{\kilogram\per\meter\cubed}. El tanque tiene una altura de \qty{3.66}{\meter} y está abierto a la atmósfera con una presión de 1atm absoluta en la superficie. El tanque está lleno con petroleo a una profundidad de \qty{3.05}{\meter} y contiene tambien \qty{0.61}{\meter} de agua en la parte inferior. calcule la presión en pascales a \qty{3.05}{\meter} de la superficie y en el fondo del tanque. También calcule la presión manométrica del fondo del tanque.
 }
 
 Los 3 procesos de transporte molecular se caracterizan por el mismo tipo general de ecuación de transporte:
@@ -68,7 +67,7 @@ Los 3 procesos de transporte molecular se caracterizan por el mismo tipo general
 
 Esto también se puede expresar como:
 
-\begin{equation}
+\begin{equation}\label{eq:ecuacion_de_transporte_molecular_diferencial}
     \Psi_{Z} = \sigma\frac{d\Gamma}{dZ}
 \end{equation}
 
@@ -90,7 +89,7 @@ Si el proceso ocurre en un estado estacionario el flujo $\Psi_{Z}$ es constante:
     \Psi_{Z} \ dZ = - \sigma \ d\Gamma
 \end{equation*}
 
-Esta es una cuación diferencial que al resolverla por variables separables nos da:
+Esta es una ecuación diferencial que al resolverla por variables separables nos da:
 
 \begin{equation}
     \Psi_{Z} = \frac{-\sigma \ (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
@@ -98,7 +97,7 @@ Esta es una cuación diferencial que al resolverla por variables separables nos 
 
 
 \resumebox{ejercicio}{Cálculo de flujo}{\footnotesize
-    Se está transportando una propiedad por difusión a través de un fluido en estado estacionario. En un punto 1 determinado, la concentración es de \num{1.37d-2}, y \num{0.72d-2} en el punto 2, a una distancia de \qty{0.4}{\meter}. La difusividad es de \qty[per-mode=fraction]{0.013}{\meter\squared\per\second}, y el área de corte transversal es constante.
+    Se está transportando una propiedad por difusión a través de un fluido en estado estacionario. En un punto 1 determinado, la concentración es de \num{1.37d-2}, y \num{0.72d-2} en el punto 2, a una distancia de \qty{0.4}{\meter}. La difusividad es de \qty{0.013}{\meter\squared\per\second}, y el área de corte transversal es constante.
     \begin{enumerate}
         \item Calcula el flujo
         \item Deduce la ecuación para $\Gamma$ como función de la distancia
@@ -106,9 +105,136 @@ Esta es una cuación diferencial que al resolverla por variables separables nos 
     \end{enumerate}
 }
 
+Al calcular las velocidades de transporte en un sistema usando la ecuación de transporte molecular (\autoref{eq:ecuacion_de_transporte_molecular_diferencial}) es necesario tomar en cuenta la cantidad de esta propiedad que se transporta en todo el sistema. Esto se hace escribiendo una ecuación general de balance o conservación para la propiedad en estado no estacionario.
+
+\begin{align*}
+    \text{Tasa de la propiedad que entra} \ &+ \ \text{Tasa de generación de la propiedad}
+    \\
+    &=
+    \\
+    \text{Tasa de la propiedad que sale} \ &+ \ \text{Tasa de acumulación de la propiedad}
+\end{align*}
+
+La velocidad de entrada es $\Psi_{Z / (Z \cdot 1)}$ en cantidad de propiedad sobre segundo ($\frac{\Phi}{\mathrm{s}}$), mientras que la velocidad de salida es $(\Psi_{Z/Z} + \Delta Z) \cdot 1$ en cantidad de propiedad sobre segundo , donde el área de corte transversal es de \qty{1}{\meter\squared}. La velocidad de generación de la propiedad se escribe como $R_{\Delta Z \cdot 1}$, que se mide en cantidad de propiedad sobre segundo por metro cúbico ($\frac{\Phi}{\unit{\meter\cubed\second}}$). El término para la acumulación es:
+
+\begin{equation}
+    \text{Velocidad de acumulación de propiedad} = \frac{d \Gamma (\Delta Z \cdot 1)}{dt} 
+\end{equation}
+
+En la cual, si sustituimos, tendríamos:
+
+\begin{equation}
+    \Psi_{Z / (Z \cdot 1)} + R_{\Delta Z \cdot 1} = (\Psi_{Z/Z} + \Delta Z) \cdot 1 + \frac{d\Gamma}{dt} (\Delta Z \cdot 1)
+\end{equation}
+
+\section{Transporte de momento lineal y la ley de Newton}
+
+%\marginpar{\resumebox{definicion}{Primera Ley de Newton}{\footnotesize
+%    La primera ley de Newton, o ley de la inercia, establece que un objeto en reposo o en movimiento constante mantendrá ese estado a menos que una fuerza externa neta actúe sobre él.
+%}}
+
+Cuandoo un fluido fluye en la dirección X en forma paralela a una superficie sólida existe un gradiente de velocidad dondel a velocidad $V_{x}$ en la dirección X disminuye al acercarse a la superficie en la dirección Z. El fluido tiene un momento lineal en dirección X y su concentración es $V_{x}\rho$ (momento lineal sobre metro cúbico), donde el momento lineal tiene unidades de kilogramos por metro sobre segundo (\unit{\kilogram\meter\per\second}). Debido a la difusión aleatoria de las moléculas existe un intercambio de moléculas en la dirección Z, moviendose igual número de ellas en cada dirección entre la capa de la molécula que se mueve más rápido y la capa adyacente más lenta. La ley que describe lo anterior es la ley de Newton de la viscosidad para una densidad constante:
+
+\begin{equation}
+    \tau_{Zx} = \frac{-Vd(V_{x}\rho)}{dZ}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $\tau_{ZX}$ es el flujo de momento lineal con dirección X en la dirección Z (\unit{\kilogram\meter\per\second})
+    \item $V$ es $\frac{\mu}{\rho}$, que representa la difusividad de momento lineal en metro cuadrado por segundo (\unit{\meter\squared\per\second})
+    \item $Z$ es la dirección de transporte o difusión en metros (\unit{\meter})
+    \item $\rho$ es la densidad en kilogramos por metro cúbico (\unit{\kilogram\per\meter\cubed})
+    \item $\mu$ es la viscosodad en kilogramos por metro por segundo (\unit{\kilogram\per\meter\second})
+\end{itemize}
+
+\section{Transporte de calor y la ley de Fourier}
+
+La ley de Fourier para el transporte molecular de calor o la conducción de calor e n fluido o sólido puede escribirse para una densidad constante y capacidad calorífica (cp):
+
+\DeclareSIUnit\cd{cd}
+
+\begin{equation}
+    \frac{qZ}{A} = \frac{-\alpha d \rho cp T}{dZ}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $\frac{qZ}{A}$ es el flujo de calor en \unit{\joule\per\meter\squared\second}
+    \item $\alpha$ es la difusividad térmica en \unit{\meter\squared\per\second}
+    \item $\rho cp T$ es la concentración de calor o energía térmica en \unit{\joule\per\meter\cubed}
+\end{itemize}
+
+Cuando hay un gradiente de temperatura en un fluido se difunden igual número de moléculas entre la región caliente y la más fría.
+
+\section{Transporte de masa y ley de Fick}
+
+La ley de Fick para el transporte molecular de masa en un fluido o en un sólido para la concentración total constante del fluido es:
+
+\begin{equation}
+    J_{AZ} = -D_{AB} \cdot \frac{dC_{A}}{dZ}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $J_{AZ}$ es el flujo de A en kgmol de A sobre \unit{\meter\squared\second}
+    \item $D_{AB}$ es la difusividad molecular de las moléculas A y B en \unit{\meter\squared\per\second}
+    \item $C_{A}$ es la concentración de A en \unit{\kilogram\mole} de A sobre \unit{\meter\cubed} (\unit{\kilogram\mole\per\meter\cubed})
+\end{itemize}
+
+Donde existe un gradiente de concentración en un fluido se difundirán igual número de moléculas en todas las direcciones de alta y baja concentración, y ocurrirá un flujo neto de masa.
+
+\bigskip
+
+Estos 3 transportes son descritos en estado estacionario, y se puede notar en los 3 términos comunes.
 
 
-\section{Respuestas de ejercicios}
+\section{Viscosidad de fluidos} % Ley de Newton y viscosidad
+
+Cuando un fluido se transporta a través de un canal cerrado se presentan dos tipos de flujo dependiendo de dicho fluido:
+
+\begin{enumerate}
+    \item A \emph{velocidades bajas} el fluido tiende a transportarse sin mezclado lateral, y las capas adyacentes se resbalan unas sobre las otras. En este caso no hay corrientes cruzadas perpendiculares a la dirección del flujo, ni tampoco remolinos de fluidos. A este tipo de flujo se le llama \emph{flujo laminar}.
+    \item A \emph{velocidades altas} se forman remolinos, lo que conduce a un mezclado lateral. A este tipo de flujo se le llama \emph{flujo turbulento}.
+\end{enumerate}
+
+La viscosidad es una propiedad de un fluido que da lugar a fuerzas que se oponen al movimiento relativo de capas adyacentes en el fluido. Para muchos fluidos se ha determinado de forma experimental que la fuerza (F) en Newtons es directamente proporcional a la velocidad $\Delta V_{Z}$ en metros sobre segundo (\unit{\meter\per\second}). El área en metros cuadrados (\unit{\meter\squared}) de la placa usada es inversamente proporcional a la distancia $\Delta y$ en metros (\unit{\meter}). Expresada con la ley de viscosidad de Newton, cuando el flujo es laminar:
+
+\begin{equation}
+    \frac{F}{A} = -\mu \frac{\Delta V_{Z}}{\Delta y}
+\end{equation}
+
+Donde $\mu$ es la constante de proporcionalidad llamada viscosidad del fluido en pascales por segundo (\unit{\pascal\second}) o \unit{\kilogram\per\meter\second}. Cuando $\Delta y$ tiende a 0:
+
+\begin{equation}
+    \tau_{yz} = -\mu \cdot \frac{dV_{Z}}{dy}
+\end{equation}
+
+\begin{equation}\footnote{lbf/ft\super{2}}
+    \tau_{yz} \ gc = -\mu \cdot \frac{dV_{z}}{dy}
+\end{equation}
+
+Las unidades en el \emph{sistema cgs} son \unit{\g\per\second\meter}, llamados Poise (P) o Centipoise (cp). 
+
+\resumebox{ejercicio}{Cálculo de esfuerzo cortante}{\footnotesize
+    La distancia entre las dos placas es de \qty{0.5}{\cm}. La velocidad de flujo que pasa a través es de \qty{10}{\cm\s}, y el fluido que atraviesa se trata de alcohol etílico a \qty{273}{\K}, cuya viscosidad es de 1.77cp.
+    \begin{enumerate}
+        \item Calcule el esfuerzo cortante $\tau_{yz}$ y el gradiente de velocidad
+        \item Repita en el SI
+    \end{enumerate}
+}
+
+
+
+
+
+
+% -------------------------------------------------------------------- %
+\clearpage
+\section*{Respuestas de ejercicios}
 
 \resumebox{respuesta}{Calculo de presión}{
 \begin{equation*}\mathrm{
@@ -135,7 +261,7 @@ Esta es una cuación diferencial que al resolverla por variables separables nos 
     \Psi_{Z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
     \\
     \\
-    \Psi_{Z} = - \frac{\qty[per-mode=fraction]{0.013}{\meter\squared\per\second} \cdot (\num{1.37d-2} \frac{\Phi}{\unit{\meter\squared}} - \num{0.72d-2} \frac{\Phi}{\unit{\meter\squared}})}{\qty{0.4}{\meter}} = \num{2.1125d-4} \frac{\Phi}{\unit{\meter\squared\second}}
+    \Psi_{Z} = - \frac{\qty{0.013}{\meter\squared\per\second} \cdot (\num{1.37d-2} \frac{\Phi}{\unit{\meter\squared}} - \num{0.72d-2} \frac{\Phi}{\unit{\meter\squared}})}{\qty{0.4}{\meter}} = \num{2.1125d-4} \frac{\Phi}{\unit{\meter\squared\second}}
 \end{gather*}
 \item Ecuación para $\Gamma$ como función de la distancia:
 \begin{equation*}
@@ -145,11 +271,13 @@ Esta es una cuación diferencial que al resolverla por variables separables nos 
 \end{equation*}
 \item $\Gamma$ en el punto medio:
 \begin{equation*}
-    \Gamma_{0.2m} = \frac{\num{2.1125d-4} \frac{\Phi}{\unit{\meter\squared\second}} \cdot \qty{0.2}{\meter}}{\qty[per-mode=fraction]{0.013}{\meter\squared\per\second}} = 3.25 \cdot 10^{-3} \frac{\Phi}{\unit{\meter\squared}}
+    \Gamma_{0.2m} = \frac{\num{2.1125d-4} \frac{\Phi}{\unit{\meter\squared\second}} \cdot \qty{0.2}{\meter}}{\qty{0.013}{\meter\squared\per\second}} = 3.25 \cdot 10^{-3} \frac{\Phi}{\unit{\meter\squared}}
 \end{equation*}
 \end{enumerate}
 }
 
-
+\resumebox{respuesta}{Cálculo de esfuerzo cortante}{\footnotesize
+    PENDIENTE
+}
 
 \end{document}

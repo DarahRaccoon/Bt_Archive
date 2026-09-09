@@ -1,0 +1,63 @@
+% ============================================================
+% Capítulo 07: Predicción de rendimientos y coeficientes de rendimiento
+% ============================================================
+
+% Consejo: Este capítulo se enfoca en cómo usar la estequiometría para predecir cuánto producto o biomasa se obtendrá de un sustrato.
+
+\section{Predicción de rendimientos}
+
+Los rendimientos son relaciones que nos indican la eficiencia con la que un sustrato se convierte en biomasa o producto. Se pueden predecir a partir de la ecuación estequiométrica balanceada del crecimiento microbiano.
+
+\subsection{Rendimiento de biomasa respecto a sustrato ($Y_{X/S}$)}
+Es la cantidad de biomasa producida por gramo de sustrato consumido.
+
+\begin{equation}
+    Y_{X/S} = \frac{\text{Biomasa producida (g)}}{\text{Sustrato consumido (g)}} = \frac{\Delta X}{\Delta S}
+\end{equation}
+
+\subsection{Rendimiento de producto respecto a sustrato ($Y_{P/S}$)}
+Es la cantidad de producto producido por gramo de sustrato consumido.
+
+\begin{equation}
+    Y_{P/S} = \frac{\text{Producto producido (g)}}{\text{Sustrato consumido (g)}} = \frac{\Delta P}{\Delta S}
+\end{equation}
+
+% Consejo: En la práctica, estos rendimientos se obtienen experimentalmente. Sin embargo, el balance estequiométrico permite calcular rendimientos teóricos máximos.
+
+\section{Coeficientes de rendimiento máximo teórico}
+
+El \textbf{rendimiento máximo teórico} se calcula a partir de la estequiometría de la reacción, asumiendo que no hay formación de subproductos y que el sustrato se convierte completamente en biomasa o producto.
+
+\subsection*{Ejemplo: Cálculo de rendimiento teórico de etanol a partir de glucosa}
+
+La ecuación de la fermentación alcohólica es:
+
+\[
+C_6H_{12}O_6 \rightarrow 2 C_2H_5OH + 2 CO_2
+\]
+
+*   Masa molar de glucosa = 180 g/mol.
+*   Masa molar de etanol = 46 g/mol.
+
+Por cada 1 mol de glucosa (180 g), se producen 2 moles de etanol (2 * 46 = 92 g).
+
+El rendimiento máximo teórico de etanol respecto a glucosa es:
+
+\[
+Y_{P/S} = \frac{92 \text{ g etanol}}{180 \text{ g glucosa}} = 0.511 \text{ g etanol / g glucosa}
+\]
+
+\section{Coeficientes de rendimiento real}
+
+El \textbf{rendimiento real} es el que se obtiene experimentalmente en un bioproceso real.
+
+\[
+Y_{P/S}^{\text{real}} = \frac{P_{\text{obtenido}}}{S_{\text{consumido}}}
+\]
+
+Siempre es menor que el rendimiento máximo teórico debido a:
+\begin{itemize}
+    \item El uso de parte del sustrato para el mantenimiento celular.
+    \item La producción de subproductos no deseados.
+    \item La ineficiencia de los procesos metabólicos.
+\end{itemize}
