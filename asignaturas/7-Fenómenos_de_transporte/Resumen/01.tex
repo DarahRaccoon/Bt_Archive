@@ -6,9 +6,6 @@
 \fi
 
 \section{Presión}\label{sec:presion}
-%\section{Tipos de fluidos: Newtonianos y No Newtonianos}
-%\section{Nre}
-
 
 Si se requiere calcular la cantidad de kg totales de un fluido se utiliza:
 
@@ -223,10 +220,51 @@ Las unidades en el \emph{sistema cgs} son \unit{\g\per\second\meter}, llamados P
     La distancia entre las dos placas es de \qty{0.5}{\cm}. La velocidad de flujo que pasa a través es de \qty{10}{\cm\s}, y el fluido que atraviesa se trata de alcohol etílico a \qty{273}{\K}, cuya viscosidad es de 1.77cp.
     \begin{enumerate}
         \item Calcule el esfuerzo cortante $\tau_{yz}$ y el gradiente de velocidad
-        \item Repita en el SI
+        \item Repita en SI
     \end{enumerate}
 }
 
+\section{Viscosidad y fluidos newtonianos}
+
+\marginpar{\begin{minipage}{\marginparwidth}
+\begin{figure}[H]
+    \centering
+    \resizebox{\linewidth}{!}{\input{images/fig:grafica_de_tipos_de_fluidos}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Diferencia entre fluidos newtonianos y no newtonianos}
+    \label{fig:grafica_de_tipos_de_fluidos}
+\end{figure}
+\end{minipage}}
+
+Los fluidos que obedecen la ley de viscosidad e Newton se les llama fluidos newtonianos. En dichos fluidos existe una relación lineal entre el esfuerzo cortante ($\tau_{yz}$) y el gradiente de velocidad ($\frac{\Delta V_{z}}{\Delta y}$), lo cual significa que la velocidad $\mu$ es constante e independiente de la velocidad cortante. En fluidos no newtonianos, la relación entre $\tau_{yz}$ y $\frac{\Delta V_{z}}{\Delta y}$ no es lineal, es decir, $\mu$ no permanece constante, sino que está en función de $\tau_{yz}$.
+
+La viscosidad de los gases, que son fluidos newtonianos, aumenta con la temperatura e independiente de la presión.
+
+\section{Tipos de flujo}
+
+El primer tipo de flujo ocurre a velocidades bajas, donde la capa del fluido parece desplazarse unas sobre las otras sin remolinos o turbulencias. Tal flujo se llama flujo laminar, y obedece la ley de la viscosidad de Newton.
+
+El segundo tipo de flujo ocurre avelocidades más altas, donde se forman remolinos que imparten al fluido una naturaleza fluctante. Este fluido recibe el nombre de flujo turbulento. 
+
+\section{Número de Reynolds ($N_{Re}$)}
+
+La expresión para estimar el número de Reynolds es:
+
+\begin{equation}
+    N_{Re} = \frac{D V \rho}{\mu}
+\end{equation}
+
+Aquí D es el diametro de la tubería en metros (\unit{\meter}). V es la velocidad promedio del fondo en metros por segundo (\unit{\m\per\s}), y se obtiene con la velocidad volumétrica del fluida dividida entre el área de corte transversal de la tubería.
+
+Cuando $N_{Re}$ es menor a 2100 para una tubería circular recta, el flujo siempre es laminar. Cuand el valor supera 4000 el flujo será turbulento. Entre estos dos valores está la \emph{región de transición}, en la cual el flujo puede ser laminar o turbulento dependiendo de detalles del sistema que no se pueden predecir.
+
+\begin{align*}
+    N_{Re} < 2100        &\quad\longrightarrow\quad \text{Flujo laminar}
+    \\
+    2100 < N_{Re} < 4000 &\quad\longrightarrow\quad \text{Región de transición}
+    \\
+    N_{Re} > 4000        &\quad\longrightarrow\quad \text{Flujo turbulento}
+\end{align*}
 
 
 
@@ -277,7 +315,24 @@ Las unidades en el \emph{sistema cgs} son \unit{\g\per\second\meter}, llamados P
 }
 
 \resumebox{respuesta}{Cálculo de esfuerzo cortante}{\footnotesize
-    PENDIENTE
+\begin{enumerate}
+\item Calcule el esfuerzo cortante $\tau_{yz}$ y el gradiente de velocidad
+    \begin{gather*}
+        V = \qty{10}{\cm\per\s} \ ; \ \mu = 1.77cp = 0.00177P \ ; \ y = \qty{0.5}{\cm}
+        \\\\
+        \tau_{yz} = 0.0177P \cdot \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{0.354}{\pascal\per\s}
+        \\\\
+        \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
+    \end{gather*}
+\item Repita en SI
+    \begin{gather*}
+        V = \qty{0.1}{\m\per\s} \ ; \ \mu = \qty{1.77d-3}{\pascal\per\s} \ ; \ y = \qty{0.005}{\m}
+        \\\\
+        \tau_{yz} = \qty{1.77d-3}{\pascal\per\s} \cdot \frac{\qty{0.1}{\m\per\s}}{\qty{0.005}{\m}} = \qty{3.54d-2}{\pascal}
+%        \\\\
+%        \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
+    \end{gather*}
+\end{enumerate}
 }
 
 \end{document}
