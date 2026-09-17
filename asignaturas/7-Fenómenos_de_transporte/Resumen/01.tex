@@ -1,8 +1,13 @@
 \ifx\ISMAIN\undefined
     \documentclass{AsignaturaResumen}
-    \SetTitulo{}
+    \usepackage{etoc}
+    \SetTitulo{Fenómenos de transporte}
     \input{../../0-tex_resources/glosario_general}
     \begin{document}
+    \dominitoc
+    \faketableofcontents
+    \chapter{Mecanismos de transporte}
+    \mymtc
 \fi
 
 \section{Presión}\label{sec:presion}
@@ -124,7 +129,9 @@ En la cual, si sustituimos, tendríamos:
     \Psi_{Z / (Z \cdot 1)} + R_{\Delta Z \cdot 1} = (\Psi_{Z/Z} + \Delta Z) \cdot 1 + \frac{d\Gamma}{dt} (\Delta Z \cdot 1)
 \end{equation}
 
-\section{Transporte de momento lineal y la ley de Newton}
+\section{Tipos de transporte}
+
+\subsection{Transporte de momento lineal y la ley de Newton}
 
 %\marginpar{\resumebox{definicion}{Primera Ley de Newton}{\footnotesize
 %    La primera ley de Newton, o ley de la inercia, establece que un objeto en reposo o en movimiento constante mantendrá ese estado a menos que una fuerza externa neta actúe sobre él.
@@ -146,11 +153,9 @@ Donde:
     \item $\mu$ es la viscosodad en kilogramos por metro por segundo (\unit{\kg\per\m\s})
 \end{itemize}
 
-\section{Transporte de calor y la ley de Fourier}
+\subsection{Transporte de calor y la ley de Fourier}
 
 La ley de Fourier para el transporte molecular de calor o la conducción de calor e n fluido o sólido puede escribirse para una densidad constante y capacidad calorífica (cp):
-
-\DeclareSIUnit\cd{cd}
 
 \begin{equation}
     \frac{qZ}{A} = \frac{-\alpha d \rho cp T}{dZ}
@@ -166,7 +171,7 @@ Donde:
 
 Cuando hay un gradiente de temperatura en un fluido se difunden igual número de moléculas entre la región caliente y la más fría.
 
-\section{Transporte de masa y ley de Fick}
+\subsection{Transporte de masa y ley de Fick}
 
 La ley de Fick para el transporte molecular de masa en un fluido o en un sólido para la concentración total constante del fluido es:
 
@@ -189,7 +194,7 @@ Donde existe un gradiente de concentración en un fluido se difundirán igual n�
 Estos 3 transportes son descritos en estado estacionario, y se puede notar en los 3 términos comunes.
 
 
-\section{Viscosidad de fluidos} % Ley de Newton y viscosidad
+\section{Viscosidad} % Ley de Newton y viscosidad
 
 Cuando un fluido se transporta a través de un canal cerrado se presentan dos tipos de flujo dependiendo de dicho fluido:
 
@@ -224,7 +229,7 @@ Las unidades en el \emph{sistema cgs} son \unit{\g\per\s\m}, llamados Poise (P) 
     \end{enumerate}
 }
 
-\section{Viscosidad y fluidos newtonianos}
+\section{Fluidos newtonianos y no newtonianos}
 
 \marginpar{\begin{minipage}{\marginparwidth}
 \begin{figure}[H]
@@ -275,7 +280,7 @@ Calcular el N\sub{Re} usando unidades del sistema internacional
 
 % -------------------------------------------------------------------- %
 \clearpage
-\section*{Respuestas de ejercicios}
+\section{Respuestas de ejercicios}
 
 \resumebox{respuesta}{Calculo de presión}{
 \begin{gather*}
@@ -359,4 +364,6 @@ Calcular el N\sub{Re} usando unidades del sistema internacional
 \end{gather*}
 }
 
-\end{document}
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi
