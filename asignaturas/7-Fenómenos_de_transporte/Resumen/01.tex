@@ -21,11 +21,11 @@ Si se requiere calcular la cantidad de kg totales de un fluido se utiliza:
 Para calcular la fuerza total ($F$) del fluido sobre el área 1 debido unicamente al fluido es:
 
 \begin{equation}
-    F = (h_{2}AP)(g)
+    F = (h_{2} \cdot A \cdot P)(g)
 \end{equation}
 
 \begin{equation}
-    P = \frac{F}{A} \quad\therefore\quad P = h_{2}\rho_{g}
+    P = \frac{F}{A} \quad\therefore\quad P = h_{2} \cdot \rho_{g}
 \end{equation}
 
 Esta es la presión sobre A\sub{2} debido a la masa del fluido que está encima. Sin embargo, para obtener la presión total (P\sub{2}) sobre A\sub{2}debe añadirse P\sub{0}, que soporta todo el líquido, de tal manera que:
@@ -70,7 +70,7 @@ Los 3 procesos de transporte molecular se caracterizan por el mismo tipo general
 Esto también se puede expresar como:
 
 \begin{equation}\label{eq:ecuacion_de_transporte_molecular_diferencial}
-    \Psi_{Z} = \sigma\frac{d\Gamma}{dZ}
+    \Psi_{Z} = \sigma\frac{\mathrm{d}\Gamma}{\mathrm{d}Z}
 \end{equation}
 
 Donde:
@@ -88,7 +88,7 @@ Donde:
 Si el proceso ocurre en un estado estacionario el flujo $\Psi_{Z}$ es constante:
 
 \begin{equation*}
-    \Psi_{Z} \ dZ = - \sigma \ d\Gamma
+    \Psi_{Z} \ \mathrm{d}Z = - \sigma \ \mathrm{d}\Gamma
 \end{equation*}
 
 Esta es una ecuación diferencial que al resolverla por variables separables nos da:
@@ -120,13 +120,13 @@ Al calcular las velocidades de transporte en un sistema usando la ecuación de t
 La velocidad de entrada es $\Psi_{Z / (Z \cdot 1)}$ en cantidad de propiedad sobre segundo (\unit{\substance\per\s}), mientras que la velocidad de salida es $(\Psi_{Z/Z} + \Delta Z) \cdot 1$ en cantidad de propiedad sobre segundo , donde el área de corte transversal es de \qty{1}{\m\squared}. La velocidad de generación de la propiedad se escribe como $R_{\Delta Z \cdot 1}$, que se mide en cantidad de propiedad sobre segundo por metro cúbico (\unit{\substance\per\m\cubed\per\s}). El término para la acumulación es:
 
 \begin{equation}
-    \text{Velocidad de acumulación de propiedad} = \frac{d \Gamma (\Delta Z \cdot 1)}{dt} 
+    \text{Velocidad de acumulación de propiedad} = \frac{\mathrm{d}\Gamma (\Delta Z \cdot 1)}{\mathrm{d}t} 
 \end{equation}
 
 En la cual, si sustituimos, tendríamos:
 
 \begin{equation}
-    \Psi_{Z / (Z \cdot 1)} + R_{\Delta Z \cdot 1} = (\Psi_{Z/Z} + \Delta Z) \cdot 1 + \frac{d\Gamma}{dt} (\Delta Z \cdot 1)
+    \Psi_{Z / (Z \cdot 1)} + R_{\Delta Z \cdot 1} = (\Psi_{Z/Z} + \Delta Z) \cdot 1 + \frac{\mathrm{d}\Gamma}{\mathrm{d}t} (\Delta Z \cdot 1)
 \end{equation}
 
 \section{Tipos de transporte}
@@ -137,36 +137,36 @@ En la cual, si sustituimos, tendríamos:
 %    La primera ley de Newton, o ley de la inercia, establece que un objeto en reposo o en movimiento constante mantendrá ese estado a menos que una fuerza externa neta actúe sobre él.
 %}}
 
-Cuandoo un fluido fluye en la dirección X en forma paralela a una superficie sólida existe un gradiente de velocidad dondel a velocidad $V_{x}$ en la dirección X disminuye al acercarse a la superficie en la dirección Z. El fluido tiene un momento lineal en dirección X y su concentración es $V_{x}\rho$ (momento lineal sobre metro cúbico), donde el momento lineal tiene unidades de kilogramos por metro sobre segundo (\unit{\kg\m\per\s}). Debido a la difusión aleatoria de las moléculas existe un intercambio de moléculas en la dirección Z, moviendose igual número de ellas en cada dirección entre la capa de la molécula que se mueve más rápido y la capa adyacente más lenta. La ley que describe lo anterior es la ley de Newton de la viscosidad para una densidad constante:
+Cuandoo un fluido fluye en la dirección X en forma paralela a una superficie sólida existe un gradiente de velocidad dondel a velocidad $V_{x}$ en la dirección X disminuye al acercarse a la superficie en la dirección z. El fluido tiene un momento lineal en dirección X y su concentración es $V_{x}\rho$ (momento lineal sobre metro cúbico), donde el momento lineal tiene unidades de kilogramos por metro sobre segundo (\unit{\kg\m\per\s}). Debido a la difusión aleatoria de las moléculas existe un intercambio de moléculas en la dirección z, moviendose igual número de ellas en cada dirección entre la capa de la molécula que se mueve más rápido y la capa adyacente más lenta. La ley que describe lo anterior es la ley de Newton de la viscosidad para una densidad constante:
 
 \begin{equation}
-    \tau_{Zx} = \frac{-Vd(V_{x}\rho)}{dZ}
+    \tau_{zx} = \frac{-V \cdot \mathrm{d}(V_{x} \cdot \rho)}{\mathrm{d}z}
 \end{equation}
 
 Donde:
 
 \begin{itemize}
-    \item $\tau_{ZX}$ es el flujo de momento lineal con dirección X en la dirección Z (\unit{\kg\m\per\s})
+    \item $\tau_{zx}$ es el flujo de momento lineal con dirección X en la dirección Z (\unit{\kg\m\per\s})
     \item $V$ es $\frac{\mu}{\rho}$, que representa la difusividad de momento lineal en metro cuadrado por segundo (\unit{\m\squared\per\s})
-    \item $Z$ es la dirección de transporte o difusión en metros (\unit{\m})
+    \item $z$ es la dirección de transporte o difusión en metros (\unit{\m})
     \item $\rho$ es la densidad en kilogramos por metro cúbico (\unit{\kg\per\m\cubed})
     \item $\mu$ es la viscosodad en kilogramos por metro por segundo (\unit{\kg\per\m\s})
 \end{itemize}
 
 \subsection{Transporte de calor y la ley de Fourier}
 
-La ley de Fourier para el transporte molecular de calor o la conducción de calor e n fluido o sólido puede escribirse para una densidad constante y capacidad calorífica (cp):
+La ley de Fourier para el transporte molecular de calor o la conducción de calor en un fluido o sólido puede escribirse para una densidad constante y capacidad calorífica (cp) de la siguiente manera:
 
 \begin{equation}
-    \frac{qZ}{A} = \frac{-\alpha d \rho cp T}{dZ}
+    \frac{qz}{A} = \frac{-\alpha \cdot \mathrm{d}\rho \cdot \unit{\cp} \cdot T}{dz}
 \end{equation}
 
 Donde:
 
 \begin{itemize}
-    \item $\frac{qZ}{A}$ es el flujo de calor en \unit{\joule\per\m\squared\s}
+    \item $\frac{qz}{A}$ es el flujo de calor en \unit{\joule\per\m\squared\s}
     \item $\alpha$ es la difusividad térmica en \unit{\m\squared\per\s}
-    \item $\rho cp T$ es la concentración de calor o energía térmica en \unit{\joule\per\m\cubed}
+    \item $\rho \cdot \unit{\cp} \cdot T$ es la concentración de calor o energía térmica en \unit{\joule\per\m\cubed}
 \end{itemize}
 
 Cuando hay un gradiente de temperatura en un fluido se difunden igual número de moléculas entre la región caliente y la más fría.
@@ -176,7 +176,7 @@ Cuando hay un gradiente de temperatura en un fluido se difunden igual número de
 La ley de Fick para el transporte molecular de masa en un fluido o en un sólido para la concentración total constante del fluido es:
 
 \begin{equation}
-    J_{AZ} = -D_{AB} \cdot \frac{dC_{A}}{dZ}
+    J_{AZ} = -D_{AB} \cdot \frac{\mathrm{d}C_{A}}{\mathrm{d}Z}
 \end{equation}
 
 Donde:
@@ -256,7 +256,7 @@ El segundo tipo de flujo ocurre avelocidades más altas, donde se forman remolin
 La expresión para estimar el número de Reynolds es:
 
 \begin{equation}\mathrm{
-    N_{Re} = \frac{D V \rho}{\mu}
+    N_{Re} = \frac{D \cdot V \cdot \rho}{\mu}
 }\end{equation}
 
 Aquí D es el diametro de la tubería en metros (\unit{\m}). V es la velocidad promedio del fondo en metros por segundo (\unit{\m\per\s}), y se obtiene con la velocidad volumétrica del fluida dividida entre el área de corte transversal de la tubería.
@@ -277,6 +277,85 @@ Calcular el N\sub{Re} usando unidades del sistema internacional
 }}
 
 
+\section{Balance general de momento lineal}
+
+La ecuación para la conservación del momento lineal con respecto a un volumen de control se puede describir como:
+
+\begin{equation*}
+    \sum{\text{Fuerzas}} = V_{\text{Salida}} - V_{\text{Entrada}} + V_{\text{Acumulación}}
+\end{equation*}
+
+Siendo $V$ la velocidad de momento lineal. Este momento lineal no se conserva ya que es generado por fuerzas externas. Si no existen fuerzas externas entonces si hay conservación de momento lineal
+
+\section{Ecuación de diseño para flujo laminar y turbulento en tuberías}
+
+Una de las aplicaciones más importantes del transporte de fluidos es el flujo en conductos circulares, tuberías y caños. Cuando el fluido pasa a través de una tubería circular, al medir la velocidad a diferentes distancias de la pared al centro el fluido que está en el centro del tubo se desplaza con mayor rapidez que el que está cercano a la tubería o pared.
+
+\section{Caida de presión y pérdida por fricción en un flujo laminar}
+
+Cuando un líquido o gas fluyen pr una tubería con flujo laminar en estado estacionario, la ecuación se escribe para variaciones de radio ($dr$) en vez de la distancia:
+
+\begin{equation}
+    \tau_{yz} = -\mu \cdot \frac{dV_{s}}{dr}
+\end{equation}
+
+Con esta ecuación y llevando a cabo un balance de momento lineal en un recinto cilíndrico se obtiene la ecuació de Hagen-Poiseville:
+
+\begin{equation}
+    \Delta P_{f} = (P_{1} - P_{2})_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2}}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $P_{1}$ es la presión corriente arriba en el punto 1
+    \item $P_{2}$ es la presión corriente arriba en el punto 2
+    \item $V$ es la velocidad promedio en el tubo
+    \item $D$ es el diametro interno
+    \item $\Delta L$ es la longitud del tubo
+\end{itemize}
+
+Para el sistema inglés es:
+
+\begin{equation*}
+    \Delta P_{f} = (P_{1} - P_{2})_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2} \cdot gc}
+\end{equation*}
+
+Para una presión constante, la pérdida por presión ($F_{f}$) se puede calcular de la siguiente manera:
+
+\begin{equation}
+    F_{f} = \frac{(P_{1} - P_{2})_{f}}{P}
+\end{equation}
+
+\resumebox{ejercicio}{Cálculo de flujo másico}{
+    Para medir en forma continua la velocidad del flujo de un líquido con una densidad de \qty{875}{\kg\per\m\cubed} y una viscosidad de \qty{1.13d-3}{\pascal\s} se usa un pequeño capilar con un diametro interno de \qty{2.22d-3}{\m} y la longitud igual a \qty{0.317}{\m}. La lectura de caida de presión es de \qty{0.0655}{\m} de agua, la cual tiene una densidad de \qty{996}{\kg\per\m\cubed}. ¿Cuál es la velocidad de flujo en \unit{\m\cubed\per\s} sin tomar en cuenta los efetos de los extremos del tubo?
+}
+
+\section{Factor de fricción de Fanning ($f$)}
+
+Un parámetro muy común en el flujo laminar es el factor de fricción de Fanning ($f$), que se define como la fuerza de arrastre por unidad de área --- dividida entere el prducto de la densidad por la carga de velocidad, o altura dinámica. La fuerza es $\Delta P_{f}$ multiplicada por el área de sección transversal y el área de superficie mojada. La relación entre la caída de presión debida a la fricción es la siguiente para flujo laminar y turbulento:
+
+\begin{equation}
+    f = \frac{\tau_{s}}{\rho \cdot (V^{2} \div 2)} = \frac{\Delta P_{f} \cdot \pi \cdot R \cdot \rho \cdot V^{2}}{2\pi \cdot R \cdot \Delta L}
+\end{equation}
+
+\begin{equation}
+    \Delta P_{f} = \frac{4f \cdot \rho \cdot \Delta L \cdot V^2}{2D} \quad;\quad \Delta P_{f(\text{Inglés})} = \frac{4f \cdot \rho \cdot \Delta L \cdot V^2}{2D \cdot gc}
+\end{equation}
+
+\begin{equation}
+    F_{f} = \frac{\Delta P_{f}}{\rho} = \frac{4f \cdot \Delta L \cdot V^2}{2D} \quad;\quad F_{f(\text{Inglés})} = \frac{4f \cdot \Delta L \cdot V^2}{2D \cdot gc}
+\end{equation}
+
+\begin{equation}
+    \text{Laminar:} f = \frac{16}{\mathrm{N_{Re}}} \quad;\quad \text{Turbulento:} f = \frac{0.0791}{\mathrm{N_{Re}}^{0.25}}
+\end{equation}
+
+
+\resumebox{ejercicio}{Cálculo de caida de presión}{\footnotesize
+    Suponga las mismas condiciones conocidas del ejemplo anterior, excepto que se conoce la velocidad, que es de \qty{0.225}{\m\per\s}, y se debe pronosticar la caida de presión. Use el método de factor de fricción de Fanning ($F_{f}$)
+}
+
+
 
 % -------------------------------------------------------------------- %
 \clearpage
@@ -291,9 +370,9 @@ Calcular el N\sub{Re} usando unidades del sistema internacional
     \mathrm{P_{n}} = (h_{n} \cdot \rho_{n} \cdot g) + P_{n-1}
     \\\\
     \mathrm{P_{Petroleo}} = \left( \qty{3.05}{\m} \cdot \qty{917}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.01325d5}{\kg\per\s\squared\per\m} = \qty{1.2876d5}{\pascal}
-    \\\\
+    \\
     \mathrm{P_{Agua}} = \left( \qty{0.61}{\m} \cdot \qty{1000}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.2876d5}{\kg\per\s\squared\per\m} = \qty{1.3474d5}{\pascal}
-    \\\\
+    \\
     \mathrm{P_{Fondo (Manométrica)}} = \qty{1.3474d5}{\pascal} - \qty{1.2876d5}{\pascal} = \qty{33415}{\pascal} = \qty{33.415}{\kilo\pascal}
 \end{gather*}
 }
@@ -303,7 +382,7 @@ Calcular el N\sub{Re} usando unidades del sistema internacional
 \item Calculo del flujo:
 \begin{gather*}
     \Psi_{Z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
-    \\\\
+    \\
     \Psi_{Z} = - \frac{ \qty{0.013}{\m\squared\per\s} \cdot \left( \qty{1.37d-2}{\substance\per\m\cubed} - \qty{0.72d-2}{\substance\per\m\cubed} \right) }{\qty{0.4}{\m}} = \qty{2.1125d-4}{\substance\per\m\squared\per\s}
 \end{gather*}
 \item Ecuación para $\Gamma$ como función de la distancia:
@@ -330,9 +409,9 @@ Calcular el N\sub{Re} usando unidades del sistema internacional
     \mu = \qty{1.77}{\cp} = \qty{1.777d-3}{\P}
     \quad;\quad 
     y = \qty{0.5}{\cm}
-    \\\\
+    \\
     \tau_{yz} = \qty{1.77d-2}{\P} \cdot \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{0.354}{\pascal\per\s}
-    \\\\
+    \\
     \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
 \end{gather*}
 \item Repita en SI
@@ -342,7 +421,7 @@ Calcular el N\sub{Re} usando unidades del sistema internacional
     \mu = \qty{1.77d-3}{\pascal\per\s}
     \quad;\quad
     y = \qty{0.005}{\m}
-    \\\\
+    \\
     \tau_{yz} = \qty{1.77d-3}{\pascal\per\s} \cdot \frac{\qty{0.1}{\m\per\s}}{\qty{0.005}{\m}} = \qty{3.54d-2}{\pascal}
 %   \\\\
 %   \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
@@ -355,12 +434,32 @@ Calcular el N\sub{Re} usando unidades del sistema internacional
     \mathrm{D} = \qty{2.007}{\in} \cdot \qty{2.54}{\cm\per\in} \cdot \frac{\qty{1}{\m}}{\qty{100}{\cm}}= \qty{5.1d-2}{\m}
     \\
     \mathrm{V_{Volumétrica}} = \qty{10}{\gal\per\min} \cdot \frac{\qty{1}{\min}}{\qty{60}{\s}} \cdot \qty{3.7854d-3}{\m\cubed\per\gal} = \qty{6.309d-4}{\m\cubed\per\s}
-    \\\\
+    \\
     V = \frac{\qty{6.309d-4}{\m\cubed\per\s}}{\pi \cdot (\qty{5.1d-2}{\m} \div 2)^{2}} = \qty{0.3088}{\m\per\s}
     \\
-    \mu = \qty{0.8007}{\cp} \cdot \frac{\qty{1d-3}{\kg\per\m\s}}{1cp} = \qty{8.007d-4}{\kg\per\m\s}
+    \mu = \qty{0.8007}{\cp} \cdot \frac{\qty{1d-3}{\kg\per\m\s}}{1cp} = \qty{8.007d-4}{\kg\per\m\per\s}
     \\
     \mathrm{N_{Re}} = \frac{\qty{5.1d-2}{\m} \cdot \qty{0.309}{\m\per\s} \cdot \qty{996}{\kg\per\m\cubed}}{\qty{8.007d-4}{\kg\per\m\per\s}} = 19602.8025
+\end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de flujo másico}{\footnotesize
+\begin{gather*}
+    \Delta P_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2}} \quad\longrightarrow\quad V = \frac{D^{2} \cdot \Delta P_{f}}{32\mu \cdot \Delta L}
+    \\
+    V = \frac{(\qty{2.2d-3}{\m})^{2} \cdot \qty{639.985}{\kg\per\m\per\s\squared}}{32 \cdot \qty{1.13d-3}{\kg\per\m\per\s} \cdot \qty{0.317}{\m}} = \qty{0.27}{\m\per\s}
+    \\
+    Q = \qty{0.27}{\m\per\s} \cdot \qty{3.8d-6}{\m\squared} = \qty{1.026d-6}{\m\cubed\per\s}
+\end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de caida de presión}{\footnotesize
+\begin{gather*}
+    \mathrm{N_{Re}} = \frac{\qty{875}{\kg\per\m\cubed} \cdot \qty{0.225}{\m\per\s} \cdot \qty{2.2d-3}{\m}}{\qty{1.13d-3}{\kg\per\m\per\s}} = 383.2964
+    \\
+    f = \frac{16}{383.2984} = 0.0417 
+    \\
+    \Delta P_{f} = \frac{4 \cdot 0.0417 \cdot \qty{875}{\kg\per\m\cubed} \cdot \qty{0.317}{\m} \cdot (\qty{0.225}{\m\per\s})^{2}}{2 \cdot \num{2.2d-3}} = \qty{532.324}{\kg\per\m\per\s\squared}
 \end{gather*}
 }
 
