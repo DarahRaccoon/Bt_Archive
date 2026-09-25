@@ -70,31 +70,31 @@ Los 3 procesos de transporte molecular se caracterizan por el mismo tipo general
 Esto también se puede expresar como:
 
 \begin{equation}\label{eq:ecuacion_de_transporte_molecular_diferencial}
-    \Psi_{Z} = \sigma\frac{\mathrm{d}\Gamma}{\mathrm{d}Z}
+    \Psi_{z} = \sigma\frac{\mathrm{d}\Gamma}{\mathrm{d}Z}
 \end{equation}
 
 Donde:
 
 \begin{itemize}
-    \item $\Psi_{Z}$ es el flujo de propiedad, es decir, la cantidad de la propiedad que se transfiere por unidad de tiempo a través de una sección transversal unitaria perpendicular a la dirección del fljo en cantidad de propiedad dobre metro cuadrado.
-    \item $\delta$ es la difusividad en metro cuadrado sobre segundo ($\frac{m^{2}}{s}$). Indica el gradiente y la resistencia
+    \item $\Psi_{z}$ es el flujo de propiedad, es decir, la cantidad de la propiedad que se transfiere por unidad de tiempo a través de una sección transversal unitaria perpendicular a la dirección del fljo en cantidad de propiedad dobre metro cuadrado.
+    \item $\sigma$ es la difusividad en metro cuadrado sobre segundo (\uni{\m\squared\per\s}). Indica el gradiente y la resistencia
     \begin{itemize}
         \item La difusividad necesita de un gradiente para ocurrir.
     \end{itemize}
-    \item $\Gamma$ es la concentración de la propiedad en cantidad de propiedad sobre metros cúbicos ($\frac{\text{Propiedad}}{m^{3}}$). Indica la diferencia entre cantidad de transporte
+    \item $\Gamma$ es la concentración de la propiedad en cantidad de propiedad sobre metros cúbicos (\unit{\substance\per\m\cubed}). Indica la diferencia entre cantidad de transporte
     \item $Z$ es la distancia de la dirección del flujo en metros.
 \end{itemize}
 
-Si el proceso ocurre en un estado estacionario el flujo $\Psi_{Z}$ es constante:
+Si el proceso ocurre en un estado estacionario el flujo $\Psi_{z}$ es constante:
 
 \begin{equation*}
-    \Psi_{Z} \ \mathrm{d}Z = - \sigma \ \mathrm{d}\Gamma
+    \Psi_{z} \ \mathrm{d}Z = - \sigma \ \mathrm{d}\Gamma
 \end{equation*}
 
 Esta es una ecuación diferencial que al resolverla por variables separables nos da:
 
 \begin{equation}
-    \Psi_{Z} = \frac{-\sigma \ (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
+    \Psi_{z} = \frac{-\sigma \ (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
 \end{equation}
 
 
@@ -203,16 +203,16 @@ Cuando un fluido se transporta a través de un canal cerrado se presentan dos ti
     \item A \emph{velocidades altas} se forman remolinos, lo que conduce a un mezclado lateral. A este tipo de flujo se le llama \emph{flujo turbulento}.
 \end{enumerate}
 
-La viscosidad es una propiedad de un fluido que da lugar a fuerzas que se oponen al movimiento relativo de capas adyacentes en el fluido. Para muchos fluidos se ha determinado de forma experimental que la fuerza (F) en Newtons es directamente proporcional a la velocidad $\Delta V_{Z}$ en metros sobre segundo (\unit{\m\per\s}). El área en metros cuadrados (\unit{\m\squared}) de la placa usada es inversamente proporcional a la distancia $\Delta y$ en metros (\unit{\m}). Expresada con la ley de viscosidad de Newton, cuando el flujo es laminar:
+La viscosidad es una propiedad de un fluido que da lugar a fuerzas que se oponen al movimiento relativo de capas adyacentes en el fluido. Para muchos fluidos se ha determinado de forma experimental que la fuerza (F) en Newtons es directamente proporcional a la velocidad $\Delta V_{z}$ en metros sobre segundo (\unit{\m\per\s}). El área en metros cuadrados (\unit{\m\squared}) de la placa usada es inversamente proporcional a la distancia $\Delta y$ en metros (\unit{\m}). Expresada con la ley de viscosidad de Newton, cuando el flujo es laminar:
 
 \begin{equation}
-    \frac{F}{A} = -\mu \frac{\Delta V_{Z}}{\Delta y}
+    \frac{F}{A} = -\mu \frac{\Delta V_{z}}{\Delta y}
 \end{equation}
 
 Donde $\mu$ es la constante de proporcionalidad llamada viscosidad del fluido en pascales por segundo (\unit{\pascal\s}) o \unit{\kg\per\m\s}. Cuando $\Delta y$ tiende a 0:
 
 \begin{equation}
-    \tau_{yz} = -\mu \cdot \frac{dV_{Z}}{dy}
+    \tau_{yz} = -\mu \cdot \frac{dV_{z}}{dy}
 \end{equation}
 
 \begin{equation}\footnote{lbf/ft\super{2}}
@@ -293,13 +293,13 @@ Una de las aplicaciones más importantes del transporte de fluidos es el flujo e
 
 \section{Caida de presión y pérdida por fricción en un flujo laminar}
 
-Cuando un líquido o gas fluyen pr una tubería con flujo laminar en estado estacionario, la ecuación se escribe para variaciones de radio ($dr$) en vez de la distancia:
+Cuando un líquido o gas fluyen por una tubería con flujo laminar en estado estacionario, la ecuación se escribe para variaciones de radio ($dr$) en vez de la distancia:
 
 \begin{equation}
     \tau_{yz} = -\mu \cdot \frac{dV_{s}}{dr}
 \end{equation}
 
-Con esta ecuación y llevando a cabo un balance de momento lineal en un recinto cilíndrico se obtiene la ecuació de Hagen-Poiseville:
+Con esta ecuación y llevando a cabo un balance de momento lineal en un recinto cilíndrico se obtiene la ecuación de Hagen-Poiseville:
 
 \begin{equation}
     \Delta P_{f} = (P_{1} - P_{2})_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2}}
@@ -381,15 +381,15 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
 \begin{enumerate}
 \item Calculo del flujo:
 \begin{gather*}
-    \Psi_{Z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
+    \Psi_{z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
     \\
-    \Psi_{Z} = - \frac{ \qty{0.013}{\m\squared\per\s} \cdot \left( \qty{1.37d-2}{\substance\per\m\cubed} - \qty{0.72d-2}{\substance\per\m\cubed} \right) }{\qty{0.4}{\m}} = \qty{2.1125d-4}{\substance\per\m\squared\per\s}
+    \Psi_{z} = - \frac{ \qty{0.013}{\m\squared\per\s} \cdot \left( \qty{1.37d-2}{\substance\per\m\cubed} - \qty{0.72d-2}{\substance\per\m\cubed} \right) }{\qty{0.4}{\m}} = \qty{2.1125d-4}{\substance\per\m\squared\per\s}
 \end{gather*}
 \item Ecuación para $\Gamma$ como función de la distancia:
 \begin{equation*}
-     \Psi_{Z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}} 
+     \Psi_{z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}} 
      \quad\longrightarrow\quad
-     \Gamma = \frac{\Psi_{Z} \cdot Z}{-\delta}
+     \Gamma = \frac{\Psi_{z} \cdot Z}{-\delta}
 \end{equation*}
 \item $\Gamma$ en el punto medio:
 \begin{gather*}
