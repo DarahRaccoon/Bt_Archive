@@ -77,7 +77,7 @@ Donde:
 
 \begin{itemize}
     \item $\Psi_{z}$ es el flujo de propiedad, es decir, la cantidad de la propiedad que se transfiere por unidad de tiempo a través de una sección transversal unitaria perpendicular a la dirección del fljo en cantidad de propiedad dobre metro cuadrado.
-    \item $\sigma$ es la difusividad en metro cuadrado sobre segundo (\uni{\m\squared\per\s}). Indica el gradiente y la resistencia
+    \item $\sigma$ es la difusividad en metro cuadrado sobre segundo (\unit{\m\squared\per\s}). Indica el gradiente y la resistencia
     \begin{itemize}
         \item La difusividad necesita de un gradiente para ocurrir.
     \end{itemize}
@@ -219,7 +219,7 @@ Donde $\mu$ es la constante de proporcionalidad llamada viscosidad del fluido en
     \tau_{yz} \ gc = -\mu \cdot \frac{dV_{z}}{dy}
 \end{equation}
 
-Las unidades en el \emph{sistema cgs} son \unit{\g\per\s\m}, llamados Poise (P) o Centipoise (cp). 
+Las unidades en el \emph{sistema cgs} son \unit{\g\m\per\s}, llamados Poise (P) o Centipoise (cp). 
 
 \resumebox{ejercicio}{Cálculo de esfuerzo cortante}{\footnotesize
     La distancia entre las dos placas es de \qty{0.5}{\cm}. La velocidad de flujo que pasa a través es de \qty{10}{\cm\s}, y el fluido que atraviesa se trata de alcohol etílico a \qty{273}{\K}, cuya viscosidad es de \qty{1.77}{cp}.
@@ -363,11 +363,10 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
 
 \resumebox{respuesta}{Calculo de presión}{
 \begin{gather*}
-    \mathrm{1atm} = \qty{1.01325d5}{\pascal}
-    \\
+    \mathrm{1atm} = \qty{1.01325d5}{\pascal} 
+    \quad;\quad
     \unit{\pascal} = \frac{\unit{\kg\m\per\s\squared}}{\unit{\m\squared}} = \unit{\kg\per\m\per\s\squared}
-    \\
-    \mathrm{P_{n}} = (h_{n} \cdot \rho_{n} \cdot g) + P_{n-1}
+%    \mathrm{P_{n}} = (h_{n} \cdot \rho_{n} \cdot g) + P_{n-1}
     \\\\
     \mathrm{P_{Petroleo}} = \left( \qty{3.05}{\m} \cdot \qty{917}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.01325d5}{\kg\per\s\squared\per\m} = \qty{1.2876d5}{\pascal}
     \\
@@ -410,7 +409,7 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
     \quad;\quad 
     y = \qty{0.5}{\cm}
     \\
-    \tau_{yz} = \qty{1.77d-2}{\P} \cdot \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{0.354}{\pascal\per\s}
+    \tau_{yz} = \qty{1.77d-2}{\P} \cdot \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{0.354}{\pascal\s}
     \\
     \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
 \end{gather*}
@@ -418,11 +417,11 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
 \begin{gather*}
     V = \qty{0.1}{\m\per\s} 
     \quad;\quad
-    \mu = \qty{1.77d-3}{\pascal\per\s}
+    \mu = \qty{1.77d-3}{\pascal\s}
     \quad;\quad
     y = \qty{0.005}{\m}
     \\
-    \tau_{yz} = \qty{1.77d-3}{\pascal\per\s} \cdot \frac{\qty{0.1}{\m\per\s}}{\qty{0.005}{\m}} = \qty{3.54d-2}{\pascal}
+    \tau_{yz} = \qty{1.77d-3}{\pascal\s} \cdot \frac{\qty{0.1}{\m\per\s}}{\qty{0.005}{\m}} = \qty{3.54d-2}{\pascal}
 %   \\\\
 %   \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
 \end{gather*}
