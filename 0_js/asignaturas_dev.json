@@ -488,23 +488,6 @@
       }
     },
     {
-      "id": "5-fundamentos-de-bioprocesos",
-      "nombre": "Fundamentos de bioprocesos",
-      "cuatrimestre": 5,
-      "icono": "fa-solid fa-industry",
-      "descripcion": "Principios básicos de los procesos biotecnológicos, incluyendo cinética, transferencia de masa y diseño de biorreactores.",
-      "portada": "/Bt_Archive/asignaturas/5-Fundamentos_de_bioprocesos/portada.jpg",
-      "rutaResumen": "/Bt_Archive/asignaturas/5-Fundamentos_de_bioprocesos/Resumen/0_Main.pdf",
-      "rutaDiapositivas": "/Bt_Archive/asignaturas/5-Fundamentos_de_bioprocesos/Diapositivas/0_Main.pdf",
-      "rutaManual": "/Bt_Archive/manuales/5 - Fundamentos de bioprocesos.pdf",
-      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=5-fundamentos-de-bioprocesos",
-      "videos": [],
-      "recursosExtra": {
-        "ejercicios": [],
-        "articulos": []
-      }
-    },
-    {
       "id": "7-diseño-de-experimentos",
       "nombre": "Diseño de experimentos",
       "cuatrimestre": 7,
@@ -521,24 +504,7 @@
         "articulos": []
       }
     },
-        {
-      "id": "7-fenómenos_de_transporte",
-      "nombre": "Fenómenos de transporte",
-      "cuatrimestre": 7,
-      "icono": "fa-solid fa-fire",
-      "descripcion": "",
-      "portada": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/portada.jpg",
-      "rutaResumen": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resumen/0_Main.pdf",
-      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Diapositivas/0_Main.pdf",
-      "rutaManual": "/Bt_Archive/manuales/7 - Fenómenos de transporte.pdf",
-      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-fenómenos_de_transporte",
-      "videos": [],
-      "recursosExtra": {
-        "ejercicios": [],
-        "articulos": []
-      }
-    },
-        {
+    {
       "id": "7-operaciones_unitarias",
       "nombre": "Operaciones unitarias",
       "cuatrimestre": 7,
