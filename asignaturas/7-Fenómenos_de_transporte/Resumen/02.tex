@@ -1,7 +1,339 @@
+\ifx\ISMAIN\undefined
+    \documentclass{AsignaturaResumen}
+    \usepackage{etoc}
+    \SetTitulo{Fenómenos de transporte}
+    \input{../../0-tex_resources/glosario_general}
+    \begin{document}
+    \dominitoc
+    \faketableofcontents
+    \chapter{Transporte de momento}
+    \mymtc
+\fi
+
+%\section{Ecuación de Bernoulli}
+%\section{Ecuación de continuidad para fluidos unidireccionales}
+%\section{Ecuaciones para el balance de movimiento}
 
 
-\section{Ecuación de Bernoulli}
 
-\section{Ecuación de continuidad para fluidos unidireccionales}
+\section{Presión}\label{sec:presion}
 
-\section{Ecuaciones para el balance de movimiento}
+Si se requiere calcular la cantidad de kg totales de un fluido se utiliza:
+
+\begin{equation*}
+    kg_{\text{Total}} = h_{2}(m) \cdot A(m^{2}) \cdot \rho(kg/m^{2}) = h_{2} \cdot A \cdot \rho_{g} 
+\end{equation*}
+
+Para calcular la fuerza total ($F$) del fluido sobre el área 1 debido unicamente al fluido es:
+
+\begin{equation}
+    F = (h_{2} \cdot A \cdot P)(g)
+\end{equation}
+
+\begin{equation}
+    P = \frac{F}{A} \quad\therefore\quad P = h_{2} \cdot \rho_{g}
+\end{equation}
+
+Esta es la presión sobre A\sub{2} debido a la masa del fluido que está encima. Sin embargo, para obtener la presión total (P\sub{2}) sobre A\sub{2}debe añadirse P\sub{0}, que soporta todo el líquido, de tal manera que:
+
+\begin{equation}
+    F = h_{2} \cdot \rho_{g} + P_{0}
+\end{equation}
+
+Esta ecuación es la expresión fundamental para calcular la presión de un fluido a cualquier profundidad.
+
+Para P\sub{1}:
+
+\begin{equation}
+    P_{1} = h_{1} \cdot \rho_{g} + P_{0}
+\end{equation}
+
+La diferencia entre los dos puntos es:
+
+\begin{equation}
+    P_{2} - P_{1} = (h_{2} \cdot \rho_{g} + P_{0}) - (h_{1} \cdot \rho_{g} + P_{0})
+\end{equation}
+
+\resumebox{ejercicio}{Calculo de presión}{\footnotesize
+    Un gran tanque de almacenamiento contiene petroleo de una densidad igual a \qty{917}{\kg\per\m\cubed}. El tanque tiene una altura de \qty{3.66}{\m} y está abierto a la atmósfera con una presión de 1atm absoluta en la superficie. El tanque está lleno con petroleo a una profundidad de \qty{3.05}{\m} y contiene tambien \qty{0.61}{\m} de agua en la parte inferior. calcule la presión en pascales a \qty{3.05}{\m} de la superficie y en el fondo del tanque. También calcule la presión manométrica del fondo del tanque.
+    \begin{figure}[H]
+        \centering
+        \resizebox{0.45\linewidth}{!}{\input{images/fig:ejercicio_1_cubo}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Diagrama del tanque}
+    \end{figure}
+}
+
+
+\section{Viscosidad} % Ley de Newton y viscosidad
+
+Cuando un fluido se transporta a través de un canal cerrado se presentan dos tipos de flujo dependiendo de dicho fluido:
+
+\begin{enumerate}
+    \item A \emph{velocidades bajas} el fluido tiende a transportarse sin mezclado lateral, y las capas adyacentes se resbalan unas sobre las otras. En este caso no hay corrientes cruzadas perpendiculares a la dirección del flujo, ni tampoco remolinos de fluidos. A este tipo de flujo se le llama \emph{flujo laminar}.
+    \item A \emph{velocidades altas} se forman remolinos, lo que conduce a un mezclado lateral. A este tipo de flujo se le llama \emph{flujo turbulento}.
+\end{enumerate}
+
+La viscosidad es una propiedad de un fluido que da lugar a fuerzas que se oponen al movimiento relativo de capas adyacentes en el fluido. Para muchos fluidos se ha determinado de forma experimental que la fuerza (F) en Newtons es directamente proporcional a la velocidad $\Delta V_{z}$ en metros sobre segundo (\unit{\m\per\s}). El área en metros cuadrados (\unit{\m\squared}) de la placa usada es inversamente proporcional a la distancia $\Delta y$ en metros (\unit{\m}). Expresada con la ley de viscosidad de Newton, cuando el flujo es laminar:
+
+\begin{equation}
+    \frac{F}{A} = -\mu \frac{\Delta V_{z}}{\Delta y}
+\end{equation}
+
+Donde $\mu$ es la constante de proporcionalidad llamada viscosidad del fluido en pascales por segundo (\unit{\pascal\s}) o \unit{\kg\per\m\s}. Cuando $\Delta y$ tiende a 0:
+
+\begin{equation}
+    \tau_{yz} = -\mu \cdot \frac{dV_{z}}{dy}
+\end{equation}
+
+\begin{equation}\footnote{lbf/ft\super{2}}
+    \tau_{yz} \ gc = -\mu \cdot \frac{dV_{z}}{dy}
+\end{equation}
+
+Las unidades en el \emph{sistema cgs} son \unit{\g\m\per\s}, llamados Poise (P) o Centipoise (cp). 
+
+\resumebox{ejercicio}{Cálculo de esfuerzo cortante}{\footnotesize
+    La distancia entre las dos placas es de \qty{0.5}{\cm}. La velocidad de flujo que pasa a través es de \qty{10}{\cm\s}, y el fluido que atraviesa se trata de alcohol etílico a \qty{273}{\K}, cuya viscosidad es de \qty{1.77}{cp}.
+    \begin{enumerate}
+        \item Calcule el esfuerzo cortante $\tau_{yz}$ y el gradiente de velocidad
+        \item Repita en SI
+    \end{enumerate}
+}
+
+\section{Fluidos newtonianos y no newtonianos}
+
+\marginpar{\begin{minipage}{\marginparwidth}
+\begin{figure}[H]
+    \centering
+    \resizebox{\linewidth}{!}{\input{images/fig:grafica_de_tipos_de_fluidos}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Diferencia entre fluidos newtonianos y no newtonianos}
+    \label{fig:grafica_de_tipos_de_fluidos}
+\end{figure}
+\end{minipage}}
+
+Los fluidos que obedecen la ley de viscosidad e Newton se les llama fluidos newtonianos. En dichos fluidos existe una relación lineal entre el esfuerzo cortante ($\tau_{yz}$) y el gradiente de velocidad ($\frac{\Delta V_{z}}{\Delta y}$), lo cual significa que la velocidad $\mu$ es constante e independiente de la velocidad cortante. En fluidos no newtonianos, la relación entre $\tau_{yz}$ y $\frac{\Delta V_{z}}{\Delta y}$ no es lineal, es decir, $\mu$ no permanece constante, sino que está en función de $\tau_{yz}$.
+
+La viscosidad de los gases, que son fluidos newtonianos, aumenta con la temperatura e independiente de la presión.
+
+\section{Tipos de flujo}
+
+El primer tipo de flujo ocurre a velocidades bajas, donde la capa del fluido parece desplazarse unas sobre las otras sin remolinos o turbulencias. Tal flujo se llama flujo laminar, y obedece la ley de la viscosidad de Newton.
+
+El segundo tipo de flujo ocurre avelocidades más altas, donde se forman remolinos que imparten al fluido una naturaleza fluctante. Este fluido recibe el nombre de flujo turbulento. 
+
+\section{Número de Reynolds (N\sub{Re})}
+
+La expresión para estimar el número de Reynolds es:
+
+\begin{equation}\mathrm{
+    N_{Re} = \frac{D \cdot V \cdot \rho}{\mu}
+}\end{equation}
+
+Aquí D es el diametro de la tubería en metros (\unit{\m}). V es la velocidad promedio del fondo en metros por segundo (\unit{\m\per\s}), y se obtiene con la velocidad volumétrica del fluida dividida entre el área de corte transversal de la tubería.
+
+Cuando N\sub{Re} es menor a 2100 para una tubería circular recta, el flujo siempre es laminar. Cuand el valor supera 4000 el flujo será turbulento. Entre estos dos valores está la \emph{región de transición}, en la cual el flujo puede ser laminar o turbulento dependiendo de detalles del sistema que no se pueden predecir.
+
+\begin{align*}
+    \mathrm{N_{Re}} < 2100        &\quad\longrightarrow\quad \text{Flujo laminar}
+    \\
+    2100 < \mathrm{N_{Re}} < 4000 &\quad\longrightarrow\quad \text{Región de transición}
+    \\
+    \mathrm{N_{Re}} > 4000        &\quad\longrightarrow\quad \text{Flujo turbulento}
+\end{align*}
+
+\marginpar{\resumebox{ejercicio}{Número de Reynolds}{\footnotesize
+    Por una tubería con un diámetro interior de \qty{2.007}{\in} fluye agua a \qty{303}{\K} con una velocidad de \qty{10}{\gal\per\min}.
+Calcular el N\sub{Re} usando unidades del sistema internacional 
+}}
+
+
+\section{Balance general de momento lineal}
+
+La ecuación para la conservación del momento lineal con respecto a un volumen de control se puede describir como:
+
+\begin{equation*}
+    \sum{\text{Fuerzas}} = V_{\text{Salida}} - V_{\text{Entrada}} + V_{\text{Acumulación}}
+\end{equation*}
+
+Siendo $V$ la velocidad de momento lineal. Este momento lineal no se conserva ya que es generado por fuerzas externas. Si no existen fuerzas externas entonces si hay conservación de momento lineal
+
+\section{Ecuación de diseño para flujo laminar y turbulento en tuberías}
+
+Una de las aplicaciones más importantes del transporte de fluidos es el flujo en conductos circulares, tuberías y caños. Cuando el fluido pasa a través de una tubería circular, al medir la velocidad a diferentes distancias de la pared al centro el fluido que está en el centro del tubo se desplaza con mayor rapidez que el que está cercano a la tubería o pared.
+
+\section{Caida de presión y pérdida por fricción en un flujo laminar}
+
+Cuando un líquido o gas fluyen por una tubería con flujo laminar en estado estacionario, la ecuación se escribe para variaciones de radio ($dr$) en vez de la distancia:
+
+\begin{equation}
+    \tau_{yz} = -\mu \cdot \frac{dV_{s}}{dr}
+\end{equation}
+
+Con esta ecuación y llevando a cabo un balance de momento lineal en un recinto cilíndrico se obtiene la ecuación de Hagen-Poiseville:
+
+\begin{equation}
+    \Delta P_{f} = (P_{1} - P_{2})_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2}}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $P_{1}$ es la presión corriente arriba en el punto 1
+    \item $P_{2}$ es la presión corriente arriba en el punto 2
+    \item $V$ es la velocidad promedio en el tubo
+    \item $D$ es el diametro interno
+    \item $\Delta L$ es la longitud del tubo
+\end{itemize}
+
+Para el sistema inglés es:
+
+\begin{equation*}
+    \Delta P_{f} = (P_{1} - P_{2})_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2} \cdot gc}
+\end{equation*}
+
+Para una presión constante, la pérdida por presión ($F_{f}$) se puede calcular de la siguiente manera:
+
+\begin{equation}
+    F_{f} = \frac{(P_{1} - P_{2})_{f}}{P}
+\end{equation}
+
+\resumebox{ejercicio}{Cálculo de flujo másico}{
+    Para medir en forma continua la velocidad del flujo de un líquido con una densidad de \qty{875}{\kg\per\m\cubed} y una viscosidad de \qty{1.13d-3}{\pascal\s} se usa un pequeño capilar con un diametro interno de \qty{2.22d-3}{\m} y la longitud igual a \qty{0.317}{\m}. La lectura de caida de presión es de \qty{0.0655}{\m} de agua, la cual tiene una densidad de \qty{996}{\kg\per\m\cubed}. ¿Cuál es la velocidad de flujo en \unit{\m\cubed\per\s} sin tomar en cuenta los efetos de los extremos del tubo?
+}
+
+\section{Factor de fricción de Fanning ($f$)}
+
+Un parámetro muy común en el flujo laminar es el factor de fricción de Fanning ($f$), que se define como la fuerza de arrastre por unidad de área --- dividida entere el prducto de la densidad por la carga de velocidad, o altura dinámica. La fuerza es $\Delta P_{f}$ multiplicada por el área de sección transversal y el área de superficie mojada. La relación entre la caída de presión debida a la fricción es la siguiente para flujo laminar y turbulento:
+
+\begin{equation}
+    f = \frac{\tau_{s}}{\rho \cdot (V^{2} \div 2)} = \frac{\Delta P_{f} \cdot \pi \cdot R \cdot \rho \cdot V^{2}}{2\pi \cdot R \cdot \Delta L}
+\end{equation}
+
+\begin{equation}
+    \Delta P_{f} = \frac{4f \cdot \rho \cdot \Delta L \cdot V^2}{2D} \quad;\quad \Delta P_{f(\text{Inglés})} = \frac{4f \cdot \rho \cdot \Delta L \cdot V^2}{2D \cdot gc}
+\end{equation}
+
+\begin{equation}
+    F_{f} = \frac{\Delta P_{f}}{\rho} = \frac{4f \cdot \Delta L \cdot V^2}{2D} \quad;\quad F_{f(\text{Inglés})} = \frac{4f \cdot \Delta L \cdot V^2}{2D \cdot gc}
+\end{equation}
+
+\begin{equation}
+    \text{Laminar:} f = \frac{16}{\mathrm{N_{Re}}} \quad;\quad \text{Turbulento:} f = \frac{0.0791}{\mathrm{N_{Re}}^{0.25}}
+\end{equation}
+
+
+\resumebox{ejercicio}{Cálculo de caida de presión}{\footnotesize
+    Suponga las mismas condiciones conocidas del ejemplo anterior, excepto que se conoce la velocidad, que es de \qty{0.225}{\m\per\s}, y se debe pronosticar la caida de presión. Use el método de factor de fricción de Fanning ($F_{f}$)
+}
+
+\resumebox{ejercicio}{Cálculo de pérdida por fricción}{\footnotesize
+    Un líquido fluye por una tubería horizontal recta de acero comercial a \qty{4.57}{\m\per\s}. El diámetro interno de la tubería es de \qty{2.067}{\in}, mientras que la viscosidad del líquido es de \qty{4.46}{\cp}, y su densidad es de \qty{801}{\kg\per\m\cubed}. Calcule la pérdida por fricción de energía mecánica (F\sub{f}) en \unit{\J\per\kg} para una sección de tubería de \qty{36.6}{\m}.
+}
+
+
+% -------------------------------------------------------------------- %
+\clearpage
+\section{Respuestas de ejercicios}
+
+\resumebox{respuesta}{Calculo de presión}{
+\begin{gather*}
+    \mathrm{1atm} = \qty{1.01325d5}{\pascal} 
+    \quad;\quad
+    \unit{\pascal} = \frac{\unit{\kg\m\per\s\squared}}{\unit{\m\squared}} = \unit{\kg\per\m\per\s\squared}
+%    \mathrm{P_{n}} = (h_{n} \cdot \rho_{n} \cdot g) + P_{n-1}
+    \\\\
+    \mathrm{P_{Petroleo}} = \left( \qty{3.05}{\m} \cdot \qty{917}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.01325d5}{\kg\per\s\squared\per\m} = \qty{1.2876d5}{\pascal}
+    \\
+    \mathrm{P_{Agua}} = \left( \qty{0.61}{\m} \cdot \qty{1000}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.2876d5}{\kg\per\s\squared\per\m} = \qty{1.3474d5}{\pascal}
+    \\
+    \mathrm{P_{Fondo (Manométrica)}} = \qty{1.3474d5}{\pascal} - \qty{1.2876d5}{\pascal} = \qty{33415}{\pascal} = \qty{33.415}{\kilo\pascal}
+\end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de esfuerzo cortante}{\footnotesize
+\begin{enumerate}
+\item Calcule el esfuerzo cortante $\tau_{yz}$ y el gradiente de velocidad
+\begin{gather*}
+    V = \qty{10}{\cm\per\s} 
+    \quad;\quad
+    \mu = \qty{1.77}{\cp} = \qty{1.777d-3}{\P}
+    \quad;\quad 
+    y = \qty{0.5}{\cm}
+    \\
+    \tau_{yz} = \qty{1.77d-2}{\P} \cdot \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{0.354}{\pascal\s}
+    \\
+    \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
+\end{gather*}
+\item Repita en SI
+\begin{gather*}
+    V = \qty{0.1}{\m\per\s} 
+    \quad;\quad
+    \mu = \qty{1.77d-3}{\pascal\s}
+    \quad;\quad
+    y = \qty{0.005}{\m}
+    \\
+    \tau_{yz} = \qty{1.77d-3}{\pascal\s} \cdot \frac{\qty{0.1}{\m\per\s}}{\qty{0.005}{\m}} = \qty{3.54d-2}{\pascal}
+%   \\\\
+%   \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
+\end{gather*}
+\end{enumerate}
+}
+
+\resumebox{respuesta}{Número de Reynolds}{
+\begin{gather*}
+    \mathrm{D} = \qty{2.007}{\in} \cdot \qty{2.54}{\cm\per\in} \cdot \frac{\qty{1}{\m}}{\qty{100}{\cm}}= \qty{5.1d-2}{\m}
+    \\
+    \mathrm{V_{Volumétrica}} = \qty{10}{\gal\per\min} \cdot \frac{\qty{1}{\min}}{\qty{60}{\s}} \cdot \qty{3.7854d-3}{\m\cubed\per\gal} = \qty{6.309d-4}{\m\cubed\per\s}
+    \\
+    V = \frac{\qty{6.309d-4}{\m\cubed\per\s}}{\pi \cdot (\qty{5.1d-2}{\m} \div 2)^{2}} = \qty{0.3088}{\m\per\s}
+    \\
+    \mu = \qty{0.8007}{\cp} \cdot \frac{\qty{1d-3}{\kg\per\m\s}}{1cp} = \qty{8.007d-4}{\kg\per\m\per\s}
+    \\
+    \mathrm{N_{Re}} = \frac{\qty{5.1d-2}{\m} \cdot \qty{0.309}{\m\per\s} \cdot \qty{996}{\kg\per\m\cubed}}{\qty{8.007d-4}{\kg\per\m\per\s}} = 19602.8025
+\end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de flujo másico}{\footnotesize
+\begin{gather*}
+    \Delta P_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2}} \quad\longrightarrow\quad V = \frac{D^{2} \cdot \Delta P_{f}}{32\mu \cdot \Delta L}
+    \\
+    V = \frac{(\qty{2.2d-3}{\m})^{2} \cdot \qty{639.985}{\kg\per\m\per\s\squared}}{32 \cdot \qty{1.13d-3}{\kg\per\m\per\s} \cdot \qty{0.317}{\m}} = \qty{0.27}{\m\per\s}
+    \\
+    Q = \qty{0.27}{\m\per\s} \cdot \qty{3.8d-6}{\m\squared} = \qty{1.026d-6}{\m\cubed\per\s}
+\end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de caida de presión}{\footnotesize
+\begin{gather*}
+    \mathrm{N_{Re}} = \frac{\qty{875}{\kg\per\m\cubed} \cdot \qty{0.225}{\m\per\s} \cdot \qty{2.2d-3}{\m}}{\qty{1.13d-3}{\kg\per\m\per\s}} = 383.2964
+    \\
+    f = \frac{16}{383.2984} = 0.0417 
+    \\
+    \Delta P_{f} = \frac{4 \cdot 0.0417 \cdot \qty{875}{\kg\per\m\cubed} \cdot \qty{0.317}{\m} \cdot (\qty{0.225}{\m\per\s})^{2}}{2 \cdot \num{2.2d-3}} = \qty{532.324}{\kg\per\m\per\s\squared}
+\end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de pérdida por fricción}{\footnotesize
+\begin{gather*}
+    D = \qty{2.067}{\in} = \qty{5.26d-2}{\m}
+    \\
+    \rho = \qty{801}{\kg\per\m\cubed}
+    \\
+    \mu = \qty{4.46}{\cp} = \qty{4.46d-3}{\kg\per\m\per\s}
+    \\
+    V = \qty{4.57}{\m\per\s}
+    \\
+    \Delta L = \qty{36.6}{\m}
+    \\\\
+    \mathrm{N_{Re}} = \frac{\qty{5.26d-2}{\m} \cdot \qty{4.57}{\m\per\s} \cdot \qty{801}{\kg\per\m\cubed}}{\qty{4.46d-3}{\kg\per\m\per\s}} = 43171.745 \approx \num{4.3d4}
+    \\
+    f_{D} = 0.024 \quad\longleftarrow\quad \text{De Diagrama de Moody}
+    \\
+    F_{f} = \frac{0.024 \cdot \qty{36.6}{\m} \cdot (\qty{4.57}{\m\per\s})^{2}}{2(\qty{5.26d-2}{\m})} = \qty{174.4}{\m\squared\per\s\squared}
+\end{gather*}
+}
+
+
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi

@@ -1,45 +1,242 @@
+\ifx\ISMAIN\undefined
+    \documentclass{AsignaturaResumen}
+    \usepackage{etoc}
+    \SetTitulo{Fenómenos de transporte}
+    \input{../../0-tex_resources/glosario_general}
+    \begin{document}
+    \dominitoc
+    \faketableofcontents
+    \chapter{Introducción a fenómenos de transporte}
+    \mymtc
+\fi
 
-\section{Presión}
+\section{Tipos de transporte}
 
-\marginpar{\begin{minipage}{\marginparwidth}
-    \begin{figure}[H]
-        \centering
-        \resizebox{0.8\linewidth}{!}{\input{images/fig:ejercicio_1_cubo}}
-    \end{figure}
-\end{minipage}}
+Existen 3 tipos de transporte molecular, y todos se caracterizan por el mismo tipo general de ecuación de transporte:
 
-Si se requiere calcular la cantidad de kg totales de un fluido se utiliza:
+\begin{equation}
+    \text{Velocidad de transporte molecular} = \frac{\text{Fuerza impulsora}}{\text{Resistencia}}
+\end{equation}
+
+Esto también se puede expresar como:
+
+\begin{equation}\label{eq:ecuacion_de_transporte_molecular_diferencial}
+    \Psi_{z} = \sigma\frac{\mathrm{d}\Gamma}{\mathrm{d}Z}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $\Psi_{z}$ es el flujo de propiedad, es decir, la cantidad de la propiedad que se transfiere por unidad de tiempo a través de una sección transversal unitaria perpendicular a la dirección del fljo en cantidad de propiedad dobre metro cuadrado.
+    \item $\sigma$ es la difusividad en metro cuadrado sobre segundo (\unit{\m\squared\per\s}). Indica el gradiente y la resistencia
+    \begin{itemize}
+        \item La difusividad necesita de un gradiente para ocurrir.
+    \end{itemize}
+    \item $\Gamma$ es la concentración de la propiedad en cantidad de propiedad sobre metros cúbicos (\unit{\substance\per\m\cubed}). Indica la diferencia entre cantidad de transporte
+    \item $Z$ es la distancia de la dirección del flujo en metros.
+\end{itemize}
+
+Si el proceso ocurre en un estado estacionario el flujo $\Psi_{z}$ es constante:
+
 \begin{equation*}
-    kg_{\text{Total}} = h_{2}(m) A(m^{2}) \rho(kg/m^{2}) = h_{2}A\rho_{g} 
+    \Psi_{z} \ \mathrm{d}Z = - \sigma \ \mathrm{d}\Gamma
 \end{equation*}
 
-Para calcular la fuerza total ($F$) del fluido sobre el área 1 debido unicamente al fluido es:
-\begin{equation}
-    F = (h_{2}AP)(g)
-\end{equation}
-\begin{equation}
-    P = \frac{F}{A} \quad\therefore\quad P = h_{2}\rho_{g}
-\end{equation}
+Esta es una ecuación diferencial que al resolverla por variables separables nos da:
 
-Esta es la presión sobre A\sub{2} debido a la masa del fluido que está encima. Sin embargo, para obtener la presión total (P\sub{2}) sobre A\sub{2}debe añadirse P\sub{0}, que soporta todo el líquido, de tal manera que:
 \begin{equation}
-    F = h_{2}\rho_{g} + P_{0}
-\end{equation}
-
-Esta ecuación es la expresión fundamental para calcular la presión de un fluido a cualquier profundidad.
-
-Para P\sub{1}:
-\begin{equation}
-    P_{1} = h_{1}\rho_{g} + P_{0}
-\end{equation}
-
-La diferencia entre los dos puntos es:
-\begin{equation}
-    P_{2} - P_{1} = (h_{2}\rho_{g}+P_{0}) - (h_{1}\rho_{g}+P_{0})
+    \Psi_{z} = \frac{-\sigma \ (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
 \end{equation}
 
 
+\resumebox{ejercicio}{Cálculo de flujo}{\footnotesize
+    Se está transportando una propiedad por difusión a través de un fluido en estado estacionario. En un punto 1 determinado, la concentración es de \num{1.37d-2} cantidad de propiedad por metro cuadrado (\unit{\meter\squared}), y \num{0.72d-2} en el punto 2, a una distancia de \qty{0.4}{\m}. La difusividad es de \qty{0.013}{\m\squared\per\s}, y el área de corte transversal es constante.
+    \begin{enumerate}
+        \item Calcula el flujo
+        \item Deduce la ecuación para $\Gamma$ como función de la distancia
+        \item Calcule $\Gamma$ en el punto medio de la trayectoria
+    \end{enumerate}
+}
 
-\section{Viscosidad}
-\section{Tipos de fluidos: Newtonianos y No Newtonianos}
-\section{Nre}
+Al calcular las velocidades de transporte en un sistema usando la ecuación de transporte molecular (\autoref{eq:ecuacion_de_transporte_molecular_diferencial}) es necesario tomar en cuenta la cantidad de esta propiedad que se transporta en todo el sistema. Esto se hace escribiendo una ecuación general de balance o conservación para la propiedad en estado no estacionario.
+
+\begin{align*}
+    \text{Tasa de la propiedad que entra} \ &+ \ \text{Tasa de generación de la propiedad}
+    \\
+    &=
+    \\
+    \text{Tasa de la propiedad que sale} \ &+ \ \text{Tasa de acumulación de la propiedad}
+\end{align*}
+
+La velocidad de entrada es $\Psi_{Z / (Z \cdot 1)}$ en cantidad de propiedad sobre segundo (\unit{\substance\per\s}), mientras que la velocidad de salida es $(\Psi_{Z/Z} + \Delta Z) \cdot 1$ en cantidad de propiedad sobre segundo , donde el área de corte transversal es de \qty{1}{\m\squared}. La velocidad de generación de la propiedad se escribe como $R_{\Delta Z \cdot 1}$, que se mide en cantidad de propiedad sobre segundo por metro cúbico (\unit{\substance\per\m\cubed\per\s}). El término para la acumulación es:
+
+\begin{equation}
+    \text{Velocidad de acumulación de propiedad} = \frac{\mathrm{d}\Gamma (\Delta Z \cdot 1)}{\mathrm{d}t} 
+\end{equation}
+
+En la cual, si sustituimos, tendríamos:
+
+\begin{equation}
+    \Psi_{Z / (Z \cdot 1)} + R_{\Delta Z \cdot 1} = (\Psi_{Z/Z} + \Delta Z) \cdot 1 + \frac{\mathrm{d}\Gamma}{\mathrm{d}t} (\Delta Z \cdot 1)
+\end{equation}
+
+\subsection{Transporte de momento lineal y la ley de Newton}
+
+\resumebox{definicion}{Primera Ley de Newton}{\footnotesize
+    Todo cuerpo persevera en su estado de reposo o movimiento uniforme y rectilíneo a no ser que sea obligado a cambiar su estado por fuerzas impresas sobre él.
+}
+
+Cuando un fluido fluye en la dirección X en forma paralela a una superficie sólida existe un gradiente de velocidad dondel a velocidad $V_{x}$ en la dirección X disminuye al acercarse a la superficie en la dirección z. El fluido tiene un momento lineal en dirección X y su concentración es $V_{x}\rho$ (momento lineal sobre metro cúbico), donde el momento lineal tiene unidades de kilogramos por metro sobre segundo (\unit{\kg\m\per\s}). Debido a la difusión aleatoria de las moléculas existe un intercambio de moléculas en la dirección z, moviendose igual número de ellas en cada dirección entre la capa de la molécula que se mueve más rápido y la capa adyacente más lenta. La ley que describe lo anterior es la ley de Newton de la viscosidad para una densidad constante:
+
+\begin{equation}
+    \tau_{zx} = -\nu \cdot \frac{\mathrm{d}(\rho \cdot V_{x})}{\mathrm{d}z}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $\tau_{zx}$ es el flujo de momento lineal con dirección X en la dirección Z (\unit{\kg\m\per\s})
+    \item $V$ es $\frac{\mu}{\rho}$, que representa la difusividad de momento lineal en metro cuadrado por segundo (\unit{\m\squared\per\s})
+    \item $z$ es la dirección de transporte o difusión en metros (\unit{\m})
+    \item $\rho$ es la densidad en kilogramos por metro cúbico (\unit{\kg\per\m\cubed})
+    \item $\mu$ es la viscosodad en kilogramos por metro por segundo (\unit{\kg\per\m\s})
+\end{itemize}
+
+\subsection{Transporte de calor y la ley de Fourier}
+
+La ley de Fourier para el transporte molecular de calor o la conducción de calor en un fluido o sólido puede escribirse para una densidad constante y capacidad calorífica (cp) de la siguiente manera:
+
+\begin{equation}
+    \frac{qz}{A} = -\alpha \cdot \frac{\mathrm{d}(\rho \cdot \unit{\cp} \cdot T)}{\mathrm{d}z}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $\frac{qz}{A}$ es el flujo de calor en \unit{\joule\per\m\squared\s}
+    \item $\alpha$ es la difusividad térmica en \unit{\m\squared\per\s}
+    \item $\rho \cdot \unit{\cp} \cdot T$ es la concentración de calor o energía térmica en \unit{\joule\per\m\cubed}
+\end{itemize}
+
+Cuando hay un gradiente de temperatura en un fluido se difunden igual número de moléculas entre la región caliente y la más fría.
+
+\subsection{Transporte de masa y ley de Fick}
+
+La ley de Fick para el transporte molecular de masa en un fluido o en un sólido para la concentración total constante del fluido es:
+
+\begin{equation}
+    J_{AZ} = -D_{AB} \cdot \frac{\mathrm{d}C_{A}}{\mathrm{d}Z}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $J_{AZ}$ es el flujo de A en kgmol de A sobre \unit{\m\squared\s}
+    \item $D_{AB}$ es la difusividad molecular de las moléculas A y B en \unit{\m\squared\per\s}
+    \item $C_{A}$ es la concentración de A en \unit{\kg\mole} de A sobre \unit{\m\cubed} (\unit{\kg\mole\per\m\cubed})
+\end{itemize}
+
+Donde existe un gradiente de concentración en un fluido se difundirán igual número de moléculas en todas las direcciones de alta y baja concentración, y ocurrirá un flujo neto de masa.
+
+Estos 3 transportes son descritos en estado estacionario, y se puede notar en los 3 términos comunes.
+
+
+Los 3 procesos de transporte molecular se caracterizan por el mismo tipo general de ecuación de transporte:
+
+\begin{equation}
+    \text{Velocidad de transporte molecular} = \frac{\text{Fuerza impulsora}}{\text{Resistencia}}
+\end{equation}
+
+Esto también se puede expresar como:
+
+\begin{equation}\label{eq:ecuacion_de_transporte_molecular_diferencial}
+    \Psi_{z} = \sigma\frac{\mathrm{d}\Gamma}{\mathrm{d}Z}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $\Psi_{z}$ es el flujo de propiedad, es decir, la cantidad de la propiedad que se transfiere por unidad de tiempo a través de una sección transversal unitaria perpendicular a la dirección del fljo en cantidad de propiedad dobre metro cuadrado.
+    \item $\sigma$ es la difusividad en metro cuadrado sobre segundo (\unit{\m\squared\per\s}). Indica el gradiente y la resistencia
+    \begin{itemize}
+        \item La difusividad necesita de un gradiente para ocurrir.
+    \end{itemize}
+    \item $\Gamma$ es la concentración de la propiedad en cantidad de propiedad sobre metros cúbicos (\unit{\substance\per\m\cubed}). Indica la diferencia entre cantidad de transporte
+    \item $Z$ es la distancia de la dirección del flujo en metros.
+\end{itemize}
+
+Si el proceso ocurre en un estado estacionario el flujo $\Psi_{z}$ es constante:
+
+\begin{equation*}
+    \Psi_{z} \ \mathrm{d}Z = - \sigma \ \mathrm{d}\Gamma
+\end{equation*}
+
+Esta es una ecuación diferencial que al resolverla por variables separables nos da:
+
+\begin{equation}
+    \Psi_{z} = \frac{-\sigma \ (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
+\end{equation}
+
+
+\resumebox{ejercicio}{Cálculo de flujo}{\footnotesize
+    Se está transportando una propiedad por difusión a través de un fluido en estado estacionario. En un punto 1 determinado, la concentración es de \num{1.37d-2} cantidad de propiedad por metro cuadrado (\unit{\meter\squared}), y \num{0.72d-2} en el punto 2, a una distancia de \qty{0.4}{\m}. La difusividad es de \qty{0.013}{\m\squared\per\s}, y el área de corte transversal es constante.
+    \begin{enumerate}
+        \item Calcula el flujo
+        \item Deduce la ecuación para $\Gamma$ como función de la distancia
+        \item Calcule $\Gamma$ en el punto medio de la trayectoria
+    \end{enumerate}
+}
+
+Al calcular las velocidades de transporte en un sistema usando la ecuación de transporte molecular (\autoref{eq:ecuacion_de_transporte_molecular_diferencial}) es necesario tomar en cuenta la cantidad de esta propiedad que se transporta en todo el sistema. Esto se hace escribiendo una ecuación general de balance o conservación para la propiedad en estado no estacionario.
+
+\begin{align*}
+    \text{Tasa de la propiedad que entra} \ &+ \ \text{Tasa de generación de la propiedad}
+    \\
+    &=
+    \\
+    \text{Tasa de la propiedad que sale} \ &+ \ \text{Tasa de acumulación de la propiedad}
+\end{align*}
+
+La velocidad de entrada es $\Psi_{Z / (Z \cdot 1)}$ en cantidad de propiedad sobre segundo (\unit{\substance\per\s}), mientras que la velocidad de salida es $(\Psi_{Z/Z} + \Delta Z) \cdot 1$ en cantidad de propiedad sobre segundo , donde el área de corte transversal es de \qty{1}{\m\squared}. La velocidad de generación de la propiedad se escribe como $R_{\Delta Z \cdot 1}$, que se mide en cantidad de propiedad sobre segundo por metro cúbico (\unit{\substance\per\m\cubed\per\s}). El término para la acumulación es:
+
+\begin{equation}
+    \text{Velocidad de acumulación de propiedad} = \frac{\mathrm{d}\Gamma (\Delta Z \cdot 1)}{\mathrm{d}t} 
+\end{equation}
+
+En la cual, si sustituimos, tendríamos:
+
+\begin{equation}
+    \Psi_{Z / (Z \cdot 1)} + R_{\Delta Z \cdot 1} = (\Psi_{Z/Z} + \Delta Z) \cdot 1 + \frac{\mathrm{d}\Gamma}{\mathrm{d}t} (\Delta Z \cdot 1)
+\end{equation}
+
+
+% -------------------------------------------------------------------- %
+\clearpage
+\section{Respuestas de ejercicios}
+
+\resumebox{respuesta}{Cálculo de flujo}{
+\begin{enumerate}
+\item Calculo del flujo:
+\begin{gather*}
+    \Psi_{z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
+    \\
+    \Psi_{z} = - \frac{ \qty{0.013}{\m\squared\per\s} \cdot \left( \qty{1.37d-2}{\substance\per\m\cubed} - \qty{0.72d-2}{\substance\per\m\cubed} \right) }{\qty{0.4}{\m}} = \qty{2.1125d-4}{\substance\per\m\squared\per\s}
+\end{gather*}
+\item Ecuación para $\Gamma$ como función de la distancia:
+\begin{equation*}
+     \Psi_{z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}} 
+     \quad\longrightarrow\quad
+     \Gamma = \frac{\Psi_{z} \cdot Z}{-\delta}
+\end{equation*}
+\item $\Gamma$ en el punto medio:
+\begin{gather*}
+    \Gamma_{\qty{0.2}{\m}} = \frac{ \qty{2.1125d-4}{\substance\per\m\squared\per\s} \cdot \qty{0.2}{\m} }{ \qty{0.013}{\m\squared\per\s} } - \qty{1.37d-2}{\substance\per\m\cubed}
+    \\
+    \Gamma_{\qty{0.2}{\m}} = \qty{1.045d-2}{\substance\per\m\cubed}
+\end{gather*}
+\end{enumerate}
+}
+
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi

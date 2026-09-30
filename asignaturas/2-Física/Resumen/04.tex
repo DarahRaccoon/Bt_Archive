@@ -1,3 +1,74 @@
-\section{Diagramas de cuerpo libre}
 
-\section{Sistemas de fuerza}
+
+
+\section{Equilibrio estático}
+
+\subsection{Primera condición de equilibrio}
+La primera condición de equilibrio establece que un cuerpo se encuentra en equilibrio traslacional si la suma vectorial de todas las fuerzas que actúan sobre él es igual a cero.
+\begin{equation}
+    \sum \vec{F} = 0 \quad \Rightarrow \quad \sum F_x = 0, \quad \sum F_y = 0, \quad \sum F_z = 0
+\end{equation}
+
+\subsection{Segunda condición de equilibrio}
+La segunda condición de equilibrio se refiere al equilibrio rotacional. Establece que la suma de todos los momentos de torsión (torcas) que actúan sobre un cuerpo debe ser cero.
+\begin{equation}
+    \sum \vec{\tau} = 0
+\end{equation}
+
+\section{Momentos de torsión (torca)}
+
+El momento de torsión o torca es una medida de la tendencia de una fuerza a hacer rotar un objeto alrededor de un eje. Se define como:
+\begin{equation}
+    \vec{\tau} = \vec{r} \times \vec{F} \quad \Rightarrow \quad \tau = r \cdot F \cdot \sin(\theta)
+\end{equation}
+donde:
+\begin{itemize}
+    \item $ \tau $ es la torca,
+    \item $ r $ es la distancia perpendicular desde el eje de rotación hasta la línea de acción de la fuerza,
+    \item $ F $ es la magnitud de la fuerza,
+    \item $ \theta $ es el ángulo entre el vector de posición y la fuerza.
+\end{itemize}
+
+\subsection{Signo de la torca}
+\begin{itemize}
+    \item \textbf{Torca positiva:} tiende a girar el cuerpo en sentido antihorario.
+    \item \textbf{Torca negativa:} tiende a girar el cuerpo en sentido horario.
+\end{itemize}
+
+\section{Centroides}
+
+El centroide es el punto donde se considera que se concentra toda el área o el volumen de un cuerpo. En problemas de estática, el centroide es importante para determinar el centro de gravedad.
+
+\subsection{Coordenadas del centroide para figuras planas}
+\begin{align}
+    \bar{x} &= \frac{\int x \, dA}{\int dA} = \frac{1}{A} \int x \, dA \\
+    \bar{y} &= \frac{\int y \, dA}{\int dA} = \frac{1}{A} \int y \, dA
+\end{align}
+
+\subsection{Centroide de figuras compuestas}
+Para figuras compuestas, el centroide se calcula como el promedio ponderado de los centroides de cada parte:
+\begin{align}
+    \bar{x} &= \frac{\sum (A_i \cdot \bar{x}_i)}{\sum A_i} \\
+    \bar{y} &= \frac{\sum (A_i \cdot \bar{y}_i)}{\sum A_i}
+\end{align}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Figura} & \textbf{Área} & \textbf{Centroide} \\
+        \hline
+        Rectángulo & $A = b \cdot h$ & $\bar{x} = b/2, \bar{y} = h/2$ \\
+        Triángulo & $A = \frac{1}{2} b \cdot h$ & $\bar{x} = b/3, \bar{y} = h/3$ (desde el vértice) \\
+        Círculo & $A = \pi r^2$ & $\bar{x} = 0, \bar{y} = 0$ (centro) \\
+        \hline
+    \end{tabular}
+    \caption{Centroides de figuras comunes}
+\end{table}
+
+\section{Ejercicios propuestos}
+
+\begin{enumerate}
+    \item Una viga de 6 metros está sometida a fuerzas en sus extremos. Calcula la torca neta y determina si está en equilibrio rotacional.
+    \item Encuentra el centroide de una figura compuesta formada por un rectángulo de $4 \times 6$ cm y un triángulo encima.
+\end{enumerate}

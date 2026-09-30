@@ -65,7 +65,7 @@ function renderizarCategoria(data, categoriaKey) {
         return;
     }
     
-    // Determinar si es horizontal (manuales o proyectos)
+    // Determinar si es horizontal (manuales)
     const esHorizontal = CATEGORIAS_HORIZONTALES.includes(categoriaKey);
     
     // Clases según el tipo
