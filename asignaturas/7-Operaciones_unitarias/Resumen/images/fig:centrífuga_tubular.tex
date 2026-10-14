@@ -1,0 +1,45 @@
+\ifx\ISMAIN\undefined
+    \documentclass{standalone}
+    \usepackage{simplelatex}
+    \quicktikz
+    \begin{document}
+\fi
+
+\definecolor{torta}{RGB}{240,145,70}
+\definecolor{interfase}{RGB}{80,144,203}
+
+\begin{tikzpicture}[
+etiqueta/.style={black,align=center,font=\sffamily}
+]
+
+\draw[thick] (-1,-1) -- (-1,0) -- (-4,0) -- (-4,10) -- (-1,10) -- (-1,11);
+\draw[thick] ( 1,-1) -- ( 1,0) -- ( 4,0) -- ( 4,10) -- ( 1,10) -- ( 1,11);
+\draw[ultra thick, loosely dashed] (0,1) -- (0,9.5);
+\draw[fill=torta] (-4,0) rectangle (-3,10);
+\draw[fill=torta] ( 4,0) rectangle ( 3,10);
+\draw[thick,-Stealth] (-3.5,7) -- (-5,7) node[etiqueta,left] {Sedimentos (Torta)};
+\draw[fill=interfase] (-3,0) rectangle (-2,10);
+\draw[fill=interfase] ( 3,0) rectangle ( 2,10);
+\draw[thick,-Stealth] (-2.5,6) -- (-5,6) node[etiqueta,left] {Interfase líquida};
+
+\draw[thick,-Stealth] (-1.25,0) to[out=90,in=0] (-3.5,2);
+\draw[thick,-Stealth] (-1.25,0) to[out=90,in=0] (-3.5,3);
+\draw[thick,-Stealth] (-1.25,0) to[out=90,in=0] (-3.5,4);
+\draw[thick,-Stealth] (1.25,0) to[out=90,in=180] (3.5,2);
+\draw[thick,-Stealth] (1.25,0) to[out=90,in=180] (3.5,3);
+\draw[thick,-Stealth] (1.25,0) to[out=90,in=180] (3.5,4);
+\node[text width=5em,align=center,font=\sffamily\footnotesize] at (-1.25,3.6) {Trayectoria de partículas};
+
+\draw[thick,-Stealth] (0,-2) node[etiqueta,below] {Alimentación} -- (0,-1);
+\draw[thick,-Stealth] (0,11) -- (0,12) node[etiqueta,above] {Salida};
+
+\draw[thick,|-|] (5,0) -- (5,10) node[etiqueta,midway,fill=white] {$L$};
+\draw[thick] (0,7) -- (3,7)  node[etiqueta,pos=0.3,above] {$R_{0}$};
+\draw[thick] (0,6) -- (2,6)  node[etiqueta,pos=0.5,above] {$R_{1}$};
+
+
+\end{tikzpicture}
+
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi

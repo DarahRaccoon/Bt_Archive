@@ -20,7 +20,7 @@
 
 % Alineación
 \def\DesnatY{0}
-\node[titulo] (desnaturalizacion) at (0,\DesnatY) {Alineación de primers};
+\node[titulo] (desnaturalizacion) at (0,\DesnatY) {1. Alineación de primers};
 \draw[primer, -Stealth] (0,\DesnatY-2) --++ (2,0) node[texto, midway, above=0pt, pos=0.45] {Primer};
 \draw[cadena] (0,\DesnatY-2.5) --++ (10,0);
 \draw[cadena] (0,\DesnatY-3.5) --++ (10,0);
@@ -31,7 +31,7 @@
 
 % Elongación
 \def\AlinY{-6}
-\node[titulo] (alineacion) at (0,\AlinY) {Elongación};
+\node[titulo] (alineacion) at (0,\AlinY) {2. Elongación};
 \draw[primer] (0,\AlinY-2) --++ (2,0);
 \draw[cadena nueva, -Stealth] (2,\AlinY-2) --++ (1.75,0);
 \draw[cadena] (0,\AlinY-2.5) --++ (10,0);
@@ -44,7 +44,7 @@
 
 % Escición
 \def\EscY{-12}
-\node[titulo] (escicion) at (0,\EscY) {Escición de la sonda};
+\node[titulo] (escicion) at (0,\EscY) {3. Escición de la sonda};
 \draw[primer] (0,\EscY-2) --++ (2,0);
 \draw[cadena nueva, -Stealth] (2,\EscY-2) --++ (2.5,0);
 \draw[cadena] (0,\EscY-2.5) --++ (10,0);

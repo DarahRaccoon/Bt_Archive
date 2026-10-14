@@ -1,0 +1,201 @@
+\ifx\ISMAIN\undefined
+    \documentclass{AsignaturaResumen}
+    \usepackage{etoc}
+    \SetTitulo{Diseño de experimentos}
+    \input{../../0-tex_resources/glosario_general}
+    \begin{document}
+    \dominitoc
+    \faketableofcontents
+    \chapter{Introducción a análisis estadísticos}
+\fi
+
+\section{Normalidad - Lilliefors}
+
+\begin{align*}
+    H_{0} &: \text{Los datos son normales}
+    \\
+    H_{a} &: \text{Los datos NO son normales}
+\end{align*}
+
+\begin{gather*}
+    \bar{x} = \frac{\sum{x_{i}}}{n}
+    \\\\
+    \sigma = PENDIENTE
+    \\\\
+    f(x)_{i} = \frac{1}{n_{i}}
+    \\\\
+    s(x) = \sum{f(x)}
+    \\\\
+    z = \frac{x_{i} - \bar{x}}{s}
+    \\\\
+    F(x) \ \text{se obtiene de las tablas de z. Si} \ z > 1 \longrightarrow F(x) = 1 - F(x)_{\text{Tabla}}
+    \\\\
+    \lvert d_{i} \lvert = \lvert F(x) - S(x) \lvert
+\end{gather*}
+
+
+\section{Pruebas de homogeneidad}
+
+\subsection{Bartlett}
+\begin{align*}
+    H_{0} &: \text{Los datos son homogéneos}
+    \\
+    H_{a} &: \text{Los datos NO son homogéneos}
+\end{align*}
+
+\begin{itemize}
+    \item $n_{i}$ = Número de observaciones
+    \item $\bar{x}$ = Promedio
+    \item $V_{i}$ = Grados de libertad
+\end{itemize}
+
+\begin{gather*}
+    V_{i} = n - 1
+    \\\\
+    \bar{x} = \frac{\sum{x_{i}}}{n}
+    \\\\
+    ss_{i} = \sum (x- \bar{x})^2
+    \\\\
+    s^{2} = \frac{ss_{i}}{V_{i}}
+    \\\\
+    s^{2}_{p} = \frac{\sum{ss_{i}}}{\sum{V_{i}}}
+    \\\\
+    B = 2.30259 \cdot  \left[ \left(\log(s_{p}^{2})\right) \cdot \left(\sum{V_{i}}\right) - \left(\sum{V_{i} \cdot \log(s^{2})}\right) \right]
+    \\\\
+    C = 1 + \frac{1}{3(K-1)}
+    \\\\
+    \chi^{2} = \frac{B}{C}
+\end{gather*}
+
+\subsection{Fisher}
+
+Esta prueba se utiliza para analizar la homogeneidad de 2 columnas de mínimo 4 datos cada una.
+
+En esta prueba las hipótesis son:
+
+\begin{align*}
+    H_{0} &: \text{Los datos son homogéneos}
+    \\
+    H_{a} &: \text{Los datos NO son homogéneos}
+\end{align*}
+
+
+\section{Pruebas t}
+
+\subsubsection{Tipos de pruebas t y usos}
+
+\begin{table}[H]
+\centering
+\caption{}
+\label{tab:}
+{\small\setstretch{1.35}\rowcolors{3}{White}{Grey}
+
+\begin{tabular}{m{0.2\linewidth}m{0.2\linewidth}m{0.2\linewidth}m{0.2\linewidth}}\hline
+    
+    \textbf{Prueba t} & \textbf{Normalidad} & \textbf{Homogeneidad} & \textbf{Observaciones} \\ \hline
+    
+    Pareada                                      & $\checkmark$ & $\checkmark$ &    Relacionadas    \\ 
+    Varianzas iguales (mismas observaciones)     & $\checkmark$ & $\checkmark$ &   Igual cantidad   \\ 
+    Varianzas iguales (diferentes observaciones) & $\checkmark$ & $\checkmark$ & Diferente cantidad \\ 
+    Welch                                        & $\checkmark$ & $\mathrm{X}$ &        ---         \\
+    Mann-Whitney                                 & $\mathrm{X}$ &     ---      &        ---         \\ 
+
+    \hline
+\end{tabular}}
+\end{table}
+
+\subsection{Pareada}
+
+Para datos normales, homogéneos y relacionados
+
+\begin{equation*}
+    t = \frac{\bar{d}}{s_{d} \div \sqrt{n}}
+\end{equation*}
+
+
+\subsection{Varianzas iguales}
+
+\subsubsection{Observaciones iguales}
+
+Para datos normales, homogéneos, con mismo número de observaciones ($n_{i}$)
+
+\begin{equation*}
+    t = \frac{\bar{x}_{1} - \bar{x}_{2}}{s_{p}\sqrt{\frac{1}{n_{1}} + \frac{1}{n_{2}}}}
+\end{equation*}
+
+Donde:
+
+\begin{equation*}
+    s_{p} = \sqrt{\frac{s_{1}^{2} (n_{1}-1) + s_{2}^{2} (n_{2}-1)}{n_{1} + n_{2} - 2}}
+\end{equation*}
+
+
+\subsubsection{Observaciones diferentes}
+
+Para datos normales, homogéneos, con diferente número de observaciones ($n_{i}$)
+
+\begin{equation*}
+    t = \frac{\bar{x}_{1} - \bar{x}_{2}}{\sqrt{s^{2} \cdot (\frac{1}{n_{1}} + \frac{1}{n_{2}})}}
+\end{equation*}
+
+Donde:
+
+\begin{equation*}
+    s^{2} = \frac{\sum{(x_{1} - \bar{x}_{1})^{2}} + \sum{(x_{2} - \bar{x}_{2})^{2}}}{n_{1} + n_{2} - 2}
+\end{equation*}
+
+
+\subsection{Welch}
+
+Para datos normales pero no homogéneos
+
+\begin{equation*}
+    t = \frac{\bar{x}_{1} - \bar{x}_{2}}{\sqrt{\frac{s_{1}^{2}}{n_{1}} + \frac{s_{2}^{2}}{n_{2}}}}
+\end{equation*}
+
+Donde:
+
+\begin{equation*}
+    \mathrm{df} = \frac{ (\frac{s_{1}^{2}}{n_{1}} + \frac{s_{2}^{2}}{n_{2}})^{2} }{ \frac{\left( \frac{s_{1}^{2}}{n_{1}} \right)^{2}}{n_{1}-1}  + \frac{\left(\frac{s_{2}^{2}}{n_{2}} \right)^{2}}{n_{2}-1} }
+\end{equation*}
+
+
+\subsection{Mann-Whitney}
+
+Para datos no normales
+
+\subsubsection{Menos de 20 datos}
+
+\begin{gather*}
+    U = n_{1} \cdot n_{2} + \frac{n_{1} \cdot (n_{1} + 1)}{2} - R_{1}
+    \\\\
+    U^{\prime} = n_{1} \cdot n_{2} + \frac{n_{2} \cdot (n_{2} + 1)}{2} - R_{2}
+\end{gather*}
+
+Donde $R_{n}$ se obtiene al ordenar los datos de mayor a menor y asignarles un número
+
+\subsubsection{Más de 20 datos}
+
+\begin{gather*}
+    Z_{u} = \frac{U - \bar{U}}{U_\sigma}
+    \\\\
+    \bar{U} = \frac{n_{1} \cdot n_{2}}{2}
+    \\\\
+    U_{\sigma} = \sqrt{\frac{n_{1} \cdot n_{2} \cdot (n_{1} + n_{2} + 1)}{12}}
+\end{gather*}
+
+
+
+\section{Pruebas ANOVA}
+
+\subsection{ANOVA paramétrico}
+
+
+
+\subsection{ANOVA no paramétrico}
+
+
+
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi

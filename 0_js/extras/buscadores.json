@@ -11,6 +11,13 @@
       "etiquetas": ["general"]
     },
     {
+      "nombre": "Semantic Scholar",
+      "url": "https://www.semanticscholar.org/",
+      "imagen": "https://cdn.semanticscholar.org/f9b8e7341641493f/img/homepage-background.svg",
+      "descripcion": "Buscador general impulsado por IA.",
+      "etiquetas": ["general"]
+    },
+    {
       "nombre": "Scielo",
       "url": "https://www.scielo.org/es/",
       "imagen": "https://www.scielo.org/static/scieloorg/images/logo-scielo-portal-no-label.svg",

@@ -1,0 +1,17 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1}Normalidad - Lilliefors}{\reset@font\mtcSfont 1}{section.1.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2}Pruebas de homogeneidad}{\reset@font\mtcSfont 2}{section.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1}Bartlett}{\reset@font\mtcSSfont 2}{subsection.1.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2}Fisher}{\reset@font\mtcSSfont 2}{subsection.1.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3}Pruebas t}{\reset@font\mtcSfont 3}{section.1.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.0.1}Tipos de pruebas t y usos}{\reset@font\mtcSSSfont 3}{subsubsection.1.3.0.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1}Pareada}{\reset@font\mtcSSfont 3}{subsection.1.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2}Varianzas iguales}{\reset@font\mtcSSfont 3}{subsection.1.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.1}Observaciones iguales}{\reset@font\mtcSSSfont 3}{subsubsection.1.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2}Observaciones diferentes}{\reset@font\mtcSSSfont 3}{subsubsection.1.3.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3}Welch}{\reset@font\mtcSSfont 4}{subsection.1.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4}Mann-Whitney}{\reset@font\mtcSSfont 4}{subsection.1.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.1}Menos de 20 datos}{\reset@font\mtcSSSfont 4}{subsubsection.1.3.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.2}Más de 20 datos}{\reset@font\mtcSSSfont 5}{subsubsection.1.3.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4}Pruebas ANOVA}{\reset@font\mtcSfont 5}{section.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1}ANOVA paramétrico}{\reset@font\mtcSSfont 5}{subsection.1.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2}ANOVA no paramétrico}{\reset@font\mtcSSfont 5}{subsection.1.4.2}}

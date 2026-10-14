@@ -10,8 +10,6 @@
     \mymtc
 \fi
 
-%\section{Ecuación de Bernoulli}
-%\section{Ecuación de continuidad para fluidos unidireccionales}
 %\section{Ecuaciones para el balance de movimiento}
 
 
@@ -229,6 +227,41 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
 \resumebox{ejercicio}{Cálculo de pérdida por fricción}{\footnotesize
     Un líquido fluye por una tubería horizontal recta de acero comercial a \qty{4.57}{\m\per\s}. El diámetro interno de la tubería es de \qty{2.067}{\in}, mientras que la viscosidad del líquido es de \qty{4.46}{\cp}, y su densidad es de \qty{801}{\kg\per\m\cubed}. Calcule la pérdida por fricción de energía mecánica (F\sub{f}) en \unit{\J\per\kg} para una sección de tubería de \qty{36.6}{\m}.
 }
+
+\resumebox{ejercicio}{Cálculo de caida de presión por efectos de fricción}{\footnotesize
+    Calcule la caida de presión por efectos de la fricción, expresada en \unit{\pascal}, para un aceite de ilivo a \qty{293}{\K}, que fluye por una tubería comercial de diametro interno igual a \qty{0.0525}{\m} y una lngiud de \qty{76.2}{\m}. La velocidad de fluido es de \qty{1.22}{\m\per\s}.Utilice el método del factor de fricción.
+    \begin{enumerate}
+        \item ¿Es el flujo laminar o turbulento si la densidad del medio es de \qty{919}{\kg\per\m\cubed} y su viscosidad de \qty{8.4d-2}{\kg\per\m\per\s}?
+        \item ¿Cuál sería el valor de fricción si se cambia el aceite por otro que tenga una viscosidad de \qty{8.4d-4}{\kg\per\m\per\s} y todo lo demás se conserva igual?
+    \end{enumerate}
+}
+
+\resumebox{ejercicio}{Cálculo de pérdida por fricción $F_{f}$}{\footnotesize
+    Un líquido con densidad de \qty{801}{\kg\per\m\cubed} y visosidad de \qty{1.49d-3}{\pascal\s} fluye por una tubería horizontal recta a velocidad de \qty{4.57}{\m\per\s}. El tubo de acero comercial es de tamaño nominal de \qty{1.5}{\in}, cédula 40. Proceda a lo siguiente para un tubo de \qty{61}{\m} de largo:
+    \begin{enumerate}
+        \item Calcule la pérdida por fricción $F_{f}$
+        \item Calcule la pérdida por fricción de una tubería lisa del mismo diametro interior, ¿cuál es el porcentaje de reducción de $F_{f}$ para una tubería lisa?
+    \end{enumerate}
+}
+
+\resumebox{ejercicio}{Cálculo de velocidad de flujo}{\footnotesize
+    En un proyecto hidráulico se diagrama una tubería de hierro \emph{colado} de \qty{0.156}{\m} de diametro interior y \qty{305}{\m} de longitud, para drenar aguas negras a \qty{293}{\K}. La carga disponible es de \qty{4.57}{\m} de agua. Despreciando las pérdidas en los acesorios y conexiones de la tubería, calcule la velocidad de flujo en \unit{\m\cubed\per\s}. \\
+    \emph{Sugerencia:} Suponga las propiedades del agua pura, la solución se logra por prueba y error, pues N\sub{Re}, que es necesario para calcular el factor de fricción que depende de la velocidad. Como primera aproximación, suponga que la velocidad es de \qty{1.7}{\m\per\s}. \\
+    La densidad del líquido es de \qty{998.2}{\kg\per\m\cubed} y la visocisdad es de \qty{1.005d-3}{\kg\per\m\per\s}.
+}
+
+
+\section{Ecuación de Bernoulli}
+
+\begin{equation}
+    P_{1} + \frac{1}{2} \rho v_{1}^{2} + \rho g h_{1} = P_{2} + \frac{1}{2} \rho v_{2}^{2} + \rho g h_{2}
+\end{equation}
+
+
+\section{Ecuación de continuidad para flujo unidireccional y en punto}
+
+
+
 
 
 % -------------------------------------------------------------------- %

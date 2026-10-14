@@ -5,15 +5,15 @@
 ]
 
 \node[paso] (desnaturalizacion) at (0,0) {1. Desnaturalización};
-\node[especificacion] (desnaturalizacion esp) at ([yshift=-1.5cm]desnaturalizacion) {93-98\celsius\\30 seg.};
+\node[especificacion] (desnaturalizacion esp) at ([yshift=-1.5cm]desnaturalizacion) {93-98°C\\30 seg.};
 \draw[dotted, line width=0.5pt] (desnaturalizacion) -- (desnaturalizacion esp);
 
 \node[paso] (alineacion) at ([xshift=2cm]desnaturalizacion.east) {2. Alineación};
-\node[especificacion] (alineacion esp) at ([yshift=-1.5cm]alineacion) {45-60\celsius\\30 seg.};
+\node[especificacion] (alineacion esp) at ([yshift=-1.5cm]alineacion) {45-60°C\\30 seg.};
 \draw[dotted, line width=0.5pt] (alineacion) -- (alineacion esp);
 
 \node[paso] (elongacion) at ([xshift=2cm]alineacion.east) {3. Elongación};
-\node[especificacion] (elongacion esp) at ([yshift=-1.5cm]elongacion) {65-72\celsius\\1 min.};
+\node[especificacion] (elongacion esp) at ([yshift=-1.5cm]elongacion) {65-72°C\\1 min.};
 \draw[dotted, line width=0.5pt] (elongacion) -- (elongacion esp);
 
 \draw[flecha] (desnaturalizacion.east) -- (alineacion.west);

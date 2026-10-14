@@ -3,11 +3,7 @@ La técnica de PCR es una técnica de biología molecular desarrollada en 1983 p
 
 Su objetivo es, a partir de una mínima cantidad de ADN, obtener un gran número de copias de un fragmento de ADN particular; en teoría basta partir de una sola copia de ese fragmento original, o molde, para crea una gran cantidad de copias del mismo.
 
-\section{Desarrollo de la PCR}
-
-
-
-
+%\section{Desarrollo histórico de la PCR}
 
 \section{Procedimiento común de una PCR clásica}
 
@@ -42,18 +38,6 @@ Posterior a una PCR clásica, se realiza una electroforesis en gel. Para realiza
 \end{minipage}}
 
 El gel se prepara haciendo uso de \textbf{agarosa}, cuya concentración suele estar entre 1 y 2\%. La concentración exacta dependerá del tamaño del ADN que se busque generar. Con ADN "pequeño", se prepara un gel de alta concentración (2\%), mientras que cuando se busca ADN más "grande" se preparaun gel menos concentrad (1\%).
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \section{Variantes de la PCR}
@@ -96,47 +80,43 @@ En el caso de una qPCR, el software del termociclador ya realiza una cuantificac
 
 \subsubsection{SYBR Green}
 
-Este es un colorante que se une a las cadenas dobles de ADN y que tiene cuerta fluorescencia, esto para hacerlas cuantificables por el equipo.
-
-Este método \textbf{no es tan exacto}, esto porque que este colorante se une a todas las cadenas dobles de la muestra, no diferencia entre las originales y las generadas por la polimerasa. Para resolver esta incertidumbre se realiza una \textbf{curva de Melting}.
-
 \marginpar{\begin{minipage}{\marginparwidth}
     \begin{figure}[H]
         \centering
-        \resizebox{\linewidth}{!}{\input{images/fig:sybr_green}}
+        \resizebox{0.9\linewidth}{!}{\input{images/fig:sybr_green}}
         \rule{\linewidth}{0.5pt}
         \caption[Funcionamiento del colorante SYBR-Green]{Los círculos representan el SYBR-Green que \textbf{no emite luz}, mientras que las ``estrellas'' representan el SYBR-Green que \textbf{ya emite luz}.}
         \label{fig:sybr_green}
     \end{figure}
 \end{minipage}}
 
+Este es un colorante que se une a las cadenas dobles de ADN y que tiene cuerta fluorescencia, esto para hacerlas cuantificables por el equipo.
+
+Este método \textbf{no es tan exacto}, esto porque que este colorante se une a todas las cadenas dobles de la muestra, no diferencia entre las originales y las generadas por la polimerasa. Para resolver esta incertidumbre se realiza una \textbf{curva de Melting}.
+
 \subsubsection{Sonda Taq-Man}
-
-Las sondas Taq-Man son moléculas que se componen de una cadena de nucleótidos que contiene un \textbf{fluoroforo (reportero)} en el \textbf{extremo 5'} y un \textbf{desactivador de fluorescencia (quencher)} en el \textbf{extremo 3'}.
-Cuando se añaden las sondas a la muestra y las ADN se abren, las sondas se unen a zonas determinadas del ADN, pero por como están conformadas aún no pueden emitir luz que el termociclador pueda medir. Cuando inicia la PCR, la polimerasa avanza por la cadena de ADN y al llegar a la sonda Taq-Man la retira. Una vez liberada, los componentes de esta se separan y el reportero puede, ahora sí, emitir luz que puede ser medida por el termociclador.
-
-Estas sondas, a comparación del SYBR Green, es \textbf{más específico}, pues hace que solo se midan las cadenas de ADN generadas, y no las originales de la muestra.
 
 \marginpar{\begin{minipage}{\marginparwidth}
     \begin{figure}[H]
         \centering
-        \resizebox{\linewidth}{!}{\input{images/fig:sondas_taqman}}
+        \resizebox{0.9\linewidth}{!}{\input{images/fig:sondas_taqman}}
         \rule{\linewidth}{0.5pt}
         \caption{Funcionamiento de las sondas Taq-Man}
         \label{fig:sondas_taqman}
     \end{figure}
 \end{minipage}}
 
+Las sondas Taq-Man son moléculas que se componen de una cadena de nucleótidos que contiene un \textbf{fluoroforo (reportero)} en el \textbf{extremo 5'} y un \textbf{desactivador de fluorescencia (quencher)} en el \textbf{extremo 3'}.
+Cuando se añaden las sondas a la muestra y las ADN se abren, las sondas se unen a zonas determinadas del ADN, pero por como están conformadas aún no pueden emitir luz que el termociclador pueda medir. Cuando inicia la PCR, la polimerasa avanza por la cadena de ADN y al llegar a la sonda Taq-Man la retira. Una vez liberada, los componentes de esta se separan y el reportero puede, ahora sí, emitir luz que puede ser medida por el termociclador.
 
-
-
+Estas sondas, a comparación del SYBR Green, es \textbf{más específico}, pues hace que solo se midan las cadenas de ADN generadas, y no las originales de la muestra.
 
 \subsection{Retrotranscriptasa-PCR (RT-PCR)}
 
 Este, más que un método de PCR, es un paso que se realiza previo a la PCR. Cuando se cuenta con muestras de ARN, es necesario convertirlas a ADN, por lo que se utiliza la \textbf{enzima RT} (retro-transcriptasa) para realizar tal conversión. Una vez realizado esto, se puede proseguir con la técnica de PCR que se desee. La polimerasa usada en la PCR trabaja con ADN, por lo que de querer analizar muestras de ARN (por ejemplo, muestras de virus) se necesita transformar el ARN en ADN. Para esto se usa una enzima llamada retrotranscriptasa o transcriptasa inversa, también abreviada como enzima RT. Esta enzima convierte ARN's en ADN complementario (ADNc), y se usa previo a la PCR añadiendo las enzimas RT y temperatura, usualmente de entre 45-50°C durante 30 minutos, aunque las temperaturas y tiempos exactos van a variar dependiendo el contexto.
 
 \marginpar{ {\rule{\marginparwidth}{2pt}} \footnotesize
-Una RT ampliamente usada es la MMLV-RT (Moloney Murine Leukemia Virus - Retro-Transcriptase), aislada del virus de la leucemia murina de Moloney.
+    Una RT ampliamente usada es la MMLV-RT (Moloney Murine Leukemia Virus - Retro-Transcriptase), aislada del virus de la leucemia murina de Moloney.
 }
 
 \begin{figure}[H]
