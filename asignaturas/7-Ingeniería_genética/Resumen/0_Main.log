@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  31 OCT 2026 20:04
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  1 NOV 2026 11:14
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen
 /0_Main.tex
 
@@ -2818,26 +2818,20 @@ pt>
 File: images/fig:creacion_de_microarreglos_in_situ.png Graphic file (type png)
 <use images/fig:creacion_de_microarreglos_in_situ.png>
 Package luatex.def Info: images/fig:creacion_de_microarreglos_in_situ.png  used
- on input line 680.
-(luatex.def)             Requested size: 188.49951pt x 194.93091pt.
-
-Package natbib Warning: Author undefined for citation`fodorLightDirectedSpatial
-lyAddressable1991' 
-(natbib)                on page 26 on input line 682.
-
+ on input line 683.
+(luatex.def)             Requested size: 135.15059pt x 139.75812pt.
 [26
 
-] (./images/fig:esquema_de_microarreglos.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 710.
-LaTeX Info: Redefining \% on input line 710.
- [27<./images/fig:creacion_de_microarreglos_in_situ.png>]
+<./images/fig:creacion_de_microarreglos_in_situ.png>]
+(./images/fig:esquema_de_microarreglos.tex)
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
 714.
 
+LaTeX Info: Redefining \. on input line 717.
+LaTeX Info: Redefining \% on input line 717.
+[27]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\begingroup' on input line 749.
@@ -2871,12 +2865,12 @@ Package natbib Warning: Author undefined for citation`houMicroarrayBasedAnalysi
 sGene2015' 
 (natbib)                on page 28 on input line 751.
 
-[28]
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
 755.
 
+[28]
 
 LaTeX Warning: Reference `fig:microarreglos_ejemplo_cuantificacion_de_genes_por
 _tratamiento' on page 29 undefined on input line 757.
@@ -3011,15 +3005,15 @@ Package rerunfilecheck Info: File `0_Main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 66687 strings out of 476076
+ 66689 strings out of 476076
  125240,2848258 words of node,token memory allocated
- 2210 words of node memory still in use:
-   34 hlist, 2 vlist, 14 rule, 1 local_par, 16 glue, 5 kern, 1 penalty, 3 glyph,
- 217 attribute, 130 glue_spec, 109 attribute_list, 3 write, 24 pdf_literal, 8 pd
+ 2241 words of node memory still in use:
+   34 hlist, 4 vlist, 14 rule, 1 local_par, 17 glue, 5 kern, 1 penalty, 3 glyph,
+ 219 attribute, 130 glue_spec, 110 attribute_list, 3 write, 24 pdf_literal, 8 pd
 f_action, 24 pdf_colorstack nodes
-   avail lists: 1:1,2:2842,3:981,4:220,5:1164,6:116,7:8391,8:99,9:840,10:21,11:1
+   avail lists: 1:1,2:2839,3:981,4:222,5:1164,6:116,7:8390,8:99,9:838,10:21,11:1
 114,12:1
- 87437 multiletter control sequences out of 65536+600000
+ 87439 multiletter control sequences out of 65536+600000
  111 fonts using 12095647 bytes
  103i,24n,113p,2606b,1294s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf></usr/shar
@@ -3034,7 +3028,7 @@ nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 0_Main.pdf (41 pages, 2106710 bytes).
+Output written on 0_Main.pdf (41 pages, 2106655 bytes).
 
 PDF statistics: 685 PDF objects out of 1000 (max. 8388607)
  579 compressed objects within 6 object streams

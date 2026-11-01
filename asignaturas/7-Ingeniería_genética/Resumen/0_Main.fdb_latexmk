@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex 0_Main"] 1793501404.90805 "0_Main.aux" "0_Main.bbl" "0_Main" 1793502284.91579 0
+["bibtex 0_Main"] 1793556720.19896 "0_Main.aux" "0_Main.bbl" "0_Main" 1793556856.35409 0
   "./Main.bib" 1793486115.18039 26912 e0d1f0f2d9c5454fc77bacb033e54557 ""
   "/usr/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1775415801 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "0_Main.aux" 1793502283.95302 20154 2049f18b2b77253af3f41a7ae8b4a73d "lualatex"
+  "0_Main.aux" 1793556854.98015 20139 aee26ae8581e178e67e45ade4aa44a25 "lualatex"
   (generated)
   "0_Main.bbl"
   "0_Main.blg"
   (rewritten before read)
-["lualatex"] 1793502274.51255 "/home/darah/Documentos/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen/0_Main.tex" "0_Main.pdf" "0_Main" 1793502284.91685 0
+["lualatex"] 1793556841.14957 "/home/darah/Documentos/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen/0_Main.tex" "0_Main.pdf" "0_Main" 1793556856.35435 0
   "../../0-tex_resources/glosario_general.tex" 1793483018.99304 2309 7f7223e98af0bcee622d0068240f29cf ""
   "../../0-tex_resources/logo_upsin.png" 1778867970.62697 386081 192a5d399e668da3c073c3f974ed4d33 ""
   "../../0-tex_resources/secciones_complementarias.tex" 1793499687.30511 647 87820ab7fe4915bb4493fb6ac37b70d1 ""
@@ -25,7 +25,7 @@
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1790465304.03941 127314 7c5efae986e60281c7ad546cf8ed9a14 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1793486912.29548 28939 5e75e20bd9b62f085feefcc336b8a47b ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790638341.74601 443539 61843b3a453ad8767a5dd73dd397d25f ""
-  "/home/darah/Documentos/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen/0_Main.tex" 1793502274.11782 878 2244b03666940221b39da74a28adddb1 ""
+  "/home/darah/Documentos/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen/0_Main.tex" 1793556840.49429 878 2244b03666940221b39da74a28adddb1 ""
   "/home/darah/texmf/tex/latex/Classes/AsignaturaResumen.cls" 1793502108.62055 9122 866ade3828c1f5f3fc1bbee8a2a83096 ""
   "/home/darah/texmf/tex/latex/Packages/mychemfig.sty" 1789440855.52094 893 fcb2222ca4ef806c2e6612bb5b0708ee ""
   "/home/darah/texmf/tex/latex/Packages/myunits.sty" 1793479660.50876 721 7ce78c7387161adfe8fb2a4eddaf25b2 ""
@@ -416,17 +416,17 @@
   "02.tex" 1793492202.3768 579 f49c2d7e211a22d5cdf24e30788f2b10 ""
   "03.tex" 1793482611.55115 0 d41d8cd98f00b204e9800998ecf8427e ""
   "04.tex" 1793495550.14743 1898 61c3276cb12c317a156b12dfb810d76b ""
-  "05.tex" 1793502211.98149 58850 aa3e381ab44bb0287cf93afdccf955ad ""
+  "05.tex" 1793556838.64778 58894 cd1b94c6351fcb0008557c66c3d474a1 ""
   "06.tex" 1793482558.8562 0 d41d8cd98f00b204e9800998ecf8427e ""
   "07.tex" 1793482542.90691 0 d41d8cd98f00b204e9800998ecf8427e ""
   "08.tex" 1793482536.28978 0 d41d8cd98f00b204e9800998ecf8427e ""
   "0_Main.acr" 1793498069.37522 3086 0b02faf3b4e862764577fc3dbb524ba4 ""
-  "0_Main.aux" 1793502283.95302 20154 2049f18b2b77253af3f41a7ae8b4a73d "lualatex"
-  "0_Main.bbl" 1793501405.07149 4831 8c84e34f205e7fff549c07f7d388b389 "bibtex 0_Main"
+  "0_Main.aux" 1793556854.98015 20139 aee26ae8581e178e67e45ade4aa44a25 "lualatex"
+  "0_Main.bbl" 1793556721.16026 4831 8c84e34f205e7fff549c07f7d388b389 "bibtex 0_Main"
   "0_Main.gls" 1793498069.20086 971 0ae6c4cc25db23c0e4e74ad0ede3d9ca ""
-  "0_Main.out" 1793502283.95602 8603 f1b868f4b40d3ff139bf9872e7fb0cff "lualatex"
-  "0_Main.tex" 1793502274.11782 878 2244b03666940221b39da74a28adddb1 ""
-  "0_Main.toc" 1793502283.95702 4427 933f24b05c3f360b99f723bbfab4c834 "lualatex"
+  "0_Main.out" 1793556854.98515 8603 f1b868f4b40d3ff139bf9872e7fb0cff "lualatex"
+  "0_Main.tex" 1793556840.49429 878 2244b03666940221b39da74a28adddb1 ""
+  "0_Main.toc" 1793556854.98615 4427 44cd5e8ecc3b4b040e507e3718a4594d "lualatex"
   "images/0_tikzset_PCRs.tex" 1793383571.80814 214 1ed973a98c65606f5f8aab47ba17cdd8 ""
   "images/fig:creacion_de_microarreglos_in_situ.png" 1793222433.16044 61154 91a8d7d8cc8ec17eea0a8912032c1bbb ""
   "images/fig:esquema_de_dpcr.tex" 1792957892.63965 1102 93aadbdfb6289f429c831ba944ae7d2e ""
