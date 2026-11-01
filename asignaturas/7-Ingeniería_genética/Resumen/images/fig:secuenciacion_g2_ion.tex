@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN};
+\node[paso] (fragmentacion) at (extraccion) {Fragmentación del ADN};
+\node[paso] (adaptadores) at (fragmentacion) {Ligación de adaptadores};
+\node[paso] (emulsion) at (adaptadores) {PCR en microesferas};
+\node[paso] (chip) at (emulsion) {Deposición en chip de semiconductor con micropocillos};
+\node[paso] (protones) at (chip) {Secuenciación por detección de cambios de pH};
+\node[paso] (analisis) at (protones) {Lectura de la secuencia};
+
+\draw[flecha] (extraccion) -- (fragmentacion);
+\draw[flecha] (fragmentacion) -- (adaptadores);
+\draw[flecha] (adaptadores) -- (emulsion);
+\draw[flecha] (emulsion) -- (chip);
+\draw[flecha] (chip) -- (protones);
+\draw[flecha] (protones) -- (analisis);
+\end{tikzpicture}

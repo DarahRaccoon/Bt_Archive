@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN};
+\node[paso] (preparacion) at (extraccion) {Preparación de muestra a amplificar};
+\node[paso] (marcaje) at (preparacion) {Marcaje con fluoróforos};
+\node[paso] (deposito) at (marcaje) {Depósito de muestra en chip de amplificación};
+\node[paso, dashed, ultra thick] (amplificacion) at (deposito) {Amplificación};
+\node[paso] (lavado) at (amplificacion) {Lavado de secuencias no hibridadas};
+\node[paso] (visualizacion) at (lavado) {Visualización y análisis de resultados};
+
+\draw[flecha] (extraccion) -- (preparacion);
+\draw[flecha] (preparacion) -- (marcaje);
+\draw[flecha] (marcaje) -- (deposito);
+\draw[flecha] (deposito) -- (amplificacion);
+\draw[flecha] (amplificacion) -- (lavado);
+\draw[flecha] (lavado) -- (visualizacion);
+
+\node[primer paso, yshift=-3cm] (desnaturalizacion) at (amplificacion) {Desnaturalización};
+\node[paso] (hibridacion) at (desnaturalizacion) {Hibridación};
+\node[paso] (elongacion) at (hibridacion) {Elongación};
+
+\draw[dashed, ultra thick] (amplificacion) -- (desnaturalizacion);
+\draw[flecha] (desnaturalizacion) -- (hibridacion);
+\draw[flecha] (hibridacion) -- (elongacion);
+\draw[flecha] (elongacion.south) to[out=220,in=320] (desnaturalizacion.south);
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN};
+\node[paso] (circularizacion) at (extraccion) {Circularización con adaptadores SMRTbell};
+\node[paso] (zmw) at (circularizacion) {Inmovilización de polimerasa en pocillos ZMW};
+\node[paso] (tiempo_real) at (zmw) {Secuenciación en tiempo real (dNTPs marcados)};
+\node[paso] (deteccion) at (tiempo_real) {Detección de fluorescencia};
+\node[paso] (ccs) at (deteccion) {Generación de lecturas de consenso circular (CCS)};
+\node[paso] (analisis) at (ccs) {Lectura de la secuencia};
+
+\draw[flecha] (extraccion) -- (circularizacion);
+\draw[flecha] (circularizacion) -- (zmw);
+\draw[flecha] (zmw) -- (tiempo_real);
+\draw[flecha] (tiempo_real) -- (deteccion);
+\draw[flecha] (deteccion) -- (ccs);
+\draw[flecha] (ccs) -- (analisis);
+\end{tikzpicture}
