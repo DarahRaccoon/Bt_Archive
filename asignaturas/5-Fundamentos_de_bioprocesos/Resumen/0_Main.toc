@@ -1,0 +1,64 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {part}{I\hspace {1em}Introducción al desarrollo de bioprocesos}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Etapas del bioproceso e identificación de metabolitos}{2}{chapter.1}%
+\contentsline {section}{\numberline {1}Tipos de metabolitos}{2}{section.1.1}%
+\contentsline {section}{\numberline {2}Tipos de bioprocesos}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {2.1}Bioprocesos reactivos}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {2.2}Bioprocesos extractivos}{3}{subsection.1.2.2}%
+\contentsline {chapter}{\numberline {2}Técnicas básicas de recuperación de productos}{4}{chapter.2}%
+\contentsline {section}{\numberline {1}Etapas del Downstream}{4}{section.2.1}%
+\contentsline {section}{\numberline {2}Recuperación según el tipo de metabolito}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1}Bioprocesos con células vegetales, animales y enzimas}{5}{subsection.2.2.1}%
+\contentsline {chapter}{\numberline {3}Técnicas básicas de cuantificación de biomasa}{6}{chapter.3}%
+\contentsline {section}{\numberline {1}Técnicas de cuantificación de biomasa}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {1.1}Cuenta en placa}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {1.2}Cuenta en cámara}{6}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {1.3}Nefelometría (Turbidimetría)}{7}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {1.4}Gravimetría}{7}{subsection.3.1.4}%
+\contentsline {part}{II\hspace {1em}Estequiometría del crecimiento microbiano}{8}{part.2}%
+\contentsline {chapter}{\numberline {4}Estequiometría del crecimiento y balance elemental}{9}{chapter.4}%
+\contentsline {section}{\numberline {1}Composición elemental de los microorganismos}{9}{section.4.1}%
+\contentsline {section}{\numberline {2}Ejercicio 1 de balanceo de ecuaciones}{9}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Balance de electrones y grado de reducción}{13}{chapter.5}%
+\contentsline {section}{\numberline {1}Grados de reducción}{13}{section.5.1}%
+\contentsline {section}{\numberline {2}Cálculo de los grados de reducción}{13}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Formulación de medios de cultivo y relación C/N}{15}{chapter.6}%
+\contentsline {section}{\numberline {1}Ejercicio introductorio a formulación de medios}{16}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Predicción de rendimientos y coeficientes de rendimiento}{19}{chapter.7}%
+\contentsline {section}{\numberline {1}Predicción de rendimientos}{19}{section.7.1}%
+\contentsline {subsection}{\numberline {1.1}Rendimiento de biomasa respecto a sustrato ($Y_{X/S}$)}{19}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {1.2}Rendimiento de producto respecto a sustrato ($Y_{P/S}$)}{19}{subsection.7.1.2}%
+\contentsline {section}{\numberline {2}Coeficientes de rendimiento máximo teórico}{19}{section.7.2}%
+\contentsline {section}{\numberline {3}Coeficientes de rendimiento real}{20}{section.7.3}%
+\contentsline {part}{III\hspace {1em}Cinética del crecimiento microbiano}{21}{part.3}%
+\contentsline {chapter}{\numberline {8}Cinéticas de crecimiento y generación de producto}{22}{chapter.8}%
+\contentsline {section}{\numberline {1}Curvas de crecimiento bacteriano}{22}{section.8.1}%
+\contentsline {section}{\numberline {2}Crecimiento exponencial de microorganismos}{23}{section.8.2}%
+\contentsline {section}{\numberline {3}Tiempo de duplicación ($t_{d}$)}{25}{section.8.3}%
+\contentsline {section}{\numberline {4}Generaciones transcurridas ($n$)}{25}{section.8.4}%
+\contentsline {section}{\numberline {5}Cinética ($\mu $)}{26}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Modelado y cálculo de parámetros cinéticos}{27}{chapter.9}%
+\contentsline {section}{\numberline {1}Introducción al modelado cinético}{27}{section.9.1}%
+\contentsline {section}{\numberline {2}Modelos estructurados de predicción}{27}{section.9.2}%
+\contentsline {subsection}{\numberline {2.1}Características principales}{27}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {2.2}Ejemplo de modelo estructurado}{28}{subsection.9.2.2}%
+\contentsline {section}{\numberline {3}Modelos no estructurados de predicción}{28}{section.9.3}%
+\contentsline {subsection}{\numberline {3.1}Características principales}{28}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {3.2}Modelo de Monod}{28}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {3.3}Otros modelos no estructurados}{29}{subsection.9.3.3}%
+\contentsline {section}{\numberline {4}Parámetros cinéticos en sistemas de producción}{29}{section.9.4}%
+\contentsline {subsection}{\numberline {4.1}Cultivo en lote (Batch)}{29}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {4.2}Cultivo en lote alimentado (Fed-batch)}{29}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {4.3}Cultivo continuo}{30}{subsection.9.4.3}%
+\contentsline {section}{\numberline {5}Cálculo de parámetros cinéticos}{30}{section.9.5}%
+\contentsline {subsection}{\numberline {5.1}Velocidad específica de crecimiento ($\mu $)}{30}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {5.2}Rendimientos}{30}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {5.3}Velocidades específicas}{30}{subsection.9.5.3}%
+\contentsline {subsection}{\numberline {5.4}Determinación de $K_S$ y $\mu _{max}$}{30}{subsection.9.5.4}%
+\contentsline {section}{\numberline {6}Estado estacionario y pseudoestacionario}{30}{section.9.6}%
+\contentsline {subsection}{\numberline {6.1}Estado estacionario}{30}{subsection.9.6.1}%
+\contentsline {subsection}{\numberline {6.2}Estado pseudoestacionario}{31}{subsection.9.6.2}%
+\contentsline {section}{\numberline {7}Ejercicio de aplicación}{31}{section.9.7}%
+\contentsline {section}{\numberline {8}Simulación de bioprocesos}{32}{section.9.8}%
+\contentsline {subsection}{\numberline {8.1}Elementos de una simulación}{32}{subsection.9.8.1}%
+\contentsline {chapter}{Bibliografía}{33}{appendix*.9}%

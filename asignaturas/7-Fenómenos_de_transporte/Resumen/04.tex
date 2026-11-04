@@ -1,0 +1,392 @@
+\ifx\ISMAIN\undefined
+    \documentclass{AsignaturaResumen}
+    \SetTitulo{Fenómenos de transporte}
+    \input{../../0-tex_resources/glosario_general}
+    \begin{document}
+    \chapter{Transporte de calor}
+\fi
+
+% Introducción
+
+%\section{Tipos de mecanismos de transferencia de calor}
+%\section{Ley de Fourier y flujo de calor ($\hat{Q}$)}
+%\section{Conductividad térmica ($k$)}
+%\section{Coeficiente de transmisión térmica ($U$)}
+%\section{Factor de ensuciamiento}
+
+%\section{Ecuaciones de diseño para sistemas de transmisión de calor}
+
+\section{Balance de energía}
+
+Los balances de energía se utilizan para calcular el flujo de calor ($\hat{Q}$) y todas las temperaturas de entrada y salida para calcular la diferencia de temperaturas ($\Delta T$). En condiciones de estado estacionario ($\frac{\Delta\epsilon}{\Delta t} = 0$) y en ausencia de trabajo mecánico ($W_{s} = 0$), la ecuación de balance de energía es:
+
+\begin{equation}
+    (\hat{M_{i}} \cdot h_{i}) - (\hat{M_{o}} \cdot h_{o}) - \hat{Q} = 0
+\end{equation}
+
+Aquí $\hat{M_{i}}$ es el caudal de entrada, y $\hat{M_{o}}$ es el caudal de salida, mientras que $h_{i}$ es la entalpía de la corriente de entrada y $h_{o}$ es la entalpía de la corriente de salida. Además, $\hat{Q}$ es la velocidad de eliminación del sistema. 
+
+La ecuación anterior puede aplicarse para cada líquido por separado en el intercambiador de calor. Como el caudal másico es el mismo en la entrada que en la salida, se puede definir la siguiente ecuación para líquidos calientes:
+
+\begin{equation}
+    \hat{M_{h}} (h_{hi} - h_{ho}) - \hat{Q_{h}} = 0
+\end{equation}
+
+Aquí el subíndice $h$ se refiere al líquido caliente, por \textit{hot} en inglés. Por otro lado, para líquidos frios tendríamos la siguiente ecuación:
+
+\begin{equation}
+     \hat{M_{c}} (h_{co} - h_{ci}) - \hat{Q_{c}} = 0
+\end{equation}
+
+Aquí el subíndice $c$ se refiere al líquido helado, por \textit{cold} en inglés.
+
+Cuando no existen pérdidas de calor en el intercambiador, la corriente fria toma todo el calor retirado de la corriente caliente, por lo que:
+
+\begin{equation}
+    \hat{Q_{h}} = \hat{Q_{c}} = \hat{Q} \quad\therefore\quad \hat{M_{h}} (h_{hi} - h_{ho}) = \hat{M_{h}} (h_{ho} - h_{hi}) = \hat{Q}
+\end{equation}  
+
+Cuando solamente se intercambia calor sensible entre fluidos, las diferencias de entalpía de la ecuación anterior pueden expresarse en términos de calor específico ($C_{p}$), y de la variación de temperaturas para cada fluido. Si puede suponerse que $C_{p}$ es constante en el intervalo de temperaturas del intercambiador, la ecuación es:
+
+\begin{equation}\label{eq:eliminacion_de_calor}
+    \hat{M_{h}} \cdot C_{ph} (T_{hi} - T_{ho}) = \hat{M_{c}} \cdot C_{pc} (T_{co} - T_{ci}) = \hat{Q}
+\end{equation}
+
+\resumebox{ejercicio}{Cálculo de velocidad de transmisión de calor}{\footnotesize
+    Se enfría un medio nutriente caliente y esterilizado en un intercambiador de calor de tubos concéntricos antes de utilizarse en una fermentación. El medio nutriente que abandona el esterilizador a \qty{121}{\degreeCelsius} entra a un intercambiador con un caudal de \qty{10}{\m\cubed\per\hour}. La temperatura que se desea alcanzar a la salida es de \qty{30}{\degreeCelsius}. El calor del medio se utiliza para aumentar la temperatura de \qty{25}{\m\cubed\per\hour} de agua inicialmente a \qty{15}{\degreeCelsius}. El sistema opera en estado estacionario. Suponer que el medio de cultivo tiene las siguientes propiedades del agua:
+    \begin{itemize}
+        \item $\rho = \qty{1000}{\kg\per\m\cubed}$
+        \item $C_{p} = \qty{75.4}{\J\per\mole\per\degreeCelsius}$
+    \end{itemize}
+    Responde:
+    \begin{enumerate}
+        \item ¿Qué velocidad de transmisión de calor se necesita?
+        \item Calcular la temperatura final del agua de refrigeración a la salida del intercambiador de calor
+    \end{enumerate}
+}
+
+La \autoref{eq:eliminacion_de_calor} puede aplicarse a la eliminación de calor en un reactor con el fin de controlar su temperatura. Si la energía se absorbe para un fluido frio en forma de calor sensible, la ecuación de balance de energía es:
+
+\begin{equation}
+    \hat{M_{c}} \cdot C_{pc} (T_{ci} - T_{co}) = \hat{Q}
+\end{equation}
+
+El valor de $\hat{Q}$ puede --- considerando todas las fuentes y suministros de calor al sistema de fermentación:
+
+\begin{equation}\label{eq:q_en_estado_estacionario}
+    \frac{\mathrm{d}\epsilon}{\mathrm{dt}} = -\Delta H_{\mathrm{rxn}} - \hat{M_{v}} \cdot \Delta h_{v} - \hat{Q} + \hat{W_{s}}
+\end{equation}
+
+Donde $\Delta H_{\mathrm{rxn}}$ es la velocidad de absorción o evolución de calor debida a la reacción metabólica. Este término se multiplica por un signo dado en base al tipo de proceso que esté ocurriendo:
+    \begin{itemize}
+        \item (+) = Endotérmico
+        \item (-) = Exotérmico
+    \end{itemize}
+    Este valor se puede calcular de la siguiente manera:
+
+\begin{equation}
+    \Delta H_{\mathrm{rxn}} = C_{g} \cdot v_{\text{C(r)}} \cdot V_{\text{Contenedor}}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $C_{g}$ es el calor generado por cada mol que reacciona
+    \item $v_{\text{C(r)}}$ es la velocidad con que se consume el reactivo
+    \item $V_{\text{Contenedor}}$ es el volumen del contenedor en que sucede la reacción
+\end{itemize}
+
+El resto de valores de la \autoref{eq:q_en_estado_estacionario} son:
+
+\begin{itemize}
+    \item $\hat{M_{v}}$ es el caudal másico del líquido evaporado que abandona el sistema.
+    \item $\Delta h_{v}$ es el caudal latenlte de evaporación.
+    \item $\hat{W_{s}}$ es la velocidad de trabajo mecánico realizado en el sistema.
+\end{itemize}
+
+Si el proceso sucede en estado estacionario la ecuación es:
+
+\begin{equation}\label{eq:estado_estacionario}
+    \diff{\epsilon}{t} = -\Delta H_{\mathrm{rxn}} - \hat{M_{v}} \cdot \Delta h_{v} + \hat{W_{s}}
+\end{equation}
+
+Esta ecuación también puede representar a $\hat{Q}$:
+
+\begin{equation}\label{eq:q}
+    \hat{Q} = -\Delta H_{\mathrm{rxn}} - \hat{M_{v}} \cdot \Delta h_{v} + \hat{W_{s}}
+\end{equation}
+
+En todas las ecuaciones previas (\ref{eq:q_en_estado_estacionario}, \ref{eq:estado_estacionario}, \ref{eq:q}), si el volumen del reactor es mayor a \qty{10}{\m\cubed}, el término $(\hat{M_{v}} \cdot \Delta h_{v})$ se desprecia y no se toma en cuenta, quedando:
+
+\begin{equation}\label{eq:q_en_reactores_grandes}
+    \hat{Q} = -\Delta H_{\mathrm{rxn}} + \hat{W_{s}}
+\end{equation}
+
+\resumebox{ejercicio}{Cálculo de temperatura final}{\footnotesize
+    Un biorreactor de \qty{150}{\m\cubed} opera a \qty{35}{\degreeCelsius} para producir una biomasa fúngica a partir de glucosa. La velocidad de consumo de oxígeno por el cultivo es de \qty{1.5}{\kg\per\m\cubed\per\hour}. El agitador disipa calor a una velocidad de \qty{1}{\kilo\watt\per\m\cubed}. Se dispone de \qty{60}{\m\cubed\per\hour} de agua de refrigeración, procedente de un rio ceracno a \qty{10}{\degreeCelsius}, lacual pasa a través de un serpentín interno colocado en el tanque de fermentación. Si el sistema opera en estado estacionario y cada mol de \ce{O2} consumido desprende \qty{460}{\kilo\J\per\mole} de calor, ¿cuál es la temperatura de salida del agua de refrigeración?
+}
+
+
+\section{Cálculo de los coeficientes de transmisión de calor}
+
+El coeficiente de transmisión de calor (Número de Nussett, o $N_{u}$) puede calcularse como una combinación de los coeficientes individuales de transmisión de calor, de las propiedades de la pared de separación de los factores ensuciamiento. Un aumento del nivel de turbulencia y una disminuación de la viscosidad reducirá el espesor de la capa del líuido y, por tanto, aumentará el coeficiente de transmisión de calor.
+
+La forma general de las correlaciones para los coeficientes de transmisión de calor es:
+
+\begin{equation}
+    N_{u} = f \cdot [N_{Re}, P_{r}, G_{r}, \frac{L}{D}, \frac{\mu_{b}}{\mu_{w}}]
+\end{equation}
+
+El primer término ($N_{u}$) se define como:
+
+\begin{equation}
+    N_{u} = \frac{h \cdot D}{k_fb}
+\end{equation}
+
+Aquí el $N_{Re}$ se calcula de manera usual (\autoref{eq:numero_de_reynolds}). El $N_{Rei}$ es igualmente el número de Reynolds, pero específicamente del rodete, el cual se calcula como:
+
+\begin{equation}
+    N_{Rei} = \frac{N_{i} \cdot D_{i}^{2} \cdot \rho}{\mu}
+\end{equation}
+
+Donde $N_{i}$ representa la velocidad de giro del rodete, mientras que $D_{i}$ es su diámetro. Además, $P_{r}$ representa la relación entre transferencia de cantidad de movimiento y la transmisión de calor, y se calcula con la siguiente ecuación:
+
+\begin{equation}
+    P_{r} = \frac{cp \cdot \mu_{b}}{k_{fb}}
+\end{equation}
+
+Donde $k_{fb}$ es la conductividad térmica del fluido. Por otro lado, $G_{r}$, o número de Grashof, representa la relación entre las fuerzas viscosas y la de gravitación, y se calcula como:
+
+\begin{equation}
+    G_{r} = \frac{D^{3} \cdot g \cdot \rho^{2} \cdot \beta \cdot \Delta T}{\mu^{2}}
+\end{equation}
+
+La forma de la correlación utilizada para calcular $N_{u}$, y por tanto, de $h$, depende de las configuraciones del equipo de transferencia de calor, las condicions de flujo y de otros factores.
+
+Las aplicaciones de transferencia de calor son:
+
+\begin{itemize}
+    \item Flujos de calor hacia o desde fluidos que circulan por el \emph{interior} de tuberías sin cambio de fase.
+    \item Flujos de calor hacia o desde fluidos que circulan por el \emph{exterior} de tuberías sin cambio de fase
+    \item Flujos de calor desde fluidos condensados
+    \item Flujos de calor haca líquidos en ebullición
+\end{itemize}
+
+Para calcular $h_{h}$ y $h_{c}$ se utilizan diferentes ecuaciones dependiendo de la geometría del flujo de los fluidos caliente y frio.
+
+\section{Flujo por el interior de tuberías sin cambio de fase}
+
+Se puede estimar mediante la ecuación:
+
+\begin{equation}
+    N_{u} = 0.023 \cdot N_{Re}^{0.8} \cdot P_{r}^{0.4} 
+\end{equation}
+
+Esta ecuación es válida para el calentamiento como enfriamiento de líquidos con viscosidades similares a la del agua, y se aplica bajo las siguientes condiciones:
+
+\begin{itemize}
+    \item $\num{d4}    \leq N_{Re} \leq \num{1.2d5}$
+    \item $0.7         \leq P_{r}  \leq 120$
+    \item $\frac{L}{D} \geq 60$
+\end{itemize}
+
+\resumebox{ejercicio}{Cálculo de coeficiente de transmisión de calor}{\footnotesize
+    Se utiliza un intercambiador de carcasas y tubo de paso único para calentara una disolución salina diluida uilizada en la cromatografía de una proteína a gran escala. Se pasan \qty{25.5}{\m\cubed\per\hour} de la disolución a través de 42 tubos paralelos situados en el interior del intercambiador. El diámetro de los tubos es de \qty{1.5}{\cm}, la longitud de la tubería es de \qty{4}{\m}, la viscosidad de la disolución salina es de \qty{1d-3}{\kg\per\m\per\s}, la densidad es de \qty{1010}{\kg\per\m\cubed}, el calor específico medio es de \qty{4}{\J\per\watt\per\degreeCelsius}, y la conductividad térmica es de \qty{0.64}{\watt\per\m\per\degreeCelsius}. Calcular el coeficiente de transmisión de calor ($h$)
+}
+
+Para líquidos más viscosos existe una gran diferencia entre la viscosidad presente en el seno del fluido y la viscosidad del fluido cercano a la pared debido a la variación de temperatura a lo largo de la capa límite térmica, por lo que la ecuación sufre una modificación que incluye el cambio de viscosidad:
+
+\begin{equation}
+    N_{u} = 0.027 \cdot N_{Re}^{0.8} \cdot P_{r}^{0.33} \cdot (\frac{\mu_{b}}{\mu_{w}})
+\end{equation}
+
+Cuando el flujo es laminar, las ecuaciones anteriores no aplican. En líquidos con $N_{Re}$ menor a ---, el ascens del fluido y la convección natural juegan un papel muy importante en la transmisión de calor.
+
+\section{Líquidos agitados}
+
+El coeficiente de transferencia de calor en tanques agitados depende del grado de agitación de las propiedades del fluido. Cuando se transmite calor hacia o desde un serpentín helicoidal inmerso en el tanque, $h$ puede calcularse mediante:
+
+\begin{equation}
+    N_{u} = 0.87 \cdot N_{Rei}^{0.62} \cdot P_{r}^{0.33} \cdot (\frac{\mu_{b}}{\mu_{w}})^{0.14}
+\end{equation}
+
+Si en vez de utilizar un serpentín se usa una camisa, la ecuación se modifica ligeramente:
+
+\begin{equation}
+    N_{u} = 0.36 \cdot N_{Rei}^{0.67} \cdot P_{r}^{0.33} \cdot (\frac{\mu_{b}}{\mu_{w}})^{0.14}
+\end{equation}
+
+\resumebox{ejercicio}{Cálculo de longitud en base a coeficientes de calor}{\footnotesize
+    Un fermentador agitado de \qty{5}{\m} de diámetro contiene un serpentín interno para la transmisión de calor. El fermentador contiene un rodete de turbina para la mezcla de \qty{1.8}{\m} de diámetro y opera a \qty{60}{\rpm}. El caldo de transferencia tiene las siguientes propiedades:
+    \begin{itemize}
+        \item $\mu$ = \qty{5d-3}{\kg\per\m\per\s}
+        \item $\rho$ = \qty{1000}{\kg\per\m\cubed}
+        \item $C_{p}$ = \qty{4.2}{\kilo\J\per\kg\per\degreeCelsius}
+        \item $k_{fb}$ = \qty{0.7}{\watt\per\m\per\degreeCelsius}
+    \end{itemize}
+    Despreciando los cambios de la viscosidad en la pared del serpentín ($\frac{\mu_{b}}{\mu_{w}}$ se desprecia en los cálculos), calcular el coeficiente de transferencia de calor ($h$)
+}
+
+\resumebox{ejercicio}{}{\footnotesize
+    Un fermentador que se utiliza para la produción de un antibiótico debe mantenerse a \qty{27}{\degreeCelsius}. Después de considerar la demanda de oxígeno del organismo u la disipación de calor del agitador, se calcula que la velocidad máxima de transmisión de calor es de \qty{550}{\kilo\watt}. Se dispone de agua de refrigeración a \qty{10}{\degreeCelsius}, y la temperatura de salida es de \qty{25}{\degreeCelsius}. El coeficiente de transmisión de calor para el caldo de fermentación es de \qty{2150}{\watt\per\m\squared\per\degreeCelsius}. El coeficiente de transmisión de calor para el agua de refrigeración es de\qty{14000}{\watt\per\m\squared\per\degreeCelsius}. Se propone instalar un serpentín de refrigeración helicoidal dentro del fermentador. El diámetro exterior de la tubería es de \qty{8}{\cm}. El espesor es de \qty{5}{\mm}, y la conductividad térmica del acero es \qty{60}{\watt\per\m\per\degreeCelsius}. Se espera un factor de ensuciamiento medio en el interior de \qty{8500}{\watt\per\m\squared\per\degreeCelsius}, mientras que la superficie del serpentín del lado del fermentador se mantiene relativamente limpio ($\frac{1}{h_{h}}$ se desprecia). ¿Qué longitud se necesita?
+}
+
+
+
+
+
+
+
+
+%\section{Difusividad}
+%\section{Teoría de la doble película}
+
+% -------------------------------------------------------------------- %
+
+\section{Respuestas de ejercicios}
+
+\resumebox{respuesta}{Cálculo de velocidad de transmisión de calor}{\footnotesize
+    \begin{gather*}
+        \hat{M_{h}} = \qty{10}{\m\cubed\per\hour} \cdot \qty{1000}{\kg\per\m\cubed} \div \qty{3600}{\s\per\hour} = \qty{2.77}{\kg\per\s}
+        \\\\
+        \hat{M_{c}} = \qty{25}{\m\cubed\per\hour} \cdot \qty{1000}{\kg\per\m\cubed} \div \qty{3600}{\s\per\hour} = \qty{6.94}{\kg\per\s}
+        \\\\
+        C_{pc} = C_{ph}
+        \\\\
+        C_{p} = \qty{75.4}{\J\per\mole\per\degreeCelsius} \div \qty{18}{\g\per\mole} = \qty{4.18}{\J\per\g\per\degreeCelsius} = \qty{4188.8}{\J\per\kg\per\degreeCelsius}
+        \\\\
+        \hat{Q} = \hat{M_{h}} \cdot C_{p} (T_{hi} - T_{ho}) \quad\longrightarrow\quad \hat{Q} = \qty{2.77}{\kg\per\s} \cdot \qty{4188.8}{\J\per\kg\per\degreeCelsius} (\qty{121}{\degreeCelsius} - \qty{30}{\degreeCelsius}) = \qty{1029188.16}{\J\per\s}
+        \\\\
+        \hat{Q} = \hat{M_{h}} \cdot C_{p} (T_{hi} - T_{ho}) \quad\longrightarrow\quad T_{co} = \frac{\hat{Q}}{\hat{M_{c}} \cdot C_{p}} + T_{ci}
+        \\\\
+        T_{co} = \frac{\hat{Q}}{\hat{M_{c}} \cdot C_{p}} + T_{ci} \quad\longrightarrow\quad T_{co} = \frac{\qty{1029188.16}{\J\per\s}}{\qty{6.94}{\kg\per\s} \cdot \qty{4188.8}{\J\per\kg\per\degreeCelsius}} + \qty{15}{\degreeCelsius} = \qty{50.4}{\degreeCelsius}
+    \end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de temperatura final}{\footnotesize
+    Datos de inicio y conversiones:
+    \begin{itemize}
+        \item $\rho = \qty{1000}{\kg\per\m\cubed}$
+        \item $C_{p} = \qty{75.4}{\J\per\mole\per\degreeCelsius} = \qty{4188.8}{\J\per\kg\per\degreeCelsius}$
+        \item $V = \qty{150}{\m\cubed}$
+        \item $T_{b} = \qty{35}{\degreeCelsius}$
+        \item $V_{ag} = \qty{1}{\kilo\watt\per\m\cubed}$
+        \item $V_{C(\ce{O2})} = \qty{1.5}{\kg\per\m\cubed\per\hour} = \qty{4.16d-4}{kg\per\m\cubed\per\s}$
+        \item $Q_{w} = \qty{60}{\m\cubed\per\hour} = \qty{0.016}{\m\cubed\per\s}$
+        \item $T_{ci} = \qty{10}{\degreeCelsius}$
+    \end{itemize}
+    Procedimiento:
+    \begin{gather*}
+        \Delta H_{\mathrm{rxn}} = \qty{14375}{\kilo\J\per\kg} \cdot \qty{4.16}{\kg\per\m\cubed\per\s} \cdot \qty{150}{\m\cubed} = \qty{897}{\kilo\J\per\s} = \qty{897}{\kilo\watt}
+        \\\\
+        C_{g} = \qty{460}{\kilo\J\per\mole} \div \qty{36}{\g\per\mole} \cdot \qty{1000}{\g\per\kg} = \qty{14375}{\kilo\J\per\kg}
+        \\\\
+        W_{s} = \qty{1}{\kilo\watt\per\m\cubed} \cdot \qty{150}{\m\cubed} = \qty{150}{\kilo\watt}
+        \\\\
+        \hat{Q} = -(-\qty{897}{\kilo\watt}) \cdot \qty{150}{\kilo\watt} = \qty{1047}{\kilo\watt}
+        \\\\
+        \hat{Q} = \qty{1047}{\kilo\watt} = \qty{1047000}{\J}
+        \\\\
+        \hat{M_{c}} = \hat{Q_{w}} \cdot \rho = \qty{0.016}{\m\cubed\per\s} \cdot \qty{1000}{\kg\per\m\cubed} = \qty{16.6}{\kg\per\s} 
+        \\\\    
+        \hat{M_{c}} \cdot C_{pc} \cdot (T_{co} - T_{ci}) = \hat{Q} \quad\longrightarrow\quad T_{co} = \frac{\hat{Q}}{\hat{M_{c} \cdot C_{pc}}} + T_{ci}
+        \\\\
+        T_{co} = \frac{\qty{1047000}{\J}}{\qty{16.6}{\kg\per\s} \cdot \qty{4188
+        8}{\J\per\kg\per\degreeCelsius}} + \qty{10}{\degreeCelsius} = \qty{25}{\degreeCelsius}
+    \end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de coeficiente de transmisión de calor}{\footnotesize
+    Datos de inicio y conversiones:
+    \begin{itemize}
+        \item $\text{Tuberías} = 42$
+        \item $D = \qty{1.5}{\cm} = \qty{0.015}{\m}$
+        \item $L = \qty{4}{\m}$
+        \item $Q = \qty{25.5}{\m\cubed\per\hour} = \qty{7.083d-3}{\m\cubed\per\s}$
+        \item $\mu = \qty{1d-3}{\kg\per\m\per\s}$
+        \item $\rho = \qty{1010}{\kg\per\m\cubed}$
+        \item $C_{p} = \qty{4}{\kilo\J\per\kg\per\degreeCelsius} = \qty{4000}{\J\per\kg\per\degreeCelsius}$
+        \item $k_{fb} = \qty{0.64}{\watt\per\m\per\degreeCelsius}$
+    \end{itemize}
+    Procedimiento:
+    \begin{gather*}
+        V = \frac{Q}{\text{Tuberías} \cdot \pi \cdot (\frac{D}{2})^{2}} = \frac{\qty{7.083d-3}{\m\cubed\per\s}}{42 \cdot \pi \cdot (\frac{\qty{0.015}{\m}}{2})^{2}} = \qty{0.9543}{\m\per\s}
+        \\\\
+        \frac{L}{D} = \frac{\qty{4}{\m}}{\qty{0.015}{\m}} = 266.6
+        \\\\
+        N_{Re} = \frac{D \cdot V \cdot \rho}{\mu} = \frac{\qty{0.015}{\m} \cdot \qty{0.9543}{\m\per\s} \cdot \qty{1010}{\kg\per\m\cubed}}{\qty{1d-3}{\kg\per\m\per\s}} = 14457.645
+        \\\\
+        P_{r} = \frac{C_{p} \cdot \mu}{k_{fb}} = \frac{\qty{4000}{\J\per\kg\per\degreeCelsius} \cdot \qty{1d-3}{\kg\per\m\per\s}}{\qty{0.64}{\watt\per\m\per\degreeCelsius}} = 6.25
+        \\\\    
+        N_{u} = 0.023 \cdot N_{Re}^{0.8} \cdot P_{r}^{0.4} = 0.023 \cdot (14457.645)^{0.8} \cdot (6.25)^{0.4} = 101.8962
+        \\\\
+        N_{u} = \frac{h \cdot D}{k_{fb}} \quad\longrightarrow\quad h = \frac{N_{u} \cdot k_{fb}}{D}
+        \\\\
+        h = \frac{101.8962 \cdot \qty{0.64}{\watt\per\m\per\degreeCelsius}}{\qty{0.015}{\m}} = \qty{4347.5712}{\watt\per\m\squared\per\degreeCelsius}
+    \end{gather*}
+}
+
+\resumebox{respuesta}{Cálculo de longitud en base a coeficientes de calor}{\footnotesize
+    Datos y conversiones:
+    \begin{itemize}
+        \item $\mu$ = \qty{5d-3}{\kg\per\m\per\s}
+        \item $\rho$ = \qty{1000}{\kg\per\m\cubed}
+        \item $C_{p}$ = \qty{4.2}{\kilo\J\per\kg\per\degreeCelsius} = \qty{42000}{\J\per\kg\per\degreeCelsius}
+        \item $k_{fb}$ = \qty{0.7}{\watt\per\m\per\degreeCelsius}
+        \item $D$ = \qty{5}{\m}
+        \item $N_{i}$ = \qty{60}{\rpm} = \qty{1}{\per\s}
+        \item $D_{T}$ = \qty{1.8}{\m}
+    \end{itemize}
+    Procedimiento:
+    \begin{gather*}
+        N_{Rei} = \frac{N_{i} \cdot D_{i} \cdot \rho}{\mu} = \frac{\qty{1}{\per\s} \cdot (\qty{1.8}{\m})^{2} \cdot \qty{1000}{\kg\per\m\cubed}}{\qty{5d-3}{\kg\per\m\per\s}} = \num{6.48d5}
+        \\\\
+        P_{r} = \frac{cp \cdot \mu_{b}}{k_{fb}} = \frac{\qty{4200}{\J\per\kg\per\degreeCelsius} \cdot \qty{5d-3}{\kg\per\m\per\s}}{\qty{0.7}{\J\per\m\per\s\per\degreeCelsius}} = \num{28.5714}
+        \\\\
+        N_{u} = N_{u} = 0.87 \cdot N_{Rei}^{0.62} \cdot P_{r}^{0.33} \cdot (\frac{\mu_{b}}{\mu_{w}})^{0.14} = 0.87 \num{6.48d5}\cdot ^{0.62} \cdot \num{28.5714}^{0.33} = \num{10547.588}
+        \\\\
+        h = \frac{N_{u} \cdot k_{fb}}{D} = \frac{\num{10547.588 } \cdot\qty{0.7}{\J\per\m\per\s\per\degreeCelsius}}{\qty{5}{\m}} = \qty{1476.6625}{\J\per\s\per\degreeCelsius}
+    \end{gather*}
+}
+
+\resumebox{respuesta}{}{\footnotesize
+    Datos y conversiones:
+    \begin{itemize}
+        \item $T_{1} = \qty{10}{\degreeCelsius}$
+        \item $T_{2} = \qty{25}{\degreeCelsius}$
+        \item $T_{f} = \qty{27}{\degreeCelsius}$
+        \item $\hat{Q} = \qty{550}{\kilo\watt} = \qty{5.5d5}{\watt}$
+        \item $h_{fh} = \qty{2150}{\watt\per\m\squared\per\degreeCelsius}$
+        \item $h_{c} = \qty{14000}{\watt\per\m\squared\per\degreeCelsius}$
+        \item $D = \qty{8}{\cm} = \qty{0.08}{\m}$
+        \item $B = \qty{5}{\mm} = \qty{5d-4}{\m}$
+        \item $k = \qty{60}{\watt\per\m\per\degreeCelsius}$
+        \item $h_{hc} = \qty{8500}{\watt\per\m\squared\per\degreeCelsius}$
+    \end{itemize}
+    Nuevas fórmulas de apoyo:
+    \begin{gather*}
+        A = 2\pi \cdot R \cdot L \quad\longrightarrow\quad L = \frac{A}{2\pi \cdot R}
+        \\\\
+        \hat{Q} = U \cdot A \cdot \Delta T \quad\longrightarrow\quad A = \frac{\hat{Q}}{U \cdot \Delta T}
+        \\\\
+        \frac{1}{U} = \frac{1}{h_{fh}} + \textcolor{red}{\frac{1}{h_{h}}} + \frac{B}{k} + \frac{1}{h_{c}} + \frac{1}{h_{hc}}
+        \\\\
+        \Delta T = \frac{2T_{f} - (T_{1} + T_{2})}{2}
+    \end{gather*}
+    Procedimiento:
+    \begin{gather*}
+        \frac{1}{U} = \frac{1}{\qty{2150}{\watt\per\m\squared\per\degreeCelsius}} + \frac{\qty{5d-4}{m}}{\qty{60}{\watt\per\m\per\degreeCelsius}} + \frac{1}{\qty{1.4d-4}{\watt\per\m\squared\per\degreeCelsius}} + \frac{1}{\qty{8500}{\watt\per\m\squared\per\degreeCelsius}} = \frac{1}{\qty{7.375d-4}{\watt\per\m\squared\per\degreeCelsius}}
+        \\\\
+        U = \frac{1}{\frac{1}{\qty{7.375d-4}{\watt\per\m\squared\per\degreeCelsius}}} = \qty{1355.93}{\watt\per\m\squared\per\degreeCelsius}
+        \\\\
+        \Delta T = \frac{2 \cdot \qty{27}{\degreeCelsius} - (\qty{10}{\degreeCelsius} + \qty{25}{\degreeCelsius})}{2} = \qty{9.5}{\degreeCelsius}
+        \\\\
+        A = \frac{\qty{5.5d5}{\watt}}{\qty{1355.93}{\watt\per\m\squared\per\degreeCelsius} \cdot \qty{9.5}{\degreeCelsius}} = \qty{42.7}{\m\squared} 
+        \\\\
+        L = \frac{\qty{42.7}{\m\squared}}{2\pi \cdot \frac{\qty{0.08}{\m\squared}}{2}} = \qty{169.8979}{\m} 
+    \end{gather*}
+}
+
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi

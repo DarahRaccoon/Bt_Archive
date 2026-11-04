@@ -36,7 +36,9 @@ Los \textbf{modelos estructurados} consideran la composición intracelular de la
 \end{itemize}
 
 \subsection{Ejemplo de modelo estructurado}
+
 Un modelo estructurado simple podría dividir la biomasa en:
+
 \begin{enumerate}
     \item Componente estructural (pared celular, membrana)
     \item Componente metabólico (enzimas, ARN)
@@ -190,8 +192,9 @@ Se puede realizar mediante:
 
 \textbf{Problema:} Se tienen los siguientes datos de un cultivo en lote de \textit{E. coli} en medio con glucosa como sustrato limitante:
 
-\begin{table}[H]
-    \centering
+\begin{table}\centering
+    \caption{Datos de cultivo en lote}
+    \label{tab:datos_cultivo}
     \begin{tabular}{c|c|c|c}
         \textbf{Tiempo (h)} & \textbf{Biomasa (g/L)} & \textbf{Sustrato (g/L)} & \textbf{Producto (g/L)} \\
         \hline
@@ -205,11 +208,10 @@ Se puede realizar mediante:
         7 & 4.9 & 0.5 & 2.5 \\
         8 & 4.9 & 0.2 & 2.6 \\
     \end{tabular}
-    \caption{Datos de cultivo en lote}
-    \label{tab:datos_cultivo}
 \end{table}
 
 Calcular:
+
 \begin{enumerate}
     \item La velocidad específica de crecimiento máxima ($\mu_{max}$) durante la fase exponencial.
     \item Los rendimientos $Y_{X/S}$ y $Y_{P/S}$.

@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN};
+\node[paso] (construccion) at (extraccion) {``Construcción'' de fragmentos (ddNTPs marcados)};
+\node[paso] (electroforesis) at (construccion) {Electroforesis (capilar o en gel de poliacrilamida)};
+\node[paso] (analisis) at (electroforesis) {Lectura de la secuencia};
+
+\draw[flecha] (extraccion) -- (construccion);
+\draw[flecha] (construccion) -- (electroforesis);
+\draw[flecha] (electroforesis) -- (analisis);
+\end{tikzpicture}

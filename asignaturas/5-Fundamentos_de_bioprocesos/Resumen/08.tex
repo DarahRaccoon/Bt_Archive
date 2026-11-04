@@ -21,11 +21,22 @@ El crecimiento típico de un microorganismo se describe en la conocida curva de 
     \item Fase de muerte: Aquí la velocidad de muerte es ahora mayor a la de reproducción.
 \end{enumerate}
 
-    \input{images/fig:curva_crecimiento_bacteriano}
+\begin{figure}\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:curva_crecimiento_bacteriano}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Ejemplo de curva de crecimiento bacteriano}
+    \label{fig:curva_crecimiento_bacteriano}
+\end{figure}
 
 En medios con múltiples sustratos, algunos microorganismos pueden mostrar múltiples fases logarítmicas, cada una con una fase estacionaria intermedia, en la cual el microorganismo realiza una serie de adaptaciones en su maquinaria enzimática para así poder degradar el nuevo sustrato. Un ejemplo de esto se muestra en la \autoref{fig:curva_diauxica}.
+    
+\begin{figure}\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:curva_diauxica}}
+    \rule{\linewidth}{0.5pt}
+    \caption[Ejemplo de curva diáuxica]{Ejemplo de curva diáuxica. Se observa una correspondencia entre el consumo de glucosa y la primer fase log, así como del consumo de lactosa y la segunda fase log, así como una fase estacionaria intermedia, esto en el proceso para adaptar la maquinaria enzimática del microorganismo para poder degradar lactosa.}
+    \label{fig:curva_diauxica}
+\end{figure}
 
-    \input{images/fig:curva_diauxica}
 
 \section{Crecimiento exponencial de microorganismos}
 
@@ -33,10 +44,9 @@ Todas estas curvas son al final del día una representación gráfica del ritmo 
 
 Así pues, el crecimiento se puede representar con $2^{n}$, siendo $n$ el número de divisiones o generaciones que han transcurrido.
 
-\begin{figure}[H]   
-    \centering
+\begin{figure}\centering
     \includegraphics[width=\linewidth]{images/crecimiento_exponencial}
-    \rule{\linewidth}{0.2pt}
+    \rule{\linewidth}{0.5pt}
     \caption[Representación gráfica del crecimiento exponencial bacteriano]{Representación gráfica del crecimiento exponencial bacteriano. Se puede apreciar el aumento del exponente de $2^{n}$ con cada división}
     \label{fig:crecimiento_exponencial}
 \end{figure}

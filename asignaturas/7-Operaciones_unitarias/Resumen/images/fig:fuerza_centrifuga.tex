@@ -1,0 +1,24 @@
+\ifx\ISMAIN\undefined
+    \documentclass{standalone}
+    \usepackage{simplelatex}
+    \quicktikz
+    \begin{document}
+\fi
+
+\begin{tikzpicture}[
+  circulo/.style={circle,minimum size=0.5cm,fill=black},
+  etiqueta/.style={midway,text width=3em,align=center,font=\sffamily\tiny}
+]
+
+\node[circulo] (centro) at (0,0) {};
+\node[circulo] (extremo) at (5,0) {};
+
+\draw[thick] (centro) -- (extremo) node[etiqueta,above] {Soporte};
+\draw[thick,densely dashed,-Stealth] (extremo) arc(0:45:5) node[etiqueta,left] {Dirección};
+\draw[dashed,-Stealth] (5.5,0) --++ (0,3) node[etiqueta,right] {Fuerza de inercia};
+\draw[dashed,-Stealth] (5,-0.5) --++ (-3,0) node[etiqueta,below] {Fuerza centrípeta};
+\end{tikzpicture}
+
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi

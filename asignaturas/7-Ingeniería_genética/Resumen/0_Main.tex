@@ -1,9 +1,8 @@
 \documentclass{AsignaturaResumen}
 
+\def\ISMAIN{1}
 \SetTitulo{Ingeniería genética}
-
-% Glosario
-    \input{../../0-tex_resources/glosario_general}
+\input{../../0-tex_resources/glosario_general}
 
 \begin{document}
 
@@ -17,28 +16,31 @@
 
 \part{Fundamentos de genética molecular}
 
-    \chapter{Historia de la ingeniería genética}
-    \chapter{Principios generales}
+    \chapter{Historia de la ingeniería genética} \input{01}
+    \chapter{Principios generales} \input{02}
 
-\part{Manipulación de ADN}
+\part{Manipulación de ácidos nucléicos}
 
-    \chapter{Enzimas nucleasas}
-    \chapter{Técnicas de amplificación de ácidos nucléicos}
-    \chapter{Hibridación de ácidos nucléicos}
+    \chapter{Enzimas nucleasas} \input{03}
+    \chapter{Hibridación de ácidos nucléicos} \input{04}
+    \chapter{Técnicas de amplificación de ácidos nucléicos} \input{05}
 
 \part{ADN recombinante}
 
-    \chapter{Introducción al ADN recombinante}
-    \chapter{Construcción, clonación y selección de ADN}
-    \chapter{Mutagénesis dirigida}
+    \chapter{Introducción al ADN recombinante} \input{06}
+    \chapter{Construcción, clonación y selección de ADN} \input{07}
+    \chapter{Mutagénesis dirigida} \input{08}
+
+
+
+    \PlainGeom
+    \appendix
+
 
 
     \backmatter
-    \newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
-
-\addcontentsline{toc}{chapter}{Bibliografía}
-\bibliography{Main}
-
-    \appendix
+    
+\Bibliografia
+\Glosarios
 
 \end{document}

@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN};
+\node[paso] (adaptadores) at (extraccion) {Ligación de adaptadores (cola de poli-A y proteína motora)};
+\node[paso] (nanoporo) at (adaptadores) {Inserción en nanoporo (membrana con corriente iónica)};
+\node[paso] (translocacion) at (nanoporo) {Translocación de la hebra de ADN a través del nanoporo};
+\node[paso] (corriente) at (translocacion) {Detección de cambios en la corriente iónica};
+\node[paso] (algoritmo) at (corriente) {Interpretación algorítmica de la secuencia};
+\node[paso] (analisis) at (algoritmo) {Lectura de la secuencia};
+
+\draw[flecha] (extraccion) -- (adaptadores);
+\draw[flecha] (adaptadores) -- (nanoporo);
+\draw[flecha] (nanoporo) -- (translocacion);
+\draw[flecha] (translocacion) -- (corriente);
+\draw[flecha] (corriente) -- (algoritmo);
+\draw[flecha] (algoritmo) -- (analisis);
+\end{tikzpicture}

@@ -1,0 +1,23 @@
+\def\xlong{15}
+\def\ylong{8}
+\definecolor{DarkRed}{RGB}{200,0,0}
+\definecolor{DarkBlue}{RGB}{0,0,120}
+
+\begin{tikzpicture}[
+    linea/.style={ultra thick},
+    central/.style={linea,DarkRed,rounded corners,arrows=-Stealth},
+    peliculas/.style={linea,DarkBlue,arrows=Stealth-Stealth},
+    texto/.style={font=\sffamily\Large}
+]
+
+\draw[linea,dashed] (0,0) -- (0,\ylong) node[texto,text width=2cm,align=center,midway,left=5pt] {Fase orgánica};
+\draw[linea] (\xlong/2,0) -- (\xlong/2,\ylong) node[texto,above=5pt] {Fase límite};
+\draw[linea,dashed] (\xlong,0) -- (\xlong,\ylong) node[texto,text width=2cm,align=center,,midway,right=5pt] {Fase acuosa};
+
+\draw[central] (\xlong-\xlong-1,0.25*\ylong) node[texto,above] {$C_{A2}$} -- (0.35*\xlong,0.25*\ylong) -- (\xlong/2,\ylong/2) node[texto,left=15pt] {$C_{A2i}$};
+\draw[central] (\xlong+1,0.75*\ylong) node[texto,above] {$C_{A1}$} -- (0.65*\xlong,0.75*\ylong) -- (\xlong/2,\ylong/2) node[texto,right=15pt] {$C_{A1i}$};
+
+\draw[peliculas] (0,0.1*\ylong) -- (\xlong/2,0.1*\ylong) node[texto,midway,below=10pt] {Película orgánica};
+\draw[peliculas] (\xlong/2,0.1*\ylong) -- (\xlong,0.1*\ylong) node[texto,midway,below=10pt] {Película inorgánica};
+
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN};
+\node[paso] (amplificacion) at (extraccion) {Amplificación con baja strigencia y primers no específicos};
+\node[paso] (electroforesis) at (amplificacion) {Electroforesis en gel de agarosa};
+\node[paso] (visualizacion) at (electroforesis) {Visualización con bromuro de etidio};
+\node[paso] (analisis) at (visualizacion) {Comparación de bandas entre muestras};
+
+\draw[flecha] (extraccion) -- (amplificacion);
+\draw[flecha] (amplificacion) -- (electroforesis);
+\draw[flecha] (electroforesis) -- (visualizacion);
+\draw[flecha] (visualizacion) -- (analisis);
+
+\node[primer paso, yshift=-4cm] (desnaturalizacion) at (amplificacion) {Desnaturalización};
+\node[paso] (hibridacion) at (desnaturalizacion) {Hibridación:\\(A baja temperatura)};
+\node[paso] (elongacion) at (hibridacion) {Elongación};
+
+\draw[dashed, ultra thick] (amplificacion) -- (desnaturalizacion);
+\draw[flecha] (desnaturalizacion) -- (hibridacion);
+\draw[flecha] (hibridacion) -- (elongacion);
+\draw[flecha] (elongacion.south) to[out=220,in=320] (desnaturalizacion.south);
+\end{tikzpicture}

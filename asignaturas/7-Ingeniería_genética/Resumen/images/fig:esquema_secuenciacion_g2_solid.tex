@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN};
+\node[paso] (fragmentacion) at (extraccion) {Fragmentación del ADN};
+\node[paso] (adaptadores) at (fragmentacion) {Ligación de adaptadores};
+\node[paso] (emulsion) at (adaptadores) {PCR en microesferas};
+\node[paso] (flowcell) at (emulsion) {Deposición en celda de flujo};
+\node[paso] (ligacion) at (flowcell) {Secuenciación por ligación (sondas marcadas)};
+\node[paso] (analisis) at (ligacion) {Detección de fluorescencia y lectura de la secuencia};
+
+\draw[flecha] (extraccion) -- (fragmentacion);
+\draw[flecha] (fragmentacion) -- (adaptadores);
+\draw[flecha] (adaptadores) -- (emulsion);
+\draw[flecha] (emulsion) -- (flowcell);
+\draw[flecha] (flowcell) -- (ligacion);
+\draw[flecha] (ligacion) -- (analisis);
+\end{tikzpicture}

@@ -1,0 +1,15 @@
+\definecolor{DarkRed}{RGB}{200,0,0}
+\definecolor{Amarillo}{RGB}{240,220,80}
+
+\begin{tikzpicture}[
+    linea/.style={ultra thick, arrows=-Stealth},
+    texto/.style={font=\sffamily\Large}
+]
+
+\draw[linea] (0,0) -- (0,10) node[texto,midway,left] {[A]};
+\draw[linea] (0,0) -- (10,0) node[texto,midway,below] {y};
+\draw[linea,DarkRed] (0,3) node[texto,left] {$C_{A2}$} to[out=0,in=200] (3.8,3.5);
+\draw[fill=Amarillo] (3,4) -- (4.25,4.65) -- (4.25,3.15) -- (3,2.5) -- cycle;
+\node[texto] at (3.4,3.4) {$\mathbf{a}$};
+\draw[linea,DarkRed] (3.8,3.5) to[out=20,in=240] (8,7) node[texto,above] {$C_{Ai}$};
+\end{tikzpicture}

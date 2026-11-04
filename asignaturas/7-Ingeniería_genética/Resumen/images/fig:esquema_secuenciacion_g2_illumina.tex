@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN};
+\node[paso] (fragmentacion) at (extraccion) {Fragmentación del ADN};
+\node[paso] (adaptadores) at (fragmentacion) {Ligación de adaptadores};
+\node[paso] (flowcell) at (adaptadores) {Hibridación en celda de flujo};
+\node[paso] (puente) at (flowcell) {Amplificación};
+\node[paso] (sbs) at (puente) {Secuenciación por síntesis con terminadores reversibles};
+\node[paso] (analisis) at (sbs) {Detección de fluorescencia y lectura de la secuencia};
+
+\draw[flecha] (extraccion) -- (fragmentacion);
+\draw[flecha] (fragmentacion) -- (adaptadores);
+\draw[flecha] (adaptadores) -- (flowcell);
+\draw[flecha] (flowcell) -- (puente);
+\draw[flecha] (puente) -- (sbs);
+\draw[flecha] (sbs) -- (analisis);
+\end{tikzpicture}

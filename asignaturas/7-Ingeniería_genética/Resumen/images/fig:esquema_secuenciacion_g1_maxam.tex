@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\node[primer paso] (extraccion) at (0,0) {Extracción de ADN y separación de hebras individuales};
+\node[paso] (preamplificacion) at (extraccion) {Preamplificación};
+\node[paso] (marcaje) at (preamplificacion) {Marcaje del extremo $5^{\prime}$ (\ce{^{32}P})};
+\node[paso] (digestion) at (marcaje) {Marcado de bases y corte con piperidina};
+\node[paso] (electroforesis) at (digestion) {Electroforesis en gel de poliacrilamida};
+\node[paso] (analisis) at (electroforesis) {Lectura de la secuencia};
+
+\draw[flecha] (extraccion) -- (preamplificacion);
+\draw[flecha] (preamplificacion) -- (marcaje);
+\draw[flecha] (marcaje) -- (digestion);
+\draw[flecha] (digestion) -- (electroforesis);
+\draw[flecha] (electroforesis) -- (analisis);
+\end{tikzpicture}

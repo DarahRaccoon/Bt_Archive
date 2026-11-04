@@ -1,0 +1,1 @@
+% Comando para guardado de PDF's: cp --parents ./*/*/0_Main.pdf /home/darah/Descargas/
