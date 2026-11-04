@@ -1,0 +1,128 @@
+\ifx\ISMAIN\undefined
+    \documentclass{AsignaturaResumen}
+    \SetTitulo{Fenómenos de transporte}
+    \input{../../0-tex_resources/glosario_general}
+    \begin{document}
+    \chapter{Transporte de calor}
+\fi
+
+
+\section{Difusión molecular}
+
+Los mecanismos de transmisión de materia transportan materia de las regiones de alta concentración a aquellas de menor concentración. A medida que aumenta la distancia entre los reactantes, la velocidad de transferencia de materia ejerce un mayor control sobre la velocidad de reacción. Tomando como ejemplo el oxígeno en un cultivo aerobio, si la transferencia de oxígeno desde las burbujas es lenta, la velocidad de metabolismo celular dependerá de la velocidad con que se suministra la fase gaseosa. Como el oxígeno es un componente crítico en las fermentaciones aerobias y es tan soluble en las soluciones acuosas, gran parte del interés de la transferencia de materia recae en la transferencia de oxígeno a través de la interfase gas-líquido.
+
+En un sólido o fluido estancado la transferencia se debe a la difusión molecular, sin embargo, en la mayoría de los sistemas de transferencia de materia existe movimiento de fluidos. En un flujo turbulento, la transferencia de materia por movimiento molecular se complementa con la transferencia por convección.
+
+
+    \marginpar{\begin{minipage}{\marginparwidth}\input{tables/tab:fuerzas_por_tipo_de_fluido}\end{minipage}}     
+
+
+La difusión molecula es el movimiento de las moléculas de los componentes de la mezcla debido a la diferencia de concentración existente en el sistema. La difusión de las moléculas se produce en la dirección necesaria para eliminar el gradiente de concentración y alcanzar el equilibrio en las concentraciones.
+
+En sistemas de una fase, la velocidad de transferencia de materia debida a la difusión molecular viene expresada por la ley de difusión de Fick, la cual establece que el flujo másico es proporcional al gradiente de concentración.
+
+\begin{equation}
+    J_{AZ} = \frac{N_{A}}{a} = -D_{AB} \cdot \diff{C_{A}}{y}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $J_{AZ}$ es el flujo másico del componente $A$ en cierta distancia (\unit{\mole\per\m\squared\per\s} o  \unit{\g\per\m\squared\per\s})
+    \item $N_{A}$ es la velocidad de transferencia de materia del componente $A$ (\unit{\mole\per\m\cubed\per\s} o \unit{\g\per\m\cubed\per\s})
+    \item $a$ es el área a travpes de la cual se produce la transferencia de materia (\unit{\m\squared})
+    \item $D_{AB}$ es el coeficiente de difusión binaria o difusividad del componente $A$ de una mezcla $AB$ (\unit{\m\squared\per\s})
+    \item $C_{A}$ es la concentración del componente A (\unit{\mole\per\m\cubed} o \unit{\g\per\m\cubed})
+    \item $y$ es la distancia (\unit{})
+    \item $\diff{C_{A}}{y}$ es el gradiente de concentración o variación de $A$ con la distancia
+\end{itemize}
+
+\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:representacion_transporte_de_materia}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Representación del transporte de materia}
+    \label{fig:representacion_transporte_de_materia}
+\end{figure}\end{minipage}}
+
+Las áreas del bioprocesado donde la difusión desempeña un papel importante son:
+
+\begin{itemize}
+    \item \emph{Escala del mezclado}: La turbulencia en los fluidos produce la mezcla en el seno del fluido a una escala igual a la de los remolinos más pequeños.
+    \item \emph{Reacción en fase sólida}: Cuando se juntan las moléulas de las células o enzimas en la partícula sólida, los sustratos deben ser transportados dentro del sólido   para que se produzca la reacción. A medida que sucede la reacción, la difusión es la responsable de la salida de las moléculas de producto hacia el exterior del lugar de la reacción.
+    \item \emph{Transferencia de materia a través de la interfase}: Cuando entran en contacto diferentes fases, la velocidad del fluido cerca de la interfase disminuye considerablemente, y la difusión llega a ser un proceso crucial para la transferencia de materia.
+\end{itemize}
+
+\subsection{Teoría de la película}
+
+Esta teoría es un modelo útil para definir la transferencia de materia entre fases, donde la transferencia de materia de un determinado soluto de una fase a otra incluye el transporte desde el seno de una fase a la superficie límite o interfase, y entonces desde la interfase al seno del segundo fluido. La teoría de la película se basa en la idea de que en la zona de contacto entre dos fases se forma una película de fluido o capa límite de transferencia de materia
+
+\begin{figure}\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:teoria_de_la_pelicula}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Representación de la teoría de la película}
+    \label{fig:teoria_de_la_pelicula}
+\end{figure}
+
+\subsection{Transferencia de materia por convección}
+
+El término de transferencia de masa por convección se refiere a la transferencia de materia que se produce en presencia 
+de cierto movimiento en el seno del fluido. La velocidad de transferencia de materia es directamente proporcional a la fuerza impulsora y al área disponible para el proceso de tranferencia. Esto se puede expresar como:
+
+\begin{equation}
+    \text{Velocidad de transferencia} = \text{Área de transferencia} \cdot \text{Fuerza impulsora}
+\end{equation}
+
+Por tanto, la velocidad de transferencia de materia en una interfase viene dada por:
+
+\begin{equation}
+    N_{A} = k \cdot a \cdot \Delta C_{A} = k \cdot a \cdot (C_{A0} - C_{Ai}) 
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $N_{A}$ es la velocidad de transferencia de materia del componente $A$
+    \item $k$ es el coeficiente de transferencia de materia
+    \item $C_{A0}$ es la concentración de $A$ en el seno del fluido lejos de la interfase
+    \item $C_{Ai}$ es la concentración de $A$ en la interfase
+\end{itemize}
+
+Esta ecuación generalmente se utiliza para representar la velocidad de transferencia volumétrica (\unit{\mole\per\m\cubed\per\s})
+
+Las 3 situaciones que pueden ocurrir en el bioprocesado son la transferencia de materia líquido-sólido, líquido-líquido entre inmiscibles, y líquido-gas.
+
+\subsubsection{Transferencia de materia líquido-sólido}
+
+\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:interfase_liquido_solido}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Representación de la interfase líquido-sólido}
+    \label{fig:interfase_liquido_solido}
+\end{figure}\end{minipage}}
+
+Algunas de las aplicaciones de este tipo de transferencia son:
+
+\begin{itemize}
+    \item Transferencia de los sustratos a los catalizadores sólidos de células o enzimas
+    \item La adsorción de las moléculas en la superficie, como ocurre en la cromatografía
+    \item La formación de cristales que se da en el movimiento de las moléculas del líquido hasta la superficie del cristal que está formándose.
+\end{itemize}
+
+La velocidad volumétrica de transferencia viene dada por la siguiente ecuación:
+
+\begin{equation}
+    N_{A} = k_{L} \cdot a \cdot \Delta C_{A} = k_{L} \cdot a \cdot (C_{A0} - C_{Ai})
+\end{equation}
+
+Donde $k_{L}$ el coeficiente de transferencia de materia de la fase líquida.
+
+
+
+
+
+
+
+
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi

@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex 0_Main"] 0 "0_Main.aux" "0_Main.bbl" "0_Main" 1793566245.09069 0
+["bibtex 0_Main"] 0 "0_Main.aux" "0_Main.bbl" "0_Main" 1793724055.43676 0
   "/usr/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1775415801 18030 1376b4b231b50c66211e47e42eda2875 ""
   "0_Main.aux" 0 -1 0 "lualatex"
   "Main.bib" 0 -1 0 ""
@@ -7,7 +7,7 @@
   "0_Main.bbl"
   "0_Main.blg"
   (rewritten before read)
-["lualatex"] 1793566239.06127 "/home/darah/Documentos/Bt_Archive/biblioteca_interna/Manual-Fermentaciones/0_Main.tex" "0_Main.pdf" "0_Main" 1793566245.09097 0
+["lualatex"] 1793724049.16248 "/home/darah/Documentos/Bt_Archive/biblioteca_interna/Manual-Fermentaciones/0_Main.tex" "0_Main.pdf" "0_Main" 1793724055.43697 0
   "../../asignaturas/0-tex_resources/glosario_general.tex" 1793483018.99304 2309 7f7223e98af0bcee622d0068240f29cf ""
   "../Recursos/Logo_UPSIN_Horizontal_Blanco.png" 1781376573.51332 386081 192a5d399e668da3c073c3f974ed4d33 ""
   "/etc/texmf/tex/generic/config/language.dat" 1778872508.98886 3041 2b35743727de7ca5d1a8ad7ff0d6896b ""
@@ -23,8 +23,8 @@
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1790465304.03941 127314 7c5efae986e60281c7ad546cf8ed9a14 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1793486912.29548 28939 5e75e20bd9b62f085feefcc336b8a47b ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790638341.74601 443539 61843b3a453ad8767a5dd73dd397d25f ""
-  "/home/darah/Documentos/Bt_Archive/biblioteca_interna/Manual-Fermentaciones/0_Main.tex" 1793566209.004 1321 321eeb3a3fd395399c0fc2599d270974 ""
-  "/home/darah/texmf/tex/latex/Classes/ManualBiotecnologico.cls" 1793566205.08227 6032 a75e2b8dea27f2594c1757f3a2cb77a2 ""
+  "/home/darah/Documentos/Bt_Archive/biblioteca_interna/Manual-Fermentaciones/0_Main.tex" 1793724042.15798 1494 7cc80b472deeafce3064e6480c8d63c6 ""
+  "/home/darah/texmf/tex/latex/Classes/ManualBiotecnologico.cls" 1793566432.35509 5924 590c4a35db4c7c74c96fb6a5c3d1f57f ""
   "/home/darah/texmf/tex/latex/Packages/mychemfig.sty" 1789440855.52094 893 fcb2222ca4ef806c2e6612bb5b0708ee ""
   "/home/darah/texmf/tex/latex/Packages/myunits.sty" 1793479660.50876 721 7ce78c7387161adfe8fb2a4eddaf25b2 ""
   "/home/darah/texmf/tex/latex/Packages/simplelatex.sty" 1793502028.49311 929 ff445a89982b9e26faa705e9f12d7daf ""
@@ -333,12 +333,12 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1792542988 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1792542914 5659012 01c878cc1fea811ee86e25c36f777519 ""
   "0_Main.acr" 1793566233.019 6 9f404503043ec80c08484be9f659189e ""
-  "0_Main.aux" 1793566244.48762 4730 0dc3ae413955a541407c5efbefef8e8e "lualatex"
+  "0_Main.aux" 1793724054.83943 5474 beee46813f7d4032149e7eb34952efc1 "lualatex"
   "0_Main.bbl" 1793566220.9324 49 0eba253fc001332e731e8aba3f23127b "bibtex 0_Main"
   "0_Main.gls" 1793566233.01895 6 9f404503043ec80c08484be9f659189e ""
-  "0_Main.out" 1793566244.48962 5157 d63876573bd6bad457ceb38052fc2f5d "lualatex"
-  "0_Main.tex" 1793566209.004 1321 321eeb3a3fd395399c0fc2599d270974 ""
-  "0_Main.toc" 1793566244.49062 1983 434214951a30f0e76a84263c53a75e17 "lualatex"
+  "0_Main.out" 1793724054.84205 6004 d3a705d58edae1078ba052955bd137c2 "lualatex"
+  "0_Main.tex" 1793724042.15798 1494 7cc80b472deeafce3064e6480c8d63c6 ""
+  "0_Main.toc" 1793724054.84205 2334 27295d7ce868d4f2c8631f8ff977e2b4 "lualatex"
   "Portada.jpg" 1790729276.49746 5027391 b9f020891de47e0361678e2854093ab4 ""
   (generated)
   "0_Main.acn"

@@ -1,18 +1,9 @@
 \begin{thebibliography}{10}
 
-\bibitem{oladiDigitalPCRAssays2026}
-Mahshid Oladi and Thorsten Stoeck.
-\newblock Digital {{PCR}} assays quantify bacterial bioindicators across
-  environmental quality gradients in salmon aquaculture sediments.
-\newblock {\em Aquaculture}, 623:744179, August 2026.
-
-\bibitem{houMicroarrayBasedAnalysisGene2015}
-Jing Hou, Xinhui Liu, Juan Wang, Shengnan Zhao, and Baoshan Cui.
-\newblock Microarray-{{Based Analysis}} of {{Gene Expression}} in
-  {{{\emph{Lycopersicon}}}}{\emph{ esculentum}} {{Seedling Roots}} in
-  {{Response}} to {{Cadmium}}, {{Chromium}}, {{Mercury}}, and {{Lead}}.
-\newblock {\em Environmental Science \& Technology}, 49(3):1834--1841, February
-  2015.
+\bibitem{welshFingerprintingGenomesUsing1990}
+John Welsh and Michael McClelland.
+\newblock Fingerprinting genomes using {{PCR}} with arbitrary primers.
+\newblock {\em Nucleic acids research}, 18(24):7213--7218, 1990.
 
 \bibitem{williamsDNAPolymorphismsAmplified1990}
 John~GK Williams, Anne~R Kubelik, Kenneth~J Livak, J~Antoni Rafalski, and
@@ -20,11 +11,6 @@ John~GK Williams, Anne~R Kubelik, Kenneth~J Livak, J~Antoni Rafalski, and
 \newblock {{DNA}} polymorphisms amplified by arbitrary primers are useful as
   genetic markers.
 \newblock {\em Nucleic acids research}, 18(22):6531--6535, 1990.
-
-\bibitem{welshFingerprintingGenomesUsing1990}
-John Welsh and Michael McClelland.
-\newblock Fingerprinting genomes using {{PCR}} with arbitrary primers.
-\newblock {\em Nucleic acids research}, 18(24):7213--7218, 1990.
 
 \bibitem{kumariRandomlyAmplifiedPolymorphic2014}
 Nandani Kumari.
@@ -75,6 +61,12 @@ Yiqi Cao, Miao Yu, Guihua Dong, Bing Chen, and Baiyu Zhang.
   {{Microbial Biodegradation}}.
 \newblock {\em Molecules}, 25(3):706, February 2020.
 
+\bibitem{oladiDigitalPCRAssays2026}
+Mahshid Oladi and Thorsten Stoeck.
+\newblock Digital {{PCR}} assays quantify bacterial bioindicators across
+  environmental quality gradients in salmon aquaculture sediments.
+\newblock {\em Aquaculture}, 623:744179, August 2026.
+
 \bibitem{erenDNASequencingMethods2022}
 K{\"u}bra Eren, Nursema Taktako{\u g}lu, and Ibrahim Pirim.
 \newblock {{DNA Sequencing Methods}}: {{From Past}} to {{Present}}.
@@ -106,5 +98,13 @@ Satish~Balasaheb Nimse, Keumsoo Song, Mukesh~Digambar Sonawane,
 \newblock Immobilization {{Techniques}} for {{Microarray}}: {{Challenges}} and
   {{Applications}}.
 \newblock {\em Sensors}, 14(12):22208--22229, December 2014.
+
+\bibitem{houMicroarrayBasedAnalysisGene2015}
+Jing Hou, Xinhui Liu, Juan Wang, Shengnan Zhao, and Baoshan Cui.
+\newblock Microarray-{{Based Analysis}} of {{Gene Expression}} in
+  {{{\emph{Lycopersicon}}}}{\emph{ esculentum}} {{Seedling Roots}} in
+  {{Response}} to {{Cadmium}}, {{Chromium}}, {{Mercury}}, and {{Lead}}.
+\newblock {\em Environmental Science \& Technology}, 49(3):1834--1841, February
+  2015.
 
 \end{thebibliography}

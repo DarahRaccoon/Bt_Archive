@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  1 NOV 2026 13:50
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  3 NOV 2026 09:40
 **/home/darah/Documentos/Bt_Archive/biblioteca_interna/Manual-Fermentaciones/0_
 Main.tex
 
@@ -1279,7 +1279,18 @@ ef
 File: glossaries-extra-abbrstyles.def 2025/11/03 v1.9 (NLCT)
 )
 \mglselementindex=\count428
-) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
+) (../../asignaturas/0-tex_resources/glosario_general.tex
+\glswrite=\write4
+\glo@main@file=\write5
+
+\openout5 = 0_Main.glo
+Package glossaries Info: Writing glossary file 0_Main.glo on input line 3.
+\glo@acronym@file=\write6
+
+\openout6 = 0_Main.acn
+Package glossaries Info: Writing glossary file 0_Main.acn on input line 3.
+)
+(/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip113
 \bibsep=\skip114
@@ -1302,7 +1313,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )))
 \c@section@level=\count430
-)
+))
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
@@ -1390,17 +1401,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip115
 )
-(../../asignaturas/0-tex_resources/glosario_general.tex
-\glswrite=\write4
-\glo@main@file=\write5
-
-\openout5 = 0_Main.glo
-Package glossaries Info: Writing glossary file 0_Main.glo on input line 3.
-\glo@acronym@file=\write6
-
-\openout6 = 0_Main.acn
-Package glossaries Info: Writing glossary file 0_Main.acn on input line 3.
-)) (./0_Main.aux
+(./0_Main.aux
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
@@ -1517,8 +1518,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 6.
-
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count440
 \scratchdimen=\dimen367
@@ -1641,13 +1641,13 @@ Package hyperref Info: Link coloring ON on input line 6.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Portada.jpg, id=91, 4674.46375pt x 6606.6825pt>
+<Portada.jpg, id=107, 4674.46375pt x 6606.6825pt>
 File: Portada.jpg Graphic file (type jpg)
 <use Portada.jpg>
 Package luatex.def Info: Portada.jpg  used on input line 10.
 (luatex.def)             Requested size: 597.50787pt x 844.48311pt.
-<../Recursos/Logo_UPSIN_Horizontal_Blanco.png, id=92, 1927.4409pt x 903.6159pt>
-
+<../Recursos/Logo_UPSIN_Horizontal_Blanco.png, id=108, 1927.4409pt x 903.6159pt
+>
 File: ../Recursos/Logo_UPSIN_Horizontal_Blanco.png Graphic file (type png)
 <use ../Recursos/Logo_UPSIN_Horizontal_Blanco.png>
 Package luatex.def Info: ../Recursos/Logo_UPSIN_Horizontal_Blanco.png  used on 
@@ -1751,10 +1751,6 @@ Capítulo 2.
 [3
 
 ]
-Capítulo 3.
-[4
-
-]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -1787,13 +1783,17 @@ Capítulo 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [5
+ [4
+
+
+]
+Capítulo 3.
+[5
 
 
 ]
 Capítulo 4.
 [6
-
 
 ]
 Capítulo 5.
@@ -1925,6 +1925,55 @@ Capítulo 16.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
 * h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=512.14963pt
+* \textheight=591.5302pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=2.9103pt
+* \headheight=12.0pt
+* \headsep=14.22636pt
+* \topskip=10.0pt
+* \footskip=42.67912pt
+* \marginparwidth=135.15059pt
+* \marginparsep=21.33955pt
+* \columnsep=30.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [21
+
+
+]
+Capítulo 17.
+[22
+
+
+]
+Capítulo 18.
+[23
+
+]
+Capítulo 19.
+[24
+
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
 * v-part:(T,H,B)=(56.9055pt, 702.78308pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
@@ -1954,7 +2003,7 @@ Capítulo 16.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [21
+) [25
 
 
 ] (./0_Main.acr)
@@ -1962,12 +2011,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `IBMPlexSans' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [22] (./0_Main.gls)
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
+ [26] (./0_Main.gls)
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 51.
- [23
+(babel)             Reported on input line 59.
+ [27
 
 ] (./0_Main.aux
 LaTeX Info: Redefining \. on input line 20.
@@ -1978,26 +2027,26 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `0_Main.out' has not changed.
-(rerunfilecheck)             Checksum: D63876573BD6BAD457CEB38052FC2F5D;5157.
+(rerunfilecheck)             Checksum: D3A705D58EDAE1078BA052955BD137C2;6004.
 )
 
 Here is how much of LuaTeX's memory you used:
- 58556 strings out of 476076
+ 58568 strings out of 476076
  125240,2373549 words of node,token memory allocated
- 840 words of node memory still in use:
-   10 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 3 glyph, 3
-9 attribute, 76 glue_spec, 20 attribute_list, 3 write, 7 pdf_action nodes
-   avail lists: 1:3,2:651,3:381,4:114,5:502,6:60,7:2685,8:3,9:290,10:9,11:358
- 79756 multiletter control sequences out of 65536+600000
+ 864 words of node memory still in use:
+   10 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 3 glyph, 4
+3 attribute, 76 glue_spec, 22 attribute_list, 3 write, 9 pdf_action nodes
+   avail lists: 1:2,2:753,3:381,4:134,5:590,6:70,7:3117,8:2,9:334,10:9,11:416
+ 79760 multiletter control sequences out of 65536+600000
  51 fonts using 6559815 bytes
- 103i,12n,113p,2603b,1210s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,113p,2637b,1210s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Regular.otf></usr/sha
 re/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSerif-Bold.otf></usr/share/texmf-di
 st/fonts/opentype/ibm/plex/IBMPlexSerif-Regular.otf>
-Output written on 0_Main.pdf (25 pages, 5335514 bytes).
+Output written on 0_Main.pdf (29 pages, 5338496 bytes).
 
-PDF statistics: 258 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 1048576)
- 184 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 296 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 1048576)
+ 216 words of extra memory for PDF output out of 10000 (max. 100000000)
 

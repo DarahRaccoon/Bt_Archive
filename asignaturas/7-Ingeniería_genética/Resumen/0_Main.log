@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  1 NOV 2026 11:14
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  3 NOV 2026 21:26
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen
 /0_Main.tex
 
@@ -816,22 +816,28 @@ Package: simplekv 2025/06/15 v0.32 Simple keyval package (CT)
 )
 Package: chemfig 2025/10/30 v1.71 Draw molecule with an easy syntax (CT)
 ))
+(/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+\everycr=\toks47
+\minrowclearance=\skip57
+\rownum=\count361
+)
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
-\c@tracingmulticols=\count361
+\c@tracingmulticols=\count362
 \mult@box=\box88
 \multicol@leftmargin=\dimen300
-\c@unbalance=\count362
-\c@collectmore=\count363
-\doublecol@number=\count364
-\multicoltolerance=\count365
-\multicolpretolerance=\count366
+\c@unbalance=\count363
+\c@collectmore=\count364
+\doublecol@number=\count365
+\multicoltolerance=\count366
+\multicolpretolerance=\count367
 \full@width=\dimen301
 \page@free=\dimen302
 \premulticols=\dimen303
 \postmulticols=\dimen304
-\multicolsep=\skip57
-\multicolbaselineskip=\skip58
+\multicolsep=\skip58
+\multicolbaselineskip=\skip59
 \partial@page=\box89
 \last@line=\box90
 \mc@boxedresult=\box91
@@ -876,16 +882,16 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \@tempa=\box129
 \@tempa=\box130
 \@tempa=\box131
-\c@minrows=\count367
-\c@columnbadness=\count368
-\c@finalcolumnbadness=\count369
+\c@minrows=\count368
+\c@columnbadness=\count369
+\c@finalcolumnbadness=\count370
 \last@try=\dimen306
 \multicolovershoot=\dimen307
 \multicolundershoot=\dimen308
 \mult@nat@firstbox=\box132
 \colbreak@box=\box133
-\mc@col@check@num=\count370
-\g__mc_curr_col_int=\count371
+\mc@col@check@num=\count371
+\g__mc_curr_col_int=\count372
 )
 (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -893,9 +899,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count372
-\Gm@cntv=\count373
-\c@Gm@tempcnt=\count374
+\Gm@cnth=\count373
+\Gm@cntv=\count374
+\c@Gm@tempcnt=\count375
 \Gm@bindingoffset=\dimen309
 \Gm@wd@mp=\dimen310
 \Gm@odd@mp=\dimen311
@@ -904,11 +910,11 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen314
 \Gm@layouthoffset=\dimen315
 \Gm@layoutvoffset=\dimen316
-\Gm@dimlist=\toks47
+\Gm@dimlist=\toks48
 )
 (/usr/share/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
-\FN@temptoken=\toks48
+\FN@temptoken=\toks49
 \footnotemargin=\dimen317
 Package footmisc Info: Declaring symbol style bringhurst on input line 549.
 Package footmisc Info: Declaring symbol style chicago on input line 557.
@@ -922,21 +928,21 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 618
 (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip59
-\f@nch@offset@elh=\skip60
-\f@nch@offset@erh=\skip61
-\f@nch@offset@olh=\skip62
-\f@nch@offset@orh=\skip63
-\f@nch@offset@elf=\skip64
-\f@nch@offset@erf=\skip65
-\f@nch@offset@olf=\skip66
-\f@nch@offset@orf=\skip67
-\f@nch@height=\skip68
-\f@nch@footalignment=\skip69
-\f@nch@widthL=\skip70
-\f@nch@widthC=\skip71
-\f@nch@widthR=\skip72
-\@temptokenb=\toks49
+\f@nch@headwidth=\skip60
+\f@nch@offset@elh=\skip61
+\f@nch@offset@erh=\skip62
+\f@nch@offset@olh=\skip63
+\f@nch@offset@orh=\skip64
+\f@nch@offset@elf=\skip65
+\f@nch@offset@erf=\skip66
+\f@nch@offset@olf=\skip67
+\f@nch@offset@orf=\skip68
+\f@nch@height=\skip69
+\f@nch@footalignment=\skip70
+\f@nch@widthL=\skip71
+\f@nch@widthC=\skip72
+\f@nch@widthR=\skip73
+\@temptokenb=\toks50
 )
 luaotfload | cache : Lookup cache loaded from /home/darah/.texlive/texmf-var/lua
 tex-cache/generic/names/luaotfload-lookup-cache.luc.
@@ -979,35 +985,35 @@ Package fontspec Info:
 
 (/usr/share/texmf-dist/tex/latex/fncychap/fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
-\RW=\skip73
-\mylen=\skip74
-\myhi=\skip75
-\px=\skip76
-\py=\skip77
-\pyy=\skip78
-\pxx=\skip79
-\backskip=\skip80
+\RW=\skip74
+\mylen=\skip75
+\myhi=\skip76
+\px=\skip77
+\py=\skip78
+\pyy=\skip79
+\pxx=\skip80
+\backskip=\skip81
 )
 (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box134
-\beforetitleunit=\skip81
-\aftertitleunit=\skip82
+\beforetitleunit=\skip82
+\aftertitleunit=\skip83
 \ttl@plus=\dimen318
 \ttl@minus=\dimen319
-\ttl@toksa=\toks50
+\ttl@toksa=\toks51
 \titlewidth=\dimen320
 \titlewidthlast=\dimen321
 \titlewidthfirst=\dimen322
 )
 (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip83
+\labelindent=\skip84
 \enit@outerparindent=\dimen323
-\enit@toks=\toks51
+\enit@toks=\toks52
 \enit@inbox=\box135
-\enit@count@id=\count375
-\enitdp@description=\count376
+\enit@count@id=\count376
+\enitdp@description=\count377
 )
 (/usr/share/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
@@ -1017,35 +1023,35 @@ Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count377
-\calc@Bcount=\count378
+\calc@Acount=\count378
+\calc@Bcount=\count379
 \calc@Adimen=\dimen324
 \calc@Bdimen=\dimen325
-\calc@Askip=\skip84
-\calc@Bskip=\skip85
+\calc@Askip=\skip85
+\calc@Bskip=\skip86
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count379
-\calc@Cskip=\skip86
+\calc@Ccount=\count380
+\calc@Cskip=\skip87
 )
 (/usr/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
  in chemistry (CN)
-\l__chemgreek_tmpa_int=\count380
-\g__chemgreek_tmpa_int=\count381
+\l__chemgreek_tmpa_int=\count381
+\g__chemgreek_tmpa_int=\count382
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count382
-\__mhchem_arrow_extPgfLength_skip=\skip87
-\mhchem@minispace@tmp=\skip88
-\mhchem@minibackspace@tmp=\skip89
-\mhchem@bondwidth=\skip90
-\mhchem@bondheight=\skip91
-\mhchem@smallbondwidth@tmpA=\skip92
-\mhchem@smallbondwidth@tmpB=\skip93
-\mhchem@smallbondwidth=\skip94
-\mhchem@bondtmp@minussidebearingleft=\skip95
-\mhchem@bondtmp@minussidebearingright=\skip96
-\l__mhchem_option_version_int=\count383
+\l__mhchem_ce_distanceFromLastComma_int=\count383
+\__mhchem_arrow_extPgfLength_skip=\skip88
+\mhchem@minispace@tmp=\skip89
+\mhchem@minibackspace@tmp=\skip90
+\mhchem@bondwidth=\skip91
+\mhchem@bondheight=\skip92
+\mhchem@smallbondwidth@tmpA=\skip93
+\mhchem@smallbondwidth@tmpB=\skip94
+\mhchem@smallbondwidth=\skip95
+\mhchem@bondtmp@minussidebearingleft=\skip96
+\mhchem@bondtmp@minussidebearingright=\skip97
+\l__mhchem_option_version_int=\count384
 \mhchem@option@minusmathsidebearingleft=\dimen326
 \mhchem@option@minusmathsidebearingright=\dimen327
 \mhchem@option@minustextsidebearingleft=\dimen328
@@ -1062,16 +1068,19 @@ Package mhchem Warning: You did not specify a 'version' option for the mhchem
 ) (/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen330
 \WF@size=\dimen331
-\c@WF@wrappedlines=\count384
+\c@WF@wrappedlines=\count385
 \WF@box=\box136
-\WF@everypar=\toks52
+\WF@everypar=\toks53
 Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip97
-\multirow@cntb=\count385
-\multirow@dima=\skip98
+\multirow@colwidth=\skip98
+\multirow@cntb=\count386
+\multirow@dima=\skip99
 \bigstrutjot=\dimen332
 )
 (/usr/share/texmf-dist/tex/latex/threeparttable/threeparttable.sty
@@ -1093,8 +1102,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen340
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count386
-\c@continuedfloat=\count387
+\c@caption@flags=\count387
+\c@continuedfloat=\count388
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
@@ -1102,15 +1111,9 @@ Package caption Info: wrapfig package is loaded.
 (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count388
+\c@subfigure=\count389
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count389
-)
-(/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
-\everycr=\toks53
-\minrowclearance=\skip99
-\rownum=\count390
+\c@subtable=\count390
 )
 (/usr/share/texmf-dist/tex/latex/glossaries-extra/glossaries-extra.sty
 Package: glossaries-extra 2025/11/03 v1.9 (NLCT)
@@ -1760,11 +1763,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
-your preamble.
- on input line 7.
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-spa
@@ -1860,12 +1860,12 @@ Package hyperref Info: Link coloring ON on input line 7.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../portada.jpg, id=203, 2176.13pt x 3084.52374pt>
+<../portada.jpg, id=159, 2176.13pt x 3084.52374pt>
 File: ../portada.jpg Graphic file (type jpg)
 <use ../portada.jpg>
 Package luatex.def Info: ../portada.jpg  used on input line 11.
 (luatex.def)             Requested size: 597.50787pt x 846.95235pt.
-<../../0-tex_resources/logo_upsin.png, id=204, 1927.4409pt x 903.6159pt>
+<../../0-tex_resources/logo_upsin.png, id=160, 1927.4409pt x 903.6159pt>
 File: ../../0-tex_resources/logo_upsin.png Graphic file (type png)
 <use ../../0-tex_resources/logo_upsin.png>
 Package luatex.def Info: ../../0-tex_resources/logo_upsin.png  used on input li
@@ -1924,12 +1924,7 @@ resources/logo_upsin.png>]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(../../0-tex_resources/secciones_complementarias.tex [2
-
-
-
-]) (./0_Main.toc
+ (./0_Main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
@@ -1951,22 +1946,11 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
-)
-
-LaTeX Font Warning: Font shape `TU/IBMPlexSerif(0)/b/sc' undefined
-(Font)              using `TU/IBMPlexSerif(0)/b/n' instead on input line 2.
-
-
-Package spanish Warning: Replacing `TU/IBMPlexSerif(0)/b/sc' by 
-(spanish)                faked small caps on input line 2.
-
-)
+))
 \tf@toc=\write8
 
 \openout8 = 0_Main.toc
- [3
-
-] [4
+ [2
 
 
 ]
@@ -2003,6 +1987,8 @@ Package spanish Warning: Replacing `TU/IBMPlexSerif(0)/b/sc' by
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
  [1
+
+
 
 
 ]
@@ -2073,41 +2059,6 @@ Capítulo 5.
 (./05.tex (./images/0_tikzset_PCRs.tex)
 
 Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 13
-.
-
-
-Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 13
-.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-13.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-13.
-
-
-Package natbib Warning: Author undefined for citation`williamsDNAPolymorphismsA
-mplified1990' 
-(natbib)                on page 8 on input line 13.
-
-
-Package natbib Warning: Author undefined for citation`welshFingerprintingGenome
-sUsing1990' 
-(natbib)                on page 8 on input line 13.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-15.
-
-
-Package glossaries-extra Warning: Base acronym command \acrfull should not be u
 sed with new abbreviation definitions. Use \glsxtrfull instead on input line 15
 .
 
@@ -2129,89 +2080,104 @@ used with new abbreviation definitions. Use \glsxtrshort instead on input line
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-15.
+17.
 
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-15.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-25.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-25.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-25.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-25.
-
-[8
-
-]
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-28.
-
-(./images/fig:esquema_de_rapd.tex)
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-34.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-42.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-42.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-43.
-
-
-Underfull \vbox (badness 2426) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
- [9]
-(./tables/tab:ventajas_y_desventajas_rapd.tex
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-3.
-
-)
 
 Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 55
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 17
 .
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 55
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 17
 .
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-55.
+17.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+17.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+17.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+17.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+27.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+27.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+27.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+27.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+30.
+
+[8
+
+] (./images/fig:esquema_de_rapd.tex)
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+36.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+44.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+44.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+45.
+
+(./tables/tab:ventajas_desventajas_rapd.tex
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+2.
+
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
+[9])
+
+Package glossaries-extra Warning: Base acronym command \acrfull should not be u
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 57
+.
+
+
+Package glossaries-extra Warning: Base acronym command \acrlong should not be u
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 57
+.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
@@ -2231,63 +2197,64 @@ used with new abbreviation definitions. Use \glsxtrshort instead on input line
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-69.
+63.
 
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-69.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-69.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-69.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
 71.
 
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+71.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+71.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+71.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+73.
+
 (./images/fig:esquema_de_rflp.tex)
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-77.
+79.
 
-(./tables/tab:ventajas_y_desventajas_rflp.tex
+[10] (./tables/tab:ventajas_desventajas_rflp.tex
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-3.
+2.
 
 )
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [11]
 
 Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 99
-.
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 10
+1.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 99
-.
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 10
+1.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-99.
+101.
 
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
-[11]
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
@@ -2314,7 +2281,7 @@ used with new abbreviation definitions. Use \glsxtrshort instead on input line
 115.
 
 
-Underfull \vbox (badness 1635) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
 Overfull \hbox (2.642pt too wide) detected at line 137
@@ -2327,562 +2294,453 @@ L/cmm/m/it/10  \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@ [] []  [][]!  \OML/cmm/m
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-148.
+145.
 
 
 Package glossaries-extra Warning: Base acronym command \acrfull should not be u
 sed with new abbreviation definitions. Use \glsxtrfull instead on input line 14
-8.
+5.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
 sed with new abbreviation definitions. Use \glsxtrlong instead on input line 14
-8.
+5.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-148.
+145.
 
 (./images/fig:esquema_de_dpcr.tex)
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-156.
+153.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-163.
+158.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-163.
+158.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-163.
-
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
-[13]
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-164.
+158.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-164.
+159.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-165.
+159.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-174.
+160.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 163.
+LaTeX Info: Redefining \% on input line 163.
+ [13]
+(./tables/tab:ventajas_desventajas_secuenciacion_dpcr.tex
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+2.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-182.
+10.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-184.
+12.
+
+)
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+171.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 199.
+Package glossaries-extra Warning: Base acronym command \acrfull should not be u
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 17
+1.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 199.
+Package glossaries-extra Warning: Base acronym command \acrlong should not be u
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 17
+1.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-201.
-
-
-Package natbib Warning: Author undefined for citation`oladiDigitalPCRAssays2026
-' 
-(natbib)                on page 14 on input line 201.
+171.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-201.
+171.
+
+
+Package glossaries-extra Warning: Base acronym command \acrfull should not be u
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 17
+1.
+
+
+Package glossaries-extra Warning: Base acronym command \acrlong should not be u
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 17
+1.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+171.
+
+[14]
+<images/fig:ilustracion_secuenciacion_g1_maxam.png, id=353, 905.3825pt x 464.73
+625pt>
+File: images/fig:ilustracion_secuenciacion_g1_maxam.png Graphic file (type png)
+
+<use images/fig:ilustracion_secuenciacion_g1_maxam.png>
+Package luatex.def Info: images/fig:ilustracion_secuenciacion_g1_maxam.png  use
+d on input line 198.
+(luatex.def)             Requested size: 376.99904pt x 193.51434pt.
 
 
 Package glossaries-extra Warning: Base acronym command \acrfull should not be u
 sed with new abbreviation definitions. Use \glsxtrfull instead on input line 20
-3.
+9.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
 sed with new abbreviation definitions. Use \glsxtrlong instead on input line 20
-3.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-203.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-203.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-203.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-203.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-203.
-
-[14]
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-205.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-207.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-207.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-207.
+9.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
 209.
 
+LaTeX Info: Redefining \. on input line 213.
+LaTeX Info: Redefining \% on input line 213.
+[15<./images/fig:ilustracion_secuenciacion_g1_maxam.png>]
+(./images/fig:esquema_secuenciacion_g1_maxam.tex)
+(./tables/tab:ventajas_desventajas_secuenciacion_maxam.tex
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-209.
+16.
 
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-209.
-
-LaTeX Info: Redefining \. on input line 216.
-LaTeX Info: Redefining \% on input line 216.
-[15]
-<images/fig:secuenciacion_1g_maxam.png, id=424, 905.3825pt x 464.73625pt>
-File: images/fig:secuenciacion_1g_maxam.png Graphic file (type png)
-<use images/fig:secuenciacion_1g_maxam.png>
-Package luatex.def Info: images/fig:secuenciacion_1g_maxam.png  used on input l
-ine 239.
-(luatex.def)             Requested size: 376.99904pt x 193.51434pt.
-
-
-Package natbib Warning: Author undefined for citation`erenDNASequencingMethods2
-022' 
-(natbib)                on page 16 on input line 241.
-
-
-Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 25
-0.
-
-
-Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 25
-0.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-250.
-
-[16
-
-] (./images/fig:secuenciacion_g1_maxam.tex)
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 270.
-LaTeX Info: Redefining \% on input line 270.
- [17<./images/fig:secuenciacion_1g_maxam.png>]
+ [16]
+LaTeX Info: Redefining \. on input line 246.
+LaTeX Info: Redefining \% on input line 246.
 
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-297.
-
-<images/fig:secuenciacion_1g_sanger1.png, id=442, 908.39375pt x 485.815pt>
-File: images/fig:secuenciacion_1g_sanger1.png Graphic file (type png)
-<use images/fig:secuenciacion_1g_sanger1.png>
-Package luatex.def Info: images/fig:secuenciacion_1g_sanger1.png  used on input
- line 311.
+[17]
+<images/fig:ilustracion_secuenciacion_g1_sanger1.png, id=376, 908.39375pt x 485
+.815pt>
+File: images/fig:ilustracion_secuenciacion_g1_sanger1.png Graphic file (type pn
+g)
+<use images/fig:ilustracion_secuenciacion_g1_sanger1.png>
+Package luatex.def Info: images/fig:ilustracion_secuenciacion_g1_sanger1.png  u
+sed on input line 250.
 (luatex.def)             Requested size: 182.84476pt x 97.78395pt.
-<images/fig:secuenciacion_1g_sanger2.png, id=443, 907.39pt x 502.87875pt>
-File: images/fig:secuenciacion_1g_sanger2.png Graphic file (type png)
-<use images/fig:secuenciacion_1g_sanger2.png>
-Package luatex.def Info: images/fig:secuenciacion_1g_sanger2.png  used on input
- line 317.
+<images/fig:ilustracion_secuenciacion_g1_sanger2.png, id=377, 907.39pt x 502.87
+875pt>
+File: images/fig:ilustracion_secuenciacion_g1_sanger2.png Graphic file (type pn
+g)
+<use images/fig:ilustracion_secuenciacion_g1_sanger2.png>
+Package luatex.def Info: images/fig:ilustracion_secuenciacion_g1_sanger2.png  u
+sed on input line 257.
 (luatex.def)             Requested size: 182.84476pt x 101.33362pt.
-
-Package natbib Warning: Author undefined for citation`erenDNASequencingMethods2
-022' 
-(natbib)                on page 18 on input line 324.
 
 
 Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 32
-9.
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 27
+0.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 32
-9.
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 27
+0.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-329.
+270.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-329.
+270.
 
-[18]
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-333.
+274.
 
-(./images/fig:secuenciacion_g1_sanger.tex)
+
+LaTeX Warning: Reference `fig:secuenciacion_1g_sanger2' on page 18 undefined on
+ input line 274.
+
+(./images/fig:esquema_secuenciacion_g1_sanger.tex)
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 34
-6.
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 28
+7.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-346.
+287.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-346.
+287.
 
+(./tables/tab:ventajas_desventajas_secuenciacion_sanger.tex
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-359.
+8.
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 359--360
+Underfull \hbox (badness 3884) in paragraph at lines 8--9
 []|\TU/IBMPlexSerif(0)/m/n/9 Al-ta pre-ci-sión y lec-tu-ra lar-ga (has-ta
  []
 
-
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 376.
-LaTeX Info: Redefining \% on input line 376.
- [19<./images/fig:secuenciacion_1g_sanger1.png><./images/fig:secuenciacion_1g_sa
-nger2.png>]
+ [18<./images/fig:ilustracion_secuenciacion_g1_sanger1.png><./images/fig:ilustra
+cion_secuenciacion_g1_sanger2.png>]
 
 Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 37
-9.
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 30
+0.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 37
-9.
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 30
+0.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-379.
+300.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-383.
+306.
 
-(./images/fig:secuenciacion_g2_illumina.tex)
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-395.
-
+(./images/fig:esquema_secuenciacion_g2_illumina.tex)
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-399.
-
-[20] (./images/fig:secuenciacion_g2_ion.tex)
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-445.
+318.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-461.
+322.
+
+LaTeX Info: Redefining \. on input line 323.
+LaTeX Info: Redefining \% on input line 323.
+[19] (./tables/tab:ventajas_desventajas_secuenciacion_illumina.tex)
+(./images/fig:esquema_secuenciacion_g2_ion.tex)
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+349.
+
+(./tables/tab:ventajas_desventajas_secuenciacion_ion.tex
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+14.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-469.
+22.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 472.
-LaTeX Info: Redefining \% on input line 472.
- [21]
-(./images/fig:secuenciacion_g2_roche.tex)
+) [20] (./images/fig:esquema_secuenciacion_g2_roche.tex)
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-487.
+372.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-490.
+375.
 
+(./tables/tab:ventajas_desventajas_secuenciacion_roche.tex
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-500.
+8.
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 500--501
+Underfull \hbox (badness 1092) in paragraph at lines 8--9
 []|\TU/IBMPlexSerif(0)/m/n/9 Lec-tu-ras más lar-gas (400-600[]pb) que
  []
 
-[22] (./images/fig:secuenciacion_g2_solid.tex)
+)
+LaTeX Info: Redefining \. on input line 383.
+LaTeX Info: Redefining \% on input line 383.
+ [21] (./images/fig:esquema_secuenciacion_g2_solid.tex)
+(./tables/tab:ventajas_desventajas_secuenciacion_solid.tex) [22]
 
 Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 56
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 41
+3.
+
+
+Package glossaries-extra Warning: Base acronym command \acrlong should not be u
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 41
+3.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+413.
+
+
+Package glossaries-extra Warning: Base acronym command \acrfull should not be u
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 41
+9.
+
+
+Package glossaries-extra Warning: Base acronym command \acrlong should not be u
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 41
+9.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+419.
+
+
+Package glossaries-extra Warning: Base acronym command \acrfull should not be u
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 41
+9.
+
+
+Package glossaries-extra Warning: Base acronym command \acrlong should not be u
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 41
+9.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+419.
+
+(./images/fig:esquema_secuenciacion_g3_pacific.tex)
+
+Package glossaries-extra Warning: Base acronym command \acrfull should not be u
+sed with new abbreviation definitions. Use \glsxtrfull instead on input line 43
 4.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 56
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 43
 4.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-564.
-
-
-Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 56
-8.
+434.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 56
-8.
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 43
+4.
 
+(./tables/tab:ventajas_desventajas_secuenciacion_pacific.tex
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-568.
-
-
-Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 56
-8.
-
-
-Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 56
 8.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-568.
+10.
 
-LaTeX Info: Redefining \. on input line 569.
-LaTeX Info: Redefining \% on input line 569.
-[23] (./images/fig:secuenciacion_g3_pacific.tex)
 
-Package glossaries-extra Warning: Base acronym command \acrfull should not be u
-sed with new abbreviation definitions. Use \glsxtrfull instead on input line 58
-3.
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+12.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 58
-3.
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 20
+.
+
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+[23]) (./images/fig:esquema_secuenciacion_g3_oxford.tex)
+(./tables/tab:ventajas_desventajas_secuenciacion_oxford.tex
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+8.
+
+) [24]
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+472.
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-583.
+480.
 
-
-Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 58
-3.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-593.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-595.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-597.
-
-
-Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 60
-5.
-
-[24] (./images/fig:secuenciacion_g3_oxford.tex)
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-637.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-659.
-
-LaTeX Info: Redefining \. on input line 666.
-LaTeX Info: Redefining \% on input line 666.
-[25]
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-673.
-
-<images/fig:creacion_de_microarreglos_in_situ.png, id=534, 559.08875pt x 578.16
+<images/fig:creacion_de_microarreglos_in_situ.png, id=458, 559.08875pt x 578.16
 pt>
 File: images/fig:creacion_de_microarreglos_in_situ.png Graphic file (type png)
 <use images/fig:creacion_de_microarreglos_in_situ.png>
 Package luatex.def Info: images/fig:creacion_de_microarreglos_in_situ.png  used
- on input line 683.
+ on input line 488.
 (luatex.def)             Requested size: 135.15059pt x 139.75812pt.
-[26
-
-<./images/fig:creacion_de_microarreglos_in_situ.png>]
+LaTeX Info: Redefining \. on input line 491.
+LaTeX Info: Redefining \% on input line 491.
+[25<./images/fig:creacion_de_microarreglos_in_situ.png>]
 (./images/fig:esquema_de_microarreglos.tex)
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-714.
-
-LaTeX Info: Redefining \. on input line 717.
-LaTeX Info: Redefining \% on input line 717.
-[27]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 749.
+516.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 749.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 749.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 749.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 749.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 749.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 749.
-
-
-Package natbib Warning: Author undefined for citation`houMicroarrayBasedAnalysi
-sGene2015' 
-(natbib)                on page 28 on input line 751.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-755.
-
-[28]
-
-LaTeX Warning: Reference `fig:microarreglos_ejemplo_cuantificacion_de_genes_por
-_tratamiento' on page 29 undefined on input line 757.
-
-
-LaTeX Warning: Reference `fig:microarreglos_ejemplo_heatmap_de_expresion' on pa
-ge 29 undefined on input line 759.
-
-)
+ [26]
+(./tables/tab:ventajas_desventajas_secuenciacion_microarreglos.tex))
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
- [29]
+ [27]
+[28]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2915,21 +2773,21 @@ LaTeX Info: Redefining \% on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [30
+ [29
 
 
 ]
 Capítulo 6.
-(./06.tex) [31
+(./06.tex) [30
 
 
 ]
 Capítulo 7.
-(./07.tex) [32
+(./07.tex) [31
 
 ]
 Capítulo 8.
-(./08.tex) [33
+(./08.tex) [32
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -2965,23 +2823,20 @@ Capítulo 8.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
  (./0_Main.bbl
-Underfull \hbox (badness 6708) in paragraph at lines 25--28
-\TU/IBMPlexSerif(0)/m/sc/10 trary pri-mers.  \TU/IBMPlexSerif(0)/b/sc/10 Nu-clei
-c acids re-search\TU/IBMPlexSerif(0)/m/sc/10 ,
+Underfull \hbox (badness 6708) in paragraph at lines 4--7
+\TU/IBMPlexSerif(0)/m/sc/10 trary pri-mers.  \TU/IBMPlexSerif(0)/b/n/10 Nu-cleic
+ acids re-search\TU/IBMPlexSerif(0)/m/sc/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 []\TU/IBMPlexSerif(0)/m/sc/10 Ro-man Jak-sik, Mar-ta Iwa-nasz-ko, Joan-na
  []
 
-[34
+[33
 
 
-])
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
- [35] (./0_Main.acr) [36] (./0_Main.gls) [37
+]) [34] (./0_Main.acr) [35] (./0_Main.gls) [36
 
 
 
@@ -3001,21 +2856,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `0_Main.out' has not changed.
-(rerunfilecheck)             Checksum: F1B868F4B40D3FF139BF9872E7FB0CFF;8603.
+(rerunfilecheck)             Checksum: 80F528237B91AE619587E6319C9A61A4;5785.
 )
 
 Here is how much of LuaTeX's memory you used:
- 66689 strings out of 476076
+ 66832 strings out of 476076
  125240,2848258 words of node,token memory allocated
- 2241 words of node memory still in use:
-   34 hlist, 4 vlist, 14 rule, 1 local_par, 17 glue, 5 kern, 1 penalty, 3 glyph,
- 219 attribute, 130 glue_spec, 110 attribute_list, 3 write, 24 pdf_literal, 8 pd
-f_action, 24 pdf_colorstack nodes
-   avail lists: 1:1,2:2839,3:981,4:222,5:1164,6:116,7:8390,8:99,9:838,10:21,11:1
-114,12:1
- 87439 multiletter control sequences out of 65536+600000
- 111 fonts using 12095647 bytes
- 103i,24n,113p,2606b,1294s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 4489 words of node memory still in use:
+   55 hlist, 10 vlist, 21 rule, 22 disc, 5 local_par, 4 math, 58 glue, 34 kern, 
+14 penalty, 1 margin_kern, 123 glyph, 313 attribute, 130 glue_spec, 157 attribut
+e_list, 4 write, 24 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_dest, 7
+ pdf_action, 30 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+
+   avail lists: 1:1,2:2800,3:988,4:198,5:1240,6:97,7:9021,8:99,9:838,10:21,11:11
+53,12:1
+ 87533 multiletter control sequences out of 65536+600000
+ 111 fonts using 12095007 bytes
+ 103i,24n,113p,2606b,1298s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf></usr/shar
 e/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSerif-Italic.otf></usr/share/texmf-d
 ist/fonts/opentype/ibm/plex/IBMPlexSans-Regular.otf></usr/share/texmf-dist/fonts
@@ -3028,10 +2885,10 @@ nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 0_Main.pdf (41 pages, 2106655 bytes).
+Output written on 0_Main.pdf (38 pages, 2096048 bytes).
 
-PDF statistics: 685 PDF objects out of 1000 (max. 8388607)
- 579 compressed objects within 6 object streams
- 158 named destinations out of 1000 (max. 1048576)
- 576 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 611 PDF objects out of 1000 (max. 8388607)
+ 508 compressed objects within 6 object streams
+ 148 named destinations out of 1000 (max. 1048576)
+ 488 words of extra memory for PDF output out of 10000 (max. 100000000)
 

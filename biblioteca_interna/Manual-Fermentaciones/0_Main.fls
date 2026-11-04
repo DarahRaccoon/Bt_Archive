@@ -328,6 +328,9 @@ INPUT /usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 INPUT /usr/share/texmf-dist/tex/latex/supertabular/supertabular.sty
 INPUT /usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 INPUT /usr/share/texmf-dist/tex/latex/glossaries-extra/glossaries-extra-abbrstyles.def
+INPUT ../../asignaturas/0-tex_resources/glosario_general.tex
+OUTPUT 0_Main.glo
+OUTPUT 0_Main.acn
 INPUT /usr/share/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -348,9 +351,6 @@ INPUT /usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hluatex.def
 INPUT /usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT ../../asignaturas/0-tex_resources/glosario_general.tex
-OUTPUT 0_Main.glo
-OUTPUT 0_Main.acn
 INPUT ./0_Main.aux
 OUTPUT 0_Main.aux
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii

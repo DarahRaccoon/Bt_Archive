@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  31 OCT 2026 20:12
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  3 NOV 2026 21:21
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resu
 men/0_Main.tex
 
@@ -816,22 +816,28 @@ Package: simplekv 2025/06/15 v0.32 Simple keyval package (CT)
 )
 Package: chemfig 2025/10/30 v1.71 Draw molecule with an easy syntax (CT)
 ))
+(/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+\everycr=\toks47
+\minrowclearance=\skip57
+\rownum=\count361
+)
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
-\c@tracingmulticols=\count361
+\c@tracingmulticols=\count362
 \mult@box=\box88
 \multicol@leftmargin=\dimen300
-\c@unbalance=\count362
-\c@collectmore=\count363
-\doublecol@number=\count364
-\multicoltolerance=\count365
-\multicolpretolerance=\count366
+\c@unbalance=\count363
+\c@collectmore=\count364
+\doublecol@number=\count365
+\multicoltolerance=\count366
+\multicolpretolerance=\count367
 \full@width=\dimen301
 \page@free=\dimen302
 \premulticols=\dimen303
 \postmulticols=\dimen304
-\multicolsep=\skip57
-\multicolbaselineskip=\skip58
+\multicolsep=\skip58
+\multicolbaselineskip=\skip59
 \partial@page=\box89
 \last@line=\box90
 \mc@boxedresult=\box91
@@ -876,16 +882,16 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \@tempa=\box129
 \@tempa=\box130
 \@tempa=\box131
-\c@minrows=\count367
-\c@columnbadness=\count368
-\c@finalcolumnbadness=\count369
+\c@minrows=\count368
+\c@columnbadness=\count369
+\c@finalcolumnbadness=\count370
 \last@try=\dimen306
 \multicolovershoot=\dimen307
 \multicolundershoot=\dimen308
 \mult@nat@firstbox=\box132
 \colbreak@box=\box133
-\mc@col@check@num=\count370
-\g__mc_curr_col_int=\count371
+\mc@col@check@num=\count371
+\g__mc_curr_col_int=\count372
 )
 (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -893,9 +899,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count372
-\Gm@cntv=\count373
-\c@Gm@tempcnt=\count374
+\Gm@cnth=\count373
+\Gm@cntv=\count374
+\c@Gm@tempcnt=\count375
 \Gm@bindingoffset=\dimen309
 \Gm@wd@mp=\dimen310
 \Gm@odd@mp=\dimen311
@@ -904,11 +910,11 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen314
 \Gm@layouthoffset=\dimen315
 \Gm@layoutvoffset=\dimen316
-\Gm@dimlist=\toks47
+\Gm@dimlist=\toks48
 )
 (/usr/share/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
-\FN@temptoken=\toks48
+\FN@temptoken=\toks49
 \footnotemargin=\dimen317
 Package footmisc Info: Declaring symbol style bringhurst on input line 549.
 Package footmisc Info: Declaring symbol style chicago on input line 557.
@@ -922,21 +928,21 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 618
 (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip59
-\f@nch@offset@elh=\skip60
-\f@nch@offset@erh=\skip61
-\f@nch@offset@olh=\skip62
-\f@nch@offset@orh=\skip63
-\f@nch@offset@elf=\skip64
-\f@nch@offset@erf=\skip65
-\f@nch@offset@olf=\skip66
-\f@nch@offset@orf=\skip67
-\f@nch@height=\skip68
-\f@nch@footalignment=\skip69
-\f@nch@widthL=\skip70
-\f@nch@widthC=\skip71
-\f@nch@widthR=\skip72
-\@temptokenb=\toks49
+\f@nch@headwidth=\skip60
+\f@nch@offset@elh=\skip61
+\f@nch@offset@erh=\skip62
+\f@nch@offset@olh=\skip63
+\f@nch@offset@orh=\skip64
+\f@nch@offset@elf=\skip65
+\f@nch@offset@erf=\skip66
+\f@nch@offset@olf=\skip67
+\f@nch@offset@orf=\skip68
+\f@nch@height=\skip69
+\f@nch@footalignment=\skip70
+\f@nch@widthL=\skip71
+\f@nch@widthC=\skip72
+\f@nch@widthR=\skip73
+\@temptokenb=\toks50
 )
 luaotfload | cache : Lookup cache loaded from /home/darah/.texlive/texmf-var/lua
 tex-cache/generic/names/luaotfload-lookup-cache.luc.
@@ -979,35 +985,35 @@ Package fontspec Info:
 
 (/usr/share/texmf-dist/tex/latex/fncychap/fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
-\RW=\skip73
-\mylen=\skip74
-\myhi=\skip75
-\px=\skip76
-\py=\skip77
-\pyy=\skip78
-\pxx=\skip79
-\backskip=\skip80
+\RW=\skip74
+\mylen=\skip75
+\myhi=\skip76
+\px=\skip77
+\py=\skip78
+\pyy=\skip79
+\pxx=\skip80
+\backskip=\skip81
 )
 (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box134
-\beforetitleunit=\skip81
-\aftertitleunit=\skip82
+\beforetitleunit=\skip82
+\aftertitleunit=\skip83
 \ttl@plus=\dimen318
 \ttl@minus=\dimen319
-\ttl@toksa=\toks50
+\ttl@toksa=\toks51
 \titlewidth=\dimen320
 \titlewidthlast=\dimen321
 \titlewidthfirst=\dimen322
 )
 (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip83
+\labelindent=\skip84
 \enit@outerparindent=\dimen323
-\enit@toks=\toks51
+\enit@toks=\toks52
 \enit@inbox=\box135
-\enit@count@id=\count375
-\enitdp@description=\count376
+\enit@count@id=\count376
+\enitdp@description=\count377
 )
 (/usr/share/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
@@ -1017,35 +1023,35 @@ Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count377
-\calc@Bcount=\count378
+\calc@Acount=\count378
+\calc@Bcount=\count379
 \calc@Adimen=\dimen324
 \calc@Bdimen=\dimen325
-\calc@Askip=\skip84
-\calc@Bskip=\skip85
+\calc@Askip=\skip85
+\calc@Bskip=\skip86
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count379
-\calc@Cskip=\skip86
+\calc@Ccount=\count380
+\calc@Cskip=\skip87
 )
 (/usr/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
  in chemistry (CN)
-\l__chemgreek_tmpa_int=\count380
-\g__chemgreek_tmpa_int=\count381
+\l__chemgreek_tmpa_int=\count381
+\g__chemgreek_tmpa_int=\count382
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count382
-\__mhchem_arrow_extPgfLength_skip=\skip87
-\mhchem@minispace@tmp=\skip88
-\mhchem@minibackspace@tmp=\skip89
-\mhchem@bondwidth=\skip90
-\mhchem@bondheight=\skip91
-\mhchem@smallbondwidth@tmpA=\skip92
-\mhchem@smallbondwidth@tmpB=\skip93
-\mhchem@smallbondwidth=\skip94
-\mhchem@bondtmp@minussidebearingleft=\skip95
-\mhchem@bondtmp@minussidebearingright=\skip96
-\l__mhchem_option_version_int=\count383
+\l__mhchem_ce_distanceFromLastComma_int=\count383
+\__mhchem_arrow_extPgfLength_skip=\skip88
+\mhchem@minispace@tmp=\skip89
+\mhchem@minibackspace@tmp=\skip90
+\mhchem@bondwidth=\skip91
+\mhchem@bondheight=\skip92
+\mhchem@smallbondwidth@tmpA=\skip93
+\mhchem@smallbondwidth@tmpB=\skip94
+\mhchem@smallbondwidth=\skip95
+\mhchem@bondtmp@minussidebearingleft=\skip96
+\mhchem@bondtmp@minussidebearingright=\skip97
+\l__mhchem_option_version_int=\count384
 \mhchem@option@minusmathsidebearingleft=\dimen326
 \mhchem@option@minusmathsidebearingright=\dimen327
 \mhchem@option@minustextsidebearingleft=\dimen328
@@ -1062,16 +1068,19 @@ Package mhchem Warning: You did not specify a 'version' option for the mhchem
 ) (/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen330
 \WF@size=\dimen331
-\c@WF@wrappedlines=\count384
+\c@WF@wrappedlines=\count385
 \WF@box=\box136
-\WF@everypar=\toks52
+\WF@everypar=\toks53
 Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip97
-\multirow@cntb=\count385
-\multirow@dima=\skip98
+\multirow@colwidth=\skip98
+\multirow@cntb=\count386
+\multirow@dima=\skip99
 \bigstrutjot=\dimen332
 )
 (/usr/share/texmf-dist/tex/latex/threeparttable/threeparttable.sty
@@ -1093,8 +1102,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen340
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count386
-\c@continuedfloat=\count387
+\c@caption@flags=\count387
+\c@continuedfloat=\count388
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
@@ -1102,15 +1111,9 @@ Package caption Info: wrapfig package is loaded.
 (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count388
+\c@subfigure=\count389
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count389
-)
-(/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
-\everycr=\toks53
-\minrowclearance=\skip99
-\rownum=\count390
+\c@subtable=\count390
 )
 (/usr/share/texmf-dist/tex/latex/glossaries-extra/glossaries-extra.sty
 Package: glossaries-extra 2025/11/03 v1.9 (NLCT)
@@ -1760,11 +1763,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
-your preamble.
- on input line 7.
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-spa
@@ -1860,12 +1860,12 @@ Package hyperref Info: Link coloring ON on input line 7.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../portada.jpg, id=163, 4165.5625pt x 5882.97874pt>
+<../portada.jpg, id=179, 4165.5625pt x 5882.97874pt>
 File: ../portada.jpg Graphic file (type jpg)
 <use ../portada.jpg>
 Package luatex.def Info: ../portada.jpg  used on input line 11.
 (luatex.def)             Requested size: 597.50787pt x 843.80899pt.
-<../../0-tex_resources/logo_upsin.png, id=164, 1927.4409pt x 903.6159pt>
+<../../0-tex_resources/logo_upsin.png, id=180, 1927.4409pt x 903.6159pt>
 File: ../../0-tex_resources/logo_upsin.png Graphic file (type png)
 <use ../../0-tex_resources/logo_upsin.png>
 Package luatex.def Info: ../../0-tex_resources/logo_upsin.png  used on input li
@@ -1924,12 +1924,7 @@ resources/logo_upsin.png>]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(../../0-tex_resources/secciones_complementarias.tex [2
-
-
-
-]) (./0_Main.toc
+ (./0_Main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
@@ -1952,16 +1947,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-
-LaTeX Font Warning: Font shape `TU/IBMPlexSerif(0)/b/sc' undefined
-(Font)              using `TU/IBMPlexSerif(0)/b/n' instead on input line 2.
-
-
-Package spanish Warning: Replacing `TU/IBMPlexSerif(0)/b/sc' by 
-(spanish)                faked small caps on input line 2.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
 [][][][]\TU/IBMPlexSerif(0)/b/n/12 I In-tro-duc-ción a fe-nó-me-nos de 
  []
 
@@ -1969,9 +1955,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 \tf@toc=\write8
 
 \openout8 = 0_Main.toc
- [3
-
-] [4
+ [2
 
 
 ]
@@ -2010,6 +1994,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
  [1
 
 
+
+
 ]
 Capítulo 1.
 (./01.tex
@@ -2019,17 +2005,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 85.
- [3]
-[4])
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
- [5]
+(babel)             Reported on input line 87.
+
+[3] [4])
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
+ [5] [6]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2062,22 +2046,24 @@ LaTeX Info: Redefining \% on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [6
+ [7
 
 
 ]
 Capítulo 2.
-(./02.tex (./images/fig:ejercicio_1_cubo.tex) [7
+(./02.tex (./images/fig:ejercicio_1_cubo.tex) [8
 
 
 ]
-Underfull \vbox (badness 4181) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
-(./images/fig:grafica_de_tipos_de_fluidos.tex)
-LaTeX Info: Redefining \. on input line 163.
-LaTeX Info: Redefining \% on input line 163.
- [9]) [10]
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+ [9]
+(./images/fig:grafica_de_tipos_de_fluidos.tex)) [10]
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ [11]
 Capítulo 3.
 (./03.tex
 
@@ -2095,33 +2081,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [12
 
 ]
-[12]
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+
+[13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
+(hyperref)                removing `math shift' on input line 93.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
+(hyperref)                removing `math shift' on input line 93.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
- [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 213.
-LaTeX Info: Redefining \% on input line 213.
- [15])
-[16]
+[14]
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+ [15]) [16]
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+ [17]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2154,7 +2135,7 @@ LaTeX Info: Redefining \% on input line 213.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [17
+ [18
 
 
 ]
@@ -2162,47 +2143,99 @@ Capítulo 4.
 (./04.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [19
 
 
 ]
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19] [20]
-LaTeX Info: Redefining \. on input line 188.
-LaTeX Info: Redefining \% on input line 188.
+ [20]
+Underfull \vbox (badness 2318) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 138.
+LaTeX Info: Redefining \% on input line 138.
  [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
+LaTeX Info: Redefining \. on input line 246.
+LaTeX Info: Redefining \% on input line 246.
+
+[23] [24]
 Overfull \hbox (5.27402pt too wide) detected at line 264
 []
  []
 
+)
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
+ [25] [26]
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
+ [27] [28]
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
+ [29] [30]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=512.14963pt
+* \textheight=591.5302pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=2.9103pt
+* \headheight=12.0pt
+* \headsep=14.22636pt
+* \topskip=10.0pt
+* \footskip=42.67912pt
+* \marginparwidth=135.15059pt
+* \marginparsep=21.33955pt
+* \columnsep=30.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+ [31
+
+
+]
+Capítulo 5.
+(./07.tex (./tables/tab:fuerzas_por_tipo_de_fluido.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+[]|\TU/IBMPlexSerif(0)/m/n/9 Di-fu-sión y
+ []
+
+
+Overfull \hbox (8.96822pt too wide) in paragraph at lines 5--19
+ [] 
+ []
+
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
- [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [32
 
- [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 328.
-LaTeX Info: Redefining \% on input line 328.
- [25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 389.
-LaTeX Info: Redefining \% on input line 389.
- [27])
-[28]
+]
+(./images/fig:representacion_transporte_de_materia.tex)
+(./images/fig:teoria_de_la_pelicula.tex)
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+ [33]
+(./images/fig:interfase_liquido_solido.tex)) [34]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2239,13 +2272,13 @@ LaTeX Info: Redefining \% on input line 389.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [29
+) [35
 
 
-] (./0_Main.acr) [30] (./0_Main.gls)
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
- [31
+] (./0_Main.acr) [36] (./0_Main.gls)
+LaTeX Info: Redefining \. on input line 48.
+LaTeX Info: Redefining \% on input line 48.
+ [37
 
 ] (./0_Main.aux
 LaTeX Info: Redefining \. on input line 20.
@@ -2260,46 +2293,47 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `0_Main.out' has not changed.
-(rerunfilecheck)             Checksum: 85C9E9A65B781C05A4D7117765DE21FF;6387.
+(rerunfilecheck)             Checksum: 3A97A73305154C425E6C183FC8853E12;7122.
 )
 
 Here is how much of LuaTeX's memory you used:
- 66505 strings out of 476076
+ 66795 strings out of 476076
  125240,2373549 words of node,token memory allocated
- 14540 words of node memory still in use:
-   119 hlist, 12 vlist, 21 rule, 25 disc, 5 local_par, 6 math, 215 glue, 29 kern
-, 13 penalty, 1 margin_kern, 154 glyph, 2255 attribute, 130 glue_spec, 1128 attr
-ibute_list, 6 write, 794 pdf_literal, 1 pdf_dest, 7 pdf_action, 28 pdf_colorstac
-k, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:3,2:2998,3:2068,4:158,5:895,6:81,7:6775,8:116,9:1842,10:33,11:
-625,12:1
- 87393 multiletter control sequences out of 65536+600000
- 99 fonts using 10750935 bytes
- 103i,25n,113p,2609b,2588s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSerif-Italic.otf></usr/sha
-re/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Bold.otf></usr/share/texmf-dis
-t/fonts/opentype/ibm/plex/IBMPlexSans-Regular.otf></usr/share/texmf-dist/fonts/o
-pentype/ibm/plex/IBMPlexSerif-Bold.otf></usr/share/texmf-dist/fonts/opentype/ibm
-/plex/IBMPlexSerif-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 0_Main.pdf (35 pages, 5308879 bytes).
+ 6710 words of node memory still in use:
+   90 hlist, 10 vlist, 20 rule, 10 disc, 5 local_par, 8 math, 132 glue, 16 kern,
+ 13 penalty, 1 margin_kern, 70 glyph, 857 attribute, 130 glue_spec, 429 attribut
+e_list, 5 write, 128 pdf_literal, 1 pdf_dest, 8 pdf_action, 36 pdf_colorstack, 1
+ pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:1,2:6349,3:1975,4:160,5:887,6:92,7:6672,8:116,9:3387,10:33,11:
+761,12:1
+ 87609 multiletter control sequences out of 65536+600000
+ 119 fonts using 12798407 bytes
+ 103i,25n,113p,2609b,2592s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf></usr/shar
+e/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSerif-Italic.otf></usr/share/texmf-d
+ist/fonts/opentype/ibm/plex/IBMPlexSans-Bold.otf></usr/share/texmf-dist/fonts/op
+entype/ibm/plex/IBMPlexSans-Regular.otf></usr/share/texmf-dist/fonts/opentype/ib
+m/plex/IBMPlexSerif-Bold.otf></usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMP
+lexSerif-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on 0_Main.pdf (39 pages, 5327481 bytes).
 
-PDF statistics: 549 PDF objects out of 1000 (max. 8388607)
- 446 compressed objects within 5 object streams
- 130 named destinations out of 1000 (max. 1048576)
- 496 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 633 PDF objects out of 1000 (max. 8388607)
+ 522 compressed objects within 6 object streams
+ 176 named destinations out of 1000 (max. 1048576)
+ 528 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -179,11 +179,11 @@
         "articulos": []
       }
     },
-    {"id": "4-tecnologia-enzimatica",
+  {"id": "4-tecnologia-enzimatica",
       "nombre": "Tecnología enzimática",
       "cuatrimestre": 4,
       "icono": "fa-bolt",
-      "descripcion": "Estudio de las enzimas: Desde su estructura y función hasta cómo obtenerlas y utilizarlas.",
+      "descripcion": "Estudio de las enzimas, su estructura, función, cinética y aplicaciones biotecnológicas.",
       "portada": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/portada.jpg",
       "rutaResumen": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/Resumen/0_Main.pdf",
       "rutaDiapositivas": "/Bt_Archive/asignaturas/4-Tecnología_enzimática/Diapositivas/0_Main.pdf",
@@ -250,6 +250,22 @@
           "embedUrl": ""
         }
       ],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
+    },
+    {"id": "7-ingeniería_genética",
+      "nombre": "Ingeniería genética",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-dna",
+      "descripcion": "",
+      "portada": "/Bt_Archive/asignaturas/7-Ingeniería_genética/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Ingeniería_genética/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Ingeniería_genética/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Ingeniería genética.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-ingeniería_genética",
+      "videos": [],
       "recursosExtra": {
         "ejercicios": [],
         "articulos": []

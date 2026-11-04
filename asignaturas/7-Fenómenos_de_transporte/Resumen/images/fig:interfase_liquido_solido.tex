@@ -1,0 +1,19 @@
+\def\xlong{4}
+\def\ylong{8}
+
+\definecolor{DarkRed}{RGB}{200,0,0}
+\definecolor{DarkBlue}{RGB}{0,0,120}
+
+\begin{tikzpicture}[
+    linea/.style={ultra thick},
+    central/.style={linea,DarkRed,rounded corners,arrows=-Circle},
+    peliculas/.style={linea,DarkBlue,arrows=Stealth-Stealth},
+    texto/.style={font=\sffamily\Large}
+]
+
+\draw[linea] (0,0) -- (0,\ylong) node[texto,text width=2cm,align=center,midway,left=5pt] {Sólido};
+\draw[linea,dashed] (\xlong,0) -- (\xlong,\ylong) node[texto,text width=2cm,align=center,,midway,right] {Fase líquida};
+\draw[central] (\xlong+1,0.3*\ylong) node[texto,right] {$C_{A0}$} -- (0.25*\xlong,0.3*\ylong) to (0,0.15*\ylong) node[texto,below=10pt,right] {$C_{A1}$};
+\draw[peliculas] (0,0.9*\ylong) -- (\xlong,0.9*\ylong) node[texto,midway,above=5pt] {Película líquida};
+
+\end{tikzpicture}

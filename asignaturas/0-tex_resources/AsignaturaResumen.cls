@@ -78,6 +78,7 @@
     \setlist[itemize]{itemsep=2pt, topsep=4pt, parsep=2pt, partopsep=4pt}
     \setlist[enumerate]{itemsep=2pt, topsep=4pt, parsep=2pt, partopsep=4pt}
 
+\RequirePackage{placeins}
 \RequirePackage{array}
 \RequirePackage{multirow}
 \RequirePackage[para]{threeparttable}
