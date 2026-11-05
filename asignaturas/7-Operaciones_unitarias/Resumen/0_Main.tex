@@ -1,9 +1,8 @@
 \documentclass{AsignaturaResumen}
 
+\def\ISMAIN{1}
 \SetTitulo{Operaciones unitarias}
-
-% Glosario
-    \input{../../0-tex_resources/glosario_general}
+\input{../../0-tex_resources/glosario_general}
 
 \begin{document}
 
@@ -12,18 +11,39 @@
 \Portada
 \Indices
 
+
     \mainmatter
 
 
+\part{Introducción a operaciones unitarias}
+
+    \chapter{Fundamentos de operaciones unitarias} \input{01}
+
+\part{Operaciones unitarias de transferencia de momento}
+
+    \chapter{Transferencia de momento en bioprocesos} \input{02}
+    \chapter{Operación de transporte de momento: Centrifugación} \input{03}
+    \chapter{Operación de transporte de momento: Filtración} \input{04}
+
+%\part{Operaciones unitarias de transferencia de calor}
+%
+%    \chapter{Transferencia de calor en bioprocesos}
+%    \chapter{Operación de transporte de calor:}
+%
+%\part{Operaciones unitarias de transferencia de masa}
+%
+%    \chapter{Transferencia de masa en bioprocesos}
+%    \chapter{Operación de transporte de masa:}
+
+
+    \PlainGeom
+    \appendix
 
 
 
     \backmatter
-    \newgeometry{top=2cm,bottom=2cm,inner=1.25cm,outer=1.25cm,footskip=1.25cm}
 
-\addcontentsline{toc}{chapter}{Bibliografía}
-\bibliography{Main}
-
-    \appendix
+\Bibliografia
+\Glosarios
 
 \end{document}

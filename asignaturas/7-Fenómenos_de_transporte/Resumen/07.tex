@@ -82,7 +82,7 @@ Donde:
 
 \begin{itemize}
     \item $N_{A}$ es la velocidad de transferencia de materia del componente $A$
-    \item $k$ es el coeficiente de transferencia de materia
+    \item $K$ es el coeficiente de transferencia de materia
     \item $C_{A0}$ es la concentración de $A$ en el seno del fluido lejos de la interfase
     \item $C_{Ai}$ es la concentración de $A$ en la interfase
 \end{itemize}
@@ -115,6 +115,99 @@ La velocidad volumétrica de transferencia viene dada por la siguiente ecuación
 \end{equation}
 
 Donde $k_{L}$ el coeficiente de transferencia de materia de la fase líquida.
+
+\subsubsection{Transferencia de materia líquido-líquido}
+
+La transferencia de materia líquido-líquido (L-L) entre disolventes inmiscibles es un roceso muy común en el bioprocesado, especialmente en aquellas etapas de recuperación de producto. Los disolventes orgánicos se utilizan para aislar antibióticos, esteroides, alcaloides de los caldos de fermentación, mientras que los sistemas de dosfases se utilizan en la purificación de proteínas. La velocidad de transferencia de materia ($N_{A}$) en cada líquido puede expresarse como:
+
+\begin{gather}
+    N_{A1} = K_{L1} \cdot a \cdot (C_{A1}  - C_{A1i})
+    \\
+    N_{A2} = K_{L2} \cdot a \cdot (C_{A2i} - C_{A2})
+\end{gather}
+
+Donde los subíndices 1 y 2 se refieren a cada una de las fases líquidas. Con esto en mente, $C_{A1}$ y $C_{A2}$ son la concentración del componente $A$ ($[A]$) en las fases de los líquidos 1 y 2, respectivamente. Asímismo, $C_{A1i}$ representa $[A]$ en la interfases del líquido 1, mientras que $C_{A2i}$ es $[A]$ en el seno del líquido 2.
+
+La distribución  de equilibrio de un soluto entre dos fases se describe perfectamente en términos de la ley de distribución \textcolor{red}{Nernst}. En equilibrio, la relación entre la concentración de soluto entre dos fases viene dada por el coeficiente de distribución, o coeficiente de reparto ($m$). Cuando $[A]$ es bajo, la curva de equilibrio es aproximadamente una linea recta, por lo que $m$ es constante. La ley de distribución se cumple siempre que los disolventes sean inmiscibles y no exista reacción química.
+
+\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:equilibrio_de_solutos}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Equilibrio de solutos}
+    \label{fig:equilibrio_de_solutos}
+\end{figure}\end{minipage}}
+
+
+Entonces, si $C_{A1i}$ y $C_{A2i}$ son concentraciones de equilibrio, pueden relacionarse utilizando el coeficiente de distribución:
+
+\begin{equation}
+    m = \frac{C_{A2i}}{C_{A1i}}
+\end{equation}
+
+Para obtener la $N_{A}$ en los sistemas L-L empleando las resistencias naturales a dichas transferencias se tienen las siguientes ecuaciones:
+
+\begin{gather}
+    N_{A} = K_{L1} \cdot a \cdot (C_{A1} - m \cdot C_{A2})
+    \\
+    N_{A} = K_{L1} \cdot a \cdot (\frac{C_{A1}}{m} - C_{A2})
+\end{gather}
+
+Donde $K_{L1}$ y$K_{L2}$ son los coeficientes globales de transferencia de materia basándose en la concentración de los líquidos 1 y 2, respectivamente.
+
+\subsubsection{Transferencia de materia gas-líquido}
+
+La transferencia de materia gas-líquido (G-L) es un proceso muy importante debido a la necesidad de suministrar oxígeno a los fermentadores con cultvios aerobios.
+
+La velocidad de transferencia de materia a través de la capa límite de gas es\footnotemark:
+
+\footnotetext{En sistemas G-L, el subíndice $i$ utilizado para especificar que se habla de la interfase se cambia por el superindice $\ast$ para diferenciarlo del sistema L-L.}
+
+\begin{gather}
+    N_{AG} = K_{G} \cdot a \cdot (C_{AG} - C_{AG}^{\ast})
+    \\
+    N_{AL} = K_{L} \cdot a \cdot (C_{AL}^{\ast} - C_{AL})
+\end{gather}
+
+Donde $K_{G}$ y $K_{L}$ son los coeficientes de transferencia de materia en las fases gaseosa y líquida, respectivamente, mientras que $C_{AG}^{\ast}$ y $C_{AL}^{\ast}$ son $[A]$ en las interfases gaseosa y líquida.
+
+Empleando coeficientes globales de transferencia de masa y los factores de distribución, se tiene que:
+
+\begin{gather}
+    N_{A} = K_{G} \cdot a \cdot (C_{AG} - m \cdot C_{AL})
+    \\
+    N_{A} = K_{L} \cdot a \cdot (\frac{C_{AG}}{m} - C_{AL})
+\end{gather}
+
+Como detalle tenemos que recordar que todas estas ecuaciones son aplicables a cultivos aerobios
+
+\section{Consumo de oxígeno}
+
+La siguiente ecuación expresa la velocidad de transferencia de oxígeno del gas al líquido
+
+\begin{equation}
+    N_{A} = K_{L} \cdot a \cdot (C_{AL}^{\ast} - C_{AL})
+\end{equation}
+
+Donde $C_{AL}$ es la concentración de oxígeno en el cultivo y $C_{AL}^{\ast}$ es la concentración de oxígeno en el cultivo de equilibrio en la fase gas, ambas con unidades de \unit{\mole\per\m\cubed}. 
+
+    \Nota{$C_{AL}^{\ast}$ también se conoce como la solubilidad del oxígeno en el caldo de cultivo.}
+
+La diferencia entre las concentraciones de oxígeno máxima posible ($C_{AL}^{\ast} - C_{AL}$) y la existente en el medio representa la fuerza impulsora para la transferencia de materia. La solubilidad de oxigeno en soluciones acuosas a temperatura y presión ambiente es de \qty{10}{\ppm}. Los factores que influyen en la demanda de oxígeno son la especie celular utilizada, la fase de crecimiento del cultivo y la naturaleza de la fuente de carbono en el medio. 
+
+En los cultivos discontinuos la velocidad de consumo de oxígeno varía con el tiempo debido a dos razones:
+
+\begin{enumerate}
+    \item La concentracion de células aumenta durante el transcurso del cultivo discontinuo y la velocidad total de consumo de oxígeno es proporcional al número de células presentes.
+    \item Esta también varía con lavelocidad de consumo de oxígeno por célula, conocida como la velocidad específica de consumo de oxígeno.
+\end{enumerate}
+
+Si $Q_{O}$ es la velocidad de consumo de oxígeno por unidad de volumen de caldo, y $q_{O}$ es la velocidad específica de consumo de oxígeno, entonces:
+
+\begin{equation}
+    Q_{O} = q_{O} \cdot X
+\end{equation}
+
+Donde $X$ es la concentración de células.
 
 
 

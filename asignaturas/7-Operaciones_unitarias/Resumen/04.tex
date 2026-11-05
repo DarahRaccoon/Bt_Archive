@@ -1,0 +1,66 @@
+
+La filtración se define como la separación de un sólido de un fluido por acción de un medio filtrante y un gradiente de presión.
+
+%\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+%    \resizebox{\linewidth}{!}{\input{fig:esquema_de_ejemplo_de_filtracion}}
+%    \rule{\linewidth}{0.5pt}
+%    \caption{Esquema de ejemplo de filtracion}
+%    \label{fig:esquema_de_ejemplo_de_filtracion}
+%\end{figure}\end{minipage}}
+
+
+
+Algunos otros tipos de filtración incluyen la de lecho profundo o clarificadora, así como la tangencial, en la que el líquido fluye de manera paralela a la torta.
+
+\section{Fundamentos de filtración}
+
+En una filtración la torta corresponde a la capa acumulada de sólidos filtrados. Estas pueden ser de dos tipos: compresibles e incompresibles.
+
+En el caso de las tortas compresibles, en estas la presión comprime el material y los poros se tapan. Casi todo tipo de material biológico constituye un ejemplo de torta compresible. 
+
+Por otro lado, las tortas incompresibles son aquellas en las que la presión no comprime el material, permitiendo que los poros no se tapen. Ejemplos de este tipo son materiales minerales.
+
+
+
+\subsection{Ley de Darcy}
+
+\begin{equation}\label{eq:ley_de_darcy}
+    \frac{1}{A} \cdot \diff{V}{t} = \frac{\Delta P}{\mu \cdot R} 
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $V$ es el volumen del filtrado
+    \item $A$ es el área del medio filtrante
+    \item $\Delta P$ es el diferencial de presión
+    \item $\mu$ es la viscosidad del filtrado
+    \item $R$ es la suma de las resistencias
+\end{itemize}
+
+En cuanto a las resistencias, estas se componen de la resistencia de la torta ($R_{c}$) y la resistencia del medio filtrante ($R_{m}$)
+
+\begin{equation}
+    R = R_{m} + R_{c}
+\end{equation}
+
+\begin{equation}
+    R_{c} = \alpha \cdot \rho_{c} \left(\frac{V}{A}\right)
+\end{equation}
+
+$\alpha$ representa la resistencia específica de la torta, mientras que $\rho_{c}$ representa el peso de los sólidos respecto a el volumen filtrado.
+
+La \autoref{eq:ley_de_darcy} es una ecuación diferencial de primer grado que necesitamos resolver para poder trabajar con ella:
+
+\begin{gather*}
+    \frac{1}{A} \cdot \diff{V}{t} = \frac{\Delta P}{\mu \cdot R}
+    \\
+    a
+\end{gather*}
+
+La ecuación final es
+
+\begin{equation}\label{eq:ley_de_darcy_resuelta}
+    \frac{t}{V \div A} = \frac{\mu \cdot \alpha \cdot \rho_{c}}{2\Delta P} \cdot \left(\frac{V}{A}\right) + \frac{\mu \cdot R_{m}}{\Delta P}
+\end{equation}
+

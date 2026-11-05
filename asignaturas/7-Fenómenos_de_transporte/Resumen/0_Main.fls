@@ -471,6 +471,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT ./images/fig:teoria_de_la_pelicula.tex
 INPUT ./images/fig:interfase_liquido_solido.tex
+INPUT ./images/fig:equilibrio_de_solutos.tex
 INPUT ./0_Main.bbl
 INPUT ./0_Main.acr
 INPUT ./0_Main.gls

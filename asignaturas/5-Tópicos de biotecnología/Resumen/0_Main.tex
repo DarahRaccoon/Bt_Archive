@@ -1,67 +1,57 @@
-\documentclass{../summarie}
+\documentclass{AsignaturaResumen}
 
-\newcommand{\Titulo}{Resumen de asignatura: Tópicos de biotecnología}
-\newcommand{\Fecha}{2026}
+\def\ISMAIN{1}
+\SetTitulo{Tópicos de biotecnología}
+\input{../../0-tex_resources/glosario_general}
 
 \begin{document}
 
-\frontmatter
+    \frontmatter
     
-    \Portada
-    \Indice
+\Portada
+\Indices
 
-\mainmatter
+    \mainmatter
     
-    \onehalfspacing
-
-% --------------------------------------------------------------------------------------------------- %
 
 \part{Análisis clínicos}
 
-    \chapter{Introducción al análisis clínico}
-    \chapter{Hematología}
-        \input{02.tex}
-        
-    \chapter{Bioquímica clínica}
-    \chapter{Uroanálisis}
-    \chapter{Parasitología}
+    \chapter{Introducción a los análisis clínicos} \input{01}
+    \chapter{Hematología} \input{02}
+    \chapter{Uroanálisis} \input{03}
+    \chapter{Parasitología} \input{04}
 
 \part{Análisis de alimentos}
 
-    \chapter{Fundamentos de la biotecnología alimentaria}
-        \input{06.tex}
-        
-    \chapter{Microorganismos de interés para la industria alimentaria}
-        \input{07.tex}
-    
-    \chapter{Seguridad alimentaria}
-        \input{08.tex}
-        
-    \chapter{Bromatología}
-    \chapter{Análisis de alimentos}
-        \input{10.tex}
+    \chapter{Introducción a la biotecnología alimentaria} \input{05}
+    \chapter{Microorganismos de interés para la industria alimentaria} \input{06}
+    \chapter{Seguridad alimentaria} \input{07}
+    \chapter{Bromatología} \input{08}
 
 \part{Análisis ambiental}
 
-    \chapter{Parámetros de calidad del agua}
-        \input{11.tex}
-        
-    \chapter{Biotecnologías para el tratamiento de aguas residuales}
-    \chapter{Biotecnologías para remediación de suelos}
-    \chapter{Contaminación atmosférica y cambo climático}
+    \chapter{Análisis y tratamiento de aguas} \input{09}
+    \chapter{Remediación de suelos} \input{10}
+    \chapter{Contaminación atmosférica y cambio climático} \input{11}
 
 \part{Análisis agropecuario}
 
-    \chapter{Conceptos básicos}
-    \chapter{Nutrición vegetal y estrategias biotecnológicas}
-    \chapter{Sanidad vegetal y control biológico}
-    \chapter{Sanidad animal}
-    \chapter{Reproducción animal y mejoramiento genético tradicional y asistido}
+    \chapter{Nutrición vegetal y estrategias biotecnológicas} \input{12}
+    \chapter{Sanidad vegetal} \input{13}
+    \chapter{Reproducción y mejoramiento animal} \input{14}
+    \chapter{Sanidad animal} \input{15}
+   
 
-% --- BIBLIOGRAFÍA --- %
 
-\backmatter
 
-\bibliography{bib}
+    \PlainGeom
+    \appendix
+
+
+
+    \backmatter
+
+\Bibliografia
+\Glosarios
 
 \end{document}

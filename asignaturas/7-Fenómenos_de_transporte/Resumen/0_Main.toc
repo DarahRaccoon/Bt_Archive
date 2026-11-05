@@ -33,4 +33,7 @@
 \contentsline {subsection}{\numberline {1.1}Teoría de la película}{33}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {1.2}Transferencia de materia por convección}{33}{subsection.5.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}Transferencia de materia líquido-sólido}{34}{subsubsection.5.1.2.1}%
-\contentsline {chapter}{Bibliografía}{35}{appendix*.36}%
+\contentsline {subsubsection}{\numberline {1.2.2}Transferencia de materia líquido-líquido}{35}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Transferencia de materia gas-líquido}{35}{subsubsection.5.1.2.3}%
+\contentsline {section}{\numberline {2}Consumo de oxígeno}{36}{section.5.2}%
+\contentsline {chapter}{Bibliografía}{38}{appendix*.37}%

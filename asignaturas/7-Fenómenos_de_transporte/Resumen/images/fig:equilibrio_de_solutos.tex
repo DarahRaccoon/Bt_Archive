@@ -1,0 +1,14 @@
+\def\xlong{5}
+\def\ylong{5}
+
+\begin{tikzpicture}[
+    eje/.style={thick, arrows=-Stealth},
+    central/.style={ultra thick,dashed,rounded corners,DarkRed},
+    texto/.style={midway,font=\sffamily}
+]
+
+\draw[eje] (0,0) -- (0,\ylong) node[texto,left] {$[A]_{L1}$};
+\draw[eje] (0,0) -- (\xlong,0) node[texto,below] {$[A]_{L2}$};
+\draw[central] (0,0) -- (0.25*\xlong,0.5*\ylong) -- (\xlong,0.5*\ylong);
+
+\end{tikzpicture}
