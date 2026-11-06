@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 0_Main.aux
+The style file: apalike-ejor.bst
+Database file #1: Main.bib
+Warning--to sort, need author or key in RestrictionFragmentLength
+Warning--empty year in RestrictionFragmentLength
+You've used 21 entries,
+            2019 wiz_defined-function locations,
+            695 strings with 11253 characters,
+and the built_in function-call counts, 9197 in all, are:
+= -- 914
+> -- 392
+< -- 8
++ -- 136
+- -- 134
+* -- 865
+:= -- 1590
+add.period$ -- 61
+call.type$ -- 21
+change.case$ -- 172
+chr.to.int$ -- 21
+cite$ -- 24
+duplicate$ -- 291
+empty$ -- 625
+format.name$ -- 164
+if$ -- 1804
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 65
+newline$ -- 122
+num.names$ -- 60
+pop$ -- 110
+preamble$ -- 1
+purify$ -- 172
+quote$ -- 0
+skip$ -- 216
+stack$ -- 0
+substring$ -- 704
+swap$ -- 21
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 126
+warning$ -- 2
+while$ -- 74
+width$ -- 0
+write$ -- 301
+(There were 2 warnings)
