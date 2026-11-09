@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  4 NOV 2026 12:13
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  9 NOV 2026 15:07
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resu
 men/0_Main.tex
 
@@ -2242,10 +2242,19 @@ Underfull \vbox (badness 5345) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 165.
 LaTeX Info: Redefining \% on input line 165.
  [35]
-[36])
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
- [37]
+[36]
+(./images/fig:relacion_concentracion_de_o2_y_velocidad_especifica_de_consumo_de
+_o2.tex)
+
+LaTeX Warning: Marginpar on page 37 moved.
+
+(./images/fig:resistencias_en_el_transporte_de_oxigeno.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 243.
+LaTeX Info: Redefining \% on input line 243.
+ [37])
+[38]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2282,13 +2291,13 @@ LaTeX Info: Redefining \% on input line 41.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [38
+) [39
 
 
-] (./0_Main.acr)
+] (./0_Main.acr) [40] (./0_Main.gls)
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
- [39] (./0_Main.gls) [40
+ [41
 
 ] (./0_Main.aux
 LaTeX Info: Redefining \. on input line 20.
@@ -2303,20 +2312,20 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `0_Main.out' has not changed.
-(rerunfilecheck)             Checksum: F3A27DE9E5E99BFE2C9CAFD64B45A7A6;7276.
+(rerunfilecheck)             Checksum: 705207E4BC9B73475EA492D7DBAE692E;7276.
 )
 
 Here is how much of LuaTeX's memory you used:
- 66849 strings out of 476076
+ 66934 strings out of 476076
  125240,2373549 words of node,token memory allocated
- 9273 words of node memory still in use:
-   124 hlist, 16 vlist, 26 rule, 16 disc, 9 local_par, 14 math, 213 glue, 21 ker
-n, 24 penalty, 1 margin_kern, 115 glyph, 1143 attribute, 130 glue_spec, 572 attr
-ibute_list, 7 write, 185 pdf_literal, 2 pdf_dest, 8 pdf_action, 42 pdf_colorstac
-k, 2 pdf_setmatrix, 2 pdf_save, 2 pdf_restore nodes
-   avail lists: 1:2,2:5920,3:1902,4:156,5:883,6:91,7:6540,8:116,9:3340,10:33,11:
-755,12:1
- 87637 multiletter control sequences out of 65536+600000
+ 12207 words of node memory still in use:
+   163 hlist, 22 vlist, 32 rule, 33 disc, 13 local_par, 26 math, 280 glue, 37 ke
+rn, 37 penalty, 1 margin_kern, 214 glyph, 1387 attribute, 130 glue_spec, 694 att
+ribute_list, 9 write, 222 pdf_literal, 3 pdf_dest, 8 pdf_action, 50 pdf_colorsta
+ck, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
+   avail lists: 1:2,2:5554,3:1847,4:222,5:868,6:87,7:6362,8:116,9:3288,10:33,11:
+738,12:1
+ 87699 multiletter control sequences out of 65536+600000
  120 fonts using 12961839 bytes
  103i,25n,113p,2609b,2592s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf></usr/shar
@@ -2340,10 +2349,10 @@ lic/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 0_Main.pdf (42 pages, 5339895 bytes).
+Output written on 0_Main.pdf (43 pages, 5344914 bytes).
 
-PDF statistics: 668 PDF objects out of 1000 (max. 8388607)
- 554 compressed objects within 6 object streams
- 196 named destinations out of 1000 (max. 1048576)
+PDF statistics: 684 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
+ 207 named destinations out of 1000 (max. 1048576)
  536 words of extra memory for PDF output out of 10000 (max. 100000000)
 

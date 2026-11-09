@@ -201,17 +201,46 @@ En los cultivos discontinuos la velocidad de consumo de oxígeno varía con el t
     \item Esta también varía con lavelocidad de consumo de oxígeno por célula, conocida como la velocidad específica de consumo de oxígeno.
 \end{enumerate}
 
-Si $Q_{O}$ es la velocidad de consumo de oxígeno por unidad de volumen de caldo, y $q_{O}$ es la velocidad específica de consumo de oxígeno, entonces:
+Si $Q_{0}$ es la velocidad de consumo de oxígeno por unidad de volumen de caldo, y $q_{0}$ es la velocidad específica de consumo de oxígeno, entonces:
 
 \begin{equation}
-    Q_{O} = q_{O} \cdot X
+    Q_{0} = q_{0} \cdot X
 \end{equation}
 
 Donde $X$ es la concentración de células.
 
+\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:relacion_concentracion_de_o2_y_velocidad_especifica_de_consumo_de_o2}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Relación entre la concentracion de \ce{O2} y la velocidad especifica de consumo de \ce{O2} ($q_{0}$)}
+    \label{fig:relacion_concentracion_de_o2_y_velocidad_especifica_de_consumo_de_o2}
+\end{figure}\end{minipage}}
 
+Cuando el nivel de \ce{O2} disuelto en el medio dse istua por debajo del nivel crítico, la velocidad de consumo de oxígeno depende también de la concentración de \ce{O2} en el líquido. Si $C_{AL}$ es superior a la concentración de \ce{O2} crítica ($C_{\text{Critico}}$), $q_{0}$ es una constante máxima e independiente de $C_{AL}$. Si $C_{AL}$ es menor que $C_{\text{Crítico}}$, $q_{0}$ muestra una dependencia aproximadamente lineal a la concentración de oxígeno.
 
+El valor exacto de $C_{\text{Critico}}$ depende del microorganismo utilizado, pero en condiciones de operación normales varía generalmente entre el \qtyrange{5}{10}{\percent} de la concentración de saturación del aire.
 
+Las velocidades de demanda de oxígeno son mayores cuando se utiliza glucosa, ya que esta se consume más rapidamente que tros azúcares o sustratos que contienen carbono.
+
+\begin{figure}\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:resistencias_en_el_transporte_de_oxigeno}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Esquema de las resistencias involucradas en el transporte de oxigeno}
+    \label{fig:resistencias_en_el_transporte_de_oxigeno}
+\end{figure}
+
+En la \autoref{fig:resistencias_en_el_transporte_de_oxigeno} se muestran de forma esquemática las 8 resistencias involucradas en el transporte de oxígeno desde el interior de las burbujas de gas hasta el lugar de reacción dentro de la célula las cuales son:
+
+\begin{enumerate}
+    \item \rom{1}: Transferencia desde el interior de la burbuja hasta la interfase G-L
+    \item \rom{2}: Movimiento a travésde la interfase G-L
+    \item \rom{3}: Difusión a través de la película líquida relativamente inmovil que rodea a la burbuja
+    \item \rom{4}: Transporte a través del seno del fluido
+    \item \rom{5}: Difusión a través de la película líquida relativamente inmovil que rodea a las células
+    \item \rom{6}: Movimiento a través de la interfase Líquido-Célula
+    \item \rom{7}: Si las células están en un flóculo, agregado o partícula sólida, difusión a través del sólido hasta cada célula individual
+    \item \rom{8}: Difusión a través del citoplasma hasta el lugar de reacción
+\end{enumerate}
 
 
 

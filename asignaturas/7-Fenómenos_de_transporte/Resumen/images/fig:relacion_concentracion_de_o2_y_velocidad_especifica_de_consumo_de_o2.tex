@@ -1,0 +1,19 @@
+\def\xlong{5}
+\def\ylong{5}
+\def\limitex{0.35*\xlong}
+\def\limitey{0.6*\ylong}
+
+\begin{tikzpicture}[
+    consumo/.style={dashed, DarkRed},
+    limite/.style={dashed, DarkBlue},
+    eje/.style={arrows=-Stealth}
+]
+
+\draw[eje] (0,0) -- (\xlong,0);
+\draw[eje] (0,0) -- (0,\ylong);
+
+\draw[limite] (\limitex,0) -- (\limitex,\ylong);
+
+\draw[consumo] (0,0) to[out=45,in=200] (\limitex,\limitey) -- (\xlong,\limitey);
+
+\end{tikzpicture}

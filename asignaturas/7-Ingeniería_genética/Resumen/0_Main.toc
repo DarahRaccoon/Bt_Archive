@@ -15,24 +15,23 @@
 \contentsline {section}{\numberline {2}Ensayos de restricción: RFLP}{10}{section.5.2}%
 \contentsline {section}{\numberline {3}PCR Digital (dPCR)}{12}{section.5.3}%
 \contentsline {section}{\numberline {4}Secuenciación}{14}{section.5.4}%
-\contentsline {subsection}{\numberline {4.1}Objetivo general de la técnica}{14}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {4.2}Primera generación: Maxam-Gilbert y Sanger}{15}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Maxam-Gilbert}{15}{subsubsection.5.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Sanger}{17}{subsubsection.5.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Segunda generación: Secuenciación masiva en paralelo (NGS)}{19}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Illumina}{19}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Ion Torrent}{20}{subsubsection.5.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Roche 454}{21}{subsubsection.5.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}SOLiD}{22}{subsubsection.5.4.3.4}%
-\contentsline {subsection}{\numberline {4.4}Tercera generación: Secuenciación de molécula única en tiempo real}{23}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Pacific Bioscience (PacBio)}{23}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Oxford Nanopore Technologies (ONT)}{24}{subsubsection.5.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}Cuarta generación: Tecnologías emergentes}{25}{subsection.5.4.5}%
-\contentsline {section}{\numberline {5}Microarreglos}{25}{section.5.5}%
-\contentsline {part}{III\hspace {1em}ADN recombinante}{29}{part.3}%
-\contentsline {chapter}{\numberline {6}Introducción al ADN recombinante}{30}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Construcción, clonación y selección de ADN}{31}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Mutagénesis dirigida}{32}{chapter.8}%
-\contentsline {chapter}{Bibliografía}{34}{appendix*.32}%
-\contentsline {chapter}{Acrónimos}{35}{section*.33}%
-\contentsline {chapter}{Glosario}{36}{section*.35}%
+\contentsline {subsection}{\numberline {4.1}Primera generación}{15}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Maxam-Gilbert}{15}{subsubsection.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Sanger}{16}{subsubsection.5.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Segunda generación}{18}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Illumina}{18}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Ion Torrent}{19}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Roche 454}{20}{subsubsection.5.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}SOLiD}{21}{subsubsection.5.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}Tercera generación}{22}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Pacific Bioscience (PacBio)}{22}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Oxford Nanopore Technologies (ONT)}{23}{subsubsection.5.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Cuarta generación}{24}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5}Microarreglos}{24}{section.5.5}%
+\contentsline {part}{III\hspace {1em}ADN recombinante}{28}{part.3}%
+\contentsline {chapter}{\numberline {6}Introducción al ADN recombinante}{29}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Construcción, clonación y selección de ADN}{30}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Mutagénesis dirigida}{31}{chapter.8}%
+\contentsline {chapter}{Bibliografía}{33}{appendix*.32}%
+\contentsline {chapter}{Acrónimos}{34}{section*.33}%
+\contentsline {chapter}{Glosario}{35}{section*.35}%

@@ -1,0 +1,33 @@
+\def\secposx{15}
+\def\secposy{0}
+
+\def\circulolong{3}
+\def\limitelong{1.5*\circulolong}
+\def\celulalong{0.35*\circulolong}
+
+\begin{tikzpicture}[
+circulo/.style={ultra thick},
+celula/.style={thick},
+limite/.style={thick, dashed},
+difusion/.style={thick,red,arrows=-Stealth},
+transferencia/.style={thick,red,decorate, decoration=snake, /pgf/decoration/amplitude=6pt, /pgf/decoration/segment length=15pt},
+etiqueta/.style={black,midway,above=5pt,font=\sffamily}
+]
+
+\draw[circulo] (0,0) circle (\circulolong cm);
+\draw[limite] (0,0) circle (\limitelong cm);
+
+\draw[circulo] (\secposx,\secposy) circle (\circulolong);
+\draw[limite] (\secposx,\secposy) circle (\limitelong);
+\draw[celula] (\secposx+1,\secposy) circle (\celulalong);
+
+\draw[difusion] (0,0) to[out=0,in=180] (0.6*\circulolong,-0.3*\circulolong) node[etiqueta] {1};
+\draw[difusion] (0.6*\circulolong,-0.3*\circulolong) -- (0.8*\limitelong,-0.3*\circulolong) node[etiqueta] {2};
+\draw[difusion] (0.8*\limitelong,-0.3*\circulolong) to[out=0,in=180] (1.15*\limitelong,0) node[etiqueta,left] {3};
+\draw[difusion] (1.15*\limitelong,0) -- (\secposx-1.15*\limitelong,0) node[etiqueta] {4};
+\draw[difusion] (\secposx-1.15*\limitelong,0) to[out=0,in=180] (\secposx-0.8*\limitelong,-0.3*\circulolong) node[etiqueta,right] {5};
+\draw[difusion] (\secposx-0.8*\limitelong,-0.3*\circulolong) -- (\secposx-0.3*\limitelong,-0.3*\circulolong) node[etiqueta] {6};
+\draw[difusion] (\secposx-0.3*\limitelong,-0.3*\circulolong) to[out=0,in=180] (\secposx+0.15*\limitelong,-0.15*\circulolong) node[etiqueta] {7};
+\draw[difusion] (\secposx+0.15*\limitelong,-0.15*\circulolong) to[out=0,in=-90] (\secposx+\celulalong,0) node[etiqueta,left] {8};
+
+\end{tikzpicture}
