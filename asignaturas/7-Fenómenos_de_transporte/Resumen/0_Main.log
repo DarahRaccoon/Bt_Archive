@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  9 NOV 2026 18:07
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  9 NOV 2026 23:42
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resu
 men/0_Main.tex
 
@@ -2242,9 +2242,7 @@ Underfull \vbox (badness 5345) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 165.
 LaTeX Info: Redefining \% on input line 165.
  [35]
-[36]
-(./images/fig:relacion_concentracion_de_o2_y_velocidad_especifica_de_consumo_de
-_o2.tex)
+[36] (./images/fig:relacion_concentracion_de_o2_y_q0.tex)
 
 LaTeX Warning: Marginpar on page 37 moved.
 
@@ -2316,17 +2314,17 @@ Package rerunfilecheck Info: File `0_Main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 66933 strings out of 476076
+ 66949 strings out of 476076
  125240,2373549 words of node,token memory allocated
- 12995 words of node memory still in use:
-   187 hlist, 22 vlist, 32 rule, 33 disc, 13 local_par, 32 math, 298 glue, 37 ke
-rn, 37 penalty, 220 glyph, 1489 attribute, 130 glue_spec, 745 attribute_list, 9 
-write, 242 pdf_literal, 3 pdf_dest, 8 pdf_action, 50 pdf_colorstack, 3 pdf_setma
+ 14654 words of node memory still in use:
+   215 hlist, 23 vlist, 32 rule, 39 disc, 14 local_par, 38 math, 333 glue, 41 ke
+rn, 39 penalty, 253 glyph, 1691 attribute, 130 glue_spec, 846 attribute_list, 9 
+write, 282 pdf_literal, 3 pdf_dest, 8 pdf_action, 64 pdf_colorstack, 3 pdf_setma
 trix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 1:2,2:5401,3:1827,4:224,5:868,6:87,7:6332,8:116,9:3264,10:33,11:
-738,12:1
- 87699 multiletter control sequences out of 65536+600000
- 120 fonts using 12961839 bytes
+   avail lists: 1:2,2:5098,3:1785,4:252,5:864,6:86,7:6258,8:116,9:3235,10:33,11:
+732,12:1
+ 87715 multiletter control sequences out of 65536+600000
+ 124 fonts using 13614031 bytes
  103i,25n,113p,2609b,2592s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf></usr/shar
 e/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSerif-Italic.otf></usr/share/texmf-d
@@ -2340,19 +2338,20 @@ st/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 0_Main.pdf (42 pages, 5344746 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb>
+Output written on 0_Main.pdf (42 pages, 5352218 bytes).
 
-PDF statistics: 680 PDF objects out of 1000 (max. 8388607)
- 566 compressed objects within 6 object streams
+PDF statistics: 684 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
  206 named destinations out of 1000 (max. 1048576)
  536 words of extra memory for PDF output out of 10000 (max. 100000000)
 
