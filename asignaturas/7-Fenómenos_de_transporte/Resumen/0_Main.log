@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  9 NOV 2026 15:07
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  9 NOV 2026 18:07
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resu
 men/0_Main.tex
 
@@ -2248,13 +2248,12 @@ _o2.tex)
 
 LaTeX Warning: Marginpar on page 37 moved.
 
-(./images/fig:resistencias_en_el_transporte_de_oxigeno.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(./images/fig:resistencias_en_el_transporte_de_oxigeno.tex))
+Underfull \vbox (badness 1163) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 243.
-LaTeX Info: Redefining \% on input line 243.
- [37])
-[38]
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+ [37]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2287,17 +2286,18 @@ LaTeX Info: Redefining \% on input line 243.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./0_Main.bbl
+
+(./0_Main.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [39
+) [38
 
 
-] (./0_Main.acr) [40] (./0_Main.gls)
+] (./0_Main.acr)
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
- [41
+ [39] (./0_Main.gls) [40
 
 ] (./0_Main.aux
 LaTeX Info: Redefining \. on input line 20.
@@ -2316,14 +2316,14 @@ Package rerunfilecheck Info: File `0_Main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 66934 strings out of 476076
+ 66933 strings out of 476076
  125240,2373549 words of node,token memory allocated
- 12207 words of node memory still in use:
-   163 hlist, 22 vlist, 32 rule, 33 disc, 13 local_par, 26 math, 280 glue, 37 ke
-rn, 37 penalty, 1 margin_kern, 214 glyph, 1387 attribute, 130 glue_spec, 694 att
-ribute_list, 9 write, 222 pdf_literal, 3 pdf_dest, 8 pdf_action, 50 pdf_colorsta
-ck, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 1:2,2:5554,3:1847,4:222,5:868,6:87,7:6362,8:116,9:3288,10:33,11:
+ 12995 words of node memory still in use:
+   187 hlist, 22 vlist, 32 rule, 33 disc, 13 local_par, 32 math, 298 glue, 37 ke
+rn, 37 penalty, 220 glyph, 1489 attribute, 130 glue_spec, 745 attribute_list, 9 
+write, 242 pdf_literal, 3 pdf_dest, 8 pdf_action, 50 pdf_colorstack, 3 pdf_setma
+trix, 3 pdf_save, 3 pdf_restore nodes
+   avail lists: 1:2,2:5401,3:1827,4:224,5:868,6:87,7:6332,8:116,9:3264,10:33,11:
 738,12:1
  87699 multiletter control sequences out of 65536+600000
  120 fonts using 12961839 bytes
@@ -2349,10 +2349,10 @@ lic/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 0_Main.pdf (43 pages, 5344914 bytes).
+Output written on 0_Main.pdf (42 pages, 5344746 bytes).
 
-PDF statistics: 684 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
- 207 named destinations out of 1000 (max. 1048576)
+PDF statistics: 680 PDF objects out of 1000 (max. 8388607)
+ 566 compressed objects within 6 object streams
+ 206 named destinations out of 1000 (max. 1048576)
  536 words of extra memory for PDF output out of 10000 (max. 100000000)
 

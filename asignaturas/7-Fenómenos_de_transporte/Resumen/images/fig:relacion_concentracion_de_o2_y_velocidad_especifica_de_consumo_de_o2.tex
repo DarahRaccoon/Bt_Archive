@@ -4,13 +4,13 @@
 \def\limitey{0.6*\ylong}
 
 \begin{tikzpicture}[
-    consumo/.style={dashed, DarkRed},
-    limite/.style={dashed, DarkBlue},
+    consumo/.style={ultra thick, dashed, DarkRed},
+    limite/.style={ultra thick, dashed, DarkBlue},
     eje/.style={arrows=-Stealth}
 ]
 
-\draw[eje] (0,0) -- (\xlong,0);
-\draw[eje] (0,0) -- (0,\ylong);
+\draw[eje] (0,0) -- (\xlong,0) node[midway,below] {[\ce{O2}]};
+\draw[eje] (0,0) -- (0,\ylong) node[midway,left] {$q_{0}$};
 
 \draw[limite] (\limitex,0) -- (\limitex,\ylong);
 
