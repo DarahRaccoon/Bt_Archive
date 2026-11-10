@@ -242,6 +242,35 @@ En la \autoref{fig:resistencias_en_el_transporte_de_oxigeno} se muestran de form
     \item Difusión a través del citoplasma hasta el lugar de reacción
 \end{enumerate}
 
+En estado estacionario no puede existir acumulación en nigún lugar del fermentador, por lo que la velocidad detransferencia del oxígeno desde las burbujas se expresa con la siguiente ecuación:
+
+\begin{equation}
+    X_{L} \cdot a \cdot (C_{AL}^{\ast} - C_{AL}) = q_{0} \cdot X
+\end{equation}
+
+La ecuación para máxima concentración de células que puede soportar el sistema de transferencia es:
+
+\begin{eqnarray}
+    X_{Max} = \frac{K_{LA} \cdot C_{AL}^{\ast}}{q_{0}}
+\end{eqnarray}
+
+\resumebox{ejercicio}{Cálculo de velocidad específica de consumo de oxígeno}{
+    Una cepa de \sci{Azotobacter vinelandii} está cultivada en un fermentador agitado de \qty{15}{\m\cubed} para la producción de alginato. Bajo las condiciones normales de operación, $K_{LA}$ es \qty{0.17}{\per\s}. La solubilidad del oxígeno en el caldo es aproximadamente \qty{8d-3}{\kg\per\m\cubed}
+    \begin{enumerate}
+        \item La velocidad específica de consumo de oxígeno es \qty{12.5}{\milli\mole\per\g\per\hour}, ¿cuál es la máxima concentración de células posibles?
+        \item La bacteria sufre de inhibición de crecimiento después de verter accidentalmente \ce{CuSO4} al caldo de fermentación, lo que produce una disminución en la velocidad de consumo de oxígeno hasta \qty{3}{\milli\mole\per\g\per\hour}, ¿qué concentración máxima de células puede soportar ahora el fermentador?
+    \end{enumerate}
+}
+
+\section{Transferencia de oxígeno en los fermentadores}
+
+La eficacia de la transferencia de materia G-L depende en gran parte de las características de las burbujas en el medio líquido. En los fermentadores agitados, el \ce{O2} se suministra al medio mediante la creación de enjambres de burbujas de aire bajo los rodetes. La propiedad más importante de las burbujas de aire en los fermentadores es su tamaño, siendo el principal objetivo en el diseño de un biorreactor el crear un alto nivel de dispersión del gas. Las burbujas pequeñas poseen velocidades de asención bajas, por lo que el tiempo de residencia en el líquido es mayor, y disponen de más tiempo para que se disuelva el oxígeno. Las burbujas pequeñas crean elevados contenidos de gas, definidos como la fracción de volumen de fluido en el reactor ocupado por agua.
+
+\begin{equation}
+    \epsilon = \frac{V_{G}}{V_{LT} + V_{G}}
+\end{equation}
+
+Donde $\epsilon$ es el contenido de agua, $V_{G}$ es el volumen de las burbujas y $V_{L}$ el volumen del líquido.
 
 
 

@@ -270,6 +270,22 @@
         "ejercicios": [],
         "articulos": []
       }
+    },
+    {"id": "7-control-de-calidad",
+      "nombre": "Control de calidad",
+      "cuatrimestre": 7,
+      "icono": "fa-solid fa-pen-ruler",
+      "descripcion": "",
+      "portada": "/Bt_Archive/asignaturas/7-Control_de_calidad/portada.jpg",
+      "rutaResumen": "/Bt_Archive/asignaturas/7-Control_de_calidad/Resumen/0_Main.pdf",
+      "rutaDiapositivas": "/Bt_Archive/asignaturas/7-Control_de_calidad/Diapositivas/0_Main.pdf",
+      "rutaManual": "/Bt_Archive/manuales/7 - Control de calidad.pdf",
+      "rutaPagina": "/Bt_Archive/0_html/asignature_page.html?id=7-control-de-calidad",
+      "videos": [],
+      "recursosExtra": {
+        "ejercicios": [],
+        "articulos": []
+      }
     }
   ]
 }

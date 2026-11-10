@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex 0_Main"] 0 "0_Main.aux" "0_Main.bbl" "0_Main" 1794292938.51711 0
+["bibtex 0_Main"] 0 "0_Main.aux" "0_Main.bbl" "0_Main" 1794329436.85693 0
   "/usr/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1775415801 18030 1376b4b231b50c66211e47e42eda2875 ""
   "0_Main.aux" 0 -1 0 "lualatex"
   "Main.bib" 0 -1 0 ""
@@ -7,7 +7,7 @@
   "0_Main.bbl"
   "0_Main.blg"
   (rewritten before read)
-["lualatex"] 1794292927.57563 "/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resumen/0_Main.tex" "0_Main.pdf" "0_Main" 1794292938.51733 0
+["lualatex"] 1794329425.3315 "/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resumen/0_Main.tex" "0_Main.pdf" "0_Main" 1794329436.85721 0
   "../../0-tex_resources/glosario_general.tex" 1793766598.61943 2384 e885c218314e3b7c546cfd91e022aa3e ""
   "../../0-tex_resources/logo_upsin.png" 1778867970.62697 386081 192a5d399e668da3c073c3f974ed4d33 ""
   "../portada.jpg" 1787260454.76013 4715012 7fa4d2e1bc5ce32ea33d3fccaad46b53 ""
@@ -24,7 +24,7 @@
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1790465304.03941 127314 7c5efae986e60281c7ad546cf8ed9a14 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1794292626.90953 30561 64bdc141959209eb4591db244afac730 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790638341.74601 443539 61843b3a453ad8767a5dd73dd397d25f ""
-  "/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resumen/0_Main.tex" 1794292927.23231 966 75339b2e5ded4a8782020f302740131e ""
+  "/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resumen/0_Main.tex" 1794329424.99235 966 75339b2e5ded4a8782020f302740131e ""
   "/home/darah/texmf/tex/latex/Classes/AsignaturaResumen.cls" 1793927461.50072 9106 c0ff6f177c5de69ad26cb7812737e7ba ""
   "/home/darah/texmf/tex/latex/Packages/mychemfig.sty" 1789440855.52094 893 fcb2222ca4ef806c2e6612bb5b0708ee ""
   "/home/darah/texmf/tex/latex/Packages/myunits.sty" 1793818299.10442 745 fb61673477a48e2e9bf94df9d6f2c64c ""
@@ -428,14 +428,14 @@
   "02.tex" 1793766598.73943 7456 81dbb1e19f3e70c7ef441ed2c2dfce83 ""
   "03.tex" 1793766598.74043 12051 1e71d2aa9ddcbae70b54d0cb1d5bcb19 ""
   "04.tex" 1793766598.74043 23197 640bb33a58c90c078194ca7946d9c7cc ""
-  "07.tex" 1794291625.76259 15352 9814bcffe115777ccf1eacbe592fba6f ""
+  "07.tex" 1794329424.33273 17802 07230bbc6e0568b19f7c53ba7d755957 ""
   "0_Main.acr" 1793766598.74143 6 9f404503043ec80c08484be9f659189e ""
-  "0_Main.aux" 1794292937.65928 9402 582a48d905fb25e5d26bb479dc54fbfd "lualatex"
+  "0_Main.aux" 1794329435.89708 9548 cb1a3c7890036944bb9ec095e3bc9db6 "lualatex"
   "0_Main.bbl" 1793766598.74143 49 0eba253fc001332e731e8aba3f23127b "bibtex 0_Main"
   "0_Main.gls" 1793766598.74243 6 9f404503043ec80c08484be9f659189e ""
-  "0_Main.out" 1794292937.66128 7276 705207e4bc9b73475ea492d7dbae692e "lualatex"
-  "0_Main.tex" 1794292927.23231 966 75339b2e5ded4a8782020f302740131e ""
-  "0_Main.toc" 1794292937.66228 3456 55ea199173341ba0d585e9971b600def "lualatex"
+  "0_Main.out" 1794329435.90008 7574 36981fbc5439e199ba3f0b8a380d9b7c "lualatex"
+  "0_Main.tex" 1794329424.99235 966 75339b2e5ded4a8782020f302740131e ""
+  "0_Main.toc" 1794329435.90108 3561 90de98fbd2e824bf84dab0c271d8d0c9 "lualatex"
   "images/fig:ejercicio_1_cubo.tex" 1788574656.45194 1436 7bf5204b68ecf6366338beed44590ff4 ""
   "images/fig:equilibrio_de_solutos.tex" 1793818698.0437 416 29ef0a3616044699c7ff7e71550d4113 ""
   "images/fig:grafica_de_tipos_de_fluidos.tex" 1790729276.41646 569 8630423ef6dc89dd8d21a713d747c924 ""

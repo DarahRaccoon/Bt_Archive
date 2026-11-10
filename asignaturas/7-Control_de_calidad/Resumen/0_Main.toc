@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {part}{I\hspace {1em}Fundamentos de control de calidad}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Introducción a la calidad}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Filosofías de calidad}{3}{chapter.2}%
+\contentsline {part}{II\hspace {1em}Herramientas de calidad}{4}{part.2}%
+\contentsline {chapter}{\numberline {3}Herramientas estadísticas}{5}{chapter.3}%
+\contentsline {chapter}{Bibliografía}{6}{appendix*.1}%
