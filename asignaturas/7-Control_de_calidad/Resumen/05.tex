@@ -1,0 +1,125 @@
+Este diagrama ayuda a encontrar si existe una relación entre variables y, de ser así, encontrar una expresión matemática que represente tal relación.
+
+Esta relación puede ser:
+\begin{itemize}
+    \item Positiva: Una variable aumenta y la otra también
+    \item Negativa: Una variable aumenta y la otra disminuye
+\end{itemize}
+
+En ambos casos la relación puede ser:
+
+\begin{enumerate}
+    \item Fuerte: Una variable aumenta/disminuye mucho y la otra también
+    \item Debil: Una variable aumenta/disminuye mucho pero la otra aumenta/disminuye poco
+\end{enumerate}
+
+\section{Obtención de modelo matemático}
+
+Para poder obtener el modelo matemático que explique la relación entre variables nos apoyamos de la ecuación de la recta:
+
+\begin{equation}
+    y = a_{0} + a_{1}x
+\end{equation}
+
+Donde:
+
+\begin{gather}
+    a_{1} = \frac{n \sum{x_{i}y_{i}} - (\sum{x_{i}})(\sum{y_{i}}) }{ n \sum{x_{i}^{2}} - (\sum{x_{i}})^{2} }
+    \\
+    a_{0} = \bar{y} - a_{1}\bar{x}
+\end{gather}
+
+Despúes de esto es bueno evaluar cuan bien explica el modelo los datos, lo cual se hace con $r^{2}$ y $r$ ($\sqrt{r^{2}}$)
+
+\begin{equation}
+    r = \frac{n \cdot \sum{x_{i}y_{i}} - (\sum{x_{i}}\cdot\sum{y_{i}})}{\sqrt{n\sum{x_{i}^{2}} - (\sum{x_{i}})^{2}} \cdot \sqrt{n\sum{y_{i}^{2}} - (\sum{y_{i}})^{2}}}
+\end{equation}
+
+Donde el valor puede ir de -1 a 1, indicando el 0 un ajuste nulo, mientras que -1 y 1 significan un ajuste perfecto.
+
+\section{Linearización}
+
+Si bien mediente lo anterior se nos genera un modelo matemático que sigue una linea recta, el que los datos no sigan tal tipo de distribución disminuye su capacidad de predicción. 
+
+Para arreglar esto podemos identificar la forma en que se distribuyen los datos y manipularla para que sea juste mejor a una linea recta, y así aumentar el coeficiente de correlación
+
+Tenemos 3 tipos principales de distribuciones:
+
+\begin{itemize}
+    \item Exponencial
+    \begin{equation}
+        y = \alpha \cdot e^{\beta x}
+    \end{equation}
+
+    \item Ley de potencias, o potencial
+    \begin{equation}
+        y = \alpha \cdot x^{\beta}
+    \end{equation}
+
+    \item Razón de crecimiento
+    \begin{equation}
+        y = \alpha \cdot \frac{x}{\beta + x}
+    \end{equation}
+\end{itemize}
+
+Para resolver cada tipo de distribución nos ayudamos de las propiedades de los logaritmos.
+
+\begin{gather}
+    \log(a \cdot b) = \log(a) + \log(b)
+    \\
+    \log \left(\frac{a}{b}\right) = \log(a) - \log(b)
+    \\
+    \log(a^{b}) = b \cdot \log(a)
+    \\
+    \log(\sqrt[b]{a}) = \frac{\log(a)}{b}
+\end{gather}
+
+\subsection{Exponencial}
+
+\begin{gather}
+    \ln(y) = \ln(\alpha \cdot e^{\beta \cdot x})
+    \\
+    \ln(y) = \ln(\alpha) + \ln(e^{\beta \cdot x})
+    \\
+    \ln(y) = \ln(\alpha) + \beta \cdot x
+    \\
+    \hline
+    \\
+    x = x \quad;\quad y = \ln(y)
+    \\
+    a_{0} = \ln(\alpha) \quad;\quad a_{1} = \beta
+\end{gather}
+
+\subsection{Ley de potencias, o potencial}
+
+\begin{gather}
+    \log(y) = \log(\alpha \cdot x^{\beta})
+    \\
+    \log(y) = \log(\alpha) + \log(x^{\beta})
+    \\
+    \log(y) = \log(\alpha) + \beta \cdot \log(x)
+    \\
+    \hline
+    \\
+    x = \log(x) \quad;\quad y = \log(y)
+    \\
+    a_{0} = \log(\alpha) \quad;\quad a_{1} = \beta
+\end{gather}
+
+\subsection{Razón de crecimiento}
+
+\begin{gather}
+    (y)^{-1} = \left(\alpha \cdot \frac{x}{\beta + x}\right)^{-1}
+    \\
+    \frac{1}{y} = \frac{\beta + x}{\alpha \cdot x}
+    \\
+    \frac{1}{y} = \frac{\beta \cdot 1}{\alpha \cdot x} + \frac{x}{\alpha \cdot x}
+    \\
+    \frac{1}{y} = \frac{\beta}{\alpha} \cdot \frac{1}{x} + \frac{1}{\alpha}
+    \\
+    \hline
+    \\
+    x = \frac{1}{x} \quad;\quad y = \frac{1}{y}
+    \\
+    a_{0} = \frac{1}{\alpha} \quad;\quad a_{1} = \frac{\beta}{\alpha}
+\end{gather}

@@ -1,0 +1,97 @@
+
+
+\section{Gráficas de control $X$}
+
+
+
+
+\section{Gráficas de control $R$}
+
+
+
+
+\section{Índices de capacidad de procesos}
+
+\subsection{$C_{p}$}
+
+El $C_{p}$ mide la capacidad potencial de un proceso
+
+\begin{equation}
+    C_{p} = \frac{\mathrm{ES} - \mathrm{EI}}{6\sigma}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $\mathrm{ES}$ es el límite superior
+    \item $\mathrm{EI}$ es el límite inferior
+    \item $\sigma$ es la desviación estandar
+\end{itemize}
+
+\subsubsection{$C_{pi}$ y $C_{ps}$}
+
+Es posible calcular asímismo la capacida unicamente inferior ($C_{pi}$) o unicamente superior ($C_{ps}$). La forma de calcular ambos deriva de la fórmula de $C_{p}$, solo que tomando en cuenta solo un lado de la campana de distribución de datos
+
+En el caso del $C_{pi}$ este corresponde al limite inferior del cual el proceso no debe de bajar
+
+\begin{equation}
+    C_{pi} = \frac{\mu-\mathrm{EI}}{3\sigma}
+\end{equation}
+
+Por otro lado, el $C_{ps}$ indica el limite superior el cual el proceso no debe superar
+
+\begin{equation}
+    C_{ps} = \frac{\mathrm{ES}-\mu}{3\sigma}
+\end{equation}
+
+\subsection{$C_{pk}$}
+
+El $C_{pk}$ es un indicador de la capacidad de un proceso de generar productos con las características deseadas de manera exitosa.
+
+Su cálculo se realiza de la siguiente manera:
+
+\begin{equation}
+    C_{pk} = \mathrm{Min}\left[\frac{\mathrm{ES}-\mu}{3\sigma},\frac{\mu-\mathrm{EI}}{3\sigma}\right]
+\end{equation}
+
+\subsubsection{Índice $k$}
+
+Para el índice de $C_{pk}$ se puede calcular también el valor de $k$, el cual nos indica cuan centrado está un proceso:
+
+\begin{equation}
+    k = \frac{\lvert\ \mu-N \ \rvert}{\frac{1}{2} \cdot (\mathrm{ES - EI})} \cdot 100
+\end{equation}
+
+\subsection{$C_{pm}$}
+
+Similar al $C_{pk}$, pero este además toma en cuenta también cuán centrados están los datos y la variabilidad de estos de forma simultanea.
+
+\begin{equation}
+    C_{pm} = \frac{\mathrm{ES}-\mathrm{EI}}{6\tau}
+\end{equation}
+
+
+Donde $\tau$ representa la variabilidad del proceso respecto al valor nominal ($N$), y se calcula de la siguiente manera:
+
+\begin{equation}
+    \tau = \sqrt{\sigma^{2} + (\mu - N)^{2}}
+\end{equation}
+
+
+El valor nominal ($N$) representa el valor que se busca alcanzar en el proceso
+
+\subsection{Interpretación de índices}
+
+Los valores obtenidos en los índices anteriores se pueden interpretar de la siguiente manera:
+
+\begin{align}
+    <1 &= \text{Proceso no capaz}
+    \\
+    1 &= \text{Cumple justo}
+    \\
+    1.33 &= \text{Proceso capaz}
+    \\
+    1.67 &= \text{Proceso muy capaz}
+    \\
+    >2 &= \text{Excelente capacidad}
+\end{align}

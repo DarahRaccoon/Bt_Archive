@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex 0_Main"] 0 "0_Main.aux" "0_Main.bbl" "0_Main" 1793844602.67227 0
+["bibtex 0_Main"] 0 "0_Main.aux" "0_Main.bbl" "0_Main" 1794374902.64319 0
   "/usr/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1775415801 18030 1376b4b231b50c66211e47e42eda2875 ""
   "0_Main.aux" 0 -1 0 "lualatex"
   "Main.bib" 0 -1 0 ""
@@ -7,7 +7,7 @@
   "0_Main.bbl"
   "0_Main.blg"
   (rewritten before read)
-["lualatex"] 1793844595.81797 "/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.tex" "0_Main.pdf" "0_Main" 1793844602.67249 0
+["lualatex"] 1794374895.58652 "/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.tex" "0_Main.pdf" "0_Main" 1794374902.64345 0
   "../../0-tex_resources/glosario_general.tex" 1793766598.61943 2384 e885c218314e3b7c546cfd91e022aa3e ""
   "../../0-tex_resources/logo_upsin.png" 1778867970.62697 386081 192a5d399e668da3c073c3f974ed4d33 ""
   "../portada.jpg" 1787260462.2442 2009747 5ef45c54660fca66f4fe82fd471f5d6d ""
@@ -22,13 +22,13 @@
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/fonts/otl/ibmplexserif-regular.luc" 1790467290.56035 503268 da35e5e892ba406b79bb915cc1428897 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1790465304.39642 128397 dc8cded2bbafe8195c86cdaea92e40b2 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1790465304.03941 127314 7c5efae986e60281c7ad546cf8ed9a14 ""
-  "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1793764607.27594 29807 0906c57bd4537e691b20e42954934c7e ""
+  "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1794292626.90953 30561 64bdc141959209eb4591db244afac730 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790638341.74601 443539 61843b3a453ad8767a5dd73dd397d25f ""
-  "/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.tex" 1793844588.41661 1003 e1152c0863509038d808f0c371c088ca ""
-  "/home/darah/texmf/tex/latex/Classes/AsignaturaResumen.cls" 1793819275.79341 9086 0622e53669da6306b94bd1c8a2e91f8f ""
+  "/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.tex" 1794374895.35484 1003 e1152c0863509038d808f0c371c088ca ""
+  "/home/darah/texmf/tex/latex/Classes/AsignaturaResumen.cls" 1793927461.50072 9106 c0ff6f177c5de69ad26cb7812737e7ba ""
   "/home/darah/texmf/tex/latex/Packages/mychemfig.sty" 1789440855.52094 893 fcb2222ca4ef806c2e6612bb5b0708ee ""
   "/home/darah/texmf/tex/latex/Packages/myunits.sty" 1793818299.10442 745 fb61673477a48e2e9bf94df9d6f2c64c ""
-  "/home/darah/texmf/tex/latex/Packages/simplelatex.sty" 1793765959.06077 993 49850df0a127d4ee121de96588f220cd ""
+  "/home/darah/texmf/tex/latex/Packages/simplelatex.sty" 1794292189.98569 993 49850df0a127d4ee121de96588f220cd ""
   "/usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Bold.otf" 1775415801 140656 694efab0a58c3bcb6c7e0516d14592aa ""
   "/usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf" 1775415801 144148 8901ed134de47435a636bd34002c8823 ""
   "/usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Regular.otf" 1775415801 136352 9857561d3862e88aed61d6335addf1c8 ""
@@ -418,12 +418,12 @@
   "03.tex" 1793842897.51383 7720 ea7b1aa51149907ed0be5243858c85f8 ""
   "04.tex" 1793844480.26794 2496 12b310bce87113d9a94a36bbb57a5f2d ""
   "0_Main.acr" 1793843646.17558 6 9f404503043ec80c08484be9f659189e ""
-  "0_Main.aux" 1793844601.85846 3568 d55e41c973eaac5d3608d948c6519ef9 "lualatex"
+  "0_Main.aux" 1794374901.86426 3568 d55e41c973eaac5d3608d948c6519ef9 "lualatex"
   "0_Main.bbl" 1793843639.4385 49 0eba253fc001332e731e8aba3f23127b "bibtex 0_Main"
   "0_Main.gls" 1793843646.17564 6 9f404503043ec80c08484be9f659189e ""
-  "0_Main.out" 1793844601.86146 3102 fce59d26e29f454497a63c0344bd1abb "lualatex"
-  "0_Main.tex" 1793844588.41661 1003 e1152c0863509038d808f0c371c088ca ""
-  "0_Main.toc" 1793844601.86146 1672 2f67aa19fe3de2b2eb5436de447c2b7f "lualatex"
+  "0_Main.out" 1794374901.86626 3102 fce59d26e29f454497a63c0344bd1abb "lualatex"
+  "0_Main.tex" 1794374895.35484 1003 e1152c0863509038d808f0c371c088ca ""
+  "0_Main.toc" 1794374901.86726 1672 2f67aa19fe3de2b2eb5436de447c2b7f "lualatex"
   (generated)
   "0_Main.acn"
   "0_Main.aux"
