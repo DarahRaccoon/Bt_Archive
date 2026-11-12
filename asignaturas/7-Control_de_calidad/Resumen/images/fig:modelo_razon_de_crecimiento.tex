@@ -1,0 +1,20 @@
+% 3. RAZÓN DE CRECIMIENTO:  y = α · x/(β + x)
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm, height=10cm,
+    axis lines=left,
+    xlabel={$x$}, ylabel={$y$},
+    xtick=\empty, ytick=\empty,
+    domain=0:5, samples=50,
+    enlargelimits=false,
+    legend pos=south east,legend style={draw=none}
+]
+
+\pgfmathsetmacro{\myalfa}{3}
+\pgfmathsetmacro{\mybeta}{2}
+
+\addplot[Green, thick] {\myalfa*x/(\mybeta+x)};
+\addlegendentry{\Large $y = \alpha \cdot \frac{x}{\beta+x}$}
+
+\end{axis}
+\end{tikzpicture}

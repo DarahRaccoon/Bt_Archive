@@ -7,20 +7,20 @@
 \contentsline {chapter}{\numberline {3}Histograma}{6}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Diagrama de Paretto}{7}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Diagrama de dispersión}{9}{chapter.5}%
-\contentsline {section}{\numberline {1}Obtención de modelo matemático}{9}{section.5.1}%
-\contentsline {section}{\numberline {2}Linearización}{10}{section.5.2}%
-\contentsline {subsection}{\numberline {2.1}Exponencial}{11}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {2.2}Ley de potencias, o potencial}{11}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {2.3}Razón de crecimiento}{11}{subsection.5.2.3}%
-\contentsline {chapter}{\numberline {6}Gráficas e índices de control}{12}{chapter.6}%
-\contentsline {section}{\numberline {1}Gráficas de control $X$}{12}{section.6.1}%
-\contentsline {section}{\numberline {2}Gráficas de control $R$}{12}{section.6.2}%
-\contentsline {section}{\numberline {3}Índices de capacidad de procesos}{12}{section.6.3}%
-\contentsline {subsection}{\numberline {3.1}$C_{p}$}{12}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}$C_{pi}$ y $C_{ps}$}{12}{subsubsection.6.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}$C_{pk}$}{13}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Índice $k$}{13}{subsubsection.6.3.2.1}%
-\contentsline {subsection}{\numberline {3.3}$C_{pm}$}{13}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {3.4}Interpretación de índices}{13}{subsection.6.3.4}%
-\contentsline {chapter}{\numberline {7}Diagrama de Ishikawa o Causa-Efecto}{15}{chapter.7}%
-\contentsline {chapter}{Bibliografía}{16}{appendix*.3}%
+\contentsline {section}{\numberline {1}Obtención de modelo matemático}{10}{section.5.1}%
+\contentsline {section}{\numberline {2}Linearización}{11}{section.5.2}%
+\contentsline {subsection}{\numberline {2.1}Exponencial}{12}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {2.2}Ley de potencias, o potencial}{12}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {2.3}Razón de crecimiento}{12}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}Gráficas e índices de control}{13}{chapter.6}%
+\contentsline {section}{\numberline {1}Gráficas de control $X$}{13}{section.6.1}%
+\contentsline {section}{\numberline {2}Gráficas de control $R$}{13}{section.6.2}%
+\contentsline {section}{\numberline {3}Índices de capacidad de procesos}{13}{section.6.3}%
+\contentsline {subsection}{\numberline {3.1}$C_{p}$}{13}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}$C_{pi}$ y $C_{ps}$}{13}{subsubsection.6.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}$C_{pk}$}{14}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Índice $k$}{14}{subsubsection.6.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}$C_{pm}$}{14}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {3.4}Interpretación de índices}{15}{subsection.6.3.4}%
+\contentsline {chapter}{\numberline {7}Diagrama de Ishikawa o Causa-Efecto}{16}{chapter.7}%
+\contentsline {chapter}{Bibliografía}{17}{appendix*.7}%

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  10 NOV 2026 22:26
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  11 NOV 2026 13:27
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Control_de_calidad/Resumen/0_
 Main.tex
 
@@ -2048,24 +2048,41 @@ Capítulo 3.
 
 ]
 Capítulo 4.
-(./04.tex)
+(./04.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7
 
 ]
-[8]
+(./images/fig:diagrama_de_pareto.tex
+Package pgfplots info on input line 9: Using 'lua backend=false' for axis: x co
+ord trafo unsupported.
+Package pgfplots info on input line 22: Using 'lua backend=false' for axis: x c
+oord trafo unsupported.
+)) [8]
 Capítulo 5.
-(./05.tex [9
+(./05.tex (./images/fig:diagrama_de_dispersion.tex) [9
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10])
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+ [10]
+(./images/fig:modelo_potencial.tex
+Package pgfplots info on input line 16: Deactivating LUA version of plot expres
+sion for plot 0 (type 'pgfplothandlerlineto'): y expression '\myalfa *x^\mybeta
+ ' contains a TeX macro.
+) (./images/fig:modelo_exponencial.tex)
+(./images/fig:modelo_razon_de_crecimiento.tex
+Package pgfplots info on input line 16: Deactivating LUA version of plot expres
+sion for plot 0 (type 'pgfplothandlerlineto'): y expression '\myalfa *x/(\mybet
+a +x)' contains a TeX macro.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11]
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
+ [11])
+[12]
 Capítulo 6.
 (./06.tex
 
@@ -2096,42 +2113,39 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 15.
 
-[12
+(./images/fig:grafica_de_control.tex) [13
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 47.
+(hyperref)                removing `math shift' on input line 54.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 47.
+(hyperref)                removing `subscript' on input line 54.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 47.
+(hyperref)                removing `math shift' on input line 54.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 65.
+(hyperref)                removing `subscript' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 72.
 
-
-Underfull \vbox (badness 5446) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [13])
-[14]
+[14])
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+ [15]
 Capítulo 7.
-(./07.tex) [15
+(./07.tex) [16
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -2170,13 +2184,13 @@ Capítulo 7.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [16
+) [17
 
 
-] (./0_Main.acr)
+] (./0_Main.acr) [18] (./0_Main.gls)
 LaTeX Info: Redefining \. on input line 54.
 LaTeX Info: Redefining \% on input line 54.
- [17] (./0_Main.gls) [18
+ [19
 
 ] (./0_Main.aux
 LaTeX Info: Redefining \. on input line 20.
@@ -2191,21 +2205,21 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `0_Main.out' has not changed.
-(rerunfilecheck)             Checksum: F49D1BF39FA6706DA6ACBEAE67C37443;3824.
+(rerunfilecheck)             Checksum: 0E5D0A6478A5FD643816768C10DF69B2;3824.
 )
 
 Here is how much of LuaTeX's memory you used:
- 65995 strings out of 476076
+ 66719 strings out of 476076
  125240,2373549 words of node,token memory allocated
  2125 words of node memory still in use:
    34 hlist, 2 vlist, 14 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_
 kern, 3 glyph, 229 attribute, 130 glue_spec, 115 attribute_list, 3 write, 24 pdf
 _literal, 2 pdf_action, 24 pdf_colorstack nodes
-   avail lists: 1:1,2:1331,3:399,4:122,5:568,6:69,7:3418,8:52,9:1164,10:14,11:41
-0,12:1
- 86910 multiletter control sequences out of 65536+600000
- 103 fonts using 10795583 bytes
- 103i,13n,113p,2603b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
+   avail lists: 1:1,2:4208,3:1476,4:124,5:568,6:69,7:3902,8:52,9:1164,10:14,11:4
+10,12:1
+ 87593 multiletter control sequences out of 65536+600000
+ 111 fonts using 11494183 bytes
+ 103i,23n,113p,2603b,2664s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf></usr/shar
 e/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Bold.otf></usr/share/texmf-dist
 /fonts/opentype/ibm/plex/IBMPlexSans-Regular.otf></usr/share/texmf-dist/fonts/op
@@ -2215,15 +2229,17 @@ plex/IBMPlexSerif-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy7.pfb>
-Output written on 0_Main.pdf (20 pages, 1156532 bytes).
+nts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on 0_Main.pdf (21 pages, 1191159 bytes).
 
-PDF statistics: 398 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 1048576)
+PDF statistics: 419 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 1048576)
  440 words of extra memory for PDF output out of 10000 (max. 100000000)
 

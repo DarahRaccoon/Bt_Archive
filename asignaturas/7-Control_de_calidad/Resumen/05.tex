@@ -1,3 +1,4 @@
+
 Este diagrama ayuda a encontrar si existe una relación entre variables y, de ser así, encontrar una expresión matemática que represente tal relación.
 
 Esta relación puede ser:
@@ -12,6 +13,13 @@ En ambos casos la relación puede ser:
     \item Fuerte: Una variable aumenta/disminuye mucho y la otra también
     \item Debil: Una variable aumenta/disminuye mucho pero la otra aumenta/disminuye poco
 \end{enumerate}
+
+\begin{figure}\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:diagrama_de_dispersion}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Ejemplo de diagrama de dispersión}
+    \label{fig:diagrama_de_dispersion}
+\end{figure}
 
 \section{Obtención de modelo matemático}
 
@@ -39,11 +47,9 @@ Donde el valor puede ir de -1 a 1, indicando el 0 un ajuste nulo, mientras que -
 
 \section{Linearización}
 
-Si bien mediente lo anterior se nos genera un modelo matemático que sigue una linea recta, el que los datos no sigan tal tipo de distribución disminuye su capacidad de predicción. 
+Si bien mediante lo anterior se nos genera un modelo matemático que sigue una línea recta, cuando los datos están muy poco ajustados a esta linea la capacidad de predicción no es suficiente como para que sea un modelo válido. Para arreglar esto podemos identificar la forma en que se distribuyen los datos y manipularla para que se ajuste mejor a una línea recta, y así aumentar el coeficiente de correlación
 
-Para arreglar esto podemos identificar la forma en que se distribuyen los datos y manipularla para que sea juste mejor a una linea recta, y así aumentar el coeficiente de correlación
-
-Tenemos 3 tipos principales de distribuciones:
+Tenemos tres tipos principales de distribuciones:
 
 \begin{itemize}
     \item Exponencial
@@ -61,6 +67,34 @@ Tenemos 3 tipos principales de distribuciones:
         y = \alpha \cdot \frac{x}{\beta + x}
     \end{equation}
 \end{itemize}
+
+\begin{figure}\centering
+    \begin{subfigure}[b]{0.3\linewidth}
+        \centering
+        \resizebox{\linewidth}{!}{\input{images/fig:modelo_potencial}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Modelo potencial}
+        \label{fig:modelo_potencial}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\linewidth}\centering
+        \resizebox{\linewidth}{!}{\input{images/fig:modelo_exponencial}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Modelo exponencial}
+        \label{fig:modelo_exponencial}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\linewidth}\centering
+        \resizebox{\linewidth}{!}{\input{images/fig:modelo_razon_de_crecimiento}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Modelo de razon de crecimiento}
+        \label{fig:modelo_razon_de_crecimiento}
+    \end{subfigure}
+    
+    \rule{\linewidth}{0.5pt}
+    \caption{Ejemplo de cada uno de los modelos}
+    \label{fig:modelos}
+\end{figure}
 
 Para resolver cada tipo de distribución nos ayudamos de las propiedades de los logaritmos.
 

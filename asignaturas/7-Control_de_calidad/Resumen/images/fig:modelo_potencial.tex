@@ -1,0 +1,20 @@
+% 2. LEY DE POTENCIAS:  y = α · x^{β}
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm, height=10cm,
+    axis lines=left,
+    xlabel={$x$}, ylabel={$y$},
+    xtick=\empty, ytick=\empty,
+    domain=0:5, samples=50,
+    enlargelimits=false,
+    legend pos=north west,legend style={draw=none}
+]
+
+\pgfmathsetmacro{\myalfa}{3}
+\pgfmathsetmacro{\mybeta}{2}
+
+\addplot[DarkRed, thick] {\myalfa*x^\mybeta};
+\addlegendentry{\Large $y = \alpha \cdot x^{\beta}$}
+
+\end{axis}
+\end{tikzpicture}

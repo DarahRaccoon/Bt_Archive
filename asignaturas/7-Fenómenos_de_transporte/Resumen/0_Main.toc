@@ -37,4 +37,5 @@
 \contentsline {subsubsection}{\numberline {1.2.3}Transferencia de materia gas-líquido}{35}{subsubsection.5.1.2.3}%
 \contentsline {section}{\numberline {2}Consumo de oxígeno}{36}{section.5.2}%
 \contentsline {section}{\numberline {3}Transferencia de oxígeno en los fermentadores}{38}{section.5.3}%
-\contentsline {chapter}{Bibliografía}{39}{appendix*.40}%
+\contentsline {section}{\numberline {4}Respuestas de ejercicios}{40}{section.5.4}%
+\contentsline {chapter}{Bibliografía}{41}{appendix*.41}%

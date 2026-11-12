@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm, height=10cm,
+    axis lines=left,
+    xlabel={$x$}, ylabel={$y$},
+    xtick=\empty, ytick=\empty,
+    xmin=1.5, xmax=5,
+    ymin=0, ymax=10,samples=100,
+    enlargelimits=false,
+    legend pos=north west,legend style={draw=none}
+]
+
+\addplot[DarkBlue, thick] {0.5*exp(0.6*x)};
+\addlegendentry{\Large $y=\alpha e^{\beta x}$}
+
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,23 @@
+\begin{tikzpicture}[
+    capa/.style={ultra thin},
+    texto/.style={black, opacity=1, font=\sffamily\footnotesize},
+    etiqueta/.style={right,texto},
+    linea etiqueta/.style={thick}
+]
+
+\draw[thick, opacity=0.75, arrows=Circle-Stealth] (2.5,6.25) node[above, texto] {Líquido a filtrar} -- (2.5,0) node[below,texto] {Filtrado};
+
+\draw[ultra thick] (0,6) -- (0,2.25) -- (2,2) -- (2,0) (3,0) -- (3,2) -- (5,2.25) -- (5,6);
+\draw[loosely dashed, thick] (0,2.375) -- (5,2.375);
+
+\draw[pattern={Dots[distance=3pt,radius=0.5pt]}] (0,2.5) rectangle (5,2.75);
+\draw[fill, pattern={Dots[angle=20,distance=2.5pt,radius=1pt]}, pattern color=brown] (0,2.75) rectangle (5,4.75);
+\draw[fill, pattern={Dots[angle=30,distance=15pt,radius=2pt]}, pattern color=cyan] (0,4.75) rectangle (5,5.75);
+\draw[fill,cyan, opacity=0.025] (0,4.75) rectangle (5,5.75);
+
+\draw[linea etiqueta] (5,5.25) -- (5.75,5.25) node[etiqueta] {Solución};
+\draw[linea etiqueta] (5,3.75) -- (5.75,3.75) node[etiqueta] {Torta};
+\draw[linea etiqueta] (5,2.625) -- (5.75,2.625) node[etiqueta] {Tela filtrante};
+\draw[linea etiqueta] (5,2.375) to[out=0,in=180] (5.75,2) node[etiqueta] {Soporte};
+
+\end{tikzpicture}
