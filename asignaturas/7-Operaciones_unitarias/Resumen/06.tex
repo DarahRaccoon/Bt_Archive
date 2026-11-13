@@ -1,11 +1,18 @@
 
 Una esterilización se considera efectiva cuando es suficiente para destruir las esporas de \sci{Geobacillus stearothermophilus}, que produce las esporas más resistentes conocidas hasta el momento.
 
+\begin{figure}\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:temperaturas_de_esterilizacion}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Esquema habitual de temperaturas en un proceso de esterilización}
+    \label{fig:temperaturas_de_esterilizacion}
+\end{figure}
+
 \begin{equation}
     k = A \cdot e^{-\frac{E_{a}}{R \cdot T}}
 \end{equation}
 
-Donde $k$ es la constante de Arrhenius, $A$ es la constante preexponencial, $E_{a}$ es la energía de activación, o inactivación en casos de esterilización, $R$ es la constante de los gases ideales y $T$ es la temperatura en Kelvin (\unit{\Kelvin}).
+Donde $k$ es la constante de Arrhenius, $A$ es la constante preexponencial, $E_{a}$ es la energía de activación, o inactivación en casos de esterilización, $R$ es la constante de los gases ideales y $T$ es la temperatura en Kelvin (\unit{\kelvin}).
 
 A partir de esto se calcula $\nabla$
 
@@ -20,6 +27,12 @@ A partir de esto se calcula $\nabla$
 Donde $N_{0}$ son las esporas iniciales y $N$ la cantidad de esporas con que se desea terminar.
 
 \begin{equation}
-    \nabla_{\text{Total}} = \nabla_{\text{Calentamiento}} \cdot \nabla_{\text{Sostenimiento}} \cdot \nabla_{\text{Enfriamiento}}
+    \nabla_{\text{Total}} = \nabla_{\text{Calentamiento}} + \nabla_{\text{Sostenimiento}} + \nabla_{\text{Enfriamiento}}
 \end{equation}
 
+\begin{figure}\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:constante_de_arrhenius_en_esterilizacion}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Esquema habitual de temperaturas en un proceso de esterilización}
+    \label{fig:constante_de_arrhenius_en_esterilizacion}
+\end{figure}

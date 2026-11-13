@@ -1,20 +1,20 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {part}{I\hspace {1em}Operaciones unitarias de transferencia de momento}{1}{part.1}%
 \contentsline {chapter}{\numberline {1}Operación de transporte de momento: Centrifugación}{2}{chapter.1}%
-\contentsline {section}{\numberline {1}Fundamentos de centrifugación}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1}Fuerzas}{2}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.2}Campos de aceleración}{2}{subsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Gravitacional}{2}{subsubsection.1.1.2.1}%
+\contentsline {section}{\numberline {1}Fundamentos de centrifugación}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1}Fuerzas}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}Campos de aceleración}{3}{subsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Gravitacional}{3}{subsubsection.1.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Centrifugo}{3}{subsubsection.1.1.2.2}%
-\contentsline {subsection}{\numberline {1.3}Ley de Stokes}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.3}Ley de Stokes}{4}{subsection.1.1.3}%
 \contentsline {section}{\numberline {2}Diseño de centrífugas}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {2.1}Tubular}{4}{subsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}$Q_{50\%}$}{5}{subsubsection.1.2.1.1}%
-\contentsline {subsection}{\numberline {2.2}De discos}{5}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.1}$Q_{50\%}$}{6}{subsubsection.1.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}De discos}{6}{subsection.1.2.2}%
 \contentsline {chapter}{\numberline {2}Operación de transporte de momento: Filtración}{7}{chapter.2}%
 \contentsline {section}{\numberline {1}Fundamentos de filtración}{7}{section.2.1}%
 \contentsline {subsection}{\numberline {1.1}Ley de Darcy}{7}{subsection.2.1.1}%
 \contentsline {part}{II\hspace {1em}Operaciones unitarias de transferencia de calor}{9}{part.2}%
 \contentsline {chapter}{\numberline {3}Operación de transporte de calor: Esterilización}{10}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Operación de transporte de calor: Secado}{11}{chapter.4}%
-\contentsline {chapter}{Bibliografía}{12}{appendix*.2}%
+\contentsline {chapter}{\numberline {4}Operación de transporte de calor: Secado}{12}{chapter.4}%
+\contentsline {chapter}{Bibliografía}{13}{appendix*.5}%

@@ -1,0 +1,28 @@
+\def\xlong{20}
+\def\ylong{10}
+\def\kmax{0.9*\ylong}
+\def\ti{0.3*\xlong}
+\def\tf{0.65*\xlong}
+
+\begin{tikzpicture}[
+    texto/.style={black, font=\sffamily},
+    lim ancho/.style={text width=2.5cm, align=center},
+    eje/.style={thick, arrows=-Stealth},
+    limites/.style={dashed, DarkRed},
+    marca/.style={loosely dotted, DarkRed},
+    linea central/.style={ultra thick, DarkBlue}
+]
+
+\draw[eje] (0,0) -- (\xlong,0) node[midway, below, texto] {Tiempo ($t$)};
+\draw[eje] (0,0) -- (0,\ylong) node[midway, rotate=90, above, texto] {Constante de velocidad ($k$)};
+
+\draw[linea central] (0,0) to [out=0,in=-90] (\ti,\kmax) -- (\tf,\kmax) to[out=-80,in=140] (\xlong,0);
+
+\draw[limites] (\ti,0) -- (\ti,1.1*\kmax);
+\draw[limites] (\tf,0) -- (\tf,1.1*\kmax);
+
+\node[texto, lim ancho] at (0.4*\ti, 0.5*\kmax) {$\nabla_{\text{Calentamiento}}$};
+\node[texto, lim ancho] at (0.5*\xlong, 0.6*\kmax) {$\nabla_{\text{Sostenimiento}}$};
+\node[texto, lim ancho] at (\tf+0.4*\tf, 0.45*\kmax) {$\nabla_{\text{Enfriamiento}}$};
+
+\end{tikzpicture}
