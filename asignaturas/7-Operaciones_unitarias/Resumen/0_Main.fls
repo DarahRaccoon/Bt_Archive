@@ -304,12 +304,13 @@ INPUT /usr/share/texmf-dist/tex/latex/mhchem/mhchem.sty
 INPUT /usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
-INPUT /usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT /usr/share/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT /usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT /usr/share/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/marginfix/marginfix.sty
+INPUT /usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/share/texmf-dist/tex/latex/glossaries-extra/glossaries-extra.sty
 INPUT /usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -453,6 +454,8 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
 OUTPUT 0_Main.toc
 INPUT ./03.tex
+INPUT ./images/fig:fuerzas_de_aceleracion_en_campo_centrifugo.tex
+INPUT ./images/fig:centrífuga_tubular.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
@@ -461,8 +464,12 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT ./04.tex
 INPUT ./06.tex
-INPUT ./images/fig:temperaturas_de_esterilizacion.tex
-INPUT ./images/fig:constante_de_arrhenius_en_esterilizacion.tex
+INPUT ./images/fig:variacion_de_temperaturas_en_esterilizacion.tex
+INPUT ./images/fig:variacion_de_k_en_esterilizacion.tex
+INPUT ./images/fig:variacion_de_temperaturas_en_esterilizacion_experimental.tex
+INPUT ./data/esterilizacion.dat
+INPUT ./images/fig:variacion_de_k_en_esterilizacion_experimental.tex
+INPUT ./data/esterilizacion.dat
 INPUT ./07.tex
 INPUT ./0_Main.bbl
 INPUT ./0_Main.acr
@@ -472,7 +479,6 @@ INPUT ./0_Main.out
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
@@ -484,4 +490,3 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

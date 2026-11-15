@@ -1,0 +1,11 @@
+\begin{tikzpicture}\begin{axis}[
+    width=15cm, height=10cm,
+    xlabel={Tiempo ($t$)}, ylabel={Constante de Arrhenius ($k$)},
+    axis lines=left,
+    legend pos=south east,
+]
+
+\addplot[DarkRed, mark=o, mark size=1.5pt, ultra thick]
+    table[x index=0, y index=3] {data/esterilizacion.dat};
+
+\end{axis}\end{tikzpicture}

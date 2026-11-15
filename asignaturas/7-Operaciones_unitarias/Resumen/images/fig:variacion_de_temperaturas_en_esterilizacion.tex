@@ -1,0 +1,28 @@
+\def\xlong{20}
+\def\ylong{8}
+\def\kmax{0.9*\ylong}
+\def\ti{0.3*\xlong}
+\def\tf{0.65*\xlong}
+
+\begin{tikzpicture}[
+    texto/.style={black, font=\sffamily},
+    lim ancho/.style={text width=2.5cm, align=center},
+    eje/.style={thick, arrows=-Stealth},
+    limites/.style={dashed, DarkRed},
+    marca/.style={loosely dotted, DarkRed},
+    linea central/.style={ultra thick, DarkBlue}
+]
+
+\draw[eje] (0,0) -- (\xlong,0) node[midway, below=5pt, texto] {Tiempo ($t$)};
+\draw[eje] (0,0) -- (0,\ylong) node[midway, rotate=90, above, texto] {Temperatura ($T$)};
+
+\draw[linea central] (0,0.1*\kmax) to [out=60,in=190] (\ti,\kmax) -- (\tf,\kmax) to[out=-80,in=160] (\xlong,0.1*\kmax);
+
+\draw[limites] (\ti,0) -- (\ti,1.1*\kmax);
+\draw[limites] (\tf,0) -- (\tf,1.1*\kmax);
+
+\node[texto, lim ancho] at (0.4*\ti, 0.5*\kmax) {Fase de Calentamiento};
+\node[texto, lim ancho] at (0.5*\xlong, 0.6*\kmax) {Fase de Sostenimiento};
+\node[texto, lim ancho] at (\tf+0.4*\tf, 0.45*\kmax) {Fase de Enfriamiento};
+
+\end{tikzpicture}

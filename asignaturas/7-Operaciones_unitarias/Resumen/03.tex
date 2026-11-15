@@ -1,86 +1,191 @@
+La centrifugación es una operación unitaria que consiste en la separación de sustancias sólidas de diferentes densidades mediante la aplicación de un movimiento giratorio. 
 
-La centrifugación es una operación unitaria definida como la separación de sustancias de diferentes densidades mediante la aplicación de un movimiento giratorio. 
+Podemos definir pues la fuerza impulsora de la centrífugación como la diferencia entre la densidad de la partícula involucrada ($\rho_{p}$) y la densidad del fluido en el que se encuentra la partícula ($\rho_{L}$) (\autoref{eq:diferencia_de_densidades}).
 
-El funcionamiento de esta operación se basa en cómo diferentes sustancias experimentan diferentes fuerzas de aceleración
-
-
-
-\subsection{Campos de aceleración}
-
-Hay dos campos de fuerza que actuan sobre las partículas sometidas a una centrifugación y que aplican aceleración sobre ellas:
-
-\begin{itemize}
-    \item Gravitacional
-    \item Centrifugo
-\end{itemize}
-
-\subsubsection{Gravitacional}
-
-En primer lugar está el gravitacional, el cual es resultado de la gravedad generada por la Tierra y tira de los objetos hacia el suelo.
-
-En este la aceleración ($a$) es la típica de $9.81\frac{m}{s^{2}}$, mientras que la fuerza impulsora es la diferencia de densidades ($\Delta\rho$) entre la partícula involucrada y el fluido.
-
-\subsubsection{Centrifugo}
-
-Este se origina del movimiento giratorio. Su aceleración ($a$) es:
-
-\begin{equation}
-    a = \omega^{2} \cdot r
+\begin{equation}\label{eq:diferencia_de_densidades}
+    \Delta\rho = \rho_{p} - \rho_{L}
 \end{equation}
 
-En esta ecuación $\omega$ es la velocidad de rotación en radianes, y se calcula a partir de las revoluciones ($N$) de la siguiente manera:
+
+
+
+
+\section{Campos de aceleración}
+
+Existen dos campos de aceleración: el gravitacional y el centrífugo. 
+
+
+
+\subsection{Campo gravitacional}
+
+En primer lugar está el gravitacional, el cual es resultado de la aceleración de la gravedad generada por la Tierra y tira de los objetos hacia el suelo. Su valor es el de la constante $g$.
+
+\begin{equation}\label{eq:aceleracion_gravitacional}
+    a_{g} = g = \qty{9.81}{\m\per\s\squared}
+\end{equation}
+
+\subsection{Campo centrífugo}
+
+La aceleración del campo centrífugo se origina del movimiento giratorio que realiza la centrífuga, y está compuesta de compuesta a su vez de dos fuerzas: la centrípeta y la centrífuga.
+
+\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:fuerzas_de_aceleracion_en_campo_centrifugo}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Fuerzas de aceleracion involucradas en un campo centrifugo}
+    \label{fig:fuerzas_de_aceleracion_en_campo_centrifugo}
+\end{figure}\end{minipage}}
+
+La fuerza centrípeta se puede interpretar como aquella fuerza que ``tira'' de la partícula hacia el centro del eje de rotación. Por otro lado tenemos la fuerza centrífuga, que si bien no es una fuerza en el sentido estricto de la palabra, se comporta como tal, y es el resultado de la inercia, o sea, de la tendencia de las partículas a mantener su movimiento en linea recta (\autoref{fig:fuerzas_de_aceleracion_en_campo_centrifugo}). 
+
+La aceleración generada por el campo centrífugo ($a_{c}$) se deriva pues de dos aspectos: la velocidad con que gira la centrífuga, o sea, su velocidad angular ($\omega$), y de cuán alejada se encuentra la partícula del eje de rotación ($r$). Con esto en mente podemos definir $a_{c}$ de la siguiente manera: 
+
+\begin{equation}\label{eq:aceleracion_centrifuga}
+    a_{c} = \omega^{2} \cdot r
+\end{equation}
+
+Aquí algo a tener en cuenta es que $\omega$ utiliza unidades de radianes por segundo (\unit{\radian\per\s}), mientras que usualmente la información que tenemos sobre la velocidad de giro de una centrífuga son las revoluciones por minuto declaradas por el equipo (\unit{\rpm}, con símbolo $N$). La conversión de $N$ a $\omega$ es sencilla si recordamos que una circunferencia, o sea, un giro o revolución, es igual a $2\pi\unit{\radian}$, además de la conversión de minutos a segundos:
+
+\Nota{Un giro o ``revolución'' equivale a $2\pi\unit{\radian}$}
 
 \begin{equation}
     \omega = \frac{2\pi \cdot N}{60}
 \end{equation}
 
-Por otro lado, $r$ es la distancia radial desde el eje de rotación a la partícula
+\subsection{Fuerza de aceleración general}
 
+Cualquier partícula con masa, al ser acelerada, cuenta con una fuerza, y esta puede ser calculada con la Segunda Ley de Newton:
 
-\section{Fuerzas de centrifugación}
-
-Al someter a una partícula a una centrifugación podemos identificar dos fuerzas de aceleración que actuan sobre tal partícula. 
-
-Por un lado está la fuerza centrípeta. Se puede interpretar como aquella fuerza que ``tira'' de la partícula hacia el centro del eje de rotación.
-
-Por otro lado tenemos la fuerza centrífuga. Esta no es una fuerza en el sentido estricto de la palabra, sino que es el resultado de la inercia, o sea, de la tendencia de un cuerpo a seguir en linea recta.
-
-
-\subsection{Ley de Stokes}
-
-    \resumebox{definicion}{Ley de Stokes}{``Cuando se aplica una fuerza\footnote{$F = m \cdot a$} a una partícula en un medio continuo esta se acelera hasta que alcanza una velocidad a la cual la resistencia a su movimiento iguala a la fuerza aplicada\footnote{$m_{p}\cdot\diff{v}{t}=0$}''\citep{tejedamansirBioseparaciones2011}}
-
-Derivado de la ley de Stokes y sus ecuaciones podemos obtener que la velocidad de sedimentación de una partícula en flujo laminar ($v_{\infty}$) es:
-
-\begin{equation}
-    v_{\infty} = \frac{d_{p}^{2} \cdot \Delta\rho \cdot a}{18\mu}
+\begin{equation}\label{eq:segunda_ley_de_newton}
+    F = m \cdot a
 \end{equation}
 
-Donde:
+Específicamente en nuestro contexto necesitamos reescribir esta fórmula con los datos usualmente manejados en una centrifugación. La aceleración, como se mencionó antes, sería la ejercida por el campo aplicable, ya sea el gravitacional (\autoref{eq:aceleracion_gravitacional}) o el centrífugo (\autoref{eq:aceleracion_centrifuga}). En el caso de la masa, esta la podemos calcular con el volumen de la partícula ($\pi \cdot d_{p}^{3}$) y su densidad ($\rho_{p}$). Si juntamos estos valores obtenemos la fórmula para calcular la fuerza de aceleración de una partícula en un campo centrífugo.\footnote{El número 6 en el denominador proviene de análisis dimensionales}  
 
-\begin{itemize}
-    \item $d_{p}$ es el diametro de la partícula
-    \item $\Delta\rho$ es la diferencia de densidad entre la partícula y el medio en que se encuentra
-    \item $a$ es la **aceleración** a la que se ve sometida
-    \item $\mu$ es la viscosidad del medio
-\end{itemize}
+\begin{equation}\label{eq:fuerza_de_aceleracion}
+    F_{ac} = \frac{\pi\cdot d_{p}^{3}\cdot\rho_{p}\cdot(a)}{6}
+\end{equation}
 
-Esta aceleración puede ser alguna de las dos vistas anteriormente (gravitacional o centrífuga), tras lo cual al reemplazar tenemos una ecuación para cada caso:
 
-\begin{align}
-    \text{Campo gravitacional} &\quad\longrightarrow\quad v_{g}   &= \frac{d_{p}^{2} \cdot \Delta\rho \cdot (g)}{18\mu}
+
+\section{Fuerzas de oposición}
+
+En una centrifugación podemos encontrar también fuerzas que se oponen a la aceleración de las partículas. En este caso podemos identificar dos: la fuerza de flotación ($F_{f}$) y la fuerza de arrastre ($F_{a}$).\citep{tejedamansirBioseparaciones2011}
+
+\subsection{Fuerza de flotación}
+
+La fuerza de flotación consiste en aquella fuerza generada por el líquido que es desplazado por la partícula al moverse por el líquido, y es esencialmente idéntica a la fuerza de aceleración (\autoref{eq:fuerza_de_aceleracion}), pero en lugar de calcular la masa de la partícula se calcula la masa del líquido desplazado por tal partícula. Dado que el volumen de líquido desplazado es igual al volumen de la partícula, solo es necesario cambiar la densidad de la partícula por la densidad del líquido.
+
+\begin{equation}\label{eq:fuerza_de_flotacion}
+    F_{f} = \frac{\pi\cdot d_{p}^{3}\cdot\rho_{L}\cdot(a)}{6}
+\end{equation}
+
+\subsection{Fuerza de arrastre}
+
+La fuerza de arrastre representa aquella fuerza que ejerce el líquido al movimiento de la partícula a través de este. Esta fuerza se compone de 3 elementos: la viscosidad del líquido en que se encuentra la partícula, la velocidad a la que la partícula fluye en el líquido, y las características de tal partícula.
+
+En el caso de la viscosidad ($\mu$) esta representa cuanta resistencia opone un fluido cuando se le aplica una fuerza, y teniendo en cuenta que una partícula moviéndose a través de un fluido aplica una fuerza sobre este, podemos notar que la viscosidad es un parámetro central aquí. En este caso, si la viscosidad de un líquido es mayor, esto significa que la resistencia al movimiento de la partícula será mayor, y viceversa. Podemos definir pues que la viscosidad es proporcional a la fuerza de arrastre.
+
+\begin{equation*}
+    F_{a} \propto \mu
+\end{equation*}
+
+Derivado de lo anterior, podemos establecer también que si una partícula viaja a mayor velocidad a través del fluido entonces su fuerza aumenta (\autoref{eq:segunda_ley_de_newton}), tras lo cual la resistencia ejercida por la viscosidad tambien aumentará, y viceversa. Así pues, la velocidad de la partícula sería también proporcional a la fuerza de arrastre.
+
+\begin{equation*}
+    F_{a} \propto v_{\infty}
+\end{equation*}
+
+Por último, la característica de la partícula que afecta la fuerza de arrastre es el área de contacto entre la partícula y el líqudo, lo que deriva de la geometría de la partícula. La geometría usualmente utilizada en estos casos es la de una partícula esférica ($3\pi \cdot d_{p}$). Este valor sería pues también proporcional a la fuerza de arrastre, pues a mayor área de contacto las zonas donde existe fricción entre la partícula y el líquido son mayores.
+
+\begin{equation*}
+    F_{a} \propto 3\pi \cdot d_{p}
+\end{equation*}
+
+Con todo lo anterior en mente se puede construir la siguiente ecuación para describir la fuerza de arrastre:
+
+\begin{equation}\label{eq:fuerza_de_arrastre}
+    F_{a} = 3\pi\cdot d_{p}\cdot\mu\cdot v_{\infty}
+\end{equation}
+
+
+
+\section{Ley de Stokes y velocidad de sedimentación}
+
+    \resumebox{definicion}{Ley de Stokes}{``Cuando se aplica una fuerza a una partícula en un medio continuo esta se acelera hasta que alcanza una velocidad a la cual la resistencia a su movimiento iguala a la fuerza aplicada''\citep{tejedamansirBioseparaciones2011}}
+
+Partiendo de la Ley de Stokes podemos definir entonces que la fuerza de aceleración a la que se ve sometida una partícula termina siendo igual a las fuerzas de oposición, en base a lo cual podemos definir la siguiente ecuación:
+
+\begin{equation}
+    F_{ac} = F_{f} + F_{a}
+\end{equation}
+
+Si expandimos la ecuación a partir de las anteriormente vistas (Ecuaciones \ref{eq:fuerza_de_aceleracion}, \ref{eq:fuerza_de_flotacion} y \ref{eq:fuerza_de_arrastre}) tenemos:
+
+\begin{equation}
+    \frac{\pi \cdot d_{p}^{3}\cdot\rho_{p}\cdot(a)}{6} = \frac{\pi\cdot d_{p}^{3} \cdot\rho_{L}\cdot(a)}{6} \cdot (3\pi\cdot d_{p}\cdot\mu\cdot v_{\infty})
+\end{equation}
+
+Aquí lo que nos termina interesando es poder saber cuán rápido una partícula sedimenta, por lo que buscamos conocer $v_{\infty}$. Para esto basta despejar la fórmula anterior de la siguiente manera:
+
+\begin{gather*}
+    \frac{\pi\cdot d_{p}^{3}\cdot\rho_{p}\cdot(a)}{6} - \frac{\pi\cdot d_{p}^{3}\cdot\rho_{L}\cdot(a)}{6} = 3\pi\cdot d_{p} \cdot\mu\cdot v_{\infty}
     \\\\
-    \text{Campo centrífugo} &\quad\longrightarrow\quad v_{\omega} &= \frac{d_{p}^{2} \cdot \Delta\rho \cdot (\omega^{2}\cdot r)}{18\mu}
-\end{align}
+    \frac{\pi\cdot d_{p}^{3}\cdot(a)}{6} \cdot (\rho_{p}-\rho_{L}) = (3\pi\cdot d_{p}\cdot\mu)\cdot v_{\infty}
+    \\\\
+    \frac{\pi\cdot d_{p}^{3}\cdot(a)}{6(3\pi\cdot d_{p}\cdot\mu)} \cdot \Delta\rho =  v_{\infty}
+    \\\\
+    \frac{d_{p}^{2}\cdot\Delta\rho\cdot(a)}{18\mu} = v_{\infty}
+\end{gather*}
+
+Así pues podemos obtener la expresión que representa la velocidad de sedimentación de una partícula sometida a algún campo de aceleración.
+
+\begin{equation}\label{eq:velocidad_de_sedimentacion}
+    v_{\infty} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(a)}{18\mu}
+\end{equation}
+
+Como mencionamos anteriormente, existen dos campos de aceleracion que pueden actuar sobre una partícula, el gravitacional y el centrífugo. La \autoref{eq:velocidad_de_sedimentacion} es aplicable a ambos, pues solo basta con reemplazar el término de aceleración con el que aplique.
+
+\begin{equation}\label{eq:velocidad_de_sedimentacion_en_campo_gravitacional}
+    v_{\infty} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(g)}{18\mu}
+\end{equation}
+
+En el caso de un campo centrífugo tendríamos:
+
+\begin{equation}\label{eq:velocidad_de_sedimentacion_en_campo_centrifugo}
+    v_{\infty} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(\omega^{2}\cdot r)}{18\mu}
+\end{equation}
 
 
 
+\section{Tipos de centrífugas}
+
+Dada la enorme cantidad de casos en que 
+
+\subsection{Tubular}
+
+\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:centrífuga_tubular}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Diagrama de una centrífuga tubular}
+    \label{fig:centrífuga_tubular}
+\end{figure}\end{minipage}}
 
 
 
+\subsection{De discos}
+
+%\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+%    \resizebox{\linewidth}{!}{\input{images/fig:centrífuga_de_discos}}
+%    \rule{\linewidth}{0.5pt}
+%    \caption{Diagrama de una centrífuga de discos}
+%    \label{fig:centrífuga_de_discos}
+%\end{figure}\end{minipage}}
+
+a
 
 
-\section{Diseño de centrífugas}
+
+\section{Ecuaciones para el diseño de centrífugas}
 
 \subsection{Tubular}
 
@@ -134,7 +239,7 @@ Por otro lado, el segundo término, el verde, unicamente tiene el valor de $R$, 
     \frac{R_{0}^{2} - R_{1}^{2}}{\ln(\frac{R_{0}}{R_{1}})} \quad\longrightarrow\quad \frac{m^{2} - m^{2}}{\ln(\frac{m}{m})} \quad\longrightarrow\quad \text{ln cancela unidades} \quad\longrightarrow\quad m^{2}
 \end{equation}
 
-Con todo esto, tenemos basícamente que $\Sigma$ tiene unidades de $m^{2}$, por lo que representa esencialente el área de contacto entre fluido y centrífuga.
+Con todo esto, tenemos básicamente que $\Sigma$ tiene unidades de $m^{2}$, por lo que representa esencialente el área de contacto entre fluido y centrífuga.
 
 Todo este analisis dimensional lo que nos revela es que los dos términos principales de la ecuación, $v_{g}$ y $\Sigma$, representan cada uno una parte fundamental del proceso de centrifugación:
 

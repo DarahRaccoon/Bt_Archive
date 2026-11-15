@@ -1,20 +1,20 @@
 
 Una esterilización se considera efectiva cuando es suficiente para destruir las esporas de \sci{Geobacillus stearothermophilus}, que produce las esporas más resistentes conocidas hasta el momento.
 
-\begin{figure}\centering
-    \resizebox{\linewidth}{!}{\input{images/fig:temperaturas_de_esterilizacion}}
-    \rule{\linewidth}{0.5pt}
-    \caption{Esquema habitual de temperaturas en un proceso de esterilización}
-    \label{fig:temperaturas_de_esterilizacion}
-\end{figure}
-
 \begin{equation}
     k = A \cdot e^{-\frac{E_{a}}{R \cdot T}}
 \end{equation}
 
 Donde $k$ es la constante de Arrhenius, $A$ es la constante preexponencial, $E_{a}$ es la energía de activación, o inactivación en casos de esterilización, $R$ es la constante de los gases ideales y $T$ es la temperatura en Kelvin (\unit{\kelvin}).
 
-A partir de esto se calcula $\nabla$
+\begin{figure}\centering
+    \resizebox{\linewidth}{!}{\input{images/fig:variacion_de_temperaturas_en_esterilizacion}}
+    \rule{\linewidth}{0.5pt}
+    \caption{Esquema habitual de temperaturas en un proceso de esterilización}
+    \label{fig:variacion_de_temperaturas_en_esterilizacion}
+\end{figure}
+
+A partir de esto se calcula nabla ($\nabla$)
 
 \begin{equation}
     \nabla = k \cdot (t_{1} - t_{0}) = k \cdot \Delta T 
@@ -31,8 +31,31 @@ Donde $N_{0}$ son las esporas iniciales y $N$ la cantidad de esporas con que se 
 \end{equation}
 
 \begin{figure}\centering
-    \resizebox{\linewidth}{!}{\input{images/fig:constante_de_arrhenius_en_esterilizacion}}
+    \resizebox{\linewidth}{!}{\input{images/fig:variacion_de_k_en_esterilizacion}}
     \rule{\linewidth}{0.5pt}
-    \caption{Esquema habitual de temperaturas en un proceso de esterilización}
-    \label{fig:constante_de_arrhenius_en_esterilizacion}
+    \caption{Esquema habitual de $k$ en un proceso de esterilización}
+    \label{fig:variacion_de_k_en_esterilizacion}
 \end{figure}
+
+
+
+\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
+    \begin{subfigure}[t]{\linewidth}
+        \resizebox{\linewidth}{!}{\input{images/fig:variacion_de_temperaturas_en_esterilizacion_experimental}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Variación de temperatura}
+        \label{fig:variacion_de_temperaturas_en_esterilizacion_experimental}
+    \end{subfigure}
+    \vspace{12pt}
+    \begin{subfigure}[t]{\linewidth}
+        \resizebox{\linewidth}{!}{\input{images/fig:variacion_de_k_en_esterilizacion_experimental}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Variación de $k$}
+        \label{fig:variacion_de_k_en_esterilizacion_experimental}
+    \end{subfigure}
+    
+    \vspace{10pt}
+    \rule{\linewidth}{0.5pt}
+    \caption{Ejemplo de datos experimentales de las variaciones de temperatura y $k$ a lo largo de una esterilización}
+    \label{fig:ejemplo_datos_experimentales}
+\end{figure}\end{minipage}}

@@ -1,5 +1,5 @@
 \def\xlong{20}
-\def\ylong{10}
+\def\ylong{8}
 \def\kmax{0.9*\ylong}
 \def\ti{0.3*\xlong}
 \def\tf{0.65*\xlong}
@@ -13,10 +13,10 @@
     linea central/.style={ultra thick, DarkBlue}
 ]
 
-\draw[eje] (0,0) -- (\xlong,0) node[midway, below, texto] {Tiempo ($t$)};
+\draw[eje] (0,0) -- (\xlong,0) node[midway, below=5pt, texto] {Tiempo ($t$)};
 \draw[eje] (0,0) -- (0,\ylong) node[midway, rotate=90, above, texto] {Constante de velocidad ($k$)};
 
-\draw[linea central] (0,0) to [out=0,in=-90] (\ti,\kmax) -- (\tf,\kmax) to[out=-80,in=140] (\xlong,0);
+\draw[linea central] (0,0.1*\kmax) to [out=0,in=-90] (\ti,\kmax) -- (\tf,\kmax) to[out=-80,in=160] (\xlong,0.1*\kmax);
 
 \draw[limites] (\ti,0) -- (\ti,1.1*\kmax);
 \draw[limites] (\tf,0) -- (\tf,1.1*\kmax);

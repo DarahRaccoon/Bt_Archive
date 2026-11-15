@@ -1,0 +1,11 @@
+\begin{tikzpicture}\begin{axis}[
+    width=15cm, height=10cm,
+    xlabel={Tiempo ($t$)}, ylabel={Temperatura (\unit{\degreeCelsius})},
+    axis lines=left, 
+    legend pos=south east,
+]
+
+\addplot[DarkBlue, mark=o, mark size=1.5pt, ultra thick]
+    table[x index=0, y index=1] {data/esterilizacion.dat};
+
+\end{axis}\end{tikzpicture}
