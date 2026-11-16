@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  14 NOV 2026 22:03
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  16 NOV 2026 00:49
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen
 /0_Main.tex
 
@@ -2016,29 +2016,46 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 ]
 Capítulo 1.
-(./03.tex (./images/fig:fuerzas_de_aceleracion_en_campo_centrifugo.tex)
-[2
+(./03.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2
 
 
 ]
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
+(./images/fig:fuerzas_de_aceleracion_en_campo_centrifugo.tex)
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 77.
+(babel)             Reported on input line 67.
  [3] [4]
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
- [5] (./images/fig:centrífuga_tubular.tex) [6]
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+ [5]
+(./images/fig:centrífuga_tubular.tex) (./images/fig:centrifuga_de_discos.tex)
+Underfull \vbox (badness 4084) has occurred while \output is active []
+
+ [6]
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
+
+[7] [8]
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
+ [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 259.
-LaTeX Info: Redefining \% on input line 259.
- [7])
-[8]
-Capítulo 2.
-(./04.tex [9
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]) [10]
+LaTeX Info: Redefining \. on input line 379.
+LaTeX Info: Redefining \% on input line 379.
+ [11])
+[12]
+Capítulo 2.
+(./04.tex [13
+
+]) [14]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2071,7 +2088,7 @@ Capítulo 2.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [11
+ [15
 
 
 ]
@@ -2081,26 +2098,26 @@ Capítulo 3.
 (./images/fig:variacion_de_temperaturas_en_esterilizacion_experimental.tex
 PGFPlots: reading {data/esterilizacion.dat}
 )
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
 [][]
  []
 
 (./images/fig:variacion_de_k_en_esterilizacion_experimental.tex
 PGFPlots: reading {data/esterilizacion.dat}
 )
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
 [][]
  []
 
-) [12
+) [16
 
 
 ]
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
- [13]
+ [17]
 Capítulo 4.
-(./07.tex) [14
+(./07.tex) [18
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -2135,13 +2152,13 @@ Capítulo 4.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./0_Main.bbl) [15
+ (./0_Main.bbl) [19
 
 
-] (./0_Main.acr) [16] (./0_Main.gls)
+] (./0_Main.acr) [20] (./0_Main.gls)
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
- [17
+ [21
 
 ]
 (./0_Main.aux
@@ -2161,18 +2178,18 @@ Package rerunfilecheck Info: File `0_Main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 66898 strings out of 476076
+ 66987 strings out of 476076
  156553,2373549 words of node,token memory allocated
- 54058 words of node memory still in use:
-   550 hlist, 40 vlist, 41 rule, 98 disc, 34 local_par, 91 math, 1285 glue, 104 
-kern, 73 penalty, 11 margin_kern, 637 glyph, 7739 attribute, 130 glue_spec, 3870
- attribute_list, 13 write, 2541 pdf_literal, 3 pdf_dest, 6 pdf_action, 132 pdf_c
-olorstack, 4 pdf_setmatrix, 4 pdf_save, 4 pdf_restore nodes
-   avail lists: 1:6,2:2144,3:4511,4:170,5:775,6:68,7:5067,8:81,9:1158,10:14,11:6
-99,12:1
- 87782 multiletter control sequences out of 65536+600000
- 107 fonts using 11446015 bytes
- 103i,19n,113p,2606b,2840s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 46589 words of node memory still in use:
+   454 hlist, 28 vlist, 36 rule, 95 disc, 24 local_par, 83 math, 1074 glue, 97 k
+ern, 53 penalty, 6 margin_kern, 628 glyph, 6593 attribute, 130 glue_spec, 3297 a
+ttribute_list, 12 write, 2204 pdf_literal, 2 pdf_dest, 7 pdf_action, 86 pdf_colo
+rstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
+   avail lists: 1:6,2:2144,3:4513,4:170,5:918,6:68,7:6091,8:81,9:1158,10:18,11:8
+89,12:1
+ 87856 multiletter control sequences out of 65536+600000
+ 114 fonts using 11981567 bytes
+ 103i,19n,113p,2606b,2842s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSerif-Italic.otf></usr/sha
 re/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf></usr/share/texmf-d
 ist/fonts/opentype/ibm/plex/IBMPlexSans-Bold.otf></usr/share/texmf-dist/fonts/op
@@ -2180,20 +2197,21 @@ entype/ibm/plex/IBMPlexSans-Regular.otf></usr/share/texmf-dist/fonts/opentype/ib
 m/plex/IBMPlexSerif-Bold.otf></usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMP
 lexSerif-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on 0_Main.pdf (19 pages, 2261400 bytes).
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb>
+Output written on 0_Main.pdf (23 pages, 2290144 bytes).
 
-PDF statistics: 412 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 1048576)
+PDF statistics: 453 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 1048576)
  440 words of extra memory for PDF output out of 10000 (max. 100000000)
 

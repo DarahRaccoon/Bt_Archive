@@ -1,32 +1,39 @@
-La centrifugación es una operación unitaria que consiste en la separación de sustancias sólidas de diferentes densidades mediante la aplicación de un movimiento giratorio. 
 
-Podemos definir pues la fuerza impulsora de la centrífugación como la diferencia entre la densidad de la partícula involucrada ($\rho_{p}$) y la densidad del fluido en el que se encuentra la partícula ($\rho_{L}$) (\autoref{eq:diferencia_de_densidades}).
+La centrifugación es una operación unitaria utilizada para separar los sólidos presentes en un líquido. 
+
+    % Aplicaciones
+
+La forma en que una centrifugación logra esto es, esencialmente, mediante una sedimentación. Ahora bien, cuando pensamos en una sedimentación usualmente visualizamos el \hypertarget{ejemplo_sedimentacion}{ejemplo} de un líquido en reposo y partículas desplazándose hacia el fondo de este por efecto de la gravedad. Aunque este ejemplo si constituye una forma de sedimentación, es solo un caso de cómo puede ocurrir tal proceso. Si vemos más a fondo sus fundamentos podremos ver cómo se aplica la sedimentación en la operación de centrifugación.
+
+Una sedimentación cuenta con dos aspectos físicos principales como fundamento: la diferencia de densidades entre un líquido y una partícula presente en este, y la presencia de una fuerza de aceleración. Si a un líquido con partículas sólidas se le aplica una aceleración, la fuerza que experimentará cada elemento (líquido y partículas) será diferente, porque si bien la aceleración es la misma ($a$, \autoref{eq:segunda_ley_de_newton}), la masa no lo es, porque líquido y partículas tienen densidades diferentes, de ahí que la diferencia de densidades sea uno de los elementos fundamentales en una sedimentación. Asímismo, si no existe una aceleración en primer lugar, no existirá esta fuerza. Es bajo la presencia de ambos elementos que se da una sedimentación.
+
+Dado que la aceleración en para ambos elementos es la misma, la fuerza impulsora central en una sedimentación es la diferencia de densidades entre la partícula ($\rho_{p}$) y la densidad del fluido en el que se encuentra la partícula ($\rho_{L}$).
 
 \begin{equation}\label{eq:diferencia_de_densidades}
     \Delta\rho = \rho_{p} - \rho_{L}
 \end{equation}
 
-
+La razón por la que la sedimentación se considera parte fundamental de la centrifugación es porque, a rasgos generales, esta operación unitaria se basa en generar una sedimentación, pero en lugar de usar la aceleración de la gravedad como en el \emph{\hyperlink{ejemplo_sedimentacion}{ejemplo típico}} anteriormente mencionado, se utiliza un movimiento giratorio a altas velocidades para generar otra fuerza de aceleración: la aceleración centrífuga.
 
 
 
 \section{Campos de aceleración}
 
-Existen dos campos de aceleración: el gravitacional y el centrífugo. 
+Como se mencionó antes, hay dos aceleraciones (gravitacional y centrífuga) que actuan sobre las partículas en un líquido en centrifugación y favorecen la sedimentación de las partículas de interés. Estas se llaman también \emph{campos de aceleración}.
 
 
 
 \subsection{Campo gravitacional}
 
-En primer lugar está el gravitacional, el cual es resultado de la aceleración de la gravedad generada por la Tierra y tira de los objetos hacia el suelo. Su valor es el de la constante $g$.
+En el caso del campo gravitacional es simplemente la aceleración de la gravedad generada por la Tierra y que tira de los objetos hacia el suelo. Su valor es el de la constante $g$.
 
 \begin{equation}\label{eq:aceleracion_gravitacional}
     a_{g} = g = \qty{9.81}{\m\per\s\squared}
 \end{equation}
 
-\subsection{Campo centrífugo}
 
-La aceleración del campo centrífugo se origina del movimiento giratorio que realiza la centrífuga, y está compuesta de compuesta a su vez de dos fuerzas: la centrípeta y la centrífuga.
+
+\subsection{Campo centrífugo}
 
 \marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
     \resizebox{\linewidth}{!}{\input{images/fig:fuerzas_de_aceleracion_en_campo_centrifugo}}
@@ -34,6 +41,8 @@ La aceleración del campo centrífugo se origina del movimiento giratorio que re
     \caption{Fuerzas de aceleracion involucradas en un campo centrifugo}
     \label{fig:fuerzas_de_aceleracion_en_campo_centrifugo}
 \end{figure}\end{minipage}}
+
+En el caso del campo centrífugo esta aceleración se origina del movimiento giratorio que realiza la centrífuga, y está compuesta a su vez de dos fuerzas: la centrípeta y la centrífuga.
 
 La fuerza centrípeta se puede interpretar como aquella fuerza que ``tira'' de la partícula hacia el centro del eje de rotación. Por otro lado tenemos la fuerza centrífuga, que si bien no es una fuerza en el sentido estricto de la palabra, se comporta como tal, y es el resultado de la inercia, o sea, de la tendencia de las partículas a mantener su movimiento en linea recta (\autoref{fig:fuerzas_de_aceleracion_en_campo_centrifugo}). 
 
@@ -53,7 +62,7 @@ Aquí algo a tener en cuenta es que $\omega$ utiliza unidades de radianes por se
 
 \subsection{Fuerza de aceleración general}
 
-Cualquier partícula con masa, al ser acelerada, cuenta con una fuerza, y esta puede ser calculada con la Segunda Ley de Newton:
+Cualquier partícula con masa, al ser acelerada, cuenta con una fuerza, y esta puede ser calculada con la Segunda Ley de Newton.
 
 \begin{equation}\label{eq:segunda_ley_de_newton}
     F = m \cdot a
@@ -62,7 +71,7 @@ Cualquier partícula con masa, al ser acelerada, cuenta con una fuerza, y esta p
 Específicamente en nuestro contexto necesitamos reescribir esta fórmula con los datos usualmente manejados en una centrifugación. La aceleración, como se mencionó antes, sería la ejercida por el campo aplicable, ya sea el gravitacional (\autoref{eq:aceleracion_gravitacional}) o el centrífugo (\autoref{eq:aceleracion_centrifuga}). En el caso de la masa, esta la podemos calcular con el volumen de la partícula ($\pi \cdot d_{p}^{3}$) y su densidad ($\rho_{p}$). Si juntamos estos valores obtenemos la fórmula para calcular la fuerza de aceleración de una partícula en un campo centrífugo.\footnote{El número 6 en el denominador proviene de análisis dimensionales}  
 
 \begin{equation}\label{eq:fuerza_de_aceleracion}
-    F_{ac} = \frac{\pi\cdot d_{p}^{3}\cdot\rho_{p}\cdot(a)}{6}
+    F_{ac} = \frac{(\pi\cdot d_{p}^{3}\cdot\rho_{p})\cdot(a)}{6}
 \end{equation}
 
 
@@ -73,7 +82,9 @@ En una centrifugación podemos encontrar también fuerzas que se oponen a la ace
 
 \subsection{Fuerza de flotación}
 
-La fuerza de flotación consiste en aquella fuerza generada por el líquido que es desplazado por la partícula al moverse por el líquido, y es esencialmente idéntica a la fuerza de aceleración (\autoref{eq:fuerza_de_aceleracion}), pero en lugar de calcular la masa de la partícula se calcula la masa del líquido desplazado por tal partícula. Dado que el volumen de líquido desplazado es igual al volumen de la partícula, solo es necesario cambiar la densidad de la partícula por la densidad del líquido.
+La fuerza de flotación consiste en aquella fuerza generada por el líquido que es desplazado por la partícula al moverse por el líquido, y es esencialmente idéntica a la fuerza de aceleración (\autoref{eq:fuerza_de_aceleracion}), pero en lugar de calcular la masa de la partícula se calcula la masa del líquido desplazado por tal partícula. 
+
+Dado que el volumen de líquido desplazado es igual al volumen de la partícula, solo es necesario cambiar la densidad de la partícula por la densidad del líquido.
 
 \begin{equation}\label{eq:fuerza_de_flotacion}
     F_{f} = \frac{\pi\cdot d_{p}^{3}\cdot\rho_{L}\cdot(a)}{6}
@@ -81,7 +92,7 @@ La fuerza de flotación consiste en aquella fuerza generada por el líquido que 
 
 \subsection{Fuerza de arrastre}
 
-La fuerza de arrastre representa aquella fuerza que ejerce el líquido al movimiento de la partícula a través de este. Esta fuerza se compone de 3 elementos: la viscosidad del líquido en que se encuentra la partícula, la velocidad a la que la partícula fluye en el líquido, y las características de tal partícula.
+La fuerza de arrastre representa aquella fuerza que opone el líquido al movimiento de la partícula a través de este. Esta fuerza se compone de 3 elementos: la viscosidad del líquido en que se encuentra la partícula, la velocidad a la que la partícula fluye en el líquido, y las características de tal partícula.
 
 En el caso de la viscosidad ($\mu$) esta representa cuanta resistencia opone un fluido cuando se le aplica una fuerza, y teniendo en cuenta que una partícula moviéndose a través de un fluido aplica una fuerza sobre este, podemos notar que la viscosidad es un parámetro central aquí. En este caso, si la viscosidad de un líquido es mayor, esto significa que la resistencia al movimiento de la partícula será mayor, y viceversa. Podemos definir pues que la viscosidad es proporcional a la fuerza de arrastre.
 
@@ -143,55 +154,172 @@ Así pues podemos obtener la expresión que representa la velocidad de sedimenta
     v_{\infty} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(a)}{18\mu}
 \end{equation}
 
-Como mencionamos anteriormente, existen dos campos de aceleracion que pueden actuar sobre una partícula, el gravitacional y el centrífugo. La \autoref{eq:velocidad_de_sedimentacion} es aplicable a ambos, pues solo basta con reemplazar el término de aceleración con el que aplique.
+Como mencionamos anteriormente, existen dos campos de aceleracion que pueden actuar sobre una partícula, el gravitacional y el centrífugo. La \autoref{eq:velocidad_de_sedimentacion} es aplicable a ambos, y solo basta con ingresar la aceleración de cada campo.
+
+En el caso del campo gravitacional la aceleración a tomar en cuenta sería la constante $g$ (\autoref{eq:aceleracion_centrifuga}).
 
 \begin{equation}\label{eq:velocidad_de_sedimentacion_en_campo_gravitacional}
-    v_{\infty} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(g)}{18\mu}
+    v_{g} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(g)}{18\mu}
 \end{equation}
 
-En el caso de un campo centrífugo tendríamos:
+En el caso de un campo centrífugo tomaríamos la aceleración de un campo centrífugo, que se deriva de la velocidad angular y la distancia radial (\autoref{eq:aceleracion_centrifuga}):
 
 \begin{equation}\label{eq:velocidad_de_sedimentacion_en_campo_centrifugo}
-    v_{\infty} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(\omega^{2}\cdot r)}{18\mu}
+    v_{\omega} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(\omega^{2}\cdot r)}{18\mu}
 \end{equation}
 
 
 
 \section{Tipos de centrífugas}
 
-Dada la enorme cantidad de casos en que 
+Existen una gran cantidad de tipos de centrífugas, cada uno con sus respectivas ventajas y desventajas. En el contexto de bioprocesos, las más utilizadas son las tubulares y las de discos.
+
+\begin{figure}
+    \begin{subfigure}[t]{0.425\linewidth}\centering
+        \resizebox{\linewidth}{!}{\input{images/fig:centrífuga_tubular}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Diagrama de una centrífuga tubular}
+        \label{fig:centrífuga_tubular}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.525\linewidth}\centering
+        \resizebox{\linewidth}{!}{\input{images/fig:centrifuga_de_discos}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Diagrama de una centrífuga de discos}
+        \label{fig:centrifuga_de_discos}
+    \end{subfigure}
+    
+    \vspace{12pt}
+    \caption{Esquema general de diseño de las centrífugas más utilizadas en bioprocesos (tubular y de discos)}
+    \label{fig:diseño_de_centrifugas_convencionales}
+\end{figure}
+
 
 \subsection{Tubular}
 
-\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
-    \resizebox{\linewidth}{!}{\input{images/fig:centrífuga_tubular}}
-    \rule{\linewidth}{0.5pt}
-    \caption{Diagrama de una centrífuga tubular}
-    \label{fig:centrífuga_tubular}
-\end{figure}\end{minipage}}
+Las centrífugas tubulares consisten en un tubo vertical central que genera un campo centrífugo al girar a altas velocidades. Este tipo de centrífuga es una de las más eficientes y sencillas. 
+
+En estas centrífugas el líquido a filtrar es ingresado por la parte inferior de la centrífuga, y conforme esta fluye los sólidos suspendidos en esta se van sedimentando en las paredes del tubo por acción del campo centrífugo generado por el eje central, mientras que el líquido ya clarificado sale por la parte superior (\autoref{fig:centrífuga_tubular}).
+
+\Nota{La necesidad de retirar manualmente la ``torta'' en las centrífugas tubulares hace que su funcionamiento sea exclusivamente por lotes.} 
+
+La capa de sólidos sedimentados se conoce como ``torta'', y conforme esta capa crece el tiempo durante el cual las partículas se ven sometidas al campo centrífugo disminuye, lo que reduce a su vez la cantidad de sólidos que son efectivamente sedimentados. Esto se traduce en una disminución de la capacidad de centrifugación conforme pasa el tiempo que la centrífuga está operando. Derivado de esto es necesario retirar manualmente la torta, lo que implica detener la centrifugación, por lo que el funcionamiento de este tipo de equipo termina siendo exclusivamente por lotes.
 
 
 
 \subsection{De discos}
 
-%\marginpar{\begin{minipage}{\marginparwidth}\begin{figure}[H]\centering
-%    \resizebox{\linewidth}{!}{\input{images/fig:centrífuga_de_discos}}
-%    \rule{\linewidth}{0.5pt}
-%    \caption{Diagrama de una centrífuga de discos}
-%    \label{fig:centrífuga_de_discos}
-%\end{figure}\end{minipage}}
+Las centrífugas de discos son otro de tipos de centrífuga más utilizados en bioprocesos. Estos equipos constan de una serie de discos con forma de cono que se apilan sobre un eje vertical central, el cual al girar genera el campo centrífugo que sedimenta los sólidos presentes en el líquido centrifugado.
 
-a
+Los discos cuentan con un ángulo de entre \qtyrange{30}{50}{\degree}, y existe entre los discos una separación de \qtyrange{0.5}{2}{\milli\m}. 
+
+La operación de una centrífuga de discos consiste en alimentar el líquido continuamente hacia el fondo del tazón a través de un tubo central. Este líquido fluye de nuevo hacia arriba entre las separaciones de los discos hacia la salida en la parte superior del equipo (\autoref{fig:centrifuga_de_discos}). Debido al campo centrífugo generado por la rotación del eje central (que a su vez hace girar los discos y las caras de la centrífuga) los sólidos son atrapados en las separaciones de los discos, tras lo cual se resbalan hacia las paredes de la centrífuga debido al ángulo de los discos.
+
+Entre la pila central de discos y los bordes del tazón existe un espacio que permite la acumulación de los sólidos. Estos sólidos, al igual que en la centrífuga tubular, deben de ser retirados periódicamente. Si bien esto puede realizarse de forma manual como en las tubulares, algunas centrífugas de discos pueden usar en su lugar sistemas que permiten automatizar esta descarga peródica de sólidos o incluso hacer de esta descarga un proceso contínuo.
+
+\begin{itemize}
+    \item Sistemas de descarga intermitente: \begin{itemize}
+        \item \emph{Tazón abierto}:
+        \item \emph{Válvulas tipo boquilla}:
+    \end{itemize}
+    \item Sistemas de descarga contínua: \begin{itemize}
+        \item \emph{Boquilla}: 
+    \end{itemize}
+\end{itemize}
 
 
 
 \section{Ecuaciones para el diseño de centrífugas}
 
-\subsection{Tubular}
+El añadir una operación de centrifugación a un bioproceso conlleva calcular los parámetros a los cuales se operarán los equipos. Tales parámetros deben tomar en cuenta muchos factores, tanto las características del fluido y las partículas de interés (tamaño, densidad, viscosidad, etc.) como las características de la centrifugación misma, desde las generales (como la velocidad de rotación) hasta las particulares de cada tipo de centrífuga, como su geometría. Para poder controlar todo lo anterior se definen ecuaciones que toman en mente todos estos parámetros y permiten diseñar una centrifugación de manera precisa.
 
-La ecuación utilizada para el diseño de centrífugas tubulares es:
+Uno de los principios a partir de los cuales estas ecuaciones se definen es que ``para producir un líquido libre de sólidos, el tiempo de residencia de las partículas en el equipo impuesto por el flujo volumétrico debe ser igual o mayor al tiempo de sedimentación de la partícula''.\footnote{Adaptado de \citeauthor{tejedamansirBioseparaciones2011}}
+
+Esto lo que nos quiere decir es que, para que una centrifugación sea efectiva, debemos de ingresar nuestro líquido a un ritmo que permita a las partículas estar expuestas al campo centrífugo el tiempo suficiente para sedimentar. Este tiempo que las partículas permanecen en el equipo se llama tiempo de permanencia ($t_{p}$), mientras que el tiempo que tarda una partícula en sedimentar es el tiempo de sedimentación ($t_{s}$). Además, este ``ritmo'' al que ingresamos nuestro líquido se conoce formalmente como flujo volumétrico o caudal ($Q$), y representa el volumen que ingresamos por unidad de tiempo.\footnote{Sus unidades son \unit{\m\cubed\per\s}}
+
+Lo que se realiza entonces para definir las ecuación de diseño de una centrifugación es obtener primero las ecuación para cada uno de los tiempos anteriores e igualarlas.
 
 \begin{equation}
+    t_{p} = t_{s}
+\end{equation}
+
+Ahora bien, usualmente la forma en que se utiliza la ecuación de diseño, o al menos de la cual se parte, es con $Q$ despejada (Ecuaciones \ref{eq:diseño_de_centrifugas_tubulares} y \ref{eq:diseño_de_centrifugas_de_discos}). Esto porque el caudal suele ser el parámetro más fácil de modificar en una operación de centrifugación. Además, como se ejemplifica más adelante (\autoref{eq:diseño_de_centrifugas_general}), este acomodo separa la ecuación entre características de la partícula y características de la centrífuga, siendo una forma más sencilla de visualizar cómo afecta cada parámetro al proceso. 
+
+
+
+\subsection{Tubular}
+
+Para el tiempo de permanencia ($t_{p}$) se parte de la velocidad de la particula en el eje axial, o sea, paralelo al eje central, que viene siendo el cambio en la longitud por el cambio en la unidad de tiempo ($\diff{L}{t}$), y que a su vez es igual a la cantidad de volumen que fluye por unidad de tiempo ($Q$) entre el area por la cual pasa el fluido ($A$).  
+
+\begin{equation*}
+    v_{z} = \frac{Q}{A}
+\end{equation*}
+
+El area se calcula con $\pi \cdot r^{2}$, pero aqui el radio es la diferencia entre el radio total de la centrifuga ($R_{0}$) y lo que ocupa la torta ($R_{1}$), por lo que se vuelve $\pi \cdot (R_{0}^{2} - R_{1}^{2})$.
+
+\begin{equation*}
+    v_{z} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})}
+\end{equation*}
+
+Se pasa a resolver el diferencial de $\diff{L}{t}$ por variables separables
+
+\begin{gather*}
+    v_{z} = \diff{z}{t} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})}
+    \\\\
+    \int\limits_{0}^{L}{\dif{z}} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})} \cdot \int\limits_{t_0}^{t_{p}}{\dif{t}}
+    \\\\
+    L = \frac{Q}{\pi \cdot (R_{0}^{2} - R_{1}^{2})} \cdot t_{p}
+\end{gather*}
+
+Se despeja $t_{p}$ para obtener:
+
+\begin{equation}\label{eq:tiempo_de_permanencia_centrifuga_de_discos}
+    t_{p} = \frac{\pi \cdot (R_{0}^{2} - R_{1}^{2}) \cdot L}{Q}
+\end{equation}
+
+Para el tiempo de sedimentacion ($t_{s}$) es similar, pero en lugar del diferencial $\diff{L}{t}$ es $\diff{r}{t}$, porque no se busca la velocidad con que la particula recorre el eje axial ($L$) sino el radial ($r$), hacia las paredes.
+
+Esta velocidad de sedimentacion en campo centrifugo es la ya conocida (\autoref{eq:velocidad_de_sedimentacion_en_campo_centrifugo}), por lo que se iguala al diferencial para resolverlo de nuevo por variables separables. 
+
+\begin{gather*}
+    v_{\omega} = \diff{r}{t} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(\omega^{2}\cdot r)}{18\mu}
+    \\\\
+    \int\limits_{R_{1}}^{R_{0}}{\frac{1}{r} \ \dif{r}} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot\omega^{2}}{18\mu} \cdot \int\limits_{t_{0}}^{t_{s}}{\dif{t}}
+    \\\\
+    \ln(R_{0}) - \ln(R_{1}) = \frac{d_{p}^{2}\cdot\Delta\rho\cdot\omega^{2}}{18\mu} \cdot t_{s}
+\end{gather*}
+
+Al despejar $t_{s}$ se tiene que:
+
+\begin{equation}\label{eq:tiempo_de_sedimentacion_centrifuga_tubular}
+    t_{s} = \frac{18\mu\cdot\ln(\frac{R_{0}}{R_{1}})}{\Delta\rho\cdot\omega^{2}\cdot d_{p}^{2}}
+\end{equation}
+
+Con estos dos tiempos obtenidos e igualados basta con despejar el flujo volumetrico o caudal (Q) para saber a qué ritmo se puede hacer fluir el liquido manteniendo la certeza de que las particulas de interes van a sedimentar.
+
+\begin{equation*}
+    \frac{\pi \cdot (R_{0}^{2} - R_{1}^{2}) \cdot L}{Q} = \frac{18\mu\cdot\ln(\frac{R_{0}}{R_{1}})}{\Delta\rho\cdot\omega^{2}\cdot d_{p}^{2}}
+\end{equation*}
+
+Despejando $Q$ obtenemos la ecuación utilizada para el diseño de centrífugas tubulares:
+
+\begin{equation*}
+    Q = \frac{d_{p}^{2} \cdot \Delta\rho \cdot \pi \cdot \omega^{2} \cdot L \cdot (R_{0}^{2} - R_{1}^{2})}{18\mu \cdot \ln\left(\frac{R_{0}}{R_{1}}\right)}
+\end{equation*}
+
+Ahora bien, podemos añadir la constante $g$ y dividir algunos términos:
+
+\begin{equation*}
+    Q=\left(\frac{d_{p}^{2}\cdot\Delta\rho\cdot g}{18\mu}\right)\cdot\left[\left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right)\cdot\left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{R_{0}}{R_{1}}\right)}\right)\right]
+\end{equation*}
+
+
+
+
+
+
+
+\begin{equation}\label{eq:diseño_de_centrifugas_tubulares}
     Q = (v_{g}) \cdot \left[ \left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right) \cdot \left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{R_{0}}{R_{1}}\right)}\right) \right]
 \end{equation}
 
@@ -205,6 +333,10 @@ Donde:
     \item $R_{0}$ es la distancia del centro de la centrífuga a sus paredes internas
     \item $R_{1}$ es la distancia del centro de la centrífuga a las paredes de la interfase líquida
 \end{itemize}
+
+\begin{equation}\label{eq:diseño_de_centrifugas_general}
+    Q = v_{g} \cdot \Sigma
+\end{equation}
 
 De esta ecuación podemos identificar varios términos, los cuales se ven mejor si se colorea la ecuación:
 
@@ -270,7 +402,7 @@ Si bien la ecuación anterior nos sirve para diseñar un proceso de centrifugaci
 
 Para una centrífuga de discos la ecuación para calcular el flujo es la siguiente:
 
-\begin{equation}
+\begin{equation}\label{eq:diseño_de_centrifugas_de_discos}
     Q = (v_{g}) \cdot \left[ \left(\frac{2\pi\cdot\omega^{2}\cdot n}{3g}\right) \cdot \left(\frac{R_{0}^{3} - R_{1}^{3}}{\tan(\theta)} \right) \right]
 \end{equation}
 

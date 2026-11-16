@@ -1,0 +1,49 @@
+\definecolor{rotor}{RGB}{245,245,245}
+\definecolor{solidos}{RGB}{180,60,20}
+\definecolor{liq1}{RGB}{240,120,0}
+\definecolor{liq2}{RGB}{240,220,20}
+\definecolor{liq3}{RGB}{80,180,240}
+
+\begin{tikzpicture}[
+    lprin/.style={ultra thick},
+    lsec/.style={thick},
+    flecha/.style={arrows={Stealth[reversed]-Stealth[scale=1.25]}},
+    etiqueta/.style={arrows={Circle-Stealth}},
+    texto/.style={text width=6em, align=center, font=\sffamily}
+]
+
+\draw[draw=none, fill=liq2] (5,0) -- (2,-1) -- (0.35,0.65) -- (0.35,2.65) -- (2.95,7) -- (7.05,7) -- (9.65,2.6) -- (9.65,0.65) -- (8,-1) -- cycle;
+\draw[draw=none, fill=liq3] (2.5,6.25) -- (2.5,-0.15) -- (7.5,-0.15) -- (7.5,6.25) -- (6.5,8) -- (6.5,8.25) -- (6.75,8.25) -- (6.75,8.75) -- (3.5,8.75) -- (3.5,8) -- cycle;
+
+\draw[draw=none, fill=solidos] (0.35,2.6) -- (0,2) -- (0,1) -- (0.35,0.65) -- cycle;
+\draw[draw=none, fill=solidos] (9.65,2.6) -- (10,2) -- (10,1) -- (9.65,0.65) -- cycle;
+
+\draw[lsec, flecha] (3.8,7.25) -- (3.8,8.5) -- (8,8.5) node[right, texto] {Salida de fluido};
+\draw[lprin] (7,8.75) -- (4.25,8.75) -- (3.5,8.75) -- (3.5,8) -- (0,2) -- (0,1) -- (2,-1) -- (5,0) -- (8,-1) -- (9,0) -- (10,1) -- (10,2) -- (6.5,8) -- (6.5,8.25) -- (7,8.25);
+
+\draw[draw=none, fill=liq1] (4.25,9.25) -- (4.25,1) -- (2,-0.5) -- (2,-0.97) -- (5,0) -- (8,-0.97) -- (8,-0.5) -- (5.75,1) -- (5.75,9.25) -- cycle;
+
+\draw[fill=black] (0, 1.25) rectangle (-0.25,1.75);
+\draw[fill=black] (10,1.25) rectangle (10.25,1.75);
+
+\draw[lprin] (4.25,9.75) -- (4.25,1) -- (2,-0.5) (8,-0.5) -- (5.75,1) -- (5.75,9.75);
+\draw[lsec, flecha] (5,10) node[above=5pt, texto] {Entrada de fluido con sólidos} -- (5,3);
+\draw[lsec, flecha] (6.25,7.25) -- (6.25,8.5) -- (8,8.5);
+
+\draw[lprin, dashed] (3.25,5.35) -- (3.25,0.4);
+\draw[lprin, dashed] (6.75,5.35) -- (6.75,0.4);
+\foreach \y in {0.35,1.35,2.35,3.35,4.35,5.35} \draw[lprin] (3.25,\y) --++ (-1.25,-0.85);
+\foreach \y in {0.35,1.35,2.35,3.35,4.35,5.35} \draw[lprin] (6.75,\y) --++ ( 1.25,-0.85);
+
+\draw[lsec,fill=rotor] (5,0.5) -- (4.65,0) -- (4.65,-2) -- (5.35,-2) -- (5.35,0) -- cycle;
+\draw[lsec,flecha] (4.25,-1) to[out=250,in=280] (5.75,-1);
+\node[font=\Large] at (5,-1) {$\omega$};
+
+\draw[lsec, etiqueta] (-0.5,1.5) -- (-0.5,0) node[below, texto] {Salida de sólidos};
+\draw[lsec, etiqueta] (9.85,1.5) -- (9.85,-0.5) node[below, texto] {Acumulación de sólidos};
+\draw[lsec, etiqueta] (8.75,3) -- (10,3) node[right, texto] {Fluido con pocos sólidos};
+\draw[lsec, etiqueta] (6.5,6.25) -- (9,6.25) node[right, texto] {Fluido sin sólidos};
+
+\draw[lsec, etiqueta] (2.44,1.8) -- (1.2,1.8) node[left, font=\Large] {$\theta$};
+
+\end{tikzpicture}
