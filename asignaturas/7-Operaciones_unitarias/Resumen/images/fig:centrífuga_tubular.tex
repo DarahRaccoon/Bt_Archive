@@ -1,49 +1,43 @@
-\ifx\ISMAIN\undefined
-    \documentclass{standalone}
-    \usepackage{simplelatex}
-    \quicktikz
-    \begin{document}
-\fi
+\def\partxi{1.35}
+\def\partyi{0.25}
+\def\partxf{3.35}
+\def\partyf{2,3,4}
 
-\definecolor{torta}{RGB}{240,145,70}
-\definecolor{interfase}{RGB}{80,144,203}
+\definecolor{rotor}{RGB}{245,245,245}
+\definecolor{solidos}{RGB}{180,60,20}
+\definecolor{liq1}{RGB}{240,120,0}
+\definecolor{liq2}{RGB}{240,220,20}
+\definecolor{liq3}{RGB}{80,180,240}
 
 \begin{tikzpicture}[
-    etiqueta/.style={black,text width=5em, align=center,font=\sffamily},
-    particula/.style={thick,Circle-Stealth}
+lprin/.style={ultra thick},
+lsec/.style={thick},
+    etiqueta/.style={black,text width=4.5em, align=center,font=\sffamily},
+    marca/.style={lsec,Circle-Stealth},
+    flecha/.style={arrows={-Stealth}},
+    doble flecha/.style={arrows={Stealth-Stealth}}
 ]
 
-\draw[ultra thick] (-1,-1) -- (-1,0) -- (-4,0) -- (-4,10) -- (-1,10) -- (-1,11);
-\draw[ultra thick] ( 1,-1) -- ( 1,0) -- ( 4,0) -- ( 4,10) -- ( 1,10) -- ( 1,11);
+\draw[top color=liq3, bottom color=liq2] (-1,10.5) -- (-1.5,10) -- (-4,10) -- (-4,0) -- (-1.5,0) -- (-1.05,-0.5) -- cycle (1,10.5) -- (1.5,10) -- (4,10) -- (4,0) -- (1.5,0) -- (1.05,-0.5) -- cycle;
+\draw[marca] (-2,6) -- (-5,6) node[etiqueta,left] {Interfase líquida};
 
-\draw[ultra thick, loosely dashed] (0,1) -- (0,9.5);
+\draw[draw=none, fill=solidos] (-4,0) -- (-4,10) -- (-3.85,10) -- (-3.25,0) -- cycle (4,0) -- (4,10)  -- (3.85,10) -- (3.25,0) -- cycle;
+\draw[marca] (-3.75,7.5) -- (-5,7.5) node[etiqueta,left] {Torta};
 
-\draw[fill=torta] (-4,0) rectangle (-3,10);
-\draw[fill=torta] ( 4,0) rectangle ( 3,10);
-\draw[thick,-Stealth] (-3.5,7.5) -- (-5,7.5) node[etiqueta,left] {Sedimentos (Torta)};
+\draw[lprin] (-0.5,11) -- (-1.5,10) -- (-4,10) -- (-4,0) -- (-1.5,0) -- (-0.5,-1) (0.5,-1) -- (1.5,0) -- (4,0) -- (4,10) -- (1.5,10) -- (0.5,11);
+\draw[fill=rotor] (-0.25,1) rectangle (0.25,9);
+\draw[flecha] (-0.5,3) to[out=250,in=280] (0.5,3);
+\node at (0,3) {$\omega$};
 
-\draw[fill=interfase] (-3,0) rectangle (-2,10);
-\draw[fill=interfase] ( 3,0) rectangle ( 2,10);
-\draw[thick,-Stealth] (-2.5,6) -- (-5,6) node[etiqueta,left] {Interfase líquida};
+\foreach \y in {2,3,4} \draw[marca] (-\partxi,\partyi) to[out=90,in=0]   (-\partxf,\y);
+\foreach \y in {2,3,4} \draw[marca] ( \partxi,\partyi) to[out=90,in=180] ( \partxf,\y);
 
-\draw[particula] (-0.65,0) to[out=90,in=0] (-3.35,2);
-\draw[particula] (-0.65,0) to[out=90,in=0] (-3.35,3);
-\draw[particula] (-0.65,0) to[out=90,in=0] (-3.35,4);
-\draw[particula] (0.65,0) to[out=90,in=180] (3.35,2);
-\draw[particula] (0.65,0) to[out=90,in=180] (3.35,3);
-\draw[particula] (0.65,0) to[out=90,in=180] (3.35,4);
-\node[text width=5em,align=center,font=\sffamily\footnotesize] at (-1,3.75) {Trayectoria de partículas};
+\draw[lsec,flecha] (0,-2) node[etiqueta, below, text width=6em] {Alimentación} -- (0,-0.5);
+\draw[lsec,flecha] (0,10.5) -- (0,12) node[etiqueta,above] {Salida};
 
-\draw[thick,-Stealth] (0,-2) node[etiqueta,below] {Alimentación} -- (0,-1);
-\draw[thick,-Stealth] (0,11) -- (0,12) node[etiqueta,above] {Salida};
+\draw[lprin,arrows={Bar-Bar}] (5,0) -- (5,10) node[etiqueta,midway,fill=white] {$L$};
+\draw[thick, doble flecha] (0.25,7) -- (4,7)  node[etiqueta,pos=0.5,above] {$R_{0}$};
+\draw[thick, doble flecha] (0.25,6) -- (1,6)  node[etiqueta,pos=0.5,above] {$R_{1}$};
 
-\draw[thick,|-|] (5,0) -- (5,10) node[etiqueta,midway,fill=white] {$L$};
-\draw[thick, Stealth-Stealth] (0,7) -- (3,7)  node[etiqueta,pos=0.3,above] {$R_{0}$};
-\draw[thick, Stealth-Stealth] (0,6) -- (2,6)  node[etiqueta,pos=0.5,above] {$R_{1}$};
 
 \end{tikzpicture}
-
-
-\ifx\ISMAIN\undefined
-    \end{document}
-\fi

@@ -1,9 +1,9 @@
 
-La centrifugación es una operación unitaria utilizada para separar los sólidos presentes en un líquido. 
+La centrifugación es una operación unitaria utilizada para separar los sólidos presentes en un líquido. La forma en que una centrifugación logra esto es, esencialmente, mediante una sedimentación. Ahora bien, cuando pensamos en una sedimentación usualmente visualizamos el \hypertarget{ejemplo_sedimentacion}{ejemplo} de un líquido en reposo y partículas desplazándose hacia el fondo de este por efecto de la gravedad. Aunque este ejemplo si constituye una forma de sedimentación, es solo un caso de cómo puede ocurrir tal proceso. Si vemos más a fondo sus fundamentos podremos ver cómo se aplica la sedimentación en la operación de centrifugación.
 
-    % Aplicaciones
 
-La forma en que una centrifugación logra esto es, esencialmente, mediante una sedimentación. Ahora bien, cuando pensamos en una sedimentación usualmente visualizamos el \hypertarget{ejemplo_sedimentacion}{ejemplo} de un líquido en reposo y partículas desplazándose hacia el fondo de este por efecto de la gravedad. Aunque este ejemplo si constituye una forma de sedimentación, es solo un caso de cómo puede ocurrir tal proceso. Si vemos más a fondo sus fundamentos podremos ver cómo se aplica la sedimentación en la operación de centrifugación.
+
+\section{Teoría de la sedimentación}
 
 Una sedimentación cuenta con dos aspectos físicos principales como fundamento: la diferencia de densidades entre un líquido y una partícula presente en este, y la presencia de una fuerza de aceleración. Si a un líquido con partículas sólidas se le aplica una aceleración, la fuerza que experimentará cada elemento (líquido y partículas) será diferente, porque si bien la aceleración es la misma ($a$, \autoref{eq:segunda_ley_de_newton}), la masa no lo es, porque líquido y partículas tienen densidades diferentes, de ahí que la diferencia de densidades sea uno de los elementos fundamentales en una sedimentación. Asímismo, si no existe una aceleración en primer lugar, no existirá esta fuerza. Es bajo la presencia de ambos elementos que se da una sedimentación.
 
@@ -56,9 +56,11 @@ Aquí algo a tener en cuenta es que $\omega$ utiliza unidades de radianes por se
 
 \Nota{Un giro o ``revolución'' equivale a $2\pi\unit{\radian}$}
 
-\begin{equation}
+\begin{equation}\label{eq:velocidad_angular}
     \omega = \frac{2\pi \cdot N}{60}
 \end{equation}
+
+
 
 \subsection{Fuerza de aceleración general}
 
@@ -80,6 +82,8 @@ Específicamente en nuestro contexto necesitamos reescribir esta fórmula con lo
 
 En una centrifugación podemos encontrar también fuerzas que se oponen a la aceleración de las partículas. En este caso podemos identificar dos: la fuerza de flotación ($F_{f}$) y la fuerza de arrastre ($F_{a}$).\citep{tejedamansirBioseparaciones2011}
 
+
+
 \subsection{Fuerza de flotación}
 
 La fuerza de flotación consiste en aquella fuerza generada por el líquido que es desplazado por la partícula al moverse por el líquido, y es esencialmente idéntica a la fuerza de aceleración (\autoref{eq:fuerza_de_aceleracion}), pero en lugar de calcular la masa de la partícula se calcula la masa del líquido desplazado por tal partícula. 
@@ -89,6 +93,8 @@ Dado que el volumen de líquido desplazado es igual al volumen de la partícula,
 \begin{equation}\label{eq:fuerza_de_flotacion}
     F_{f} = \frac{\pi\cdot d_{p}^{3}\cdot\rho_{L}\cdot(a)}{6}
 \end{equation}
+
+
 
 \subsection{Fuerza de arrastre}
 
@@ -106,10 +112,10 @@ Derivado de lo anterior, podemos establecer también que si una partícula viaja
     F_{a} \propto v_{\infty}
 \end{equation*}
 
-Por último, la característica de la partícula que afecta la fuerza de arrastre es el área de contacto entre la partícula y el líqudo, lo que deriva de la geometría de la partícula. La geometría usualmente utilizada en estos casos es la de una partícula esférica ($3\pi \cdot d_{p}$). Este valor sería pues también proporcional a la fuerza de arrastre, pues a mayor área de contacto las zonas donde existe fricción entre la partícula y el líquido son mayores.
+Por último, la característica de la partícula que afecta la fuerza de arrastre es el área de contacto entre la partícula y el líqudo, lo que deriva de la geometría de la partícula. La geometría usualmente utilizada en estos casos es la de una partícula esférica ($\tfrac{3\pi \cdot d_{p}}{6}$). Este valor sería pues también proporcional a la fuerza de arrastre, pues a mayor área de contacto las zonas donde existe fricción entre la partícula y el líquido son mayores.
 
 \begin{equation*}
-    F_{a} \propto 3\pi \cdot d_{p}
+    F_{a} \propto \frac{3\pi \cdot d_{p}}{6}
 \end{equation*}
 
 Con todo lo anterior en mente se puede construir la siguiente ecuación para describir la fuerza de arrastre:
@@ -122,21 +128,21 @@ Con todo lo anterior en mente se puede construir la siguiente ecuación para des
 
 \section{Ley de Stokes y velocidad de sedimentación}
 
-    \resumebox{definicion}{Ley de Stokes}{``Cuando se aplica una fuerza a una partícula en un medio continuo esta se acelera hasta que alcanza una velocidad a la cual la resistencia a su movimiento iguala a la fuerza aplicada''\citep{tejedamansirBioseparaciones2011}}
+\resumebox{definicion}{Ley de Stokes}{``Cuando se aplica una fuerza a una partícula en un medio continuo esta se acelera hasta que alcanza una velocidad a la cual la resistencia a su movimiento iguala a la fuerza aplicada''\citep{tejedamansirBioseparaciones2011}}
 
 Partiendo de la Ley de Stokes podemos definir entonces que la fuerza de aceleración a la que se ve sometida una partícula termina siendo igual a las fuerzas de oposición, en base a lo cual podemos definir la siguiente ecuación:
 
-\begin{equation}
+\begin{equation}\label{eq:ley_de_stokes}
     F_{ac} = F_{f} + F_{a}
 \end{equation}
 
 Si expandimos la ecuación a partir de las anteriormente vistas (Ecuaciones \ref{eq:fuerza_de_aceleracion}, \ref{eq:fuerza_de_flotacion} y \ref{eq:fuerza_de_arrastre}) tenemos:
 
-\begin{equation}
-    \frac{\pi \cdot d_{p}^{3}\cdot\rho_{p}\cdot(a)}{6} = \frac{\pi\cdot d_{p}^{3} \cdot\rho_{L}\cdot(a)}{6} \cdot (3\pi\cdot d_{p}\cdot\mu\cdot v_{\infty})
+\begin{equation}\label{eq:ley_de_stokes_expandida}
+    \frac{\pi \cdot d_{p}^{3}\cdot\rho_{p}\cdot(a)}{6} = \frac{\pi\cdot d_{p}^{3} \cdot\rho_{L}\cdot(a)}{6} + (3\pi\cdot d_{p}\cdot\mu\cdot v_{\infty})
 \end{equation}
 
-Aquí lo que nos termina interesando es poder saber cuán rápido una partícula sedimenta, por lo que buscamos conocer $v_{\infty}$. Para esto basta despejar la fórmula anterior de la siguiente manera:
+Aquí lo que nos termina interesando es poder saber cuán rápido una partícula sedimenta ($v_{\infty}$). Para esto basta despejar la fórmula anterior de la siguiente manera:
 
 \begin{gather*}
     \frac{\pi\cdot d_{p}^{3}\cdot\rho_{p}\cdot(a)}{6} - \frac{\pi\cdot d_{p}^{3}\cdot\rho_{L}\cdot(a)}{6} = 3\pi\cdot d_{p} \cdot\mu\cdot v_{\infty}
@@ -162,7 +168,7 @@ En el caso del campo gravitacional la aceleración a tomar en cuenta sería la c
     v_{g} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(g)}{18\mu}
 \end{equation}
 
-En el caso de un campo centrífugo tomaríamos la aceleración de un campo centrífugo, que se deriva de la velocidad angular y la distancia radial (\autoref{eq:aceleracion_centrifuga}):
+En el caso de un campo centrífugo tomaríamos la aceleración de un campo centrífugo (\autoref{eq:aceleracion_centrifuga}):
 
 \begin{equation}\label{eq:velocidad_de_sedimentacion_en_campo_centrifugo}
     v_{\omega} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(\omega^{2}\cdot r)}{18\mu}
@@ -190,9 +196,11 @@ Existen una gran cantidad de tipos de centrífugas, cada uno con sus respectivas
     \end{subfigure}
     
     \vspace{12pt}
+    \rule{\linewidth}{0.5pt}
     \caption{Esquema general de diseño de las centrífugas más utilizadas en bioprocesos (tubular y de discos)}
     \label{fig:diseño_de_centrifugas_convencionales}
 \end{figure}
+
 
 
 \subsection{Tubular}
@@ -219,13 +227,13 @@ Entre la pila central de discos y los bordes del tazón existe un espacio que pe
 
 \begin{itemize}
     \item Sistemas de descarga intermitente: \begin{itemize}
-        \item \emph{Tazón abierto}:
-        \item \emph{Válvulas tipo boquilla}:
+        \item \emph{Tazón abierto}: Estas constan de dos piezas en forma de cono que se unen por sus caras más grandes. La descarga de sólidos se realiza por medio de un sistema hidráulico que permite abrir y cerrar los orificios de descarga entre las piezas.
+        \item \emph{Válvulas tipo boquilla}: En las centrífugas con válvulas tipo boquilla la descarga de sólidos se controla con válvulas situadas en la periferia del tazón.
     \end{itemize}
     \item Sistemas de descarga contínua: \begin{itemize}
-        \item \emph{Boquilla}: 
+        \item \emph{Boquilla}: En estas tenemos boquillas ubicadas en la periferia del tazón, las cuales permiten exista un flujo continuo de sólidos. El número y el tamaño de las boquillas se ajusta de tal manera que no exista acumulación de sólidos. 
     \end{itemize}
-\end{itemize}
+\end{itemize}  
 
 
 
@@ -233,106 +241,129 @@ Entre la pila central de discos y los bordes del tazón existe un espacio que pe
 
 El añadir una operación de centrifugación a un bioproceso conlleva calcular los parámetros a los cuales se operarán los equipos. Tales parámetros deben tomar en cuenta muchos factores, tanto las características del fluido y las partículas de interés (tamaño, densidad, viscosidad, etc.) como las características de la centrifugación misma, desde las generales (como la velocidad de rotación) hasta las particulares de cada tipo de centrífuga, como su geometría. Para poder controlar todo lo anterior se definen ecuaciones que toman en mente todos estos parámetros y permiten diseñar una centrifugación de manera precisa.
 
-Uno de los principios a partir de los cuales estas ecuaciones se definen es que ``para producir un líquido libre de sólidos, el tiempo de residencia de las partículas en el equipo impuesto por el flujo volumétrico debe ser igual o mayor al tiempo de sedimentación de la partícula''.\footnote{Adaptado de \citeauthor{tejedamansirBioseparaciones2011}}
 
-Esto lo que nos quiere decir es que, para que una centrifugación sea efectiva, debemos de ingresar nuestro líquido a un ritmo que permita a las partículas estar expuestas al campo centrífugo el tiempo suficiente para sedimentar. Este tiempo que las partículas permanecen en el equipo se llama tiempo de permanencia ($t_{p}$), mientras que el tiempo que tarda una partícula en sedimentar es el tiempo de sedimentación ($t_{s}$). Además, este ``ritmo'' al que ingresamos nuestro líquido se conoce formalmente como flujo volumétrico o caudal ($Q$), y representa el volumen que ingresamos por unidad de tiempo.\footnote{Sus unidades son \unit{\m\cubed\per\s}}
 
-Lo que se realiza entonces para definir las ecuación de diseño de una centrifugación es obtener primero las ecuación para cada uno de los tiempos anteriores e igualarlas.
+\subsection{Principio general de las ecuaciones de diseño de centrífugas}
 
-\begin{equation}
-    t_{p} = t_{s}
+\resumebox{definicion}{Condición de retención}{Para producir un líquido libre de sólidos, el tiempo de permanencia de las partículas en el equipo impuesto por el flujo volumétrico debe ser igual o mayor al tiempo de sedimentación de la partícula''.\footnote{\footnotesize Adaptado de \citeauthor{tejedamansirBioseparaciones2011}}}
+
+Lo que expresa la condición de retención es que, para que una centrifugación sea efectiva, debemos de ingresar nuestro líquido a un ritmo que permita a las partículas estar expuestas al campo centrífugo el tiempo suficiente para sedimentar. Este tiempo que las partículas permanecen en el equipo se llama tiempo de permanencia ($t_{p}$), mientras que el tiempo que tarda una partícula en sedimentar es el tiempo de sedimentación ($t_{s}$). Por otra parte, el ``ritmo'' al que ingresamos nuestro líquido se conoce como flujo volumétrico o caudal ($Q$), y representa el volumen que ingresamos por unidad de tiempo.\footnote{Unidades de \unit{\m\cubed\per\s}}
+
+Lo que se realiza entonces para definir la ecuación de diseño de una centrifugación es obtener primero las ecuación que describa cada uno de los tiempos anteriores. Una vez se encuentran ambas ecuaciones basta con igualarlas para obtener la ecuación de diseño.
+
+\begin{equation}\label{eq:condicion_de_retencion}
+    t_{s} = t_{p}  \quad\longrightarrow\quad \text{Centrifugación efectiva}
 \end{equation}
 
-Ahora bien, usualmente la forma en que se utiliza la ecuación de diseño, o al menos de la cual se parte, es con $Q$ despejada (Ecuaciones \ref{eq:diseño_de_centrifugas_tubulares} y \ref{eq:diseño_de_centrifugas_de_discos}). Esto porque el caudal suele ser el parámetro más fácil de modificar en una operación de centrifugación. Además, como se ejemplifica más adelante (\autoref{eq:diseño_de_centrifugas_general}), este acomodo separa la ecuación entre características de la partícula y características de la centrífuga, siendo una forma más sencilla de visualizar cómo afecta cada parámetro al proceso. 
+Esta forma de la ecuación, sin embargo, no es la forma que usualmente se utiliza. En su lugar, la forma en que se suele usar, o de la que generalmente se parte para realizar cálculos, es con $Q$ despejada (Ecuaciones \ref{eq:diseño_de_centrifugas_tubulares} y \ref{eq:diseño_de_centrifugas_de_discos}), esto porque el caudal suele ser el parámetro más fácil de modificar en una operación de centrifugación. 
+
+Otra razón para usar la ecuación con $Q$ despejada es porque, como se explica más adelante (\autoref{sec:sigma}), esto permite \hypertarget{introduccion_a_sigma}{separar la ecuación} en dos términos generales, donde uno representa las características de la partícula y el otro las características de la centrífuga, siendo una forma más sencilla de visualizar cómo afecta cada parámetro al proceso.
 
 
 
-\subsection{Tubular}
+\subsection{Ecuaciones de los tiempos de sedimentación y permanencia}
 
-Para el tiempo de permanencia ($t_{p}$) se parte de la velocidad de la particula en el eje axial, o sea, paralelo al eje central, que viene siendo el cambio en la longitud por el cambio en la unidad de tiempo ($\diff{L}{t}$), y que a su vez es igual a la cantidad de volumen que fluye por unidad de tiempo ($Q$) entre el area por la cual pasa el fluido ($A$).  
+Algo a tener en cuenta es que hasta ahora no hemos visto alguna ecuación con términos de tiempo de la cual despejar $t_{s}$ o $t_{p}$. La forma en que podemos resolver esto es analizando en su lugar las velocidades relacionadas a cada tiempo.
 
-\begin{equation*}
-    v_{z} = \frac{Q}{A}
-\end{equation*}
+Para el caso de $t_{s}$ ya tenemos una ecuación que describe la velocidad con que una partícula sedimenta ($v_{\infty}$, \autoref{eq:velocidad_de_sedimentacion}).
 
-El area se calcula con $\pi \cdot r^{2}$, pero aqui el radio es la diferencia entre el radio total de la centrifuga ($R_{0}$) y lo que ocupa la torta ($R_{1}$), por lo que se vuelve $\pi \cdot (R_{0}^{2} - R_{1}^{2})$.
+Por otro lado, para $t_{p}$ debemos analizar la velocidad con que las partículas viajan a través de la centrífuga ($v_{z}$)\footnote{Velocidad con que la partícula recorre una distancia $z$ dentro de la centrífuga}. Dado que cada tipo de centrífuga tiene con una geometría diferente, esta ecuación debe formularse para cada tipo de centrífuga en base a sus características.
 
-\begin{equation*}
-    v_{z} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})}
-\end{equation*}
-
-Se pasa a resolver el diferencial de $\diff{L}{t}$ por variables separables
+Los dos términos de velocidad ($v_{\omega}$ y $v_{z}$) se pueden expresar también como una derivada, compuesta por cambio en la distancia ($\dif{z}$) a lo largo de un tiempo dado ($\dif{t}$). Esto nos es de utilizad porque si resolvemos esta derivada mediante integración podemos obtener los tiempos de interés ($t_{s}$ y $t_{p}$) fácilmente.
 
 \begin{gather*}
-    v_{z} = \diff{z}{t} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})}
+    v_{\infty} = \diff{x}{t} \quad\longrightarrow\quad v_{\infty} \cdot \int{\dif{t}} = \int{\dif{x}} \quad\longrightarrow\quad t_{s} = \frac{x}{v_{\infty}}
     \\\\
-    \int\limits_{0}^{L}{\dif{z}} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})} \cdot \int\limits_{t_0}^{t_{p}}{\dif{t}}
-    \\\\
-    L = \frac{Q}{\pi \cdot (R_{0}^{2} - R_{1}^{2})} \cdot t_{p}
+    v_{z} = \diff{z}{t} \quad\longrightarrow\quad v_{z} \cdot \int{\dif{t}} = \int{\dif{z}} \quad\longrightarrow\quad t_{p} = \frac{z}{v_{z}}
 \end{gather*}
 
-Se despeja $t_{p}$ para obtener:
+Este proceso se ejemplifica de mejor manera a continuación, donde se formula la ecuación de diseño de una centrífuga tubular, pues sus características son sencillas y hacen del proceso algo intuitivo.
 
-\begin{equation}\label{eq:tiempo_de_permanencia_centrifuga_de_discos}
-    t_{p} = \frac{\pi \cdot (R_{0}^{2} - R_{1}^{2}) \cdot L}{Q}
-\end{equation}
 
-Para el tiempo de sedimentacion ($t_{s}$) es similar, pero en lugar del diferencial $\diff{L}{t}$ es $\diff{r}{t}$, porque no se busca la velocidad con que la particula recorre el eje axial ($L$) sino el radial ($r$), hacia las paredes.
 
-Esta velocidad de sedimentacion en campo centrifugo es la ya conocida (\autoref{eq:velocidad_de_sedimentacion_en_campo_centrifugo}), por lo que se iguala al diferencial para resolverlo de nuevo por variables separables. 
+\subsection{Ecuación de diseño de centrífugas tubulares}
+
+Como se mencionó antes, para formular la ecuación debemos obtener las ecuaciones de $t_{s}$ y $t_{p}$, y para obtenerlas partimos de las velocidades asociadas a cada uno ($v_{\infty}$ y $v_{z}$, respectivamente) 
+
+Para obtener $t_{s}$ partimos de la velocidad de sedimentación en un campo centrífugo ($v_{\infty}$, \autoref{eq:velocidad_de_sedimentacion_en_campo_centrifugo}). Esta velocidad también se puede expresar como una derivada de la distancia radial recorrida por la partícula ($r$)\footnote{``Radial'' se refiere a que la partícula viaja paralela al radio de la centrífuga, o sea, del centro hacia las paredes} respecto al tiempo ($\diff{r}{t}$). Esta derivada puede resolverse mediante integración. 
 
 \begin{gather*}
-    v_{\omega} = \diff{r}{t} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(\omega^{2}\cdot r)}{18\mu}
+    \diff{r}{t} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot(\omega^{2}\cdot r)}{18\mu}
     \\\\
     \int\limits_{R_{1}}^{R_{0}}{\frac{1}{r} \ \dif{r}} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot\omega^{2}}{18\mu} \cdot \int\limits_{t_{0}}^{t_{s}}{\dif{t}}
     \\\\
     \ln(R_{0}) - \ln(R_{1}) = \frac{d_{p}^{2}\cdot\Delta\rho\cdot\omega^{2}}{18\mu} \cdot t_{s}
 \end{gather*}
 
-Al despejar $t_{s}$ se tiene que:
+Al despejar $t_{s}$ se tiene que:\footnotemark
 
 \begin{equation}\label{eq:tiempo_de_sedimentacion_centrifuga_tubular}
-    t_{s} = \frac{18\mu\cdot\ln(\frac{R_{0}}{R_{1}})}{\Delta\rho\cdot\omega^{2}\cdot d_{p}^{2}}
+    t_{s} = \frac{18\mu\cdot\ln\left(\frac{R_{0}}{R_{1}}\right)}{\Delta\rho\cdot\omega^{2}\cdot d_{p}^{2}}
 \end{equation}
 
-Con estos dos tiempos obtenidos e igualados basta con despejar el flujo volumetrico o caudal (Q) para saber a qué ritmo se puede hacer fluir el liquido manteniendo la certeza de que las particulas de interes van a sedimentar.
+\footnotetext{$\ln\left(\frac{R_{0}}{R_{1}}\right)$ viene de las propiedades de los logaritmos, pues: $\ln(a) - \ln(b) = \ln\left(\frac{a}{b}\right)$}
+
+Por otro lado, para una centrífuga tubular el tiempo de permanencia ($t_{p}$) consiste en el tiempo que la partícula tarda en recorrer el largo de la centrífuga ($L$, \autoref{fig:centrífuga_tubular}). Esta velocidad puede ser calculada si conocemos el caudal de alimentación ($Q$) y el area por la cual pasa el fluido ($A$). 
 
 \begin{equation*}
-    \frac{\pi \cdot (R_{0}^{2} - R_{1}^{2}) \cdot L}{Q} = \frac{18\mu\cdot\ln(\frac{R_{0}}{R_{1}})}{\Delta\rho\cdot\omega^{2}\cdot d_{p}^{2}}
+    v_{z} = \frac{Q}{A}
 \end{equation*}
 
-Despejando $Q$ obtenemos la ecuación utilizada para el diseño de centrífugas tubulares:
+Si bien para el área se parte de la fórmula clásica de un círculo ($\pi \cdot r^{2}$) es necesario en este caso hacer un ajuste, para eliminar el espacio ocupado por los sólidos acumulados. Tal ajuste consiste simplemente en calcular la diferencia entre el radio la interfase líquida ($R_{0}$) y lo que ocupa la torta ($R_{1}$).
+
+\begin{equation*}
+    A = \pi \cdot (R_{0}^{2} - R_{1}^{2})
+\end{equation*}
+
+Aplicando este ajuste tenemos:  
+
+\begin{equation}\label{eq:velocidad_de_permanencia_centrifuga_tubular}
+    v_{z} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})}
+\end{equation}
+
+Esta velocidad se puede expresar también como la derivada de la longitud recorrida por la partícula ($L$) respeto al tiempo ($\diff{L}{t}$). Tomando en cuenta todo lo anterior, esta derivada se resuelve de la siguiente manera:
+
+\begin{gather*}
+    \diff{L}{t} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})}
+    \\\\
+    \int\limits_{0}^{L}{\dif{L}} = \frac{Q}{\pi\cdot(R_{0}^{2} - R_{1}^{2})} \cdot \int\limits_{t_0}^{t_{p}}{\dif{t}}
+    \\\\
+    L = \frac{Q}{\pi \cdot (R_{0}^{2} - R_{1}^{2})} \cdot t_{p}
+\end{gather*}
+
+Por último, ya podemos despejar $t_{p}$:
+
+\begin{equation}\label{eq:tiempo_de_permanencia_centrifuga_tubular}
+    t_{p} = \frac{\pi \cdot (R_{0}^{2} - R_{1}^{2}) \cdot L}{Q}
+\end{equation}
+
+Dado que ya tenemos las ecuaciones de los tiempos de sedimentación y de residencia, podemos igualarlas para cumplir con la condición de retención (\autoref{eq:condicion_de_retencion}) y encontrar así la ecuación de diseño de una centrífuga tubular.
+
+\begin{gather*}
+    t_{s} = t_{p}
+    \\\\
+    \frac{18\mu\cdot\ln(\frac{R_{0}}{R_{1}})}{\Delta\rho\cdot\omega^{2}\cdot d_{p}^{2}} = \frac{\pi \cdot (R_{0}^{2} - R_{1}^{2}) \cdot L}{Q}
+\end{gather*}
+
+Si bien esta es ya la ecuación de diseño de una centrífuga tubular, recordemos que la forma convencional de representarlas en con $Q$ despejada, lo cual nos dejaría con lo siguiente:
 
 \begin{equation*}
     Q = \frac{d_{p}^{2} \cdot \Delta\rho \cdot \pi \cdot \omega^{2} \cdot L \cdot (R_{0}^{2} - R_{1}^{2})}{18\mu \cdot \ln\left(\frac{R_{0}}{R_{1}}\right)}
 \end{equation*}
 
-Ahora bien, podemos añadir la constante $g$ y dividir algunos términos:
-
-\begin{equation*}
-    Q=\left(\frac{d_{p}^{2}\cdot\Delta\rho\cdot g}{18\mu}\right)\cdot\left[\left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right)\cdot\left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{R_{0}}{R_{1}}\right)}\right)\right]
-\end{equation*}
-
-
-
-
-
-
+Esta forma de la ecuación se acerca más a la comunmente utilizada, pero hace falta aplicar un pequeño ``truco matemático'' que nos ayuda a, \hyperlink{introduccion_a_sigma}{como se introdujo antes}, hacerla más ``intuitiva''. Lo que se realiza entonces es añadir la constante $g$ tanto en el numerador como en el denominador y reordenar las variables de la siguiente manera.
 
 \begin{equation}\label{eq:diseño_de_centrifugas_tubulares}
-    Q = (v_{g}) \cdot \left[ \left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right) \cdot \left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{R_{0}}{R_{1}}\right)}\right) \right]
+    Q=\left(\frac{d_{p}^{2}\cdot\Delta\rho\cdot g}{18\mu}\right)\cdot\left[\left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right)\cdot\left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{R_{0}}{R_{1}}\right)}\right)\right]
 \end{equation}
 
-Donde:
+A continuación se dedica un apartado exclusivo a explicar la razón detrás de este último paso.
 
-\begin{itemize}
-    \item $v_{g}$ es la velocidad de precipitación por acción del campo gravitacional
-    \item $\omega$ es la velocidad de rotación en radianes
-    \item $L$ es el la longitud del eje central de la centrífuga
-    \item $g$ es la aceleración de la gravedad
-    \item $R_{0}$ es la distancia del centro de la centrífuga a sus paredes internas
-    \item $R_{1}$ es la distancia del centro de la centrífuga a las paredes de la interfase líquida
-\end{itemize}
+
+
+\subsection{Término Sigma}\label{sec:sigma}
+
+
 
 \begin{equation}\label{eq:diseño_de_centrifugas_general}
     Q = v_{g} \cdot \Sigma
@@ -388,29 +419,28 @@ Podemos observar por último el término en azul también:
 
 Este nos describe cuanto va a aumentar la velocidad de sedimentación ($v_{g}$) tras aplicar la centrifugación. Esto porque una partícula no sedimenta a la misma velocidad estando unicamente sujeta a un campo gravitacional, que cuando además está sujeta también a un campo centrífugo.
 
-\subsubsection{$Q_{50\%}$}
 
-Si bien la ecuación anterior nos sirve para diseñar un proceso de centrifugación para una partícula de diametro dado, estos cálculos quedan "justos" para tal proceso.  Una mejor alternativa puede ser diseñar el proceso para que centrifuge el 50% de las partículas de una diametro más pequeño, lo cual a su vez aseguraría centrifugar el 100% de las partículas más grandes, o sea, las "partículas objetivo".
+
+\subsection{Ecuación de diseño de centrífugas de discos}
+
+La ecuación de diseño de una centrífuga de discos se formula mediante el mismo proceso que en una centrífuga tubular
+
+Algo a notar en esta ocasión es que, como vimos anteriormente, $v_{g}$ se mantiene igual en los diferentes tipos de centrífuga, por lo que en este caso solo es necesario calcular $t_{p}$ a partir de las nuevas características geométricas de la centrífuga de discos
+
+
+
+Así pues, la ecuación para calcular el flujo en una centrífuga de discos es la siguiente:
+
+\begin{equation}\label{eq:diseño_de_centrifugas_de_discos}
+    Q=(v_{g})\cdot\left[\left(\frac{2\pi\cdot\omega^{2}\cdot n}{3g}\right)\cdot\left(\frac{R_{0}^{3}-R_{1}^{3}}{\tan(\theta)}\right)\right]
+\end{equation}
+
+
+
+\subsection{$Q_{50\%}$}
+
+Si bien las ecuaciones anteriores nos sirven para diseñar un proceso de centrifugación para una partícula de un diametro dado, estos cálculos quedan "justos" para tal proceso.  Una mejor alternativa puede ser diseñar el proceso para que centrifuge el 50\% de las partículas de una diametro más pequeño, lo cual a su vez aseguraría centrifugar el 100\% de las partículas más grandes, o sea, las "partículas objetivo".
 
 \begin{equation}
     Q_{50\%} = (2v_{g}) \cdot \left[ \left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right) \cdot \left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{2R_{0}^{2}}{R_{0}^{2} + R_{1}^{2}}\right)}\right) \right]
 \end{equation}
-
-
-
-\subsection{De discos}
-
-Para una centrífuga de discos la ecuación para calcular el flujo es la siguiente:
-
-\begin{equation}\label{eq:diseño_de_centrifugas_de_discos}
-    Q = (v_{g}) \cdot \left[ \left(\frac{2\pi\cdot\omega^{2}\cdot n}{3g}\right) \cdot \left(\frac{R_{0}^{3} - R_{1}^{3}}{\tan(\theta)} \right) \right]
-\end{equation}
-
-Donde, además de las variables ya mencionadas en la ecuación de centrifugas tubulares, tenemos que:
-
-\begin{itemize}
-    \item $n$ son los números de discos
-    \item $\theta$ es el ángulo de inclinación de tales discos
-    \item $R_{0}$ ahora es el radio interno de los discos
-    \item $R_{1}$ ahora es el radio externo de los discos
-\end{itemize}
