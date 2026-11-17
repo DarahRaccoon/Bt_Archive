@@ -255,7 +255,7 @@ La ecuación para máxima concentración de células que puede soportar el siste
 \end{eqnarray}
 
 \resumebox{ejercicio}{Cálculo de velocidad específica de consumo de oxígeno}{
-    Una cepa de \sci{Azotobacter vinelandii} está cultivada en un fermentador agitado de \qty{15}{\m\cubed} para la producción de alginato. Bajo las condiciones normales de operación, $K_{LA}$ es \qty{0.17}{\per\s}. La solubilidad del oxígeno en el caldo es aproximadamente \qty{8d-3}{\kg\per\m\cubed}
+    Una cepa de \sci{Azotobacter vinelandii} está cultivada en un fermentador agitado de \qty{15}{\m\cubed} para la producción de alginato. Bajo las condiciones normales de operación, $K_{L} \cdot a$ es \qty{0.17}{\per\s}. La solubilidad del oxígeno en el caldo es aproximadamente \qty{8d-3}{\kg\per\m\cubed}
     \begin{enumerate}
         \item La velocidad específica de consumo de oxígeno es \qty{12.5}{\milli\mole\per\g\per\hour}, ¿cuál es la máxima concentración de células posibles?
         \item La bacteria sufre de inhibición de crecimiento después de verter accidentalmente \ce{CuSO4} al caldo de fermentación, lo que produce una disminución en la velocidad de consumo de oxígeno hasta \qty{3}{\milli\mole\per\g\per\hour}, ¿qué concentración máxima de células puede soportar ahora el fermentador?
@@ -298,9 +298,133 @@ Donde $P_{AG}$ es la presión parcial del componente $A$ en el gas, $P_{T}$ es l
 
 La transferencia de \ce{O2} se ve afectada por la presencia de células en los caldos de fermentación, ya que las células, proteínas y otras moléculas que se adsorben en la interfase G-L forman una capa o manto interfacial que disminuye el área de contacto entre el gas y el líquido.
 
+\section{Cálculo de $C_{AL}^{\ast}$}
+
+\subsection{Efecto de la presión parcial del \ce{O2}}
+
+De acuerdo a la International Critical Tables, la fracción molar de \ce{O2} en el aire es de 0.2099, por lo que la presión parcial del \ce{O2} a \qty{1}{\atm} es de \qty{0.2099}{\atm}.
+
+\subsection{Efecto de la temperatura}
+
+La solubilidad disminuye al aumentar la temperatura. La solubilidad del \ce{O2} en agua pura de entre \qtyrange{0}{36}{\degreeCelsius} ha sido correlacioada mediante la siguiente ecuación.
+
+\begin{equation}
+    C_{AL}^{\ast} = 14.161 - 0.3943T - \num{7.714d-3}T^{2} - \num{6.46d-5}T^{3}
+\end{equation}
+
+\subsection{Efecto de los solutos}
+
+Se desarrolló una correlación empírica para corregir los valores de solubilidad del \ce{O2} debido a los efectos de los cationes, aniones y azúcares.
+
+\begin{equation}
+    \log_{10}\left(\frac{C_{ALO}^{\ast}}{C_{AL}^{\ast}}\right) = 0.5\sum(H_{i} \cdot Z_{ij} \cdot C_{iL}) + \sum(K_{j} \cdot C_{jL})
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $C_{AL}^{\ast}$ es la solubilidad del oxígeno
+    \item $C_{ALO}^{\ast}$ es la solubilidad del oxígeno a la concentración $O$ del soluto
+    \item $H_{i}$ es la constante para el componente iónico $i$
+    \item $K_{j}$ es la constante para el componente no iónico $j$
+    \item $C_{iL}$ es la concentración del componente no iónico $i$ en el líquido $L$
+    \item $C_{jL}$ es la concentración del componente iónico $j$ en el líquido $L$
+    \item $Z_{ij}$ es la valenciad el componente iónico
+\end{itemize}
 
 
 
+\section{Medición del \ce{O2} automático}
+
+La concentración de \ce{O2} disuelto en fermentadores se mide generalmente on un electrodo de \ce{O2} disuelto. Existen dos tipos, que son los electrodos galvánicos y los electrodos polarigráficos. En ambos casos existe una membrana permeable al \ce{O2} que separa al fluido de la fermentación del electrodo. Tanto los electrodos galvánicos como los polarigráficos miden la presión parcial (o tensión) del \ce{O2} disuelto en el caldo de fermentación, y no la concentración de \ce{O2} disuelto.
+
+
+
+\section{Medición de $k_{L} \cdot a$}
+
+\subsection{Métodos de balance de \ce{O2}}
+
+En este método se mide el contenido de \ce{O2} en las corrientes gaseosas hacia y desde el fermentador. De un balance de materia en estadio estacionario, la diferencia entre el flujo de \ce{O2} a la entreda y la salida debe ser igual a la velocidad de transferencia de \ce{O2} desde el gas hacia el líquido.
+
+\begin{equation}
+    N_{A} = \frac{1}{V_{L}} \cdot \left[(F_{g} \cdot C_{AG})_{i} - (F_{g} \cdot C_{AG})_{o}\right]
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $V_{L}$ es el volumen del líquido en el fermentador
+    \item $F_{G}$ es el caudal volumétrico del gas
+    \item $C_{AG}$ es la concentración de \ce{O2} en la fase gaseosa
+\end{itemize}
+
+Dado que la concentración de gas se mide generalmente como presión parcial, por lo que puede incorporarrse la Ley de los Gases Ideales.
+
+\begin{equation}
+    N_{A} = \frac{1}{V_{L}} \cdot \left[\left(\frac{F_{g} \cdot P_{AG}}{T}\right)_{i} - \left(\frac{F_{g} \cdot C_{AG}}{T}\right)_{o}\right]
+\end{equation}
+
+\subsection{Método dinámico}
+
+Este método se basa en un balance de materia en estado no estacionario para el \ce{O2}. La principal ventaja de este método es el menor costo del equipo utilizado.
+
+\begin{figure}
+    \begin{subfigure}[t]{0.575\linewidth}
+        \resizebox{\linewidth}{!}{\input{images/fig:medicion_de_kla_metodo_dimanico}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Etapas del método dinámico de medición de $k_{L} \cdot a$}
+        \label{fig:medicion_de_kla_metodo_dimanico}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.4\linewidth}
+        \resizebox{\linewidth}{!}{\input{images/fig:pendiente_de_kla}}
+        \rule{\linewidth}{0.5pt}
+        \caption{Pendiente de $k_{L} \cdot a$}
+        \label{fig:pendiente_de_kla}
+    \end{subfigure}
+\end{figure}
+
+Como se muestra en la \autoref{fig:medicion_de_kla_metodo_dimanico}, en un determinado instante ($t_{0}$) el caldo es desoxigenado, bien por la introducción de nitrógeno (\ce{N}) en el recipiente o parando el flujo de aire si el cultivo consume oxígeno. La concentración de \ce{O2} disuelto ($C_{AL}^{\ast}$) disminuye drásticamente durante este periodo. Posteriormente, se bombea aire en el cultivo con su caudal constante, y se observa el aumento de $C_{AL}$ en función del tiempo. Es importante que la concentración de \ce{O2} esté por encima de $C_{Crit}$ para asegurar que el consumo de oxígeno por las células sea independiente del nivel de oxígeno presente. Suponiendo que la reoxigenación del caldo es suficientemente rápida para permitir el crecimiento de las células, el nivel de \ce{O2} disuelto alcanzará pronto un valor estacionario ($\bar{C}_{AL}$) que refleja un balance entre el suministro de \ce{O2} y el consumo existente en el sistema.
+
+La velocidad con la que varía la concentración de \ce{O2} disuelto durante el periodo de reoxigenación es igual a la velocidad de transferencia de \ce{O2} desde el gas hasta el líquido menos la velocidad de consumo de \ce{O2} por las células.
+
+\begin{equation}
+    \diff{C_{AL}}{t} = k_{L} \cdot a (C_{AL}^{\ast} - C_{AL}) - q_{0} \cdot X
+\end{equation}
+
+CUando $C_{AL}$ es igual a $\bar{C}_{AL}$ no existe variación de $C_{AL}$ con respecto al tiempo, por lo tanto la ecuación se reescribe como:
+
+\begin{equation}
+    q_{0} \cdot X = k_{L} \cdot a (C_{AL}^{\ast} - C_{AL})
+\end{equation}
+
+La ecuación para estimar $k_{L} \cdot a$ es:
+
+\begin{equation}
+    k_{L} \cdot a = \frac{\ln\left(\dfrac{\bar{C}_{AL} - C_{AL1}}{\bar{C}_{AL} - C_{AL2}}\right)}{t_{2} - t_{1}}
+\end{equation}
+
+\resumebox{ejercicio}{Calculo de $k_{L} \cdot a$}{
+    Un fermentador agitado de \qty{20}{\L} que contiene un cultivo de \sci{Bacillus turigensis} a \qty{30}{\degreeCelsius} se utiliza para la producción de un insecticida microbiano. El valor de $k_{L} \cdot a$ se determina mediante el método dinámico. Se corta el aire durante unos minutos disminuyendo el nivel de \ce{O2} disuelto y posteriormente se vuelve a establecer. Cuando se alcanza el estado estacionari, la tensión del \ce{O2} disuelto es el 78\% de saturación del aire. Se obtuvieron las siguientes resultados:
+    \begin{table}[H]{\tabstyle[nc]
+        \begin{tabular}{w{c}{0.45\linewidth}w{c}{0.45\linewidth}}\hline
+            \textbf{Tiempo ($t$)} & \textbf{Tensión ($P_{\ce{O2}}$)} \\ \hline
+                                5 &                              50 \\
+                               15 &                              66 \\
+        \hline\end{tabular}}
+    \end{table}
+    \begin{enumerate}
+        \item Calcular $k_{L} \cdot a$
+        \item Se comete un error en la determinación del nivel de \ce{O2} disuelto en estado estacionario, demanera que en lugar del 78\% se ha tomado un valor del 70\%, ¿cuál es el margen de error en $k_{L} \cdot a$ como resultado de este porcentaje de erorr en la medición de $\bar{C}_{AL}$?
+    \end{enumerate}
+}
+
+
+
+
+
+
+% ---------------------------------------------------------------------------------------- %
 
 \section{Respuestas de ejercicios}
 
@@ -325,6 +449,16 @@ La transferencia de \ce{O2} se ve afectada por la presencia de células en los c
     \end{gather*}
 }
 
+\resumebox{respuesta}{Cálculo de $k_{L} \cdot a$}{
+    Datos y conversiones:
+    \begin{itemize}
+        \item $ = \qty{1}{\m}$
+    \end{itemize}
+    Procedimiento:
+    \begin{gather*}
+        a
+    \end{gather*}
+}
 
 \ifx\ISMAIN\undefined
     \end{document}

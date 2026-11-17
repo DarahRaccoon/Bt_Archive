@@ -1,25 +1,25 @@
 This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: 0_Main.aux
-The style file: unsrt.bst
+The style file: unsrtnat.bst
 I couldn't open database file Main.bib
----line 73 of file 0_Main.aux
+---line 109 of file 0_Main.aux
  : \bibdata{Main
  :              }
 I'm skipping whatever remains of this command
 I found no \citation commands---while reading file 0_Main.aux
 I found no database files---while reading file 0_Main.aux
 You've used 0 entries,
-            1791 wiz_defined-function locations,
-            445 strings with 3514 characters,
-and the built_in function-call counts, 18 in all, are:
+            2481 wiz_defined-function locations,
+            551 strings with 4420 characters,
+and the built_in function-call counts, 34 in all, are:
 = -- 0
 > -- 0
 < -- 0
 + -- 0
 - -- 0
 * -- 2
-:= -- 7
+:= -- 11
 add.period$ -- 0
 call.type$ -- 0
 change.case$ -- 0
@@ -29,10 +29,10 @@ duplicate$ -- 0
 empty$ -- 1
 format.name$ -- 0
 if$ -- 1
-int.to.chr$ -- 0
-int.to.str$ -- 0
+int.to.chr$ -- 1
+int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 3
+newline$ -- 8
 num.names$ -- 0
 pop$ -- 0
 preamble$ -- 1
@@ -49,5 +49,5 @@ type$ -- 0
 warning$ -- 0
 while$ -- 0
 width$ -- 0
-write$ -- 2
+write$ -- 7
 (There were 3 error messages)

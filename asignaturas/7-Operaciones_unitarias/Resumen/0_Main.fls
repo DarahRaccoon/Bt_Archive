@@ -231,6 +231,10 @@ INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlib
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.meta.code.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.meta.code.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.meta.code.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.meta.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadings.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadings.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryshadings.code.tex
@@ -490,6 +494,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT ./04.tex
+INPUT ./images/fig:esquema_de_equipo_de_filtracion.tex
 INPUT ./06.tex
 INPUT ./images/fig:variacion_de_temperaturas_en_esterilizacion.tex
 INPUT ./images/fig:variacion_de_k_en_esterilizacion.tex
@@ -497,7 +502,6 @@ INPUT ./images/fig:variacion_de_temperaturas_en_esterilizacion_experimental.tex
 INPUT ./data/esterilizacion.dat
 INPUT ./images/fig:variacion_de_k_en_esterilizacion_experimental.tex
 INPUT ./data/esterilizacion.dat
-INPUT ./07.tex
 INPUT ./0_Main.bbl
 INPUT ./0_Main.acr
 INPUT ./0_Main.gls

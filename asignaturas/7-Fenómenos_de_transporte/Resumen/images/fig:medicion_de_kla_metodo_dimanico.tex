@@ -1,0 +1,21 @@
+\begin{tikzpicture}[
+eje/.style={ultra thick, arrows={-Stealth}},
+encuadre/.style={thick, dotted},
+aire/.style={ultra thick, DarkRed},
+texto/.style={black,text width=3.75em, align=center, font=\sffamily}
+]
+
+\draw[eje] (0,0) -- (10,0);
+\draw[eje] (0,0) -- (0,10);
+
+\draw[encuadre] (0,1) node[left,texto] {$C_{Crit}$} -- (10,1);
+\draw[encuadre] (0,5) node[left,texto] {$C_{AL1}$} -- (10,5);
+\draw[encuadre] (0,7) node[left,texto] {$C_{AL2}$} -- (10,7);
+
+\draw[encuadre] (2,0) node[below,texto] {$t_{0}$} -- (2,9);
+\draw[encuadre] (6,0) node[below,texto] {$t_{1}$} -- (6,5);
+\draw[encuadre] (8,0) node[below,texto] {$t_{2}$} -- (8,7);
+
+\draw[aire] (0,9) -- (2,9) node[above,texto] {Cierre de aire} -- (4,3) node[below,texto] {Apertura de aire} -- (6,5) -- (8,7) -- (10,7) node[midway,above,texto] {$C_{AL}$};
+
+\end{tikzpicture}

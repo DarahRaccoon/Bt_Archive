@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  16 NOV 2026 19:42
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  17 NOV 2026 15:08
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen
 /0_Main.tex
 
@@ -709,6 +709,10 @@ File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
 File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+patterns.meta.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.meta.code.t
+ex))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 shadings.code.tex
 File: tikzlibraryshadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
@@ -1950,12 +1954,12 @@ Package hyperref Info: Link coloring ON on input line 7.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../portada.jpg, id=155, 4166.56625pt x 5890.005pt>
+<../portada.jpg, id=151, 4166.56625pt x 5890.005pt>
 File: ../portada.jpg Graphic file (type jpg)
 <use ../portada.jpg>
 Package luatex.def Info: ../portada.jpg  used on input line 11.
 (luatex.def)             Requested size: 597.50787pt x 844.63702pt.
-<../../0-tex_resources/logo_upsin.png, id=156, 1927.4409pt x 903.6159pt>
+<../../0-tex_resources/logo_upsin.png, id=152, 1927.4409pt x 903.6159pt>
 File: ../../0-tex_resources/logo_upsin.png Graphic file (type png)
 <use ../../0-tex_resources/logo_upsin.png>
 Package luatex.def Info: ../../0-tex_resources/logo_upsin.png  used on input li
@@ -2087,56 +2091,65 @@ Capítulo 1.
 
 
 ] (./images/fig:fuerzas_de_aceleracion_en_campo_centrifugo.tex)
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 61.
+(babel)             Reported on input line 59.
 
 [3] [4]
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
  [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 (./images/fig:centrífuga_tubular.tex) (./images/fig:centrifuga_de_discos.tex)
-LaTeX Info: Redefining \. on input line 221.
-LaTeX Info: Redefining \% on input line 221.
+LaTeX Info: Redefining \. on input line 223.
+LaTeX Info: Redefining \% on input line 223.
 
 [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
 
 [9] [10]
+LaTeX Info: Redefining \. on input line 351.
+LaTeX Info: Redefining \% on input line 351.
+ [11]
+Underfull \vbox (badness 1163) has occurred while \output is active []
+
+ [12]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+)
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+ [13]
+Capítulo 2.
+(./04.tex (./images/fig:esquema_de_equipo_de_filtracion.tex)
+Underfull \vbox (badness 1817) has occurred while \output is active []
+
+ [14
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 346.
-LaTeX Info: Redefining \% on input line 346.
- [11]
-[12]
-LaTeX Info: Redefining \. on input line 436.
-LaTeX Info: Redefining \% on input line 436.
- [13]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 440.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 440.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 440.
-
-) [14]
-Capítulo 2.
-(./04.tex [15
-
-]) [16]
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+ [15])
+[16]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2194,13 +2207,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--61
 
 
 ]
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
  [19]
-Capítulo 4.
-(./07.tex) [20
-
-]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2233,13 +2242,13 @@ Capítulo 4.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./0_Main.bbl) [21
+ (./0_Main.bbl) [20
 
 
-] (./0_Main.acr) [22] (./0_Main.gls)
+] (./0_Main.acr)
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
- [23
+ [21] (./0_Main.gls) [22
 
 ]
 (./0_Main.aux
@@ -2255,21 +2264,21 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `0_Main.out' has not changed.
-(rerunfilecheck)             Checksum: 4FAF22BAB4E57694FD7A5F07A716AC60;6147.
+(rerunfilecheck)             Checksum: 82DE8B0BE83A19FC69AFD4F30333CF42;6452.
 )
 
 Here is how much of LuaTeX's memory you used:
- 68479 strings out of 476076
- 156553,2848258 words of node,token memory allocated
- 46663 words of node memory still in use:
-   454 hlist, 28 vlist, 36 rule, 95 disc, 24 local_par, 83 math, 1076 glue, 97 k
-ern, 53 penalty, 6 margin_kern, 628 glyph, 6605 attribute, 130 glue_spec, 3303 a
-ttribute_list, 12 write, 2204 pdf_literal, 2 pdf_dest, 11 pdf_action, 86 pdf_col
-orstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 1:7,2:2144,3:4513,4:170,5:956,6:67,7:5958,8:81,9:1158,10:18,11:9
-04,12:1
- 89248 multiletter control sequences out of 65536+600000
- 105 fonts using 11120719 bytes
+ 68652 strings out of 476076
+ 156559,2848258 words of node,token memory allocated
+ 52603 words of node memory still in use:
+   514 hlist, 34 vlist, 42 rule, 115 disc, 28 local_par, 85 math, 1214 glue, 125
+ kern, 65 penalty, 6 margin_kern, 746 glyph, 7353 attribute, 130 glue_spec, 3677
+ attribute_list, 14 write, 2408 pdf_literal, 3 pdf_dest, 14 pdf_action, 128 pdf_
+colorstack, 4 pdf_setmatrix, 4 pdf_save, 4 pdf_restore nodes
+   avail lists: 1:4,2:2143,3:4513,4:170,5:927,6:66,7:5748,8:60,9:1158,10:18,11:8
+87,12:1
+ 89409 multiletter control sequences out of 65536+600000
+ 106 fonts using 11283767 bytes
  103i,19n,113p,2606b,2842s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSerif-Italic.otf></usr/sha
 re/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Regular.otf></usr/share/texmf-
@@ -2289,10 +2298,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb>
-Output written on 0_Main.pdf (25 pages, 2307980 bytes).
+Output written on 0_Main.pdf (24 pages, 2309528 bytes).
 
-PDF statistics: 509 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 98 named destinations out of 1000 (max. 1048576)
- 540 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 514 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 1048576)
+ 547 words of extra memory for PDF output out of 10000 (max. 100000000)
 
