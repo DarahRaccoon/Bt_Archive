@@ -254,7 +254,7 @@ La ecuación para máxima concentración de células que puede soportar el siste
     X_{Max} = \frac{K_{LA} \cdot C_{AL}^{\ast}}{q_{0}}
 \end{eqnarray}
 
-\resumebox{ejercicio}{Cálculo de velocidad específica de consumo de oxígeno}{
+\resumebox{ejercicio}{Cálculo de velocidad específica de consumo de oxígeno}[ej:velocidad_especifica_de_consumo_de_oxigeno]{
     Una cepa de \sci{Azotobacter vinelandii} está cultivada en un fermentador agitado de \qty{15}{\m\cubed} para la producción de alginato. Bajo las condiciones normales de operación, $K_{L} \cdot a$ es \qty{0.17}{\per\s}. La solubilidad del oxígeno en el caldo es aproximadamente \qty{8d-3}{\kg\per\m\cubed}
     \begin{enumerate}
         \item La velocidad específica de consumo de oxígeno es \qty{12.5}{\milli\mole\per\g\per\hour}, ¿cuál es la máxima concentración de células posibles?
@@ -404,7 +404,7 @@ La ecuación para estimar $k_{L} \cdot a$ es:
     k_{L} \cdot a = \frac{\ln\left(\dfrac{\bar{C}_{AL} - C_{AL1}}{\bar{C}_{AL} - C_{AL2}}\right)}{t_{2} - t_{1}}
 \end{equation}
 
-\resumebox{ejercicio}{Calculo de $k_{L} \cdot a$}{
+\resumebox{ejercicio}{Calculo de $k_{L} \cdot a$}[ej:kla]{
     Un fermentador agitado de \qty{20}{\L} que contiene un cultivo de \sci{Bacillus turigensis} a \qty{30}{\degreeCelsius} se utiliza para la producción de un insecticida microbiano. El valor de $k_{L} \cdot a$ se determina mediante el método dinámico. Se corta el aire durante unos minutos disminuyendo el nivel de \ce{O2} disuelto y posteriormente se vuelve a establecer. Cuando se alcanza el estado estacionari, la tensión del \ce{O2} disuelto es el 78\% de saturación del aire. Se obtuvieron las siguientes resultados:
     \begin{table}[H]{\tabstyle[nc]
         \begin{tabular}{w{c}{0.45\linewidth}w{c}{0.45\linewidth}}\hline
@@ -420,45 +420,60 @@ La ecuación para estimar $k_{L} \cdot a$ es:
 }
 
 
-
-
-
-
-% ---------------------------------------------------------------------------------------- %
-
-\section{Respuestas de ejercicios}
-
-\resumebox{respuesta}{Cálculo de velocidad específica de consumo de oxígeno}{
-    Datos y conversiones:
+\resumebox{ejercicio}{Cálculo de $k_{L}\cdot a$ mínimo}[ej:kla_minimo]{
+    Una cepa de levadura manipulada genéticamente es cultivada en un biorreactor a \qty{30}{\degreeCelsius} para la producción de proteína. La demanda de oxígeno es \qty{80}{\milli\mole\per\L\per\hour} y la concentración crítica de oxígeno \qty{0.004}{\milli\mole}. La solubilidad del oxígeno en el caldo de fermentación se calcula que es un 10\% inferior a la solubilidad en agua debido a los efectos del soluto.
     \begin{itemize}
-        \item $K_{LA} = \qty{0.17}{\per\s}$
-        \item $C_{AL}^{\ast} = \qty{8d-3}{\kg\per\m\cubed}$
-        \item $V = \qty{15}{\m\cubed}$
-        \item $q_{\ce{O}} = \qty{12.5}{\milli\mole\per\g\per\hour}$
-        \item $q_{\ce{O}(2)} = \qty{3}{\milli\mole\per\g\per\hour}$
+        \item ¿Cuál es el mínimo coeficiente de transferencia de materia necesario para mantener este cultivo si el reactor es inyectado con aire a aproximadamente \qty{1}{\atm} de presión?
+        \item ¿Cuál es el coeficiente de transferencia de materia necesario si se utiliza oxígeno puro en vez de aire?
     \end{itemize}
-    Procedimiento:
-    \begin{gather*}
-        \qty{12.5}{\milli\mole\per\g\per\hour} \cdot \frac{\qty{1}{\mole}}{\qty{1000}{\milli\mole}} \cdot \frac{\qty{32}{\g}}{\qty{1}{\mole}} \cdot \frac{\qty{1}{\hour}}{\qty{3600}{\s}} \cdot \frac{\qty{1}{\kg}}{\qty{1000}{\g}} = \qty{1.11d-7}{\kg\mole\per\g\per\s}
-        \\
-        X_{Max} = \frac{K_{LA} \cdot C_{AL}^{\ast}}{q_{0}} = \frac{\qty{0.17}{\per\s} \cdot \qty{8d-3}{\kg\per\m\cubed}}{\qty{1.11d-7}{\kg\mole\per\g\per\s}} = \qty{12252.25}{\g\per\m\cubed} = \qty{12.25}{\kg\per\m\cubed}
-        \\
-        \qty{3}{\milli\mole\per\g\per\hour} \cdot \frac{\qty{1}{\mole}}{\qty{1000}{\milli\mole}} \cdot \frac{\qty{32}{\g}}{\qty{1}{\mole}} \cdot \frac{\qty{1}{\hour}}{\qty{3600}{\s}} \cdot \frac{\qty{1}{\kg}}{\qty{1000}{\g}} = \qty{2.66d-8}{\kg\mole\per\g\per\s}
-        \\
-        X_{Max(2)} = \frac{K_{LA} \cdot C_{AL}^{\ast}}{q_{0}} = \frac{\qty{0.17}{\per\s} \cdot \qty{8d-3}{\kg\per\m\cubed}}{\qty{2.66d-8}{\kg\mole\per\g\per\s}} = \qty{51127.82}{\g\per\m\cubed} = \qty{51.13}{\kg\per\m\cubed}
-    \end{gather*}
 }
 
-\resumebox{respuesta}{Cálculo de $k_{L} \cdot a$}{
-    Datos y conversiones:
-    \begin{itemize}
-        \item $ = \qty{1}{\m}$
-    \end{itemize}
-    Procedimiento:
-    \begin{gather*}
-        a
-    \end{gather*}
+\resumebox{ejercicio}{Efecto de solutos}[ej:efecto_de_solutos]{
+    La bacteria \sci{Escherichia coli} se cultiva a \qty{35}{\degreeCelsius} en el siguiente medio:
+    \begin{table}[H]\centering{\tabstyle[nc]
+        \begin{tabular}{w{c}{0.45\linewidth}w{c}{0.45\linewidth}}\hline
+            \textbf{Componente} & \textbf{\unit{\g\per\L}} \\ \hline
+                        Glucosa &                    20    \\
+                       Sacarosa &                     8.5  \\
+                     \ce{CaCO3} &                     1.3  \\
+                 \ce{(NH4)2SO4} &                     1.3  \\
+                   \ce{Na2HPO4} &                     0.09 \\
+                    \ce{KH2PO4} &                     0.12 \\
+        \hline\end{tabular}}
+    \end{table}
+    El fermentador agitado utilizado para este cultivo tiene un volumen de \qty{20}{\m\cubed} y una altura de líquido de \qty{3.5}{\m}. Se inyecta aire a \qty{25}{\degreeCelsius} en el fondo del recipiente a una velocidad de \qty{25}{\m\cubed\per\min}. La tensión de oxígeno en el fermentador se ha medido utilizando electrodos polarigráficos situados en la parte superior y en el fondo del recipiente. En la parte superior la lectura es del 50\% de saturación de aire, mientras que en el fondo es del 65\%. El caudal que abandona el fermentador, medido con un gasómetro rotatorio, es \qty{407}{\L\per\s}. El contenido de oxígeno del gas de salida es 20.15\%.
+    \begin{enumerate}
+        \item Calcular la presión en el difusor. (La presión estática $P_{s}$ debida a la altura del líquido viene dada por la ecuación: $P_{s}=\rho\cdot g \cdot h$, donde $\rho$ es la densidad del líquido, $g$ la aceleración de la gravedad y $h$ la altura del líquido.)
+        \item Calcular la solubilidad del oxígeno en el caldo de fermentación a \qty{35}{\degreeCelsius} y \qty{1}{\atm} de presión de aire.
+        \item Calcular la solubilidad del oxígeno en el fondo del tanque
+        \item Calcular la concentración media logarítmica $\left(C_{LA}^{\ast} - C_{AL}\right)_{L}$ que actúa como fuerza impulsora.
+        \item ¿Cuál es la velocidad de transferencia de oxígeno?
+        \item Calcular el valor de $k_{L}\cdot a$
+        \item ¿Cuál es la máxima concentración de células que puede soportar el fermentador si la demanda del organismo es \qty{7.4}{\milli\mole\per\g\per\hour}?
+    \end{enumerate}
 }
+
+\resumebox{ejercicio}{Medición de $k_{L}\cdot a$}[ej:medicion_de_kla]{
+    Se utiliza el método dinámico para medir kLa en un fermentador que opera a 30°C. Los datos de concentración de oxígeno disuelto en función del tiempo durante la etapa de reoxigenación son los siguientes:
+    \begin{table}[H]\centering{\tabstyle[nc]
+        \begin{tabular}{w{c}{0.45\linewidth}w{c}{0.45\linewidth}}\hline
+            \textbf{Tiempo (\unit{\s})} & $\mathbf{C_{AL}}$ \\ \hline
+                                     10 &              43.5 \\
+                                     15 &              53.5 \\
+                                     20 &              60   \\
+                                     30 &              67.5 \\
+                                     40 &              70.5 \\
+                                     50 &              72   \\
+                                     70 &              73   \\
+                                    100 &              73.5 \\ 
+                                    130 &              73.5 \\
+        \hline\end{tabular}}
+    \end{table}
+    La concentración de equilibrio del oxígeno en el caldo es de \qty{7.9d-3}{\kg\per\m\cubed}
+    \begin{enumerate}\item Calcular $K_{L}\cdot a$ \end{enumerate}
+}
+
+
 
 \ifx\ISMAIN\undefined
     \end{document}

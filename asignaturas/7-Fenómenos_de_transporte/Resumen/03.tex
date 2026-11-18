@@ -32,7 +32,7 @@ Cuando N\sub{Re} es menor a 2100 para una tubería circular recta, el flujo siem
     \mathrm{N_{Re}} > 4000        &\quad\longrightarrow\quad \text{Flujo turbulento}
 \end{align*}
 
-\resumebox{ejercicio}{Número de Reynolds}{\footnotesize 
+\resumebox{ejercicio}{Número de Reynolds}[ej:nre]{\footnotesize 
     Por una tubería con un diámetro interior de \qty{2.007}{\in} fluye agua a \qty{303}{\K} con una velocidad de \qty{10}{\gal\per\min}. Calcular el N\sub{Re} usando unidades del sistema internacional 
 }
 
@@ -86,7 +86,7 @@ Para una presión constante, la pérdida por presión ($F_{f}$) se puede calcula
     F_{f} = \frac{(P_{1} - P_{2})_{f}}{P}
 \end{equation}
 
-\resumebox{ejercicio}{Cálculo de flujo másico}{
+\resumebox{ejercicio}{Cálculo de flujo másico}[ej:flujo_masico]{
     Para medir en forma continua la velocidad del flujo de un líquido con una densidad de \qty{875}{\kg\per\m\cubed} y una viscosidad de \qty{1.13d-3}{\pascal\s} se usa un pequeño capilar con un diametro interno de \qty{2.22d-3}{\m} y la longitud igual a \qty{0.317}{\m}. La lectura de caida de presión es de \qty{0.0655}{\m} de agua, la cual tiene una densidad de \qty{996}{\kg\per\m\cubed}. ¿Cuál es la velocidad de flujo en \unit{\m\cubed\per\s} sin tomar en cuenta los efetos de los extremos del tubo?
 }
 
@@ -111,15 +111,15 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
 \end{equation}
 
 
-\resumebox{ejercicio}{Cálculo de caida de presión}{\footnotesize
+\resumebox{ejercicio}{Cálculo de caida de presión}[ej:caida_de_presion]{
     Suponga las mismas condiciones conocidas del ejemplo anterior, excepto que se conoce la velocidad, que es de \qty{0.225}{\m\per\s}, y se debe pronosticar la caida de presión. Use el método de factor de fricción de Fanning ($F_{f}$)
 }
 
-\resumebox{ejercicio}{Cálculo de pérdida por fricción}{\footnotesize
+\resumebox{ejercicio}{Cálculo de pérdida por fricción}[ej:perdida_por_friccion]{
     Un líquido fluye por una tubería horizontal recta de acero comercial a \qty{4.57}{\m\per\s}. El diámetro interno de la tubería es de \qty{2.067}{\in}, mientras que la viscosidad del líquido es de \qty{4.46}{\cp}, y su densidad es de \qty{801}{\kg\per\m\cubed}. Calcule la pérdida por fricción de energía mecánica (F\sub{f}) en \unit{\J\per\kg} para una sección de tubería de \qty{36.6}{\m}.
 }
 
-\resumebox{ejercicio}{Cálculo de caida de presión por efectos de fricción}{\footnotesize
+\resumebox{ejercicio}{Cálculo de caida de presión por efectos de fricción}[ej:valor_de_friccion]{
     Calcule la caida de presión por efectos de la fricción, expresada en \unit{\pascal}, para un aceite de ilivo a \qty{293}{\K}, que fluye por una tubería comercial de diametro interno igual a \qty{0.0525}{\m} y una lngiud de \qty{76.2}{\m}. La velocidad de fluido es de \qty{1.22}{\m\per\s}.Utilice el método del factor de fricción.
     \begin{enumerate}
         \item ¿Es el flujo laminar o turbulento si la densidad del medio es de \qty{919}{\kg\per\m\cubed} y su viscosidad de \qty{8.4d-2}{\kg\per\m\per\s}?
@@ -127,7 +127,7 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
     \end{enumerate}
 }
 
-\resumebox{ejercicio}{Cálculo de pérdida por fricción $F_{f}$}{\footnotesize
+\resumebox{ejercicio}{Cálculo de pérdida por fricción $F_{f}$}[ej:perdida_por_friccion_Ff]{
     Un líquido con densidad de \qty{801}{\kg\per\m\cubed} y visosidad de \qty{1.49d-3}{\pascal\s} fluye por una tubería horizontal recta a velocidad de \qty{4.57}{\m\per\s}. El tubo de acero comercial es de tamaño nominal de \qty{1.5}{\in}, cédula 40. Proceda a lo siguiente para un tubo de \qty{61}{\m} de largo:
     \begin{enumerate}
         \item Calcule la pérdida por fricción $F_{f}$
@@ -135,7 +135,7 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
     \end{enumerate}
 }
 
-\resumebox{ejercicio}{Cálculo de velocidad de flujo}{\footnotesize
+\resumebox{ejercicio}{Cálculo de velocidad de flujo}[ej:velocidad_de_flujo]{
     En un proyecto hidráulico se diagrama una tubería de hierro \emph{colado} de \qty{0.156}{\m} de diametro interior y \qty{305}{\m} de longitud, para drenar aguas negras a \qty{293}{\K}. La carga disponible es de \qty{4.57}{\m} de agua. Despreciando las pérdidas en los acesorios y conexiones de la tubería, calcule la velocidad de flujo en \unit{\m\cubed\per\s}. \\
     \emph{Sugerencia:} Suponga las propiedades del agua pura, la solución se logra por prueba y error, pues N\sub{Re}, que es necesario para calcular el factor de fricción que depende de la velocidad. Como primera aproximación, suponga que la velocidad es de \qty{1.7}{\m\per\s}. \\
     La densidad del líquido es de \qty{998.2}{\kg\per\m\cubed} y la visocisdad es de \qty{1.005d-3}{\kg\per\m\per\s}.
@@ -148,67 +148,6 @@ Un parámetro muy común en el flujo laminar es el factor de fricción de Fannin
 %    \end{equation}
 %\section{Ecuación de continuidad para flujo unidireccional y en punto}
 
-
-
-
-
-% -------------------------------------------------------------------- %
-
-\section{Respuestas de ejercicios}
-
-\resumebox{respuesta}{Número de Reynolds}{
-\begin{gather*}
-    \mathrm{D} = \qty{2.007}{\in} \cdot \qty{2.54}{\cm\per\in} \cdot \frac{\qty{1}{\m}}{\qty{100}{\cm}}= \qty{5.1d-2}{\m}
-    \\
-    \mathrm{V_{Volumétrica}} = \qty{10}{\gal\per\min} \cdot \frac{\qty{1}{\min}}{\qty{60}{\s}} \cdot \qty{3.7854d-3}{\m\cubed\per\gal} = \qty{6.309d-4}{\m\cubed\per\s}
-    \\
-    V = \frac{\qty{6.309d-4}{\m\cubed\per\s}}{\pi \cdot (\qty{5.1d-2}{\m} \div 2)^{2}} = \qty{0.3088}{\m\per\s}
-    \\
-    \mu = \qty{0.8007}{\cp} \cdot \frac{\qty{1d-3}{\kg\per\m\s}}{1cp} = \qty{8.007d-4}{\kg\per\m\per\s}
-    \\
-    \mathrm{N_{Re}} = \frac{\qty{5.1d-2}{\m} \cdot \qty{0.309}{\m\per\s} \cdot \qty{996}{\kg\per\m\cubed}}{\qty{8.007d-4}{\kg\per\m\per\s}} = 19602.8025
-\end{gather*}
-}
-
-\resumebox{respuesta}{Cálculo de flujo másico}{\footnotesize
-\begin{gather*}
-    \Delta P_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2}} \quad\longrightarrow\quad V = \frac{D^{2} \cdot \Delta P_{f}}{32\mu \cdot \Delta L}
-    \\
-    V = \frac{(\qty{2.2d-3}{\m})^{2} \cdot \qty{639.985}{\kg\per\m\per\s\squared}}{32 \cdot \qty{1.13d-3}{\kg\per\m\per\s} \cdot \qty{0.317}{\m}} = \qty{0.27}{\m\per\s}
-    \\
-    Q = \qty{0.27}{\m\per\s} \cdot \qty{3.8d-6}{\m\squared} = \qty{1.026d-6}{\m\cubed\per\s}
-\end{gather*}
-}
-
-\resumebox{respuesta}{Cálculo de caida de presión}{\footnotesize
-\begin{gather*}
-    \mathrm{N_{Re}} = \frac{\qty{875}{\kg\per\m\cubed} \cdot \qty{0.225}{\m\per\s} \cdot \qty{2.2d-3}{\m}}{\qty{1.13d-3}{\kg\per\m\per\s}} = 383.2964
-    \\
-    f = \frac{16}{383.2984} = 0.0417 
-    \\
-    \Delta P_{f} = \frac{4 \cdot 0.0417 \cdot \qty{875}{\kg\per\m\cubed} \cdot \qty{0.317}{\m} \cdot (\qty{0.225}{\m\per\s})^{2}}{2 \cdot \num{2.2d-3}} = \qty{532.324}{\kg\per\m\per\s\squared}
-\end{gather*}
-}
-
-\resumebox{respuesta}{Cálculo de pérdida por fricción}{\footnotesize
-\begin{gather*}
-    D = \qty{2.067}{\in} = \qty{5.26d-2}{\m}
-    \\
-    \rho = \qty{801}{\kg\per\m\cubed}
-    \\
-    \mu = \qty{4.46}{\cp} = \qty{4.46d-3}{\kg\per\m\per\s}
-    \\
-    V = \qty{4.57}{\m\per\s}
-    \\
-    \Delta L = \qty{36.6}{\m}
-    \\\\
-    \mathrm{N_{Re}} = \frac{\qty{5.26d-2}{\m} \cdot \qty{4.57}{\m\per\s} \cdot \qty{801}{\kg\per\m\cubed}}{\qty{4.46d-3}{\kg\per\m\per\s}} = 43171.745 \approx \num{4.3d4}
-    \\
-    f_{D} = 0.024 \quad\longleftarrow\quad \text{De Diagrama de Moody}
-    \\
-    F_{f} = \frac{0.024 \cdot \qty{36.6}{\m} \cdot (\qty{4.57}{\m\per\s})^{2}}{2(\qty{5.26d-2}{\m})} = \qty{174.4}{\m\squared\per\s\squared}
-\end{gather*}
-}
 
 
 \ifx\ISMAIN\undefined

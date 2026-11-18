@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  17 NOV 2026 13:09
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.20)  18 NOV 2026 13:25
 **/home/darah/Documentos/Bt_Archive/asignaturas/7-Fenómenos_de_transporte/Resu
 men/0_Main.tex
 
@@ -709,6 +709,10 @@ File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
 File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+patterns.meta.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.meta.code.t
+ex))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 shadings.code.tex
 File: tikzlibraryshadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
@@ -1567,27 +1571,27 @@ Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
 \c@defdepth=\count451
 \cftbeforedeftitleskip=\skip150
 \cftafterdeftitleskip=\skip151
-\c@ejercicio=\count452
-\cftbeforeejercicioskip=\skip152
-\cftejercicioindent=\skip153
-\cftejercicionumwidth=\skip154
-\c@ejdepth=\count453
-\cftbeforeejtitleskip=\skip155
-\cftafterejtitleskip=\skip156
-\c@respuesta=\count454
-\cftbeforerespuestaskip=\skip157
-\cftrespuestaindent=\skip158
-\cftrespuestanumwidth=\skip159
-\c@respdepth=\count455
-\cftbeforeresptitleskip=\skip160
-\cftafterresptitleskip=\skip161
-\c@dato=\count456
-\cftbeforedatoskip=\skip162
-\cftdatoindent=\skip163
-\cftdatonumwidth=\skip164
-\c@datdepth=\count457
-\cftbeforedattitleskip=\skip165
-\cftafterdattitleskip=\skip166
+\c@dato=\count452
+\cftbeforedatoskip=\skip152
+\cftdatoindent=\skip153
+\cftdatonumwidth=\skip154
+\c@datdepth=\count453
+\cftbeforedattitleskip=\skip155
+\cftafterdattitleskip=\skip156
+\c@ejercicio=\count454
+\cftbeforeejercicioskip=\skip157
+\cftejercicioindent=\skip158
+\cftejercicionumwidth=\skip159
+\c@ejdepth=\count455
+\cftbeforeejtitleskip=\skip160
+\cftafterejtitleskip=\skip161
+\c@respuesta=\count456
+\cftbeforerespuestaskip=\skip162
+\cftrespuestaindent=\skip163
+\cftrespuestanumwidth=\skip164
+\c@respdepth=\count457
+\cftbeforeresptitleskip=\skip165
+\cftafterresptitleskip=\skip166
  (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip167
@@ -2095,15 +2099,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 87.
+(babel)             Reported on input line 84.
 
-[3] [4])
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4])
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
- [5]
+
+[5]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2144,11 +2152,14 @@ Capítulo 2.
 (./02.tex (./images/fig:ejercicio_1_cubo.tex) [7
 
 
-] [8]
+]
+Underfull \vbox (badness 1281) has occurred while \output is active []
+
+ [8]
 (./images/fig:grafica_de_tipos_de_fluidos.tex))
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
- [9] [10]
+ [9]
 Capítulo 3.
 (./03.tex
 
@@ -2166,10 +2177,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [10
 
 ]
-[12]
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+
+[11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 93.
@@ -2178,12 +2192,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 93.
 
-LaTeX Info: Redefining \. on input line 111.
-LaTeX Info: Redefining \% on input line 111.
-[13] [14])
+[12])
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
- [15] [16]
+ [13] [14]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2216,7 +2228,7 @@ LaTeX Info: Redefining \% on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [17
+ [15
 
 
 ]
@@ -2224,31 +2236,23 @@ Capítulo 4.
 (./04.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [16
 
 
 ]
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
 
-[19] [20]
-LaTeX Info: Redefining \. on input line 188.
-LaTeX Info: Redefining \% on input line 188.
- [21] [22]
-LaTeX Info: Redefining \. on input line 246.
-LaTeX Info: Redefining \% on input line 246.
- [23]
-Overfull \hbox (5.27402pt too wide) detected at line 264
-[]
- []
+[17] [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [24]
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+ [19])
+[20]
 LaTeX Info: Redefining \. on input line 34.
 LaTeX Info: Redefining \% on input line 34.
- [25] [26]
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
- [27] [28]
+ [21]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2281,7 +2285,7 @@ LaTeX Info: Redefining \% on input line 34.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [29
+ [22
 
 
 ]
@@ -2299,30 +2303,32 @@ Overfull \hbox (8.96822pt too wide) in paragraph at lines 5--19
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30
+ [23
 
 
 ]
 (./images/fig:representacion_transporte_de_materia.tex)
-(./images/fig:teoria_de_la_pelicula.tex)
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
- [31]
-(./images/fig:interfase_liquido_solido.tex) [32]
+(./images/fig:teoria_de_la_pelicula.tex) [24]
+(./images/fig:interfase_liquido_solido.tex)
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+ [25]
 (./images/fig:equilibrio_de_solutos.tex)
 Underfull \vbox (badness 3250) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
- [33]
-[34] (./images/fig:relacion_concentracion_de_o2_y_q0.tex)
+ [26]
+LaTeX Info: Redefining \. on input line 202.
+LaTeX Info: Redefining \% on input line 202.
+
+[27] (./images/fig:relacion_concentracion_de_o2_y_q0.tex)
 (./images/fig:resistencias_en_el_transporte_de_oxigeno.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 242.
-LaTeX Info: Redefining \% on input line 242.
- [35]
-[36]
+ [28]
+LaTeX Info: Redefining \. on input line 276.
+LaTeX Info: Redefining \% on input line 276.
+
+[29]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 301.
@@ -2350,9 +2356,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 307.
-LaTeX Info: Redefining \% on input line 307.
- [37]
+ [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\mhchem@cee' on input line 337.
@@ -2380,20 +2384,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \vbox (badness 3088) has occurred while \output is active []
 
- [38]
+LaTeX Info: Redefining \. on input line 348.
+LaTeX Info: Redefining \% on input line 348.
+ [31]
 (./images/fig:medicion_de_kla_metodo_dimanico.tex)
-(./images/fig:pendiente_de_kla.tex)
-LaTeX Info: Redefining \. on input line 388.
-LaTeX Info: Redefining \% on input line 388.
- [39]
+(./images/fig:pendiente_de_kla.tex) [32]
 Overfull \hbox (1.34325pt too wide) in paragraph at lines 420--420
 [][] 
  []
 
-) [40]
+
+Overfull \hbox (1.34325pt too wide) in paragraph at lines 454--454
+ [][] 
+ []
+
+
+Overfull \hbox (1.34325pt too wide) in paragraph at lines 474--474
+ [][] 
+ []
+
+)
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
- [41]
+ [33] [34]
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [35]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
@@ -2426,17 +2442,83 @@ LaTeX Info: Redefining \% on input line 40.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./0_Main.bbl
+ (./0_Main.ej)
+\tf@ej=\write9
+
+\openout9 = 0_Main.ej
+ [36
+
+
+] (./0_respuestas.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
+[37
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Suppressing empty link on input line 282.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+[39] [40]
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+ [41] [42]
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+ [43] [44]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+ [45
+
+] [46]
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+ [47] (./0_Main.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [42
-
+) [48
 
 ] (./0_Main.acr)
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
- [43] (./0_Main.gls) [44
+LaTeX Info: Redefining \. on input line 48.
+LaTeX Info: Redefining \% on input line 48.
+ [49] (./0_Main.gls) [50
 
 ] (./0_Main.aux
 LaTeX Info: Redefining \. on input line 20.
@@ -2451,20 +2533,20 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `0_Main.out' has not changed.
-(rerunfilecheck)             Checksum: 8AF982B7BF860599A92B7803A4007FF7;9204.
+(rerunfilecheck)             Checksum: 95B89E0087E33DC5F56664541D018794;9262.
 )
 
 Here is how much of LuaTeX's memory you used:
- 68744 strings out of 476076
- 156559,2848258 words of node,token memory allocated
- 37221 words of node memory still in use:
-   418 hlist, 58 vlist, 88 rule, 135 disc, 39 local_par, 60 math, 815 glue, 146 
-kern, 103 penalty, 5 margin_kern, 792 glyph, 4319 attribute, 130 glue_spec, 2160
+ 69015 strings out of 476076
+ 195692,3417909 words of node,token memory allocated
+ 37200 words of node memory still in use:
+   418 hlist, 58 vlist, 88 rule, 135 disc, 39 local_par, 60 math, 813 glue, 147 
+kern, 103 penalty, 5 margin_kern, 792 glyph, 4315 attribute, 130 glue_spec, 2158
  attribute_list, 16 write, 1146 pdf_literal, 7 pdf_dest, 9 pdf_action, 94 pdf_co
 lorstack, 5 pdf_setmatrix, 5 pdf_save, 5 pdf_restore nodes
-   avail lists: 1:2,2:4015,3:1636,4:253,5:923,6:92,7:7001,8:116,9:3056,10:33,11:
-871,12:1
- 89352 multiletter control sequences out of 65536+600000
+   avail lists: 1:7,2:8433,3:1360,4:253,5:1068,6:92,7:9124,8:116,9:3845,10:33,11
+:978,12:1
+ 89534 multiletter control sequences out of 65536+600000
  127 fonts using 14101415 bytes
  103i,25n,113p,2609b,2592s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSans-Italic.otf></usr/shar
@@ -2474,25 +2556,27 @@ entype/ibm/plex/IBMPlexSans-Regular.otf></usr/share/texmf-dist/fonts/opentype/ib
 m/plex/IBMPlexSerif-Bold.otf></usr/share/texmf-dist/fonts/opentype/ibm/plex/IBMP
 lexSerif-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/symbols/msam10.pfb>
-Output written on 0_Main.pdf (46 pages, 4717701 bytes).
+/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
+.pfb>
+Output written on 0_Main.pdf (52 pages, 4754259 bytes).
 
-PDF statistics: 777 PDF objects out of 1000 (max. 8388607)
- 657 compressed objects within 7 object streams
- 242 named destinations out of 1000 (max. 1048576)
+PDF statistics: 964 PDF objects out of 1000 (max. 8388607)
+ 834 compressed objects within 9 object streams
+ 305 named destinations out of 1000 (max. 1048576)
  616 words of extra memory for PDF output out of 10000 (max. 100000000)
 

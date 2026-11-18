@@ -48,7 +48,7 @@ La diferencia entre los dos puntos es:
     P_{2} - P_{1} = (h_{2} \cdot \rho_{g} + P_{0}) - (h_{1} \cdot \rho_{g} + P_{0})
 \end{equation}
 
-\resumebox{ejercicio}{Calculo de presión}{\footnotesize
+\resumebox{ejercicio}{Calculo de presión}[ej:calculo_de_presion]{
     Un gran tanque de almacenamiento contiene petroleo de una densidad igual a \qty{917}{\kg\per\m\cubed}. El tanque tiene una altura de \qty{3.66}{\m} y está abierto a la atmósfera con una presión de 1atm absoluta en la superficie. El tanque está lleno con petroleo a una profundidad de \qty{3.05}{\m} y contiene tambien \qty{0.61}{\m} de agua en la parte inferior. calcule la presión en pascales a \qty{3.05}{\m} de la superficie y en el fondo del tanque. También calcule la presión manométrica del fondo del tanque.
     \begin{figure}[H]
         \centering
@@ -86,7 +86,7 @@ Donde $\mu$ es la constante de proporcionalidad llamada viscosidad del fluido en
 
 Las unidades en el \emph{sistema cgs} son \unit{\g\m\per\s}, llamados Poise (P) o Centipoise (cp). 
 
-\resumebox{ejercicio}{Cálculo de esfuerzo cortante}{\footnotesize
+\resumebox{ejercicio}{Cálculo de esfuerzo cortante}[ej:esfuerzo_cortante]{
     La distancia entre las dos placas es de \qty{0.5}{\cm}. La velocidad de flujo que pasa a través es de \qty{10}{\cm\s}, y el fluido que atraviesa se trata de alcohol etílico a \qty{273}{\K}, cuya viscosidad es de \qty{1.77}{cp}.
     \begin{enumerate}
         \item Calcule el esfuerzo cortante $\tau_{yz}$ y el gradiente de velocidad
@@ -110,56 +110,6 @@ Los fluidos que obedecen la ley de viscosidad e Newton se les llama fluidos newt
 
 La viscosidad de los gases, que son fluidos newtonianos, aumenta con la temperatura e independiente de la presión.
 
-
-
-
-% -------------------------------------------------------------------- %
-
-\section{Respuestas de ejercicios}
-
-\resumebox{respuesta}{Calculo de presión}{
-\begin{gather*}
-    \mathrm{1atm} = \qty{1.01325d5}{\pascal} 
-    \quad;\quad
-    \unit{\pascal} = \frac{\unit{\kg\m\per\s\squared}}{\unit{\m\squared}} = \unit{\kg\per\m\per\s\squared}
-%    \mathrm{P_{n}} = (h_{n} \cdot \rho_{n} \cdot g) + P_{n-1}
-    \\\\
-    \mathrm{P_{Petroleo}} = \left( \qty{3.05}{\m} \cdot \qty{917}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.01325d5}{\kg\per\s\squared\per\m} = \qty{1.2876d5}{\pascal}
-    \\
-    \mathrm{P_{Agua}} = \left( \qty{0.61}{\m} \cdot \qty{1000}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.2876d5}{\kg\per\s\squared\per\m} = \qty{1.3474d5}{\pascal}
-    \\
-    \mathrm{P_{Fondo (Manométrica)}} = \qty{1.3474d5}{\pascal} - \qty{1.2876d5}{\pascal} = \qty{33415}{\pascal} = \qty{33.415}{\kilo\pascal}
-\end{gather*}
-}
-
-\resumebox{respuesta}{Cálculo de esfuerzo cortante}{\footnotesize
-\begin{enumerate}
-\item Calcule el esfuerzo cortante $\tau_{yz}$ y el gradiente de velocidad
-\begin{gather*}
-    V = \qty{10}{\cm\per\s} 
-    \quad;\quad
-    \mu = \qty{1.77}{\cp} = \qty{1.777d-3}{\P}
-    \quad;\quad 
-    y = \qty{0.5}{\cm}
-    \\
-    \tau_{yz} = \qty{1.77d-2}{\P} \cdot \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{0.354}{\pascal\s}
-    \\
-    \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
-\end{gather*}
-\item Repita en SI
-\begin{gather*}
-    V = \qty{0.1}{\m\per\s} 
-    \quad;\quad
-    \mu = \qty{1.77d-3}{\pascal\s}
-    \quad;\quad
-    y = \qty{0.005}{\m}
-    \\
-    \tau_{yz} = \qty{1.77d-3}{\pascal\s} \cdot \frac{\qty{0.1}{\m\per\s}}{\qty{0.005}{\m}} = \qty{3.54d-2}{\pascal}
-%   \\\\
-%   \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
-\end{gather*}
-\end{enumerate}
-}
 
 
 \ifx\ISMAIN\undefined

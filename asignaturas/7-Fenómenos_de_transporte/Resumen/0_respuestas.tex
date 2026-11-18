@@ -1,0 +1,390 @@
+
+
+    \section{Introducción a fenómenos de transporte}
+
+
+\resumebox[h]{respuesta}{}[ej:calculo_de_flujo]{\begin{enumerate}
+    \item Calculo del flujo:
+    \begin{gather*}
+        \Psi_{z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}}
+        \\
+        \Psi_{z} = - \frac{ \qty{0.013}{\m\squared\per\s} \cdot \left( \qty{1.37d-2}{\substance\per\m\cubed} - \qty{0.72d-2}{\substance\per\m\cubed} \right) }{\qty{0.4}{\m}} = \qty{2.1125d-4}{\substance\per\m\squared\per\s}
+    \end{gather*}
+    \item Ecuación para $\Gamma$ como función de la distancia:
+    \begin{equation*}
+         \Psi_{z} = - \frac{\delta (\Gamma_{2} - \Gamma_{1})}{Z_{2} - Z_{1}} 
+         \quad\longrightarrow\quad
+         \Gamma = \frac{\Psi_{z} \cdot Z}{-\delta}
+    \end{equation*}
+    \item $\Gamma$ en el punto medio:
+    \begin{gather*}
+        \Gamma_{\qty{0.2}{\m}} = \frac{ \qty{2.1125d-4}{\substance\per\m\squared\per\s} \cdot \qty{0.2}{\m} }{ \qty{0.013}{\m\squared\per\s} } - \qty{1.37d-2}{\substance\per\m\cubed}
+        \\
+        \Gamma_{\qty{0.2}{\m}} = \qty{1.045d-2}{\substance\per\m\cubed}
+    \end{gather*}
+\end{enumerate}}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------- %
+
+
+    \section{Presión en fluidos}
+
+
+\resumebox[h]{respuesta}{}[ej:calculo_de_presion]{\begin{gather*}
+    \qty{1}{\atm} = \qty{1.01325d5}{\pascal} 
+    \quad;\quad
+    \unit{\pascal} = \frac{\unit{\kg\m\per\s\squared}}{\unit{\m\squared}} = \unit{\kg\per\m\per\s\squared}
+%    \mathrm{P_{n}} = (h_{n} \cdot \rho_{n} \cdot g) + P_{n-1}
+    \\\\
+    \mathrm{P_{Petroleo}} = \left( \qty{3.05}{\m} \cdot \qty{917}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.01325d5}{\kg\per\s\squared\per\m} = \qty{1.2876d5}{\pascal}
+    \\
+    \mathrm{P_{Agua}} = \left( \qty{0.61}{\m} \cdot \qty{1000}{\kg\per\m\cubed} \cdot \qty{9.81}{\m\per\s\squared} \right) + \qty{1.2876d5}{\kg\per\s\squared\per\m} = \qty{1.3474d5}{\pascal}
+    \\
+    \mathrm{P_{Fondo (Manométrica)}} = \qty{1.3474d5}{\pascal} - \qty{1.2876d5}{\pascal} = \qty{33415}{\pascal} = \qty{33.415}{\kilo\pascal}
+\end{gather*}}
+
+\resumebox[h]{respuesta}{}[ej:esfuerzo_cortante]{\begin{enumerate}
+    \item Calcule el esfuerzo cortante $\tau_{yz}$ y el gradiente de velocidad
+    \begin{gather*}
+        V = \qty{10}{\cm\per\s} 
+        \quad;\quad
+        \mu = \qty{1.77}{\cp} = \qty{1.777d-3}{\P}
+        \quad;\quad 
+        y = \qty{0.5}{\cm}
+        \\
+        \tau_{yz} = \qty{1.77d-2}{\P} \cdot \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{0.354}{\pascal\s}
+        \\
+        \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
+    \end{gather*}
+    \item Repita en SI
+    \begin{gather*}
+        V = \qty{0.1}{\m\per\s} 
+        \quad;\quad
+        \mu = \qty{1.77d-3}{\pascal\s}
+        \quad;\quad
+        y = \qty{0.005}{\m}
+        \\
+        \tau_{yz} = \qty{1.77d-3}{\pascal\s} \cdot \frac{\qty{0.1}{\m\per\s}}{\qty{0.005}{\m}} = \qty{3.54d-2}{\pascal}
+    %   \\\\
+    %   \frac{\Delta V_{z}}{\Delta y} = \frac{\qty{10}{\cm\per\s}}{\qty{0.5}{\cm}} = \qty{20}{\per\s}
+    \end{gather*}
+\end{enumerate}}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------- %
+
+
+    \section{Transferencia de momento lineal}
+
+
+\resumebox[h]{respuesta}{}[ej:nre]{
+\begin{gather*}
+    \mathrm{D} = \qty{2.007}{\in} \cdot \qty{2.54}{\cm\per\in} \cdot \frac{\qty{1}{\m}}{\qty{100}{\cm}}= \qty{5.1d-2}{\m}
+    \\
+    \mathrm{V_{Volumétrica}} = \qty{10}{\gal\per\min} \cdot \frac{\qty{1}{\min}}{\qty{60}{\s}} \cdot \qty{3.7854d-3}{\m\cubed\per\gal} = \qty{6.309d-4}{\m\cubed\per\s}
+    \\
+    V = \frac{\qty{6.309d-4}{\m\cubed\per\s}}{\pi \cdot (\qty{5.1d-2}{\m} \div 2)^{2}} = \qty{0.3088}{\m\per\s}
+    \\
+    \mu = \qty{0.8007}{\cp} \cdot \frac{\qty{1d-3}{\kg\per\m\s}}{1cp} = \qty{8.007d-4}{\kg\per\m\per\s}
+    \\
+    \mathrm{N_{Re}} = \frac{\qty{5.1d-2}{\m} \cdot \qty{0.309}{\m\per\s} \cdot \qty{996}{\kg\per\m\cubed}}{\qty{8.007d-4}{\kg\per\m\per\s}} = 19602.8025
+\end{gather*}
+}
+
+\resumebox[h]{respuesta}{}[ej:flujo_masico]{
+\begin{gather*}
+    \Delta P_{f} = \frac{32\mu \cdot V \cdot \Delta L}{D^{2}} \quad\longrightarrow\quad V = \frac{D^{2} \cdot \Delta P_{f}}{32\mu \cdot \Delta L}
+    \\
+    V = \frac{(\qty{2.2d-3}{\m})^{2} \cdot \qty{639.985}{\kg\per\m\per\s\squared}}{32 \cdot \qty{1.13d-3}{\kg\per\m\per\s} \cdot \qty{0.317}{\m}} = \qty{0.27}{\m\per\s}
+    \\
+    Q = \qty{0.27}{\m\per\s} \cdot \qty{3.8d-6}{\m\squared} = \qty{1.026d-6}{\m\cubed\per\s}
+\end{gather*}
+}
+
+\resumebox[h]{respuesta}{}[ej:caida_de_presion]{
+\begin{gather*}
+    \mathrm{N_{Re}} = \frac{\qty{875}{\kg\per\m\cubed} \cdot \qty{0.225}{\m\per\s} \cdot \qty{2.2d-3}{\m}}{\qty{1.13d-3}{\kg\per\m\per\s}} = 383.2964
+    \\
+    f = \frac{16}{383.2984} = 0.0417 
+    \\
+    \Delta P_{f} = \frac{4 \cdot 0.0417 \cdot \qty{875}{\kg\per\m\cubed} \cdot \qty{0.317}{\m} \cdot (\qty{0.225}{\m\per\s})^{2}}{2 \cdot \num{2.2d-3}} = \qty{532.324}{\kg\per\m\per\s\squared}
+\end{gather*}
+}
+
+\resumebox[h]{respuesta}{}[ej:perdida_por_friccion]{
+\begin{gather*}
+    D = \qty{2.067}{\in} = \qty{5.26d-2}{\m}
+    \\
+    \rho = \qty{801}{\kg\per\m\cubed}
+    \\
+    \mu = \qty{4.46}{\cp} = \qty{4.46d-3}{\kg\per\m\per\s}
+    \\
+    V = \qty{4.57}{\m\per\s}
+    \\
+    \Delta L = \qty{36.6}{\m}
+    \\\\
+    \mathrm{N_{Re}} = \frac{\qty{5.26d-2}{\m} \cdot \qty{4.57}{\m\per\s} \cdot \qty{801}{\kg\per\m\cubed}}{\qty{4.46d-3}{\kg\per\m\per\s}} = 43171.745 \approx \num{4.3d4}
+    \\
+    f_{D} = 0.024 \quad\longleftarrow\quad \text{De Diagrama de Moody}
+    \\
+    F_{f} = \frac{0.024 \cdot \qty{36.6}{\m} \cdot (\qty{4.57}{\m\per\s})^{2}}{2(\qty{5.26d-2}{\m})} = \qty{174.4}{\m\squared\per\s\squared}
+\end{gather*}
+}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------- %
+
+
+    \section{Transporte de calor}
+
+
+\resumebox[h]{respuesta}{}[ej:velocidad_de_transmision_de_calor]{
+    \begin{gather*}
+        \hat{M_{h}} = \qty{10}{\m\cubed\per\hour} \cdot \qty{1000}{\kg\per\m\cubed} \div \qty{3600}{\s\per\hour} = \qty{2.77}{\kg\per\s}
+        \\\\
+        \hat{M_{c}} = \qty{25}{\m\cubed\per\hour} \cdot \qty{1000}{\kg\per\m\cubed} \div \qty{3600}{\s\per\hour} = \qty{6.94}{\kg\per\s}
+        \\\\
+        C_{pc} = C_{ph}
+        \\\\
+        C_{p} = \qty{75.4}{\J\per\mole\per\degreeCelsius} \div \qty{18}{\g\per\mole} = \qty{4.18}{\J\per\g\per\degreeCelsius} = \qty{4188.8}{\J\per\kg\per\degreeCelsius}
+        \\\\
+        \hat{Q} = \hat{M_{h}} \cdot C_{p} (T_{hi} - T_{ho}) \quad\longrightarrow\quad \hat{Q} = \qty{2.77}{\kg\per\s} \cdot \qty{4188.8}{\J\per\kg\per\degreeCelsius} (\qty{121}{\degreeCelsius} - \qty{30}{\degreeCelsius}) = \qty{1029188.16}{\J\per\s}
+        \\\\
+        \hat{Q} = \hat{M_{h}} \cdot C_{p} (T_{hi} - T_{ho}) \quad\longrightarrow\quad T_{co} = \frac{\hat{Q}}{\hat{M_{c}} \cdot C_{p}} + T_{ci}
+        \\\\
+        T_{co} = \frac{\hat{Q}}{\hat{M_{c}} \cdot C_{p}} + T_{ci} \quad\longrightarrow\quad T_{co} = \frac{\qty{1029188.16}{\J\per\s}}{\qty{6.94}{\kg\per\s} \cdot \qty{4188.8}{\J\per\kg\per\degreeCelsius}} + \qty{15}{\degreeCelsius} = \qty{50.4}{\degreeCelsius}
+    \end{gather*}
+}
+
+\resumebox[h]{respuesta}{}[ej:temperatura_final]{
+    Datos de inicio y conversiones:
+    \begin{itemize}
+        \item $\rho = \qty{1000}{\kg\per\m\cubed}$
+        \item $C_{p} = \qty{75.4}{\J\per\mole\per\degreeCelsius} = \qty{4188.8}{\J\per\kg\per\degreeCelsius}$
+        \item $V = \qty{150}{\m\cubed}$
+        \item $T_{b} = \qty{35}{\degreeCelsius}$
+        \item $V_{ag} = \qty{1}{\kilo\watt\per\m\cubed}$
+        \item $V_{C(\ce{O2})} = \qty{1.5}{\kg\per\m\cubed\per\hour} = \qty{4.16d-4}{kg\per\m\cubed\per\s}$
+        \item $Q_{w} = \qty{60}{\m\cubed\per\hour} = \qty{0.016}{\m\cubed\per\s}$
+        \item $T_{ci} = \qty{10}{\degreeCelsius}$
+    \end{itemize}
+    Procedimiento:
+    \begin{gather*}
+        \Delta H_{\mathrm{rxn}} = \qty{14375}{\kilo\J\per\kg} \cdot \qty{4.16}{\kg\per\m\cubed\per\s} \cdot \qty{150}{\m\cubed} = \qty{897}{\kilo\J\per\s} = \qty{897}{\kilo\watt}
+        \\\\
+        C_{g} = \qty{460}{\kilo\J\per\mole} \div \qty{36}{\g\per\mole} \cdot \qty{1000}{\g\per\kg} = \qty{14375}{\kilo\J\per\kg}
+        \\\\
+        W_{s} = \qty{1}{\kilo\watt\per\m\cubed} \cdot \qty{150}{\m\cubed} = \qty{150}{\kilo\watt}
+        \\\\
+        \hat{Q} = -(-\qty{897}{\kilo\watt}) \cdot \qty{150}{\kilo\watt} = \qty{1047}{\kilo\watt}
+        \\\\
+        \hat{Q} = \qty{1047}{\kilo\watt} = \qty{1047000}{\J}
+        \\\\
+        \hat{M_{c}} = \hat{Q_{w}} \cdot \rho = \qty{0.016}{\m\cubed\per\s} \cdot \qty{1000}{\kg\per\m\cubed} = \qty{16.6}{\kg\per\s} 
+        \\\\    
+        \hat{M_{c}} \cdot C_{pc} \cdot (T_{co} - T_{ci}) = \hat{Q} \quad\longrightarrow\quad T_{co} = \frac{\hat{Q}}{\hat{M_{c} \cdot C_{pc}}} + T_{ci}
+        \\\\
+        T_{co} = \frac{\qty{1047000}{\J}}{\qty{16.6}{\kg\per\s} \cdot \qty{4188
+        8}{\J\per\kg\per\degreeCelsius}} + \qty{10}{\degreeCelsius} = \qty{25}{\degreeCelsius}
+    \end{gather*}
+}
+
+\resumebox[h]{respuesta}{}[ej:coeficiente_de_transmision_de_calor]{
+    Datos de inicio y conversiones:
+    \begin{itemize}
+        \item $\text{Tuberías} = 42$
+        \item $D = \qty{1.5}{\cm} = \qty{0.015}{\m}$
+        \item $L = \qty{4}{\m}$
+        \item $Q = \qty{25.5}{\m\cubed\per\hour} = \qty{7.083d-3}{\m\cubed\per\s}$
+        \item $\mu = \qty{1d-3}{\kg\per\m\per\s}$
+        \item $\rho = \qty{1010}{\kg\per\m\cubed}$
+        \item $C_{p} = \qty{4}{\kilo\J\per\kg\per\degreeCelsius} = \qty{4000}{\J\per\kg\per\degreeCelsius}$
+        \item $k_{fb} = \qty{0.64}{\watt\per\m\per\degreeCelsius}$
+    \end{itemize}
+    Procedimiento:
+    \begin{gather*}
+        V = \frac{Q}{\text{Tuberías} \cdot \pi \cdot (\frac{D}{2})^{2}} = \frac{\qty{7.083d-3}{\m\cubed\per\s}}{42 \cdot \pi \cdot (\frac{\qty{0.015}{\m}}{2})^{2}} = \qty{0.9543}{\m\per\s}
+        \\\\
+        \frac{L}{D} = \frac{\qty{4}{\m}}{\qty{0.015}{\m}} = 266.6
+        \\\\
+        N_{Re} = \frac{D \cdot V \cdot \rho}{\mu} = \frac{\qty{0.015}{\m} \cdot \qty{0.9543}{\m\per\s} \cdot \qty{1010}{\kg\per\m\cubed}}{\qty{1d-3}{\kg\per\m\per\s}} = 14457.645
+        \\\\
+        P_{r} = \frac{C_{p} \cdot \mu}{k_{fb}} = \frac{\qty{4000}{\J\per\kg\per\degreeCelsius} \cdot \qty{1d-3}{\kg\per\m\per\s}}{\qty{0.64}{\watt\per\m\per\degreeCelsius}} = 6.25
+        \\\\    
+        N_{u} = 0.023 \cdot N_{Re}^{0.8} \cdot P_{r}^{0.4} = 0.023 \cdot (14457.645)^{0.8} \cdot (6.25)^{0.4} = 101.8962
+        \\\\
+        N_{u} = \frac{h \cdot D}{k_{fb}} \quad\longrightarrow\quad h = \frac{N_{u} \cdot k_{fb}}{D}
+        \\\\
+        h = \frac{101.8962 \cdot \qty{0.64}{\watt\per\m\per\degreeCelsius}}{\qty{0.015}{\m}} = \qty{4347.5712}{\watt\per\m\squared\per\degreeCelsius}
+    \end{gather*}
+}
+
+\resumebox[h]{respuesta}{}[ej:longitud_en_base_a_coeficiente_de_calor]{
+    Datos y conversiones:
+    \begin{itemize}
+        \item $\mu$ = \qty{5d-3}{\kg\per\m\per\s}
+        \item $\rho$ = \qty{1000}{\kg\per\m\cubed}
+        \item $C_{p}$ = \qty{4.2}{\kilo\J\per\kg\per\degreeCelsius} = \qty{42000}{\J\per\kg\per\degreeCelsius}
+        \item $k_{fb}$ = \qty{0.7}{\watt\per\m\per\degreeCelsius}
+        \item $D$ = \qty{5}{\m}
+        \item $N_{i}$ = \qty{60}{\rpm} = \qty{1}{\per\s}
+        \item $D_{T}$ = \qty{1.8}{\m}
+    \end{itemize}
+    Procedimiento:
+    \begin{gather*}
+        N_{Rei} = \frac{N_{i} \cdot D_{i} \cdot \rho}{\mu} = \frac{\qty{1}{\per\s} \cdot (\qty{1.8}{\m})^{2} \cdot \qty{1000}{\kg\per\m\cubed}}{\qty{5d-3}{\kg\per\m\per\s}} = \num{6.48d5}
+        \\\\
+        P_{r} = \frac{cp \cdot \mu_{b}}{k_{fb}} = \frac{\qty{4200}{\J\per\kg\per\degreeCelsius} \cdot \qty{5d-3}{\kg\per\m\per\s}}{\qty{0.7}{\J\per\m\per\s\per\degreeCelsius}} = \num{28.5714}
+        \\\\
+        N_{u} = N_{u} = 0.87 \cdot N_{Rei}^{0.62} \cdot P_{r}^{0.33} \cdot (\frac{\mu_{b}}{\mu_{w}})^{0.14} = 0.87 \num{6.48d5}\cdot ^{0.62} \cdot \num{28.5714}^{0.33} = \num{10547.588}
+        \\\\
+        h = \frac{N_{u} \cdot k_{fb}}{D} = \frac{\num{10547.588 } \cdot\qty{0.7}{\J\per\m\per\s\per\degreeCelsius}}{\qty{5}{\m}} = \qty{1476.6625}{\J\per\s\per\degreeCelsius}
+    \end{gather*}
+}
+
+\resumebox[h]{respuesta}{}[ej:longitud_para_fermentador]{
+    Datos y conversiones:
+    \begin{itemize}
+        \item $T_{1} = \qty{10}{\degreeCelsius}$
+        \item $T_{2} = \qty{25}{\degreeCelsius}$
+        \item $T_{f} = \qty{27}{\degreeCelsius}$
+        \item $\hat{Q} = \qty{550}{\kilo\watt} = \qty{5.5d5}{\watt}$
+        \item $h_{fh} = \qty{2150}{\watt\per\m\squared\per\degreeCelsius}$
+        \item $h_{c} = \qty{14000}{\watt\per\m\squared\per\degreeCelsius}$
+        \item $D = \qty{8}{\cm} = \qty{0.08}{\m}$
+        \item $B = \qty{5}{\mm} = \qty{5d-4}{\m}$
+        \item $k = \qty{60}{\watt\per\m\per\degreeCelsius}$
+        \item $h_{hc} = \qty{8500}{\watt\per\m\squared\per\degreeCelsius}$
+    \end{itemize}
+    Nuevas fórmulas de apoyo:
+    \begin{gather*}
+        A = 2\pi \cdot R \cdot L \quad\longrightarrow\quad L = \frac{A}{2\pi \cdot R}
+        \\\\
+        \hat{Q} = U \cdot A \cdot \Delta T \quad\longrightarrow\quad A = \frac{\hat{Q}}{U \cdot \Delta T}
+        \\\\
+        \frac{1}{U} = \frac{1}{h_{fh}} + \textcolor{red}{\frac{1}{h_{h}}} + \frac{B}{k} + \frac{1}{h_{c}} + \frac{1}{h_{hc}}
+        \\\\
+        \Delta T = \frac{2T_{f} - (T_{1} + T_{2})}{2}
+    \end{gather*}
+    Procedimiento:
+    \begin{gather*}
+        \frac{1}{U} = \frac{1}{\qty{2150}{\watt\per\m\squared\per\degreeCelsius}} + \frac{\qty{5d-4}{m}}{\qty{60}{\watt\per\m\per\degreeCelsius}} + \frac{1}{\qty{1.4d-4}{\watt\per\m\squared\per\degreeCelsius}} + \frac{1}{\qty{8500}{\watt\per\m\squared\per\degreeCelsius}} = \frac{1}{\qty{7.375d-4}{\watt\per\m\squared\per\degreeCelsius}}
+        \\\\
+        U = \frac{1}{\frac{1}{\qty{7.375d-4}{\watt\per\m\squared\per\degreeCelsius}}} = \qty{1355.93}{\watt\per\m\squared\per\degreeCelsius}
+        \\\\
+        \Delta T = \frac{2 \cdot \qty{27}{\degreeCelsius} - (\qty{10}{\degreeCelsius} + \qty{25}{\degreeCelsius})}{2} = \qty{9.5}{\degreeCelsius}
+        \\\\
+        A = \frac{\qty{5.5d5}{\watt}}{\qty{1355.93}{\watt\per\m\squared\per\degreeCelsius} \cdot \qty{9.5}{\degreeCelsius}} = \qty{42.7}{\m\squared} 
+        \\\\
+        L = \frac{\qty{42.7}{\m\squared}}{2\pi \cdot \frac{\qty{0.08}{\m\squared}}{2}} = \qty{169.8979}{\m} 
+    \end{gather*}
+}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------- %
+
+
+    \section{Transporte de masa}
+
+
+\resumebox[h]{respuesta}{}[ej:velocidad_especifica_de_consumo_de_oxigeno]{
+    Datos y conversiones:
+    \begin{itemize}
+        \item $K_{LA} = \qty{0.17}{\per\s}$
+        \item $C_{AL}^{\ast} = \qty{8d-3}{\kg\per\m\cubed}$
+        \item $V = \qty{15}{\m\cubed}$
+        \item $q_{\ce{O}} = \qty{12.5}{\milli\mole\per\g\per\hour}$
+        \item $q_{\ce{O}(2)} = \qty{3}{\milli\mole\per\g\per\hour}$
+    \end{itemize}
+    Procedimiento:
+    \begin{gather*}
+        \qty{12.5}{\milli\mole\per\g\per\hour} \cdot \frac{\qty{1}{\mole}}{\qty{1000}{\milli\mole}} \cdot \frac{\qty{32}{\g}}{\qty{1}{\mole}} \cdot \frac{\qty{1}{\hour}}{\qty{3600}{\s}} \cdot \frac{\qty{1}{\kg}}{\qty{1000}{\g}} = \qty{1.11d-7}{\kg\mole\per\g\per\s}
+        \\
+        X_{Max} = \frac{K_{LA} \cdot C_{AL}^{\ast}}{q_{0}} = \frac{\qty{0.17}{\per\s} \cdot \qty{8d-3}{\kg\per\m\cubed}}{\qty{1.11d-7}{\kg\mole\per\g\per\s}} = \qty{12252.25}{\g\per\m\cubed} = \qty{12.25}{\kg\per\m\cubed}
+        \\
+        \qty{3}{\milli\mole\per\g\per\hour} \cdot \frac{\qty{1}{\mole}}{\qty{1000}{\milli\mole}} \cdot \frac{\qty{32}{\g}}{\qty{1}{\mole}} \cdot \frac{\qty{1}{\hour}}{\qty{3600}{\s}} \cdot \frac{\qty{1}{\kg}}{\qty{1000}{\g}} = \qty{2.66d-8}{\kg\mole\per\g\per\s}
+        \\
+        X_{Max(2)} = \frac{K_{LA} \cdot C_{AL}^{\ast}}{q_{0}} = \frac{\qty{0.17}{\per\s} \cdot \qty{8d-3}{\kg\per\m\cubed}}{\qty{2.66d-8}{\kg\mole\per\g\per\s}} = \qty{51127.82}{\g\per\m\cubed} = \qty{51.13}{\kg\per\m\cubed}
+    \end{gather*}
+}
+
+\resumebox[h]{respuesta}{}[ej:kla]{}
+
+\resumebox[h]{respuesta}{}[ej:kla_minimo]{
+    Datos:
+    \begin{itemize}
+        \item $T = \qty{30}{\degreeCelsius}$
+        \item $P = \qty{1}{\atm}$
+        \item $q_{0} \cdot X = \qty{80}{\milli\mole\per\L\per\hour}$
+        \item $C_{Crit} = \qty{0.004}{\milli\mole\per\L}$
+        \item $C_{AL}^{\ast} = 0.9(C_{AL(W)}^{\ast})$
+        \item $C_{AL(W)}^{\ast} = \qty{8.05d-3}{\kg\per\m\cubed}$
+    \end{itemize}
+    Conversiones:
+    \begin{gather*}
+        q_{0} \cdot X = \qty{80}{\milli\mole\per\L\per\hour}\cdot\frac{\qty{1}{\mole}}{\qty{1000}{\milli\mole}}\cdot\frac{\qty{32}{\g}}{\qty{1}{\mole}}\cdot\frac{\qty{1}{\kg}}{\qty{1000}{\g}}\cdot\frac{\qty{1000}{\L}}{\qty{1}{\m\cubed}}\cdot\frac{\qty{1}{\hour}}{\qty{3600}{\s}}=\qty{7.1d-4}{\kg\per\m\cubed\per\s}
+        \\\\
+        C_{Crit} = \qty{0.004}{\milli\mole\per\L}\cdot\frac{\qty{1000}{\L}}{\qty{1}{\m\cubed}}\cdot\frac{\qty{1}{\mole}}{\qty{1000}{\milli\mole}}\cdot\frac{\qty{32}{\g}}{\qty{1}{\mole}}\cdot\frac{\qty{1}{\kg}}{\qty{1000}{\g}}=\qty{1.28d-4}{\kg\per\m\cubed}
+    \end{gather*}
+    Procedimiento:
+    \begin{enumerate}
+    \item \begin{gather*}
+        C_{AL}^{\ast} = 0.9 \cdot C_{AL(W)}^{\ast} = 0.9 \cdot \qty{8.05d-3}{\kg\per\m\cubed} = \qty{7.245d-3}{\kg\per\m\cubed}
+        \\\\
+        (k_{L} \cdot a)_{Crit} = \frac{q_{0} \cdot X}{C_{AL}^{\ast} - C_{Crit}} = \frac{\qty{7.1d-4}{\kg\per\m\cubed\per\s}}{\qty{7.245d-3}{\kg\per\m\cubed} - \qty{1.28d-4}{\kg\per\m\cubed}} = \qty{0.0997}{\per\s}
+    \end{gather*}
+    \item\begin{gather*}
+        C_{AL(\ce{O2} \ \text{Puro en caldo})}^{\ast} = 0.9 \cdot C_{AL(\ce{O2} \ \text{Puro en agua})}^{\ast} = 0.9 \cdot \qty{3.84d-2}{\kg\per\m\cubed} = \qty{0.03456}{\kg\per\m\cubed}
+        \\\\
+        (k_{L} \cdot a)_{Crit (\ce{O2} \ Puro)} = \frac{\qty{7.1d-4}{\kg\per\m\cubed\per\s}}{\qty{0.03456}{\kg\per\m\cubed} - \qty{1.28d-4}{\kg\per\m\cubed}} = \qty{0.0206}{\per\s}
+    \end{gather*}
+    \end{enumerate}
+}
+
+\resumebox[h]{respuesta}{}[ej:efecto_de_solutos]{
+    Datos:
+    \begin{itemize}
+        \item $T = \qty{25}{\degreeCelsius}$
+        \item $V = \qty{20}{\m\cubed}$
+        \item $h = \qty{3.5}{\m}$
+        \item $\rho_{W} = \qty{1000}{\kg\per\m\cubed}$
+        \item $F_{G} = \qty{25}{\m\cubed\per\min} \cdot \frac{\qty{1}{\min}}{\qty{60}{\s}}= \qty{0.416}{\m\cubed\per\s}$
+        \item $Q = \qty{407}{\L\per\s} \cdot \frac{\qty{1}{\m\cubed}}{\qty{1}{\L}} = \qty{0.407}{\m\cubed\per\s}$
+    \end{itemize}
+    Procedimiento:
+    \begin{itemize}
+        \item\begin{gather*}a
+        \end{gather*}
+        \item\begin{gather*}a
+        \end{gather*}
+        \item\begin{gather*}a
+        \end{gather*}
+        \item\begin{gather*}a
+        \end{gather*}
+        \item\begin{gather*}a
+        \end{gather*}
+        \item\begin{gather*}a
+        \end{gather*}
+        \item\begin{gather*}a
+        \end{gather*}
+    \end{itemize}
+}
+
+\resumebox[h]{respuesta}{}[ej:medicion_de_kla]{
+    Procedimiento:
+    \begin{table}[H]\centering{\tabstyle[nc]
+    \begin{tabular}{w{c}{0.45\linewidth}w{c}{0.45\linewidth}}\hline
+        \textbf{$\ln\left(\frac{\bar{C}_{AL}-C_{AL1}}{\bar{C}_{AL}-C_{AL2}}\right)$} & \textbf{$t_{2} - t_{1}$} \\ \hline
+        0      &   0 \\
+        0.405  &   5 \\
+        0.7985 &  10 \\
+        1.6094 &  20 \\
+        2.3026 &  30 \\
+        2.9957 &  40 \\
+        4.0943 &  60 \\
+          ---  &  90 \\
+          ---  & 120 \\
+    \hline\end{tabular}
+    }\end{table}
+}

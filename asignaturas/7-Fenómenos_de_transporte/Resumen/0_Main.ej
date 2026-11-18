@@ -1,8 +1,20 @@
-\contentsline {ejercicio}{\numberline {1.1} Cálculo de flujo}{3}{equation.1.3}%
-\contentsline {ejercicio}{\numberline {1.2} Cálculo de flujo}{6}{equation.1.11}%
-\contentsline {ejercicio}{\numberline {2.3} Calculo de presión}{9}{equation.2.5}%
-\contentsline {ejercicio}{\numberline {2.4} Cálculo de esfuerzo cortante}{10}{equation.2.8}%
-\contentsline {ejercicio}{\numberline {2.5} Número de Reynolds}{11}{equation.2.9}%
-\contentsline {ejercicio}{\numberline {2.6} Cálculo de flujo másico}{12}{equation.2.12}%
-\contentsline {ejercicio}{\numberline {2.7} Cálculo de caida de presión}{13}{equation.2.16}%
-\contentsline {ejercicio}{\numberline {2.8} Cálculo de pérdida por fricción}{13}{equation.2.16}%
+\contentsline {subsection}{Cálculo de flujo}{3}{ejercicio.1.1}%
+\contentsline {subsection}{Calculo de presión}{8}{ejercicio.2.1}%
+\contentsline {subsection}{Cálculo de esfuerzo cortante}{9}{ejercicio.2.2}%
+\contentsline {subsection}{Número de Reynolds}{11}{ejercicio.3.1}%
+\contentsline {subsection}{Cálculo de flujo másico}{12}{ejercicio.3.2}%
+\contentsline {subsection}{Cálculo de caida de presión}{13}{ejercicio.3.3}%
+\contentsline {subsection}{Cálculo de pérdida por fricción}{13}{ejercicio.3.4}%
+\contentsline {subsection}{Cálculo de caida de presión por efectos de fricción}{13}{ejercicio.3.5}%
+\contentsline {subsection}{Cálculo de pérdida por fricción $F_{f}$}{13}{ejercicio.3.6}%
+\contentsline {subsection}{Cálculo de velocidad de flujo}{13}{ejercicio.3.7}%
+\contentsline {subsection}{Cálculo de velocidad de transmisión de calor}{17}{ejercicio.4.1}%
+\contentsline {subsection}{Cálculo de temperatura final}{18}{ejercicio.4.2}%
+\contentsline {subsection}{Cálculo de coeficiente de transmisión de calor}{20}{ejercicio.4.3}%
+\contentsline {subsection}{Cálculo de longitud en base a coeficientes de calor}{20}{ejercicio.4.4}%
+\contentsline {subsection}{}{20}{ejercicio.4.5}%
+\contentsline {subsection}{Cálculo de velocidad específica de consumo de oxígeno}{29}{ejercicio.5.1}%
+\contentsline {subsection}{Calculo de $k_{L} \cdot a$}{33}{ejercicio.5.2}%
+\contentsline {subsection}{Cálculo de $k_{L}\cdot a$ mínimo}{33}{ejercicio.5.3}%
+\contentsline {subsection}{Efecto de solutos}{33}{ejercicio.5.4}%
+\contentsline {subsection}{Medición de $k_{L}\cdot a$}{33}{ejercicio.5.5}%
