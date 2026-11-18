@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex 0_Main"] 1794953288.4561 "0_Main.aux" "0_Main.bbl" "0_Main" 1794953297.5896 0
-  "./Main.bib" 1794953231.00284 2984 db5ce97b209e902293d1195a18d04d24 ""
+["bibtex 0_Main"] 1794971797.27895 "0_Main.aux" "0_Main.bbl" "0_Main" 1794971808.20761 0
+  "./Main.bib" 1794969924.41291 2984 db5ce97b209e902293d1195a18d04d24 ""
   "/usr/share/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1775415801 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "0_Main.aux" 1794953296.74548 11291 c8438b1724af07636d7e6fa7f7c1b420 "lualatex"
+  "0_Main.aux" 1794971807.26564 11735 6b7154e16561e45d71824ab0d6de5831 "lualatex"
   (generated)
   "0_Main.bbl"
   "0_Main.blg"
   (rewritten before read)
-["lualatex"] 1794953288.61518 "/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.tex" "0_Main.pdf" "0_Main" 1794953297.5898 0
+["lualatex"] 1794971797.45435 "/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.tex" "0_Main.pdf" "0_Main" 1794971808.208 0
   "../../0-tex_resources/glosario_general.tex" 1793766598.61943 2384 e885c218314e3b7c546cfd91e022aa3e ""
   "../../0-tex_resources/logo_upsin.png" 1778867970.62697 386081 192a5d399e668da3c073c3f974ed4d33 ""
   "../portada.jpg" 1794430843.87476 1779259 3a05e164bee996ef1c28b1e9cfad8bf3 ""
@@ -24,7 +24,7 @@
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1790465304.03941 127314 7c5efae986e60281c7ad546cf8ed9a14 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1794944031.84006 32706 0f5b91ade018b51213f0826c42c32f47 ""
   "/home/darah/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790638341.74601 443539 61843b3a453ad8767a5dd73dd397d25f ""
-  "/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.tex" 1794953279.02988 1109 754b94d98737a7a4c3c17ecfdf27b0e9 ""
+  "/home/darah/Documentos/Bt_Archive/asignaturas/7-Operaciones_unitarias/Resumen/0_Main.tex" 1794971788.33546 1109 754b94d98737a7a4c3c17ecfdf27b0e9 ""
   "/home/darah/texmf/tex/latex/Classes/AsignaturaResumen.cls" 1794946021.05446 9475 d0211956c2e7c420998302f0c19c1051 ""
   "/home/darah/texmf/tex/latex/Packages/mychemfig.sty" 1789440855.52094 893 fcb2222ca4ef806c2e6612bb5b0708ee ""
   "/home/darah/texmf/tex/latex/Packages/myunits.sty" 1793818299.10442 745 fb61673477a48e2e9bf94df9d6f2c64c ""
@@ -433,16 +433,16 @@
   "/usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1775415801 13566 16df94dd2de231b2bca0aaa0190941fe ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1792542988 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1792542914 5659012 01c878cc1fea811ee86e25c36f777519 ""
-  "03.tex" 1794938895.44799 29362 fe9c3b98a1669bcfd29f3948a699363c ""
-  "04.tex" 1794953270.39961 5142 c918a5c00cb6e86cc7511639c974885b ""
+  "03.tex" 1794971751.89215 29365 d2971e12b07d3a9781177a10f6157ea3 ""
+  "04.tex" 1794971387.68021 9690 d148e9d3f1a106af3859d0aed03b29aa ""
   "06.tex" 1794719085.03403 2510 7d558171384641abaf9eacb4dcb13d64 ""
   "0_Main.acr" 1794790027.04079 6 9f404503043ec80c08484be9f659189e ""
-  "0_Main.aux" 1794953296.74548 11291 c8438b1724af07636d7e6fa7f7c1b420 "lualatex"
-  "0_Main.bbl" 1794953288.60552 639 6d59ae9c2c518199ca0e39f2431dbae1 "bibtex 0_Main"
+  "0_Main.aux" 1794971807.26564 11735 6b7154e16561e45d71824ab0d6de5831 "lualatex"
+  "0_Main.bbl" 1794971797.44203 639 6d59ae9c2c518199ca0e39f2431dbae1 "bibtex 0_Main"
   "0_Main.gls" 1794790027.0407 6 9f404503043ec80c08484be9f659189e ""
-  "0_Main.out" 1794953296.74948 6452 82de8b0be83a19fc69afd4f30333cf42 "lualatex"
-  "0_Main.tex" 1794953279.02988 1109 754b94d98737a7a4c3c17ecfdf27b0e9 ""
-  "0_Main.toc" 1794953296.74948 2646 4c5dbed1a32186af7390a16eeccbd481 "lualatex"
+  "0_Main.out" 1794971807.27064 6679 f3b6df9e7466292696873712d18ffa51 "lualatex"
+  "0_Main.tex" 1794971788.33546 1109 754b94d98737a7a4c3c17ecfdf27b0e9 ""
+  "0_Main.toc" 1794971807.27164 2803 778455026a86a47df79ad973c056d6bc "lualatex"
   "data/esterilizacion.dat" 1794677625.07543 2861 7a26631b87b6317fa6ecabc265848970 ""
   "images/fig:centrifuga_de_discos.tex" 1794861962.89119 3101 70764e254b161e27f0a13364604cc7a1 ""
   "images/fig:centrífuga_tubular.tex" 1794862145.71619 1901 25cb38eb044b459b6efbb39510c8d800 ""

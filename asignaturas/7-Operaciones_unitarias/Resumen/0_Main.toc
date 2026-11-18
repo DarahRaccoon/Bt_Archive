@@ -22,7 +22,9 @@
 \contentsline {subsection}{\numberline {6.6}Ecuaciones de diseño ajustadas ($Q_{50\%}$)}{13}{subsection.1.6.6}%
 \contentsline {chapter}{\numberline {2}Operación de transporte de momento: Filtración}{14}{chapter.2}%
 \contentsline {section}{\numberline {1}Fundamentos de filtración convencional}{14}{section.2.1}%
-\contentsline {subsection}{\numberline {1.1}Filtración convencional con tortas compresibles}{16}{subsection.2.1.1}%
-\contentsline {part}{II\hspace {1em}Operaciones unitarias de transferencia de calor}{17}{part.2}%
-\contentsline {chapter}{\numberline {3}Operación de transporte de calor: Esterilización}{18}{chapter.3}%
-\contentsline {chapter}{Bibliografía}{20}{appendix*.9}%
+\contentsline {subsection}{\numberline {1.1}Tortas}{14}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ley de D'Arcy}{15}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {1.3}Ajuste de la ecuación para tortas compresibles}{17}{subsection.2.1.3}%
+\contentsline {part}{II\hspace {1em}Operaciones unitarias de transferencia de calor}{19}{part.2}%
+\contentsline {chapter}{\numberline {3}Operación de transporte de calor: Esterilización}{20}{chapter.3}%
+\contentsline {chapter}{Bibliografía}{22}{appendix*.10}%

@@ -1,13 +1,11 @@
 
 La filtración se define como la separación de un sólido de un fluido por acción de un medio filtrante y un gradiente de presión. Esta operación se utiliza tanto para recuperar un sólido de interés o para eliminar sólidos indeseados.
 
-% FUNDAMENTO GENERAL
+El elemento general que hace posible una filtración es la caída de presión a través de un medio filtrante. La caída de presión produce el movimiento del líquido a través del medio filtrante, mientras que este segundo cuenta con poros de un tamaño determinado que retienen las partículas presentes en el líquido cuyo tamaño sea menor al del poro.
 
 \begin{equation}
     \text{Flujo} = \frac{\text{Caída de presión}}{\text{Resistencia}}
 \end{equation}
-
-En el contexto de la biotecnología hay tres tipos generales de filtraciones: la convencional, la de lecho profundo y la filtración con membranas. Cada uno de estos aplica el fundamento general anteriormente mencionado de manera considerablemente distinta. Dado que la filtración convencional es la más usada, se verá unicamente esta.
 
 
 
@@ -20,90 +18,128 @@ En el contexto de la biotecnología hay tres tipos generales de filtraciones: la
     \label{fig:esquema_de_equipo_de_filtracion}
 \end{figure}\end{minipage}}
 
-La filtración convencional se caracteriza por una acumulación de sólidos (``torta'') sobre el medio filtrante conforme se va llevando a cabo la filtración. 
+En una filtración convencional el líquido fluye de manera perpendicular al medio filtrante, el cual en este tipo de filtraciones consiste en una tela con sus respectivos poros. La filtración convencional se caracteriza por una acumulación de sólidos (``torta'') sobre el medio filtrante conforme se va llevando a cabo la filtración. 
 
-Las tortas pueden ser compresibles o incombresibles. Las tortas incompresibles son aquellas en las que la presión no comprime el material, permitiendo que los poros no se tapen, y ejemplo de estas son materiales minerales. Dado que con las tortas incompresibles no se modifica la resistencia conforme se ejecuta la filtración la ecuación de 
 
-Una filtración convencional parte de la Ley de D'Arcy (\autoref{eq:ley_de_darcy}), la cual explica como la velocidad ($v$) es resultado del gradiente de presión ($\Delta P$) y se ve afectada por aspectos como la viscosidad del líquido filtrado ($\mu$), la longitud del medio filtrante que debe atravesar el líquido ($l$) y la permeabilidad ($k$) del medio filtrante, o sea, la facilidad con la que tal medio permite el paso del líquido filtrado. 
 
-\begin{equation*}\label{eq:ley_de_darcy}
+\subsection{Tortas}
+
+Como se mencionaba antes, las llamadas tortas en una filtración son aquella acumulación de sólidos que son retenidos por el medio filtrante. Estas tortas se clasifican en dos tipos:
+
+\begin{itemize}
+    \item \emph{Incompresibles}: Son aquellas en las que los sólidos acumulados no se comprimen conforme se acumulan en el medio filtrante. Ejemplo de tortas incompresibles son materiales minerales.
+    \item \emph{Compresibles}: En estas los sólidos si se comprimen conforme la torta se va formando durante la filtración. Casi todas las tortas formadas por materiales biológicos son ejemplo de tortas compresibles.
+\end{itemize}
+
+La compresión de los sólidos puede hacer que los poros del medio filtrante por los cuales pasa el líquido se tapen, lo que reduce el área efectiva por la que puede fluir tal líquido. Tal reducción del área genera un aumento en la resistencia de la filtración ($R$), lo cual a su vez reduce la velocidad del proceso. Una compresión demasiado alta puede incluso provocar el taponamiento completo del medio filtrante, deteniendo la operación.
+
+
+
+\subsection{Ley de D'Arcy}
+
+\resumebox[b]{definicion}{Permeabilidad}{Facilidad que presenta el medio filtrante a permitir el paso de un líquido a través de él.}
+
+Una filtración convencional parte de la Ley de D'Arcy (\autoref{eq:velocidad_de_filtracion_darcy}), la cual explica como la velocidad con la que el líquido fluye ($v$) es proporcional al gradiente o caída de presión que genera el movimiento del líquido ($\Delta P$) y se ve afectada por aspectos como la viscosidad del líquido filtrado ($\mu$), así como la longitud ($l$) y permeabilidad ($k$) del medio filtrante.
+
+\begin{equation}\label{eq:velocidad_de_filtracion_darcy}
     v = \frac{k \cdot \Delta P}{\mu \cdot l}
-\end{equation*}
-
-Esta velocidad de filtración se puede expresar también como una derivada compuesta por el cambio del volumen de líquido filtrado ($\dif{V}$) respecto al cambio en el tiempo ($\dif{t}$). 
-
-% Añadir explicacion del termino de area
-
-\begin{equation*}
-    v = \frac{1}{A} \cdot \diff{V}{t}
-\end{equation*}
-
-Estas dos ecuaciones pueden combinarse para formar la siguiente:
-
-\begin{equation*}
-    \frac{1}{A} \cdot \diff{V}{t} = \frac{k \cdot \Delta P}{\mu \cdot l} 
-\end{equation*}
-
-Los términos $k$ y $l$ son aspectos del medio filtrante que oponen una resistencia a la filtración, por lo que pueden englobarse en la variable $R$, que representa todas las resistencias presentes en una filtración. A este término se le irán agregando otras variables que representan una resistencia a la filtración. Con lo anterior en mente se reescribe la ecuación anterior.
-
-\begin{equation}\label{eq:filtracion_convencional_derivada}
-    \frac{1}{A} \cdot \diff{V}{t} = \frac{\Delta P}{\mu \cdot R}
 \end{equation}
 
-$R$ se va a componer de la resistencia de la torta ($R_{c}$) y la resistencia del medio filtrante ($R_{m}$)
+Esta velocidad de filtración se puede expresar también como una derivada compuesta por el cambio del volumen de líquido filtrado ($\dif{V}$) respecto al cambio en el tiempo ($\dif{t}$), la cual a su vez está en función el área por la cual fluye este volumen de líquido
+
+\begin{equation}\label{eq:velocidad_de_filtracion_diferencial}
+    v = \frac{1}{A} \cdot \diff{V}{t}
+\end{equation}
+
+Dado que ambas ecuaciones (\ref{eq:velocidad_de_filtracion_darcy} y \ref{eq:velocidad_de_filtracion_diferencial}) representan la velocidad, estas pueden igualarse de la siguiente manera:
+
+\begin{equation}\label{eq:ley_de_darcy_kl}
+    \frac{1}{A} \cdot \diff{V}{t} = \frac{k \cdot \Delta P}{\mu \cdot l} 
+\end{equation} 
+
+Como se mencionó antes, $k$ y $l$ son características del medio filtrante que oponen una resistencia a la filtración. Así como estos, existen otras variables que representan una resistencia a la filtración. La suma de todas estas resistencias las consideramos como la variable $R$
+
+Las variables que representa una resistencia a la filtración se pueden englobar en dos tipos: la resistencia de la torta ($R_{c}$) y la resistencia del medio filtrante ($R_{m}$).
+
+En el caso de $R_{c}$ esta se compone de la resistencia específica de la torta ($\alpha$) y del peso que representan los sólidos respecto al volumen de líquido filtrado ($\rho_{c}\cdot\frac{V}{A}$, \autoref{eq:resistencia_de_la_torta}). Por su parte, $R_{m}$ necesita calcularse en base a datos experimentales.
+
+\begin{equation}\label{eq:resistencia_de_la_torta}
+    R_{c} = \alpha \cdot \rho_{c} \left(\frac{V}{A}\right)
+\end{equation}
+
+La resistencia general ($R$) del proceso se define entonces como la suma de $R_{c}$ y $R_{m}$.
 
 \begin{equation}\label{eq:resistencias}
     R = R_{c} + R_{m}
 \end{equation}
 
-La resistencia de la torta está compuesta por % COMPLETAR Y ESPECIFICAR QUE ES EN INCOMPRESIBLES
+Ingresando estos términos en la \autoref{eq:ley_de_darcy_kl} tenemos:
 
-% $\alpha$ representa la resistencia específica de la torta, mientras que $\rho_{c}$ representa el peso de los sólidos respecto a el volumen filtrado.
+\begin{equation*}
+    \frac{1}{A} \cdot \diff{V}{t} = \frac{\Delta P}{\mu \cdot \left(\alpha\cdot\rho_{c}\cdot\frac{V}{A}\right) + R_{m}}
+\end{equation*}
 
-\begin{equation}\label{eq:resistencia_de_torta}
-    R_{c} = \alpha \cdot \rho_{c} \left(\frac{V}{A}\right)
-\end{equation}
+Si simplificamos tendríamos:
 
-\begin{equation}\label{eq:resistencia_del_medio_filtrante}
-    R_{m} = 
-\end{equation}
-
-Algo a tener en cuenta es que la \autoref{eq:filtracion_convencional_derivada} es una ecuación diferencial de primer grado que necesitamos resolver para poder trabajar con ella:
-
-\begin{gather*}
+\begin{equation}\label{eq:ley_de_darcy_R}
     \frac{1}{A} \cdot \diff{V}{t} = \frac{\Delta P}{\mu \cdot R}
-    \\\\
-    a
-\end{gather*}
-
-La ecuación final es
-
-\begin{equation}\label{eq:filtracion_convencional}
-    \frac{t}{V \div A} = \frac{\mu \cdot \alpha \cdot \rho_{c}}{2\Delta P} \cdot \left(\frac{V}{A}\right) + \frac{\mu \cdot R_{m}}{\Delta P}
 \end{equation}
 
+Esta es la forma más usual de encontrarse con la Ley de Darcy aplicada a filtración en la literatura, sin embargo, al ser una ecuación diferencial es necesario resolverla si queremos trabajar con ella.
 
+\begin{align*}
+    \frac{1}{A} \cdot \diff{V}{t} &= \frac{\Delta P}{\mu \cdot \left(\alpha\cdot\rho_{c}\cdot\frac{V}{A}\right) + R_{m}}
+    \\\\
+    \frac{\alpha\cdot\rho_{c}\cdot\frac{V}{A}}{A} + \frac{R_{m}}{A} \ \dif{V} &= \frac{\Delta P}{\mu} \ \dif{t}
+    \\\\
+    \int(\frac{\alpha\cdot\rho_{c}\cdot V}{A^{2}} \ \dif{V}) + \int(\frac{R_{m}}{A} \ \dif{V}) &= \int \frac{\Delta P}{\mu} \dif{t}
+    \\\\
+    \frac{\alpha\cdot\rho_{c}\cdot V^{2}}{2A^{2}} + \frac{R_{m} \cdot V}{A} &= \frac{\Delta P}{\mu} \cdot t
+    \\\\
+    \frac{\alpha\cdot\rho_{c}\cdot V}{2A} + R_{m} &= \frac{\Delta P}{\mu} \cdot \frac{t}{V \div A}
+\end{align*}
 
+Terminando de reordenar tendríamos:
 
-\subsection{Filtración convencional con tortas compresibles}
+\begin{equation}\label{eq:ecuacion_de_filtracion_convencional}
+    \frac{t}{V \div A} = \frac{\mu\alpha\cdot\rho_{c}}{2\Delta P} \cdot \left(\frac{V}{A}\right) + \frac{\mu \cdot R_{m}}{\Delta P} 
+\end{equation}
 
-En el caso de las tortas compresibles, en estas la presión comprime el material y los poros se tapan. Casi todo tipo de material biológico constituye un ejemplo de torta compresible. 
+Esta forma de ordenar la ecuación tiene la ventaja de seguir la estructura de la ecuación de la linea recta ($y=mx+b$), donde:
 
+\begin{itemize}
+    \item $\frac{t}{V \div A}$ representa $y$
+    \item $\frac{\mu\alpha\cdot\rho_{c}}{2\Delta P}$ representa la pendiente ($m$)
+    \item $\left(\frac{V}{A}\right)$ representa $x$
+    \item $\frac{\mu \cdot R_{m}}{\Delta P}$ se corresponde con la intersección ($b$)
+\end{itemize}
 
+\subsection{Ajuste de la ecuación para tortas compresibles}
 
+Antes se especificó que $R_{c}$ se construía con la resistencia específica de la torta ($\alpha$), sin embargo, esto solo es aplicable para tortas incompresibles. En estas tortas $\alpha$ es un valor constante porque, al no comprimirse con el tiempo, la torta presenta la misma resistencia en todo el transcurso de la filtración. Con esto en mente, es necesario realizar un ajuste en $\alpha$ cuando se trabaja con tortas compresibles.
 
+El ajuste de alfa en tortas compresibles consiste en partir de una $\alpha^{\prime}$ que tome en cuenta aspectos como el tamaño y forma de las partículas, para luego añadir un término del gradiente de la presión ($\Delta P$) que crezca en función de un índice de compresibilidad ($s$). Este segundo paso lo que hace es relacionar la resistencia específica ``base'' de la torta con la presión aplicada, pues a mayor presión ($\Delta P$), mayor compresión de la torta y, por tanto, mayor resistencia específica. El término de $s$ hace que esta relación crezca tomando en cuenta la forma en que se comprimen los sólidos específicos con los que estemos trabajando.
 
+\begin{equation}\label{eq:alfa_en_tortas_compresibles}
+    \alpha = \alpha^{\prime} \cdot \Delta P^{s}
+\end{equation}
 
+El proceso para construir la ecuación con la que se trabaja en un proceso de filtración (\autoref{eq:ecuacion_de_filtracion_convencional}) es el mismo, por lo que a proximación solo se muestra el proceso resaltando las diferencias.
 
+\begin{align*}
+    \frac{1}{A} \cdot \diff{V}{t} &= \frac{\Delta P}{\mu \cdot \left(\textcolor{red}{\alpha^{\prime}\Delta P^{s}}\cdot\rho_{c}\cdot\frac{V}{A}\right) + R_{m}}
+    \\\\
+    \frac{\textcolor{red}{\alpha^{\prime}\Delta P^{s}}\cdot\rho_{c}\cdot\frac{V}{A}}{A} + \frac{R_{m}}{A} \ \dif{V} &= \frac{\Delta P}{\mu} \ \dif{t}
+    \\\\
+    \int\left(\frac{\textcolor{red}{\alpha^{\prime}\Delta P^{s}}\cdot\rho_{c}\cdot V}{A^{2}} \ \dif{V}\right) + \int\left(\frac{R_{m}}{A} \ \dif{V}\right) &= \int \frac{\Delta P}{\mu} \dif{t}
+    \\\\
+    \frac{\textcolor{red}{\alpha^{\prime}\Delta P^{s}}\cdot\rho_{c}\cdot V^{2}}{2A^{2}} + \frac{R_{m} \cdot V}{A} &= \frac{\Delta P}{\mu} \cdot t
+    \\\\
+    \frac{\textcolor{red}{\alpha^{\prime}\Delta P^{s}}\cdot\rho_{c}\cdot V}{2A} + R_{m} &= \frac{\Delta P}{\mu} \cdot \frac{t}{V \div A}
+\end{align*}
 
+Así pues, la ecuación con la que se trabaja en un proceso de filtración cuando la torta es compresible es:
 
-
-
-
-%\subsection{Filtración de lecho profundo}
-%En la filtración de lecho profundo los sólidos se depositan dentro del medio filtrante.
-%\subsubsection{Fundamento de filtración de lecho profundo}
-%
-%\subsection{Filtración con membranas}
-%La filtración con membranas se realiza utilizando membranas especiales de tamaño de poro muy pequeño, que generalmente operan con flujo paralelo a la membrana, de tal manera que no hay un depósito de sólidos sobre la membrana sino una concentración del caldo.
-%\subsubsection{Fundamento de filtración con membranas}
+\begin{equation}\label{eq:ecuacion_de_filtracion_convencional_para_tortas_compresibles}
+    \frac{t}{V \div A}=\left(\frac{V}{A}\right)\cdot\frac{\mu\cdot\alpha^{\prime}\cdot\Delta P^{s}\cdot\rho_{c}}{2\Delta P} + \frac{\mu \cdot R_{m}}{\Delta P} 
+\end{equation}
