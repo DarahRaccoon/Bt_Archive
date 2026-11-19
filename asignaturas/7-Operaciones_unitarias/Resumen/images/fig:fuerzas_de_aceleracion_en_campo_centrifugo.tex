@@ -1,10 +1,3 @@
-\ifx\ISMAIN\undefined
-    \documentclass{standalone}
-    \usepackage{simplelatex}
-    \quicktikz
-    \begin{document}
-\fi
-
 \begin{tikzpicture}[
   objeto/.style={circle, minimum size=0.25cm, fill=black},
   direccion/.style={DarkRed, ultra thick, loosely dotted, -Stealth},
@@ -26,7 +19,3 @@
 \node[etiqueta] at (4.75,2.5) {Fuerza centrípeta};
 
 \end{tikzpicture}
-
-\ifx\ISMAIN\undefined
-    \end{document}
-\fi

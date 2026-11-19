@@ -1,0 +1,211 @@
+
+
+    \section{Centrifugación}
+
+
+\resumebox{respuesta}{}[ej:omega_y_dc_en_centrifuga_tubular]{
+    Datos del bioproceso:
+    \begin{itemize}
+    \item Propiedades de la suspensión biológica:
+	    \begin{itemize}
+	        \item $\rho_{p} = \qty{1461}{\kg\per\m\cubed}$
+	        \item $\rho_{l} =  \qty{801}{\kg\per\m\cubed}$
+	        \item $\mu = \qty{100}{\cp} = \qty{0.1}{\pascal\s} = \qty{0.1}{\kg\per\m\per\s}$
+	    \end{itemize}    
+    \item Geometría y operación de la centrífuga tubular de laboratorio:
+	    \begin{itemize}
+	        \item $R_{0} = \qty{0.02225}{\m}$
+	        \item $R_{1} = \qty{0.00716}{\m}$
+	        \item $L = \qty{0.197}{\m}$
+	        \item $N = \qty{23000}{\rpm}$ 
+	        \item $q = \qty{7.8667d-7}{\m\cubed\per\s}$
+        \end{itemize}
+    \end{itemize}
+    Procedimiento:
+    \begin{enumerate}
+        \item Se usa la \autoref{eq:velocidad_angular} y ecuación básica de un cilindro adaptada al volumen de la interfase líquida ($R_{0}^{2} - R_{1}^{2}$) \begin{gather*}
+            \omega = \frac{2\pi \cdot N}{60} = \frac{2\pi \cdot \qty{23000}{\rpm}}{\qty{60}{\s}} = \qty{2408.55}{\radian\per\s}
+            \\\\
+            V = \pi \cdot r^{2} \cdot h \quad\longrightarrow\quad r \longrightarrow R_{0}^{2} - R_{1}^{2} \quad\longrightarrow\quad V = \pi \cdot (R_{0}^{2} - R_{1}^{2}) \cdot h 
+            \\\\
+            V = \pi\cdot(\qty{0.02225}{\m}-\qty{0.00716}{\m})\cdot \qty{0.1970}{\m}=\qty{2.75d-4}{\m\cubed}=\qty{0.275}{\L}
+        \end{gather*}
+        \item Se modifica la \autoref{eq:diseño_de_centrifugas_tubulares} para toma en cuenta solo la mitad de la interfase y se despeja el término del diámetro de la partícula ($d_{c}$) para luego calcularlo \begin{gather*}
+            \ln\left(\frac{R_{0}}{R_{1}}\right) \quad\longrightarrow\quad \ln\left(\frac{R_{0}}{\frac{R_{0} + R_{1}}{2}}\right) \quad\longrightarrow\quad \ln\left(\frac{2R_{0}}{R_{0} + R_{1}}\right)
+            \\\\
+            Q = \left(\frac{d_{p}^{2} \cdot \Delta\rho \cdot g}{18\mu}\right) \cdot \left[ \left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right) \cdot \left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln(\frac{R_{0}}{R_{1}})}\right) \right] \quad\longrightarrow\quad Q = \left(\frac{d_{p}^{2} \cdot \Delta\rho \cdot g}{18\mu}\right) \cdot \left[ \left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right) \cdot \left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{2R_{0}}{R_{0} + R_{1}}\right)}\right) \right] 
+            \\\\
+            Q = \left(\frac{d_{p}^{2} \cdot \Delta\rho \cdot g}{18\mu}\right) \cdot \left[ \left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right) \cdot \left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{2R_{0}}{R_{0} + R_{1}}\right)}\right) \right]  \quad\longrightarrow\quad d_{c} = \sqrt{\frac{Q \cdot 18\mu \cdot \textcolor{red}{g} \cdot \ln\left(\frac{2R_{0}}{R_{0} + R_{1}}\right)}{\Delta\rho \cdot \textcolor{red}{g} \cdot \pi \cdot \omega^{2} \cdot L \cdot (R_{0}^{2} - R_{1}^{2})}}
+            \\\\
+            d_{c} = \sqrt{\frac{(\qty{7.8667d-7}{\m\cubed\per\s})\cdot(18\cdot\qty{0.1}{\kg\per\m\per\s})\cdot\ln\left(\frac{2\cdot\qty{0.02225}{\m}}{\qty{0.02225}{\m}+\qty{0.00716}{\m}}\right)}{\qty{1461}{\kg\per\m\cubed}-\qty{801}{\kg\per\m\cubed}\cdot\pi\cdot(\qty{2408.55}{\radian\per\s})^{2}\cdot\qty{0.1970}{\m}\cdot ((\qty{0.02225}{\m})^{2}-(\qty{0.00716}{\m})^{2})}} = \qty{7.463d-7}{\m}
+        \end{gather*}
+        \item Se compara el díámetro que la centrifugación logrará sedimentar ($d_{c}$) con el de interés ($d_{p}$) para evaluar si el proceso será capaz de sedimentar $d_{p}$ \begin{gather*}
+            d_{c} = \qty{7.463d-7}{\m} \quad;\quad d_{p} = \qty{1d-6}{\m}
+            \\\\
+            d_{c} < d_{p} \therefore \text{Partículas de \qty{1}{\micro\m} \emph{si} son retenidas}
+        \end{gather*}
+    \end{enumerate}
+}
+
+\resumebox{respuesta}{}[ej:recuperacion_celular]{
+    Datos del bioproceso:
+    \begin{itemize}
+        \item Caudal de alimentación del caldo de levaduras ($Q$) = \qty{12}{\L\per\min} (constante)
+        \item Velocidad inicial del rotor ($N_{1}$) = \qty{4000}{\rpm}
+        \item Recuperación inicial de biomasa ($R_{1}$) = 60\% = 0.60
+        \item Recuperación meta exigida por auditoría ($R_{2}$) = 95\% = 0.95
+        \item Límite mecánico de seguridad de la centrífuga ($N_{\text{Max}}$) = \qty{7500}{\rpm}
+        \item Criterio hidrodinámico: La fracción no recuperada o la fuerza centrífuga desarrollada es proporcional al cuadrado de la velocidad angular ($\omega^{2}$)
+    \end{itemize}
+    Procedimiento:
+    \begin{enumerate}
+        \item $\omega$ y su cuadrado es proporcional a $N$ y su cuadrado \begin{equation*}
+            \omega \propto N \quad\longrightarrow\quad \omega^{2} \propto N^{2}
+        \end{equation*}
+            Dado que $R$ es proporcional a $\omega^{2}$, definimos que $R$ puede ser proporcional a $N^{2}$ \begin{equation*}
+            R \propto \omega^{2} \propto N^{2}
+        \end{equation*}
+            Si estos dos valores son proporcionales, la razón de crecimiento al cambiar uno debería ser igual al cambiar el otro, lo que se puede expresar como \begin{equation*}
+            \frac{R_{1}}{R_{2}} = \frac{N_{1}^{2}}{N_{2}^{2}}
+        \end{equation*}
+        \item Despejamos y sustituimos \begin{gather*}
+            N_{2} = \sqrt{\frac{N_{1}^{2} \cdot R_{2}}{R_{1}}}
+            \\\\
+            N_{2} = \sqrt{\frac{(\qty{4000}{\rpm})^{2} \cdot 0.95}{0.6}} = \qty{5033}{\rpm}
+        \end{gather*}
+        \item Comparamos valores y damos una conclusión  \begin{gather*}
+            N_{2} < N_{Max} \therefore \text{La centrífuga si soporta el aumento de RPM}
+        \end{gather*}
+    \end{enumerate}
+}
+
+\resumebox{respuesta}{}[ej:escalamiento_de_vacuna]{
+    Datos del bioproceso:
+    \begin{itemize}
+        \item Caudal volumétrico total a procesar ($Q$) = \qty{3.34d-3}{\m\cubed\per\s} = \qty{12024}{\L\per\hour}
+        \item Diámetro promedio de los cuerpos de inclusión/células ($d_{p}$) = \qty{1}{\micro\m} = \qty{1d-6}{\m}
+        \item Densidad de las partículas ($\rho_{p}$) = \qty{1096.7}{\kg\per\m\cubed}
+        \item Densidad del caldo de cultivo ($\rho_{l}$) = \qty{997}{\kg\per\m\cubed}
+        \item Viscosidad del fluido ($\mu$) = \qty{2.682d-3}{\kg\per\m\per\s}
+        \item Aceleración de la gravedad (g) = \qty{9.81}{\m\per\s\squared}
+        \item Capacidad por centrífuga comercial ($\Sigma_{\text{Unidad}}$) = \qty{35000}{\m\squared}
+    \end{itemize}
+    Procedimiento:
+    \begin{enumerate}
+        \item La velocidad de sedimentación se puede obtener fácilmente con la fórmula de $v_{g}$ \begin{gather*}
+            v_{g}=\frac{d_{p}^{2}\cdot\Delta\rho\cdot(g)}{18\mu}=\frac{(\qty{1d-6}{\m}^{2}\cdot(\qty{1096.7}{\kg\per\m\cubed}-\qty{997}{\kg\per\m\cubed})\cdot\qty{9.81}{\m\per\s\squared}}{18(\qty{2.682d-3}{\kg\per\m\per\s})}=\qty{2.026d-8}{\m\per\s}
+            \end{gather*}
+        \item Ya con $v_{g}$ despejamos $\Sigma$ de la \autoref{eq:diseño_de_centrifugas_tubulares} \begin{gather*}
+            Q = v_{g} \cdot \Sigma \quad\longrightarrow\quad \Sigma = \frac{Q}{v_{g}}
+            \\\\
+            \Sigma = \frac{\qty{3.34d-3}{\m\cubed\per\s}}{\qty{2.026d-8}{\m\per\s}} = \qty{164856.8608}{\m\squared}
+            \end{gather*}
+        \item Dividimos $\Sigma_{\text{Total}}$ para obtener $\Sigma_{\text{p/Unidad}}$. Redondeamos hacia arriba siempre que existan decimales en el resultado \begin{gather*}
+            N_{\text{Unidades}} = \frac{\Sigma_{\text{Total}}}{\Sigma_{\text{p/Unidad}}}
+            \\\\
+            N_{\text{Unidades}} = \frac{\qty{164856.8608}{\m\squared}}{\qty{35000}{\m\squared}} = 4.71 \quad\longrightarrow\quad 5
+            \end{gather*}
+        \item Para obtener el caudal por centrífuga ($Q_{i}$) se divide el caudal total entre el número de centrífugas \begin{gather*}
+            Q_{i} = \frac{Q}{N_{\text{Unidades}}}
+            \\\\
+            Q_{i} = \frac{\qty{3.34d-3}{\m\cubed\per\s}}{5} = \qty{6.68}{\m\cubed\per\s}
+            \end{gather*}
+    \end{enumerate}
+}
+
+
+
+\resumebox{respuesta}{}[ej:cosecha_de_microalgas]{
+    Datos del bioproceso:
+    \begin{itemize}
+    \item Propiedades de las microalgas y medio:
+	    \begin{itemize}
+	        \item Diámetro celular ($d_{p}$) = \qty{3}{\micro\m} = \qty{3d-6}{\m}
+            \item Densidad de la alga ($\rho_{p}$) = \qty{1085}{\kg\per\m\cubed}
+            \item Densidad del agua de cultivo ($\rho_{l}$) = \qty{1002}{\kg\per\m\cubed}
+            \item Viscosidad del agua ($\mu$) = \qty{1.1d-3}{\kg\per\m\per\s}
+	    \end{itemize}
+    \item Geometría del paquete de discos (Disc Stack)
+	    \begin{itemize}
+	        \item Número de discos en la pila ($N_{d}$) = 50
+	        \item Ángulo de inclinación de los discos ($\theta$) = 45°
+	        \item Radio exterior del disco ($r_{2}$) = \qty{0.12}{\m}
+	        \item Radio interior del disco ($r_{1}$) = \qty{0.05}{\m}
+	        \item Velocidad de rotación ($N$) = \qty{7000}{\rpm}
+	        \item Eficiencia hidrodinámica del equipo ($e$) = 0.55 = 55\%
+	    \end{itemize}
+	\end{itemize}
+	Procedimiento:
+    \begin{enumerate}
+        \item Partimos con la diferencia de densidades \begin{gather*}
+            \Delta\rho = \rho_{p} - \rho_{l} = \qty{1085}{\kg\per\m\cubed} - \qty{1002}{\kg\per\m\cubed} = \qty{83}{\kg\per\m\cubed}
+            \\\\
+            \omega = \frac{2\pi \cdot N}{60} = \frac{2\pi \cdot \qty{7000}{\rpm}}{\qty{60}{\s}} = \qty{733.04}{\radian\per\s}
+            \\\\
+            v_{g} = \frac{d_{p}^{2} \cdot \Delta\rho \cdot g}{18\mu} = \frac{(\qty{3d-6}{\m})^{2}\cdot\qty{83}{\kg\per\m\cubed}\cdot\qty{9.81}{\m\per\s\squared}}{18\cdot(\qty{1.1d-3}{\kg\per\m\per\s})} = \qty{3.7d-7}{\m\per\s}
+            \end{gather*}
+        \item Usamos la parte de $\Sigma$ de la \autoref{eq:diseño_de_centrifugas_de_discos} \begin{gather*}
+            \Sigma=\left[\left(\frac{2\pi\cdot\omega^{2}\cdot n}{3g}\right)\cdot\left(\frac{R_{0}^{3}-R_{1}^{3}}{\tan(\theta)}\right)\right] = \left[ \left(\frac{2\pi\cdot(\qty{733.04}{\radian\per\s})^{2}\cdot 50}{3\cdot(\qty{9.81}{\m\per\s\squared})}\right)\cdot\left(\frac{(\qty{0.12}{\m})^{3} - (\qty{0.05}{\m})^{3}}{\tan(45°)} \right) \right] = \qty{9194.93}{\m\squared}
+            \end{gather*}
+        \item Pasamos a calcular el flujo (\autoref{eq:diseño_de_centrifugas_de_discos}) \begin{gather*}
+            Q_{\text{Ideal}} = v_{g} \cdot \Sigma = \qty{3.7d-7}{\m\per\s} \cdot \qty{9194.93}{\m\squared} = \qty{3.4665d-3}{\m\cubed\per\s} = \qty{12479.4}{\L\per\hour}
+            \end{gather*}
+            Para $Q_{\text{Corregido}}$ multiplicamos $Q_{\text{Ideal}}$ por la eficiencia hidrodinámica ($e$), que expresa cuanto del $Q_{\text{Ideal}}$ se "pierde" \begin{gather*}
+            Q_{\text{Corregido}} = e \cdot Q_{\text{Ideal}} = 0.55 \cdot \qty{3.4665d-3}{\m\cubed\per\s} = \qty{1.9d-3}{\m\cubed\per\s} = \qty{6863.67}{\L\per\hour}
+            \end{gather*}
+    \end{enumerate}
+}
+
+\resumebox{respuesta}{}[ej:clarificacion_de_cerveza]{
+    Datos del bioproceso:
+    \begin{itemize}
+        \item Caudal de la línea de cerveza $Q_{\text{Real}}$ = \qty{3600}{\L\per\hour} = \qty{1d-3}{\m\cubed\per\s}
+        \item Diámetro celular de levadura Saccharomyces ($d_{p}$) = \qty{6}{\micro\m} = \qty{6d-6}{\m}
+        \item Densidad de la levadura ($\rho_{p}$) = \qty{1100}{\kg\per\m\cubed}
+        \item Densidad del mosto/cerveza ($\rho_{l}$) = \qty{1015}{\kg\per\m\cubed}
+        \item Viscosidad de la cerveza fría ($\mu$) = \qty{1.8d-3}{\kg\per\m\per\s}
+        \item Velocidad de la centrífuga $N$ = \qty{5500}{\rpm}
+        \item Parámetros de cada disco:
+        \begin{itemize}
+	        \item $r_{1}$ = \qty{0.2}{\m}
+	        \item $r_{2}$ = \qty{0.09}{\m}
+	        \item $\theta$ = 50°
+        \end{itemize}
+        \item Eficiencia hidrodinámica: e = 0.5
+    \end{itemize}
+    Procedimiento:
+    \begin{enumerate}
+        \item Calculamos $v_{g}$ con la \ref{eq:velocidad_de_sedimentacion_en_campo_gravitacional} \begin{gather*}
+            \Delta\rho = \rho_{p} - \rho_{l} = \qty{1100}{\kg\per\m\cubed} - \qty{1015}{\kg\per\m\cubed} = \qty{85}{\kg\per\m\cubed}
+            \\\\
+            v_{g} = \frac{d_{p}^{2}\cdot\Delta\rho\cdot g}{18\mu} = \frac{(\qty{1d-6}{\m})^{2}\cdot\qty{85}{\kg\per\m\cubed}\cdot\qty{9.81}{\m\per\s\squared}}{18\cdot\qty{1.8d-3}{\kg\per\m\per\s}} = \qty{9.265d-7}{\m\per\s}
+            \end{gather*}
+        \item Para $\Sigma$ despejamos la \autoref{eq:diseño_de_centrifugas_de_discos} \begin{gather*}
+            Q = v_{g} \cdot \Sigma \quad\longrightarrow\quad \Sigma = \frac{Q}{v_{g}} = \frac{\qty{1d-3}{\m\cubed\per\s}}{\qty{9.265d-7}{\m\per\s}} = \qty{1079.33}{\m\squared}
+            \end{gather*}
+        \item Este es $\Sigma_{\text{Efectivo}}$, pero para determinar $\Sigma_{\text{Teórico}}$ tomamos en cuenta además la eficiencia hidrodinámica. \begin{gather*}
+            \Sigma_{\text{Efectivo}} = e \cdot \Sigma_{\text{Teórico}}  \quad\longrightarrow\quad  \Sigma_{\text{Teórico}} = \frac{\Sigma_{\text{Efectivo}}}{e} = \frac{\qty{1079.33}{\m\squared}}{0.5} = \qty{2158.66}{\m\squared}
+            \end{gather*}
+        \item Para obtener $\Sigma_{\text{p/Disco}}$ usamos el término de $\Sigma$ de la \autoref{eq:diseño_de_centrifugas_de_discos} y tomamos el término relacionado a las características de la centrífuga \begin{gather*}
+            Q=(v_{g})\cdot\left[\left(\frac{2\pi\cdot\omega^{2}\cdot N_{d}}{3g}\right)\cdot\left(\frac{R_{0}^{3}-R_{1}^{3}}{\tan(\theta)}\right)\right] \quad\longrightarrow\quad \left[\left(\frac{2\pi\cdot\omega^{2}\cdot N_{d}}{3g}\right)\cdot\left(\frac{R_{0}^{3}-R_{1}^{3}}{\tan(\theta)}\right)\right]
+            \end{gather*}
+            Aquí $N_{d}$ multiplicar el resto de la ecuación por el número de discos. Para obtener $\Sigma_{\text{Disco}}$ solo removemos tal término \begin{gather*}
+            \Sigma_{\text{Discos totales}}=\left[\left(\frac{2\pi\cdot\omega^{2}\cdot\textcolor{red}{N_{d}}}{3g}\right)\cdot\left(\frac{R_{0}^{3}-R_{1}^{3}}{\tan(\theta)}\right)\right] \quad\longrightarrow\quad \Sigma_{\text{p/Disco}}=\left[\left(\frac{2\pi\cdot\omega^{2}}{3g}\right)\cdot\left(\frac{R_{0}^{3}-R_{1}^{3}}{\tan(\theta)}\right)\right]
+            \\\\
+            \omega = \frac{2\pi\cdot\qty{5500}{\rpm}}{\qty{60}{\s}} = \qty{575.96}{\radian\per\s}
+            \\\\
+            \Sigma_{\text{p/Disco}}=\left[\left(\frac{2\pi\cdot(\qty{575.96}{\radian\per\s})^{2}}{3(\qty{9.81}{\m\per\s\squared})}\right)\cdot\left(\frac{(\qty{0.2}{\m})^{3}-(\qty{0.09}{\m})^{3}}{\tan(50)} \right) \right] = \qty{432.1}{\m\squared}
+            \end{gather*}
+        \item Con $\Sigma_{\text{Disco}}$ ya calculado, retomamos $\Sigma_{\text{Teórico}}$ para obtener cuantos discos debemos usar para completarlo \begin{gather*}
+            N_{d} = \frac{\Sigma_{\text{Teórico}}}{\Sigma_{\text{p/Disco}}} = \frac{\qty{2158.66}{\m\squared}}{\qty{432.1}{\m\squared}} =4.99 \quad\longrightarrow\quad 5
+            \end{gather*}
+    \end{enumerate}
+}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------- %
+
+
+    \section{Filtración}
+
+

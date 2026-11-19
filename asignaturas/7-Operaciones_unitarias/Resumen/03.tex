@@ -1,3 +1,10 @@
+\ifx\ISMAIN\undefined
+    \documentclass{AsignaturaResumen}
+    \SetTitulo{Operaciones unitarias}
+    \input{../../0-tex_resources/glosario_general}
+    \begin{document}
+\fi
+
 
 \footnotetext{Se planea agregar la explicación su obtención en un futuro}
 
@@ -376,6 +383,75 @@ Asimismo, añadimos $g$ y dividimos la ecuación en términos de $v_{g}$ y $\Sig
     Q=\left(\frac{d_{p}^{2}\cdot\Delta\rho\cdot g}{18\mu}\right)\cdot\left[\left(\frac{\pi\cdot\omega^{2}\cdot L}{g}\right)\cdot\left(\frac{R_{0}^{2} - R_{1}^{2}}{\ln\left(\frac{R_{0}}{R_{1}}\right)}\right)\right]
 \end{equation}
 
+\resumebox{ejercicio}{Cosecha de insulina recombinante en centrífuga tubular}[ej:omega_y_dc_en_centrifuga_tubular]{
+    Perteneces al equipo de ingeniería de bioseparaciones en BloSintetix Pharmaceutics. La planta está escalando la producción de insulina humana recombinante expresada en \sci{Escherichia coli}. Tras la fermentación, el caldo celular denso y viscoso debe claríficarse rápidamente mediante una centrífuga tubular para evitar que las proteasas celulares degraden la proteina de interés. \\
+    El Director de Operaciones entra a tu oficina con un reporte crítico: "Si alimentamos la centrífuga tubular a un caudal incorrecto, la corriente de salida arrastrará células no deseadas que taponarán los filtros de membrana de \qty{0.22}{\micro\m} aguas abajo, deteniendo la planta y costando miles de dólares por lote". Tu misión es calcular el volumen retenido en el tazón, determinar el diámetro crítico de partícula retenido para las condiciones actuales y proponer la velocidad de alimentación óptima. \\
+    Datos del bioproceso:
+    \begin{itemize}
+        \item Propiedades de la suspensión biológica:
+	    \begin{itemize}
+	        \item Densidad de las células de \sci{E. coli} ($\rho_{p}$) = \qty{1461}{\kg\per\m\cubed}
+	        \item Densidad del medio viscoso ($\rho_{l}$) = \qty{801}{\kg\per\m\cubed}
+	        \item Viscosidad del caldo ($\mu$) = \qty{100}{\cp} = \qty{0.1}{\pascal\s} = \qty{0.1}{\kg\per\m\per\s}
+	    \end{itemize}
+    \item Geometría y operación de la centrífuga tubular de laboratorio:
+	    \begin{itemize}
+	        \item Radio interno de la pared del tazón ($R_{0}$) = \qty{0.02225}{\m}
+	        \item Radio de la superficie libre del líquido ($R_{1}$) = \qty{0.00716}{\m}
+	        \item Altura/Longitud del tazón ($L$) = \qty{0.1970}{\m}
+	        \item Velocidad de rotación actual ($N$) = \qty{23,000}{\rpm}
+	        \item Caudal de alimentación envasado ($q$) = \qty{7.8667d-7}{\m\cubed\per\s}
+	    \end{itemize}
+    \end{itemize}
+    Responde lo siguiente:
+    \begin{enumerate}
+        \item Determinar la velocidad angular ($\omega$) y el volumen de líquido ($V$) retenido en el tazón
+        \item Calcular el diámetro crítico de partícula ($d_{c}$) que se deposita a la mitad del espesor de la capa líquida para el caudal ensayado
+        \item Decidir si las células de tamaño medio de \qty{1}{\micro\m} ($d_{p}$) quedan retenidas con este caudal operativo
+    \end{enumerate}
+}
+
+\resumebox{ejercicio}{Recuperación celular}[ej:recuperacion_celular]{
+    Eres el ingeniero de Guardia en OncoBiologics México. Durante el turno de la madrugada se procesa un lote masivo de anticuerpos monoclonates citotóxicos expresados en Pichia pastorias. La centrífuga tubular opera a un flujo constante de $Q = \qty{12}{\L\per\min}$ impulsado por una bomba de desplazamiento positivo que no se puede detener. La velocidad actual de la centrífuga es $N_{1} = \qty{4000}{\rpm}$. \\
+    El laboratorio de Control de Calidad en vía rápida envía una alerta de desviación: ``El efluente líquido muestra que solo estamos recuperando el 60\% de la biomasa ($R_{1} = 0.60$). El 40\% restante se está yendo en el sobrenadante y taponará la columna cromatográfica de Proteína A''.  La norma operación exige un minimo de 95\% de recuperación ($R_{2} = 0.95$). ¿A qué velocidad de rotación ($N_{2}$) debes ajustar inmediatamente el tazón giratorio para cumplir la norma sin modificar el caudal de bomba? \\
+    Datos del bioproceso:
+    \begin{itemize}
+        \item Caudal de alimentación del caldo de levaduras ($Q$) = \qty{12}{\L\per\min} (constante)
+        \item Velocidad inicial del rotor ($N_{1}$) = \qty{4000}{\rpm}
+        \item Recuperación inicial de biomasa ($R_{1}$) = 60\% = 0.60
+        \item Recuperación meta exigida por auditoría ($R_{2}$) = 95\% = 0.95
+        \item Límite mecánico de seguridad de la centrífuga ($N_{\text{Max}}$) = \qty{7500}{\rpm}
+        \item Criterio hidrodinámico: La fracción recuperada es proporcional al cuadrado de la velocidad angular ($\omega^{2}$)
+    \end{itemize}
+    Responde lo siguiente:
+    \begin{enumerate}
+        \item Establecer la relación matemática entre la recuperación ($R$) y la velocidad angular a caudal constante.
+        \item Calcular la velocidad de rotación $N$ requerida para alcanzar el 95\% de recuperación.
+        \item Evaluar si la centrífuga soporta la nueva velocidad o si se sobrepasa el límite mecánico del equipo
+    \end{enumerate}
+}
+
+\resumebox{ejercicio}{Escalamiento de vacuna veterinaria contra la peste porcina}[ej:escalamiento_de_vacuna]{
+    Eres el Lider de Procesos Downstream en la Dirección General de Bioseguridad Animal. Ante la amenaza epidémica de la peste porcina, se requiere diseñar la etapa de clarificación para una nueva planta que procesarán \qty{12024}{\L\per\hour} (\qty{3.34d-3}{\m\cubed\per\s}, o \qty{3.34}{\L\per\s}) de un caldo bacteriano con cuerpos de inclusión virales insolubles. \\
+    No existen centrífugas tubulares monobloque tan grandes en el mercado que puedan procesar semejante volumen en una sola unidad. Debes calcular el Factor Sigma total $(\Sigma_{\text{Total}})$ requerido para el proceso y diseñar un sistema en paralelo utilizando unidades comerciales estandarizadas de la serie industrial T-35, cada una con un $\Sigma_{\text{Unidad}} = \qty{35000}{\m\squared}$. \\
+    Datos del bioproceso:
+    \begin{itemize}
+        \item Caudal volumétrico total a procesar ($Q$) = \qty{3.34d-3}{\m\cubed\per\s} = \qty{12024}{\L\per\hour}
+        \item Diámetro promedio de los cuerpos de inclusión/células ($d_{p}$) = \qty{1}{\micro\m} = \qty{1d-6}{\m}
+        \item Densidad de las partículas ($\rho_{p}$) = \qty{1096.7}{\kg\per\m\cubed}
+        \item Densidad del caldo de cultivo ($\rho_{l}$) = \qty{997}{\kg\per\m\cubed}
+        \item Viscosidad del fluido ($\mu$) = \qty{2.682d-3}{\kg\per\m\per\s}
+        \item Aceleración de la gravedad (g) = \qty{9.81}{\m\per\s\squared}
+        \item Capacidad por centrífuga comercial ($\Sigma_{\text{Unidad}}$) = \qty{35000}{\m\squared}
+    \end{itemize}
+    \begin{enumerate}
+        \item Calcular la velocidad terminal de sedimentación por gravedad ($v_{g}$) aplicando la Ley de Stokes.
+        \item Determinar el Factor Sigma equivalente total ($\Sigma_{\text{Total}}$) necesario para todo el bioproceso
+        \item Calcular el número exacto de centrífugas tubulares en paralelo ($N_{\text{Unidades}}$) que se deben comprar e instalar
+        \item Determinar el caudal individual ($Q_{i}$) que manejará cada centrífuga en el distribuidor de flujo.
+    \end{enumerate}
+}
+
 
 
 \subsection{Ecuación de diseño de centrífugas de discos}
@@ -389,6 +465,64 @@ En el caso de $t_{s}$ se vuelve a utilizar la usada para una centrífuga tubular
 \end{equation}
 
 Donde $n$ es el número de discos, $\theta$ el ángulo de inclinación de los discos, y $R_{0}$ y $R_{1}$ los radios externo e interno de la pila de discos, respectivamente.
+
+\resumebox{ejercicio}{Cosecha de Microalgas}[ej:cosecha_de_microalgas]{
+    Contexto industrial: Trabajas como Ingeniero Junior en NovAlgae, una empresa biotecnológica ubicada en Mazatlán, Sinaloa, que cultiva la microalga Nannochloropsis oculata para producir biodiesel y pigmentos antioxidantes. El biorreactor solar fotobióptico produce miles de litros de cultivo acuoso diluido. \\
+    Para cosechar la biomasa se ha rentado una centrífuga de discos continuos. Sin embargo, operador de planta nota que el agua de salida sale verde opaca, lo que significa que gran parte de las microalgas se están perdiendo en el drenaje. Te piden calcular el Factor Sigma del paquete de discos y redefinir el caudal de operación para recuperar el 100\% de las algas a una eficiencia real del 55\%. \\
+    Datos del bioproceso:
+    \begin{itemize}
+    \item Propiedades de las microalgas y medio:
+	    \begin{itemize}
+	        \item Diámetro celular ($d_{p}$) = \qty{3}{\micro\m} = \qty{3d-6}{\m}
+            \item Densidad de la alga ($\rho_{p}$) = \qty{1085}{\kg\per\m\cubed}
+            \item Densidad del agua de cultivo ($\rho_{l}$) = \qty{1002}{\kg\per\m\cubed}
+            \item Viscosidad del agua ($\mu$) = \qty{1.1d-3}{\kg\per\m\per\s}
+	    \end{itemize}
+    \item Geometría del paquete de discos (Disc Stack)
+	    \begin{itemize}
+	        \item Número de discos en la pila ($N_{d}$) = 50
+	        \item Ángulo de inclinación de los discos ($\theta$) = 45°
+	        \item Radio exterior del disco ($r_{2}$) = \qty{0.12}{\m}
+	        \item Radio interior del disco ($r_{1}$) = \qty{0.05}{\m}
+	        \item Velocidad de rotación ($N$) = \qty{7000}{\rpm}
+	        \item Eficiencia hidrodinámica del equipo ($e$) = 0.55 = 55\%
+	    \end{itemize}
+	\end{itemize}
+	Responde lo siguiente:
+	\begin{enumerate}
+        \item Calcular $\omega$ y $v_{g}$
+        \item Calcular el $\Sigma$ teórico de la pila de discos
+        \item Determinar el caudal ideal ($Q_{\text{Ideal}}$) y el caudal real máximo corregido ($Q_{\text{Real}}$) en \unit{\L\per\hour} para evitar que el agua salga verde
+    \end{enumerate}
+}
+
+\resumebox{ejercicio}{Clarificación de cerveza artesanal sin filtración}[ej:clarificacion_de_cerveza]{
+    Contexto industrial: En Cervecería ería del Pacifico Biotechs, están lanzando una nueva cerveza estilo Hazy IPA. Para eliminar las levaduras en suspensión sin usar tierra de diatomeas (la cual destruye los ésteres aromáticos del lúpulo), se instalará una centrifuga de discos de clarificación continua en la linea principal de envasado a un caudal rigido de \qty{3600}{\L\per\hour} (\qty{1d-3}{\m\cubed\per\s}). \\
+    El proveedor de maquinaria te entrega un tazón estandarizado que gira a $N$ = \qty{5500}{\rpm} con discos de dimensiones $r_{2}$ = \qty{0.2}{\m}, $r_{1}$ = \qty{0.09}{\m}, e inclinación $\theta$ = 50°. Asumiendo una eficiencia real de separación del 50\% ($e$ = 0.5), debes determinar cuántos discos ($N_{d}$) debe tener el paquete internamente para entregar una cerveza completamente brillante. \\
+    Datos del bioproceso:
+    \begin{itemize}
+        \item Caudal de la línea de cerveza $Q_{\text{Real}}$ = \qty{3600}{\L\per\hour} = \qty{1d-3}{\m\cubed\per\s}
+        \item Diámetro celular de levadura Saccharomyces ($d_{p}$) = \qty{6}{\micro\m} = \qty{6d-6}{\m}
+        \item Densidad de la levadura ($\rho_{p}$) = \qty{1100}{\kg\per\m\cubed}
+        \item Densidad del mosto/cerveza ($\rho_{l}$) = \qty{1015}{\kg\per\m\cubed}
+        \item Viscosidad de la cerveza fría ($\mu$) = \qty{1.8d-3}{\kg\per\m\per\s\squared}
+        \item Velocidad de la centrífuga $N$ = \qty{5500}{\rpm}
+        \item Parámetros de cada disco:
+        \begin{itemize}
+	        \item $r_{1}$ = \qty{0.2}{\m}
+	        \item $r_{2}$ = \qty{0.09}{\m}
+	        \item $\theta$ = 50°
+        \end{itemize}
+        \item Eficiencia hidrodinámica: e = 0.5
+    \end{itemize}
+    Responde lo siguiente:
+    \begin{enumerate}
+        \item Calcular la velocidad de sedimentación por gravedad ($v_{g}$) de la levadura.
+        \item Determinar el Factor Sigma efectivo ($\Sigma_{\text{Efectivo}}$) y el Factor Sigma teórico ($\Sigma_{\text{Teórico}}$) necesarios.
+        \item Calcular la contribución de superficie equivalente por cada disco ($\Sigma_{\text{p/Disco}}$).
+        \item Especificar el número exacto de discos ($N_{d}$) que se deben ensamblar en el eje del rotor.
+    \end{enumerate}
+}
 
 
 
@@ -407,3 +541,11 @@ En el caso de una centrífuga de discos tenemos:
 \begin{equation}\label{eq:diseño_de_centrifugas_de_discos_50}
     Q_{D(50\%)} = 2v_{g} \cdot \Sigma
 \end{equation}
+
+
+
+
+
+\ifx\ISMAIN\undefined
+    \end{document}
+\fi
