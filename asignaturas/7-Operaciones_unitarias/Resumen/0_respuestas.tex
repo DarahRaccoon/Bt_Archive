@@ -209,3 +209,36 @@
     \section{Filtración}
 
 
+\resumebox{respuesta}{}[ej:endoglucanasa]{
+    Datos del bioproceso:
+    \begin{itemize}
+        \item​ Presión de operación constante: $\Delta P = \qty{2d5}{\pascal}$ 
+        \item​ Área del filtro de prueba: $A = \qty{0.1}{\m\squared}$ 
+        \item​ Viscosidad del permeado/filtrado: $\mu = \qty{1.2d-3}{\kg\per\m\per\s}$ 
+        \item​ Concentración de sólidos secos por unidad de filtrado: $\rho_{c} = \qty{25}{\kg\per\m\cubed}$ 
+        \item​ Resultados del ajuste lineal de los datos de laboratorio ($\frac{t}{V}$ vs $V$): 
+            \begin{itemize}
+                \item​ Pendiente de la recta: $K_{p} = \qty{1.5d5}{\s\per\m\tothe{6}}$
+                \item​ Ordenada al origen: $B_{0} = \qty{1200}{\s\per\m\cubed}$
+            \end{itemize}    
+    \end{itemize}
+    Procedimiento:
+    \begin{enumerate}
+        \item La ecuación de Ruth es la \autoref{eq:ecuacion_linealizada_de_ruth}
+        \item Despejamos $\alpha$ del valor de $K_{p}$ (\autoref{eq:kp_y_b_en_eq_de_ruth}) \begin{gather*}
+            K_{p} = \frac{\mu\alpha\cdot\rho_{c}}{2\Delta P \cdot A} \quad\longrightarrow\quad \alpha = \frac{2K_{p}\cdot A^{2} \cdot \Delta P}{\mu\cdot\rho_{c}}
+            \\\\
+            \alpha = \frac{2(\qty{1.5d5}{\s\per\m\tothe{6}})\cdot\qty{0.01}{\m\tothe{4}}\cdot\qty{2d5}{\pascal}}{\qty{1.2d-3}{\kg\per\m\per\s}\cdot\qty{25}{\kg\per\m\cubed}} = \qty{2d10}{\m\per\kg}
+            \end{gather*}
+        \item En el caso de $R_{m}$ la despejamos de $B_{0}$ \begin{gather*}
+            B_{0} = \frac{\mu \cdot R_{m}}{\Delta P \cdot A} \quad\longrightarrow\quad R_{m} = \frac{B_{0}\cdot A \cdot \Delta P}{\mu}
+            \\\\
+            R_{m} = \frac{\qty{1200}{\s\per\m\cubed}\cdot\qty{0.1}{\m\squared}\cdot\qty{2d5}{\pascal}}{\qty{1.2d-3}{\kg\per\m\per\s}} = \qty{2d10}{\per\m}
+            \end{gather*}
+        \item Para un volumen de \qty{50}{\L} despejamos $V$ de la \autoref{eq:ecuacion_linealizada_de_ruth} \begin{gather*}
+            \frac{t}{V} = K_{p} \cdot V + B_{0} \quad\longrightarrow\quad V = K_{p} \cdot V + B_{0} \cdot V
+            \\\\
+            V = \qty{1.5d5}{\s\per\m\tothe{6}}\cdot(\qty{0.05}{\m\cubed})^{2} + \qty{1200}{\s\per\m\cubed}\cdot\qty{0.05}{\m\cubed}
+        \end{gather*}
+    \end{enumerate}
+}

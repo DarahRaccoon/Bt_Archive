@@ -114,15 +114,35 @@ Esta forma de ordenar la ecuación tiene la ventaja de seguir la estructura de l
     \item $\frac{\mu \cdot R_{m}}{\Delta P}$ se corresponde con la intersección ($b$)
 \end{itemize}
 
+Para trabajar con esta ecuación usualmente se simplifica para trabajar en términos de $\frac{t}{V}$. Para esto pasamos el término de $A$ al otro lado de la ecuación y agrupamos los términos de pendiente e intersección (\autoref{eq:kp_y_b_en_eq_de_ruth}). Esta forma de simplificar la ecuación se conoce como la \emph{ecuación linealizada de Ruth}.
+
+\begin{equation}\label{eq:kp_y_b_en_eq_de_ruth}
+    K_{p} = \frac{\mu\alpha\cdot\rho_{c}}{2\Delta P \cdot A}
+    \quad;\quad
+    B_{0} = \frac{\mu \cdot R_{m}}{\Delta P \cdot A}
+\end{equation}
+
+\begin{equation}\label{eq:ecuacion_linealizada_de_ruth}
+    \frac{t}{V} = K_{p} \cdot V + B_{0}
+\end{equation}
+
+
+
 \subsection{Ajuste de la ecuación para tortas compresibles}
 
-Antes se especificó que $R_{c}$ se construía con la resistencia específica de la torta ($\alpha$), sin embargo, esto solo es aplicable para tortas incompresibles. En estas tortas $\alpha$ es un valor constante porque, al no comprimirse con el tiempo, la torta presenta la misma resistencia en todo el transcurso de la filtración. Con esto en mente, es necesario realizar un ajuste en $\alpha$ cuando se trabaja con tortas compresibles.
+Antes se especificó que $R_{c}$ se construía con la resistencia específica de la torta ($\alpha$), sin embargo, esto solo es aplicable para tortas incompresibles. En la incompresibles el valor de $\alpha$ es constante porque, al no comprimirse con el tiempo, la torta presenta la misma resistencia en todo el transcurso de la filtración. Con esto en mente, es necesario realizar un ajuste en $\alpha$ cuando se trabaja con tortas compresibles.
 
-El ajuste de alfa en tortas compresibles consiste en partir de una $\alpha^{\prime}$ que tome en cuenta aspectos como el tamaño y forma de las partículas, para luego añadir un término del gradiente de la presión ($\Delta P$) que crezca en función de un índice de compresibilidad ($s$). Este segundo paso lo que hace es relacionar la resistencia específica ``base'' de la torta con la presión aplicada, pues a mayor presión ($\Delta P$), mayor compresión de la torta y, por tanto, mayor resistencia específica. El término de $s$ hace que esta relación crezca tomando en cuenta la forma en que se comprimen los sólidos específicos con los que estemos trabajando.
+El ajuste de alfa en tortas compresibles consiste en modificar el término de $\alpha$ añadiendo un término que consista en el cambio que sufre la presión en base al índice de compresibilidad ($s$) de la torta. Esto se realiza para relacionar la resistencia específica ``base'' de la torta con la presión aplicada, pues a mayor presión ($\Delta P$), mayor compresión de la torta y, por tanto, mayor resistencia específica. El término $s$ hace que esta relación crezca tomando en cuenta la forma en que se comprimen los sólidos específicos con los que estemos trabajando.
 
 \begin{equation}\label{eq:alfa_en_tortas_compresibles}
     \alpha = \alpha^{\prime} \cdot \Delta P^{s}
 \end{equation}
+
+\begin{equation}
+    R_{c} = (\alpha^{\prime} \cdot \Delta P^{s}) \cdot \rho_{c} \cdot \left(\frac{V}{A}\right)
+\end{equation}
+
+Técnicamente en tortas incompresibles esta forma de construir $R_{c}$ también es aplicable, sin embargo, en tales tortas $s$ suele ser 0, por lo que la caida de presión se vuelve constante ($\Delta P^{0} = 1$), por lo que no es necesario añadirlo.
 
 El proceso para construir la ecuación con la que se trabaja en un proceso de filtración (\autoref{eq:ecuacion_de_filtracion_convencional}) es el mismo, por lo que a proximación solo se muestra el proceso resaltando las diferencias.
 
@@ -143,3 +163,29 @@ Así pues, la ecuación con la que se trabaja en un proceso de filtración cuand
 \begin{equation}\label{eq:ecuacion_de_filtracion_convencional_para_tortas_compresibles}
     \frac{t}{V \div A}=\left(\frac{V}{A}\right)\cdot\frac{\mu\cdot\alpha^{\prime}\cdot\Delta P^{s}\cdot\rho_{c}}{2\Delta P} + \frac{\mu \cdot R_{m}}{\Delta P} 
 \end{equation}
+
+
+
+\resumebox{ejercicio}{Filtración en la cosecha de una endoglucanasa}[ej:endoglucanasa]{
+    Te has incorporado como Ingeniero de Escalado en la planta de BioEnzymes Toluca. Se está validando la clarificación de un caldo de fermentación de \sci{Bacillus subtilis} para recuperar una endoglucanasa recombinante utilizada en la industria textil. La suspensión contiene biomasa y fragmentos celulares insolubles. \\
+    Para diseñar el filtro prensa industrial, realizas una prueba piloto en un filtro de laboratorio a presión constante de $\Delta P = \qty{200}{\kilo\pascal}$ (\qty{2d5}{\pascal}). El Director de Planta te pide caracterizar la suspensión obteniendo la resistencia específica de la torta ($\alpha$) y la resistencia del medio filtrante ($R_{m}$) a partir de la ecuación linealizada de Ruth, para luego calcular el tiempo exacto que tomará filtrar un lote completo de \qty{50}{\L}. \\
+    Datos del bioproceso:
+    \begin{itemize}
+        \item​ Presión de operación constante: $\Delta P = \qty{2d5}{\pascal}$ 
+        \item​ Área del filtro de prueba: $A = \qty{0.1}{\m\squared}$ 
+        \item​ Viscosidad del permeado/filtrado: $\mu = \qty{1.2d-3}{\kg\per\m\per\s}$ 
+        \item​ Concentración de sólidos secos por unidad de filtrado: $\rho_{c} = \qty{25}{\kg\per\m\cubed}$ 
+        \item​ Resultados del ajuste lineal de los datos de laboratorio ($\frac{t}{V}$ vs $V$): 
+            \begin{itemize}
+                \item​ Pendiente de la recta: $K_{p} = \qty{1.5d5}{\s\per\m\tothe{6}}$
+                \item​ Ordenada al origen: $B_{0} = \qty{1200}{\s\per\m\cubed}$
+            \end{itemize}    
+    \end{itemize}
+    Responde lo siguiente:
+    \begin{enumerate}
+        \item​ Escribir la ecuación de Ruth linealizada para filtración a presión constante. 
+        \item​ Calcular la resistencia específica de la torta ($\alpha$) en \unit{\m\per\kg} 
+        \item​ Calcular la resistencia del medio filtrante ($R_{m}$) en \unit{\per\m}
+        \item​ Determinar el tiempo ($t$) necesario para procesar un volumen \qty{0.05}{\m\cubed} (\qty{50}{\L})
+    \end{enumerate}
+}

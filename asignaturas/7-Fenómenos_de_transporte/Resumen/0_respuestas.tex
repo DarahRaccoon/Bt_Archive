@@ -309,8 +309,6 @@
     \end{gather*}
 }
 
-\resumebox[h]{respuesta}{}[ej:kla]{}
-
 \resumebox[h]{respuesta}{}[ej:kla_minimo]{
     Datos:
     \begin{itemize}
@@ -320,6 +318,7 @@
         \item $C_{Crit} = \qty{0.004}{\milli\mole\per\L}$
         \item $C_{AL}^{\ast} = 0.9(C_{AL(W)}^{\ast})$
         \item $C_{AL(W)}^{\ast} = \qty{8.05d-3}{\kg\per\m\cubed}$
+        \item $C_{AL(\ce{O2} \ \text{Puro en agua})}^{\ast} = \qty{3.84d-2}{\kg\per\m\cubed}$
     \end{itemize}
     Conversiones:
     \begin{gather*}
@@ -329,46 +328,17 @@
     \end{gather*}
     Procedimiento:
     \begin{enumerate}
-    \item \begin{gather*}
+    \item La solubilidad se reduce (10\%) por las características del caldo (solutos, p.e.). Después de tomarlo en cuenta ahora si calculamos $k_{L}\cdot a$ \begin{gather*}
         C_{AL}^{\ast} = 0.9 \cdot C_{AL(W)}^{\ast} = 0.9 \cdot \qty{8.05d-3}{\kg\per\m\cubed} = \qty{7.245d-3}{\kg\per\m\cubed}
         \\\\
         (k_{L} \cdot a)_{Crit} = \frac{q_{0} \cdot X}{C_{AL}^{\ast} - C_{Crit}} = \frac{\qty{7.1d-4}{\kg\per\m\cubed\per\s}}{\qty{7.245d-3}{\kg\per\m\cubed} - \qty{1.28d-4}{\kg\per\m\cubed}} = \qty{0.0997}{\per\s}
-    \end{gather*}
-    \item\begin{gather*}
+        \end{gather*}
+    \item Se repite lo anterior para oxígeno puro (\ce{O}) \begin{gather*}
         C_{AL(\ce{O2} \ \text{Puro en caldo})}^{\ast} = 0.9 \cdot C_{AL(\ce{O2} \ \text{Puro en agua})}^{\ast} = 0.9 \cdot \qty{3.84d-2}{\kg\per\m\cubed} = \qty{0.03456}{\kg\per\m\cubed}
         \\\\
         (k_{L} \cdot a)_{Crit (\ce{O2} \ Puro)} = \frac{\qty{7.1d-4}{\kg\per\m\cubed\per\s}}{\qty{0.03456}{\kg\per\m\cubed} - \qty{1.28d-4}{\kg\per\m\cubed}} = \qty{0.0206}{\per\s}
-    \end{gather*}
+        \end{gather*}
     \end{enumerate}
-}
-
-\resumebox[h]{respuesta}{}[ej:efecto_de_solutos]{
-    Datos:
-    \begin{itemize}
-        \item $T = \qty{25}{\degreeCelsius}$
-        \item $V = \qty{20}{\m\cubed}$
-        \item $h = \qty{3.5}{\m}$
-        \item $\rho_{W} = \qty{1000}{\kg\per\m\cubed}$
-        \item $F_{G} = \qty{25}{\m\cubed\per\min} \cdot \frac{\qty{1}{\min}}{\qty{60}{\s}}= \qty{0.416}{\m\cubed\per\s}$
-        \item $Q = \qty{407}{\L\per\s} \cdot \frac{\qty{1}{\m\cubed}}{\qty{1}{\L}} = \qty{0.407}{\m\cubed\per\s}$
-    \end{itemize}
-    Procedimiento:
-    \begin{itemize}
-        \item\begin{gather*}a
-        \end{gather*}
-        \item\begin{gather*}a
-        \end{gather*}
-        \item\begin{gather*}a
-        \end{gather*}
-        \item\begin{gather*}a
-        \end{gather*}
-        \item\begin{gather*}a
-        \end{gather*}
-        \item\begin{gather*}a
-        \end{gather*}
-        \item\begin{gather*}a
-        \end{gather*}
-    \end{itemize}
 }
 
 \resumebox[h]{respuesta}{}[ej:medicion_de_kla]{
@@ -387,4 +357,7 @@
           ---  & 120 \\
     \hline\end{tabular}
     }\end{table}
+    Se calcula la pendiente \begin{gather*}
+        \text{Pendiente} = \qty{0.0691}{\per\s}
+        \end{gather*}
 }

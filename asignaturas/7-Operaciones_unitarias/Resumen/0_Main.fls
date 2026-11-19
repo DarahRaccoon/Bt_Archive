@@ -107,6 +107,10 @@ INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texmf-dist/tex/latex/mhchem/mhchem.sty
+INPUT /usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 INPUT /usr/share/texmf-dist/tex/latex/textcase/textcase.sty
 INPUT /usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 INPUT /usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -330,10 +334,6 @@ INPUT /home/darah/.texlive/texmf-var/luatex-cache/generic/fonts/otl/ibmplexsans-
 INPUT /usr/share/texmf-dist/tex/latex/fncychap/fncychap.sty
 INPUT /usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texmf-dist/tex/latex/mhchem/mhchem.sty
-INPUT /usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 INPUT /usr/share/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT /usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT /usr/share/texmf-dist/tex/latex/threeparttable/threeparttable.sty
@@ -495,13 +495,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT ./04.tex
 INPUT ./images/fig:esquema_de_equipo_de_filtracion.tex
-INPUT ./06.tex
-INPUT ./images/fig:variacion_de_temperaturas_en_esterilizacion.tex
-INPUT ./images/fig:variacion_de_k_en_esterilizacion.tex
-INPUT ./images/fig:variacion_de_temperaturas_en_esterilizacion_experimental.tex
-INPUT ./data/esterilizacion.dat
-INPUT ./images/fig:variacion_de_k_en_esterilizacion_experimental.tex
-INPUT ./data/esterilizacion.dat
 INPUT ./0_Main.ej
 OUTPUT 0_Main.ej
 INPUT ./0_respuestas.tex
@@ -524,7 +517,6 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

@@ -1,34 +1,30 @@
-\def\secposx{15}
-\def\secposy{0}
-
-\def\circulolong{3}
-\def\limitelong{1.35*\circulolong}
-\def\celulalong{0.45*\circulolong}
-
 \begin{tikzpicture}[
-circulo/.style={ultra thick},
-celula/.style={thick},
-limite/.style={thick, dashed},
-difusion/.style={thick,red,arrows=-Stealth},
-transferencia/.style={thick,red,decorate, decoration=snake, /pgf/decoration/amplitude=6pt, /pgf/decoration/segment length=15pt},
-texto/.style={font=\sffamily,black},
-etiqueta/.style={midway,above=5pt}
+lprin/.style={ultra thick}, lsec/.style={thick},
+limite/.style={lsec, dashed},
+difusion/.style={lsec,DarkRed,arrows=-Stealth},
+texto/.style={font=\sffamily,black}
 ]
 
-\draw[circulo] (0,0) circle (\circulolong cm) node[texto,above=0.3*\circulolong] {Burbuja de aire};
-\draw[limite] (0,0) circle (\limitelong cm) node[texto,above=0.775*\limitelong] {Película líquida};
+\draw[lprin] (0,0) circle (3cm);
+\node[texto] at (0,2) {Burbuja de aire};
 
-\draw[circulo] (\secposx,\secposy) circle (\circulolong) node[texto,above=0.6*\circulolong] {Partícula sólida};
-\draw[limite] (\secposx,\secposy) circle (\limitelong) node[texto,above=0.775*\limitelong] {Película líquida};
-\draw[celula] (\secposx+1,\secposy) circle (\celulalong) node[texto,above=0.3*\celulalong] {Célula};
+\draw[limite] (0,0) circle (4.25cm);
+\node[texto] at (0,3.5) {Película líquida};
 
-\draw[difusion] (0,0) to[out=0,in=180] node[etiqueta] {1} (0.6*\circulolong,-0.3*\circulolong);
-\draw[difusion] (0.6*\circulolong,-0.3*\circulolong) -- (0.8*\limitelong,-0.3*\circulolong) node[etiqueta] {2};
-\draw[difusion] (0.8*\limitelong,-0.3*\circulolong) to[out=0,in=180] node[etiqueta] {3} (1.35*\limitelong,0);
-\draw[difusion] (1.35*\limitelong,0) -- (\secposx-1.35*\limitelong,0) node[etiqueta] {4};
-\draw[difusion] (\secposx-1.35*\limitelong,0) to[out=0,in=180] node[etiqueta] {5} (\secposx-0.8*\limitelong,-0.3*\circulolong);
-\draw[difusion] (\secposx-0.8*\limitelong,-0.3*\circulolong) -- (\secposx-0.3*\limitelong,-0.3*\circulolong) node[etiqueta] {6};
-\draw[difusion] (\secposx-0.3*\limitelong,-0.3*\circulolong) to[out=0,in=180] node[etiqueta] {7} (\secposx+0.15*\limitelong,-0.15*\circulolong);
-\draw[difusion] (\secposx+0.15*\limitelong,-0.15*\circulolong) to[out=0,in=-90] node[etiqueta] {8} (\secposx+\celulalong,0);
+\draw[lprin] (13.25,-2) circle (3cm);
+\node[texto] at (13.25,0) {Partícula sólida};
+\draw[limite] (13.25,-2) circle (4.25cm);
+\node[texto] at (13.25,1.5) {Película líquida};
+\draw[lprin] (14.25,-2) circle (1.5cm);
+\node[texto] at (14.05,-1.37) {Célula};
+
+\draw[difusion] (-1.25,0) to[out=-45,in=220] node[midway,above,texto] {1} (1.875,-0.675);
+\draw[difusion] (2,-0.5) to[out=40,in=140] node[pos=0.45,above,texto] {2} (3.5,-0.75);
+\draw[difusion] (3.675,-0.875) to[out=-35,in=165] node[pos=0.6,above,texto] {3} (5,-1.8);
+\draw[difusion] (5.2,-1.83) to[out=-10,in=180] node[midway,above,texto] {4} (8.09,-2);
+\draw[difusion] (8.25,-2) to[out=0,in=145] node[pos=0.725,above,texto] {5} (9.825,-2.825);
+\draw[difusion] (10,-3) to[out=-35,in=180] node[pos=0.4,above,texto] {6} (12.25,-3.5);
+\draw[difusion] (12.5,-3.5) to[out=0,in=180] node[pos=0.2,above,texto] {7} (14,-2.85);
+\draw[difusion] (14.25,-2.85) to[out=0,in=320] node[pos=0.25,above,texto] {8} (14.75,-1.75);
 
 \end{tikzpicture}
